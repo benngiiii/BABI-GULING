@@ -1,0 +1,103 @@
+AI Overview — Quality Assurance Standards (Stage 1)
+
+Owner: Quality Lead — [name / GitHub username]
+Team: [team name]
+Status: Proposed review criteria; to be agreed by team.
+Last updated: [date]
+
+1. Review objectives
+
+Ensure that the AI Overview module is accurate, accessible to beginners, aligned with the assigned scope, supported by references, and usable as the Markdown foundation for a study guide, slides, and tutorials.
+
+2. Content acceptance criteria
+
+Accuracy: Distinguish AI, machine learning, deep learning, and generative AI correctly; avoid implying that all AI uses neural networks or learns from data.
+
+Beginner accessibility: Define new terminology at first use; explain assumptions; use clear transitions between topics.
+
+Worked example: Include a reproducible, numbered demonstration with an explicitly stated input, process, and outcome.
+
+Practice and feedback: Provide an application question and an explained answer; check that the question is answerable from the lesson.
+
+Visuals: Include a purposeful table or diagram where it improves understanding; label it and verify its interpretation.
+
+References: Verify that cited sources exist, are attributable, and support specific claims; credit reused figures.
+
+Technical: Verify Markdown headings, relative image links, tables, code blocks, and exported PDF readability.
+
+Scope and progress: Maintain a whole-module outline with learning outcomes, prerequisites, examples, and honest status labels. One developed topic is the minimum; other sections must show meaningful progress.
+
+3. Severity definitions
+
+Level
+
+Meaning
+
+Required action
+
+Critical
+
+Fundamentally incorrect or missing mandatory submission component
+
+Resolve before submission
+
+Major
+
+Misleading concept, unsupported central claim, unusable activity, or broken important asset
+
+Resolve before content is marked checked
+
+Minor
+
+Wording, formatting, or nonessential clarity issue
+
+Fix when feasible; document any open issue
+
+4. Review workflow
+
+Confirm the file version and author; record review date.
+
+Read the full topic as a beginner and independently test examples and answers.
+
+Compare important claims with course materials or identifiable references.
+
+Record findings with exact file, section, evidence, severity, owner, and suggested fix.
+
+Ask the author to revise; record the relevant GitHub change.
+
+Recheck the revised content; mark Checked only after verification.
+
+Add a dated summary to the team Project Log; preserve evidence of actual changes.
+
+5. Reviewer independence
+
+Review should be performed by a teammate other than the original author. The Quality Lead coordinates the process but may also author or improve learning content; their own content must be reviewed by someone else.
+
+6. Stage 1 release gate
+
+Required module outline and honest section statuses are present.
+
+At least one connected topic has explanations, definitions, worked example, suitable visual, practice, explained answer, and references.
+
+Other topics have meaningful development beyond an empty outline.
+
+A second member has reviewed content and a real review outcome is documented.
+
+Repository has README, team usernames, project purpose, structure, plans/tasks, and progress.
+
+Commit/change evidence supports each member's actual contribution.
+
+Markdown snapshot matches the report's snapshot date and latest commit ID.
+
+Exported learning-content PDF is readable and includes outline/status.
+
+ZIP contains report, Markdown sources, and assets and opens when extracted.
+
+Project Plan, Project Log, and combined Personal Logs are ready as separate Word/PDF submissions.
+
+Significant AI assistance is recorded with interaction excerpts and independent verification.
+
+Release decision: [NOT REVIEWED / CHANGES REQUIRED / READY]
+Date: [date]
+Reviewer: [name]
+Outstanding issues: [list or none after checking]
