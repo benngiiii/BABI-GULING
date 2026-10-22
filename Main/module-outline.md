@@ -640,14 +640,14 @@ Overall, AI can support the development process, but the accuracy and quality of
 
 | Activity | Related Project Material |
 |:---|:---|
-| Study Guide Planning | Module Outline and Development Status |
-| AI Ethics Content | Chapter 5 Outline |
-| PowerPoint Development | Presentation Slides |
-| Video Tutorial Development | Video Tutorial Script |
-| Practice Questions | Chapter 1 Draft |
-| Chapter 1 Quality Review | `reviews/detailed-reviews/QR-001.md` |
-| Chapter 2 Quality Review | `reviews/detailed-reviews/QR-002.md` |
-| Project Planning | Team Plan and Task List |
+| Study Guide Planning | `Main/README.md` |
+| AI Ethics Content | `content` |
+| PowerPoint Development | `Main/content/chapter-1-introduction-to-artificial-Intelligence` |
+| Video Tutorial Development | `Main/content/chapter-1-introduction-to-artificial-Intelligence/assets` |
+| Practice Questions | `Main/content/chapter-1-introduction-to-artificial-Intelligence` |
+| Chapter 1 Quality Review | `quality/reviews/detailed reviews/QR-001-I01.md` |
+| Chapter 2 Quality Review | `quality/reviews/detailed reviews/QR-002-I01.md` |
+| Project Planning | `Main/master-task-list.md` |
 
 ---
 
