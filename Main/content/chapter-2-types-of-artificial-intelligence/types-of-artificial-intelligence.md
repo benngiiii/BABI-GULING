@@ -7,399 +7,372 @@ Status: Drafted (V1.0), awaiting peer review Author: Gandhi Bestin Dhammananda |
 After completing this chapter, readers should be able to:
 
 - Explain why AI can be classified in different ways.
-- Describe Narrow AI, General AI, and Superintelligence.
-- Explain the difference between Machine Learning and Generative AI.
-- Describe the four commonly discussed functionality-based categories of AI.
-- Distinguish between existing AI applications and hypothetical AI capabilities.
-- Classify familiar AI applications and explain their classifications.
+- Describe the capability-based categories: ANI, AGI, and ASI.
+- Explain the four commonly discussed functionality-based categories.
+- Distinguish Machine Learning from Generative AI.
+- Explain how capability, functionality, Machine Learning, and Generative AI describe different aspects of AI.
+- Classify familiar AI applications and justify their choices.
+- Recognize the limitations of simplified AI classification frameworks.
 
 ## Chapter Map
 
-| Section | Topic | Estimated Time |
+| Section | Topic | Estimated time |
 | --- | --- | --- |
 | 2.1 | Introduction to AI Classification | 3 min |
-| 2.2 | AI Based on Capability | 9 min |
-| 2.3 | AI Based on Functionality | 9 min |
-| 2.4 | Machine Learning and Generative AI | 7 min |
-| 2.5 | Comparing AI Classification Frameworks | 3 min |
-| 2.6 | Classification Activity | 7 min |
-| 2.7 | Practice Questions and Answers | 7 min |
-| 2.8 | Summary and References | 5 min |
-| **Total** |  | **50 min** |
+| 2.2 | AI Based on Capability | 8 min |
+| 2.3 | AI Based on Functionality | 10 min |
+| 2.4 | Machine Learning and Generative AI | 8 min |
+| 2.5 | Comparing the Classification Frameworks | 5 min |
+| 2.6 | Classification Activity | 5 min |
+| 2.7 | Common Misunderstandings | 3 min |
+| 2.8 | Practice Questions and Answers | 10 min |
+| 2.9 | Summary and References | 3 min |
+| **Total** |  | **55 min** |
 
 ## 2.1 Introduction to AI Classification
 
-In Chapter 1, we learned what Artificial Intelligence (AI) is and explored some important terms used to describe it.
+In Chapter 1, we learned that Artificial Intelligence (AI) allows computers to perform tasks that normally require human intelligence. Examples include recognizing images, answering questions, detecting spam, and recommending videos.
 
-Now, we will look at the different types of AI.
-
-Not all AI systems have the same abilities or purposes. Some are designed to recognize faces, while others recommend videos or generate text. Some AI systems use information from previous observations, while others respond mainly to the information available at the present moment.
+However, AI systems differ in their abilities, designs, and uses of information. A spam filter has a different purpose from a conversational assistant, and a system that generates images performs a different task from one that predicts whether a transaction is suspicious.
 
 To understand these differences, we use classification systems.
 
-A **classification system** is a way to group things according to shared characteristics. For example, animals can be grouped according to their habitats or diets. Similarly, AI can be grouped according to its capabilities, functionality, or the methods used to develop it.
+A classification system groups things according to shared characteristics. For example, animals can be classified by their habitats or diets. Similarly, AI systems can be described according to their capabilities, functionality, learning methods, or intended outputs.
 
-This chapter introduces three important ways to discuss AI:
+This chapter introduces four useful perspectives:
 
 1. **Capability:** How broadly can an AI system perform intellectual tasks?
-2. **Functionality:** How does an AI system behave or use information?
-3. **Approach and purpose:** How is an AI system developed, and what does it produce?
+2. **Functionality:** How does an AI system behave or use information, according to a commonly taught classification framework?
+3. **Machine Learning:** How does a system learn patterns from data?
+4. **Generative AI:** What kind of output can a system create?
 
-These perspectives are related, but they do not describe exactly the same thing.
+These perspectives answer different questions. They are useful for introductory learning, but they do not form one universally standardized scientific taxonomy. The categories may overlap, and the best description of a system depends on its design and the framework being used (IBM, n.d.; Stanford HAI, n.d.-a).
 
 ## 2.2 AI Based on Capability
 
-Capability refers to the range and level of tasks an AI system can perform.
-
-A commonly taught framework divides AI into three categories:
+Capability refers to the range and level of tasks an AI system can perform. A commonly used capability framework distinguishes three categories:
 
 - Artificial Narrow Intelligence (ANI)
 - Artificial General Intelligence (AGI)
 - Artificial Superintelligence (ASI)
 
-These categories describe different levels of possible capability. They should not be confused with three equally developed technologies.
+These categories describe different levels of possible intellectual capability. They should not be understood as three equally developed technologies (IBM, n.d.; Stanford HAI, n.d.-b).
 
 ### 2.2.1 Artificial Narrow Intelligence (ANI)
 
-**Artificial Narrow Intelligence (ANI)** is AI designed to perform a specific task or a limited range of tasks.
+Artificial Narrow Intelligence (ANI), also called narrow AI, is AI designed or developed to perform a specific task or a limited range of tasks.
 
-Think about a calculator. It can perform calculations quickly, but it cannot automatically become a doctor, write a novel, or drive a car. An AI system designed for a particular purpose also has limits, even when it performs that purpose very well.
+Consider a calculator. It can perform calculations quickly, but it cannot automatically become a doctor, write a novel, or drive a car. Similarly, an AI system may perform its intended task very well without possessing general intelligence.
 
-ANI is sometimes called _narrow AI_ or _weak AI_. The word _weak_ does not mean that the system is poor at its task. It means that its abilities are limited in scope compared with the broad abilities associated with human intelligence.
+The term _weak AI_ is sometimes used for ANI. Weak does not necessarily mean poor performance. It refers to the limited scope of the system's abilities.
 
-**Examples of ANI include:**
+**Examples of ANI**
 
+- **Facial recognition:** Compares facial information to help identify or verify a person.
 - **Spam detection:** Identifies suspicious emails.
-- **Facial recognition:** Compares faces to help identify people.
-- **Video recommendation:** Suggests videos based on a user's activity.
-- **Conversational AI:** Answers questions and helps with writing.
+- **Recommendation systems:** Suggests videos, music, or products based on relevant information.
+- **Conversational AI:** Answers questions, summarizes text, and assists with writing.
+- **Image generation:** Produces images in response to instructions.
 
-A conversational AI may perform many different language tasks and still be classified as narrow AI under this framework. Handling several tasks does not automatically prove that it possesses general intelligence.
+**Main characteristics**
 
-**Main characteristics of ANI:**
+- Performs a particular task or range of tasks.
+- May outperform people on its intended task.
+- Can still make mistakes.
+- Does not automatically gain general intelligence by performing multiple tasks.
 
-- Designed for a particular task or range of tasks.
-- Can perform its intended task very well.
-- May make mistakes.
-- Does not automatically possess broad human-level intelligence.
-
-Current AI applications are generally classified as narrow AI in this capability-based framework.
+Modern conversational AI can handle many different requests, but this breadth alone does not establish that a system meets a particular definition of AGI. Current AI systems are generally discussed as narrow AI under this framework (IBM, n.d.; Stanford HAI, n.d.-a).
 
 ### 2.2.2 Artificial General Intelligence (AGI)
 
-**Artificial General Intelligence (AGI)** refers to a proposed form of AI that could learn, reason, and apply knowledge across a broad range of intellectual tasks at a level comparable to humans.
+Artificial General Intelligence (AGI) refers to a proposed form of AI with broad, flexible intellectual abilities, potentially comparable to or exceeding human abilities across a wide range of tasks.
 
-Imagine a person who learns to cook and then uses general problem-solving skills to learn a language, repair a bicycle, or plan a journey. Humans can apply knowledge and skills across different situations.
+Imagine someone who learns to cook and then applies their general problem-solving abilities to learn a language, repair a bicycle, or plan a journey. AGI aims for similarly broad abilities to learn, reason, and transfer knowledge between different situations.
 
-AGI aims for similarly broad and flexible intellectual abilities in an artificial system.
+A system that meets a strong definition of AGI might be able to:
 
-A hypothetical AGI might be able to:
-
-- Learn unfamiliar tasks with limited task-specific preparation.
+- Learn unfamiliar intellectual tasks with limited task-specific preparation.
 - Apply knowledge from one area to another.
-- Solve new problems.
-- Adapt to different situations.
+- Solve new problems it has not encountered before.
+- Adapt flexibly to different situations.
 
-Researchers do not all agree on exactly which abilities are necessary for AGI.
-
-**Does AGI exist today?**
-
-There is no universally accepted definition or test for AGI. Current AI systems can perform many impressive tasks, but broad performance alone does not settle whether a system meets a particular definition of AGI.
+Researchers and organizations do not all agree on the exact requirements for AGI, and there is no universally accepted test for establishing that a system has achieved it (Stanford HAI, n.d.-b).
 
 For this chapter, AGI is treated as a proposed level of general intelligence whose achievement has not been universally confirmed.
 
 ### 2.2.3 Artificial Superintelligence (ASI)
 
-**Artificial Superintelligence (ASI)** refers to a hypothetical form of AI that would surpass human intellectual abilities across many important areas.
+Artificial Superintelligence (ASI) refers to a hypothetical form of AI that would surpass human intellectual abilities across many or most important domains.
 
-The difference between AGI and ASI is:
+The distinction is:
 
-- **AGI:** Broad intellectual abilities comparable to humans.
-- **ASI:** Intellectual abilities that surpass humans across many domains.
+- **AGI:** Broad intellectual abilities comparable to humans, under a given definition.
+- **ASI:** Intellectual abilities that surpass human abilities across many important domains.
 
-For example, a hypothetical ASI might solve scientific problems or develop mathematical ideas beyond the abilities of the best human experts.
+A hypothetical ASI might solve difficult scientific problems, develop mathematical ideas, and plan complex projects beyond the abilities of the best human experts.
 
 These are possible future scenarios, not descriptions of an AI system known to exist today.
 
-ASI could potentially help solve difficult problems, but it could also raise serious concerns about safety, control, and responsibility. Its effects would depend on how it was developed and managed.
+If such a system were developed, it might offer scientific and social benefits, but it could also raise concerns about safety, control, accountability, and the consequences of its decisions. Its effects would depend on how it was designed, managed, and used.
 
-**Does ASI exist today?**
-
-ASI remains hypothetical. There is no verified evidence that an AI system currently surpasses human intellectual abilities across all or nearly all relevant domains.
+ASI remains hypothetical. High performance does not automatically imply consciousness, emotions, or self-awareness; these are separate questions.
 
 ### 2.2.4 Comparing ANI, AGI, and ASI
 
 | Feature | ANI | AGI | ASI |
 | --- | --- | --- | --- |
-| Main idea | Specific or limited tasks | Broad, human-comparable intellectual abilities | Intellectual abilities beyond humans across many domains |
-| Example | Spam filter | Hypothetical system with broad, flexible learning | Hypothetical system surpassing human experts across many fields |
-| Current status | Exists today | No universally accepted confirmation of achievement | Hypothetical |
+| Main idea | Specific or limited tasks | Broad, flexible intellectual abilities | Intellectual abilities beyond humans across many domains |
+| Scope | A defined or learned range of tasks | Broad and adaptable | Hypothetically beyond human capabilities in many areas |
+| Status | Established in current AI applications | No universally accepted confirmation of achievement | Hypothetical |
+| Example | Spam filter or facial recognition system | Hypothetical system with broad, flexible learning | Hypothetical system surpassing human experts across many fields |
 
-**Key takeaway:** ANI is established in current practical applications. AGI and ASI describe broader levels of possible capability that have not been universally established.
+**Key takeaway:** ANI is widely used today. AGI and ASI describe broader levels of possible capability whose achievement has not been universally established.
 
 ## 2.3 AI Based on Functionality
 
-Another commonly taught framework groups AI according to how it behaves and uses information.
-
-It includes four categories:
+A second commonly taught framework groups AI into four categories according to how systems respond to information and their proposed cognitive characteristics:
 
 1. Reactive Machines
 2. Limited-Memory AI
 3. Theory-of-Mind AI
 4. Self-Aware AI
 
-This framework is useful for beginners, but it is not a universally standardized scientific taxonomy. Real AI systems can be more complex than these simple categories suggest.
+These categories are useful teaching concepts, not a universally standardized technical taxonomy. Actual systems may have more complex architectures and behaviors than these introductory descriptions suggest (IBM, n.d.).
 
 ### 2.3.1 Reactive Machines
 
-**Reactive machines** respond to current information without using stored memories of past events to guide decisions in the way described by this category.
+Reactive machines are systems that respond to current inputs without relying on stored memories of past events to guide decisions in the way described by this category.
 
-A classic example is IBM's Deep Blue chess computer, which defeated world chess champion Garry Kasparov in 1997.
+A classic example is IBM's Deep Blue chess computer, which defeated world chess champion Garry Kasparov in 1997. Deep Blue evaluated chess positions and selected moves using its computational methods. It is commonly used to illustrate reactive AI because it did not learn from a personal memory of previous games during play.
 
-Deep Blue evaluated chess positions and selected moves using its computational methods. It is commonly used to illustrate reactive AI because it did not learn from a personal memory of previous games during play.
+Deep Blue was technically complex. Its use as an example does not mean that every chess-playing system belongs to the same category.
 
-**Main characteristics:**
+**Main characteristics**
 
-- Responds to current inputs.
-- Does not rely on stored personal experiences in the way described by the limited-memory category.
-- Can perform specific tasks very well.
-- Does not automatically develop broader abilities.
+- Responds to currently available inputs.
+- Does not use stored personal experiences in the way described by the limited-memory category.
+- Can perform a specific task very well.
+- Does not automatically gain broader abilities outside its intended task.
 
-Reactive systems can be useful for tasks with clear goals and defined conditions. However, a purely reactive system may be unsuitable for tasks that depend heavily on remembering earlier events.
+Reactive systems can be useful for tasks with defined conditions. However, a purely reactive system, as described here, cannot rely on a stored history of earlier situations in the way a memory-based system can.
 
 ### 2.3.2 Limited-Memory AI
 
-**Limited-Memory AI** uses information from previous observations or stored data when producing an output or making a decision.
+Limited-Memory AI refers to systems that use previous observations, historical data, or stored contextual information when producing outputs or making decisions.
 
-Imagine a driver approaching a busy road. The driver observes nearby cars and remembers what happened moments earlier to decide whether to slow down. An AI driving system may similarly use recent observations to track traffic.
+For example, a driving-assistance system may use recent sensor observations to track nearby vehicles and help determine when to slow down.
 
-**Examples include:**
+Other examples include:
 
-- Driver-assistance systems that track nearby vehicles.
-- Recommendation systems that use earlier viewing activity.
-- Conversational AI that uses previous messages in the same conversation.
+- **Recommendation systems:** May use a person's earlier viewing or listening activity.
+- **Conversational AI:** May use earlier messages in the same conversation.
+- **Driver-assistance systems:** May use recent observations to track traffic and support decisions.
 
-These examples do not mean that every system uses memory in the same way.
+These examples illustrate different uses of past information. Not every system has the same memory design.
 
-Limited memory can involve information from recent observations or stored historical data. It does not necessarily mean that the system remembers only for a few seconds.
+**An important clarification about memory**
 
-It is also important to distinguish between using information and learning from it. An AI system can use stored information without automatically updating its model every time it is used.
+Limited memory does not necessarily mean that information is retained for only a few seconds. Systems differ in what information they store, how long they retain it, and whether it is available in later interactions.
 
-**Main characteristics:**
+Using stored information is also different from learning automatically. A system may use historical records without changing its trained model. Model training and ordinary use of an existing model are distinct processes.
 
-- Uses previous observations or stored information.
-- Can consider changes over time when its design supports this.
-- May make more context-sensitive decisions.
-- Remains limited by the information available to it.
+Many modern AI applications use historical or contextual information, but their implementations vary (IBM, n.d.).
 
 ### 2.3.3 Theory-of-Mind AI
 
-**Theory-of-Mind AI** is a proposed category of AI that would understand other people's beliefs, intentions, emotions, and perspectives in a deeper and more flexible way.
+Theory-of-Mind AI is a proposed category of AI that would understand other people's beliefs, intentions, emotions, and perspectives in a deeper and more flexible way.
 
-For example, a teacher may notice that a student is confused and explain the same topic differently. The teacher considers the student's perspective when choosing how to respond.
+For example, a teacher may recognize that a student is confused and change an explanation to help the student understand. This involves considering another person's possible mental state.
 
-A hypothetical AI with a strong theory-of-mind ability might:
+A hypothetical AI with strong theory-of-mind abilities might:
 
-- Recognize that two people have different beliefs.
+- Recognize that two people have different beliefs about the same situation.
 - Consider what another person knows or does not know.
-- Adjust explanations to match a person's perspective.
+- Adjust explanations to account for another person's perspective.
 - Reason about possible intentions while recognizing uncertainty.
 
-**Does this type of AI exist today?**
+AI systems can identify certain emotional cues or generate responses that sound empathetic. These abilities do not establish that a system understands another person's inner experience in the full human sense.
 
-AI systems can recognize certain emotional cues and generate responses that sound empathetic. However, these abilities do not prove that a system genuinely understands another person's inner experience.
-
-Full theory-of-mind AI, as described here, remains an unestablished capability.
+Full theory-of-mind AI, as described in this framework, remains an unestablished capability. Human emotions and intentions are complex, and systems may misinterpret words, behavior, or cultural context.
 
 ### 2.3.4 Self-Aware AI
 
-**Self-aware AI** is a hypothetical form of AI that would possess awareness of its own existence and internal state in a meaningful sense.
+Self-aware AI is a hypothetical form of AI that would possess meaningful awareness of its own existence and internal state.
 
-Consider the difference between a machine that reports its battery level and a being that is aware of itself as an individual. A machine can monitor its battery without necessarily being conscious of its own existence.
+Consider the difference between a machine that reports its battery level and a being that is aware of itself as an individual. A machine can monitor and report its battery level without this demonstrating consciousness.
 
-A hypothetical self-aware AI might possess:
+A hypothetical self-aware system might possess:
 
 - Meaningful awareness of itself as an entity.
 - An understanding of its own internal states.
-- Subjective experiences, if consciousness is part of the definition being used.
+- Subjective experience, if consciousness is included in the definition being used.
 
-**Does self-aware AI exist today?**
+There is no single agreed scientific definition or test for self-aware AI. There is also no widely accepted scientific demonstration that current AI systems possess consciousness or self-awareness in this strong sense.
 
-There is no widely accepted scientific evidence that current AI systems possess consciousness or self-awareness in this strong sense.
+An AI system may describe itself, monitor its performance, or produce statements such as "I think" and "I feel." Those statements alone do not prove that it has subjective experiences or a conscious sense of self.
 
-An AI system may describe itself or say "I feel happy." Such statements alone do not prove that it experiences emotions or possesses a conscious sense of self.
+### 2.3.5 Comparing the Four Functionality Categories
 
-### 2.3.5 Comparing the Functionality Categories
-
-| Category | Main idea | Example | Current status |
+| Category | Main idea | Illustrative example | Status |
 | --- | --- | --- | --- |
-| Reactive Machines | Respond to current information | Deep Blue's chess-playing system | Classic examples exist |
-| Limited-Memory AI | Uses past observations or stored information | Driving system tracking nearby vehicles | Common in current applications |
-| Theory-of-Mind AI | Would reason about beliefs and intentions | Hypothetical system that understands another person's perspective | Full capability remains unestablished |
-| Self-Aware AI | Would possess meaningful self-awareness | Hypothetical conscious machine | Hypothetical |
+| Reactive Machines | Responds to current inputs without stored past experiences in the described sense | Deep Blue's chess-playing system | Classic examples exist |
+| Limited-Memory AI | Uses previous observations or stored information | Driving system tracking nearby vehicles | Common in current applications |
+| Theory-of-Mind AI | Would reason about other people's beliefs and perspectives | Hypothetical assistant that considers what another person knows | Full capability remains unestablished |
+| Self-Aware AI | Would possess meaningful self-awareness or consciousness | Hypothetical conscious machine | Hypothetical; no accepted demonstration |
 
-These categories describe different behaviors or proposed capabilities. They do not mean that every real system fits perfectly into one category.
+These categories describe the framework used in this chapter. They do not establish that all systems within a category share the same architecture or capabilities.
 
 ## 2.4 Machine Learning and Generative AI
 
-The Module Outline also identifies Machine Learning and Generative AI as important topics. Both are essential for understanding modern AI, but they describe different things from the capability and functionality categories.
+Machine Learning and Generative AI are important concepts in modern AI. They describe different aspects of systems and should not be treated as additional levels in the capability framework or as extra categories in the four-part functionality framework.
 
-### 2.4.1 Machine Learning (ML)
+### 2.4.1 What Is Machine Learning?
 
-**Machine Learning (ML)** is an approach to developing AI systems in which computers learn patterns from data rather than relying only on rules written directly by people.
+Machine Learning (ML) is an approach in which computer systems learn patterns from data to make predictions, classifications, recommendations, or other outputs. Instead of relying only on manually specified rules, a machine-learning model uses patterns learned during training (NIST, n.d.-a; Stanford HAI, n.d.-c).
 
-For example, a spam filter can be trained using examples of spam and legitimate emails. After training, it can use the patterns it learned to classify new messages.
+Imagine teaching a system to distinguish between pictures of cats and dogs. Developers provide examples, and a model learns patterns that help it classify new images.
 
-Machine Learning is not a capability category like ANI, AGI, or ASI. It is an approach used to build AI systems.
+**Common applications of Machine Learning**
 
-**Common applications include:**
+- **Spam detection:** Learns patterns associated with unwanted email.
+- **Recommendation systems:** Uses relevant activity and other data to suggest content.
+- **Fraud detection:** Identifies transactions that appear suspicious.
+- **Image recognition:** Classifies or detects objects in pictures.
+- **Forecasting:** Uses data to predict possible future values.
 
-- Detecting spam emails.
-- Recommending videos.
-- Recognizing objects in images.
-- Predicting possible outcomes from data.
+Machine Learning does not guarantee accurate results. Models depend on the quality and suitability of their data, training methods, and evaluation.
 
-Not all AI uses Machine Learning. Some AI systems rely on rules and other methods designed by people.
+**How is ML related to AI?**
 
-### 2.4.2 Generative AI
+AI is the broader field. Machine Learning is one approach used to develop AI systems. Not every AI method necessarily uses Machine Learning, and not every machine-learning application is a content-generation system.
 
-**Generative AI** refers to AI systems designed to produce new content, such as text, images, audio, video, or computer code.
+### 2.4.2 What Is Generative AI?
 
-For example:
+Generative AI (GenAI) refers to AI systems that create new content, such as text, images, audio, video, or computer code. These systems learn patterns from data and use them to produce new outputs (NIST, n.d.-b; Stanford HAI, n.d.-d).
 
-- A text generator creates a story from a written request.
-- An image generator creates an illustration from a description.
-- An audio generator produces speech or music.
-- A code assistant suggests computer code.
+Examples include:
 
-Generative AI is often built using Machine Learning, particularly deep learning.
+- **Text generation:** Drafts explanations, stories, or summaries.
+- **Image generation:** Creates pictures from text instructions.
+- **Audio generation:** Produces speech or music.
+- **Code generation:** Suggests or creates computer code.
+- **Video generation:** Produces video content from prompts or other inputs.
 
-However, Generative AI does not mean AGI. A system can generate many kinds of content without demonstrating general human-level intelligence or self-awareness.
+Generative AI can produce useful and convincing content, but its output may contain factual errors, misleading information, or unsuitable material. Generated content should be checked when accuracy matters.
 
-Generated content can also contain mistakes, misleading information, or inaccurate details. Users should evaluate the output rather than assume it is always correct.
+Generating content also does not prove that a system understands it as a human would or possesses consciousness.
 
-### 2.4.3 How Do ML and Generative AI Relate to Other AI Types?
+### 2.4.3 How Are ML and Generative AI Different?
 
-Machine Learning and Generative AI describe different aspects of AI from the capability framework.
+| Feature | Machine Learning | Generative AI |
+| --- | --- | --- |
+| What does it describe? | An approach for learning patterns from data | AI systems designed to generate content |
+| Common outputs | Predictions, classifications, recommendations, and other results | Text, images, audio, video, code, and other content |
+| Example | Predicting whether an email is spam | Generating an image from a text prompt |
+| Relationship to AI | A major approach used to develop AI systems | A category of AI systems focused on generating content |
+| Can they overlap? | Yes | Yes; many generative AI systems use Machine Learning |
 
-- **ANI, AGI, and ASI** describe the breadth of possible intellectual capabilities.
-- **Reactive Machines and Limited-Memory AI** describe behavior and information use in a commonly taught functionality framework.
-- **Machine Learning** describes an approach to developing AI systems.
-- **Generative AI** describes systems designed to generate content.
+**Key takeaway:** Machine Learning describes how a system learns patterns from data. Generative AI describes a type of system that creates content. Many generative AI systems use Machine Learning, but ML also supports applications that do not generate content.
 
-A system may belong to more than one of these descriptions.
+## 2.5 Comparing the Classification Frameworks
 
-For example, an AI image generator may use Machine Learning to produce images. Under the capability framework, it can still be considered narrow AI because it does not automatically possess general human-level intelligence.
+The four perspectives discussed in this chapter answer different questions.
 
-The categories are not competing labels. Each answers a different question about the system.
+- **Capability:** How broad are the system's intellectual abilities?
+- **Functionality:** How does it respond to information, or what proposed cognitive features does it illustrate?
+- **Machine Learning:** Does it learn patterns from data using a machine-learning approach?
+- **Generative AI:** Does it generate new content?
 
-## 2.5 Comparing AI Classification Frameworks
+These perspectives are related, but they are not interchangeable. They also do not form one standardized hierarchy.
 
-The following diagram summarizes the different perspectives introduced in this chapter.
+### 2.5.1 A Simplified Relationship Diagram
 
 ```
-                    ARTIFICIAL INTELLIGENCE
-                              |
-          +-------------------+-------------------+
-          |                   |                   |
-      Capability          Functionality      Approach / Purpose
-          |                   |                   |
-      +---+---+           +---+---+          +----+----+
-      |   |   |           |   |   |          |         |
-     ANI AGI ASI       Reactive Memory       Machine  Generative
-                           |                Learning     AI
-                    Theory of Mind
-                    Self-Aware AI
+                     ARTIFICIAL INTELLIGENCE
+                               |
+             +-----------------+------------------+
+             |                 |                  |
+        CAPABILITY        FUNCTIONALITY      APPROACH / OUTPUT
+             |                 |                  |
+        ANI, AGI, ASI    Four commonly       Machine Learning
+                         taught categories        |
+                                              Generative AI
+                                           (often uses ML)
 ```
 
-_Note: This diagram is a simplified learning aid, not a complete technical taxonomy. Machine Learning and Generative AI can overlap with capability and functionality descriptions._
+**How to read the diagram**
 
-The most important lesson is that the classification depends on the question being asked.
+- The capability and functionality frameworks describe AI from different perspectives.
+- Machine Learning describes an approach to learning patterns from data.
+- Generative AI describes systems that produce content and often use Machine Learning.
+- The diagram is a simplified teaching aid, not a formal taxonomy. Its branches do not represent mutually exclusive categories, and Machine Learning and Generative AI are not subdivisions of the capability framework.
 
-If we want to describe how broad an AI system's abilities are, capability classification is useful. If we want to discuss how it uses information, functionality classification may help. If we want to understand how it is developed or what it produces, Machine Learning and Generative AI provide other useful perspectives.
+### 2.5.2 Applying the Four Perspectives
 
-## 2.6 Classification Activity: Identify the AI Type
+Consider a conversational AI system that can answer questions, summarize reports, and generate stories.
 
-In this activity, you will classify familiar AI applications. Some applications can fit more than one description because the frameworks focus on different aspects of AI.
+- **Capability:** It may be described as ANI under the framework used in this chapter; its broad performance alone does not establish AGI.
+- **Functionality:** Its classification depends on how it uses inputs, context, and stored information. A chatbot should not automatically be assigned a category solely because it produces conversational responses.
+- **Machine Learning:** It may use models trained on data to produce its outputs.
+- **Generative AI:** It qualifies as generative AI when it generates content such as text or stories.
 
-For each example:
+This example shows why one system can be described from several perspectives without those descriptions contradicting one another.
 
-1. Identify its main purpose.
-2. Choose the most appropriate classification from the options provided.
-3. Explain your choice in one sentence.
+## 2.6 Classification Activity
 
-### Activity A: Classify the Applications
+**Instructions:** Read each example. Identify the most suitable category or perspective and explain your choice in one or two sentences. Some examples can fit more than one perspective.
 
-**Case 1: Spam Detection**
+| No. | Familiar application | Your task |
+| --- | --- | --- |
+| 1 | An email service identifies suspicious messages and moves them into a spam folder. | Identify its capability category and explain whether it may use ML. |
+| 2 | A music application recommends songs based on listening history. | Explain how ML and stored information may be involved. |
+| 3 | A chatbot writes a birthday greeting and summarizes a report. | Identify whether it is generative AI and explain why this does not automatically establish AGI. |
+| 4 | A driving-assistance system uses recent observations of nearby cars to help determine when to slow down. | Identify the functionality category illustrated by its use of recent observations. |
+| 5 | A tool creates an image from the instruction "Draw a house beside a lake." | Identify the type of output and explain how it relates to Generative AI. |
+| 6 | A hypothetical AI reasons reliably about what different people believe and know. | Identify the proposed functionality category and state whether the full capability is established. |
 
-An email service uses AI to identify suspicious messages and move them into the spam folder.
+### Suggested Answers and Explanations
 
-Question: Which capability category best describes this system?
+1. **ANI; possibly ML.** The system performs a specific task. It may use a machine-learning model trained to recognize patterns in spam, although not every spam filter must use ML.
+2. **ANI; potentially ML and stored information.** A recommendation system may learn patterns from listening activity and use historical data to suggest songs. Its exact design determines how it works.
+3. **Generative AI; generally ANI under this chapter's framework.** The chatbot generates text, but the ability to perform several language tasks does not automatically establish AGI.
+4. **Limited-Memory AI.** The example illustrates the use of recent observations to support decisions. Actual driving systems vary in design.
+5. **Generative AI.** The tool generates an image from a prompt. This describes its output, not its general level of intelligence.
+6. **Theory-of-Mind AI.** The example describes a proposed ability to reason about other people's mental states. Full theory-of-mind capability, in the sense used here, remains unestablished.
 
-**Case 2: Video Recommendation**
+The purpose of this activity is not to force every application into a single label. It is to practise explaining which aspect of an AI system a category describes.
 
-A video platform uses a person's viewing history to suggest other videos they might enjoy.
+## 2.7 Common Misunderstandings About AI Types
 
-Question: Which functionality category does the use of viewing history illustrate?
+### Misunderstanding 1: Every AI system has the same abilities.
 
-**Case 3: Conversational AI Assistant**
+**Reality:** AI systems are designed for different purposes. A spam filter and a conversational assistant have different tasks and capabilities.
 
-An AI assistant answers questions, summarizes documents, and generates text based on user requests.
+### Misunderstanding 2: A powerful chatbot must be AGI.
 
-Questions:
+**Reality:** A chatbot may handle many types of requests, but broad performance alone does not establish AGI. The definition and assessment criteria matter (Stanford HAI, n.d.-b).
 
-- Which capability category generally describes this assistant under the framework in Section 2.2?
-- Does its ability to generate text automatically make it AGI?
+### Misunderstanding 3: An AI that talks about emotions must feel them.
 
-**Case 4: Driver-Assistance System**
+**Reality:** Generating emotional language does not prove that a system has emotional experiences or consciousness.
 
-A vehicle system uses recent observations of nearby cars to help determine when to slow down.
+### Misunderstanding 4: All four functionality categories are established technologies.
 
-Question: Which functionality category best describes its use of recent observations?
+**Reality:** Reactive and limited-memory systems have practical examples. Full theory-of-mind and self-aware AI, as described in this chapter, remain unestablished.
 
-**Case 5: AI Image Generator**
+### Misunderstanding 5: Machine Learning and Generative AI mean the same thing.
 
-A system creates an illustration after receiving a written description.
+**Reality:** Machine Learning is an approach to learning patterns from data. Generative AI describes systems that generate content. Many generative AI systems use ML, but the terms are not interchangeable (NIST, n.d.-a, n.d.-b).
 
-Questions:
+### Misunderstanding 6: Every AI system belongs to exactly one category.
 
-- Is Generative AI a capability category like ANI, AGI, and ASI?
-- What is the main purpose of this system?
+**Reality:** A system may be described from multiple perspectives. For example, a generative AI application may use Machine Learning and still be considered ANI under the capability framework.
 
-### Answer Key and Explanations
-
-**Case 1: Spam Detection**
-
-- **Classification:** ANI.
-- **Explanation:** The system is designed for a specific task: identifying suspicious emails.
-
-**Case 2: Video Recommendation**
-
-- **Classification:** Limited-Memory AI, in the context of this simplified functionality framework.
-- **Explanation:** The system uses previous viewing activity as information when recommending videos.
-
-**Case 3: Conversational AI Assistant**
-
-- **Classification:** Generally ANI under the capability framework.
-- **Explanation:** It can perform several language tasks, but this does not establish general human-level intelligence. Its ability to generate text also makes it an example of Generative AI if it is designed to produce new text content.
-
-**Case 4: Driver-Assistance System**
-
-- **Classification:** Limited-Memory AI, as described in this example.
-- **Explanation:** The system uses observations over time to help make driving-related decisions.
-
-**Case 5: AI Image Generator**
-
-- **Classification:** Generative AI describes its purpose, not its capability level.
-- **Explanation:** The system generates new image content from a written description. Under the capability framework, it would generally be considered ANI unless there were evidence that it met a broader definition of intelligence.
-
-**Important lesson:** A single AI application may have multiple classifications because each classification framework describes a different aspect of the system.
-
-## 2.7 Practice Questions and Answers
+## 2.8 Practice Questions and Answers
 
 ### Part A: Check Your Understanding
 
-**Q1.** What is the main difference between ANI and AGI?
+**Q1. What is the main difference between ANI and AGI?**
 
 A. ANI is always a robot, while AGI is always software.
 
@@ -409,7 +382,7 @@ C. ANI is conscious, while AGI is not.
 
 D. ANI can only perform calculations.
 
-**Q2.** Which category describes a hypothetical AI that surpasses human intellectual abilities across many important domains?
+**Q2. Which capability category describes a hypothetical AI that surpasses human intellectual abilities across many important domains?**
 
 A. ANI
 
@@ -417,13 +390,13 @@ B. AGI
 
 C. ASI
 
-D. Limited-Memory AI
+D. Reactive Machines
 
-**Q3.** What is the difference between Machine Learning and Generative AI?
+**Q3. Why should we be careful when someone claims that an AI system has achieved AGI?**
 
-**Q4.** What is the main difference between reactive machines and limited-memory AI?
+**Q4. What is the main difference between reactive machines and limited-memory AI?**
 
-**Q5.** Does an AI system that says "I feel sad" prove that it has emotions? Explain your answer.
+**Q5. Does an AI system that says "I feel sad" prove that it has emotions? Explain your answer.**
 
 ### Part B: Apply the Ideas
 
@@ -431,11 +404,15 @@ D. Limited-Memory AI
 
 **Q7.** A driving system uses recent observations of nearby vehicles to help decide when to slow down. Which functionality category does this illustrate?
 
-**Q8.** A future AI can reliably consider what different people believe and what information they have. Which functionality category would this resemble? Is this full capability established in current AI?
+**Q8.** Imagine a future AI that could reliably consider what different people believe, what information they have, and why they may act differently. Which functionality category would this resemble? Is the full capability established in current AI?
 
 **Q9.** A conversational assistant can write stories, answer questions, and summarize reports. Does this automatically make it AGI? Explain why or why not.
 
-**Q10.** An AI system generates a picture from a written description. What is the name of the AI approach or purpose associated with this task? Does that label tell us whether the system is AGI?
+**Q10.** Explain in your own words why capability classification and functionality classification are different.
+
+**Q11.** Explain the difference between Machine Learning and Generative AI. Give one example of each.
+
+**Q12.** An AI system uses Machine Learning to generate pictures from text instructions. Which of the four perspectives introduced in this chapter describe it, and what does each perspective tell us?
 
 ### Answers and Explanations
 
@@ -443,49 +420,54 @@ D. Limited-Memory AI
 
 **A2. C.** ASI describes a hypothetical AI that would surpass human intellectual abilities across many or most relevant domains.
 
-**A3.** Machine Learning is an approach in which computers learn patterns from data. Generative AI describes systems designed to produce new content, such as text, images, audio, or video. Generative AI commonly uses Machine Learning.
+**A3.** There is no universally accepted definition or test for AGI. A system may perform well on many tasks without satisfying every proposed definition of general intelligence.
 
-**A4.** Reactive machines respond to current information without relying on stored past experiences in the way described by this framework. Limited-memory AI can use earlier observations or stored information to guide its outputs or decisions.
+**A4.** A reactive machine responds to current information without relying on stored past experiences in the way described by this category. Limited-memory AI can use earlier observations or stored information to guide outputs or decisions.
 
-**A5.** No. Producing words about emotions does not prove that a system actually experiences them. Language output and consciousness are different questions.
+**A5.** No. Producing words about emotions does not prove that a system experiences them. Language output and consciousness are different questions.
 
-**A6.** ANI. The system is designed for a specific task: detecting damaged products.
+**A6. ANI.** The system is designed for a specific task: detecting damaged products. Performing that task well does not establish general intelligence.
 
-**A7.** Limited-Memory AI. The example uses recent observations over time to help make a decision.
+**A7. Limited-Memory AI.** The example uses recent observations over time to help make a decision.
 
-**A8.** Theory-of-Mind AI. The example describes the proposed ability to reason about other people's beliefs and perspectives. The full capability described here has not been established in current AI.
+**A8. Theory-of-Mind AI.** The example describes the proposed ability to reason about people's beliefs and perspectives. The full capability described here has not been established in current AI.
 
-**A9.** No. Handling several kinds of requests does not automatically establish AGI. The system must be assessed against a definition of general intelligence, and there is no universally accepted test.
+**A9.** No. Handling several kinds of requests does not automatically establish AGI. The system must be assessed against a clear definition of general intelligence, and no universally accepted test exists.
 
-**A10.** Generative AI. The system produces new image content from a written description. This label describes what the system does, not whether it has general intelligence.
+**A10.** Capability classification describes how broadly an AI system can perform intellectual tasks. Functionality classification describes behavior, information use, or proposed features such as understanding other minds and self-awareness.
 
-## 2.8 Summary and References
+**A11.** Machine Learning is an approach in which systems learn patterns from data; a spam detector is one example. Generative AI produces content; an image generator is one example. Many generative AI systems use Machine Learning.
+
+**A12.** All four perspectives can be relevant. Capability classification may describe the system as ANI if its abilities remain within the narrow-AI framework. Functionality classification depends on how it uses information and memory. Machine Learning describes how it learns patterns from data. Generative AI describes its ability to produce images.
+
+## 2.9 Summary and References
 
 ### Key Takeaways
 
-- AI can be classified in different ways because AI systems have different abilities, behaviors, and purposes.
-- The capability framework contains ANI, AGI, and ASI.
-- ANI is established in current practical AI applications, while AGI and ASI remain subjects of debate and hypothetical future development.
-- The functionality framework commonly describes reactive machines, limited-memory AI, theory-of-mind AI, and self-aware AI.
-- Machine Learning is an approach used to develop AI systems by learning patterns from data.
-- Generative AI describes systems designed to create new content.
-- Machine Learning and Generative AI are not capability categories equivalent to ANI, AGI, and ASI.
-- One AI application can fit several descriptions because each framework focuses on a different aspect of the system.
-- Current AI systems can produce convincing text and other content without this proving general intelligence, emotions, or consciousness.
-
-### How This Chapter Connects to the Next Chapter
-
-This chapter introduced different ways to classify AI, including capability, functionality, Machine Learning, and Generative AI.
-
-The next chapter, _How AI Works_, will explain how AI systems use data and computational methods to produce results. It will build on the basic concepts from Chapter 1 and the classifications from this chapter without repeating them in detail.
+- AI can be classified in different ways because systems have different abilities, designs, and purposes.
+- The capability framework distinguishes ANI, AGI, and ASI.
+- ANI is established in current practical applications. AGI has no universally accepted confirmation of achievement, and ASI remains hypothetical.
+- The commonly taught functionality framework distinguishes reactive machines, limited-memory AI, theory-of-mind AI, and self-aware AI.
+- Reactive and limited-memory systems have practical examples. Full theory-of-mind and self-aware AI remain unestablished in the senses described here.
+- Machine Learning is an approach to learning patterns from data.
+- Generative AI describes systems that generate content such as text, images, audio, video, and code.
+- Many generative AI systems use Machine Learning, but the terms describe different aspects of AI.
+- One system can be described through multiple perspectives. No single framework explains every aspect of an AI system.
+- Fluent language, broad task performance, or statements about feelings do not by themselves establish AGI, emotions, or consciousness.
 
 ### References
 
 IBM. (n.d.). _Understanding the different types of artificial intelligence_. IBM Think. [https://www.ibm.com/think/topics/artificial-intelligence-types](<https://www.ibm.com/think/topics/artificial-intelligence-types>)
 
-Stanford Institute for Human-Centered Artificial Intelligence. (n.d.). _What is artificial intelligence (AI)?_ [https://hai.stanford.edu/ai-definitions/what-is-artificial-intelligence-ai](<https://hai.stanford.edu/ai-definitions/what-is-artificial-intelligence-ai>)
+National Institute of Standards and Technology. (n.d.-a). _Machine learning_. CSRC Glossary. [https://csrc.nist.gov/glossary/term/ml](<https://csrc.nist.gov/glossary/term/ml>)
 
-Stanford Institute for Human-Centered Artificial Intelligence. (n.d.). _What is AGI (artificial general intelligence)?_ [https://hai.stanford.edu/ai-definitions/what-is-agi-artificial-general-intelligence](<https://hai.stanford.edu/ai-definitions/what-is-agi-artificial-general-intelligence>)
+National Institute of Standards and Technology. (n.d.-b). _Generative artificial intelligence_. CSRC Glossary. [https://csrc.nist.gov/glossary/term/generative\_artificial\_intelligence](<https://csrc.nist.gov/glossary/term/generative_artificial_intelligence>)
 
-National Institute of Standards and Technology. (n.d.). _Artificial intelligence_. CSRC Glossary. [https://csrc.nist.gov/glossary/term/artificial\_intelligence](<https://csrc.nist.gov/glossary/term/artificial_intelligence>)
+Stanford Institute for Human-Centered Artificial Intelligence. (n.d.-a). _What is artificial intelligence (AI)?_ [https://hai.stanford.edu/ai-definitions/what-is-artificial-intelligence-ai](<https://hai.stanford.edu/ai-definitions/what-is-artificial-intelligence-ai>)
+
+Stanford Institute for Human-Centered Artificial Intelligence. (n.d.-b). _What is AGI (artificial general intelligence)?_ https://hai.stanford.edu/ai-definitions/what-is-agi-artificial-general-intelligence
+
+Stanford Institute for Human-Centered Artificial Intelligence. (n.d.-c). _Machine learning_. Artificial Intelligence Glossary. https://hai.stanford.edu/ai-definitions
+
+Stanford Institute for Human-Centered Artificial Intelligence. (n.d.-d). _Generative AI_. Artificial Intelligence Glossary. https://hai.stanford.edu/ai-definitions
 
