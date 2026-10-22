@@ -3,7 +3,7 @@
 **Project:** AI Overview
 **Quality Lead:** Brian Djoni Suzanna
 **Reporting Stage:** Stage 1
-**Last Updated:** [YYYY-MM-DD]
+**Last Updated:** [2026-23-10]
 
 ---
 
@@ -17,9 +17,9 @@ Each review is assigned a unique Review ID (QR-001, QR-002, etc.). Detailed find
 
 ## 2. Review Summary
 
-| Review ID | Content Author | Topic / Material | Branch   | Initial Review Date | Latest Recheck   | Status      | Detailed Report                      |
-| --------- | -------------- | ---------------- | -------- | ------------------- | ---------------- | ----------- | ------------------------------------ |
-| QR-001    | [Member A]     | [Topic]          | [Branch] | [Date]              | [Date / Pending] | Not Started | [QR-001](detailed-reviews/QR-001.md) |
+| Review ID     | Content Author     | Topic / Material | Branch   | Initial Review Date | Latest Recheck   | Status      | Detailed Report                      |
+| ---------     | --------------     | ---------------- | -------- | ------------------- | ---------------- | ----------- | ------------------------------------ |
+| QR-001-I01    | [Jonathan Sugianto] | [Topic]          | [Branch] | [Date]              | [Date / Pending] | Not Started | [QR-001](detailed-reviews/QR-001.md) |
 
 ---
 
