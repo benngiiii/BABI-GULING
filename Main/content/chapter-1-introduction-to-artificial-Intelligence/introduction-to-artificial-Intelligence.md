@@ -83,7 +83,7 @@ You probably used AI several times today without noticing.
 
 The history of AI has exciting breakthroughs and also long periods of disappointment. Here are some important moments.
 
-![Timeline of key moments in AI history from 1950 to 2022](fig-1-2-timeline.png)
+![Timeline of key moments in AI history from 1950 to 2022](assests/fig-1-2-timeline.png)
 *Figure 1.1: Timeline of key moments in AI history. Source: created by our team, based on the references in Section 1.7.*
 
 | Year | Event | Why it matters |
@@ -100,10 +100,10 @@ The history of AI has exciting breakthroughs and also long periods of disappoint
 
 ### Two famous moments in pictures
 
-![Alan Turing at age 16](turing-aged-16.jpg)
+![Alan Turing at age 16](assets/turing-aged-16.jpg)
 *Figure 1.2: Alan Turing as a teenager. Source: Wikimedia Commons, "File:Alan Turing Aged 16.jpg" (https://commons.wikimedia.org/wiki/File:Alan_Turing_Aged_16.jpg). License: TO BE CONFIRMED on the Commons page before submission.*
 
-![A computer similar to Deep Blue at the Computer History Museum](deep-blue-chm.jpg)
+![A computer similar to Deep Blue at the Computer History Museum](assets/deep-blue-chm.jpg)
 *Figure 1.3: A computer similar to Deep Blue, displayed at the Computer History Museum. Source: Wikipedia article "Deep Blue (chess computer)" (https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)). Photographer and license: TO BE CONFIRMED on the image's file page.*
 
 ### Booms and "AI winters"
@@ -130,7 +130,7 @@ Now imagine you must write exact rules to decide "Is this mango ripe?" You would
 
 Instead, a person learns from experience: after seeing and touching many mangoes, you can tell if one is ripe, even if you cannot explain every rule. **Machine learning** does something similar. We give the computer many **examples with the correct answers**, and it finds the patterns by itself.
 
-![Diagram comparing traditional programming (rules and data go in, answers come out) with machine learning (data and correct answers go in, rules come out)](fig-1-3-traditional-vs-ml.png)
+![Diagram comparing traditional programming (rules and data go in, answers come out) with machine learning (data and correct answers go in, rules come out)](assets/fig-1-3-traditional-vs-ml.png)
 *Figure 1.4: Traditional programming vs machine learning. Source: created by our team.*
 
 ### Side-by-side comparison
@@ -170,12 +170,12 @@ Think of studying for an exam and taking the exam.
 - **Training** is like studying many past questions. It takes a long time, and you do it before the exam.
 - **Inference** is like answering questions in the real exam. You use what you learned on questions you have not seen before.
 
-![Diagram showing training (data and labels go into a learning algorithm to build a model) and inference (new data goes through the model to give a prediction)](fig-1-4b-training-vs-inference.png)
+![Diagram showing training (data and labels go into a learning algorithm to build a model) and inference (new data goes through the model to give a prediction)](assets/fig-1-4b-training-vs-inference.png)
 *Figure 1.5: Training vs inference. Source: created by our team.*
 
 ### How the fields fit together
 
-![Nested circles showing deep learning inside machine learning inside artificial intelligence](fig-1-4-ai-ml-dl.png)
+![Nested circles showing deep learning inside machine learning inside artificial intelligence](assets/fig-1-4-ai-ml-dl.png)
 *Figure 1.6: How AI, machine learning, and deep learning fit together. Source: created by our team.*
 
 Deep learning is a part of machine learning, and machine learning is a part of AI.
