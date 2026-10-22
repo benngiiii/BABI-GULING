@@ -3,8 +3,8 @@
 **Project:** AI Overview  
 **Stage:** Stage 1  
 **Prepared by:** Brian Djoni Suzanna  
-**Role:** Quality Lead 
-**Reporting Period:** Stage 1, October 2026  
+**Role:** Quality Lead  
+**Reporting Period:** Stage 1, 23 October 2026  
 **AI Tools:** ChatGPT; other tools to be confirmed by team members
 
 ---
@@ -29,14 +29,14 @@ This log is organized around the major project activities rather than every smal
 
 | ID | Activity | Responsible Role | Record Status |
 |:---|:---|:---|:---|
-| AI-001 | Study Guide Planning and Structure | Joseph Lukman | Member evidence required |
-| AI-002 | AI Concept Explanation and Content Improvement | Jonathan Sugianto | Member evidence required |
-| AI-003 | PowerPoint Slide Development | Bennedict Subhata | Member evidence required |
-| AI-004 | Video Tutorial Planning and Script Development | Ghandi Bestin Dhammanamda | Member evidence required |
+| AI-001 | Study Guide Planning and Structure | Ghandi Bestin Dhammanada | Member evidence required |
+| AI-002 | AI Concept Explanation and Content Improvement | Joseph lokman | Member evidence required |
+| AI-003 | PowerPoint Slide Development | Bennedict subhata | Member evidence required |
+| AI-004 | Video Tutorial Planning and Script Development | Ghandi Bestin Dhammananda | Member evidence required |
 | AI-005 | Practice Questions and Learning Activities | Jonathan Sugianto | Member evidence required |
 | AI-006 | Chapter Quality Review | Brian Djoni Suzanna | Activity documented; original excerpts required |
 | AI-007 | Revision Recheck and Review Documentation | Brian Djoni Suzanna | Activity documented; original excerpts required |
-| AI-008 | Project Planning and Task Organization | Brian Djoni Suzanna | Member evidence required |
+| AI-008 | Project Planning and Task Organization | Joseph Lokman | Member evidence required |
 
 ---
 
@@ -44,7 +44,7 @@ This log is organized around the major project activities rather than every smal
 
 ## AI-001 — Study Guide Planning and Structure
 
-**Responsible:** Content Development Team  
+**Responsible:** Ghandi Bestin Dhammanada 
 **AI Tool:** To be confirmed  
 **Date:** To be confirmed  
 **Status:** Example workflow; awaiting actual member record
@@ -55,7 +55,7 @@ The Study Guide is one of the main learning materials required for the AI Overvi
 
 AI assistance may be useful for organizing the module into a clear sequence of topics and ensuring that the planned content addresses the required learning objectives.
 
-### Example Prompt
+### Prompt
 
 > Act as an academic teaching assistant for a first-year university course.
 >
@@ -102,7 +102,7 @@ This activity can demonstrate how AI supports educational planning while leaving
 
 ## AI-002 — AI Concept Explanation and Content Improvement
 
-**Responsible:** Content Development Team  
+**Responsible:**  Joseph lokman 
 **AI Tool:** To be confirmed  
 **Date:** To be confirmed  
 **Status:** Example workflow; awaiting actual member record
@@ -113,7 +113,7 @@ The Study Guide needs explanations that are technically accurate but understanda
 
 AI assistance may help simplify difficult concepts, compare related terms, and identify explanations that could cause misunderstandings.
 
-### Example Prompt
+### Prompt
 
 > Act as a university-level AI tutor and technical content reviewer.
 >
@@ -159,7 +159,7 @@ This activity can show how AI helps identify unclear explanations, while human r
 
 ## AI-003 — PowerPoint Slide Development
 
-**Responsible:** Presentation Team  
+**Responsible:** Bennedict Subhata
 **AI Tool:** To be confirmed  
 **Date:** To be confirmed  
 **Status:** Example workflow; awaiting actual member record
@@ -170,7 +170,7 @@ PowerPoint slides are required to support the AI Overview learning materials and
 
 AI assistance may help transform detailed Study Guide content into a concise presentation while preserving the main learning points.
 
-### Example Prompt
+### Prompt
 
 > Act as an instructional designer preparing university lecture slides.
 >
@@ -226,7 +226,7 @@ This activity can demonstrate that creating effective presentation slides involv
 
 ## AI-004 — Video Tutorial Planning and Script Development
 
-**Responsible:** Video Production Team  
+**Responsible:** Ghandi Bestin Dhammananda
 **AI Tool:** To be confirmed  
 **Date:** To be confirmed  
 **Status:** Example workflow; awaiting actual member record
@@ -237,7 +237,7 @@ Video tutorials are another required deliverable for the AI Overview project.
 
 AI assistance may help organize the narration, develop explanations, and plan how visuals should support the teaching process.
 
-### Example Prompt
+### Prompt
 
 > Act as an educational video scriptwriter for a university AI Overview course.
 >
@@ -284,7 +284,7 @@ This activity can demonstrate how AI assists with organizing educational communi
 
 ## AI-005 — Practice Questions and Learning Activities
 
-**Responsible:** Content Development Team  
+**Responsible:** Jonathan Sugianto 
 **AI Tool:** To be confirmed  
 **Date:** To be confirmed  
 **Status:** Example workflow; awaiting actual member record
@@ -295,7 +295,7 @@ Practice questions and learning activities help students check whether they unde
 
 AI assistance may be useful for proposing questions and answer explanations.
 
-### Example Prompt
+### Prompt
 
 > Act as an assessment designer for a first-year university AI Overview module.
 >
@@ -412,6 +412,7 @@ The AI-assisted review discussions supported the preparation of structured quali
 
 - `QR-001` — Chapter 1
 - `QR-002` — Chapter 2
+- `QR-003` — Chapter 3
 
 The findings focused on accuracy, completeness, clarity, and alignment with the module requirements.
 
@@ -492,7 +493,7 @@ I also learned that the final status of a review finding should depend on eviden
 
 ## AI-008 — Project Planning and Task Organization
 
-**Responsible:** Project Coordination Team  
+**Responsible:** Joseph Lokman
 **AI Tool:** To be confirmed  
 **Date:** To be confirmed  
 **Status:** Example workflow; awaiting actual member record
@@ -555,6 +556,54 @@ This activity can demonstrate how AI supports planning while the team remains re
 
 ---
 
+## AI-009 — Preparing AI-Use Documentation
+
+**Responsible:** Brian Djoni Suzanna  
+**AI Tool:** ChatGPT  
+**Date:** 23 October 2026
+
+### Purpose
+
+I used ChatGPT to help organize the Stage 1 AI-use documentation into a clear and consistent Markdown format.
+
+The purpose was to document significant AI assistance across the project while distinguishing my own Quality Lead activities from work assigned to other team members.
+
+### AI Interaction Summary
+
+I asked ChatGPT to analyze the Stage 1 requirements and prepare an AI-use log covering the major project deliverables.
+
+I specifically requested that Quality Review activities be limited to two main entries rather than being repeated for every chapter.
+
+I also requested a clean Markdown structure suitable for the team's GitHub repository.
+
+### Verification and Human Judgment
+
+I reviewed the proposed structure and identified that the earlier drafts focused too heavily on Quality Review.
+
+I requested a revised structure that also covered Study Guide development, PowerPoint slides, video tutorials, practice activities, and project planning.
+
+I also distinguished between activities supported by my actual AI interactions and example workflows that require confirmation from other team members.
+
+### Outcome
+
+A revised team AI-use documentation structure was prepared.
+
+The document includes:
+
+- A summary of major AI-related project activities.
+- Two consolidated Quality Lead entries.
+- Separate sections for other project deliverables.
+- Example prompts for activities requiring member confirmation.
+- Verification and evidence requirements.
+- Learning reflections.
+
+### Learning Reflection
+
+I learned that AI-use documentation should represent the work of the whole team without incorrectly attributing every activity to one person.
+
+I also learned that a well-organized log should explain how AI was used, how its output was evaluated, and what the user learned.
+
+---
 
 # 4. Overall Reflection
 
@@ -591,6 +640,7 @@ Overall, AI can support the learning and production process, but responsibility 
 | Practice activity AI-use records | Pending member confirmation |
 | Project planning AI-use records | Pending member confirmation |
 | Exact interaction dates | Pending verification |
+| Final team verification | Not yet completed |
 
 ---
 
@@ -598,11 +648,12 @@ Overall, AI can support the learning and production process, but responsibility 
 
 The following documents are relevant to the project activities described in this log:
 
-- `Main/module-outline.md`
-- `Main/content/chapter-1-introduction-to-artificial-Intelligence/introduction-to-artificial-Intelligence.md`
+- `reviews/quality-standards.md`
+- `reviews/review-register.md`
 - `reviews/detailed-reviews/QR-001.md`
 - `reviews/detailed-reviews/QR-002.md`
-- `Main/content/chapter-3-how-artificial-intelligence-works`
+- `reviews/detailed-reviews/QR-003.md`
+- `reviews/final-submission-audit.md`
 
 These file paths should be confirmed against the team's actual repository.
 
