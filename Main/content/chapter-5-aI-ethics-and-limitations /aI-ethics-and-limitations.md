@@ -72,7 +72,7 @@ Bias is not always intentional. Most harmful AI bias happens even when the build
 
 Bias can enter at several stages of an AI system's life cycle:
 
-![Diagram showing bias origin](bias-occurence-diagram.png)
+![Diagram showing bias origin](assets/bias-occurence-diagram.png)
 
 If the diagram does not render in your viewer, use this table instead:
 
