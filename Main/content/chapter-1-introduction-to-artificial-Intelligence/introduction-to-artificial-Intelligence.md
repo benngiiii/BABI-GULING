@@ -83,7 +83,7 @@ You probably used AI several times today without noticing.
 
 The history of AI has exciting breakthroughs and also long periods of disappointment. Here are some important moments.
 
-![Timeline of key moments in AI history from 1950 to 2022](assests/fig-1-2-timeline.png)
+![Timeline of key moments in AI history from 1950 to 2022](assets/fig-1-2-timeline.png)
 *Figure 1.1: Timeline of key moments in AI history. Source: created by our team, based on the references in Section 1.7.*
 
 | Year | Event | Why it matters |
