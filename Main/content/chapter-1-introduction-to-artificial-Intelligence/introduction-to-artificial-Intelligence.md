@@ -6,6 +6,20 @@
 
 ---
 
+## Table of Contents
+ 
+1. [Learning Outcomes](#learning-outcomes)
+2. [Chapter Map](#chapter-map)
+3. [1.1 What is AI?](#11-what-is-ai)
+4. [1.2 A Brief History of AI](#12-a-brief-history-of-ai)
+5. [1.3 AI vs Traditional Programming](#13-ai-vs-traditional-programming)
+6. [1.4 Basic AI Terminology](#14-basic-ai-terminology)
+7. [1.5 Worked Example: A Spam Filter That Learns](#15-worked-example-a-spam-filter-that-learns)
+8. [1.6 Practice Questions and Answers](#16-practice-questions-and-answers)
+9. [1.7 Summary, Reuse Plan, and References](#17-summary-reuse-plan-and-references)
+    
+---
+
 ## Learning Outcomes
 
 After this chapter, you should be able to:
