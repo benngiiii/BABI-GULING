@@ -1,0 +1,210 @@
+# Quality Review Report — QR-002-I02
+
+## Review Information
+
+* **Project:** Introduction to Computer Science and Artificial Intelligence
+* **Review ID:** QR-002-I02
+* **Review Type:** Recheck / Revision Review
+* **Chapter Reviewed:** Chapter 2 — Types of Artificial Intelligence
+* **Content Author:** Gandhi Bestin Dhammananda
+* **Reviewer:** Brian Djoni Suzanna
+* **Version Reviewed:** V1.0 (as provided)
+**Project:** AI Overview
+**Review ID:** QR-002-I02
+**Reviewer:** Brian Djoni Suzanna
+**Review Date:** [2026-10-23]
+**Branch Reviewed:** [chapter-2-types-of-artificial-intelligence]
+**File Reviewed:** [Main/content/chapter-2-types-of-artificial-intelligence/types-of-artificial-intelligence.md]
+**Overall Status:** Changes Required
+
+---
+
+## 1. Review Scope
+
+This review evaluates the revised version of Chapter 2, *Types of Artificial Intelligence*, for its content accuracy, clarity, organization, alignment with the module outline, learning activities, references, and Markdown presentation.
+
+The review also checks whether the main concerns from the previous review have been addressed, particularly:
+
+* Coverage of Machine Learning and Generative AI.
+* Explanation of how the different AI classification frameworks relate to one another.
+* Inclusion of a classification activity using familiar AI applications.
+* Clarity of the practice questions and answer explanations.
+
+The assessment is based on the chapter text provided. The actual repository, rendered Markdown, linked images, and external references have not been independently inspected.
+
+## 2. Quality Assessment
+
+| Quality Criteria                 | Status                              | Comments                                                                                                                                                                                                           |
+| -------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Content Accuracy                 | Pass with Minor Verification Needed | The main concepts are explained clearly and appropriate caveats are included for hypothetical AI capabilities. A few technical descriptions and external claims should still be checked against the cited sources. |
+| Clarity and Readability          | Pass                                | The language is beginner-friendly, with useful examples and explanations.                                                                                                                                          |
+| Terminology Consistency          | Pass                                | ANI, AGI, ASI, Machine Learning, Generative AI, and the functionality categories are distinguished consistently.                                                                                                   |
+| Structure and Organization       | Pass                                | The chapter follows a logical progression from classification frameworks to examples and practice questions.                                                                                                       |
+| Alignment with Learning Outcomes | Pass                                | The chapter addresses the stated learning outcomes, including the relationship between capability, functionality, Machine Learning, and Generative AI.                                                             |
+| Worked Examples                  | Pass                                | The spam detection, recommendation, conversational AI, driving, and image-generation examples help readers apply the concepts.                                                                                     |
+| Learning Activities              | Pass                                | The classification activity now covers familiar applications and asks readers to explain their choices.                                                                                                            |
+| Answer Key and Explanations      | Pass                                | The answers include explanations rather than only providing labels or multiple-choice letters.                                                                                                                     |
+| References and Citations         | Needs Minor Verification            | The reference list includes relevant starting points, but the cited sources should be checked to ensure they support the chapter's specific claims.                                                                |
+| Markdown Formatting              | Needs Verification                  | The text-based classification diagram appears understandable in the supplied version. Its alignment and readability should be checked in the rendered document.                                                    |
+| Completeness                     | Pass                                | The chapter includes learning outcomes, a chapter map, explanations, activities, answers, a summary, and references.                                                                                               |
+
+## 3. Review Findings and Suggested Improvements
+
+### QR-002-I01 — Reference Verification and Claim Support
+
+* **Severity:** Low
+* **Status:** Open
+* **Category:** References and Citations
+
+**Finding:**
+
+The chapter includes references from IBM, Stanford HAI, and NIST. These are useful starting points for readers who want to learn more about AI.
+
+However, the chapter covers several distinct topics, including the four functionality categories, Machine Learning, Generative AI, and claims about the current status of AGI and self-aware AI. The reference list should be checked to ensure that the selected sources directly support the claims attributed to them.
+
+The chapter text also does not include inline citations that clearly connect particular claims to individual references.
+
+**Suggested Improvement:**
+
+1. Verify that each listed source is accessible and relevant to the topic for which it is used.
+2. Add inline citations for claims that benefit from direct attribution, particularly definitions and statements about the current status of AI capabilities.
+3. Consider adding a source that specifically discusses the functionality-based classification framework if the existing references do not cover it adequately.
+4. Keep the references section concise and appropriate for an introductory chapter.
+
+**Acceptance Criteria:**
+
+* The listed references are accessible and relevant.
+* Important claims can be traced to suitable sources.
+* No unsupported attribution is introduced during revision.
+
+### QR-002-I02 — Classification Diagram Rendering
+
+* **Severity:** Low
+* **Status:** Pending Verification
+* **Category:** Markdown Formatting
+
+**Finding:**
+
+Section 2.5 uses a plain-text diagram to summarize the relationship between capability, functionality, Machine Learning, and Generative AI.
+
+The accompanying explanation correctly notes that the diagram is simplified and that the categories are not mutually exclusive. However, the alignment of a text-based diagram may vary across Markdown viewers or exported formats.
+
+**Suggested Improvement:**
+
+Preview the diagram in the project's actual Markdown viewer and final export. If the alignment is difficult to follow, consider using a Markdown-compatible diagram format or a simple image.
+
+The diagram should also preserve the important distinction that Machine Learning and Generative AI describe different aspects of AI from the capability framework.
+
+**Acceptance Criteria:**
+
+* The diagram is readable in the intended viewing format.
+* The relationships between the frameworks remain clear.
+* The diagram does not imply that all categories are mutually exclusive or belong to one standardized taxonomy.
+
+### QR-002-I03 — Technical Wording and Framework Limitations
+
+* **Severity:** Low
+* **Status:** Open
+* **Category:** Content Accuracy and Terminology
+
+**Finding:**
+
+The chapter appropriately explains that the functionality-based framework is a commonly taught model rather than a universally standardized scientific taxonomy. It also distinguishes between producing emotional language and demonstrating consciousness.
+
+A few descriptions could still be interpreted too broadly if readers overlook these qualifications. For example, the limited-memory category includes systems that use stored historical information, while reactive machines are described in terms of how they use past information. Actual systems may have more complex architectures than these introductory categories suggest.
+
+The existing caveats already address much of this concern, so a major rewrite is unnecessary.
+
+**Suggested Improvement:**
+
+Retain the current explanations and ensure that the qualifications remain visible when the chapter is formatted. Where useful, emphasize that these categories are simplified teaching concepts and that a real system's classification depends on its design and the definition being applied.
+
+The explanation of Deep Blue should also remain focused on its role as a classic example of reactive AI rather than implying that all chess-playing systems necessarily belong to the same category.
+
+**Acceptance Criteria:**
+
+* The chapter continues to distinguish simplified teaching frameworks from universally accepted technical taxonomies.
+* Examples are presented as illustrations rather than universal rules.
+* Existing caveats about hypothetical capabilities and current AI systems are preserved.
+
+## 4. Recommended Revisions
+
+The following actions are recommended before final submission:
+
+| Priority | Recommended Action                                                                                                        | Related Finding |
+| -------- | ------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| Low      | Verify the listed references and add inline citations where useful.                                                       | QR-002-I01      |
+| Low      | Preview the classification diagram in the rendered Markdown and final export.                                             | QR-002-I02      |
+| Low      | Check that the qualifications around functionality categories and example systems remain clear in the final presentation. | QR-002-I03      |
+
+These are limited refinements. The chapter does not require major restructuring based on the text reviewed.
+
+## 5. Positive Findings
+
+The revised chapter demonstrates several improvements and strengths:
+
+1. **Better coverage of the module outline.** Machine Learning and Generative AI now have dedicated sections, including explanations of how they differ from capability-based classifications.
+
+2. **Clearer relationships between frameworks.** Section 2.5 explains that the frameworks answer different questions and that a single AI system may fit multiple descriptions.
+
+3. **Improved practical learning.** Section 2.6 provides classification examples involving spam detection, recommendations, conversational AI, driver assistance, and image generation.
+
+4. **Useful answer explanations.** The practice questions include explanations that reinforce the concepts instead of simply giving answers.
+
+5. **Appropriate treatment of hypothetical capabilities.** The chapter distinguishes established applications from proposed or hypothetical AGI, ASI, theory-of-mind AI, and self-aware AI.
+
+6. **Beginner-friendly presentation.** The use of comparisons, familiar examples, tables, and key takeaways makes the chapter accessible to readers without an AI background.
+
+7. **Improved completeness.** The chapter now includes learning outcomes, a chapter map, a classification activity, practice questions, an answer key, a summary, and references.
+
+## 6. Feedback Communication
+
+The review feedback should be communicated to the content author through the team's agreed communication channel or review process.
+
+The main message is that the chapter has addressed the major content gaps identified in the earlier review. The remaining work focuses on verifying references, checking the rendered diagram, and preserving the appropriate qualifications around simplified AI classifications.
+
+No major rewrite is recommended.
+
+**Communication Record:** [Record the date and method after feedback has actually been communicated.]
+
+## 7. Revision and Recheck History
+
+| Review Stage       | Summary                                                                                                                                                                                   | Status                      |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| Previous Review    | Identified incomplete coverage of Machine Learning and Generative AI, insufficient explanation of relationships between frameworks, and the need for a practical classification activity. | Changes Required            |
+| Current Recheck    | Dedicated sections for Machine Learning and Generative AI, clearer framework comparisons, and a classification activity with answers are now included. Minor verification items remain.   | Minor Revisions Recommended |
+| Final Verification | To be completed after the remaining checks and final rendered-document review.                                                                                                            | Pending                     |
+
+## 8. Final Review Result
+
+**Overall Status: Minor Revisions Recommended**
+
+The revised Chapter 2 is substantially more complete and better aligned with its learning outcomes. It explains the major AI classification frameworks, distinguishes Machine Learning from Generative AI, and gives beginners opportunities to apply the concepts through activities and practice questions.
+
+The major concerns from the previous review have been addressed in the supplied text. The remaining findings are limited to reference verification, diagram rendering, and a small amount of technical wording verification.
+
+The chapter is suitable for continued preparation and final formatting. The remaining checks should be completed before the team marks it as fully approved for submission.
+
+## 9. Review Evidence
+
+The assessment is based on the following sections of the supplied chapter:
+
+* **Sections 2.2–2.3:** Capability-based and functionality-based classifications.
+* **Section 2.4:** Machine Learning and Generative AI.
+* **Section 2.5:** Comparison of classification frameworks.
+* **Section 2.6:** Classification activity and answer explanations.
+* **Section 2.7:** Practice questions and answers.
+* **Section 2.8:** Summary and references.
+
+The review findings refer to the text provided for this review. No repository commit, rendered export, or external source was independently inspected.
+
+## 10. Additional Notes
+
+* Replace the review metadata placeholders with actual project information when available.
+* Do not mark the diagram or references as verified until the corresponding checks have been completed.
+* Keep the review register and the final review result consistent with this report.
+* Preserve the chapter's beginner-friendly style and avoid adding unnecessary technical detail that would distract from its learning outcomes.
+
+**Reviewer:** Brian Djoni Suzanna
+**Review ID:** QR-002
+**Final Status:** Minor Revisions Recommended
