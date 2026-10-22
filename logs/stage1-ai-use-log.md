@@ -30,8 +30,8 @@ This log is organized around the major project activities rather than every smal
 | ID | Activity | Responsible Role | Record Status |
 |:---|:---|:---|:---|
 | AI-001 | Study Guide Planning and Structure | Ghandi Bestin Dhammanada | Member evidence required |
-| AI-002 | AI Concept Explanation and Content Improvement | Joseph lokman | Member evidence required |
-| AI-003 | PowerPoint Slide Development | Bennedict subhata | Member evidence required |
+| AI-002 | AI Concept Explanation and Content Improvement | Joseph Lokman | Member evidence required |
+| AI-003 | PowerPoint Slide Development | Benedict Subhata | Member evidence required |
 | AI-004 | Video Tutorial Planning and Script Development | Ghandi Bestin Dhammananda | Member evidence required |
 | AI-005 | Practice Questions and Learning Activities | Jonathan Sugianto | Member evidence required |
 | AI-006 | Chapter Quality Review | Brian Djoni Suzanna | Activity documented; original excerpts required |
@@ -102,7 +102,7 @@ This activity can demonstrate how AI supports educational planning while leaving
 
 ## AI-002 — AI Concept Explanation and Content Improvement
 
-**Responsible:**  Joseph lokman 
+**Responsible:**  Joseph Lokman 
 **AI Tool:** To be confirmed  
 **Date:** To be confirmed  
 **Status:** Example workflow; awaiting actual member record
@@ -159,7 +159,7 @@ This activity can show how AI helps identify unclear explanations, while human r
 
 ## AI-003 — PowerPoint Slide Development
 
-**Responsible:** Bennedict Subhata
+**Responsible:** Benedict Subhata
 **AI Tool:** To be confirmed  
 **Date:** To be confirmed  
 **Status:** Example workflow; awaiting actual member record
