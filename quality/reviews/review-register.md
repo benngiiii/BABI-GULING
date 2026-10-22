@@ -1,43 +1,94 @@
 # Quality Review Register
 
 **Project:** AI Overview
-**Quality Lead:** [Brian Djoni Suzanna], github username: brizz0-0
+**Quality Lead:** Brian Djoni Suzanna
+**Reporting Stage:** Stage 1
+**Last Updated:** [YYYY-MM-DD]
 
 ---
 
-## Review QR-001
+## 1. Review Overview
 
-**Date:** [YYYY-MM-DD]
-**Time:** [HH:MM, Beijing Time]
+This document tracks the quality review status of the learning materials developed by team members.
 
-**Reviewer:** [Brian Djoni Suzanna]
-**Content Author:** [Teammate's Name]
+Each review is assigned a unique Review ID (QR-001, QR-002, etc.). Detailed findings, feedback, and revision histories are documented in separate review reports.
 
-**Branch Reviewed:** content-ch1
-**File Reviewed:** [Actual filename]
-**Commit ID:** [Commit ID, if available]
+---
 
-### 1. Review Scope
-[What sections or topics were reviewed?]
+## 2. Review Summary
 
-### 2. Findings
-[Describe actual errors, missing content,
-or confirmed correct material.]
+| Review ID | Content Author | Topic / Material | Branch   | Initial Review Date | Latest Recheck   | Status      | Detailed Report                      |
+| --------- | -------------- | ---------------- | -------- | ------------------- | ---------------- | ----------- | ------------------------------------ |
+| QR-001    | [Member A]     | [Topic]          | [Branch] | [Date]              | [Date / Pending] | Not Started | [QR-001](detailed-reviews/QR-001.md) |
 
-### 3. Recommended Revisions
-[Explain what the author should correct.]
+---
 
-### 4. Responsible Member
-[Name of the person responsible for revisions]
+## 3. Outstanding Issues
 
-### 5. Review Status
-Open
+List reviews that still require corrections or further verification.
 
-### 6. Recheck
-**Recheck Date:** Pending
+| Review ID | Responsible Member | Remaining Issues | Required Action   | Status   |
+| --------- | ------------------ | ---------------- | ----------------- | -------- |
+| [QR-XXX]  | [Member Name]      | [Number]         | [Action Required] | [Status] |
 
-**Recheck Result:** Pending
+If there are no outstanding issues, write:
 
-### 7. Evidence
-[Link to GitHub changes, review comments,
-or relevant screenshots]
+**No outstanding issues at the time of this update.**
+
+---
+
+## 4. Completed Reviews
+
+Record reviews that have been fully checked and resolved.
+
+| Review ID | Content Author | Topic   | Completion Date | Result   |
+| --------- | -------------- | ------- | --------------- | -------- |
+| [QR-XXX]  | [Member Name]  | [Topic] | [Date]          | Resolved |
+
+---
+
+## 5. Review Activity Log
+
+Record each meaningful review or recheck activity.
+
+| Date   | Review ID | Activity       | Result   |
+| ------ | --------- | -------------- | -------- |
+| [Date] | QR-001    | Initial review | [Result] |
+| [Date] | QR-001    | Recheck 1      | [Result] |
+| [Date] | QR-002    | Initial review | [Result] |
+
+---
+
+## 6. Review Status Definitions
+
+| Status           | Meaning                                                    |
+| ---------------- | ---------------------------------------------------------- |
+| Not Started      | The material has not been reviewed yet.                    |
+| In Review        | The Quality Lead is currently checking the material.       |
+| Changes Required | Issues have been identified and corrections are required.  |
+| Pending Recheck  | The author has submitted revisions that need verification. |
+| Resolved         | The reviewed issues have been addressed and verified.      |
+
+---
+
+## 7. General Quality Notes
+
+**Common Issues Identified:**
+[Summarize recurring problems across reviewed materials.]
+
+**Recommendations for the Team:**
+[Provide suggestions for improving overall content quality.]
+
+**Remaining Quality Assurance Tasks:**
+[List reviews or verification tasks that still need to be completed.]
+
+---
+
+## 8. References
+
+Detailed review reports are stored in:
+
+`reviews/detailed-reviews/`
+
+Each report contains the review findings, recommended revisions, recheck history, and supporting evidence.
+
