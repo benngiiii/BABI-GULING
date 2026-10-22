@@ -1,7 +1,7 @@
 # Quality Assurance Standards
 
 **Project:** AI Overview
-**Quality Lead:** [Brian Djoni Suzanna], github id: 
+**Quality Lead:** [Brian Djoni Suzanna], github username: brizz0-0
 **Last Updated:** [23/10/2026]
 
 ## 1. Content Accuracy
