@@ -1,6 +1,7 @@
 # Chapter 2: Types of Artificial Intelligence
 
-Status: Draft V1.1 | Audience: Complete beginners | Estimated reading time: 50 minutes
+Status: Drafted (V1.0), awaiting peer review Author: Gandhi Bestin Dhammananda | Reviewer: Brian Djoni Suzanna Audience: Complete beginners. No programming or AI background needed.
+
 
 ## Learning Outcomes
 
