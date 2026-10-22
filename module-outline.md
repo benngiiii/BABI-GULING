@@ -4,7 +4,7 @@ Status labels: **Outline only**, **Drafted**, **Checked**, **Needs revision**.
 
 | Chapter | Title | Main Topics | Stage 1 Target | Current Status | Author |
 |:-------:|-------|-------------|:--------------:|:--------------:|--------|
-| 1 | Introduction to Artificial Intelligence | What is AI, brief history, AI vs traditional programming, basic terminology, simple AI example, practice questions with answers | Fully developed | Outline only | Jonathan |
+| 1 | Introduction to Artificial Intelligence | What is AI, brief history, AI vs traditional programming, basic terminology, simple AI example, practice questions with answers | Draft | Outline only | Jonathan |
 | 2 | Types of Artificial Intelligence | Narrow AI, General AI, Machine Learning, Generative AI, how the types relate, examples | Draft | Outline only | Gandhi |
 | 3 | How Artificial Intelligence Works | Data, algorithms, machine learning, training and inference, workflow diagram | Draft | Outline only | Benedict |
 | 4 | Applications of AI | Healthcare, education, transportation, everyday life | Outline | Outline only | Brian |
