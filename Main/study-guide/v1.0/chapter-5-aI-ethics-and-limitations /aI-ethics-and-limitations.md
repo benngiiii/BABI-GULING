@@ -72,9 +72,11 @@ Bias is not always intentional. Most harmful AI bias happens even when the build
 
 Bias can enter at several stages of an AI system's life cycle:
 
-![Diagram showing bias origin](assets/bias-occurence-diagram.png)
+![Flowchart of the AI life cycle (collect data, label data, train model, test model, deploy and use) showing where each type of bias can enter](assets/bias-occurence-diagram.png)
 
-If the diagram does not render in your viewer, use this table instead:
+*Figure 1. Where bias can enter an AI system's life cycle.*
+
+If the image does not display in your viewer, use this table instead (it contains the same information):
 
 | Stage | Type of bias | Plain-language meaning | Example |
 |---|---|---|---|
@@ -113,7 +115,7 @@ We will use a common screening measure called the **four-fifths rule**.
 **Terms defined:**
 
 - **Selection rate:** the share of a group that receives the favourable outcome. Formula: `shortlisted ÷ applicants`.
-- **Four-fifths (80%) rule:** a rule of thumb from US employment guidance. If one group's selection rate is **less than 80% (4/5)** of the highest group's rate, this is treated as a warning sign of possible adverse impact (US EEOC, 1978). It is a **screening signal, not proof** of discrimination.
+- **Four-fifths (80%) rule:** a rule of thumb from US employment guidance. If one group's selection rate is **less than 80% (4/5)** of the highest group's rate, this is treated as a warning sign of possible adverse impact (US EEOC et al., 1978, 29 CFR §1607.4(D)). It is a **screening indicator, not proof** of discrimination.
 
 **Step 1: Calculate each group's selection rate.**
 
@@ -360,7 +362,7 @@ Before using AI for a task, ask:
 
 ### 4.4 Regulation snapshot
 
-Governments are introducing rules. For example, the EU AI Act (Regulation (EU) 2024/1689) takes a **risk-based approach**: stricter requirements for higher-risk uses (such as hiring or credit decisions) and lighter requirements for low-risk uses (European Union, 2024). Learners should check the rules that apply in their own country and sector, as these are changing.
+Governments are introducing rules. For example, the EU AI Act (Regulation (EU) 2024/1689) takes a **risk-based approach**: it bans a small set of practices, sets stricter requirements for **high-risk** uses (its list includes some uses in employment, such as recruitment, and in access to essential services, such as assessing creditworthiness), and sets lighter requirements for lower-risk uses (European Union, 2024). The full text is available from the [official EUR-Lex page](https://eur-lex.europa.eu/eli/reg/2024/1689/oj). Learners should check the rules that apply in their own country and sector, as these are changing.
 
 ---
 
@@ -405,7 +407,7 @@ A company's screener rejects many applicants who have career gaps. Data shows wo
 | **Data minimisation** | Collecting only the data needed for a purpose. |
 | **Differential privacy** | Adding measured noise so group patterns are visible but individuals are not. |
 | **Feedback loop** | Outputs that influence future data, possibly amplifying errors. |
-| **Four-fifths rule** | Screening rule: a group's selection rate below 80% of the highest group's rate is a warning sign. |
+| **Four-fifths rule** | Screening indicator: a group's selection rate below 80% of the highest group's rate is a warning sign, not proof of discrimination. |
 | **Grounding** | Tying AI answers to trusted, citable sources. |
 | **Hallucination** | A confident but false or unsupported AI output. |
 | **Impact ratio** | A group's selection rate divided by the highest group's selection rate. |
@@ -420,30 +422,32 @@ A company's screener rejects many applicants who have career gaps. Data shows wo
 
 ## References
 
-Buolamwini, J. and Gebru, T. (2018) 'Gender Shades: Intersectional accuracy disparities in commercial gender classification', *Proceedings of Machine Learning Research*, 81, pp. 77-91. Conference on Fairness, Accountability and Transparency.
+Buolamwini, J. and Gebru, T. (2018) 'Gender Shades: Intersectional accuracy disparities in commercial gender classification', *Proceedings of Machine Learning Research*, 81, pp. 77-91. Conference on Fairness, Accountability and Transparency. https://proceedings.mlr.press/v81/buolamwini18a.html
 
-Carlini, N. et al. (2021) 'Extracting training data from large language models', *30th USENIX Security Symposium*.
+Carlini, N. et al. (2021) 'Extracting training data from large language models', *30th USENIX Security Symposium*. https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting
 
-Chouldechova, A. (2017) 'Fair prediction with disparate impact: A study of bias in recidivism prediction instruments', *Big Data*, 5(2), pp. 153-163.
+Chouldechova, A. (2017) 'Fair prediction with disparate impact: A study of bias in recidivism prediction instruments', *Big Data*, 5(2), pp. 153-163. https://doi.org/10.1089/big.2016.0047
 
-Dastin, J. (2018) 'Amazon scraps secret AI recruiting tool that showed bias against women', *Reuters*, 10 October.
+Dastin, J. (2018) 'Amazon scraps secret AI recruiting tool that showed bias against women', *Reuters*, 10 October. Republished at: https://www.euronews.com/2018/10/10/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women
 
-European Union (2016) *Regulation (EU) 2016/679 (General Data Protection Regulation)*.
+European Union (2016) *Regulation (EU) 2016/679 (General Data Protection Regulation)*. https://eur-lex.europa.eu/eli/reg/2016/679/oj
 
-European Union (2024) *Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)*.
+European Union (2024) *Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)*. https://eur-lex.europa.eu/eli/reg/2024/1689/oj
 
-Gebru, T. et al. (2021) 'Datasheets for datasets', *Communications of the ACM*, 64(12), pp. 86-92.
+Gebru, T. et al. (2021) 'Datasheets for datasets', *Communications of the ACM*, 64(12), pp. 86-92. https://doi.org/10.1145/3458723
 
-Ji, Z. et al. (2023) 'Survey of hallucination in natural language generation', *ACM Computing Surveys*, 55(12), Article 248.
+Ji, Z. et al. (2023) 'Survey of hallucination in natural language generation', *ACM Computing Surveys*, 55(12), Article 248. https://doi.org/10.1145/3571730
 
-*Mata v. Avianca, Inc.* (2023) No. 22-cv-1461 (PKC) (S.D.N.Y.).
+*Mata v. Avianca, Inc.* (2023) No. 22-cv-1461 (PKC) (S.D.N.Y.), opinion and order on sanctions, 22 June 2023, 678 F. Supp. 3d 443. Court filings: https://storage.courtlistener.com/recap/gov.uscourts.nysd.575368/
 
-Mitchell, M. et al. (2019) 'Model cards for model reporting', *Proceedings of the Conference on Fairness, Accountability, and Transparency*, pp. 220-229.
+Mitchell, M. et al. (2019) 'Model cards for model reporting', *Proceedings of the Conference on Fairness, Accountability, and Transparency*, pp. 220-229. https://doi.org/10.1145/3287560.3287596
 
-National Institute of Standards and Technology (NIST) (2023) *Artificial Intelligence Risk Management Framework (AI RMF 1.0)*. NIST AI 100-1.
+National Institute of Standards and Technology (NIST) (2023) *Artificial Intelligence Risk Management Framework (AI RMF 1.0)*. NIST AI 100-1. https://doi.org/10.6028/NIST.AI.100-1
 
-Obermeyer, Z. et al. (2019) 'Dissecting racial bias in an algorithm used to manage the health of populations', *Science*, 366(6464), pp. 447-453.
+Obermeyer, Z. et al. (2019) 'Dissecting racial bias in an algorithm used to manage the health of populations', *Science*, 366(6464), pp. 447-453. https://doi.org/10.1126/science.aax2342
 
-OECD (2019) *Recommendation of the Council on Artificial Intelligence*. OECD/LEGAL/0449.
+OECD (2019) *Recommendation of the Council on Artificial Intelligence*. OECD/LEGAL/0449. https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449
 
-US Equal Employment Opportunity Commission et al. (1978) *Uniform Guidelines on Employee Selection Procedures*, 29 CFR Part 1607.
+US Equal Employment Opportunity Commission et al. (1978) *Uniform Guidelines on Employee Selection Procedures*, 29 CFR Part 1607 (the four-fifths rule is at §1607.4(D)). https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XIV/part-1607
+
+> **Note on examples:** The hiring-tool numbers in Sections 1.4 and 1.5 and the "Henderson & Zhou" citation in Section 3.3 are **invented for teaching purposes**. All other cases are real and cited above. Please check each link and bibliographic detail against the original source before formal use.
