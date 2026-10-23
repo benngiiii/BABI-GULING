@@ -1,6 +1,6 @@
 # Chapter 1: Introduction to Artificial Intelligence
 
-> **Status:** Revised (V1.1), awaiting recheck of QR-001-I02
+> **Status:** Revised (V1.2), awaiting final recheck of QR-001-I03
 > **Author:** Jonathan Sugianto | **Reviewer:** Brian Djoni Suzanna
 > **Audience:** Complete beginners. No programming or AI background needed.
 
@@ -270,7 +270,7 @@ What we can learn from this comparison:
 
 - The rule-based filter only knows what the programmer thought of. To fix its mistakes, the programmer must edit the rule by hand.
 - The learning-based filter found useful words such as "money" and "noon" from the examples. To improve it, we add more labelled examples and count again.
-- Neither filter is perfect. The learning-based filter was uncertain about "free prize at noon" in Step 5, and the rule-based filter would also call that email spam.
+- Neither filter is perfect. The learning-based filter predicts "Spam" for "free prize at noon" (Step 5) because its total score is +1, but the prediction may still be unreliable because the model uses only simple word counts from six training emails. The rule-based filter would also call that email spam.
 
 ### What this example teaches
 
@@ -377,7 +377,7 @@ Use the model from Section 1.5 (the score table and the rule "total > 0 means sp
 | 1.2 Brief History | Revised | In-text citations added; image licenses filled in; reviewer should re-check dates against the references |
 | 1.3 AI vs Traditional Programming | Revised | Supervised learning note added; diagrams to be redrawn as images by the Visual Design Lead |
 | 1.4 Terminology | Drafted | Needs peer review |
-| 1.5 Worked Example | Revised | Score note and rule-based comparison (Step 6) added; all scores recalculated by hand; needs independent check |
+| 1.5 Worked Example | Revised | Score note and rule-based comparison (Step 6) added; wording about "uncertain" corrected in Step 6; all scores recalculated by hand; needs independent check |
 | 1.6 Practice Questions | Revised | A9 clarified; should be tested by a member who has not seen the answers |
 | 1.7 References | Drafted | All entries need to be verified by the Quality Lead |
 
