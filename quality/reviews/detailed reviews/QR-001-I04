@@ -1,0 +1,145 @@
+# Quality Review Report — QR-001-I04
+
+## Review Information
+
+* **Project:** Introduction to Computer Science and Artificial Intelligence
+* **Review ID:** QR-001-I04
+* **Review Type:** Fourth Quality Review
+* **Previous Review:** QR-001-I03
+* **Chapter Reviewed:** Chapter 1 — Introduction to Artificial Intelligence
+* **Content Author:** Jonathan Sugianto
+* **Reviewer:** Brian Djoni Suzanna
+* **Version Reviewed:** V1.2
+* **Module:** AI Overview
+* **Review Date:** 2026-10-23
+* **Branch Reviewed:** Main
+* **File Reviewed:** Main/study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/introduction-to-artificial-Intelligence.md
+* **Overall Status:** Approved
+
+---
+
+## 1. Review Scope
+
+This review evaluates Chapter 1, Version 1.2, following the previous review cycle QR-001-I03.
+
+The review covers:
+
+* Learning outcomes and chapter organization.
+* Accuracy and clarity of the learning content.
+* Historical information, references, and image attribution.
+* Basic AI terminology and conceptual explanations.
+* The spam-filter worked example and its calculations.
+* Practice questions and answers.
+* Markdown formatting and visual resources.
+* The chapter's development status and reuse plan.
+
+The reviewer has manually checked the chapter and confirmed that all review requirements have passed.
+
+## 2. Quality Assessment
+
+| Assessment Area                  | Status | Comments                                                                                             |
+| -------------------------------- | ------ | ---------------------------------------------------------------------------------------------------- |
+| Learning Outcomes                | PASS   | The learning outcomes are clear, relevant, and aligned with the chapter content.                     |
+| Content Accuracy                 | PASS   | The explanations and examples have been manually checked.                                            |
+| Historical Timeline              | PASS   | Historical content and supporting references have been checked.                                      |
+| AI and Machine Learning Concepts | PASS   | The distinction between traditional programming and machine learning is explained clearly.           |
+| Terminology                      | PASS   | All nine basic AI terms are defined with appropriate examples.                                       |
+| Worked Example                   | PASS   | The spam-filter method, scoring calculations, decision rule, and limitations have been checked.      |
+| Practice Questions and Answers   | PASS   | Questions Q1–Q11 have corresponding answers and explanations.                                        |
+| References and Attribution       | PASS   | References, image attribution, and relevant source details have been manually checked.               |
+| Reuse Plan                       | PASS   | The chapter's intended use in the Study Guide, PPT Slides, and Video Tutorial is clearly documented. |
+| Development Status               | PASS   | Section-level development status and remaining work are documented.                                  |
+| Markdown Formatting              | PASS   | Markdown organization and presentation have been checked.                                            |
+| Assignment Alignment             | PASS   | The chapter meets the review requirements for the current review cycle.                              |
+
+## 3. Review Findings and Suggested Improvements
+
+**No outstanding issues identified.**
+
+The previous review cycle identified areas requiring clarification and verification. Following the current manual review, all items have been confirmed as passing.
+
+The chapter provides a coherent introduction to AI, explains the differences between traditional programming and machine learning, and includes a worked example that demonstrates training concepts, inference, and model limitations.
+
+No further revisions are required for approval under this review cycle.
+
+## 4. Recommended Revisions
+
+No mandatory revisions remain.
+
+The author may continue with the planned reuse of the chapter in the Study Guide, PPT Slides, and Video Tutorial.
+
+Any future changes should be recorded through the team's normal revision and quality-review workflow.
+
+## 5. Positive Findings
+
+The chapter demonstrates the following strengths:
+
+* Clear learning outcomes suitable for complete beginners.
+* Logical organization from foundational AI concepts to practical applications.
+* Accessible explanations of traditional programming, machine learning, training, and inference.
+* A terminology table that supports consistent understanding of essential concepts.
+* A worked spam-filter example with explicit calculations and a comparison against rule-based programming.
+* Appropriate explanations of model limitations and the importance of training data.
+* Eleven practice questions with corresponding answers and explanations.
+* Historical references and image attribution included in the learning material.
+* A clear reuse plan for the Study Guide, PPT Slides, and Video Tutorial.
+* A development-status table that makes the progress of individual sections visible.
+
+Overall, Chapter 1 V1.2 provides a well-organized and beginner-friendly learning resource.
+
+## 6. Feedback Communication
+
+The reviewer has completed the manual quality check and confirmed that all review items pass.
+
+The review outcome is **PASS**, and the chapter is approved for the current review cycle.
+
+No outstanding corrective actions are required based on this review.
+
+## 7. Revision and Recheck History
+
+| Review Stage   | Review ID  | Summary                                  | Status            |
+| -------------- | ---------- | ---------------------------------------- | ----------------- |
+| Initial Review | QR-001-I01 | Initial quality assessment of Chapter 1. | Historical review |
+| Second Review  | QR-001-I02 | Follow-up review of Chapter 1 revisions. | Historical review |
+| Third Review   | QR-001-I03 | Review of V1.1 and its revisions.        | Previous review   |
+| Fourth Review  | QR-001-I04 | Manual quality check of Chapter 1 V1.2.  | PASS — Approved   |
+
+The current review confirms that Chapter 1 V1.2 passes the quality check for this review cycle.
+
+## 8. Final Review Result
+
+**Overall Status: APPROVED — PASS**
+
+Chapter 1 V1.2 has passed the manual quality review.
+
+The chapter presents its learning outcomes, explanations, terminology, historical overview, worked example, practice questions, references, and reuse plan in a coherent structure suitable for beginner learners.
+
+The reviewer confirms that all items assessed in this review cycle have passed.
+
+No further revisions are required for QR-001-I04.
+
+The chapter is approved to proceed with the team's planned learning-resource development and Stage 1 preparation.
+
+## 9. Review Evidence
+
+The review is based on the supplied Chapter 1 V1.2 Markdown content and the reviewer's manual checks.
+
+The reviewed material includes:
+
+* Learning outcomes and chapter structure.
+* Historical events and supporting references.
+* AI terminology and conceptual explanations.
+* Spam-filter score calculations and decision rules.
+* Practice questions and their explanations.
+* Image attribution and referenced visual resources.
+* Development-status documentation and the reuse plan.
+
+The reviewer has confirmed that all review items pass. No outstanding issues remain for this review cycle.
+
+## 10. Additional Notes
+
+Chapter 1 V1.2 is approved under review ID QR-001-I04.
+
+The review outcome reflects the manual checks completed by the Quality Lead. The team should retain the corresponding review report as part of its project quality documentation.
+
+Future substantive changes to the chapter should be tracked through the established revision workflow to maintain a clear quality-review history.
