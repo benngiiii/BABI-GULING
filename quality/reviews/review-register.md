@@ -24,7 +24,7 @@ This register provides an overview of the quality reviews conducted for the *Int
 |  14 | QR-009-I01 | Module Outline and Development Status | Initial Review   | Changes Required            |
 |  15 | QR-001-I02 | Chapter 1                             | Second Review    | Changes Required            |
 |  16 | QR-001-I03 | Chapter 1                             | Third Review     | Changes Required            |
-|  17 | QR-001-I04 | Chapter 1                             | Fourth           | Pass                        |
+|  17 | QR-001-I04 | Chapter 1                             | Fourth Review    | Pass                        |
 |  18 | QR-002-I02 | Chapter 2                             | third  Review    | Changes Required            |
 |  19 | QR-003-I04 | Chapter 3                             | fourth Review    | Changes Required            |
 |  20 | QR-007-I03 | Project Plan                          | Initial Review   | Changes Required            |
