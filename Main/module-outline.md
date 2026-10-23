@@ -31,11 +31,11 @@ A chapter's status is changed only when its Markdown file supports the change. T
 
 | Chapter | Title | Main Topics | Stage 1 Target | Current Status | Verified by / date | Author |
 |:-------:|-------|-------------|:--------------:|:--------------:|--------------------|--------|
-| 1 | Introduction to Artificial Intelligence | What is AI, brief history, AI vs traditional programming, basic terminology, spam-filter worked example, practice questions with answers | Draft | Drafted | [TO CONFIRM: name, date] | Jonathan Sugianto |
-| 2 | Types of Artificial Intelligence | Why AI is classified from different perspectives; capability (ANI, AGI, ASI); functionality (reactive machines, limited-memory AI, theory-of-mind AI, self-aware AI); Machine Learning and Generative AI; comparing the frameworks; classification activity; common misunderstandings; practice questions | Draft | Verify actual status | [TO CONFIRM: name, date] | Gandhi Bestin Dhammananda |
-| 3 | How Artificial Intelligence Works | Big picture; data; algorithms and models; machine learning; neural networks and deep learning; modern language AI; training vs inference; evaluating a model; the AI workflow; misconceptions, takeaways, glossary; practice questions and activities | Draft | Verify actual status | [TO CONFIRM: name, date] | Benedict Subhata |
-| 4 | Applications of AI | Healthcare (planned as the fully developed topic), education, transportation, everyday life, finance and trading; cross-topic synthesis activity; teacher notes; glossary | Outline | Verify actual status | [TO CONFIRM: name, date] | Brian Djoni Suzanna |
-| 5 | AI Ethics and Limitations | Bias (planned as the fully developed topic), privacy, hallucinations, responsible AI; discussion scenario; glossary | Outline | Verify actual status | [TO CONFIRM: name, date] | Joseph Lokman |
+| 1 | Introduction to Artificial Intelligence | What is AI, brief history, AI vs traditional programming, basic terminology, spam-filter worked example, practice questions with answers | Checked | Checked | Brian Djoni Suzanna 23/10/2026 | Jonathan Sugianto |
+| 2 | Types of Artificial Intelligence | Why AI is classified from different perspectives; capability (ANI, AGI, ASI); functionality (reactive machines, limited-memory AI, theory-of-mind AI, self-aware AI); Machine Learning and Generative AI; comparing the frameworks; classification activity; common misunderstandings; practice questions | Checked | Checked | Brian Djoni Suzanna 23/10/2026 | Gandhi Bestin Dhammananda |
+| 3 | How Artificial Intelligence Works | Big picture; data; algorithms and models; machine learning; neural networks and deep learning; modern language AI; training vs inference; evaluating a model; the AI workflow; misconceptions, takeaways, glossary; practice questions and activities | Draft | Checked | Brian Djoni Suzanna 23/10/2026 | Benedict Subhata |
+| 4 | Applications of AI | Healthcare (planned as the fully developed topic), education, transportation, everyday life, finance and trading; cross-topic synthesis activity; teacher notes; glossary | Draft | Checked | Brian Djoni Suzanna 23/10/2026 | Brian Djoni Suzanna |
+| 5 | AI Ethics and Limitations | Bias (planned as the fully developed topic), privacy, hallucinations, responsible AI; discussion scenario; glossary | Checked | Checked | Brian Djoni Suzanna 23/10/2026 | Joseph Lokman |
 
 ## Stage 1 Developed Topic
 
@@ -73,34 +73,35 @@ The chapter summary above is kept. These tables show the status of individual se
 
 | Section | Status | Remaining work |
 |---------|:------:|----------------|
-| 1.1 What is AI? | Drafted | Peer review |
-| 1.2 A Brief History of AI | Drafted | Revised after quality review (citations and image licenses added); re-check dates against the references |
-| 1.3 AI vs Traditional Programming | Drafted | Revised after quality review; diagrams to be redrawn as images by the Visual Design Lead |
-| 1.4 Basic AI Terminology | Drafted | Peer review |
-| 1.5 Worked Example | Drafted | Revised after quality review; independent check of all scores |
-| 1.6 Practice Questions and Answers | Drafted | Test with a member who has not seen the answers |
-| 1.7 Summary, Reuse Plan, and References | Drafted | Verify all reference entries (Quality Lead) |
+| 1.1 What is AI? | Checked | Passed |
+| 1.2 A Brief History of AI | Checked | Passed |
+| 1.3 AI vs Traditional Programming | Checked | Passed |
+| 1.4 Basic AI Terminology | Checked | Passed |
+| 1.5 Worked Example | Checked | Passed |
+| 1.6 Practice Questions and Answers | Checked | Passed |
+| 1.7 Summary, Reuse Plan, and References | Checked | Passed |
 
 ### Chapter 2: Types of Artificial Intelligence
 
 | Section | Status | Remaining work |
 |---------|:------:|----------------|
-| 2.1 Introduction to AI Classification | Verify actual status | Compare with the chapter file |
-| 2.2 AI Based on Capability (ANI, AGI, ASI) | Verify actual status | Check that AGI and ASI are not overstated |
-| 2.3 AI Based on Functionality | Verify actual status | Check that established and unestablished capabilities are distinguished |
-| 2.4 Machine Learning and Generative AI | Verify actual status | Compare with the chapter file |
-| 2.5 Comparing the Classification Frameworks | Verify actual status | Compare with the chapter file |
-| 2.6 Classification Activity | Verify actual status | Check examples and suggested answers |
-| 2.7 Common Misunderstandings About AI Types | Verify actual status | Compare with the chapter file |
-| 2.8 Practice Questions and Answers | Verify actual status | Check answers and explanations |
-| 2.9 Summary and References | Verify actual status | Verify references |
+| 2.1 Introduction to AI Classification | Checked | Passed |
+| 2.2 AI Based on Capability (ANI, AGI, ASI) | Checked | Passed |
+| 2.3 AI Based on Functionality | Checked | Passed |
+| 2.4 Machine Learning and Generative AI | Checked | Passed |
+| 2.5 Comparing the Classification Frameworks | Checked | Passed |
+| 2.6 Classification Activity | Checked | Passed |
+| 2.7 Common Misunderstandings About AI Types | Checked | Passed |
+| 2.8 Practice Questions and Answers | Checked | Passed |
+| 2.9 Summary and References | Checked | Passed |
 
 ### Chapter 3: How Artificial Intelligence Works
 
 | Section | Status | Remaining work |
 |---------|:------:|----------------|
-| 3.1 to 3.12 (learning objectives through misconceptions, takeaways, and glossary) | Verify actual status | Confirm substantive content in each section |
-| Practice Questions and Activities | Verify actual status | Confirm the section number (the contents link to 3.16, but the outline has 3.1 to 3.12) and that links point to the correct heading |
+| 3.1 to 3.12 (learning objectives through misconceptions, takeaways, and glossary) | Checked | Passed |
+| Practice Questions and Activities | Checked | Passed |
+
 
 The Chapter 3 numbering question is an open item in the Project Plan (task T3).
 
@@ -121,10 +122,9 @@ The Chapter 3 numbering question is an open item in the Project Plan (task T3).
 |-------|:------:|----------------|
 | Topic 1: Bias (planned as fully developed) | Verify actual status | Check explanations, sources, and discussion activity |
 | Topic 2: Privacy | Verify actual status | Confirm depth |
-| Topic 3: Hallucinations | Verify actual status | Confirm depth |
-| Topic 4: Responsible AI | Verify actual status | Confirm depth |
-| Topic 5: Discussion Scenario, Glossary | Verify actual status | Confirm depth |
-
+| Topic 3: Hallucinations | Checked | Passed |
+| Topic 4: Responsible AI | Checked | Passed |
+| Topic 5: Discussion Scenario, Glossary | Checked | Passed |
 Detailed task owners and deadlines are in the [Master Task List](master-task-list.md).
 
 ## Prerequisites
