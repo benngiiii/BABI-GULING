@@ -370,7 +370,7 @@ To predict well, the model is forced to learn grammar, facts, reasoning patterns
 
 *Figure 3.8: Attention lets the model decide which earlier words matter for interpreting the current one.*
 
-In the sentence "The animal didn't cross the street because it was tired", what does "it" refer to? Humans know instantly. The transformer's **attention mechanism** lets the model weigh how strongly each word relates to every other word, so it can resolve references and capture context across long passages. Transformers also process many tokens in parallel, which makes training on massive hardware practical. The transformer design, which relies entirely on attention, was introduced by Vaswani et al. in 2017 and underpins most modern language models. [[5]](#ref-5)
+In the sentence "The animal didn't cross the street because it was tired", what does "it" refer to? Humans know instantly. The transformer's **attention mechanism** lets the model weigh how strongly each word relates to every other word, so it can resolve references and capture context across long passages. Transformers also process many tokens in parallel, which makes training on massive hardware practical. The transformer architecture, introduced by Vaswani et al. in 2017, uses attention as a core mechanism for relating different parts of an input. Combined with feed-forward layers and other components, this design underpins most modern language models. [[5]](#ref-5)
 
 ### Step 4: Generating a response
 
@@ -786,7 +786,7 @@ Further techniques worth practising: giving **examples** of the output you want,
 | **Token** | A small chunk of text processed by a language model |
 | **Training** | The phase where a model learns from data |
 | **Training set** | The data a model learns from |
-| **Transformer** | A neural network design using attention; the basis of most modern LLMs |
+| **Transformer** | A neural network design that uses attention, together with feed-forward layers and other components; the basis of most modern LLMs |
 | **Underfitting** | A model too simple to capture the pattern in the data |
 | **Unsupervised learning** | Finding structure in data that has no labels |
 | **Validation set** | Data used repeatedly during development to tune settings and compare versions |
