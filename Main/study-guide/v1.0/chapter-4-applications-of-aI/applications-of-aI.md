@@ -103,17 +103,7 @@ This topic focuses on **medical imaging classification**, because it clearly sho
 
 ### 1.3 How a medical imaging tool works
 
-```mermaid
-flowchart LR
-    A[Patient image<br/>e.g. chest X-ray] --> B[Prepare image<br/>resize, adjust contrast]
-    B --> C[Model analyses image]
-    C --> D[Output: probability<br/>of disease, e.g. 0.82]
-    D --> E{Is probability above<br/>the chosen threshold?}
-    E -- Yes --> F[Flag for urgent<br/>clinician review]
-    E -- No --> G[Routine review]
-    F --> H[Clinician makes<br/>final decision]
-    G --> H
-```
+![Diagram](assets/foto-chapter-4.png)
 
 If the diagram does not render in your viewer, read it as: **image → preparation → model → probability → threshold check → clinician decision**.
 
@@ -346,14 +336,7 @@ Transportation uses AI for several tasks, from helping drivers to planning journ
 
 ### 3.2 How a self-driving system makes decisions
 
-```mermaid
-flowchart LR
-    A[Sensors<br/>camera, radar, lidar, GPS] --> B[Perception<br/>What is around me?]
-    B --> C[Prediction<br/>What will others do next?]
-    C --> D[Planning<br/>What path should I take?]
-    D --> E[Control<br/>Steer, accelerate, brake]
-    E -.new situation.-> A
-```
+![Diagram](assets/foto-chapter-4.png)
 
 Read it as a loop that repeats many times per second: **sense → perceive → predict → plan → act**.
 
