@@ -1,0 +1,172 @@
+# Quality Review Report — QR-003-I05
+
+## Review Information
+
+* **Project:** Introduction to Computer Science and Artificial Intelligence
+* **Review ID:** QR-003-I05
+* **Review Type:** Fifth Quality Review
+* **Previous Review:** QR-003-I04
+* **Chapter Reviewed:** Chapter 3 — How Artificial Intelligence Works
+* **Content Author:** Benedict Subhata
+* **Reviewer:** Brian Djoni Suzanna
+* **Version Reviewed:** Updated V1.0 (as provided)
+* **Module:** AI Overview
+* **Review Date:** 2026-10-23
+* **Branch Reviewed:** Main
+* **File Reviewed:** Main/study-guide/v1.0/chapter-3-how-artificial-intelligence-works/how-artificial-intelligence-works.md
+* **Overall Status:** APPROVED — PASS
+
+---
+
+## 1. Review Scope
+
+This fifth quality review evaluates the updated Chapter 3 content and checks whether the issues identified in previous reviews have been resolved.
+
+The review focuses on:
+
+* Content accuracy and technical terminology.
+* Explanations of machine learning, neural networks, and language models.
+* Distinction between training and inference.
+* Model evaluation metrics and examples.
+* Chapter organization and Markdown formatting.
+* Practice questions, activities, and references.
+* Resolution of findings from QR-003-I04.
+
+The review is based on the complete Markdown text provided for this assessment.
+
+## 2. Quality Assessment
+
+| Quality Criterion         | Status | Comments                                                                                                                              |
+| ------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Content Accuracy          | PASS   | Core AI concepts, numerical examples, and evaluation metrics are explained accurately at the intended learning level.                 |
+| Technical Terminology     | PASS   | Key terms are used consistently, including algorithms, models, parameters, transformers, training, inference, and evaluation metrics. |
+| Clarity and Readability   | PASS   | Explanations use accessible language, examples, analogies, and supporting tables.                                                     |
+| Chapter Organization      | PASS   | Sections 3.1–3.18 follow a logical learning sequence.                                                                                 |
+| Learning Objectives       | PASS   | Learning objectives are clearly stated and supported by the chapter content.                                                          |
+| Examples and Calculations | PASS   | Worked examples and metric calculations are consistent with the explanations.                                                         |
+| Practice Questions        | PASS   | Fourteen questions include readable answers and explanations.                                                                         |
+| Learning Activities       | PASS   | Four activities support practical understanding without requiring programming.                                                        |
+| Visual Integration        | PASS   | Figures and Mermaid diagrams are appropriately placed and described in the supplied Markdown.                                         |
+| References and Citations  | PASS   | References are listed and connected to relevant explanations. The author records a link-check date.                                   |
+| Markdown Formatting       | PASS   | Headings, tables, internal links, code blocks, Mermaid diagrams, and expandable answers are properly structured in the supplied text. |
+| Previous Review Findings  | PASS   | The transformer explanation identified in QR-003-I04 has been corrected.                                                              |
+
+**Verification limitation:** PASS for visual integration, references, and Markdown formatting reflects the supplied content and structure. External links, image files, and live GitHub rendering were not independently tested during this review.
+
+## 3. Review Findings and Suggested Improvements
+
+### Finding 1: Previous Transformer Explanation Corrected
+
+**Status:** RESOLVED
+
+**Location:** Section 3.7 — How Modern Language AI Works
+
+QR-003-I04 identified an overly broad description of transformer architecture.
+
+The revised explanation now identifies attention as a core mechanism while acknowledging feed-forward layers and other components.
+
+**Review Result:** The technical explanation is sufficiently accurate for the intended beginner-to-intermediate audience.
+
+**Further Revision Required:** No.
+
+### Finding 2: Chapter Structure and Numbering Confirmed
+
+**Status:** RESOLVED
+
+**Location:** Contents and Sections 3.1–3.18
+
+The chapter now provides a consistent section sequence, including:
+
+* 3.15 Self-Check Reflection.
+* 3.16 Practice Questions.
+* 3.17 Hands-On Activities.
+* 3.18 Further Reading and References.
+
+The table of contents matches the supplied section headings.
+
+**Review Result:** The previous numbering uncertainty is resolved in this version.
+
+**Further Revision Required:** No.
+
+### Finding 3: Training and Inference Explanations Remain Consistent
+
+**Status:** VERIFIED
+
+**Location:** Sections 3.7–3.10
+
+The chapter distinguishes inference-time methods, such as prompting, RAG, and tools, from training-based methods, such as fine-tuning and training from scratch.
+
+The explanation is consistent with the workflow and evaluation sections.
+
+**Review Result:** PASS.
+
+**Further Revision Required:** No.
+
+## 4. Recommended Revisions
+
+**No mandatory content revisions are required.**
+
+The chapter is suitable for approval at the current review stage.
+
+Routine publication checks may still include confirming that image assets render correctly and that external references remain accessible. These checks are not treated as newly identified content errors.
+
+## 5. Positive Findings
+
+* The chapter provides a comprehensive introduction to how AI systems work.
+* Technical concepts are supported by beginner-friendly examples.
+* The gradient descent and neural network calculations are clearly explained.
+* The confusion matrix and evaluation metrics are mathematically consistent.
+* The training, validation, and test sets are distinguished carefully.
+* The AI workflow connects theory with a practical spam-filter case study.
+* The chapter explains both inference-time and training-based improvement methods.
+* Practice questions include detailed answer explanations.
+* Hands-on activities encourage critical evaluation of AI tools.
+* The revised transformer explanation addresses the previous review finding.
+
+## 6. Feedback Communication
+
+The review confirms that the previously identified substantive issues have been addressed.
+
+No additional content revision request is necessary.
+
+**Communication Status:** Review report prepared; delivery to the content author or team has not been independently confirmed.
+
+## 7. Revision and Recheck History
+
+| **Review Stage** | **Review ID** | **Summary**                                                                                                                                      | **Status**       |
+| ---------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| Initial Review   | QR-003-I01    | Initial evaluation of Chapter 3 content, structure, technical explanations, and formatting.                                                      | Changes Required |
+| Second Review    | QR-003-I02    | Rechecked the updated chapter against the initial findings.                                                                                      | Changes Required |
+| Third Review     | QR-003-I03    | Identified remaining issues involving the Chapter 2 reference and the distinction between inference-time and training-based improvements.        | Changes Required |
+| Fourth Review    | QR-003-I04    | Confirmed earlier corrections and identified an overly broad explanation of transformer architecture.                                            | Changes Required |
+| Fifth Review     | QR-003-I05    | Confirmed the corrected transformer explanation, consistent chapter numbering, accurate technical terminology, and complete learning activities. | APPROVED — PASS  |
+
+## 8. Final Review Result
+
+**Overall Status: APPROVED — PASS**
+
+Chapter 3 meets the content quality expectations for the AI Overview learning module.
+
+The previously identified technical and structural issues have been resolved in the supplied version.
+
+The chapter presents accurate foundational explanations, coherent learning progression, practical examples, and appropriate learner activities.
+
+**No further content revision is required for this review.**
+
+## 9. Review Evidence
+
+* Complete Chapter 3 Markdown text supplied for the fifth review.
+* Previous quality review reports QR-003-I01 through QR-003-I04.
+* Updated Section 3.7 transformer explanation.
+* Sections 3.8–3.10 covering training, inference, evaluation, and workflow.
+* Corrected contents and section numbering.
+* Practice Questions Q1–Q14 and Hands-On Activities A–D.
+* References [1]–[10] included in Section 3.18.
+
+## 10. Additional Notes
+
+Approval applies to the supplied Chapter 3 content.
+
+The author should retain the approved version and ensure that the repository contains the same content before final submission.
+
+Any later substantive changes should be documented and reviewed as needed.
