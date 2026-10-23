@@ -68,6 +68,9 @@ Paths are written from the root of the repository.
 | `quality/reviews/review-register.md` | The register that tracks all quality reviews. |
 | `quality/reviews/quality-standards.md` | The quality standards used for reviews. |
 | `quality/reviews/final-submission-audit.md` | The final audit before the Stage 1 submission. |
+| `logs/stage1-ai-use-log.md` | The History of using an AI. |
+| `quality/reviews/detailed reviews` | The Detailed Reviews that have been made by Quality Lead. |
+
 
 ---
 
@@ -75,7 +78,7 @@ Paths are written from the root of the repository.
 
 This is a short overview only. Chapter-level status belongs in the Module Outline, and task owners, deadlines, and task status belong in the Master Task List.
 
-*Last updated: [TO FILL: date]*
+*Last updated: [23/10/2026]*
 
 **Completed**
 
