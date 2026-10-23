@@ -1,94 +1,62 @@
 # Quality Review Register
 
-**Project:** AI Overview
-**Quality Lead:** Brian Djoni Suzanna
-**Reporting Stage:** Stage 1
-**Last Updated:** [2026-23-10]
+## 1. Purpose
 
----
+This register provides an overview of the quality reviews conducted for the *Introduction to Computer Science and Artificial Intelligence* project, under the AI Overview module. It records review IDs, reviewed documents, review iterations, and the latest known review status.
 
-## 1. Review Overview
+## 2. Review Register
 
-This document tracks the quality review status of the learning materials developed by team members.
+| No. | Review ID  | Document / Chapter                    | Review Iteration | Latest Known Status         |
+| --: | ---------- | ------------------------------------- | ---------------- | --------------------------- |
+|   1 | QR-001-I01 | Chapter 1                             | Initial Review   | Pass                        |
+|   2 | QR-002-I01 | Chapter 2                             | Initial Review   | Changes Required            |
+|   3 | QR-002-I02 | Chapter 2                             | Second Review    | Changes Required            |
+|   4 | QR-003-I01 | Chapter 3                             | Initial Review   | Changes Required            |
+|   5 | QR-003-I02 | Chapter 3                             | Second Review    | Changes Required            |
+|   6 | QR-003-I03 | Chapter 3                             | Third Review     | Changes Required            |
+|   7 | QR-004-I01 | Chapter 4                             | Initial Review   | See Detailed Review         |
+|   8 | QR-005-I01 | Chapter 5                             | Initial Review   | Minor Revisions Recommended |
+|   9 | QR-005-I02 | Chapter 5                             | Second Review    | Pass                        |
+|  10 | QR-006-I01 | Master Task List                      | Initial Review   | Changes Required            |
+|  11 | QR-007-I01 | Project Plan                          | Initial Review   | Changes Required            |
+|  12 | QR-007-I02 | Project Plan                          | Second Review    | Changes Required            |
+|  13 | QR-008-I01 | README                                | Initial Review   | Changes Required            |
+|  14 | QR-009-I01 | Module Outline and Development Status | Initial Review   | Changes Required            |
 
-Each review is assigned a unique Review ID (QR-001, QR-002, etc.). Detailed findings, feedback, and revision histories are documented in separate review reports.
+## 3. Review File Locations
 
----
+All registered detailed review reports are stored in:
 
-## 2. Review Summary
+`quality/reviews/detailed_reviews/`
 
-| Review ID     | Content Author     | Topic / Material | Branch   | Initial Review Date | Latest Recheck   | Status      | Detailed Report                      |
-| ---------     | --------------     | ---------------- | -------- | ------------------- | ---------------- | ----------- | ------------------------------------ |
-| QR-001-I01    | [Jonathan Sugianto] | [Topic]          | [Branch] | [Date]              | [Date / Pending] | Not Started | [QR-001](detailed-reviews/QR-001.md) |
+The repository contains the following review files:
 
----
+* `QR-001-I01.md`
+* `QR-002-I01.md`
+* `QR-002-I02.md`
+* `QR-003-I01.md`
+* `QR-003-I02.md`
+* `QR-003-I03.md`
+* `QR-004-I01.md`
+* `QR-005-I01.md`
+* `QR-005-I02.md`
+* `QR-006-I01.md`
+* `QR-007-I01.md`
+* `QR-007-I02.md`
+* `QR-008-I01.md`
+* `QR-009-I01.md`
 
-## 3. Outstanding Issues
+## 4. Review Tracking Notes
 
-List reviews that still require corrections or further verification.
+* Each review ID identifies a specific review iteration.
+* The iteration number increases when a document undergoes another formally documented review.
+* The latest review does not automatically mean that a document is approved.
+* A document should only be marked Approved when its review findings have been addressed and the relevant acceptance criteria have been met.
+* Detailed findings, recommendations, and evidence should be recorded in the corresponding detailed review report.
+* Review statuses should be updated when a subsequent review confirms the document's current condition.
 
-| Review ID | Responsible Member | Remaining Issues | Required Action   | Status   |
-| --------- | ------------------ | ---------------- | ----------------- | -------- |
-| [QR-XXX]  | [Member Name]      | [Number]         | [Action Required] | [Status] |
+## 5. Register Maintenance
 
-If there are no outstanding issues, write:
+This register should be updated whenever a new detailed review report is created or an existing review status is confirmed through a subsequent review.
 
-**No outstanding issues at the time of this update.**
-
----
-
-## 4. Completed Reviews
-
-Record reviews that have been fully checked and resolved.
-
-| Review ID | Content Author | Topic   | Completion Date | Result   |
-| --------- | -------------- | ------- | --------------- | -------- |
-| [QR-XXX]  | [Member Name]  | [Topic] | [Date]          | Resolved |
-
----
-
-## 5. Review Activity Log
-
-Record each meaningful review or recheck activity.
-
-| Date   | Review ID | Activity       | Result   |
-| ------ | --------- | -------------- | -------- |
-| [Date] | QR-001    | Initial review | [Result] |
-| [Date] | QR-001    | Recheck 1      | [Result] |
-| [Date] | QR-002    | Initial review | [Result] |
-
----
-
-## 6. Review Status Definitions
-
-| Status           | Meaning                                                    |
-| ---------------- | ---------------------------------------------------------- |
-| Not Started      | The material has not been reviewed yet.                    |
-| In Review        | The Quality Lead is currently checking the material.       |
-| Changes Required | Issues have been identified and corrections are required.  |
-| Pending Recheck  | The author has submitted revisions that need verification. |
-| Resolved         | The reviewed issues have been addressed and verified.      |
-
----
-
-## 7. General Quality Notes
-
-**Common Issues Identified:**
-[Summarize recurring problems across reviewed materials.]
-
-**Recommendations for the Team:**
-[Provide suggestions for improving overall content quality.]
-
-**Remaining Quality Assurance Tasks:**
-[List reviews or verification tasks that still need to be completed.]
-
----
-
-## 8. References
-
-Detailed review reports are stored in:
-
-`reviews/detailed-reviews/`
-
-Each report contains the review findings, recommended revisions, recheck history, and supporting evidence.
-
+The register is an index of review records, not a replacement for the detailed reports.
