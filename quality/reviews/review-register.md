@@ -38,6 +38,7 @@ This register provides an overview of the quality reviews conducted for the *Int
 |  28 | QR-009-I03 | Module Outline                        | Fifth Review     | Minor Revisions Recommended |
 |  29 | QR-004-I01 | Chapter 4                             | Initial Review   | Minor Revisions Recommended |
 |  30 | QR-004-I02 | Chapter 4                             | Second Review    | Pass                        |
+|  31 | QR-006-I02 | Master Task List                      | Second Review    | Minor Revisions Recommended |
 
 
 ## 3. Review File Locations
