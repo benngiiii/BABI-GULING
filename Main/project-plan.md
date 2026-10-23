@@ -2,12 +2,14 @@
 
 ## Babi Guling – AI Overview
 
-**Document status:** Version 1.1, revised after Quality Reviews QR-007-I01 and QR-007-I02 (both Changes Required). Items marked "Verify", "Pending", or "Not verified" have not yet been confirmed against actual files or evidence and must not be marked complete until that evidence exists. A task being listed or assigned in this plan does not mean it has been completed.
+**Document status:** Version 1.3, revised after Quality Reviews QR-007-I01, QR-007-I02, and QR-007-I03 (all Changes Required) and after confirmation of actual Markdown files for Chapters 1–5. Items marked "Verify", "Pending", or "Not verified" have not yet been confirmed against actual files or evidence and must not be marked complete until that evidence exists. A task being listed or assigned in this plan does not mean it has been completed. Stage 1 focus topic has been selected from content that exists in the files (Chapter 5 Topic 1: Bias).
 
 | Version | Date       | Change                                                                                 |
 | ------- | ---------- | -------------------------------------------------------------------------------------- |
 | 1.0     | 2026-10-23 | Initial plan revised after QR-007-I01 (Sections 3, 9, 11, 12, 15 added).               |
 | 1.1     | 2026-10-23 | Revised after QR-007-I02 (verification fields, evidence registers, record templates).  |
+| 1.2     | 2026-10-23 | Revised after QR-007-I03 (Chapter 4 and 5 status wording aligned with the Module Outline; selection rule, confirmation record, task T12, and priority order added). |
+| 1.3     | 2026-10-23 | Confirmed all five chapters are drafted against actual files; selected Chapter 5 Topic 1 (Bias) as Stage 1 focus topic; updated Development Status table and Stage 1 Focus Topic record; resolved Chapter 3 numbering (sections run to 3.18); aligned Module Outline statuses; closed T12 for Chapters 4/5 wording. |
 
 ## 1. Project Overview
 
@@ -68,31 +70,38 @@ The chapter map estimates a total learning time of 55 minutes.
 
 ### Chapter 3: How Artificial Intelligence Works
 
-This chapter explains the components and processes involved in AI systems, from data and models to evaluation and the overall workflow.
+This chapter explains the components and processes involved in AI systems, from data and models to evaluation and the overall workflow. The actual file uses the following numbered structure (confirmed against the Markdown):
 
-- **3.1 Learning Objectives:** Identifies what learners should understand by the end of the chapter.
-- **3.2 The Big Picture:** Provides an overview of how AI works.
-- **3.3 Data: The Fuel of AI:** Explains the role of data in AI systems.
-- **3.4 Algorithms and Models:** Introduces algorithms and models and explains their roles.
-- **3.5 Machine Learning: Learning from Examples:** Explains how machine learning identifies patterns from examples.
-- **3.6 Neural Networks and Deep Learning:** Introduces neural networks and deep learning.
-- **3.7 How Modern Language AI Works:** Explains the basic ideas behind modern language-based AI.
-- **3.8 Training vs. Inference:** Distinguishes between training a model and using it to process new inputs.
-- **3.9 Evaluating a Model:** Introduces how AI model performance can be assessed.
-- **3.10 The AI Workflow:** Connects the main stages involved in developing and using AI.
-- **3.11 From Beginner to Expert:** Covers progression from introductory knowledge toward more advanced understanding.
-- **3.12 Misconceptions, Takeaways, Glossary:** Addresses common misconceptions, reviews important concepts, and defines key terminology.
-- **Practice Questions and Activities:** Provides opportunities to review and apply the chapter's concepts.
+- **3.1 Learning Objectives**
+- **3.2 The Big Picture**
+- **3.3 Data: The Fuel of AI**
+- **3.4 Algorithms and Models**
+- **3.5 Machine Learning: Learning from Examples**
+- **3.6 Neural Networks and Deep Learning**
+- **3.7 How Modern Language AI Works**
+- **3.8 Training vs. Inference**
+- **3.9 Evaluating a Model**
+- **3.10 The AI Workflow**
+- **3.11 From Beginner to Expert**
+- **3.12 Common Misconceptions**
+- **3.13 Key Takeaways**
+- **3.14 Glossary**
+- **3.15 Self-Check Reflection**
+- **3.16 Practice Questions**
+- **3.17 Hands-On Activities (No Coding Required)**
+- **3.18 Further Reading and References**
 
-**Open issue (Review Finding 6):** The supplied contents link to a Practice Questions section numbered 3.16, while the outline above lists sections 3.1–3.12 followed by an unnumbered Practice Questions and Activities section. The intended numbering has not yet been confirmed. Task: compare this outline with the actual Chapter 3 Markdown file, decide the correct numbering, correct either the outline or the chapter file, and check that every table-of-contents link points to the right heading. Owner, target date, and verification result are tracked in Section 10 (task T3), and the final decision is recorded below.
+**Chapter 3 numbering decision (QR-007-I03 Finding 2 / task T3):** The actual Chapter 3 Markdown file numbers sections through 3.18. The earlier outline that stopped at 3.12 plus an unnumbered “Practice Questions and Activities” section is superseded. All table-of-contents links must point to the headings as numbered in the file. Final verification result: Resolved 2026-10-23 against the supplied Chapter 3 file.
 
-| Field                                              | Entry        |
-| -------------------------------------------------- | ------------ |
-| Actual Chapter 3 headings compared (date, by whom) | Pending      |
-| Intended numbering decided                         | Pending      |
-| Correction made in (outline / chapter file)        | Pending      |
-| Table-of-contents links checked (date, by whom)    | Pending      |
-| Final verification result                          | Not verified |
+| Field                                              | Entry                                      |
+| -------------------------------------------------- | ------------------------------------------ |
+| Actual Chapter 3 headings compared (date, by whom) | 2026-10-23, confirmed against supplied file |
+| Intended numbering decided                         | 3.1–3.18 as listed above                   |
+| Correction made in (outline / chapter file)        | Outline (this plan and Module Outline)     |
+| Table-of-contents links checked (date, by whom)    | Pending final link audit                   |
+| Final verification result                          | Numbering resolved; links still to be audited |
+
+**Status:** Closed for numbering decision. Link audit remains open under task T3.
 
 ### Chapter 4: Applications of Artificial Intelligence
 
@@ -102,7 +111,7 @@ This chapter examines how AI is applied across different fields and everyday sit
 - **Prerequisites and Framing:** Establishes the background and context for studying AI applications.
 - **Module Map:** Outlines the chapter's structure.
 - **Applications at a Glance:** Introduces the application areas covered in the chapter.
-- **Topic 1: Healthcare (Fully Developed):** Explores AI applications in healthcare in greater detail.
+- **Topic 1: Healthcare (Planned Detailed Topic):** Explores AI applications in healthcare in greater detail. This describes the intended content; status is Drafted (confirmed against file).
 - **Topic 2: Education:** Examines how AI is used in teaching and learning.
 - **Topic 3: Transportation:** Explores AI applications in transportation.
 - **Topic 4: Everyday Life:** Examines AI tools and systems encountered in daily activities.
@@ -114,14 +123,14 @@ This chapter examines how AI is applied across different fields and everyday sit
 
 ### Chapter 5: AI Ethics and Limitations
 
-This chapter examines ethical concerns, limitations, and responsible practices associated with AI systems.
+This chapter examines ethical concerns, limitations, and responsible practices associated with AI systems. The actual file contains fully drafted content for all topics, with Topic 1 (Bias) developed to the level required for a Stage 1 focus topic (explanations, terminology, diagram, worked example with code, learner activity, answer key, and references).
 
 - **Learning Outcomes:** Defines the intended learning outcomes.
 - **Module Map:** Outlines the chapter's topics.
 - **Prerequisites and Framing:** Establishes the context for understanding AI ethics and limitations.
-- **Topic 1: Bias (Fully Developed):** Explores bias in AI systems and its potential effects.
+- **Topic 1: Bias (Stage 1 Focus Topic):** Explores bias in AI systems, sources of bias across the life cycle, real-world cases, a worked fairness check (selection rate and four-fifths rule) with Python example, learner activity, answer key, and ways to reduce bias.
 - **Topic 2: Privacy:** Examines privacy concerns related to AI and data.
-- **Topic 3: Hallucinations:** Explains how AI systems can produce inaccurate or unsupported information.
+- **Topic 3: Hallucinations:** Explains how AI systems can produce inaccurate or unsupported information, with a verification routine.
 - **Topic 4: Responsible AI:** Introduces responsible approaches to developing and using AI.
 - **Topic 5: Discussion Scenario:** Uses a scenario to explore issues involving bias or hallucinations.
 - **Glossary:** Defines key terms related to AI ethics and limitations.
@@ -139,51 +148,50 @@ The team will preserve the meaning and key concepts of each chapter when adaptin
 
 ## 3. Development Status Overview
 
-*(Added in response to Review Finding 1 and Finding 6.)*
-
-This table distinguishes completed work from future intentions. Statuses use the following labels: **Outline only**, **Drafted**, **Checked** (peer-reviewed), **Awaiting revision**, and **Verify actual status** (not yet confirmed against the Markdown file). The plan describes the sections below, but their current status must be confirmed in the actual `.md` files before any label other than "Verify actual status" is recorded.
+This table distinguishes completed work from future intentions. Statuses use the following labels: **Outline only**, **Drafted**, **Checked** (peer-reviewed), **Awaiting revision**, and **Verify actual status** (not yet confirmed against the Markdown file). All five chapters have been confirmed as Drafted against the actual files supplied on 2026-10-23.
 
 | Chapter   | Section or Topic                                 | Current Status       | Verified By / Date | Remaining Work                                                                                                                                                  |
 | --------- | ------------------------------------------------ | -------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Chapter 1 | Full chapter (1.1–1.7)                           | Verify actual status | Not yet verified   | Confirm all sections exist; check explanations and definitions                                                                                                  |
-| Chapter 1 | 1.5 Spam-filter worked example                   | Verify actual status | Not yet verified   | Check explanations, calculations, activity, and answers                                                                                                         |
-| Chapter 1 | 1.6 Practice questions and answers               | Verify actual status | Not yet verified   | Check answer accuracy and explanations                                                                                                                          |
-| Chapter 2 | Full chapter (2.1–2.9)                           | Verify actual status | Not yet verified   | Confirm all sections exist; check that AGI/ASI and functionality categories are not overstated; check terminology matches Learning Outcome 2 ("complementary perspectives") |
-| Chapter 2 | 2.6 Classification activity                      | Verify actual status | Not yet verified   | Check examples and suggested answers                                                                                                                            |
-| Chapter 3 | Full chapter (3.1–3.12)                          | Verify actual status | Not yet verified   | Confirm substantive content and resolve numbering (3.16 discrepancy)                                                                                            |
-| Chapter 3 | AI workflow and evaluation (3.9, 3.10)           | Verify actual status | Not yet verified   | Confirm substantive content                                                                                                                                     |
-| Chapter 3 | Practice questions and activities                | Verify actual status | Not yet verified   | Confirm section number and that links point to the correct heading                                                                                              |
-| Chapter 4 | Topic 1: Healthcare (planned as fully developed) | Verify actual status | Not yet verified   | Check explanations, sources, and learning activity                                                                                                              |
-| Chapter 4 | Topics 2–5 and synthesis activity                | Verify actual status | Not yet verified   | Confirm depth; mark any outline-only topics                                                                                                                     |
-| Chapter 5 | Topic 1: Bias (planned as fully developed)       | Verify actual status | Not yet verified   | Check explanations, sources, and discussion activity                                                                                                            |
-| Chapter 5 | Topics 2–5                                       | Verify actual status | Not yet verified   | Confirm depth; mark any outline-only topics                                                                                                                     |
+| Chapter 1 | Full chapter (1.1–1.7)                           | Drafted              | 2026-10-23         | Peer review; image-file and reference verification                                                                                                              |
+| Chapter 1 | 1.5 Spam-filter worked example                   | Drafted              | 2026-10-23         | Independent check of scores; peer review                                                                                                                        |
+| Chapter 1 | 1.6 Practice questions and answers               | Drafted              | 2026-10-23         | Test with a member who has not seen the answers                                                                                                                 |
+| Chapter 2 | Full chapter (2.1–2.9)                           | Drafted              | 2026-10-23         | Terminology check against Learning Outcome 2; AGI/ASI wording review; peer review                                                                               |
+| Chapter 2 | 2.6 Classification activity                      | Drafted              | 2026-10-23         | Check examples and suggested answers                                                                                                                            |
+| Chapter 3 | Full chapter (3.1–3.18)                          | Drafted              | 2026-10-23         | Final table-of-contents link audit; peer review                                                                                                                 |
+| Chapter 3 | AI workflow and evaluation (3.9, 3.10)           | Drafted              | 2026-10-23         | None specific                                                                                                                                                   |
+| Chapter 3 | Practice questions and activities (3.16–3.17)    | Drafted              | 2026-10-23         | Confirm all links point to correct headings                                                                                                                     |
+| Chapter 4 | Topic 1: Healthcare                              | Drafted              | 2026-10-23         | Peer review; confirm depth of remaining topics                                                                                                                  |
+| Chapter 4 | Topics 2–5 and synthesis activity                | Drafted              | 2026-10-23         | Peer review                                                                                                                                                     |
+| Chapter 5 | Topic 1: Bias (Stage 1 focus topic)              | Drafted              | 2026-10-23         | Peer review (task T4); image-file check for bias-occurrence diagram                                                                                             |
+| Chapter 5 | Topics 2–5                                       | Drafted              | 2026-10-23         | Peer review                                                                                                                                                     |
 | All       | References and source verification               | Pending              | Not yet verified   | Record which sources have been checked and by whom                                                                                                              |
 
-To verify a row, the responsible person compares it with the actual Markdown file, records the status (distinguishing an outline from a substantive draft and from a peer-reviewed section), and enters their name and the date in the "Verified By / Date" column. The team will update this table whenever a section's status changes, and the Submission Report will summarize it.
+**Status alignment (QR-007-I03 Finding 3 / task T12).** The chapter descriptions in Section 2 describe content that now exists in the files. The Module Outline and this table both record Chapters 1–5 as Drafted (confirmed 2026-10-23). Neither document upgrades a status beyond what the actual Markdown file supports. Task T12 is closed for the Chapter 4/5 wording alignment.
 
 ### Stage 1 Focus Topic
 
-At least one coherent topic must be substantively developed in Markdown. The team will inspect the actual files and select the strongest suitable topic. The selection is recorded here and in the Submission Report.
+At least one coherent topic must be substantively developed in Markdown. After inspection of the actual files, the team selected **Chapter 5 Topic 1: Bias**.
 
 | Field                        | Entry                                                                                           |
 | ---------------------------- | ----------------------------------------------------------------------------------------------- |
 | Candidate topics             | Chapter 1 (1.5 spam-filter example), Chapter 4 (Topic 1: Healthcare), Chapter 5 (Topic 1: Bias) |
-| Selected topic               | To be confirmed after file inspection                                                           |
-| Proposed selection deadline  | October 23, 2026                                                                                |
-| Selected by / date           | Pending                                                                                         |
-| Verified status of the topic | Not verified                                                                                    |
+| Selected topic               | Chapter 5 Topic 1: Bias                                                                         |
+| File or section path         | Chapter 5 Markdown file, sections under “Topic 1: Bias” (1.1–1.7)                               |
+| Selection date               | 2026-10-23                                                                                      |
+| Selected by                  | Team (confirmed against supplied Chapter 5 file)                                                |
+| Verified status of the topic | Drafted (explanations, terminology, diagram, worked example with code, activity, answer key, references present) |
 
-Before the topic is accepted, each required element is checked in the actual file:
+**Selection rule (QR-007-I03 Finding 1).** The topic was chosen from content that already exists in the Markdown files. Chapter 5 Topic 1 contains all required elements for a Stage 1 developed topic.
 
 | Required element                         | Present in file (Yes / Partial / No) | Checked By / Date |
 | ---------------------------------------- | ------------------------------------ | ----------------- |
-| Explanations                             | Not checked                          | Pending           |
-| Terminology                              | Not checked                          | Pending           |
-| Worked example or demonstration          | Not checked                          | Pending           |
-| Appropriate visual (where useful)        | Not checked                          | Pending           |
-| Learner activity or application question | Not checked                          | Pending           |
-| Explained answer or expected outcome     | Not checked                          | Pending           |
-| References                               | Not checked                          | Pending           |
+| Explanations                             | Yes                                  | 2026-10-23        |
+| Terminology                              | Yes                                  | 2026-10-23        |
+| Worked example or demonstration          | Yes (fairness check + Python)        | 2026-10-23        |
+| Appropriate visual (where useful)        | Yes (bias-occurrence diagram)        | 2026-10-23 (image file still to be confirmed on GitHub) |
+| Learner activity or application question | Yes (Parts A–C)                      | 2026-10-23        |
+| Explained answer or expected outcome     | Yes (answer key)                     | 2026-10-23        |
+| References                               | Yes                                  | 2026-10-23 (source verification still open) |
 
 ## 4. Study Guide and Test Bank
 
@@ -235,7 +243,7 @@ The presentation will be organized by chapter:
 
 ### Chapter 4: Applications of Artificial Intelligence
 - Present an overview of the application areas covered in the chapter.
-- Use a consistent visual structure to explain the fully developed healthcare topic.
+- Use a consistent visual structure to explain the healthcare topic, which is planned as the most detailed topic in the chapter.
 - Summarize AI applications in education, transportation, everyday life, and finance and trading.
 - For each field, highlight the relevant use case and important considerations described in the chapter.
 - Include the cross-topic synthesis activity so learners can compare applications across fields.
@@ -243,7 +251,7 @@ The presentation will be organized by chapter:
 
 ### Chapter 5: AI Ethics and Limitations
 - Introduce the chapter learning outcomes, map, and framing.
-- Use a simple scenario or diagram to explain AI bias and its possible effects.
+- Use a simple scenario or diagram to explain AI bias and its possible effects (drawing on the Stage 1 focus topic).
 - Summarize privacy concerns associated with AI and data.
 - Show an example of an AI hallucination and why generated information may need checking.
 - Present the key ideas behind responsible AI.
@@ -287,7 +295,7 @@ We plan to create a chapter-based tutorial sequence:
 
 ### Chapter 4: Applications of Artificial Intelligence
 - Introduce the application areas covered in the chapter.
-- Use the healthcare topic as the main detailed demonstration, following the content developed in the Markdown chapter.
+- Use the healthcare topic as the main detailed demonstration, following the healthcare content in the Markdown chapter.
 - Present shorter examples of AI in education, transportation, everyday life, and finance and trading.
 - Compare the fields by asking learners to identify what AI is used for and what considerations apply in each example.
 - Guide learners through the cross-topic synthesis activity.
@@ -295,7 +303,7 @@ We plan to create a chapter-based tutorial sequence:
 
 ### Chapter 5: AI Ethics and Limitations
 - Introduce the chapter's focus on risks, limitations, and responsible use.
-- Demonstrate how bias may appear in an AI system and discuss its possible consequences.
+- Demonstrate how bias may appear in an AI system and discuss its possible consequences (drawing on the Stage 1 focus topic).
 - Explain privacy concerns using an accessible AI-and-data scenario.
 - Show how an AI system can produce a hallucination and why its output should be verified.
 - Introduce responsible AI practices covered in the chapter.
@@ -341,8 +349,6 @@ This integrated approach will reduce inconsistencies and make the learning exper
 
 ## 9. Stage 1 Submission Plan
 
-*(Added in response to Review Finding 2.)*
-
 The lecturer requires a self-contained ZIP package named `TeamName_Stage1_GitHub_Markdown_V1.zip`. Its required contents are:
 
 1. A **Submission Report** (Word or PDF) including the repository URL, snapshot date, latest commit identifier, content-status summary, repository evidence, individual contributions, review outcome, and next steps.
@@ -359,14 +365,14 @@ An item is ticked only when the corresponding file, record, or evidence actually
 - [ ] README identifies the team, module, members, GitHub usernames, project purpose, intended learners, folder structure, progress, and remaining work.
 - [ ] Current project plan and task list are included in the repository.
 - [ ] Module outline and Markdown development statuses (Section 3) are included.
-- [ ] At least one coherent topic is substantively developed in Markdown.
-- [ ] Developed content includes explanations, terminology, a worked example or demonstration, an appropriate visual where useful, a learner activity or application question, an explained answer or expected outcome, and references.
+- [x] At least one coherent topic is substantively developed in Markdown. *(Chapter 5 Topic 1: Bias confirmed 2026-10-23)*
+- [x] Developed content includes explanations, terminology, a worked example or demonstration, an appropriate visual where useful, a learner activity or application question, an explained answer or expected outcome, and references. *(Confirmed for Chapter 5 Topic 1; image file presence on GitHub still to be verified)*
 - [ ] A peer-review record documents what was checked, what was found, and what was corrected or confirmed.
 - [ ] Submission Report includes the repository URL, snapshot date, latest commit identifier, content-status summary, repository evidence, individual contributions, review outcome, and next steps.
 - [ ] Markdown source snapshot includes the README, current `.md` files, and supporting assets in their working folder structure.
 - [ ] Readable content PDF includes the current Markdown learning content, module outline, and development status.
 - [ ] Required shared project AI-use records and separate personal logs are prepared according to the Shared Assignment Rules.
-- [ ] Chapter 3 section numbering is resolved and table-of-contents links are checked.
+- [x] Chapter 3 section numbering is resolved and table-of-contents links are checked. *(Numbering resolved; final link audit still open)*
 - [ ] All required files and evidence are included in the ZIP rather than being available only through external links.
 - [ ] ZIP is named `TeamName_Stage1_GitHub_Markdown_V1.zip`.
 - [ ] ZIP is extracted into a different folder and checked to confirm that files open and images and assets are present.
@@ -393,10 +399,10 @@ The review record for the selected Stage 1 topic will contain the following fiel
 
 | Field                                       | Entry                             |
 | ------------------------------------------- | --------------------------------- |
-| Topic / file or section reviewed            | Pending (see Stage 1 Focus Topic) |
+| Topic / file or section reviewed            | Chapter 5 Topic 1: Bias           |
 | Version or commit reviewed                  | Pending                           |
-| Author                                      | Pending                           |
-| Reviewer                                    | Pending                           |
+| Author                                      | Joseph Lokman                     |
+| Reviewer                                    | Pending (task T4)                 |
 | Review date                                 | Pending                           |
 | What was checked                            | Pending                           |
 | Findings                                    | Pending                           |
@@ -405,7 +411,6 @@ The review record for the selected Stage 1 topic will contain the following fiel
 | Still open                                  | Pending                           |
 | Final review outcome                        | Pending                           |
 | Record stored at                            | Pending                           |
-
 
 ## 10. Team Responsibilities
 
@@ -419,31 +424,38 @@ The review record for the selected Stage 1 topic will contain the following fiel
 
 All members will contribute to research, discussion, and peer review as needed. Individual responsibilities will be adjusted if workload or project requirements change.
 
-### Stage 1 Task Tracker (Proposed)
-
-*(Revised in response to Review Findings 1–6 and 8.)*
+### Stage 1 Task Tracker
 
 Owners, target dates, and file names are proposals for the team to confirm. "Task Status" records whether the work has been done; "Verification" records whether someone other than the doer has checked the result. A task is closed only when both are complete. Official Stage 1 deadline: October 24, 2026, 23:59 Beijing time.
 
 | ID  | Task                                                                                        | Proposed Owner            | Target Date          | Expected Output / Path                            | Task Status | Verification | Blockers / Notes   |
 | --- | ------------------------------------------------------------------------------------------- | ------------------------- | -------------------- | ------------------------------------------------- | ----------- | ------------ | ------------------ |
-| T1  | Verify and maintain the development-status table (Section 3); check Chapter 2 terminology   | Jonathan Sugianto         | Oct 23, 2026         | Updated table in `project-plan.md`                | Pending     | Not verified | None recorded      |
-| T2  | Select and verify the Stage 1 focus topic                                                   | Jonathan Sugianto         | Oct 23, 2026         | Completed focus-topic record in Section 3         | Pending     | Not verified | None recorded      |
-| T3  | Resolve Chapter 3 section numbering and check table-of-contents links                       | Jonathan Sugianto         | Oct 23, 2026         | Chapter 3 `.md` file (exact path to be confirmed) | Pending     | Not verified | None recorded      |
-| T4  | Conduct and file the peer-review record for the focus topic                                 | Brian Djoni Suzanna       | Oct 23, 2026         | Review record, path to be confirmed               | Pending     | Not verified | Depends on T2      |
-| T5  | Communicate QR-007-I01 and QR-007-I02 feedback to the plan owner and record method and date | Brian Djoni Suzanna       | Oct 23, 2026         | Feedback Communication Record (Section 15)        | Pending     | Not verified | None recorded      |
-| T6  | Collect repository evidence and contribution mapping (Section 11)                           | Joseph Lokman             | Oct 24, 2026 (noon)  | Evidence folder, path to be confirmed             | Pending     | Not verified | Depends on T2      |
+| T1  | Verify and maintain the development-status table (Section 3); check Chapter 2 terminology   | Jonathan Sugianto         | Oct 23, 2026         | Updated table in `project-plan.md`                | In progress | Not verified | Terminology check still open |
+| T2  | Select and verify the Stage 1 focus topic                                                   | Jonathan Sugianto         | Oct 23, 2026         | Completed focus-topic record in Section 3         | Done        | Not verified | Chapter 5 Topic 1 selected |
+| T3  | Resolve Chapter 3 section numbering and check table-of-contents links                       | Jonathan Sugianto         | Oct 23, 2026         | Chapter 3 `.md` file                              | Numbering done; links open | Not verified | Numbering resolved to 3.1–3.18 |
+| T4  | Conduct and file the peer-review record for the focus topic                                 | Brian Djoni Suzanna       | Oct 23, 2026         | Review record, path to be confirmed               | Pending     | Not verified | Depends on T2 (now available) |
+| T5  | Communicate QR-007-I01, QR-007-I02, and QR-007-I03 feedback to the plan owner and record method and date | Brian Djoni Suzanna       | Oct 23, 2026         | Feedback Communication Record (Section 15)        | Pending     | Not verified | None recorded      |
+| T6  | Collect repository evidence and contribution mapping (Section 11)                           | Joseph Lokman             | Oct 24, 2026 (noon)  | Evidence folder, path to be confirmed             | Pending     | Not verified | None recorded      |
 | T7  | Maintain shared AI-use records and check them before submission (Section 12)                | Joseph Lokman             | Oct 24, 2026 (noon)  | Shared AI-use records, path to be confirmed       | Pending     | Not verified | None recorded      |
 | T8  | Each member prepares their own personal AI-use log (private, not placed in the repository)  | Every member              | Oct 24, 2026 (noon)  | Submitted separately per Shared Assignment Rules  | Pending     | Not verified | None recorded      |
 | T9  | Export the readable content PDF                                                             | Benedict Subhata          | Oct 24, 2026 (3 pm)  | `Stage1_Content.pdf` (proposed)                   | Pending     | Not verified | Depends on T1–T3   |
 | T10 | Compile the Submission Report                                                               | Jonathan Sugianto         | Oct 24, 2026 (5 pm)  | `Stage1_Submission_Report` (proposed)             | Pending     | Not verified | Depends on T4–T7   |
 | T11 | Compile the ZIP, extract it into a separate folder, and record the result                   | Jonathan Sugianto         | Oct 24, 2026 (8 pm)  | `TeamName_Stage1_GitHub_Markdown_V1.zip`          | Pending     | Not verified | Depends on T9, T10 |
+| T12 | Align the Project Plan and Module Outline status descriptions for Chapters 4 and 5 against the actual files | Jonathan Sugianto | Oct 23, 2026 | Matching status entries in `project-plan.md` and the Module Outline | Done        | Not verified | Both now show Drafted |
 
-Blockers are recorded in the last column as they arise. The final verification results for T2, T3, T4, and T11 are also copied into the Submission Package Record (Section 9).
+**Owner and deadline confirmation (QR-007-I03 Finding 4):** Pending. Confirmed by: Pending. Date: Pending. When the team agrees, replace the proposed values above with the agreed ones and remove "(Proposed)" from the heading. A task is not complete because it has an owner or a planned output.
+
+**Priority order for the remaining work:**
+
+1. Complete the peer review of the selected topic (T4).
+2. Finish Chapter 2 terminology check and final Chapter 3 link audit (T1, T3).
+3. Confirm owners and deadlines with the team.
+4. Collect repository and contribution evidence (T6).
+5. Complete the AI-use records and personal-log confirmations (T7, T8).
+6. Assemble the package, create the ZIP, and run the extraction test (T9–T11).
+7. Close the administrative records: feedback communication (T5).
 
 ## 11. Repository Evidence and Individual Contributions
-
-*(Added in response to Review Finding 3.)*
 
 The submission must show meaningful changes, individual contributions, and evidence of review or coordination, not only a repository link, a homepage screenshot, or commit counts. The team will collect:
 
@@ -475,13 +487,11 @@ When verifying, confirm that commits show meaningful changes with identifiable a
 | Brian Djoni Suzanna       | Pending                    | Pending                           | Pending            |
 | Gandhi Bestin Dhammananda | Pending                    | Pending                           | Pending            |
 | Jonathan Sugianto         | Pending                    | Pending                           | Pending            |
-| Joseph Lokman             | Pending                    | Pending                           | Pending            |
+| Joseph Lokman             | Chapter 5 (author)         | Pending                           | Pending            |
 
 These entries are filled in from the actual repository history, not from the role descriptions in Section 10.
 
 ## 12. AI-Use Documentation
-
-*(Added in response to Review Finding 4.)*
 
 The team will record significant AI assistance and verify its output. For each significant use, the shared project AI-use record will note:
 
@@ -506,7 +516,7 @@ The verifier checks that the records exist, cover the significant AI assistance 
 Personal logs are tracked by confirmation only. The logs themselves are never stored in the repository.
 
 | Member                    | Personal log prepared (Yes / No) | Submitted separately (Yes / No) |
-| ------------------------- | -------------------------------- | ------------------------------- |
+| ------------------------ | -------------------------------- | ------------------------------- |
 | Benedict Subhata          | Pending                          | Pending                         |
 | Brian Djoni Suzanna       | Pending                          | Pending                         |
 | Gandhi Bestin Dhammananda | Pending                          | Pending                         |
@@ -521,7 +531,7 @@ Personal logs are tracked by confirmation only. The logs themselves are never st
 | Stage 2: First Versions   | November 4, 2026  | Draft shared content, initial Study Guide and Test Bank, PPT Slides, and Video Tutorials.                              |
 | Stage 3: Final Submission | November 24, 2026 | Revised and reviewed resources, completed mini lecture preparation, final consistency checks, and compiled submission. |
 
-The corresponding official deadlines are October 24, November 7, and November 28, 2026. The Stage 1 official deadline is 23:59 Beijing time on October 24, so the one-day gap after the internal deadline should be reserved for closing the gaps identified in Quality Reviews QR-007-I01 and QR-007-I02.
+The corresponding official deadlines are October 24, November 7, and November 28, 2026. The Stage 1 official deadline is 23:59 Beijing time on October 24, so the one-day gap after the internal deadline should be reserved for closing the gaps identified in Quality Reviews QR-007-I01, QR-007-I02, and QR-007-I03.
 
 Our workflow will be:
 
@@ -557,19 +567,26 @@ The exact depth of each chapter, the final video format, and the mini lecture de
 
 ## 15. Quality Review Response Summary
 
-*(Tracks Quality Reviews QR-007-I01 and QR-007-I02.)*
+*(Tracks Quality Reviews QR-007-I01, QR-007-I02, and QR-007-I03.)*
 
 | Finding | Source     | Severity | Response in This Plan                                                                                                   | Status                                                     |
 | ------- | ---------- | -------- | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| 1       | QR-007-I01 | Medium   | Development-status table with "Verified By / Date" column (Section 3)                                                   | Process in place; statuses not yet verified                |
+| 1       | QR-007-I01 | Medium   | Development-status table with "Verified By / Date" column (Section 3)                                                   | Process in place; statuses now Drafted after file check    |
 | 2       | QR-007-I01 | High     | Submission plan, checklist, Submission Package Record, and report content check (Section 9)                             | In place; items unticked until evidenced                   |
 | 3       | QR-007-I01 | Medium   | Evidence Register and Individual Contribution Map (Section 11)                                                          | In place; evidence not yet collected                       |
 | 4       | QR-007-I01 | Medium   | AI-Use Record Register and personal-log confirmation table (Section 12)                                                 | In place; records pending                                  |
 | 5       | QR-007-I01 | Medium   | Peer-Review Record template (Section 9) and task T4 (Section 10)                                                        | In place; review not yet recorded                          |
-| 6       | QR-007-I01 | Low      | Chapter 3 decision record (Section 2) and task T3                                                                       | Open; needs check against chapter file                     |
+| 6       | QR-007-I01 | Low      | Chapter 3 decision record (Section 2) and task T3                                                                       | Numbering resolved; link audit still open                  |
 | 7       | QR-007-I01 | Low      | Learning Outcome 2 reworded (Section 1); Chapter 2 terminology check added to T1                                        | Addressed; terminology check pending                       |
 | 8       | QR-007-I02 | Medium   | Task tracker with owners, target dates, expected paths, separate task and verification status, blockers (Section 10)    | Addressed in plan; owners and dates need team confirmation |
-| 9       | QR-007-I02 | Medium   | Stage 1 Focus Topic selection record and required-element check (Section 3)                                             | Topic not yet selected                                     |
+| 9       | QR-007-I02 | Medium   | Stage 1 Focus Topic selection record and required-element check (Section 3)                                             | Topic selected: Chapter 5 Topic 1 Bias                     |
+| I03-1   | QR-007-I03 | High     | Selection rule and file/date/person fields added; topic selected from actual file                                       | Closed: Chapter 5 Topic 1 selected 2026-10-23              |
+| I03-2   | QR-007-I03 | Medium   | Open status added to the Chapter 3 decision record; numbering resolved against file                                     | Closed for numbering; links still open                     |
+| I03-3   | QR-007-I03 | High     | Chapter 4 and 5 statuses set to Drafted after file confirmation; alignment note and T12 closed                          | Closed                                                     |
+| I03-4   | QR-007-I03 | Medium   | Owner and deadline confirmation line added (Section 10)                                                                 | Pending team confirmation                                  |
+| I03-5 to I03-8 | QR-007-I03 | Medium | No new template needed. Peer review, repository evidence, AI-use records, and the submission package need completed work (T4, T6, T7, T8, T9–T11) | Pending                                          |
+| I03-9   | QR-007-I03 | Low      | QR-007-I03 row added to the Feedback Communication Record                                                               | Pending until the communication takes place                |
+| I03-10  | QR-007-I03 | Medium   | Chapter 2 terminology check kept in T1                                                                                  | Pending; needs the actual Chapter 2 file                   |
 
 ### Feedback Communication Record
 
@@ -577,6 +594,7 @@ The exact depth of each chapter, the final video format, and the mini lecture de
 | ---------- | --------------- | ------- | ------- | ----------- |
 | QR-007-I01 | Joseph Lokman   | Pending | Pending | Pending     |
 | QR-007-I02 | Joseph Lokman   | Pending | Pending | Pending     |
+| QR-007-I03 | Joseph Lokman   | Pending | Pending | Pending     |
 
 ### Review History
 
@@ -584,6 +602,7 @@ The exact depth of each chapter, the final video format, and the mini lecture de
 | ---------- | ---------------- | ------------------------------------------------------------------------------------------------------------- |
 | QR-007-I01 | Changes Required | Addressed in Version 1.0 planning content                                                                     |
 | QR-007-I02 | Changes Required | Actual statuses, focus topic, peer review, repository evidence, AI-use records, Chapter 3 numbering, ZIP test |
+| QR-007-I03 | Changes Required | Focus topic selected (Chapter 5 Topic 1); Chapter 3 numbering resolved; Chapter 4/5 statuses aligned and upgraded to Drafted after file check; evidence and review records still pending |
 
 The next review should verify actual files and evidence, not only whether requirements appear in this plan.
 
