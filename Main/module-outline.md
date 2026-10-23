@@ -2,7 +2,7 @@
 
 > **Project:** Babi Guling – AI Overview | **Module:** AI Overview
 > **Intended learners:** Beginners with no background in AI or programming. Learners only need basic computer and internet literacy.
-> **Version:** v1.3 (revised in response to [QR-009-I02](../quality/reviews/detailed%20reviews/QR-009-I02.md)) | **Last updated:** 2026-10-23
+> **Version:** v1.3 (revised in response to [QR-009-I01](../quality/reviews/detailed%20reviews/QR-009-I01.md) and [QR-009-I02](../quality/reviews/detailed%20reviews/QR-009-I02.md)) | **Last updated:** 2026-10-23
 
 ## Module Learning Outcomes
 
@@ -43,9 +43,7 @@ The Stage 1 requirement is at least one substantively developed topic in Markdow
 
 **Candidate topics (as listed in the Project Plan):** Chapter 1 (Section 1.5 spam-filter example), Chapter 4 (Topic 1: Healthcare), and Chapter 5 (Topic 1: Bias).
 
-**Selected topic:** **Not yet confirmed.** Chapter 1 (Section 1.5 spam-filter example) is the only candidate that has a completed component check, so it is the natural choice, but the team has not recorded a decision. **[TO CONFIRM by the team: selected topic, confirmed by, date]**
-
-If Chapter 1 is selected, the remaining checks are listed below. If Chapter 4 Topic 1 or Chapter 5 Topic 1 is selected instead, the same component check must be completed for that topic first.
+**Selected topic:** **[TO CONFIRM by the team after inspecting the files]**
 
 Chapter 1 is the only candidate checked against its actual Markdown file so far (version V1.2). The table below checks it against the components a developed topic needs.
 
@@ -63,7 +61,7 @@ Chapter 1 is the only candidate checked against its actual Markdown file so far 
 
 - Verify the references (see Source Verification below).
 - Confirm that the image files exist, the image licenses and photographer credit are correct, and the figures display on GitHub.
-- Record the result of the latest Chapter 1 quality review recheck. **Latest recorded outcome:** QR-001-I01 (2026-10-23) found "Changes Required". Chapter 1 was then revised (V1.1) to address the findings, and the recheck is **pending**. Chapter 1 stays at **Drafted** until the recheck is recorded. **[TO CONFIRM: recheck result, reviewer, date]**
+- Record the result of the latest Chapter 1 quality review recheck: **[TO CONFIRM]**
 
 The same component check still has to be done for Chapter 4 Topic 1 and Chapter 5 Topic 1 if either is chosen.
 
@@ -164,22 +162,10 @@ Chapter authors collect the sources for their chapter. The Quality Lead checks e
 - The Stage 1 developed topic still needs to be confirmed by the team.
 - This outline was compared with Project Plan v1.1 on 2026-10-23. Chapter topics and learning outcomes now follow the Project Plan. These differences between documents still need a team decision:
   - The README and Master Task List still use an older, shorter wording of Learning Outcome 2 (Narrow AI, General AI, Machine Learning, Generative AI).
-  - Chapter 4 includes Finance and Trading, but Learning Outcome 4 lists only healthcare, education, transportation, and everyday life. QR-009-I02 advises that this does not require changing the outcome, because learning outcomes may summarize the major application areas instead of listing every topic. **Decision recorded here: no change to Learning Outcome 4**, unless the team decides otherwise.
-  - The Project Plan uses the label "Awaiting revision", while this outline and the Master Task List use "Needs revision". One term should be used in all documents; the team must choose which. **[TO CONFIRM: chosen label]**
+  - Chapter 4 includes Finance and Trading, but Learning Outcome 4 lists only healthcare, education, transportation, and everyday life.
+  - The Project Plan uses the label "Awaiting revision", while this outline and the Master Task List use "Needs revision".
   - The Chapter 3 section numbering (3.16 or an unnumbered practice section) is not yet resolved.
 - The actual status of Chapters 2 to 5 has not been confirmed against their Markdown files.
-
-### Open actions from QR-009-I02
-
-| # | Action | Related finding | Status |
-|:-:|--------|:---------------:|:------:|
-| 1 | Confirm and record the selected Stage 1 developed topic | Finding 1 | Open |
-| 2 | Complete the reference, image, and quality-review checks for the selected topic | Finding 1 | Open |
-| 3 | Align the wording of Learning Outcome 2 in the README and Master Task List with the Project Plan | Finding 2 | Open |
-| 4 | Choose one status term ("Needs revision" or "Awaiting revision") and use it in all documents | Finding 2 | Open |
-| 5 | Resolve the Chapter 3 practice-section numbering (3.16 or unnumbered) and update the links | Finding 2 | Open |
-| 6 | Record the Chapter 1 recheck result, then update its status and the "Verified by / date" column | Finding 3 | Open |
-| 7 | Replace the remaining [TO CONFIRM] names and dates with confirmed information, not assumptions | All | Open |
 
 ## Revision History
 
@@ -188,4 +174,3 @@ Chapter authors collect the sources for their chapter. The Quality Lead checks e
 | Before 2026-10-23 | v1.0 | Initial version: chapter overview, prerequisites, planned activities, and known gaps | None |
 | 2026-10-23 | v1.1 | Added module identification and learning outcomes, status label definitions with a verification column, the Stage 1 developed topic check, section-level tracking, expanded activity table, source verification table, full author names, and removed extra blank lines | [QR-009-I01](../quality/reviews/detailed%20reviews/QR-009-I01.md) |
 | 2026-10-23 | v1.2 | Compared with Project Plan v1.1: aligned the learning outcomes and chapter topics, filled the section lists for Chapters 2 to 5, updated the Chapter 2 and Chapter 4 activities, and listed the remaining differences between documents | [QR-009-I01](../quality/reviews/detailed%20reviews/QR-009-I01.md) (Finding 7) |
-| 2026-10-23 | v1.3 | Made the Stage 1 topic status clear and listed what is needed to confirm it; recorded the latest Chapter 1 review outcome (QR-001-I01, recheck pending); recorded the decision on Learning Outcome 4 and Finance and Trading; added the status-term decision needed; added an open actions table | [QR-009-I02](../quality/reviews/detailed%20reviews/QR-009-I02.md) (Findings 1 to 3) |
