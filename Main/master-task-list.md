@@ -125,7 +125,7 @@ Content tasks (drafting, review, revision) are scheduled to finish by the intern
 | Prepared by | Jonathan Sugianto (CIO and Content Lead) |
 | Reviewed by | Brian Djoni Suzanna (Quality Lead) — [TO CONFIRM after review] |
 | GitHub repository | https://github.com/benngiiii/BABI-GULING |
-| Submitted branch | [AI-Overview](https://github.com/benngiiii/BABI-GULING/blob/AI-Overview/quality/reviews/detailed%20reviews) |
+| Submitted branch | [AI-Overview](https://github.com/benngiiii/BABI-GULING/blob/AI-Overview) |
 
 ---
 
