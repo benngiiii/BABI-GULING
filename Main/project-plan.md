@@ -2,11 +2,15 @@
 
 ## Babi Guling – AI Overview
 
+**Document status:** Revised after Quality Review QR-007-I01 (Changes Required). Items marked "Verify" or "Pending" have not yet been confirmed against actual files or evidence and must not be marked complete until that evidence exists.
+
 ## 1. Project Overview
 
 The purpose of this project is to introduce Artificial Intelligence (AI) to first-year university students and other beginners with no technical background. We will develop three connected learning resources using shared Markdown content: a Study Guide and Test Bank, PowerPoint Slides, and Video Tutorials. We will also deliver a Live Mini Lecture focusing on one manageable question within the broader topic of AI.
 
 All resources will use consistent explanations, examples, terminology, and references. If an error is found, we will correct the shared Markdown source first and then update every affected resource.
+
+For Stage 1, the immediate priority is not to finish all three learning resources. It is to demonstrate a coherent module outline, at least one well-developed Markdown topic, a documented review outcome, meaningful GitHub development, and a complete self-contained submission package (see Section 9).
 
 ### Intended Learners
 
@@ -17,7 +21,7 @@ Our target learners have basic computer and internet literacy but no prior knowl
 After completing the module, learners should be able to:
 
 1. Explain what AI is and how it differs from traditional programming.
-2. Explain AI classification from four perspectives: capability (ANI, AGI, and ASI), functionality (reactive machines, limited-memory AI, theory-of-mind AI, and self-aware AI), Machine Learning, and Generative AI.
+2. Explain four complementary perspectives for understanding AI systems: capability (ANI, AGI, and ASI), functionality (reactive machines, limited-memory AI, theory-of-mind AI, and self-aware AI), Machine Learning, and Generative AI, and describe how these perspectives differ and can overlap.
 3. Describe the basic AI workflow, including data, algorithms, training, and inference.
 4. Identify applications of AI in healthcare, education, transportation, and everyday life.
 5. Recognize AI limitations and risks, including bias, privacy concerns, and hallucinations.
@@ -75,7 +79,7 @@ This chapter explains the components and processes involved in AI systems, from 
 - **3.12 Misconceptions, Takeaways, Glossary:** Addresses common misconceptions, reviews important concepts, and defines key terminology.
 - **Practice Questions and Activities:** Provides opportunities to review and apply the chapter's concepts.
 
-The supplied contents also link to a Practice Questions section numbered 3.16. The remaining section numbering should be checked against the chapter file before final submission.
+**Open issue (Review Finding 6):** The supplied contents link to a Practice Questions section numbered 3.16, while the outline above lists sections 3.1–3.12 followed by an unnumbered Practice Questions and Activities section. The intended numbering has not yet been confirmed. Task: compare this outline with the actual Chapter 3 Markdown file, decide the correct numbering, correct either the outline or the chapter file, and check that every table-of-contents link points to the right heading. Owner and status are tracked in Section 3.
 
 ### Chapter 4: Applications of Artificial Intelligence
 
@@ -120,7 +124,33 @@ The five Markdown chapters will serve as the foundation for the three main learn
 
 The team will preserve the meaning and key concepts of each chapter when adapting the Markdown content. The format and activities will vary according to each chapter's actual subtopics rather than forcing every chapter into an identical structure.
 
-## 3. Study Guide and Test Bank
+## 3. Development Status Overview
+
+*(Added in response to Review Finding 1 and Finding 6.)*
+
+This table distinguishes completed work from future intentions. Statuses use the following labels: **Outline only**, **Drafted**, **Checked** (peer-reviewed), **Awaiting revision**, and **Verify actual status** (not yet confirmed against the Markdown file). The plan describes the sections below, but their current status must be confirmed in the actual `.md` files before any label other than "Verify actual status" is recorded.
+
+| Chapter   | Section or Topic                          | Current Status                            | Remaining Work                                                                                  |
+| --------- | ----------------------------------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Chapter 1 | Full chapter (1.1–1.7)                    | Verify actual status                      | Confirm all sections exist; check explanations and definitions                                  |
+| Chapter 1 | 1.5 Spam-filter worked example            | Verify actual status                      | Check explanations, calculations, activity, and answers                                         |
+| Chapter 1 | 1.6 Practice questions and answers        | Verify actual status                      | Check answer accuracy and explanations                                                          |
+| Chapter 2 | Full chapter (2.1–2.9)                    | Verify actual status                      | Confirm all sections exist; check that AGI/ASI and functionality categories are not overstated  |
+| Chapter 2 | 2.6 Classification activity               | Verify actual status                      | Check examples and suggested answers                                                            |
+| Chapter 3 | Full chapter (3.1–3.12)                   | Verify actual status                      | Confirm substantive content and resolve numbering (3.16 discrepancy)                            |
+| Chapter 3 | AI workflow and evaluation (3.9, 3.10)    | Verify actual status                      | Confirm substantive content                                                                     |
+| Chapter 3 | Practice questions and activities         | Verify actual status                      | Confirm section number and that links point to the correct heading                              |
+| Chapter 4 | Topic 1: Healthcare (planned as fully developed) | Verify actual status               | Check explanations, sources, and learning activity                                              |
+| Chapter 4 | Topics 2–5 and synthesis activity         | Verify actual status                      | Confirm depth; mark any outline-only topics                                                     |
+| Chapter 5 | Topic 1: Bias (planned as fully developed) | Verify actual status                     | Check explanations, sources, and discussion activity                                            |
+| Chapter 5 | Topics 2–5                                | Verify actual status                      | Confirm depth; mark any outline-only topics                                                     |
+| All       | References and source verification        | Pending                                   | Record which sources have been checked and by whom                                              |
+
+The team will update this table whenever a section's status changes, and the submission report will summarize it.
+
+**Stage 1 focus topic:** At least one coherent topic must be substantively developed in Markdown. The team will confirm which topic (Chapter 1 spam-filter example, Chapter 4 healthcare, or Chapter 5 bias) is submitted as the developed topic once its actual status is verified. It must include explanations, terminology, a worked example or demonstration, an appropriate visual where useful, a learner activity or application question, an explained answer or expected outcome, and references.
+
+## 4. Study Guide and Test Bank
 
 **Purpose:** Help learners study independently, practise applying concepts, and check their understanding.
 
@@ -134,9 +164,9 @@ For example, learners may compare a traditional rule-based spam filter with a ma
 
 We will review the answer key for accuracy and ensure that questions assess the stated learning outcomes. The goal is to help learners identify misunderstandings rather than simply memorize definitions.
 
-## 4. PPT Slides
+## 5. PPT Slides
 
-**Purpose:** Present the content of all five Markdown chapters visually, following the same chapter topics and sequence used in the Study Guide and Test Bank (Part 3). Slides will summarize rather than replace the detailed explanations, activities, and references in the shared Markdown content.
+**Purpose:** Present the content of all five Markdown chapters visually, following the same chapter topics and sequence used in the Study Guide and Test Bank (Part 4). Slides will summarize rather than replace the detailed explanations, activities, and references in the shared Markdown content.
 
 The presentation will be organized by chapter:
 
@@ -187,9 +217,9 @@ The presentation will be organized by chapter:
 
 Slides will use concise text, readable diagrams, consistent visual design, and beginner-friendly examples. The order and subject of each chapter's slides will follow the corresponding Markdown chapter rather than repeating one generic slide template. More detailed explanations, full activities, and answer explanations will remain in the Study Guide and Test Bank.
 
-## 5. Video Tutorials
+## 6. Video Tutorials
 
-**Purpose:** Reinforce the content of the five Markdown chapters through narration, visual demonstrations, and short activities. The tutorial plan will follow the chapter topics in Part 2 and the learning-resource structure described in Part 3, rather than covering only five broad, unrelated themes.
+**Purpose:** Reinforce the content of the five Markdown chapters through narration, visual demonstrations, and short activities. The tutorial plan will follow the chapter topics in Part 2 and the learning-resource structure described in Part 4, rather than covering only five broad, unrelated themes.
 
 We plan to create a chapter-based tutorial sequence:
 
@@ -239,7 +269,7 @@ We plan to create a chapter-based tutorial sequence:
 
 Each tutorial will focus on a manageable set of learning objectives and use narration, diagrams, on-screen examples, or simple demonstrations as appropriate to the chapter. The scripts will be based on the shared Markdown content so that terminology, examples, and explanations remain consistent with the Study Guide and PPT Slides. Where the chapter includes practice questions or activities, the tutorial may use selected items for a brief pause-and-answer moment.
 
-## 6. Live Mini Lecture
+## 7. Live Mini Lecture
 
 **Proposed topic:** How Can AI Learn to Recognize Spam Emails?
 
@@ -258,7 +288,7 @@ This topic is a manageable introduction to AI because email filtering is familia
 
 We will avoid unnecessary mathematics and advanced technical details. The objective is to help beginners understand the basic idea of machine learning rather than build an actual spam-filtering system.
 
-## 7. How the Three Learning Resources Support One Another
+## 8. How the Three Learning Resources Support One Another
 
 The three resources will serve different learning needs while sharing the same content foundation.
 
@@ -274,7 +304,39 @@ The Live Mini Lecture will bring these resources together by using the spam-filt
 
 This integrated approach will reduce inconsistencies and make the learning experience more coherent.
 
-## 8. Team Responsibilities
+## 9. Stage 1 Submission Plan
+
+*(Added in response to Review Finding 2.)*
+
+The lecturer requires a self-contained ZIP package named `TeamName_Stage1_GitHub_Markdown_V1.zip`. Its required contents are:
+
+1. A **Submission Report** (Word or PDF) including the repository URL, snapshot date, latest commit identifier, content-status summary, repository evidence, individual contributions, review outcome, and next steps.
+2. A **Markdown source snapshot** containing the README, current `.md` files, and supporting assets in their working folder structure.
+3. A **readable PDF of the current learning content**, including the Markdown learning content, module outline, and development status.
+
+All required files and evidence must be inside the ZIP, not only available through external links. The official Stage 1 deadline is **October 24, 2026, 23:59 Beijing time**.
+
+### Stage 1 Submission Checklist
+
+An item is ticked only when the corresponding file, record, or evidence actually exists.
+
+- [ ] Team GitHub repository is accessible to the lecturer if needed.
+- [ ] README identifies the team, module, members, GitHub usernames, project purpose, intended learners, folder structure, progress, and remaining work.
+- [ ] Current project plan and task list are included in the repository.
+- [ ] Module outline and Markdown development statuses (Section 3) are included.
+- [ ] At least one coherent topic is substantively developed in Markdown.
+- [ ] Developed content includes explanations, terminology, a worked example or demonstration, an appropriate visual where useful, a learner activity or application question, an explained answer or expected outcome, and references.
+- [ ] A peer-review record documents what was checked, what was found, and what was corrected or confirmed.
+- [ ] Submission Report includes the repository URL, snapshot date, latest commit identifier, content-status summary, repository evidence, individual contributions, review outcome, and next steps.
+- [ ] Markdown source snapshot includes the README, current `.md` files, and supporting assets in their working folder structure.
+- [ ] Readable content PDF includes the current Markdown learning content, module outline, and development status.
+- [ ] Required shared project AI-use records and separate personal logs are prepared according to the Shared Assignment Rules.
+- [ ] Chapter 3 section numbering is resolved and table-of-contents links are checked.
+- [ ] All required files and evidence are included in the ZIP rather than being available only through external links.
+- [ ] ZIP is named `TeamName_Stage1_GitHub_Markdown_V1.zip`.
+- [ ] ZIP is extracted into a different folder and checked to confirm that files open and images and assets are present.
+
+## 10. Team Responsibilities
 
 | Member                    | Role                 | Main Responsibilities                                                                                  |
 | ------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------ |
@@ -286,44 +348,110 @@ This integrated approach will reduce inconsistencies and make the learning exper
 
 All members will contribute to research, discussion, and peer review as needed. Individual responsibilities will be adjusted if workload or project requirements change.
 
-## 9. Initial Timeline and Workflow
+### Stage 1 Task Assignments (Proposed)
+
+*(Added in response to Review Findings 1–6.)*
+
+| Task                                                                                        | Evidence Stored In                       | Status  |
+| ------------------------------------------------------------------------------------------- | ---------------------------------------- | ------- |
+| Verify and maintain the development-status table (Section 3)                                | `project-plan.md`                        | Pending |
+| Resolve Chapter 3 section numbering against the actual chapter file                         | Chapter 3 `.md` file                     | Pending |
+| Collect repository evidence (Section 11)                                                    | Submission Report / evidence folder      | Pending |
+| Maintain shared AI-use records and check them before submission (Section 12)                | AI-use records folder                    | Pending |
+| Write and file the peer-review record for the developed Markdown topic                      | Quality Review Reports folder            | Pending |
+| Communicate review feedback to the plan owner and record method and date                    | Review report, Section 6                 | Pending |
+| Export the readable content PDF                                                             | Submission ZIP                           | Pending |
+| Compile the Submission Report and ZIP, then run the extraction test                         | Submission ZIP                           | Pending |
+| Each member prepares their own personal AI-use log (private, not placed in the repository)  | Submitted separately per Shared Rules    | Pending |
+
+## 11. Repository Evidence and Individual Contributions
+
+*(Added in response to Review Finding 3.)*
+
+The submission must show meaningful changes, individual contributions, and evidence of review or coordination, not only a repository link, a homepage screenshot, or commit counts. The team will collect:
+
+- A repository overview showing the README and main folders.
+- A readable commit history showing authors, dates, and meaningful change descriptions.
+- Selected change views showing actual additions, corrections, or improvements.
+- A contribution summary mapping each member to the relevant files or sections.
+- A representative example of content review, task coordination, or problem resolution.
+
+For each item, the team records where it is stored and who collects it (see the assignment table in Section 10). We will not create artificial commits merely to increase activity.
+
+## 12. AI-Use Documentation
+
+*(Added in response to Review Finding 4.)*
+
+The team will record significant AI assistance and verify its output. For each significant use, the shared project AI-use record will note:
+
+- The date and AI tool used.
+- The relevant prompt and output.
+- How the output was checked and what judgment the team member made.
+- The resulting change, decision, or learning.
+
+The Stage 1 Submission Report will briefly identify significant AI assistance affecting the submitted work and point to the relevant log entries. The actual interaction and verification evidence must be included in the submitted logs, not only accessible through conversation links.
+
+Shared project AI-use records are distinct from individual personal logs. Personal logs remain private and must not be placed in a publicly accessible GitHub repository; they are prepared and submitted separately according to the Shared Assignment Rules.
+
+## 13. Initial Timeline and Workflow
 
 | Stage                     | Internal Deadline | Main Deliverables                                                                                                      |
 | ------------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Stage 1: Foundation       | October 23, 2026  | Project plan, chapter outlines, sample Markdown section, initial source collection.                                    |
+| Stage 1: Foundation       | October 23, 2026  | Project plan, chapter outlines, sample Markdown section, initial source collection, and the Stage 1 submission package (Section 9). |
 | Stage 2: First Versions   | November 4, 2026  | Draft shared content, initial Study Guide and Test Bank, PPT Slides, and Video Tutorials.                              |
 | Stage 3: Final Submission | November 24, 2026 | Revised and reviewed resources, completed mini lecture preparation, final consistency checks, and compiled submission. |
 
-The corresponding official deadlines are October 24, November 7, and November 28, 2026.
+The corresponding official deadlines are October 24, November 7, and November 28, 2026. The Stage 1 official deadline is 23:59 Beijing time on October 24, so the one-day gap after the internal deadline should be reserved for closing the gaps identified in Quality Review QR-007-I01.
 
 Our workflow will be:
 
 1. Research and outline the content.
 2. Draft and self-check the shared Markdown files.
-3. Review content with another team member.
-4. Produce or update the three learning resources.
-5. Rehearse the mini lecture and collect feedback.
-6. Correct the Markdown source and update affected resources.
-7. Perform final quality checks and compile the submission.
+3. Review content with another team member and write a review record.
+4. Record significant AI assistance and how its output was verified.
+5. Produce or update the three learning resources.
+6. Rehearse the mini lecture and collect feedback.
+7. Correct the Markdown source and update affected resources.
+8. Collect repository and contribution evidence.
+9. Perform final quality checks, run the Stage 1 checklist, and compile the submission.
 
 We will use one GitHub repository with separate folders for each project component. Members will work on individual branches, submit pull requests for review, and use GitHub Issues to track tasks and progress.
 
-## 10. Initial Risks and Quality Assurance
+## 14. Initial Risks and Quality Assurance
 
-Potential challenges include inaccurate information, inconsistent explanations between resources, uneven workloads, and delays in video production.
+Potential challenges include inaccurate information, inconsistent explanations between resources, uneven workloads, delays in video production, and an incomplete or poorly evidenced Stage 1 submission package.
 
 To address these risks, we will:
 
-- Verify important claims using reliable sources.
-- Review each other's work before merging changes.
+- Verify important claims using reliable sources, and record which sources have been checked.
+- Review each other's work before merging changes, and keep a written review record for the developed Markdown topic.
 - Keep the Markdown content as the single source of truth.
 - Test the learning materials with beginner-level questions and examples.
 - Track tasks and deadlines through regular check-ins.
+- Keep AI-use records and verify AI output before using it.
+- Follow the Stage 1 Submission Checklist and test the ZIP by extracting it in a different folder.
+- Do not mark any item complete until the corresponding file, record, or evidence exists.
 - Revise the resources based on feedback before submission.
 
 The exact depth of each chapter, the final video format, and the mini lecture delivery details may be revised after confirming the lecturer's expectations.
 
-## 11. Expected Outcome
+## 15. Quality Review Response Summary
+
+*(Added to track Quality Review QR-007-I01.)*
+
+| Finding | Severity | Response in This Plan                                                                 | Status                                  |
+| ------- | -------- | ------------------------------------------------------------------------------------- | --------------------------------------- |
+| 1       | Medium   | Development-status table added (Section 3)                                            | Table added; statuses need verification |
+| 2       | High     | Stage 1 Submission Plan and checklist added (Section 9)                               | Added; items unticked until evidenced   |
+| 3       | Medium   | Repository evidence and contribution tasks added (Section 11)                         | Added; evidence not yet collected       |
+| 4       | Medium   | AI-use documentation section added (Section 12)                                       | Added; records pending                  |
+| 5       | Medium   | Peer-review record made a required task (Sections 9, 10)                              | Added; record pending                   |
+| 6       | Low      | Open issue and task recorded for Chapter 3 numbering (Section 2, 3)                   | Open; needs check against chapter file  |
+| 7       | Low      | Learning Outcome 2 reworded (Section 1)                                               | Done                                    |
+
+A follow-up review should verify that the development-status table, submission checklist, repository-evidence tasks, AI-use documentation, peer-review record, and Chapter 3 numbering have been addressed. Feedback communication to the plan owner is still pending and should be recorded with method and date.
+
+## 16. Expected Outcome
 
 By the final deadline, we aim to deliver a consistent set of beginner-friendly AI learning materials consisting of shared Markdown content, a Study Guide and Test Bank, PowerPoint Slides, Video Tutorials, and a Live Mini Lecture.
 
