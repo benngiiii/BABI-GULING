@@ -8,7 +8,7 @@ This register provides an overview of the quality reviews conducted for the *Int
 
 | No. | Review ID  | Document / Chapter                    | Review Iteration | Latest Known Status         |
 | --: | ---------- | ------------------------------------- | ---------------- | --------------------------- |
-|   1 | QR-001-I01 | Chapter 1                             | Initial Review   | Pass                        |
+|   1 | QR-001-I01 | Chapter 1                             | Initial Review   | Changes Required            |
 |   2 | QR-002-I01 | Chapter 2                             | Initial Review   | Changes Required            |
 |   3 | QR-002-I02 | Chapter 2                             | Second Review    | Changes Required            |
 |   4 | QR-003-I01 | Chapter 3                             | Initial Review   | Changes Required            |
@@ -22,6 +22,17 @@ This register provides an overview of the quality reviews conducted for the *Int
 |  12 | QR-007-I02 | Project Plan                          | Second Review    | Changes Required            |
 |  13 | QR-008-I01 | README                                | Initial Review   | Changes Required            |
 |  14 | QR-009-I01 | Module Outline and Development Status | Initial Review   | Changes Required            |
+|  15 | QR-001-I02 | Chapter 1                             | Second Review    | Changes Required            |
+|  16 | QR-001-I03 | Chapter 1                             | Third Review     | Changes Required            |
+|  17 | QR-001-I04 | Chapter 1                             | Fourth           | Pass                        |
+|  18 | QR-002-I02 | Chapter 2                             | third  Review    | Changes Required            |
+|  19 | QR-003-I04 | Chapter 3                             | fourth Review    | Changes Required            |
+|  20 | QR-007-I03 | Project Plan                          | Initial Review   | Changes Required            |
+|  21 | QR-008-I01 | Readme                                | Initial Review   | Changes Required            |
+|  22 | QR-008-I02 | Readme                                | Initial Review   | Minor Revisions Recommended |
+|  23 | QR-009-I01 | Readme                                | Initial Review   | Changes Required           |
+
+
 
 ## 3. Review File Locations
 
