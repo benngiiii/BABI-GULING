@@ -1,7 +1,7 @@
-]# Chapter 3: How Artificial Intelligence Works
+# Chapter 3: How Artificial Intelligence Works
 
 > **Module:** AI Overview | **Level:** Beginner → Intermediate | **Estimated study time:** 90–120 minutes
-> **Status:** Draft (Stage 1), revised after quality review QR-003-I02
+> **Status:** Draft (Stage 1)
 
 **Contents**
 
@@ -182,13 +182,18 @@ A bank might use a simple tree to pre-screen loan applications:
 
 ```mermaid
 flowchart TD
-    A{Income above threshold?}
-    A -- Yes --> B{Existing debt low?}
-    A -- No --> C{Has a guarantor?}
-    B -- Yes --> D[Approve]
-    B -- No --> E[Refer to human officer]
+    A{"Income above threshold?"}
+    B{"Existing debt low?"}
+    C{"Has a guarantor?"}
+    D["Approve"]
+    E["Refer to human officer"]
+    F["Decline"]
+    A -- Yes --> B
+    A -- No --> C
+    B -- Yes --> D
+    B -- No --> E
     C -- Yes --> E
-    C -- No --> F[Decline]
+    C -- No --> F
 ```
 
 *Figure 3.3: A decision tree. In real ML, the algorithm learns which questions to ask and which thresholds to use from the data.*
@@ -382,11 +387,13 @@ Temperature changes *how the model chooses* among its options. It does not make 
 
 ```mermaid
 flowchart LR
-    A[Vast text, code,<br/>and other data] --> B[Pre-training<br/>predict the next token]
-    B --> C[Base model<br/>knows language and facts]
-    C --> D[Fine-tuning<br/>learn from curated<br/>example conversations]
-    D --> E[Preference tuning<br/>feedback on which answers<br/>are better, e.g. RLHF]
-    E --> F[Assistant model<br/>helpful, safer, follows instructions]
+    A["Vast text, code,<br/>and other data"]
+    B["Pre-training:<br/>predict the next token"]
+    C["Base model:<br/>knows language and facts"]
+    D["Fine-tuning:<br/>learn from curated<br/>example conversations"]
+    E["Preference tuning:<br/>feedback on which answers<br/>are better, e.g. RLHF"]
+    F["Assistant model:<br/>helpful, safer,<br/>follows instructions"]
+    A --> B --> C --> D --> E --> F
 ```
 
 *Figure 3.9: The usual stages of building an AI assistant.*
@@ -433,6 +440,7 @@ These are the two phases of an AI model's life.
 - When you chat with an AI, **it is not learning from you in real time.** Its core parameters are frozen. It only uses what is inside the current conversation (its **context window**).
 - Whether a company later uses conversations to improve future models is a separate policy decision. Check the privacy settings of any tool you use.
 - Some inference settings are in your control, such as **temperature**, and the *quality of your prompt*.
+
 ### Two ways to improve results
 
 There is a simple test for any improvement technique: **did the model's weights change?**
@@ -450,6 +458,18 @@ From simplest to most involved:
 | **Retrieval-Augmented Generation (RAG)** | The system searches documents or the web, then hands the relevant passages to the model [[8]](#ref-8) | Up-to-date or private information; reducing made-up answers |
 | **Tools and agents** | The model calls calculators, code, search, or other software | Accurate maths, data analysis, multi-step tasks |
 
+```mermaid
+flowchart LR
+    Q["Your question"]
+    R["Search company documents<br/>or the web"]
+    P["Relevant passages<br/>added to the prompt"]
+    M["Language model"]
+    A["Answer grounded<br/>in the retrieved text"]
+    Q --> R --> P --> M --> A
+```
+
+*Figure 3.11: Retrieval-Augmented Generation (RAG), an inference-time technique. The model is given facts to work from instead of relying only on memory.*
+
 #### B. Training-based improvements (the model changes)
 
 | Technique | What it is | Best for |
@@ -457,17 +477,9 @@ From simplest to most involved:
 | **Fine-tuning** | Further training of an existing model on your own examples (changes the weights) | A consistent style or specialised behaviour at scale |
 | **Training from scratch** | Building a new model from raw data | Mostly large companies and research labs |
 
+**At a glance:** inference-time methods *use* the model you already have, so the weights stay frozen. Training-based methods *change or create* a model, so the weights change.
+
 **Rule of thumb:** work down the first table before touching the second. Fine-tuning and training cost far more time, data, and money, and a fine-tuned model must be updated again whenever the knowledge it was taught goes out of date.
-
-```mermaid
-flowchart LR
-    Q[Your question] --> R[Search company documents<br/>or the web]
-    R --> P[Relevant passages<br/>added to the prompt]
-    P --> M[Language model]
-    M --> A[Answer grounded<br/>in the retrieved text]
-```
-
-*Figure 3.11: Retrieval-Augmented Generation (RAG), an inference-time technique. The model is given facts to work from instead of relying only on memory.*
 
 ---
 
@@ -517,25 +529,26 @@ The diagram below shows the life cycle of a typical AI system.
 
 ```mermaid
 flowchart TD
-    A[1. Define the problem] --> B[2. Collect data]
-    B --> C[3. Clean and prepare data<br/>select features, split into train / validation / test]
-    C --> D
-
-    subgraph TRAINING [TRAINING PHASE]
-        D[4. Choose algorithm] --> E[5. Train model<br/>guess → measure loss → adjust]
-        E --> F{6. Evaluate on<br/>validation / test data}
-        F -- Not good enough --> G[Improve data, tune settings,<br/>or change algorithm]
-        G --> D
+    A["1. Define the problem"]
+    B["2. Collect data"]
+    C["3. Clean and prepare data:<br/>select features, split into<br/>train / validation / test"]
+    subgraph TRAINING ["TRAINING PHASE"]
+        D["4. Choose algorithm"]
+        E["5. Train model:<br/>guess, measure loss, adjust"]
+        F{"6. Evaluate on<br/>validation / test data"}
+        G["Improve data, tune settings,<br/>or change algorithm"]
     end
-
-    F -- Good enough --> H[7. Deploy model]
-
-    subgraph INFERENCE [INFERENCE PHASE]
-        H --> I[8. New input arrives<br/>prompt, image, data]
-        I --> J[9. Model produces output<br/>prediction or generated content]
+    subgraph INFERENCE ["INFERENCE PHASE"]
+        H["7. Deploy model"]
+        I["8. New input arrives:<br/>prompt, image, data"]
+        J["9. Model produces output:<br/>prediction or generated content"]
     end
-
-    J --> K[10. Monitor, collect feedback,<br/>update with new data]
+    K["10. Monitor, collect feedback,<br/>update with new data"]
+    A --> B --> C --> D --> E --> F
+    F -- "Not good enough" --> G
+    G --> D
+    F -- "Good enough" --> H
+    H --> I --> J --> K
     K -.-> B
 ```
 
@@ -950,6 +963,7 @@ Visit a free, browser-based interactive tool that lets you train a small image o
 
 - **Andrew Ng, "AI for Everyone" (Coursera):** a non-technical overview of AI in practice. <https://www.coursera.org/learn/ai-for-everyone>
 
+*Links and course details were last checked on 23 October 2026. Course availability and report editions change, so please re-check before final publication.*
 
 ---
 
