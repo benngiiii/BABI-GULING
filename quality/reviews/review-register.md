@@ -32,6 +32,8 @@ This register provides an overview of the quality reviews conducted for the *Int
 |  22 | QR-008-I02 | Readme                                | Initial Review   | Minor Revisions Recommended |
 |  23 | QR-009-I01 | Readme                                | Initial Review   | Changes Required            |
 |  24 | QR-002-I03 | Chapter 2                             | Second Review    | Changes Required            |
+|  25 | QR-009-I02 | Module Outline                        | Second Review    | Minor Revisions Recommended |
+|  26 | QR-003-I05 | Module Outline                        | Fifth Review     | Pass                        |
 
 
 
