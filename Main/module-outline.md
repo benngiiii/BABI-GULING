@@ -2,7 +2,7 @@
 
 > **Project:** Babi Guling – AI Overview | **Module:** AI Overview
 > **Intended learners:** Beginners with no background in AI or programming. Learners only need basic computer and internet literacy.
-> **Version:** v1.3 (revised in response to [QR-009-I01](../quality/reviews/detailed%20reviews/QR-009-I01.md) and [QR-009-I02](../quality/reviews/detailed%20reviews/QR-009-I02.md)) | **Last updated:** 2026-10-23
+> **Version:** v1.2 (revised in response to [QR-009-I01](../quality/reviews/detailed%20reviews/QR-009-I01.md) and [QR-009-I02](../quality/reviews/detailed%20reviews/QR-009-I02.md)) | **Last updated:** 2026-10-23
 
 ## Module Learning Outcomes
 
