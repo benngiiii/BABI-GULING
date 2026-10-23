@@ -166,8 +166,8 @@ Stage 1 builds the foundation of the project:
 **Chapter 1: Introduction to Artificial Intelligence** is the developed topic for Stage 1. It was reviewed over four rounds, and the fourth review (QR-001-I04) approved it.
 
 - Author: Jonathan Sugianto
-- File: `Main/study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/introduction-to-artificial-Intelligence.md`
-- Supporting images: `.../assets/`
+- File: [Main/study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence](Main/study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence)
+- Supporting images: [chapter-1-introduction-to-artificial-Intelligence/assets](chapter-1-introduction-to-artificial-Intelligence/assets)
 
 ## 5. Team Contributions
 
@@ -201,12 +201,12 @@ Quality reviews were carried out by the Quality Lead. Latest registered result f
 
 ## 7. AI Tools Usage Summary
 
-The team used ChatGPT. The Stage 1 AI-use log (`logs/stage1-ai-use-log.md`) records eight activities: study guide planning, concept explanation, slide development, video script planning, practice questions, two quality-review activities, and project planning. Each member checks the entries for their own work against their actual AI interactions.
+The team used ChatGPT. The Stage 1 AI-use log (logs/stage1-ai-use-log.md) records eight activities: study guide planning, concept explanation, slide development, video script planning, practice questions, two quality-review activities, and project planning. Each member checks the entries for their own work against their actual AI interactions.
 
 ## 8. GitHub Repository Information
 
 - Repository: https://github.com/benngiiii/BABI-GULING
-- Main folders: `Main/` (documents and study guide), `quality/reviews/` (review records), `logs/` (AI-use log)
+- Main folders: [Main](Main) (documents and study guide), [quality/reviews](quality/reviews) (review records), [logs](logs) (AI-use log)
 - Contribution evidence: GitHub commit history, pull requests, and Issues. [Main/study-guide/v1.0/chapter-3-how-artificial-intelligence-works](Main/study-guide/v1.0/chapter-3-how-artificial-intelligence-works)
 
 ## 9. Remaining Work and Next Steps
@@ -220,10 +220,10 @@ The team used ChatGPT. The Stage 1 AI-use log (`logs/stage1-ai-use-log.md`) reco
 | Item | File or location | Status |
 |------|------------------|--------|
 | GitHub repository link | https://github.com/benngiiii/BABI-GULING | Available |
-| Markdown source snapshot | `Main/`, `quality/`, `logs/` with assets | [BABI-GULING/Main](BABI-GULING/Main) |
+| Markdown source snapshot | `Main/`, `quality/`, `logs/` | [BABI-GULING/Main](BABI-GULING/Main), [quality/reviews](quality/reviews), [logs](logs) |
 | Submission Report | This document | Draft |
 | Readable PDF of learning content | [TO CONFIRM] | Not yet produced |
-| AI-use records | `logs/stage1-ai-use-log.md` | In progress |
+| AI-use records | `logs/stage1-ai-use-log.md` | [logs/stage1-ai-use-log.md](logs/stage1-ai-use-log.md) |
 | Complete ZIP package | [TO CONFIRM] | Not yet produced |
 
 ### Stage 2 Tasks (due Nov 7, internal Nov 4)
