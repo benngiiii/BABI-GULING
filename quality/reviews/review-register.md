@@ -35,7 +35,9 @@ This register provides an overview of the quality reviews conducted for the *Int
 |  25 | QR-009-I02 | Module Outline                        | Second Review    | Minor Revisions Recommended |
 |  26 | QR-003-I05 | Chapter 3                             | Fifth Review     | Pass                        |
 |  27 | QR-009-I03 | Module Outline                        | Fifth Review     | Minor Revisions Recommended |
-
+|  28 | QR-009-I03 | Module Outline                        | Fifth Review     | Minor Revisions Recommended |
+|  29 | QR-004-I01 | Chapter 4                             | Initial Review   | Minor Revisions Recommended |
+|  30 | QR-004-I02 | Chapter 4                             | Second Review    | Pass                        |
 
 
 ## 3. Review File Locations
