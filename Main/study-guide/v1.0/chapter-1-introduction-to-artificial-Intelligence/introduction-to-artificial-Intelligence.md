@@ -1,6 +1,6 @@
 # Chapter 1: Introduction to Artificial Intelligence
 
-> **Status:** Drafted (V1.0), awaiting peer review
+> **Status:** Revised (V1.1), awaiting recheck of QR-001-I02
 > **Author:** Jonathan Sugianto | **Reviewer:** Brian Djoni Suzanna
 > **Audience:** Complete beginners. No programming or AI background needed.
 
@@ -27,7 +27,7 @@ After this chapter, you should be able to:
 1. Explain in your own words what Artificial Intelligence (AI) is.
 2. Describe five key moments in the history of AI.
 3. Explain the difference between traditional programming and AI that learns from data.
-4. Use eight basic AI terms correctly: data, algorithm, model, machine learning, training, inference, neural network, deep learning.
+4. Use nine basic AI terms correctly: data, algorithm, label, machine learning, model, training, inference, neural network, deep learning.
 5. Walk through a simple example of a program that learns from examples, and explain why it works and where it fails.
 
 ## Chapter Map
@@ -81,30 +81,30 @@ You probably used AI several times today without noticing.
 
 ## 1.2 A Brief History of AI
 
-The history of AI has exciting breakthroughs and also long periods of disappointment. Here are some important moments.
+The history of AI has exciting breakthroughs and also long periods of disappointment. Here are some important moments. The sources for each event are listed in Section 1.7.
 
 ![Timeline of key moments in AI history from 1950 to 2022](assets/fig-1-2-timeline.png)
 *Figure 1.1: Timeline of key moments in AI history. Source: created by our team, based on the references in Section 1.7.*
 
 | Year | Event | Why it matters |
 |:----:|-------|----------------|
-| 1950 | Alan Turing publishes the paper *Computing Machinery and Intelligence*. He suggests the "imitation game" (later called the **Turing Test**): if a person chatting with a machine cannot tell it apart from a human, can we say the machine is intelligent? | He turned the question "Can machines think?" into something that can be tested. |
-| 1955–1956 | John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon write a proposal in 1955 for a summer workshop at Dartmouth College. The proposal uses the term "artificial intelligence." The workshop takes place in summer 1956. | Many people see this as the start of AI as a research field. |
-| 1959 | Arthur Samuel describes a checkers program that improves by playing and learning from experience. | One of the first examples of a computer **learning** instead of only following fixed instructions. |
-| 1966 | Joseph Weizenbaum creates **ELIZA**, a program that chats using simple keyword rules. | An early chatbot. Many users felt that ELIZA understood them, even though it did not. |
-| 1997 | IBM's **Deep Blue** beats world chess champion Garry Kasparov in a six-game match (3½ to 2½). | A machine beat the best human at a game people linked with intelligence. |
-| 2012 | A neural network called **AlexNet** wins the ImageNet image recognition competition by a large margin. | Started the modern boom of **deep learning**. |
-| 2016 | **AlphaGo** (made by Google DeepMind) beats Lee Sedol, a top Go player, 4 games to 1. | Go is much harder for computers than chess. AlphaGo learned from many human games and then improved by playing against itself. |
-| 2017 | Google researchers publish the **Transformer**, a new design for neural networks. | It is the base of today's large language models. |
-| 2022 | OpenAI releases **ChatGPT** to the public (30 November). | Made generative AI available to millions of ordinary users. |
+| 1950 | Alan Turing publishes the paper *Computing Machinery and Intelligence* (Turing, 1950). He suggests the "imitation game" (later called the **Turing Test**): if a person chatting with a machine cannot tell it apart from a human, can we say the machine is intelligent? | He turned the question "Can machines think?" into something that can be tested. |
+| 1955–1956 | John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon write a proposal in 1955 for a summer workshop at Dartmouth College (McCarthy et al., 1955/2006). The proposal uses the term "artificial intelligence." The workshop takes place in summer 1956. | Many people see this as the start of AI as a research field. |
+| 1959 | Arthur Samuel describes a checkers program that improves by playing and learning from experience (Samuel, 1959). | One of the first examples of a computer **learning** instead of only following fixed instructions. |
+| 1966 | Joseph Weizenbaum creates **ELIZA**, a program that chats using simple keyword rules (Weizenbaum, 1966). | An early chatbot. Many users felt that ELIZA understood them, even though it did not. |
+| 1997 | IBM's **Deep Blue** beats world chess champion Garry Kasparov in a six-game match (3½ to 2½) (Campbell et al., 2002). | A machine beat the best human at a game people linked with intelligence. |
+| 2012 | A neural network called **AlexNet** wins the ImageNet image recognition competition by a large margin (Krizhevsky et al., 2012). | Started the modern boom of **deep learning**. |
+| 2016 | **AlphaGo** (made by Google DeepMind) beats Lee Sedol, a top Go player, 4 games to 1 (Silver et al., 2016). | Go is much harder for computers than chess. AlphaGo learned from many human games and then improved by playing against itself. |
+| 2017 | Google researchers publish the **Transformer**, a new design for neural networks (Vaswani et al., 2017). | It is the base of today's large language models. |
+| 2022 | OpenAI releases **ChatGPT** to the public on 30 November (OpenAI, 2022). | Made generative AI available to millions of ordinary users. |
 
 ### Two famous moments in pictures
 
 ![Alan Turing at age 16](assets/turing-aged-16.jpg)
-*Figure 1.2: Alan Turing as a teenager. Source: Wikimedia Commons, "File:Alan Turing Aged 16.jpg" (https://commons.wikimedia.org/wiki/File:Alan_Turing_Aged_16.jpg). License: TO BE CONFIRMED on the Commons page before submission.*
+*Figure 1.2: Alan Turing at age 16 (passport photo, around 1927–1928). Source: Wikimedia Commons, "File:Alan Turing Aged 16.jpg" (https://commons.wikimedia.org/wiki/File:Alan_Turing_Aged_16.jpg). License: public domain (Public Domain Mark 1.0), as stated on the Commons file page.*
 
 ![A computer similar to Deep Blue at the Computer History Museum](assets/deep-blue-chm.jpg)
-*Figure 1.3: A computer similar to Deep Blue, displayed at the Computer History Museum. Source: Wikipedia article "Deep Blue (chess computer)" (https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)). Photographer and license: TO BE CONFIRMED on the image's file page.*
+*Figure 1.3: A computer similar to Deep Blue, displayed at the Computer History Museum. Photo by James (originally on Flickr). Source: Wikimedia Commons, "File:Deep Blue.jpg" (https://commons.wikimedia.org/wiki/File:Deep_Blue.jpg), also used in the Wikipedia article "Deep Blue (chess computer)". License: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/).*
 
 ### Booms and "AI winters"
 
@@ -147,6 +147,8 @@ Instead, a person learns from experience: after seeing and touching many mangoes
 
 > **Important note:** Not all AI learns from data. Some early AI systems, such as *expert systems*, used rules written by human experts. We focus on learning-based AI because it powers most modern tools, but the two ideas are not the same thing.
 
+In Section 1.5, you will see both approaches solve the same task, so you can compare them directly.
+
 ---
 
 ## 1.4 Basic AI Terminology
@@ -186,7 +188,7 @@ Deep learning is a part of machine learning, and machine learning is a part of A
 
 ## 1.5 Worked Example: A Spam Filter That Learns
 
-Let's build a very small spam filter by hand. Real filters are much more advanced, but this shows the full cycle: **data → training → model → inference**.
+Let's build a very small spam filter by hand. Real filters are much more advanced, but this shows the full cycle: **data → training → model → inference**. At the end, we also compare it with a filter made of hand-written rules.
 
 ### Step 1: Collect labelled data
 
@@ -217,6 +219,8 @@ For each word, count how many spam emails contain it, and how many not-spam emai
 | noon | 0 | 2 | **−2** |
 
 This score table is our **model**. We never wrote a rule like "the word *free* means spam." The scores came from the examples.
+
+> **Note:** These scores are simple counts taken from the six training emails. They are **not probabilities** and they do not measure how confident the filter is. They are only used together with this model's decision rule (Step 3).
 
 ### Step 3: Make a decision rule
 
@@ -249,12 +253,32 @@ New email: **"free lunch at noon"** (a friend inviting you to eat)
 
 The prediction is **Not spam**, which is correct here. But look at how it happened: the harmless words "at" and "noon" pulled the score down. Now try **"free prize at noon"**: +3 +2 −2 −2 = **+1**, so the filter says **Spam**. Is it really spam? The filter cannot know, because it only counts words.
 
+### Step 6: Compare with a rule-based filter
+
+Now let's solve the same task the traditional way. A programmer looks at the emails and writes a rule by hand:
+
+> **Rule:** If the email contains the word "free" or "prize", predict **Spam**. Otherwise, predict **Not spam**.
+
+On our six training emails, this rule is correct every time: emails 1, 2, and 5 contain "free", and emails 3, 4, and 6 contain neither word. Now test both filters on two new emails:
+
+| New email | What it really is | Rule-based filter | Learning-based filter (score table) |
+|-----------|-------------------|-------------------|-------------------------------------|
+| win money now | Spam | Not spam ✗ (no "free" or "prize") | Spam ✓ (total +3) |
+| free lunch at noon | Not spam (a friend's invitation) | Spam ✗ (contains "free") | Not spam ✓ (total −2) |
+
+What we can learn from this comparison:
+
+- The rule-based filter only knows what the programmer thought of. To fix its mistakes, the programmer must edit the rule by hand.
+- The learning-based filter found useful words such as "money" and "noon" from the examples. To improve it, we add more labelled examples and count again.
+- Neither filter is perfect. The learning-based filter was uncertain about "free prize at noon" in Step 5, and the rule-based filter would also call that email spam.
+
 ### What this example teaches
 
 - **A model depends on its training data.** The words "at" and "noon" look "safe" only because our six emails happened to include them in not-spam messages.
 - **More and varied data makes a better model.** Six emails is far too few. Real filters learn from millions.
 - **Models make mistakes.** Even good filters sometimes block real emails or let spam through.
 - **Training and inference are separate.** We counted once (training), then used the same table for any number of new emails (inference).
+- **Hand-written rules and learned rules have different weaknesses.** Rules only cover what the programmer imagined, while learned models only cover what the data showed.
 
 > **Note:** This word-scoring method is a simplified teaching version. Real spam filters use more advanced statistical or neural network methods, and they look at much more than single words.
 
@@ -342,19 +366,19 @@ Use the model from Section 1.5 (the score table and the rule "total > 0 means sp
 | Resource | Planned use |
 |----------|-------------|
 | **Study Guide** | Sections 1.1–1.4 become the reading text. The terminology table becomes a glossary. Questions Q1–Q11 go into the Test Bank with the explained answers. |
-| **PPT Slides** | The timeline (1.2), the two flow diagrams (1.3), and the nested diagram (1.4) become full-slide visuals. The spam filter (1.5) becomes a step-by-step slide sequence that builds the score table. |
-| **Video Tutorial** | A short video that follows Section 1.5: show the six emails, build the score table on screen, then test new emails while narrating each step. |
+| **PPT Slides** | The timeline (1.2), the two flow diagrams (1.3), and the nested diagram (1.4) become full-slide visuals. The spam filter (1.5) becomes a step-by-step slide sequence that builds the score table, followed by the rule-based comparison. |
+| **Video Tutorial** | A short video that follows Section 1.5: show the six emails, build the score table on screen, test new emails while narrating each step, then compare with the rule-based filter. |
 
 ### Development status of this chapter
 
 | Section | Status | Notes |
 |---------|:------:|-------|
 | 1.1 What is AI? | Drafted | Needs peer review |
-| 1.2 Brief History | Drafted | Key dates cross-checked once against online sources; reviewer should re-check against the references |
-| 1.3 AI vs Traditional Programming | Drafted | Diagrams to be redrawn as images by the Visual Design Lead |
+| 1.2 Brief History | Revised | In-text citations added; image licenses filled in; reviewer should re-check dates against the references |
+| 1.3 AI vs Traditional Programming | Revised | Supervised learning note added; diagrams to be redrawn as images by the Visual Design Lead |
 | 1.4 Terminology | Drafted | Needs peer review |
-| 1.5 Worked Example | Drafted | All scores recalculated by hand; needs independent check |
-| 1.6 Practice Questions | Drafted | Should be tested by a member who has not seen the answers |
+| 1.5 Worked Example | Revised | Score note and rule-based comparison (Step 6) added; all scores recalculated by hand; needs independent check |
+| 1.6 Practice Questions | Revised | A9 clarified; should be tested by a member who has not seen the answers |
 | 1.7 References | Drafted | All entries need to be verified by the Quality Lead |
 
 ### References
