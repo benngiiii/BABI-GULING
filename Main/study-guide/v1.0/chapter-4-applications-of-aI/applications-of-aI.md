@@ -336,7 +336,7 @@ Transportation uses AI for several tasks, from helping drivers to planning journ
 
 ### 3.2 How a self-driving system makes decisions
 
-![Diagram](assets/foto-chapter-4.png)
+![Diagram](assets/foto-chapter-4.1.png)
 
 Read it as a loop that repeats many times per second: **sense → perceive → predict → plan → act**.
 
