@@ -35,7 +35,7 @@
 
 | Member | Responsibilities |
 |--------|------------------|
-| Benedict Subhata | Visual design product, Word documents, study module, and PowerPoint slides. |
+| Benedict Subhata | Visual design product, word documents, study module, and powerpoint slides. |
 | Brian Djoni Suzanna | Quality checks of each material uploaded by team members; determines whether one's product or material needs to be revised. |
 | Gandhi Bestin Dhammananda | Live teaching product, video content, ideas, editing, and flow of how the video should be delivered. |
 | Jonathan Sugianto | Progress of the whole project, submission of the project, and compiling all types of material into a finalized format or folder. |
