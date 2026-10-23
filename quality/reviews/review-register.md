@@ -56,6 +56,7 @@ The repository contains the following review files:
 * QR-003-I02.md
 * QR-003-I03.md
 * QR-003-I04.md
+* QR-003-I05.md
 * QR-004-I01.md
 * QR-005-I01.md
 * QR-005-I02.md
@@ -66,7 +67,8 @@ The repository contains the following review files:
 * QR-008-I01.md
 * QR-008-I02.md
 * QR-009-I01.md
-* QR-002-I03.md
+* QR-009-I02.md
+* QR-009-I03.md
 
 ## 4. Review Tracking Notes
 
