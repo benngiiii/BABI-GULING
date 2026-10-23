@@ -46,24 +46,28 @@ The project documentation is split into separate documents. Each one has its own
 
 | Document | Purpose | Link |
 |----------|---------|------|
-| **Project Plan** | The overall approach, workflow, timeline, and division of responsibilities. | [TO FILL: relative link to the Project Plan file] |
+| **Project Plan** | The overall approach, workflow, timeline, and division of responsibilities. | [project-plan.md](project-plan.md) |
 | **Master Task List** | Concrete tasks, responsible members, deadlines, and completion status. | [master-task-list.md](master-task-list.md) |
-| **Module Outline** | Learning outcomes, content structure, topics, and development status of the learning materials. | [TO FILL: relative link to the Module Outline file] |
+| **Module Outline** | Learning outcomes, content structure, topics, and development status of the learning materials. | [module-outline.md](module-outline.md) |
 
 ---
 
 ## Repository Structure
 
-> **Before submitting:** every path below must match the real repository. Fill in the `[TO FILL]` items and delete any row for a file or folder that does not exist.
+Paths are written from the root of the repository.
 
 | Location | What it contains |
 |----------|------------------|
-| `README.md` | This file: project introduction, navigation, and progress summary. |
-| `master-task-list.md` | The Master Task List. |
-| [TO FILL: Project Plan path] | The Project Plan. |
-| [TO FILL: Module Outline path] | The Module Outline. |
-| [TO FILL: folder with the Markdown learning materials, for example the Chapter 1 folder] | The shared Markdown content (chapters) used for the Study Guide, PPT Slides, and Video Tutorials. |
-| `assets/` (next to the chapter file that uses it) | Images and diagrams used by the Markdown chapters. Chapter 1 refers to its figures as `assets/...`. |
+| `Main/README.md` | This file: project introduction, navigation, and progress summary. |
+| `Main/project-plan.md` | The Project Plan. |
+| `Main/module-outline.md` | The Module Outline. |
+| `Main/master-task-list.md` | The Master Task List. |
+| `Main/study-guide/` | The shared Markdown learning materials (chapters) used for the Study Guide, PPT Slides, and Video Tutorials. Images used by a chapter are in an `assets/` folder next to it. |
+| `logs/stage1-ai-use-log.md` | The Stage 1 AI-use log. |
+| `quality/reviews/detailed reviews/` | The detailed quality review reports (`QR-001-I01.md` to `QR-008-I01.md`). |
+| `quality/reviews/review-register.md` | The register that tracks all quality reviews. |
+| `quality/reviews/quality-standards.md` | The quality standards used for reviews. |
+| `quality/reviews/final-submission-audit.md` | The final audit before the Stage 1 submission. |
 
 ---
 
@@ -75,19 +79,13 @@ This is a short overview only. Chapter-level status belongs in the Module Outlin
 
 **Completed**
 
-- Chapter 1 (Introduction to Artificial Intelligence) has been written and revised after three quality reviews (QR-001-I01 to QR-001-I03).
+- Quality review reports QR-001 to QR-008 have been written (some have more than one review round). Their status is tracked in the [review register](../quality/reviews/review-register.md).
+- [TO FILL: other completed work]
 
 **In progress**
 
-- Chapter 1 is waiting for its final recheck (image license check, image files, and GitHub rendering).
-- The Master Task List (QR-006-I01) and this README (QR-008-I01) have had their initial quality reviews, and the requested changes are being made.
-- [TO FILL: other chapters or resources currently being developed or reviewed]
+- [TO FILL: chapters, resources, or corrections currently being developed or reviewed]
 
 **Remaining before the Stage 1 submission**
 
-- Prepare the Stage 1 Submission Report.
-- Prepare the Markdown source snapshot with its supporting assets.
-- Export and check the readable PDF of the Markdown content.
-- Collect the repository evidence and the required project and personal AI-use records.
-- Package the required files into the ZIP, then extract it in a separate folder to check that the files and assets work.
-- [TO FILL: any other remaining work, matching the Master Task List]
+- [TO FILL: remaining work, matching the Master Task List]
