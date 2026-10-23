@@ -17,8 +17,6 @@
   - [Stage 2 Tasks](#stage-2-tasks-due-nov-7-internal-nov-4)
   - [Stage 3 Tasks](#stage-3-tasks-due-nov-28-internal-nov-24)
   - [Ongoing Tasks](#ongoing-tasks)
-  - [Remaining Stage 1 Priorities](#remaining-stage-1-priorities)
-  - [How This List Is Maintained](#how-this-list-is-maintained)
 - [Project Purpose](#project-purpose)
 - [Workflow](#workflow)
 - [Rough Plan](#rough-plan)
@@ -101,19 +99,132 @@ Content tasks (drafting, review, revision) are scheduled to finish by the intern
 | S1-01 | Write the project plan sections: team members, strengths, roles, project purpose, workflow, and rough plan | Benedict | Review: Brian | Sections of `master-task-list.md` | Oct 23 | ✅ Completed | [master-task-list.md](master-task-list.md) |
 | S1-02 | Revise Master Task List to address QR-006-I01: add task list, status labels, deliverable ownership, and task-level deadlines | Benedict | Review: Brian | Revised `master-task-list.md` (v1.1) | Oct 23 | 🔄 In Progress | [QR-006-I01.md](QR-006-I01.md) |
 | S1-03 | Initial quality review of the Master Task List (QR-006) | Brian | Compile: Jonathan | Quality review report `QR-006-I01.md` | Oct 23 | ✅ Completed | [QR-006-I01.md](QR-006-I01.md) |
-| S1-04 | Confirm task owners, deadlines, and current statuses with each responsible member | Jonathan | Review: Joseph | Confirmed statuses in this table | Oct 23 | ⬜ Not Started | — |
+| S1-04 | Confirm task owners, deadlines, and current statuses with each responsible member | Jonathan | Review: Joseph | Confirmed statuses in this table | Oct 23 | ✅ Completed | [Main/README.md](Main/README.md) |
 | S1-05 | Recheck the revised Master Task List | Brian | Compile: Jonathan | Revised Master Task List | Oct 23 (evening) | 🔄 In Progress | — |
-| S1-06 | Set up the GitHub repository: folder per part, branch rules, pull request process, and Issues | Joseph | Review: Brian | Repository structure and Issues | Oct 23 | ✅ Completed | (GitHub Repository ) |
+| S1-06 | Set up the GitHub repository: folder per part, branch rules, pull request process, and Issues | Joseph | Review: Brian | Repository structure and Issues | Oct 23 | ✅ Completed | [https://github.com/benngiiii/BABI-GULING.gitG](https://github.com/benngiiii/BABI-GULING.git) |
 | S1-07 | Prepare the Markdown template and one sample section to set the writing style | Jonathan | Review: Brian | Template file and sample section | Oct 23 | ✅ Completed | [chapter-1-introduction-to-artificial-Intelligence](chapter-1-introduction-to-artificial-Intelligence) |
 | S1-08 | Draft Chapter 1: Introduction to AI | Jonathan | Review: Brian | Chapter 1 draft (Markdown) | Oct 23 | ✅ Completed | [chapter-1-introduction-to-artificial-Intelligence](chapter-1-introduction-to-artificial-Intelligence) |
 | S1-09 | Draft Chapter 2: Types of AI | Gandhi | Review: Brian | Chapter 2 draft (Markdown) | Oct 23 | ✅ Completed | [chapter-2-types-of-artificial-intelligence](chapter-2-types-of-artificial-intelligence) |
 | S1-10 | Draft Chapter 3: How Artificial Intelligence Works (data, algorithms, machine learning, training and inference, workflow diagram) | Benedict | Review: Brian | Chapter 3 draft (Markdown) | Oct 23 | ✅ Completed | [chapter-3-how-artificial-intelligence-works](chapter-3-how-artificial-intelligence-works) |
 | S1-11 | Outline Chapter 4: Applications of AI, and Chapter 5: AI Ethics and Limitations | Brian, Joseph | Review: Brian | Chapter 4 and 5 outlines (Markdown) | Oct 23 | ✅ Completed | [chapter-4-applications-of-aI](chapter-4-applications-of-aI), [chapter-5-aI-ethics-and-limitations](chapter-5-aI-ethics-and-limitations) |
-| S1-12 | Quality review of all Stage 1 drafts and outlines | Brian | Compile: Jonathan | Review reports with approved or needs revision result for each item | Oct 23 | 🔄 In Progress | — |
+| S1-12 | Quality review of all Stage 1 drafts and outlines | Brian | Compile: Jonathan | Review reports with approved or needs revision result for each item | Oct 23 | 🔄 In Progress | [quality/reviews](quality/reviews) |
 | S1-13 | Apply corrections from the quality review | Each chapter author | Review: Brian | Corrected drafts and outlines | Oct 23 (evening) | 🔄 In Progress | — |
 | S1-14 | Record team activities, meeting notes, and progress for Stage 1 | Joseph | Review: Jonathan | Activity record | Oct 23 | 🔄 In Progress | — |
 | S1-15 | Compile the Stage 1 submission folder and run a final check | Jonathan | Review: Brian | Final Stage 1 folder with only corrected versions | Oct 24 (morning) | ⬜ Not Started | — |
 | S1-16 | Submit Stage 1 | Jonathan | Confirm: Joseph | Stage 1 submission | Oct 24 | ⬜ Not Started | — |
+
+# Stage 1 Submission Report
+
+
+| Item | Details |
+|------|---------|
+| Team | Babi Guling |
+| Module | AI Overview |
+| Stage | Stage 1 (official deadline: 24 October 2026) |
+| Report date | 23 October 2026 |
+| Prepared by | Jonathan Sugianto (CIO and Content Lead) |
+| Reviewed by | Brian Djoni Suzanna (Quality Lead) — [TO CONFIRM after review] |
+| GitHub repository | https://github.com/benngiiii/BABI-GULING |
+| Submitted branch | [AI-Overview](AI-Overview) |
+
+---
+
+## 1. Project and Team Information
+
+The project teaches AI Overview to complete beginners. One shared Markdown content base is turned into three connected learning resources: a Study Guide with Test Bank, PPT Slides, and Video Tutorials. Corrections are made in the Markdown first, so they carry into every resource.
+
+| No. | Name | Student ID | GitHub Username | Role |
+|:---:|------|:----------:|-----------------|------|
+| 1 | Benedict Subhata | 1820262181 | benngiiii | Visual Design Lead |
+| 2 | Brian Djoni Suzanna | 1820262162 | brizz0-0 | Quality Lead |
+| 3 | Gandhi Bestin Dhammananda | 1820262168 | bestinsiuuu77 | Video Lead |
+| 4 | Jonathan Sugianto | 1820262245 | JonathanSugianto | CIO and Content Lead |
+| 5 | Joseph Lokman | 1820262233 | JosephLokman | CEO |
+
+## 2. Stage 1 Objectives
+
+Stage 1 builds the foundation of the project:
+
+- Set up the shared GitHub repository and the team's working process.
+- Write the planning documents: README, Project Plan, Master Task List, and Module Outline.
+- Develop the Markdown learning content, with at least one topic developed in depth.
+- Record quality reviews and AI-tool use.
+- Prepare the submission package for review.
+
+## 3. Work Completed
+
+| Area | Work completed | Location in the repository |
+|------|----------------|----------------------------|
+| Repository | Shared repository with folders for documents, learning content, quality records, and logs | `Main/`, `quality/`, `logs/` |
+| Planning documents | README, Project Plan, Master Task List (v1.2), Module Outline | `Main/` |
+| Learning content | Chapter drafts 1 to 5 in Markdown, with images in `assets/` folders | `Main/study-guide/v1.0/` |
+| Quality records | Quality standards, review register, detailed review reports, final submission audit | `quality/reviews/` |
+| AI-use record | Stage 1 team AI-use log | `logs/stage1-ai-use-log.md` |
+
+## 4. Developed Learning Topic
+
+**Chapter 1: Introduction to Artificial Intelligence** is the developed topic for Stage 1. It was reviewed over four rounds, and the fourth review (QR-001-I04) approved it.
+
+- Author: Jonathan Sugianto
+- File: `Main/study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/introduction-to-artificial-Intelligence.md`
+- Supporting images: `.../assets/`
+
+## 5. Team Contributions
+
+Responsibilities follow the Deliverable Ownership table in the Master Task List.
+
+| Member | Stage 1 responsibilities |
+|--------|--------------------------|
+| Benedict Subhata | Master Task List; Chapter 3 draft |
+| Brian Djoni Suzanna | Quality reviews and final audit; Chapter 4 draft and outline; AI-use log |
+| Gandhi Bestin Dhammananda | Chapter 2 draft |
+| Jonathan Sugianto | Chapter 1 draft; Markdown template; Stage 1 package compilation |
+| Joseph Lokman | GitHub repository setup; Chapter 5 draft; activity records |
+
+
+## 6. Quality Review Summary
+
+Quality reviews were carried out by the Quality Lead. Latest registered result for each document:
+
+| Document | Latest review | Latest registered result |
+|----------|---------------|--------------------------|
+| Chapter 1 | QR-001-I04 | Pass |
+| Chapter 2 | QR-002-I03 | Changes Required |
+| Chapter 3 | QR-003-I05 | Pass |
+| Chapter 4 | QR-004-I01 | [TO CONFIRM: detailed report to be completed] |
+| Chapter 5 | QR-005-I02 | Pass, pending final rendering verification |
+| Master Task List | QR-006-I01 | Changes Required; revised in v1.2, recheck pending |
+| Project Plan | QR-007-I03 | Changes Required |
+| README | QR-008-I02 | Minor Revisions Recommended |
+| Module Outline | QR-009-I03 | Minor Revisions Recommended |
+
+
+## 7. AI Tools Usage Summary
+
+The team used ChatGPT. The Stage 1 AI-use log (`logs/stage1-ai-use-log.md`) records eight activities: study guide planning, concept explanation, slide development, video script planning, practice questions, two quality-review activities, and project planning. Each member checks the entries for their own work against their actual AI interactions.
+
+## 8. GitHub Repository Information
+
+- Repository: https://github.com/benngiiii/BABI-GULING
+- Main folders: `Main/` (documents and study guide), `quality/reviews/` (review records), `logs/` (AI-use log)
+- Contribution evidence: GitHub commit history, pull requests, and Issues. [Main/study-guide/v1.0/chapter-3-how-artificial-intelligence-works](Main/study-guide/v1.0/chapter-3-how-artificial-intelligence-works)
+
+## 9. Remaining Work and Next Steps
+
+- **Stage 2 (due 7 November):** full drafts of Chapters 4 and 5; first versions of the Study Guide and Test Bank, PPT Slides, and Video Tutorials; trial of the test-bank questions with someone outside the team; quality review and corrections; live teaching rehearsals.
+- **Stage 3 (due 28 November):** improvements from live-class and lecturer feedback, final quality review, final consistency check, and final submission.
+- Open Stage 1 corrections are tracked in the Master Task List.
+
+## 10. Submission Package Contents
+
+| Item | File or location | Status |
+|------|------------------|--------|
+| GitHub repository link | https://github.com/benngiiii/BABI-GULING | Available |
+| Markdown source snapshot | `Main/`, `quality/`, `logs/` with assets | [BABI-GULING/Main](BABI-GULING/Main) |
+| Submission Report | This document | Draft |
+| Readable PDF of learning content | [TO CONFIRM] | Not yet produced |
+| AI-use records | `logs/stage1-ai-use-log.md` | In progress |
+| Complete ZIP package | [TO CONFIRM] | Not yet produced |
 
 ### Stage 2 Tasks (due Nov 7, internal Nov 4)
 
