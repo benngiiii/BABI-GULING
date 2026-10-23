@@ -1,0 +1,260 @@
+# Quality Review Report — QR-007-I01
+
+## Review Information
+
+* **Project:** Introduction to Computer Science and Artificial Intelligence
+* **Review ID:** QR-007-I01
+* **Review Type:** Initial Quality Review
+* **Chapter Reviewed:** Initial Learning Resources Project Plan
+* **Content Author:** Joseph Lokman
+* **Reviewer:** Brian Djoni Suzanna
+* **Version Reviewed:** Project Plan
+* **Module:** AI Overview
+* **Review Date:** 2026-10-23
+* **Branch Reviewed:** Main
+* **File Reviewed:** `Main/project-plan.md`
+* **Overall Status:** Changes Required
+
+---
+
+## 1. Review Scope
+
+This review evaluates the Initial Learning Resources Project Plan against the lecturer's Stage 1 requirements and the plan's stated goals.
+
+The review focuses on:
+
+* Project purpose, intended learners, and learning outcomes.
+* Coverage and logical sequence of the five Markdown chapters.
+* Plans for the Study Guide and Test Bank, PPT Slides, Video Tutorials, and Live Mini Lecture.
+* Development status and identification of incomplete work.
+* GitHub workflow, team responsibilities, and review procedures.
+* Stage 1 submission requirements, repository evidence, and AI-use documentation.
+
+This review evaluates the supplied project plan. It does not independently verify the GitHub repository, actual chapter files, commit history, rendered materials, or completed submission package.
+
+## 2. Quality Assessment
+
+| Criterion                                 | Status                                | Assessment                                                                                                                                                                                              |
+| ----------------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Project purpose and intended learners     | Satisfactory                          | The target audience and beginner-friendly approach are clearly described.                                                                                                                               |
+| Learning outcomes                         | Satisfactory with minor revision      | Five outcomes cover the main subject areas. Outcome 2 could describe the four perspectives as complementary ways to understand AI rather than implying they are one standardized classification system. |
+| Module outline and learning sequence      | Partially Satisfactory                | All five chapters have substantial outlines, but explicit development-status labels are missing for individual sections.                                                                                |
+| Substantive Markdown content              | Needs Verification                    | The plan describes a worked spam-filter example, but the actual developed content and its current status must be confirmed in the Markdown files.                                                       |
+| Examples and learner activities           | Satisfactory as a plan                | The proposed examples, classification activity, application scenarios, and discussion prompts are relevant to beginners.                                                                                |
+| References and source verification        | Partially Satisfactory                | Source checking is included as a general workflow, but the plan does not identify the current source-verification status or evidence of completed checks.                                               |
+| Peer review and review records            | Partially Satisfactory                | Peer review is planned, but the plan does not identify a specific review record, outcome, or location where that evidence will be stored.                                                               |
+| GitHub workflow and contribution evidence | Partially Satisfactory                | Branches, pull requests, and Issues are mentioned, but the required evidence of actual changes, individual contributions, and coordination needs to be made explicit.                                   |
+| Stage 1 submission package                | Needs Improvement                     | The plan does not explicitly list all required submission files, the prescribed ZIP filename, or the extraction test.                                                                                   |
+| AI-use documentation                      | Needs Improvement                     | AI-use records are not explicitly included in the workflow or submission checklist.                                                                                                                     |
+| Markdown Formatting                       | Satisfactory with a correction needed | The plan is well organized with headings, lists, and tables. However, the Chapter 3 section numbering discrepancy is acknowledged but remains unresolved.                                               |
+| Team responsibilities and timeline        | Satisfactory                          | Team roles, internal deadlines, official deadlines, and major workflow stages are identified.                                                                                                           |
+
+## 3. Review Findings and Suggested Improvements
+
+### Finding 1 — Medium: Development Status Is Not Explicitly Tracked
+
+**Observation:**
+The plan outlines all five chapters in detail, but it does not consistently label the current status of each chapter or section. It identifies Chapter 4's healthcare topic and Chapter 5's bias topic as fully developed, but does not provide a complete status overview showing which sections are outline-only, drafted, checked, or awaiting revision.
+
+**Why this matters:**
+The lecturer requires the module outline to cover the whole module and identify the development status of its sections. The plan should distinguish work already completed from future intentions.
+
+**Suggested improvement:**
+
+Add a development-status table, for example:
+
+| Chapter   | Section or Topic           | Current Status       | Remaining Work                                          |
+| --------- | -------------------------- | -------------------- | ------------------------------------------------------- |
+| Chapter 1 | Spam-filter worked example | Verify actual status | Check explanations, calculations, activity, and answers |
+| Chapter 2 | Classification activity    | Verify actual status | Check examples and suggested answers                    |
+| Chapter 3 | AI workflow and evaluation | Verify actual status | Confirm substantive content and numbering               |
+| Chapter 4 | Healthcare                 | Verify actual status | Check explanations, sources, and learning activity      |
+| Chapter 5 | Bias                       | Verify actual status | Check explanations, sources, and discussion activity    |
+
+Use the actual status of each section rather than assuming that a planned or described topic has already been completed.
+
+### Finding 2 — High: Stage 1 Submission Requirements Are Not Listed as Explicit Tasks
+
+**Observation:**
+Section 9 explains the project's timeline and overall workflow, but the plan does not explicitly identify all the files that must be assembled for Stage 1.
+
+The lecturer's instructions require a self-contained ZIP package named `TeamName_Stage1_GitHub_Markdown_V1.zip`. Its required contents include a Submission Report in Word or PDF, a Markdown source snapshot with the README and supporting assets, and a readable PDF of the current learning content. The report must include repository and contribution evidence, review outcomes, and next steps.
+
+**Why this matters:**
+A project plan can describe the learning resources correctly but still leave the team unprepared for the required submission format.
+
+**Suggested improvement:**
+
+Add a dedicated **Stage 1 Submission Checklist** to the plan or task list. Include:
+
+* [ ] Team GitHub repository is accessible to the lecturer if needed.
+* [ ] README identifies the team, module, members, GitHub usernames, project purpose, intended learners, folder structure, progress, and remaining work.
+* [ ] Current project plan and task list are included in the repository.
+* [ ] Module outline and Markdown development statuses are included.
+* [ ] At least one coherent topic is substantively developed in Markdown.
+* [ ] Developed content includes explanations, terminology, a worked example or demonstration, an appropriate visual where useful, a learner activity or application question, an explained answer or expected outcome, and references.
+* [ ] A peer-review record documents what was checked, what was found, and what was corrected or confirmed.
+* [ ] Submission Report includes the repository URL, snapshot date, latest commit identifier, content-status summary, repository evidence, individual contributions, review outcome, and next steps.
+* [ ] Markdown source snapshot includes the README, current `.md` files, and supporting assets in their working folder structure.
+* [ ] Readable content PDF includes the current Markdown learning content, module outline, and development status.
+* [ ] Required project AI-use records and separate personal logs are prepared according to the Shared Assignment Rules.
+* [ ] All required files and evidence are included in the ZIP rather than being available only through external links.
+* [ ] ZIP is named `TeamName_Stage1_GitHub_Markdown_V1.zip`.
+* [ ] ZIP is extracted into a different folder and checked to confirm that files open and images and assets are present.
+
+### Finding 3 — Medium: Repository Evidence and Individual Contributions Need Clearer Planning
+
+**Observation:**
+Section 8 assigns broad responsibilities to the five members, and Section 9 mentions branches, pull requests, and GitHub Issues. However, the plan does not specify how the team will collect and organize the evidence required to demonstrate actual development and each member's contribution.
+
+**Why this matters:**
+The lecturer requires more than a repository link, a homepage screenshot, or commit counts. The submission must show meaningful changes, individual contributions, and evidence of review or coordination.
+
+**Suggested improvement:**
+
+Add a repository-evidence task with these deliverables:
+
+* Repository overview showing the README and main folders.
+* Readable commit history showing authors, dates, and meaningful change descriptions.
+* Selected change views showing actual additions, corrections, or improvements.
+* A contribution summary mapping each member to the relevant files or sections.
+* A representative example of content review, task coordination, or problem resolution.
+
+Record where each piece of evidence will be stored and who is responsible for collecting it. Do not create artificial commits merely to increase activity.
+
+### Finding 4 — Medium: AI-Use Records Are Missing From the Explicit Workflow
+
+**Observation:**
+The plan does not explicitly assign responsibility for maintaining AI-use records or checking them before submission.
+
+**Why this matters:**
+The lecturer's instructions refer to the Shared Assignment Rules for AI-use documentation. The Stage 1 submission report must briefly identify significant AI assistance affecting the submitted work and point to the relevant log entries. The actual interaction and verification evidence must be included in the submitted logs, not only accessible through conversation links.
+
+**Suggested improvement:**
+
+Add a workflow step to record significant AI assistance and verify its output. At minimum, the team should track:
+
+* The date and AI tool used.
+* The relevant prompt and output.
+* How the output was checked and what judgment the student made.
+* The resulting change, decision, or learning.
+
+Distinguish the shared project AI-use records from individual personal logs. Personal logs should remain private and must not be placed in a publicly accessible GitHub repository. Prepare the required personal-log submission separately according to the Shared Assignment Rules.
+
+### Finding 5 — Medium: The Peer-Review Process Needs a Concrete Deliverable
+
+**Observation:**
+Section 9 says that team members will review each other's work, and Section 10 says that claims and sources will be verified. However, the plan does not identify a specific review record as a required deliverable.
+
+**Why this matters:**
+The lecturer requires at least one concrete review outcome: what was checked, what was found, and what was corrected or confirmed.
+
+**Suggested improvement:**
+
+Add a task requiring a written review record for the developed Markdown topic. The record should identify the reviewed file and version, reviewer, findings, revisions or confirmations, and final review outcome.
+
+The existing Quality Review Reports can serve this purpose when they correspond to actual reviews. Ensure the report included in the submission accurately reflects the review performed and the status of any outstanding findings.
+
+### Finding 6 — Low: Chapter 3 Numbering Discrepancy Remains Open
+
+**Observation:**
+The Chapter 3 description lists sections 3.2–3.12 and then refers to Practice Questions and Activities, while noting that the supplied contents also link to a Practice Questions section numbered 3.16.
+
+**Why this matters:**
+An unresolved numbering discrepancy can create confusing navigation and inconsistency between the module outline, Markdown source, and exported PDF.
+
+**Suggested improvement:**
+
+Compare the plan against the actual Chapter 3 Markdown file. Confirm the intended section numbering, correct the outline or chapter file as appropriate, and check that any table-of-contents links point to the correct headings.
+
+### Finding 7 — Low: Learning Outcome 2 Could Be More Precise
+
+**Observation:**
+Learning Outcome 2 says learners should explain AI classification from four perspectives: capability, functionality, Machine Learning, and Generative AI. The plan later correctly explains that these perspectives are related but not interchangeable and that they are not a universally standardized taxonomy.
+
+**Why this matters:**
+The current wording could suggest that all four are equivalent classification frameworks.
+
+**Suggested improvement:**
+
+Consider revising the outcome to:
+
+> Explain four complementary perspectives for understanding AI systems: capability, functionality, Machine Learning, and Generative AI, and describe how these perspectives differ and can overlap.
+
+This wording better matches the explanation provided in Chapter 2.
+
+## 4. Recommended Revisions
+
+The following revisions should be prioritized before the project plan is treated as ready for Stage 1:
+
+1. Add a development-status table for the five chapters and their main sections.
+2. Add the complete Stage 1 submission checklist, including the required report, Markdown snapshot, readable content PDF, ZIP filename, and extraction test.
+3. Assign responsibility for repository evidence and individual-contribution documentation.
+4. Add explicit tasks for shared project AI-use records and separate personal logs.
+5. Require a documented peer-review outcome for the developed Markdown topic.
+6. Resolve the Chapter 3 section-numbering discrepancy against the actual chapter file.
+7. Refine Learning Outcome 2 to distinguish the four complementary perspectives more clearly.
+
+The plan should remain focused on planning and tracking work. Do not mark an item complete until the corresponding file, record, or evidence actually exists.
+
+## 5. Positive Findings
+
+* The project purpose and intended beginner audience are clearly defined.
+* The five-chapter sequence covers introductory concepts, AI types, how AI works, applications, and ethics and limitations.
+* The plan connects the shared Markdown source to the Study Guide and Test Bank, PPT Slides, and Video Tutorials.
+* The spam-filter example provides a manageable way to introduce training data, predictions, and errors.
+* Chapter-specific activities and examples avoid forcing every chapter into an identical structure.
+* Team roles and internal milestones are identified.
+* The GitHub workflow includes branches, pull requests, and Issues.
+* The plan acknowledges that some details remain subject to the lecturer's expectations.
+
+## 6. Feedback Communication
+
+**Status:** Pending.
+
+This report identifies the findings and recommended revisions. Actual communication of the feedback to the project-plan owner or team has not been independently confirmed.
+
+After the feedback is shared, record the communication method and date in the project documentation.
+
+## 7. Revision and Recheck History
+
+| Review Stage | Version               | Summary                                                                                        | Status           |
+| ------------ | --------------------- | ---------------------------------------------------------------------------------------------- | ---------------- |
+| QR-007-I01   | Version not specified | Initial review of the Initial Learning Resources Project Plan against the Stage 1 requirements | Changes Required |
+
+A follow-up review should verify that the development-status table, submission checklist, repository-evidence tasks, AI-use documentation, peer-review record, and Chapter 3 numbering have been addressed.
+
+## 8. Final Review Result
+
+**Overall Status: Changes Required**
+
+The project plan provides a strong description of the intended learning resources and overall development approach. However, it does not yet explicitly track all the operational requirements for the lecturer's Stage 1 submission.
+
+The most important gaps are the absence of a complete development-status overview, an explicit self-contained submission checklist, planned repository and contribution evidence, and clearly assigned AI-use documentation tasks. The Chapter 3 numbering discrepancy also remains unresolved.
+
+These findings concern the completeness of the plan. They do not establish that the team has failed to create the required materials; actual files and repository evidence must be checked separately.
+
+The plan can be reconsidered after the required tasks are added and their status is supported by evidence.
+
+## 9. Review Evidence
+
+The review was based on:
+
+* The supplied Initial Learning Resources Project Plan, including its five-chapter outline, resource plans, team responsibilities, timeline, workflow, and quality-assurance section.
+* The lecturer's Stage 1 instructions concerning repository setup, module outline, substantive Markdown V1.0 content, peer review, GitHub contribution evidence, and the self-contained submission package.
+
+The following items were **not independently verified** during this review:
+
+* The live GitHub repository, README, branches, pull requests, Issues, and commit history.
+* The current status and contents of the five Markdown chapter files.
+* The existence and quality of the actual submission report, exported content PDF, ZIP package, and supporting assets.
+* The completed review records and AI-use logs.
+* Whether the ZIP has been extracted and tested successfully.
+
+## 10. Additional Notes
+
+The project plan describes the intended learning resources in considerable detail, but a plan is not a substitute for the substantive Markdown content required for Stage 1.
+
+The lecturer does not require all three finished learning resources to be completed for this submission. The immediate priority is to demonstrate a coherent module outline, at least one well-developed Markdown topic, a documented review outcome, meaningful GitHub development, and a complete self-contained submission package.
+
+The official Stage 1 deadline is **October 24, 2026, at 23:59 Beijing time**. The team's internal deadline of October 23 leaves limited time to resolve the identified planning and evidence gaps.
