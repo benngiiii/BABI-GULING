@@ -1,10 +1,9 @@
-
 # Applications of AI
 
 *A beginner-friendly learning module (one branch of the AI Overview course)*
 
 **Audience:** Learners with no technical background in AI
-**Estimated time:** 4 hours (including activities)
+**Estimated time:** Approximately 3.5–4.5 hours (including activities)
 **How to use this module:** Read each topic, work through the example, try the activity questions, then click **Show answer** to check your thinking.
 
 ---
@@ -87,9 +86,9 @@ This topic focuses on **medical imaging classification**, because it clearly sho
 
 - **Clinician:** a health professional who treats patients, such as a doctor or nurse.
 - **Diagnosis:** deciding what condition, if any, a patient has.
-- **Screening:** testing people who have **no symptoms** to find a disease early.
+- **Screening:** commonly involves testing people who have **no symptoms** to identify possible disease early.
 - **Classification:** an AI task where the model puts an input into one of several categories (for example "disease" or "no disease").
-- **Clinical decision support:** software that gives clinicians information or suggestions to help them decide. The clinician makes the final decision.
+- **Clinical decision support:** software that provides information or recommendations to assist healthcare professionals.
 
 ### 1.2 Evidence that this works, and its limits
 
@@ -165,7 +164,7 @@ After comparing the tool's output with confirmed diagnoses, the results are:
 - Healthy people: 9,900. The tool wrongly flags 5% of them: 9,900 × 0.05 = **495** false positives. TN = 9,405.
 - Precision = 90 ÷ (90 + 495) = 90 ÷ 585 ≈ **0.154** (15.4%).
 
-The tool did not get worse. The disease is just rarer, so a **much larger share of the flags are false alarms**. This is why screening tools need careful planning, and why a positive result is usually followed by confirmation tests.
+The tool did not get worse. The disease is just rarer, so a **much larger share of the flags are false alarms**. When a disease is rare, there are many more healthy people than affected people. Even a small false-positive rate can therefore produce more false alarms than true detections. This is why screening tools need careful planning, and why a positive result is usually followed by confirmation tests.
 
 You can reproduce both scenarios with this Python script:
 
@@ -248,7 +247,7 @@ It looks 90% accurate while catching **no one who is sick**. Accuracy can be mis
 | **Unequal performance** | A tool trained mostly on one patient group may perform worse on others. | AI Ethics and Limitations: Bias |
 | **Patient privacy** | Medical data is highly sensitive and must be protected. | AI Ethics and Limitations: Privacy |
 | **Overtrust** | Clinicians may accept the tool's output without question. | Topic 5 (Teacher Notes) |
-| **Accountability** | A named clinician or organisation stays responsible for decisions. | WHO (2021) |
+| **Accountability** | Responsibility and oversight depend on the clinical workflow, the type of tool, and applicable regulations. | WHO (2021) |
 
 ---
 
@@ -264,7 +263,7 @@ AI in education aims to make learning more **personal**. A teacher with 30 stude
 - **Intelligent tutoring system (ITS):** software that gives step-by-step hints and feedback on problems, somewhat like a one-to-one tutor.
 - **Learning analytics:** collecting and analysing data about learners (for example time spent, mistakes made) to understand and improve learning.
 
-**Background.** Bloom (1984) reported that students tutored one-to-one performed far better than students taught in a conventional class, which became known as the "2 sigma problem". Researchers have since studied whether software tutors can capture part of that benefit. A review by VanLehn (2011) found that well-designed intelligent tutoring systems can be nearly as effective as human tutoring in some settings, though results vary.
+**Background.** Bloom (1984) reported that students tutored one-to-one performed far better than students taught in a conventional class, which became known as the "2 sigma problem". Researchers have since studied whether software tutors can capture part of that benefit. A review by VanLehn (2011) found that well-designed intelligent tutoring systems can be nearly as effective as human tutoring in some settings, though research findings vary across subjects, systems, and study conditions.
 
 ### 2.2 Common uses
 
@@ -277,6 +276,8 @@ AI in education aims to make learning more **personal**. A teacher with 30 stude
 | Early warning | Predicts which students may struggle | Flags a student who has stopped logging in |
 
 ### 2.3 Worked example: a simple adaptive quiz
+
+> **Note:** The following example uses fixed rules to demonstrate how automated decisions work. In real AI applications, machine-learning models may learn patterns from data instead of relying only on manually defined rules.
 
 **Rule used by the system** (invented for teaching):
 
@@ -309,7 +310,7 @@ A student starts at level 3 under the same rule. The student's answers are: **Co
 
 1. Question levels: Q1 = 3 (correct → 4), Q2 = 4 (wrong → 3), Q3 = 3 (wrong → 2), Q4 = 2 (wrong → 1), Q5 = 1 (wrong → stays 1, minimum), Q6 = 1 (wrong → stays 1).
 2. The next level after the final answer is **1**. At the minimum the level cannot drop further, so the student stays at level 1 and a good system would flag that the student may need human help.
-3. *Model answer:* The system is good at giving each student instant, personalised practice and showing patterns in their answers. It cannot judge motivation, notice a student is upset, explain an idea in a new way based on the student's life, or take responsibility for a child's wellbeing, so teachers remain essential.
+3. *Model answer:* The system is good at giving each student instant, personalised practice and alternative explanations, and at showing patterns in their answers. It cannot reliably replace a teacher's judgment, emotional support, classroom management, or responsibility for students' wellbeing, so teachers remain essential.
 
 </details>
 
@@ -361,7 +362,7 @@ Assign an SAE level (0 to 5) to each scenario and give a reason.
 
 - **(a)** A car beeps when you drift out of your lane but never steers.
 - **(b)** A car holds speed, keeps a safe gap, and keeps itself centred in the lane, but you must keep your eyes on the road and hands ready.
-- **(c)** In a traffic jam on a motorway, the car drives itself and you may look at your phone, but it asks you to take over when the jam clears.
+- **(c)** In a traffic jam on a motorway, an approved Level 3 automated driving system performs the driving task within its operating conditions. The driver does not need to continuously monitor the road but must remain available to take over when requested.
 - **(d)** A car with no driver picks up passengers inside a mapped city zone, and nobody needs to supervise.
 
 <details>
@@ -369,8 +370,8 @@ Assign an SAE level (0 to 5) to each scenario and give a reason.
 
 - **(a) Level 0.** It only warns; it does not control the car.
 - **(b) Level 2.** Speed and steering are both supported, but the human must supervise constantly.
-- **(c) Level 3.** The system handles driving in limited conditions, but the human must take over when requested.
-- **(d) Level 4.** The system drives without supervision, but only inside a limited area (geofenced).
+- **(c) Level 3.** The system handles driving in limited conditions, but the human must remain available and take over when requested.
+- **(d) Level 4.** The system drives without supervision, but only inside a limited area (geofenced). No human fallback driver is needed while it operates within its specified conditions.
 
 </details>
 
@@ -398,7 +399,9 @@ Assign an SAE level (0 to 5) to each scenario and give a reason.
 
 ### 4.2 Worked example: how a simple spam filter scores a message
 
-A filter can give each word a **score**: positive numbers push toward "spam", negative numbers toward "not spam". Real filters learn these scores from many examples; the scores below are invented.
+> **Note:** The following example uses fixed rules to demonstrate how automated decisions work. In real AI applications, machine-learning models may learn patterns from data instead of relying only on manually defined rules.
+
+A filter can give each word a **score**: positive numbers push toward "spam", negative numbers toward "not spam". Real filters learn these scores from many examples. In this example the scores are assigned by hand for teaching purposes, so they are invented and do not come from a trained model.
 
 | Word | Score |
 |---|---|
@@ -422,7 +425,7 @@ A filter can give each word a **score**: positive numbers push toward "spam", ne
 - Matching words: free (+2), meeting (−2)
 - Total = **0** → below 3 → **Not spam**.
 
-**Reading the result.** The filter learned that *patterns of words* signal spam. It can make mistakes: a real message containing "free" and "click" might be wrongly marked as spam (a false positive, as in Topic 1).
+**Reading the result.** The filter treats *patterns of words* as signals of spam. It can make mistakes: a real message containing "free" and "click" might be wrongly marked as spam (a false positive, as in Topic 1).
 
 ### 4.3 Learner activity
 
@@ -467,6 +470,8 @@ Total = 1 + 2 + 3 − 2 − 2 = **+2**, which is below 3, so the filter marks it
 
 ### 5.2 Worked example: a simple trading rule
 
+> **Note:** The following example uses fixed rules to demonstrate how automated decisions work. Moving-average trading rules are examples of algorithmic automation and do not necessarily involve AI. In real AI applications, machine-learning models may learn patterns from data instead of relying only on manually defined rules.
+
 A classic rule compares a **short-term** moving average with a **long-term** one:
 
 - If the short-term average moves **above** the long-term average → **enter** (buy).
@@ -480,6 +485,7 @@ Here we use a 2-day average (short) and a 3-day average (long) on invented daily
 - The rule is **evaluated after each day's close**, once that day's price is known.
 - Because the signal only appears after the market has closed, the trade is carried out at the **next day's closing price**. (This is a simplification; real trades happen at whatever price is available when the order executes.)
 - We trade **one unit**, hold only one position at a time, and ignore fees and taxes.
+- For this simplified example, the first day when both moving averages are available counts as a buy signal if the short-term average is above the long-term average. After that, new signals occur when their relative positions change.
 
 | Day | Closing price | 2-day average | 3-day average | Short above long? | Signal (after close) | Trade (at this day's close) |
 |---|---|---|---|---|---|---|
@@ -570,6 +576,7 @@ Complete the table for **three** of the five sectors, then answer the question b
 - **Common misconception (Topic 1):** Learners often assume high accuracy means a good tool. Question 3 (the "lazy" tool) and Step 6 of the worked example (changing prevalence) address this directly. Ask learners to predict the answer before revealing it.
 - **Common misconception (Topic 3):** Learners confuse driver assistance (Level 2) with self-driving. Stress that at Level 2 the human is still responsible at all times.
 - **Common misconception (Topic 5):** The trading rule is a fixed algorithm, not a learning model. Use it to show how automated decisions work, then discuss how machine learning would replace the fixed rule.
+- **Rule-based automation versus machine learning (Topics 2, 4, and 5):** The adaptive quiz, the spam-filter scores, and the moving-average trading rule use fixed or hand-assigned rules to show how automated decisions work. They are not trained machine-learning models. Ask learners how a real system might learn these rules or scores from data instead.
 - **Trading assumptions (Topic 5):** Insist that learners state when the signal is evaluated and at what price the trade happens before calculating a result. Ask them to redo the worked example with trades at the same day's close and compare.
 - **Extension:** Ask learners to find one current example of AI in a sector and evaluate it with the three questions from the Core idea: *What is the task? What data does it use? What happens when it is wrong?*
 - **Linking to ethics:** Each topic notes where bias, privacy, or accountability issues arise. Use these as bridges to the AI Ethics and Limitations module.
@@ -588,7 +595,7 @@ Complete the table for **three** of the five sectors, then answer the question b
 | **Autonomous vehicle** | A vehicle able to perform driving tasks without constant human control. |
 | **Backtesting** | Testing a rule or model on past data to estimate how it would have performed. |
 | **Classification** | An AI task that places an input into one of several categories. |
-| **Clinical decision support** | Software that helps clinicians decide; the clinician makes the final decision. |
+| **Clinical decision support** | Software that provides information or recommendations to assist healthcare professionals. |
 | **Clinician** | A health professional who treats patients. |
 | **Confusion matrix** | A table counting correct and incorrect outputs by true category. |
 | **Diagnosis** | Deciding what condition, if any, a patient has. |
@@ -604,7 +611,7 @@ Complete the table for **three** of the five sectors, then answer the question b
 | **Precision** | When the tool says "positive", how often it is right: TP ÷ (TP + FP). |
 | **Prevalence** | The proportion of a population that has a condition. |
 | **Recommendation system** | Software that predicts what content or products you are likely to want. |
-| **Screening** | Testing people without symptoms to find disease early. |
+| **Screening** | Commonly testing people without symptoms to identify possible disease early. |
 | **Sensitivity** | Of the people who have the condition, the share the tool catches: TP ÷ (TP + FN). |
 | **Sensor** | A device that collects information about the surroundings. |
 | **Specificity** | Of the people who are healthy, the share the tool clears: TN ÷ (TN + FP). |
