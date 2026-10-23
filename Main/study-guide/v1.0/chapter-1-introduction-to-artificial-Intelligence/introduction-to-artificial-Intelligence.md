@@ -1,13 +1,13 @@
 # Chapter 1: Introduction to Artificial Intelligence
 
-> **Status:** Revised (V1.1) after Quality Review QR-001-I01, awaiting recheck
+> **Status:** Drafted (V1.0), awaiting peer review
 > **Author:** Jonathan Sugianto | **Reviewer:** Brian Djoni Suzanna
 > **Audience:** Complete beginners. No programming or AI background needed.
 
 ---
 
 ## Table of Contents
- 
+
 1. [Learning Outcomes](#learning-outcomes)
 2. [Chapter Map](#chapter-map)
 3. [1.1 What is AI?](#11-what-is-ai)
@@ -17,7 +17,7 @@
 7. [1.5 Worked Example: A Spam Filter That Learns](#15-worked-example-a-spam-filter-that-learns)
 8. [1.6 Practice Questions and Answers](#16-practice-questions-and-answers)
 9. [1.7 Summary, Reuse Plan, and References](#17-summary-reuse-plan-and-references)
-    
+
 ---
 
 ## Learning Outcomes
@@ -27,8 +27,8 @@ After this chapter, you should be able to:
 1. Explain in your own words what Artificial Intelligence (AI) is.
 2. Describe five key moments in the history of AI.
 3. Explain the difference between traditional programming and AI that learns from data.
-4. Use nine basic AI terms correctly: data, algorithm, label, model, machine learning, training, inference, neural network, deep learning.
-5. Walk through a simple example of a program that learns from examples, compare it with a rule-based program that does the same job, and explain why it works and where it fails.
+4. Use eight basic AI terms correctly: data, algorithm, model, machine learning, training, inference, neural network, deep learning.
+5. Walk through a simple example of a program that learns from examples, and explain why it works and where it fails.
 
 ## Chapter Map
 
@@ -130,10 +130,10 @@ Now imagine you must write exact rules to decide "Is this mango ripe?" You would
 
 Instead, a person learns from experience: after seeing and touching many mangoes, you can tell if one is ripe, even if you cannot explain every rule. **Machine learning** does something similar. We give the computer many **examples with the correct answers**, and it finds the patterns by itself.
 
+> This is an example of **supervised learning**, where a model learns from labeled data. Other machine learning approaches may learn without labeled answers.
+
 ![Diagram comparing traditional programming (rules and data go in, answers come out) with machine learning (data and correct answers go in, rules come out)](assets/fig-1-3-traditional-vs-ml.png)
 *Figure 1.4: Traditional programming vs machine learning. Source: created by our team.*
-
-> **Note: this is supervised learning.** The example above, where the computer learns from examples that come with correct answers, is called **supervised learning**: a model learns from **labeled data**. Other machine learning approaches may learn without labeled answers. In this chapter we focus on supervised learning because it is the easiest to understand.
 
 ### Side-by-side comparison
 
@@ -144,8 +144,6 @@ Instead, a person learns from experience: after seeing and touching many mangoes
 | What comes out? | Answers | Rules (a **model**) that can give answers for new data |
 | Works best when | Rules are clear and exact (calculating tax, sorting names) | Rules are hard to write (recognizing faces, understanding speech) |
 | Main weakness | Fails on cases the programmer did not think of | Needs a lot of good data, and learns mistakes if the data is bad |
-
-In Section 1.5, you will see both approaches solve the same task, so you can compare them directly.
 
 > **Important note:** Not all AI learns from data. Some early AI systems, such as *expert systems*, used rules written by human experts. We focus on learning-based AI because it powers most modern tools, but the two ideas are not the same thing.
 
@@ -188,24 +186,7 @@ Deep learning is a part of machine learning, and machine learning is a part of A
 
 ## 1.5 Worked Example: A Spam Filter That Learns
 
-Let's solve one task in two ways: **a program with hand-written rules**, and **a program that learns from examples**. The task is to decide whether a short email is **Spam** or **Not spam**. Real filters are much more advanced, but this shows the full cycle: **data → training → model → inference**.
-
-### Part 1: The rule-based way (a programmer writes the rules)
-
-A programmer looks at some spam emails and notices that many contain the words "free" or "prize". So the programmer writes this rule:
-
-> **Rule:** If the email contains the word **free** or the word **prize**, predict **Spam**. Otherwise, predict **Not spam**.
-
-| Email | Contains "free" or "prize"? | Prediction |
-|-------|:---------------------------:|:----------:|
-| free offer tomorrow | Yes | Spam |
-| meeting at noon | No | Not spam |
-
-The rule is simple, fast, and easy to explain. Nobody had to collect data or train anything. But the rule only knows what the programmer thought of. We will test it on more emails in Part 3.
-
-### Part 2: The learning way (the computer finds the rules)
-
-Now we build a tiny filter that finds its own rules from labelled examples.
+Let's build a very small spam filter by hand. Real filters are much more advanced, but this shows the full cycle: **data → training → model → inference**.
 
 ### Step 1: Collect labelled data
 
@@ -241,8 +222,6 @@ This score table is our **model**. We never wrote a rule like "the word *free* m
 
 > Add up the scores of all the words in an email. If the total is **greater than 0**, predict **Spam**. Otherwise, predict **Not spam**. A word that is not in the table scores 0.
 
-> **What does the score mean?** The score is not a probability or a direct measure of confidence. It is just a simple count that helps us make a decision inside this example. Since the model uses only a small training dataset and simple word counts, its predictions may not always be reliable.
-
 ### Step 4: Inference on a new email
 
 New email: **"free offer tomorrow"**
@@ -270,32 +249,12 @@ New email: **"free lunch at noon"** (a friend inviting you to eat)
 
 The prediction is **Not spam**, which is correct here. But look at how it happened: the harmless words "at" and "noon" pulled the score down. Now try **"free prize at noon"**: +3 +2 −2 −2 = **+1**, so the filter says **Spam**. Is it really spam? The filter cannot know, because it only counts words.
 
-### Part 3: Compare the two approaches
-
-Let's test both filters on the same new emails. For the learning filter, add up the word scores from the model in Step 2.
-
-| New email | Expected answer | Rule-based (Part 1) | Learning-based (Part 2) |
-|-----------|:---------------:|:-------------------:|:-----------------------:|
-| free offer tomorrow | Spam | Spam ✔ | Spam ✔ (+3) |
-| free lunch at noon | Not spam | Spam ✘ | Not spam ✔ (−2) |
-| win money now | Spam | Not spam ✘ | Spam ✔ (+3) |
-| hello friend | Not spam | Not spam ✔ | Not spam ✔ (0) |
-
-What we can see:
-
-- The **rule-based filter** blocked the friend's lunch invitation, because it only looks for "free" and "prize". It also missed "win money now", because the programmer did not write a rule for those words. To fix this, the programmer must add more rules by hand, and keep doing so as spam changes.
-- The **learning-based filter** got all four right, because its scores came from examples. If we show it more examples, the scores change by themselves.
-- The learning-based filter is **not perfect**. It still struggles with "free prize at noon" (Step 5), and "hello friend" was labelled Not spam only because unknown words score 0, not because the model understood the email.
-- Four emails are a very small test. This table does not prove that one approach is always better. Rule-based programs are often the best choice when the rules are clear, and they are easy to check and explain.
-
 ### What this example teaches
 
 - **A model depends on its training data.** The words "at" and "noon" look "safe" only because our six emails happened to include them in not-spam messages.
 - **More and varied data makes a better model.** Six emails is far too few. Real filters learn from millions.
 - **Models make mistakes.** Even good filters sometimes block real emails or let spam through.
 - **Training and inference are separate.** We counted once (training), then used the same table for any number of new emails (inference).
-- **A score is not a probability.** The total score only helps this simple example decide between Spam and Not spam. It does not tell us how sure the filter is.
-- **Rules and learning solve different problems well.** Hand-written rules are simple and predictable, but they only cover what the programmer thought of. Learning can adapt to new examples, but it needs good data.
 
 > **Note:** This word-scoring method is a simplified teaching version. Real spam filters use more advanced statistical or neural network methods, and they look at much more than single words.
 
@@ -342,8 +301,6 @@ Use the model from Section 1.5 (the score table and the rule "total > 0 means sp
 
 **Q11 (Think).** Our filter was trained on only six emails. Name **two** ways to improve it.
 
-**Q12 (Compare).** Use the rule-based filter from Part 1 of Section 1.5 (the word "free" or "prize" means Spam) to classify **"win money now"**. Compare the result with your answer to Q7. Which approach handles this email better, and why?
-
 ### Answers and Explanations
 
 **A1. B.** AI is about systems that do tasks needing human-like intelligence. A is wrong because most AI has no body. C is wrong because AI and the internet are different things. D is wrong because AI does not work like a human brain.
@@ -362,15 +319,11 @@ Use the model from Section 1.5 (the score table and the rule "total > 0 means sp
 
 **A8.** project (−1) + meeting (−1) + tomorrow (−1) = **−3**, so **Not spam**.
 
-**A9.** claim (+1) + free (+3) + money (+1) + at (−2) + noon (−2) = **+1**, so **Spam**. The total is barely above 0, and harmless words ("at", "noon") pulled the score down, so a small change in the training data could flip the result.
-
-*Remember:* the score is not a probability or a direct measure of confidence. Since the model uses only a small training dataset and simple word counts, its predictions may not always be reliable.
+**A9.** claim (+1) + free (+3) + money (+1) + at (−2) + noon (−2) = **+1**, so **Spam**. The total is barely above 0, and harmless words ("at", "noon") pulled the score down, so a small change in the training data could flip the result. The score is not a probability or a direct measure of confidence. Since the model uses only a small training dataset and simple word counts, its predictions may not always be reliable.
 
 **A10.** Both words are not in the table, so each scores 0. The total is **0**, which is not greater than 0, so the prediction is **Not spam**. The model has no knowledge about words it never saw during training, so it may be wrong on new kinds of emails.
 
 **A11.** Any two of these: add many more training emails; include more varied examples (different senders and topics); ignore very common words such as "at"; check the mistakes it makes and add them as new training examples; use a smarter scoring method.
-
-**A12.** The rule-based filter finds no "free" or "prize" in "win money now", so it predicts **Not spam**, which is wrong. The learning-based filter in Q7 gave **+3**, so it predicts **Spam**. The learning-based filter does better here because it learned from the examples that "win", "money", and "now" appear in spam, while the programmer did not write a rule for those words. The programmer could fix this by adding more rules by hand. This is only one email, so it does not show that learning is always better.
 
 ---
 
@@ -380,40 +333,29 @@ Use the model from Section 1.5 (the score table and the rule "total > 0 means sp
 
 - AI is the field of making computers do tasks that normally need human intelligence.
 - AI has a history of breakthroughs and "winters." The recent boom came from more data, faster computers, and better methods.
-- Traditional programming uses rules written by humans. Machine learning lets the computer find rules from examples. The type of learning in this chapter is supervised learning, which uses labelled examples.
+- Traditional programming uses rules written by humans. Machine learning lets the computer find rules from examples.
 - **Training** builds a model from data. **Inference** uses the model on new data.
-- A model depends on its data, and it can make mistakes. Its scores are not probabilities.
+- A model depends on its data, and it can make mistakes.
 
 ### How this chapter will be reused
 
 | Resource | Planned use |
 |----------|-------------|
-| **Study Guide** | Sections 1.1–1.4 become the reading text. The terminology table becomes a glossary. Questions Q1–Q12 go into the Test Bank with the explained answers. |
-| **PPT Slides** | The timeline (1.2), the two flow diagrams (1.3), and the nested diagram (1.4) become full-slide visuals. The spam filter (1.5) becomes a step-by-step slide sequence: the rule-based filter first, then the score table being built, then a final slide comparing the two approaches. |
-| **Video Tutorial** | A short video that follows Section 1.5: show the rule-based filter and where it fails, then show the six emails, build the score table on screen, and test new emails while narrating each step. |
+| **Study Guide** | Sections 1.1–1.4 become the reading text. The terminology table becomes a glossary. Questions Q1–Q11 go into the Test Bank with the explained answers. |
+| **PPT Slides** | The timeline (1.2), the two flow diagrams (1.3), and the nested diagram (1.4) become full-slide visuals. The spam filter (1.5) becomes a step-by-step slide sequence that builds the score table. |
+| **Video Tutorial** | A short video that follows Section 1.5: show the six emails, build the score table on screen, then test new emails while narrating each step. |
 
 ### Development status of this chapter
 
 | Section | Status | Notes |
 |---------|:------:|-------|
 | 1.1 What is AI? | Drafted | Needs peer review |
-| 1.2 Brief History | Drafted | Key dates cross-checked once against online sources; reviewer should re-check against the references. Image source and license details (Figures 1.2 and 1.3) are still TO BE CONFIRMED. |
-| 1.3 AI vs Traditional Programming | Revised (V1.1) | Supervised learning note added (QR-001-I01). Diagrams to be redrawn as images by the Visual Design Lead. |
+| 1.2 Brief History | Drafted | Key dates cross-checked once against online sources; reviewer should re-check against the references |
+| 1.3 AI vs Traditional Programming | Drafted | Diagrams to be redrawn as images by the Visual Design Lead |
 | 1.4 Terminology | Drafted | Needs peer review |
-| 1.5 Worked Example | Revised (V1.1) | Rule-based example and comparison added (QR-001-I04); score explanation added (QR-001-I02). All scores recalculated by hand; needs independent check. |
-| 1.6 Practice Questions | Revised (V1.1) | Note added to A9 (QR-001-I02); Q12 and A12 added (QR-001-I04). Existing calculations unchanged. Should be tested by a member who has not seen the answers. |
+| 1.5 Worked Example | Drafted | All scores recalculated by hand; needs independent check |
+| 1.6 Practice Questions | Drafted | Should be tested by a member who has not seen the answers |
 | 1.7 References | Drafted | All entries need to be verified by the Quality Lead |
-
-### Revision log (V1.0 → V1.1)
-
-| Review finding | Change made | Status |
-|----------------|-------------|:------:|
-| QR-001-I01 | Added a supervised learning note in Section 1.3 and mentioned it in the key takeaways. | Ready for recheck |
-| QR-001-I02 | Added a "What does the score mean?" note in Section 1.5, a bullet in "What this example teaches", and a reminder in A9. | Ready for recheck |
-| QR-001-I03 | The Table of Contents already uses internal Markdown anchors. No change was needed; links should still be checked in the rendered GitHub preview. | Check in preview |
-| QR-001-I04 | Option A chosen: added a short rule-based spam filter (Part 1) and a side-by-side comparison (Part 3) to Section 1.5, plus Q12 and A12. The learning-based example (Part 2) and all its calculations are unchanged. | Ready for recheck |
-| QR-001-I05 | Not yet resolved. Image display and the license and photographer details for Figures 1.2 and 1.3 must be checked on the original file pages and in the GitHub preview. | Open |
-| Extra | The learning outcome said "eight" terms, but the terminology table lists nine (it includes **Label**). Outcome 4 now says nine and lists all of them. | Done |
 
 ### References
 
