@@ -30,7 +30,8 @@ This register provides an overview of the quality reviews conducted for the *Int
 |  20 | QR-007-I03 | Project Plan                          | Initial Review   | Changes Required            |
 |  21 | QR-008-I01 | Readme                                | Initial Review   | Changes Required            |
 |  22 | QR-008-I02 | Readme                                | Initial Review   | Minor Revisions Recommended |
-|  23 | QR-009-I01 | Readme                                | Initial Review   | Changes Required           |
+|  23 | QR-009-I01 | Readme                                | Initial Review   | Changes Required            |
+|  24 | QR-002-I03 | Chapter 2                             | Second Review    | Changes Required            |
 
 
 
@@ -61,7 +62,8 @@ The repository contains the following review files:
 * QR-007-I03.md
 * QR-008-I01.md
 * QR-008-I02.md
-* QR-009-I01.md`
+* QR-009-I01.md
+* QR-002-I03.md
 
 ## 4. Review Tracking Notes
 
