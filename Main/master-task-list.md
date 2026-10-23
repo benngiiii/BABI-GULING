@@ -207,7 +207,7 @@ The team used ChatGPT. The Stage 1 AI-use log (logs/stage1-ai-use-log.md) record
 
 - Repository: https://github.com/benngiiii/BABI-GULING
 - Main folders: `Main` (documents and study guide), `quality/reviews` (review records), `logs` (AI-use log)
-- Contribution evidence: GitHub commit history, pull requests, and Issues. [Contribution evidence](https://github.com/benngiiii/BABI-GULING/blob/commits/AI-Overview/)
+- Contribution evidence: GitHub commit history, pull requests, and Issues. [Contribution evidence](https://github.com/benngiiii/BABI-GULING/commits/AI-Overview/)
 
 ## 9. Remaining Work and Next Steps
 
