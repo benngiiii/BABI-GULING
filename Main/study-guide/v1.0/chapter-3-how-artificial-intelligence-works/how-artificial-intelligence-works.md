@@ -360,9 +360,9 @@ Tools such as ChatGPT, Claude, and Gemini are built on **large language models (
 
 ### Step 2: Next-token prediction (the training trick)
 
-During training, the model reads enormous amounts of text and repeatedly tries to predict *the next token*. The correct answer is already in the text, so **no human labelling is required for this stage**. This is called **self-supervised learning**, and it is why LLMs could be trained at such a vast scale.
+During training, the model reads enormous amounts of text and repeatedly tries to predict *the next token*. The correct answer is already in the text, so **no human labelling is required**. This is called **self-supervised learning**, and it is why LLMs could be trained at such a vast scale.
 
-To predict well, the model has to pick up the regularities in its training text: grammar, many of the facts the text contains, patterns of reasoning, coding conventions, and writing styles. What it picks up is only as complete and as accurate as that text, which is one reason fluent output can still be wrong.
+To predict well, the model is forced to learn grammar, facts, reasoning patterns, coding conventions, and writing styles.
 
 ### Step 3: The transformer and attention
 
@@ -394,7 +394,7 @@ Temperature changes *how the model chooses* among its options. It does not make 
 flowchart LR
     A["Vast text, code,<br/>and other data"]
     B["Pre-training:<br/>predict the next token"]
-    C["Base model:<br/>has learned language patterns and<br/>information from its training data"]
+    C["Base model:<br/>knows language and facts"]
     D["Fine-tuning:<br/>learn from curated<br/>example conversations"]
     E["Preference tuning:<br/>feedback on which answers<br/>are better, e.g. RLHF"]
     F["Assistant model:<br/>helpful, safer,<br/>follows instructions"]
@@ -405,7 +405,7 @@ flowchart LR
 
 | Stage | What happens | Result |
 |---|---|---|
-| **Pre-training** | Learns language patterns and the information contained in its training data by predicting the next token | A powerful but unfocused "base model". It is not yet an assistant, and what it learned is only as reliable as its data |
+| **Pre-training** | Learns language and general knowledge by predicting the next token | A powerful but unfocused "base model" |
 | **Fine-tuning** | Trained on high-quality examples of instructions and good answers | Follows instructions and holds a conversation |
 | **Preference tuning (e.g., RLHF)** | Human (or AI) feedback on which answers are better steers the model | More helpful, honest, and safe behaviour |
 
@@ -414,12 +414,12 @@ Reinforcement learning from human feedback was shown to make a much smaller mode
 ### Important properties of LLMs
 
 - **Context window:** the maximum amount of text (prompt plus conversation plus reply) the model can consider at once. Anything outside it is effectively invisible. Context windows have grown very large, but they are still finite.
-- **Knowledge cutoff:** what a model learned in training stops at the end of its training data, and it can be incomplete or wrong even before that date. Newer information can reach the model only as *input*: text in your prompt, documents you attach, or results from a tool such as web search or RAG (Section 3.8). That input is only as reliable as its source, so check it.
+- **Knowledge cutoff:** the model knows nothing after the end of its training data unless connected to a tool such as web search.
 - **Multimodal models:** many current models accept and produce more than text, including images, audio, and sometimes video.
 - **Reasoning models:** some newer models are trained to spend extra effort "thinking" through a problem step by step before answering, which often improves results on maths, coding, and logic tasks at the cost of speed and expense.
 - **AI agents:** systems that wrap a model with tools (search, code execution, software controls) and let it carry out multi-step tasks, checking results along the way.
 
-> **Important insight:** An LLM generates text that is *statistically plausible* given its training and your prompt, not text it has *verified as true*. That text is often accurate and useful, but fluent language is not proof of factual accuracy. This is why AI can sound confident and still be wrong (a "hallucination", covered in Chapter 5).
+> **Important insight:** An LLM generates text that is *statistically plausible*, not text it has *verified as true*. This is why AI can sound confident and still be wrong (a "hallucination", covered in Chapter 5). Fluency is not accuracy.
 
 ---
 
@@ -631,7 +631,7 @@ Understanding *how* AI works directly improves *how well you use it*.
 | LLMs predict plausible text | You **verify** facts, numbers, and citations instead of trusting fluent answers. |
 | Parameters are frozen at inference | You know AI will not "remember" you across chats unless a memory feature exists, so you supply the context. |
 | The context window is limited | You give clear, relevant background and avoid overloading long conversations. |
-| Knowledge cutoff exists | You use search-enabled tools for recent information, and check the sources they return. |
+| Knowledge cutoff exists | You use search-enabled tools for recent information. |
 | Temperature and prompts shape output | You adjust instructions to get consistent or creative results. |
 | RAG and tools exist | You attach documents or enable tools instead of expecting the model to "just know". |
 | Models need evaluation | You test AI outputs against known answers before relying on them for important work. |
@@ -679,11 +679,11 @@ Further techniques worth practising: giving **examples** of the output you want,
 
 | Misconception | Reality |
 |---|---|
-| "AI thinks like a human." | AI systems can perform tasks associated with human intelligence, but their behaviour does not by itself establish human-like understanding, intent, or consciousness. Under the hood, they learn statistical patterns from data and work differently from a human brain. |
+| "AI thinks like a human." | AI finds statistical patterns in data. It has no human-style understanding, intent, or consciousness. |
 | "AI looks up the answer in a database." | A trained LLM generates responses from learned patterns, unless it is explicitly connected to a search or retrieval tool. |
 | "AI learns from every chat I have." | Parameters are fixed at inference. Learning happens during training, and separate policies control whether chats are ever used later. |
 | "More data always means a better model." | Quality, relevance, and diversity matter as much as quantity. |
-| "If AI sounds confident, it is correct." | Fluent language is not proof of factual accuracy. Always verify important claims. |
+| "If AI sounds confident, it is correct." | Fluency is not accuracy. Always verify important claims. |
 | "A bigger model is always better." | Smaller, specialised models can beat larger ones on specific tasks, and they cost less to run. |
 | "AI is objective because it is maths." | Models inherit the biases and gaps in their data and in the choices people make when building them. |
 | "Accuracy is the only number that matters." | Precision, recall, and the real-world cost of errors often matter more. |
@@ -696,7 +696,7 @@ Further techniques worth practising: giving **examples** of the output you want,
 2. An **algorithm** is the learning procedure. A **model** is what it produces.
 3. **Machine learning** works by *guess → measure error → adjust → repeat*.
 4. **Neural networks** learn layered patterns; **transformers** with attention power today's language AI.
-5. **LLMs** are trained to predict the next token. They produce plausible text that is often useful and accurate but is not verified truth.
+5. **LLMs** are trained to predict the next token. They produce plausible text, not verified truth.
 6. **Training** builds the model (expensive, done by developers). **Inference** uses it (fast, done by everyone).
 7. You can improve results **without retraining** through **prompting, RAG, and tools**. Fine-tuning and training from scratch are the *training-based* options that change the model itself.
 8. **Evaluate** with the right metric on data the model has never seen: tune on the validation set, test once at the end, and judge "good enough" against the cost of each kind of error.
