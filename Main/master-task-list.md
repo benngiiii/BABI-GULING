@@ -166,8 +166,8 @@ Stage 1 builds the foundation of the project:
 **Chapter 1: Introduction to Artificial Intelligence** is the developed topic for Stage 1. It was reviewed over four rounds, and the fourth review (QR-001-I04) approved it.
 
 - Author: Jonathan Sugianto
-- File: [Main/study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence]
-- Supporting images: [chapter-1-introduction-to-artificial-Intelligence/assets]
+- File: [study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence)
+- Supporting images: [chapter-1-introduction-to-artificial-Intelligence/assets](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/assets)
 
 ## 5. Team Contributions
 
@@ -189,10 +189,10 @@ Quality reviews were carried out by the Quality Lead. Latest registered result f
 | Document | Latest review | Latest registered result |
 |----------|---------------|--------------------------|
 | Chapter 1 | QR-001-I04 | Pass |
-| Chapter 2 | QR-002-I03 | Changes Required |
+| Chapter 2 | QR-002-I03 | Pass |
 | Chapter 3 | QR-003-I05 | Pass |
-| Chapter 4 | QR-004-I01 | [TO CONFIRM: detailed report to be completed] |
-| Chapter 5 | QR-005-I02 | Pass, pending final rendering verification |
+| Chapter 4 | QR-004-I01 | Pass |
+| Chapter 5 | QR-005-I02 | Pass |
 | Master Task List | QR-006-I01 | Changes Required; revised in v1.2, recheck pending |
 | Project Plan | QR-007-I03 | Changes Required |
 | README | QR-008-I02 | Minor Revisions Recommended |
