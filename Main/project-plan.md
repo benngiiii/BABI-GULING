@@ -387,11 +387,11 @@ Filled in only when each file actually exists and has been checked. File names m
 | ------------------------------- | ---------------------------------------------------------- | ----------- | -------------- | ------------------ | ------------ |
 | Submission Report (Word or PDF) | `Stage1_Submission_Report` (.docx or .pdf)                 | `BABI GULING_Stage1_Submission Report.docx`   | 2026-10-23     | Team               | Verified     |
 | Markdown source snapshot        | README, current `.md` files, and assets in working folders | `Main/`, `quality/`, `logs/`   | 2026-10-23     | Team               | Verified     |
-| Readable content PDF            | `Stage1_Content.pdf` or Main/stage1_Content.md              | Stage1_Content.pdf   | 2026-10-23     | Team               | Verified   |
-| Shared AI-use records           | Refer to section 12                                | `logs/stage1-ai-use-log.md`   | 2026-10-23     | Team               | Verified     |
+| Readable content PDF            | `Stage1_Content.pdf` or Main/stage1_Content.md              | Stage1_Content.pdf   | 2026-10-24     | Team               | Verified   |
+| Shared AI-use records           | Refer to section 12                                | `logs/stage1-ai-use-log.md`   | 2026-10-24     | Team               | Verified     |
 | Peer-review record              | `quality/reviews/detailed reviews/QR-005-I01` and  `QR-005-I02`            | `quality/reviews/detailed reviews/QR-005-I01` and  `QR-005-I02`   | 2026-10-23     | Team               | Verified     |
-| Final ZIP                       | `TeamName_Stage1_GitHub_Markdown_V1.zip`                   | TeamName_Stage1_GitHub_Markdown_V1.zip   | 2026-10-23     | Team               | Verified    |
-| Extraction test                 | Folder used for extraction: Done by Quality Lead                      | Have been tested        | Verified   | Team               | Pending     |
+| Final ZIP                       | `TeamName_Stage1_GitHub_Markdown_V1.zip`                   | TeamName_Stage1_GitHub_Markdown_V1.zip   | 2026-10-24     | Team               | Verified    |
+| Extraction test                 | Folder used for extraction: Done by Quality Lead                      | Have been tested        |  2026-10-24     | Team               |  Verified      |
 
 **Submission Report content check.** Before submission, confirm that the report contains: the repository URL, the snapshot date, the latest commit identifier, the content-status summary, repository evidence, individual contributions, the review outcome, next steps, and a brief statement of significant AI assistance with pointers to the relevant log entries. Also confirm that the content PDF includes the current learning content, the module outline, and the development status. **Completed 2026-10-23.**
 
