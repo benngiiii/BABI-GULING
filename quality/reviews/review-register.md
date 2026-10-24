@@ -39,6 +39,7 @@ This register provides an overview of the quality reviews conducted for the *Int
 |  29 | QR-004-I01 | Chapter 4                             | Initial Review   | Minor Revisions Recommended |
 |  30 | QR-004-I02 | Chapter 4                             | Second Review    | Pass                        |
 |  31 | QR-006-I02 | Master Task List                      | Second Review    | Minor Revisions Recommended |
+|  32 | QR-010-I01 | stage1_Content                        | Initial Review   | Changes Required            |
 
 
 ## 3. Review File Locations
@@ -72,6 +73,7 @@ The repository contains the following review files:
 * QR-009-I01.md
 * QR-009-I02.md
 * QR-009-I03.md
+
 
 ## 4. Review Tracking Notes
 
