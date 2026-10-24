@@ -44,12 +44,12 @@ AI-generated information should be reviewed by the responsible team member befor
 | AI-002   | Benedict Subhata    | 22 October 2026 | Understanding assignment requirements                                | [TO CONFIRM] |
 | AI-003   | Benedict Subhata    | 22 October 2026 | Understanding how AI works                                           | [TO CONFIRM] |
 | AI-004   | Benedict Subhata    | 22 October 2026 | Learning GitHub Markdown                                             | [TO CONFIRM] |
-| AI-005   | Jonathan Sugianto   | [TO COMPLETE]   | Chapter 1 development                                                | [TO CONFIRM] |
-| AI-006   | Jonathan Sugianto   | [TO COMPLETE]   | Chapter revision                                                     | [TO CONFIRM] |
-| AI-007   | Joseph Lokman       | [TO COMPLETE]   | Chapter 5 development                                                | [TO CONFIRM] |
-| AI-008   | Joseph Lokman       | [TO COMPLETE]   | Project Plan corrections and updates                                 | [TO CONFIRM] |
-| AI-009   | Brian Djoni Suzanna | 24 October 2026 | Understanding project requirements and Quality Lead responsibilities | Claude       |
-| AI-010   | Brian Djoni Suzanna | 24 October 2026 | Planning GitHub workflow and branches                                | Claude       |
+| AI-005   | Jonathan Sugianto   | 22 October 2026| Chapter 1 development                                                 | Claude       |
+| AI-006   | Jonathan Sugianto   | 22 October 2026   | Chapter revision                                                     | Claude  |
+| AI-007   | Joseph Lokman       | 23 October 2026 | Chapter 5 development                                                | [TO CONFIRM] |
+| AI-008   | Joseph Lokman       | 22 October 2026 | Project Plan corrections and updates                                 | [TO CONFIRM] |
+| AI-009   | Brian Djoni Suzanna | 22 October 2026 | Understanding project requirements and Quality Lead responsibilities | Claude       |
+| AI-010   | Brian Djoni Suzanna | 21 October 2026 | Planning GitHub workflow and branches                                | Claude       |
 
 ---
 
@@ -151,9 +151,6 @@ Since our team uses Markdown to organize learning materials, I needed to learn h
 
 The AI explanation helped me understand basic Markdown formatting and how Markdown files are displayed in GitHub.
 
-**Verification:**
-
-[TO COMPLETE — State whether the Markdown formatting was tested in GitHub.]
 
 **Evidence:**
 
@@ -164,8 +161,8 @@ The AI explanation helped me understand basic Markdown formatting and how Markdo
 ## AI-005 — Chapter 1 Development
 
 **Team Member:** Jonathan Sugianto
-**Date:** [TO COMPLETE]
-**AI Tool:** [TO CONFIRM]
+**Date:** 22 October 2026
+**AI Tool:** Claude
 
 **Purpose:**
 
@@ -175,21 +172,17 @@ AI was used to support the development of Chapter 1, Introduction to Artificial 
 
 [TO COMPLETE — Explain whether AI helped with explanations, chapter organization, examples, terminology, or another specific task.]
 
-**Verification:**
-
-[TO COMPLETE — Explain how the AI-assisted content was reviewed or checked.]
-
 **Evidence:**
 
-![AI-005 — Chapter 1 development](assets/ai-005.png)
+![AI-005 — Chapter 1 development](assets/penggunaan-untuk-mengerjakan-chapter1.png)
 
 ---
 
 ## AI-006 — Chapter Revision
 
 **Team Member:** Jonathan Sugianto
-**Date:** [TO COMPLETE]
-**AI Tool:** [TO CONFIRM]
+**Date:** 22 October 2026  
+**AI Tool:** Claude
 
 **Purpose:**
 
@@ -199,13 +192,10 @@ AI was used to assist with revising chapter content.
 
 [TO COMPLETE — Identify the chapter, what needed revision, and how the AI response helped.]
 
-**Verification:**
-
-[TO COMPLETE — Explain how the revised content was checked.]
 
 **Evidence:**
 
-![AI-006 — Chapter revision](assets/ai-006.png)
+![AI-006 — Chapter revision](assets/revised-chapter.png)
 
 ---
 
