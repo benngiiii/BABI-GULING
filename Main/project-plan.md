@@ -491,7 +491,7 @@ When verifying, confirm that commits show meaningful changes with identifiable a
 | Brian Djoni Suzanna       | Quality reviews and final audit; Chapter 4 draft and outline; AI-use log                  | Wrote reviews; drafted Chapter 4 topics; created shared AI-use log                         | 2026-10-24         |
 | Gandhi Bestin Dhammananda | Chapter 2 draft                  | Drafted full Chapter 2 (2.1–2.9) including classification activity                         | 2026-10-24         |
 | Jonathan Sugianto         | Chapter 1 draft; Markdown template; Stage 1 package compilation                  | Drafted Chapter 1; created shared Markdown template; compiled Stage 1 ZIP                         | 2026-10-24         |
-| Joseph Lokman             | GitHub repository setup; Chapter 5 draft; activity records         | Initialized repository; drafted Chapter 5 Topic 1 (Bias); recorded team activities                         | 2026-10-24         |
+| Joseph Lokman             | GitHub repository setup; Chapter 5 draft; activity records         | Initialized repository; drafted Chapter 5; recorded team activities                         | 2026-10-24         |
 
 These entries are filled in from the actual repository history, not from the role descriptions in Section 10.
 
