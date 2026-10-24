@@ -43,6 +43,7 @@ This register provides an overview of the quality reviews conducted for the *Int
 |  33 | QR-010-I02 | stage1_Content                        | Second Review    | Pass                        |
 |  34 | QR-101-I02 | Team Project Plan and Task List       | Second Review    | Minor Revisions Recommended | 
 |  35 | QR-101-I03 | Team Project Plan and Task List       | Third Review     | Pass                        |
+|  36 | QR-008-I03 | Readme                                | Third Review     | Pass                        |
 
 ## 3. Review File Locations
 
