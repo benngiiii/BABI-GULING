@@ -40,9 +40,9 @@ This register provides an overview of the quality reviews conducted for the *Int
 |  30 | QR-006-I02 | Master Task List                      | Second Review    | Minor Revisions Recommended |
 |  31 | QR-010-I01 | stage1_Content                        | Initial Review   | Changes Required            |
 |  32 | QR-101-I01 | Team Project Plan and Task List       | Initial Review   | Changes Required            |
-|  33 | QR-010-I02 | stage1_Content                        | Second Review    |                       |
+|  33 | QR-010-I02 | stage1_Content                        | Second Review    | Pass                      |
 |  34 | QR-101-I02 | Team Project Plan and Task List       | Second Review    | Minor Revisions Recommended | 
-|  34 | QR-101-I03 | Tstage1_Content                       | Third Review     | Pass                         |
+
 
 ## 3. Review File Locations
 
