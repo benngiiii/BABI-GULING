@@ -92,3 +92,31 @@ This is a short overview only. Chapter-level status belongs in the Module Outlin
 **Remaining before the Stage 1 submission**
 
 - [TO FILL: remaining work, matching the Master Task List]
+  **Nggak perlu buat PPT baru, king.** 😭
+
+`Stage1_Content.pdf` itu **materi dari GitHub yang dijadikan PDF**, bukan PowerPoint.
+
+Jadi alurnya:
+
+**GitHub (Markdown) → Gabungkan Chapter 1–5 → Export ke PDF → `Stage1_Content.pdf`**
+
+Caranya:
+
+1. Ambil file `.md` Chapter 1–5 dari GitHub.
+2. Gabungkan menjadi satu dokumen, urut dari Chapter 1 sampai Chapter 5.
+3. Pastikan gambar, tabel, rumus, dan formatnya benar.
+4. Export sebagai PDF.
+5. Simpan dengan nama `Stage1_Content.pdf`.
+
+### Bedanya dengan PPT?
+
+| File                   | Fungsi                                   |
+| ---------------------- | ---------------------------------------- |
+| **Study Guide (.md)**  | Materi pembelajaran di GitHub            |
+| **Stage1_Content.pdf** | Versi PDF dari materi Study Guide        |
+| **PPT (.pptx)**        | Slide untuk presentasi atau mini lecture |
+
+**Jadi nggak perlu menulis ulang materinya.** Cukup gunakan materi yang sudah dibuat di GitHub.
+
+Tapi satu catatan: nama `Stage1_Content.pdf` berasal dari tabel rencana tim kalian. Kalau instruksi dosen tidak secara khusus meminta PDF, file ini bisa jadi hanya format tambahan yang tim kalian rencanakan untuk submission.
+
