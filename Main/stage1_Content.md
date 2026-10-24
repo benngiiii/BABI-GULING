@@ -8,29 +8,32 @@ It brings together all five chapters into one document, making it easier to read
 
 The study guide covers the introduction to artificial intelligence, different types of AI, how AI works, real-world applications, and AI ethics and limitations.
 
-All materials were prepared by the team members and reviewed as part of the project's quality assurance process.
+All materials were prepared by the team members and reviewed as part of the project's quality assurance process. The review records are kept in the project repository.
 
 ## Chapters Included
 
-1. **Chapter 1:** Introduction to Artificial Intelligence
-2. **Chapter 2:** Types of Artificial Intelligence
-3. **Chapter 3:** How Artificial Intelligence Works
-4. **Chapter 4:** Applications of Artificial Intelligence
-5. **Chapter 5:** AI Ethics and Limitations
+1. [Chapter 1: Introduction to Artificial Intelligence](#chapter-1-introduction-to-artificial-intelligence)
+2. [Chapter 2: Types of Artificial Intelligence](#chapter-2-types-of-artificial-intelligence)
+3. [Chapter 3: How Artificial Intelligence Works](#chapter-3-how-artificial-intelligence-works)
+4. [Chapter 4: Applications of AI](#chapter-4-applications-of-ai)
+5. [Chapter 5: AI Ethics and Limitations](#chapter-5-ai-ethics-and-limitations)
 
 ---
 
 
 # Chapter 1: Introduction to Artificial Intelligence
-> **Author:** Jonathan Sugianto | **Reviewer:** Brian Djoni Suzanna
-> **Audience:** Complete beginners. No programming or AI background needed.
+> **Author:** Jonathan Sugianto | **Reviewer:** Brian Djoni Suzanna  
+> **Audience:** Complete beginners. No programming or AI background needed.  
+> **Estimated study time:** Approximately 2–3 hours (including practice questions)
 
 ---
 
+<a id="chapter-1-table-of-contents"></a>
+
 ## Table of Contents
 
-1. [Learning Outcomes](#learning-outcomes)
-2. [Chapter Map](#chapter-map)
+1. [Learning Outcomes](#chapter-1-learning-outcomes)
+2. [Chapter Map](#chapter-1-chapter-map)
 3. [1.1 What is AI?](#11-what-is-ai)
 4. [1.2 A Brief History of AI](#12-a-brief-history-of-ai)
 5. [1.3 AI vs Traditional Programming](#13-ai-vs-traditional-programming)
@@ -41,6 +44,8 @@ All materials were prepared by the team members and reviewed as part of the proj
 
 ---
 
+<a id="chapter-1-learning-outcomes"></a>
+
 ## Learning Outcomes
 
 After this chapter, you should be able to:
@@ -50,6 +55,8 @@ After this chapter, you should be able to:
 3. Explain the difference between traditional programming and AI that learns from data.
 4. Use nine basic AI terms correctly: data, algorithm, label, machine learning, model, training, inference, neural network, deep learning.
 5. Walk through a simple example of a program that learns from examples, and explain why it works and where it fails.
+
+<a id="chapter-1-chapter-map"></a>
 
 ## Chapter Map
 
@@ -104,7 +111,7 @@ You probably used AI several times today without noticing.
 
 The history of AI has exciting breakthroughs and also long periods of disappointment. Here are some important moments. The sources for each event are listed in Section 1.7.
 
-![Timeline of key moments in AI history from 1950 to 2022](assets/fig-1-2-timeline.png)
+![Timeline of key moments in AI history from 1950 to 2022](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/assets/fig-1-2-timeline.png)
 *Figure 1.1: Timeline of key moments in AI history. Source: created by our team, based on the references in Section 1.7.*
 
 | Year | Event | Why it matters |
@@ -121,10 +128,10 @@ The history of AI has exciting breakthroughs and also long periods of disappoint
 
 ### Two famous moments in pictures
 
-![Alan Turing at age 16](assets/turing-aged-16.jpg)
+![Alan Turing at age 16](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/assets/turing-aged-16.jpg)
 *Figure 1.2: Alan Turing at age 16 (passport photo, around 1927–1928). Source: Wikimedia Commons, "File:Alan Turing Aged 16.jpg" (https://commons.wikimedia.org/wiki/File:Alan_Turing_Aged_16.jpg). License: public domain (Public Domain Mark 1.0), as stated on the Commons file page.*
 
-![A computer similar to Deep Blue at the Computer History Museum](assets/deep-blue-chm.jpg)
+![A computer similar to Deep Blue at the Computer History Museum](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/assets/deep-blue-chm.jpg)
 *Figure 1.3: A computer similar to Deep Blue, displayed at the Computer History Museum. Photo by James (originally on Flickr). Source: Wikimedia Commons, "File:Deep Blue.jpg" (https://commons.wikimedia.org/wiki/File:Deep_Blue.jpg), also used in the Wikipedia article "Deep Blue (chess computer)". License: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/).*
 
 ### Booms and "AI winters"
@@ -153,7 +160,7 @@ Instead, a person learns from experience: after seeing and touching many mangoes
 
 > This is an example of **supervised learning**, where a model learns from labeled data. Other machine learning approaches may learn without labeled answers.
 
-![Diagram comparing traditional programming (rules and data go in, answers come out) with machine learning (data and correct answers go in, rules come out)](assets/fig-1-3-traditional-vs-ml.png)
+![Diagram comparing traditional programming (rules and data go in, answers come out) with machine learning (data and correct answers go in, rules come out)](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/assets/fig-1-3-traditional-vs-ml.png)
 *Figure 1.4: Traditional programming vs machine learning. Source: created by our team.*
 
 ### Side-by-side comparison
@@ -195,12 +202,12 @@ Think of studying for an exam and taking the exam.
 - **Training** is like studying many past questions. It takes a long time, and you do it before the exam.
 - **Inference** is like answering questions in the real exam. You use what you learned on questions you have not seen before.
 
-![Diagram showing training (data and labels go into a learning algorithm to build a model) and inference (new data goes through the model to give a prediction)](assets/fig-1-4b-training-vs-inference.png)
+![Diagram showing training (data and labels go into a learning algorithm to build a model) and inference (new data goes through the model to give a prediction)](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/assets/fig-1-4b-training-vs-inference.png)
 *Figure 1.5: Training vs inference. Source: created by our team.*
 
 ### How the fields fit together
 
-![Nested circles showing deep learning inside machine learning inside artificial intelligence](assets/fig-1-4-ai-ml-dl.png)
+![Nested circles showing deep learning inside machine learning inside artificial intelligence](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/assets/fig-1-4-ai-ml-dl.png)
 *Figure 1.6: How AI, machine learning, and deep learning fit together. Source: created by our team.*
 
 Deep learning is a part of machine learning, and machine learning is a part of AI.
@@ -307,6 +314,8 @@ What we can learn from this comparison:
 
 ## 1.6 Practice Questions and Answers
 
+<a id="chapter-1-part-a-check-your-understanding"></a>
+
 ### Part A: Check your understanding
 
 **Q1.** Which statement describes AI best?
@@ -346,6 +355,8 @@ Use the model from Section 1.5 (the score table and the rule "total > 0 means sp
 
 **Q11 (Think).** Our filter was trained on only six emails. Name **two** ways to improve it.
 
+<a id="chapter-1-answers-and-explanations"></a>
+
 ### Answers and Explanations
 
 **A1. B.** AI is about systems that do tasks needing human-like intelligence. A is wrong because most AI has no body. C is wrong because AI and the internet are different things. D is wrong because AI does not work like a human brain.
@@ -374,6 +385,8 @@ Use the model from Section 1.5 (the score table and the rule "total > 0 means sp
 
 ## 1.7 Summary, Reuse Plan, and References
 
+<a id="chapter-1-key-takeaways"></a>
+
 ### Key takeaways
 
 - AI is the field of making computers do tasks that normally need human intelligence.
@@ -390,17 +403,7 @@ Use the model from Section 1.5 (the score table and the rule "total > 0 means sp
 | **PPT Slides** | The timeline (1.2), the two flow diagrams (1.3), and the nested diagram (1.4) become full-slide visuals. The spam filter (1.5) becomes a step-by-step slide sequence that builds the score table, followed by the rule-based comparison. |
 | **Video Tutorial** | A short video that follows Section 1.5: show the six emails, build the score table on screen, test new emails while narrating each step, then compare with the rule-based filter. |
 
-### Development status of this chapter
-
-| Section | Status | Notes |
-|---------|:------:|-------|
-| 1.1 What is AI? | Drafted | Needs peer review |
-| 1.2 Brief History | Revised | In-text citations added; image licenses filled in; reviewer should re-check dates against the references |
-| 1.3 AI vs Traditional Programming | Revised | Supervised learning note added; diagrams to be redrawn as images by the Visual Design Lead |
-| 1.4 Terminology | Drafted | Needs peer review |
-| 1.5 Worked Example | Revised | Score note and rule-based comparison (Step 6) added; wording about "uncertain" corrected in Step 6; all scores recalculated by hand; needs independent check |
-| 1.6 Practice Questions | Revised | A9 clarified; should be tested by a member who has not seen the answers |
-| 1.7 References | Drafted | All entries need to be verified by the Quality Lead |
+<a id="chapter-1-references"></a>
 
 ### References
 
@@ -419,7 +422,11 @@ Use the model from Section 1.5 (the score table and the rule "total > 0 means sp
 
 # Chapter 2: Types of Artificial Intelligence
 
-Status: Drafted (V1.0), awaiting peer review Author: Gandhi Bestin Dhammananda | Reviewer: Brian Djoni Suzanna Audience: Complete beginners. No programming or AI background needed.
+> **Author:** Gandhi Bestin Dhammananda | **Reviewer:** Brian Djoni Suzanna  
+> **Audience:** Complete beginners. No programming or AI background needed.  
+> **Estimated study time:** Approximately 2–3 hours (including activities)
+
+<a id="chapter-2-learning-outcomes"></a>
 
 ## Learning Outcomes
 
@@ -433,6 +440,8 @@ After completing this chapter, readers should be able to:
 - Compare capability, functionality, Machine Learning, and Generative AI as different perspectives on AI.
 - Classify familiar AI applications and explain their classifications.
 - Recognize common misunderstandings and limitations of AI classification frameworks.
+
+<a id="chapter-2-chapter-map"></a>
 
 ## Chapter Map
 
@@ -875,6 +884,8 @@ The purpose of this activity is not to force every application into a single lab
 
 ## 2.8 Practice Questions and Answers
 
+<a id="chapter-2-part-a-check-your-understanding"></a>
+
 ### Part A: Check Your Understanding
 
 **Q1. What is the main difference between ANI and AGI?**
@@ -919,6 +930,8 @@ D. Reactive Machines
 
 **Q12.** An AI system uses Machine Learning to generate pictures from text instructions. Which of the four perspectives introduced in this chapter describe it, and what does each perspective tell us?
 
+<a id="chapter-2-answers-and-explanations"></a>
+
 ### Answers and Explanations
 
 **A1. B.** ANI is designed for specific or limited tasks, while AGI refers to broad intellectual abilities across different tasks and domains.
@@ -947,6 +960,8 @@ D. Reactive Machines
 
 ## 2.9 Summary and References
 
+<a id="chapter-2-key-takeaways"></a>
+
 ### Key Takeaways
 
 - AI can be classified in different ways because systems have different abilities, designs, and purposes.
@@ -959,6 +974,8 @@ D. Reactive Machines
 - Many generative AI systems use Machine Learning, but the terms describe different aspects of AI.
 - One system can be described through multiple perspectives. No single framework explains every aspect of an AI system.
 - Fluent language, broad task performance, or statements about feelings do not by themselves establish AGI, emotions, or consciousness.
+
+<a id="chapter-2-references"></a>
 
 ### References
 
@@ -976,16 +993,12 @@ Stanford Institute for Human-Centered Artificial Intelligence. (n.d.-c). _What i
 
 Stanford Institute for Human-Centered Artificial Intelligence. (n.d.-d). _What is Generative AI?_ https://hai.stanford.edu/ai-definitions/what-is-generative-ai
 
-
-
-The remaining step is to check the actual Markdown rendering and confirm that the reference links resolve correctly. Until those checks are completed, the review status should remain Changes Required — Pending Focused Recheck.
-
-
-
 # Chapter 3: How Artificial Intelligence Works
 
-> **Module:** AI Overview | **Level:** Beginner → Intermediate | **Estimated study time:** 90–120 minutes
-> **Status:** Draft (Stage 1)
+> **Author:** Benedict Subhata | **Reviewer:** Brian Djoni Suzanna  
+> **Audience:** Learners who have completed Chapter 1 and Chapter 2  
+> **Estimated study time:** 90–120 minutes  
+> **Module:** AI Overview | **Level:** Beginner → Intermediate
 
 **Contents**
 
@@ -1031,7 +1044,7 @@ By the end of this chapter, you will be able to:
 
 Traditional software follows rules that a programmer writes by hand. Machine-learning-based AI works the other way round.
 
-![Diagram contrasting traditional programming (rules and input produce output) with machine learning (data and answers produce rules)](assets/traditional-vs-ml.png)
+![Diagram contrasting traditional programming (rules and input produce output) with machine learning (data and answers produce rules)](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/assets/traditional-vs-ml.png)
 
 *Figure 3.1: In machine learning, you supply data and answers, and the computer discovers the rules.*
 
@@ -1102,7 +1115,7 @@ Practitioners often report that preparing data takes more time than building the
 
 ### Splitting the data
 
-![A dataset divided into training, validation, and test sets](assets/dataset-split.png)
+![A dataset divided into training, validation, and test sets](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/assets/dataset-split.png)
 
 *Figure 3.2: A dataset is divided so the model is graded on data it has never seen.*
 
@@ -1223,7 +1236,7 @@ There is **no single best algorithm**. A useful rule of thumb:
 
 ### Gradient descent in more detail
 
-![Curve of loss against weight with numbered steps moving down toward the minimum](assets/gradient-descent.png)
+![Curve of loss against weight with numbered steps moving down toward the minimum](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/assets/gradient-descent.png)
 
 *Figure 3.4: Each numbered dot is one update step, moving toward the lowest loss.*
 
@@ -1254,7 +1267,7 @@ Notice that the steps get smaller as the slope flattens near the bottom. With th
 
 ### Overfitting and underfitting
 
-![Three plots showing an underfitted, a well-fitted, and an overfitted model](assets/fitting.png)
+![Three plots showing an underfitted, a well-fitted, and an overfitted model](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/assets/fitting.png)
 
 *Figure 3.5: A good model captures the trend without memorising the noise.*
 
@@ -1271,7 +1284,7 @@ The **validation set** is how you catch overfitting while you are still developi
 
 A **neural network** is a model made of layers of small mathematical units called "neurons". It is *loosely* inspired by the brain, but it is a mathematical tool, not a copy of one.
 
-![Neural network with an input layer, hidden layers, and an output layer joined by weighted connections](assets/neural-network.png)
+![Neural network with an input layer, hidden layers, and an output layer joined by weighted connections](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/assets/neural-network.png)
 
 *Figure 3.6: Data flows left to right; every line is a weight that training adjusts.*
 
@@ -1331,7 +1344,7 @@ Backpropagation was popularised as a way to train multi-layer networks by Rumelh
 
 Tools such as ChatGPT, Claude, and Gemini are built on **large language models (LLMs)**. The core mechanism is easier than it sounds.
 
-![A sentence split into tokens, with the model predicting the next token](assets/tokens-next-token.png)
+![A sentence split into tokens, with the model predicting the next token](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/assets/tokens-next-token.png)
 
 *Figure 3.7: An LLM writes by repeatedly predicting the next token.*
 
@@ -1350,7 +1363,7 @@ To predict well, the model is forced to learn grammar, facts, reasoning patterns
 
 ### Step 3: The transformer and attention
 
-![Attention links showing which earlier words matter when interpreting the word "it"](assets/attention.png)
+![Attention links showing which earlier words matter when interpreting the word "it"](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/assets/attention.png)
 
 *Figure 3.8: Attention lets the model decide which earlier words matter for interpreting the current one.*
 
@@ -1411,7 +1424,7 @@ Reinforcement learning from human feedback was shown to make a much smaller mode
 
 These are the two phases of an AI model's life.
 
-![Side-by-side comparison of the training phase, where weights change, and the inference phase, where weights are frozen](assets/training-vs-inference.png)
+![Side-by-side comparison of the training phase, where weights change, and the inference phase, where weights are frozen](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/assets/training-vs-inference.png)
 
 *Figure 3.10: Training changes the model. Inference only uses it.*
 
@@ -2054,21 +2067,25 @@ A team might do this when blocking a genuine email is more costly than letting s
 
 *Previous chapter: Chapter 2, Types of Artificial Intelligence | Next chapter: Chapter 4, Applications of AI*
 
-# Applications of AI
+# Chapter 4: Applications of AI
 
 *A beginner-friendly learning module (one branch of the AI Overview course)*
 
-**Audience:** Learners with no technical background in AI
-**Estimated time:** Approximately 3.5–4.5 hours (including activities)
+> **Author:** Brian Djoni Suzanna | **Reviewer:** Brian Djoni Suzanna  
+> **Audience:** Learners with no technical background in AI  
+> **Estimated study time:** Approximately 3.5–4.5 hours (including activities)
+
 **How to use this module:** Read each topic, work through the example, try the activity questions, then click **Show answer** to check your thinking.
 
 ---
 
+<a id="chapter-4-table-of-contents"></a>
+
 ## Table of Contents
 
-1. [Learning Outcomes](#learning-outcomes)
-2. [Prerequisites and Framing](#prerequisites-and-framing)
-3. [Module Map](#module-map)
+1. [Learning Outcomes](#chapter-4-learning-outcomes)
+2. [Prerequisites and Framing](#chapter-4-prerequisites-and-framing)
+3. [Module Map](#chapter-4-module-map)
 4. [Applications at a Glance](#applications-at-a-glance)
 5. [Topic 1: Healthcare (fully developed)](#topic-1-healthcare)
 6. [Topic 2: Education](#topic-2-education)
@@ -2077,10 +2094,12 @@ A team might do this when blocking a genuine email is more costly than letting s
 9. [Topic 5: Finance and Trading](#topic-5-finance-and-trading)
 10. [Cross-Topic Synthesis Activity](#cross-topic-synthesis-activity)
 11. [Teacher Notes](#teacher-notes)
-12. [Glossary](#glossary)
-13. [References](#references)
+12. [Glossary](#chapter-4-glossary)
+13. [References](#chapter-4-references)
 
 ---
+
+<a id="chapter-4-learning-outcomes"></a>
 
 ## Learning Outcomes
 
@@ -2092,19 +2111,23 @@ By the end of this module, learners will be able to:
 - **Evaluate** the benefits and limits of an AI application, including who is affected if it makes a mistake.
 - **Compare** applications by the level of human oversight each one needs.
 
+<a id="chapter-4-prerequisites-and-framing"></a>
+
 ## Prerequisites and Framing
 
 This module is one branch of the wider **AI Overview** course. It assumes learners have already met the basic vocabulary from earlier chapters, so those definitions are not repeated here:
 
 - artificial intelligence, machine learning, model, training data
 
-Terms specific to **applications** (for example *sensitivity*, *adaptive learning*, *backtesting*) are defined where they first appear and collected in the [Glossary](#glossary). Ethical issues such as bias, privacy, and hallucination are covered in the **AI Ethics and Limitations** module; this module points to them where they matter.
+Terms specific to **applications** (for example *sensitivity*, *adaptive learning*, *backtesting*) are defined where they first appear and collected in the [Glossary](#chapter-4-glossary). Ethical issues such as bias, privacy, and hallucination are covered in the **AI Ethics and Limitations** module; this module points to them where they matter.
 
 > **Core idea of this module:** AI is not one tool. It is a set of techniques applied to specific problems. To judge any application, ask three questions: *What is the task? What data does it use? What happens when it is wrong?*
 
+<a id="chapter-4-module-map"></a>
+
 ## Module Map
 
-| Topic | Status in this draft | What is included |
+| Topic | Depth of coverage | What is included |
 |---|---|---|
 | 1. Healthcare | **Fully developed** | Explanations, terms, pipeline diagram, worked example with code, 3-question activity, answers |
 | 2. Education | Developed | Explanation, comparison table, step-by-step adaptive-learning example, activity with answer |
@@ -2158,7 +2181,7 @@ This topic focuses on **medical imaging classification**, because it clearly sho
 
 ### 1.3 How a medical imaging tool works
 
-![Diagram](assets/foto-chapter-4.png)
+![Flow diagram of a medical imaging AI tool: image, preparation, model, probability, threshold check, clinician decision](study-guide/v1.0/chapter-4-applications-of-aI/assets/foto-chapter-4.png)
 
 If the diagram does not render in your viewer, read it as: **image → preparation → model → probability → threshold check → clinician decision**.
 
@@ -2393,7 +2416,7 @@ Transportation uses AI for several tasks, from helping drivers to planning journ
 
 ### 3.2 How a self-driving system makes decisions
 
-![Diagram](assets/foto-chapter-4.1.png)
+![Loop diagram of a self-driving system: sense, perceive, predict, plan, act](study-guide/v1.0/chapter-4-applications-of-aI/assets/foto-chapter-4.1.png)
 
 Read it as a loop that repeats many times per second: **sense → perceive → predict → plan → act**.
 
@@ -2640,6 +2663,8 @@ Complete the table for **three** of the five sectors, then answer the question b
 
 ---
 
+<a id="chapter-4-glossary"></a>
+
 ## Glossary
 
 | Term | Definition |
@@ -2677,6 +2702,8 @@ Complete the table for **three** of the five sectors, then answer the question b
 
 ---
 
+<a id="chapter-4-references"></a>
+
 ## References
 
 Bloom, B.S. (1984) 'The 2 sigma problem: The search for methods of group instruction as effective as one-to-one tutoring', *Educational Researcher*, 13(6), pp. 4-16. https://doi.org/10.3102/0013189X013006004
@@ -2708,28 +2735,34 @@ World Health Organization (2021) *Ethics and governance of artificial intelligen
 > **Note on examples:** All numbers in the worked examples and activities are **invented for teaching purposes**. The studies, standards, and the 2010 Flash Crash are real and cited above. Links to the original publications or standards are given where available (Holmes, Bialik and Fadel, 2019, has no link here). Please check each link and bibliographic detail against the original source before formal use.
 
 
-# AI Ethics and Limitations
+# Chapter 5: AI Ethics and Limitations
 
-**Audience:** Learners with no technical background in AI
-**Estimated time:** 3 to 4 hours (including activities)
+> **Author:** Joseph Lokman | **Reviewer:** Brian Djoni Suzanna  
+> **Audience:** Learners with no technical background in AI  
+> **Estimated study time:** 3 to 4 hours (including activities)
+
 **Format:** Read, work through the examples, complete the activities, then check the answer keys.
 
 ---
 
+<a id="chapter-5-table-of-contents"></a>
+
 ## Table of Contents
 
-1. [Learning Outcomes](#learning-outcomes)
-2. [Module Map](#module-map)
-3. [Prerequisites and Framing](#prerequisites-and-framing)
+1. [Learning Outcomes](#chapter-5-learning-outcomes)
+2. [Module Map](#chapter-5-module-map)
+3. [Prerequisites and Framing](#chapter-5-prerequisites-and-framing)
 4. [Topic 1: Bias (fully developed)](#topic-1-bias)
 5. [Topic 2: Privacy](#topic-2-privacy)
 6. [Topic 3: Hallucinations](#topic-3-hallucinations)
 7. [Topic 4: Responsible AI](#topic-4-responsible-ai)
 8. [Topic 5: Discussion Scenario](#topic-5-discussion-scenario-bias-or-hallucination)
-9. [Glossary](#glossary)
-10. [References](#references)
+9. [Glossary](#chapter-5-glossary)
+10. [References](#chapter-5-references)
 
 ---
+
+<a id="chapter-5-learning-outcomes"></a>
 
 ## Learning Outcomes
 
@@ -2740,6 +2773,8 @@ By the end of this module, learners will be able to:
 - **Calculate** a simple fairness check (selection rate and the four-fifths rule) and interpret the result.
 - **Verify** an AI-generated claim using a short checking routine.
 - **Apply** responsible AI principles to a realistic scenario and justify a decision.
+
+<a id="chapter-5-module-map"></a>
 
 ## Module Map
 
@@ -2753,13 +2788,15 @@ By the end of this module, learners will be able to:
 
 ---
 
+<a id="chapter-5-prerequisites-and-framing"></a>
+
 ## Prerequisites and Framing
 
 This module is one branch of the wider **AI Overview** course. It assumes learners have already met the basic vocabulary from the earlier chapters, so those definitions are not repeated here:
 
-- artificial intelligence, machine learning, model, and training data (see the *What is AI?* and *How machines learn* chapters)
+- artificial intelligence, machine learning, model, and training data (see Chapter 1, *Introduction to Artificial Intelligence*, and Chapter 3, *How Artificial Intelligence Works*)
 
-Terms that are **specific to ethics and limitations** (for example *proxy variable*, *impact ratio*, *hallucination*) are defined where they first appear and collected in the [Glossary](#glossary).
+Terms that are **specific to ethics and limitations** (for example *proxy variable*, *impact ratio*, *hallucination*) are defined where they first appear and collected in the [Glossary](#chapter-5-glossary).
 
 > **Core idea of this module:** AI systems do not have opinions or intentions. They reflect the data, goals, and choices of the people who build and use them. Ethics is about those choices.
 
@@ -2782,7 +2819,7 @@ Bias is not always intentional. Most harmful AI bias happens even when the build
 
 Bias can enter at several stages of an AI system's life cycle:
 
-![Flowchart of the AI life cycle (collect data, label data, train model, test model, deploy and use) showing where each type of bias can enter](assets/bias-occurence-diagram.png)
+![Flowchart of the AI life cycle (collect data, label data, train model, test model, deploy and use) showing where each type of bias can enter](study-guide/v1.0/chapter-5-aI-ethics-and-limitations/assets/bias-occurence-diagram.png)
 
 *Figure 1. Where bias can enter an AI system's life cycle.*
 
@@ -3107,6 +3144,8 @@ A company's screener rejects many applicants who have career gaps. Data shows wo
 
 ---
 
+<a id="chapter-5-glossary"></a>
+
 ## Glossary
 
 | Term | Definition |
@@ -3129,6 +3168,8 @@ A company's screener rejects many applicants who have career gaps. Data shows wo
 | **Selection rate** | The share of a group receiving the favourable outcome. |
 
 ---
+
+<a id="chapter-5-references"></a>
 
 ## References
 
@@ -3161,4 +3202,3 @@ OECD (2019) *Recommendation of the Council on Artificial Intelligence*. OECD/LEG
 US Equal Employment Opportunity Commission et al. (1978) *Uniform Guidelines on Employee Selection Procedures*, 29 CFR Part 1607 (the four-fifths rule is at §1607.4(D)). https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XIV/part-1607
 
 > **Note on examples:** The hiring-tool numbers in Sections 1.4 and 1.5 and the "Henderson & Zhou" citation in Section 3.3 are **invented for teaching purposes**. All other cases are real and cited above. Please check each link and bibliographic detail against the original source before formal use.
-
