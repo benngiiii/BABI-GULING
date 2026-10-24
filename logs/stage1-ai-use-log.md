@@ -1,664 +1,394 @@
-# Stage 1 — Team AI Use Log
+# Stage 1 — AI-Use Log
 
-**Project:** AI Overview  
-**Stage:** Stage 1  
-**Prepared by:** Brian Djoni Suzanna  
-**Role:** Quality Lead  
-**Reporting Date:** 23 October 2026  
-**AI Tool:** ChatGPT  
-
----
-
-## 1. Introduction
-
-This document organizes the significant AI-assisted activities related to Stage 1 of our AI Overview project.
-
-Our team is developing an introductory learning module consisting of a Study Guide, PowerPoint slides, video tutorials, and learning activities. The project also includes planning, quality reviews, revisions, and documentation.
-
-The module follows five chapters:
-
-1. Introduction to Artificial Intelligence
-2. Types of Artificial Intelligence
-3. How Artificial Intelligence Works
-4. Applications of AI
-5. AI Ethics and Limitations
-
-For Stage 1, Chapters 1–3 are targeted for draft development, while Chapters 4–5 are targeted for outline development.
-
-AI tools can support these activities by helping students organize information, explain concepts, prepare educational materials, and identify possible weaknesses in drafts.
-
-However, AI-generated suggestions must be evaluated against the module outline and the actual learning materials.
-
-This document focuses on significant AI assistance rather than routine interactions.
-
-### Documentation Approach
-
-Each entry records the purpose of the activity, the relevant AI interaction, the expected or observed output, the verification process, and the learning outcome.
-
-Entries AI-006 and AI-007 summarize Quality Lead activities discussed during the review process. The remaining entries provide project-specific examples for the responsible members to confirm against their actual AI interactions.
+**Project:** Introduction to Computer Science and Artificial Intelligence
+**Team:** BABI GULING
+**Module:** AI Overview
+**Stage:** Stage 1
+**Last Updated:** 24 October 2026
+**Document:** `logs/stage1-ai-use-log.md`
 
 ---
 
-## 2. Summary of AI Use
+## 1. Purpose of This Log
 
-| ID | Activity | Responsible Member | Related Deliverable |
-|:---|:---|:---|:---|
-| AI-001 | Study Guide Planning and Structure | Ghandi Bestin Dhammanada | Study Guide |
-| AI-002 | AI Concept Explanation and Content Improvement | Joseph Lokman | Chapter 5 Outline |
-| AI-003 | PowerPoint Slide Development | Benedict Subhata | Presentation Slides |
-| AI-004 | Video Tutorial Planning and Script Development | Ghandi Bestin Dhammanada | Video Tutorial |
-| AI-005 | Practice Questions and Learning Activities | Jonathan Sugianto | Chapter 1 Draft |
-| AI-006 | Chapter 1 Quality Review | Brian Djoni Suzanna | QR-001 |
-| AI-007 | Chapter 2 Quality Review | Brian Djoni Suzanna | QR-002 |
-| AI-008 | Project Planning and Task Organization | Joseph Lokman | Team Plan |
+This document records how our team used AI tools during Stage 1 of the AI Overview project.
 
----
+AI tools were used to help us understand the assignment requirements, learn unfamiliar concepts, understand GitHub and Markdown, develop learning materials, and improve project documentation.
 
-# 3. Detailed AI Use Records
+The purpose of this log is to provide transparency about AI-assisted work and show how AI contributed to our learning and project development.
 
-## AI-001 — Study Guide Planning and Structure
+Each entry records the user, date, AI tool, purpose, how the output was used, and supporting evidence.
 
-**Responsible:** Ghandi Bestin Dhammanada  
-**AI Tool:** ChatGPT  
-**Related Deliverable:** Study Guide  
-**Record Type:** Sample interaction for member verification
+Screenshots of prompts and AI responses are included as supporting evidence where available.
 
-### Purpose
-
-The purpose of this activity is to organize the AI Overview Study Guide according to the module outline.
-
-The Study Guide needs a logical progression from basic AI terminology to technical concepts, applications, and ethical considerations.
-
-### Representative Prompt
-
-> Act as an academic teaching assistant helping a university team organize an introductory Artificial Intelligence Study Guide.
->
-> Our module contains five chapters:
->
-> 1. Introduction to Artificial Intelligence: definition, history, AI versus traditional programming, terminology, examples, and practice questions.
-> 2. Types of Artificial Intelligence: Narrow AI, General AI, Machine Learning, Generative AI, relationships between categories, and examples.
-> 3. How Artificial Intelligence Works: data, algorithms, machine learning, training, inference, and workflow diagrams.
-> 4. Applications of AI: healthcare, education, transportation, and everyday applications.
-> 5. AI Ethics and Limitations: bias, privacy, hallucinations, and responsible AI.
->
-> The chapters must follow this order because Chapter 1 introduces the vocabulary used in Chapters 2 and 3, while Chapters 4 and 5 apply those ideas.
->
-> For Stage 1, Chapters 1–3 need draft content, while Chapters 4–5 need outlines.
->
-> Review this structure and recommend:
->
-> - Clear learning objectives for each chapter.
-> - A logical order of subtopics.
-> - Suitable examples and activities.
-> - Connections between chapters.
-> - Potential gaps or unnecessary repetition.
->
-> Keep the recommendations realistic for a first-year university project. Do not assume that outline-only chapters have already been fully developed.
-
-### Illustrative AI Output
-
-A suitable response would preserve the five-chapter sequence and recommend that Chapter 1 establish the basic vocabulary before Chapter 2 introduces AI categories.
-
-Chapter 3 would then explain the general AI workflow, including data, algorithms, training, and inference.
-
-Chapters 4 and 5 would apply these foundations to practical use cases and responsible AI considerations.
-
-The response could also recommend keeping each activity closely connected to the corresponding learning objective.
-
-### Verification and Human Judgment
-
-The proposed structure should be checked against the official module outline.
-
-The team should preserve the required chapter order and distinguish between the Stage 1 draft targets and outline targets.
-
-Suggestions that add unnecessary complexity or change the assigned scope should not be adopted.
-
-### Supporting Project Material
-
-- Module Outline and Development Status.
-- Study Guide chapter structure.
-- Planned Examples and Activities table.
-
-### Learning Reflection
-
-This activity shows how AI can support curriculum organization, while the team remains responsible for following the actual assignment requirements.
+AI-generated information should be reviewed by the responsible team member before being included in the final project.
 
 ---
 
-## AI-002 — AI Concept Explanation and Content Improvement
+## 2. AI Tools Used
 
-**Responsible:** Joseph Lokman  
-**AI Tool:** ChatGPT  
-**Related Deliverable:** Chapter 5 — AI Ethics and Limitations  
-**Record Type:** Sample interaction for member verification
+| AI Tool | Purpose                                                                                                                  |
+| ------- | ------------------------------------------------------------------------------------------------------------------------ |
+| ChatGPT | Assignment clarification, GitHub guidance, AI concept explanations, chapter development, and project-document revisions. |
+| Claude  | Assignment clarification, Quality Lead responsibilities, and GitHub workflow planning.                                   |
 
-### Purpose
-
-This activity focuses on preparing clear and accurate explanations for the Chapter 5 outline.
-
-The chapter introduces ethical concerns and limitations of AI, including bias, privacy, hallucinations, and responsible AI.
-
-### Representative Prompt
-
-> Act as an AI ethics teaching assistant for a first-year university course.
->
-> Our team is preparing an outline for Chapter 5, "AI Ethics and Limitations."
->
-> The required topics are:
->
-> - AI bias.
-> - Privacy.
-> - AI hallucinations.
-> - Responsible AI.
->
-> Help organize these topics into a beginner-friendly chapter outline.
->
-> For each topic:
->
-> 1. Provide a short and accurate explanation.
-> 2. Explain why the issue matters.
-> 3. Suggest a realistic example.
-> 4. Identify one common misunderstanding.
-> 5. Suggest a discussion question.
->
-> Include one classroom discussion scenario involving either AI bias or hallucination.
->
-> Avoid treating AI-generated information as automatically reliable.
->
-> Keep the output at outline level because the Stage 1 target for Chapter 5 is an outline, not a completed chapter.
-
-### Illustrative AI Output
-
-A suitable response could organize the chapter into four main sections.
-
-For AI bias, it could suggest an example involving a system whose training data does not adequately represent different groups.
-
-For hallucinations, it could explain that an AI system may generate convincing but incorrect information.
-
-A discussion activity could ask students how they would respond if an AI-generated answer sounded reliable but contained an unsupported claim.
-
-### Verification and Human Judgment
-
-The responsible member should check that the examples are realistic and do not make unsupported claims.
-
-The discussion activity should encourage critical thinking rather than suggest that AI systems are always correct or always incorrect.
-
-### Supporting Project Material
-
-- Chapter 5 module outline.
-- Planned discussion activity on bias or hallucination.
-
-### Learning Reflection
-
-This activity illustrates how AI can help generate teaching ideas about its own limitations, while the examples and explanations still require careful evaluation.
+**Note:** The exact tool used for each entry should be confirmed by the responsible member.
 
 ---
 
-## AI-003 — PowerPoint Slide Development
+## 3. Summary of AI Usage
 
-**Responsible:** Benedict Subhata  
-**AI Tool:** ChatGPT  
-**Related Deliverable:** PowerPoint Slides  
-**Record Type:** Sample interaction for member verification
-
-### Purpose
-
-The purpose of this activity is to transform the AI Overview learning material into clear presentation slides.
-
-The presentation should communicate the main ideas without overwhelming students with long paragraphs.
-
-### Representative Prompt
-
-> Act as an instructional designer preparing a PowerPoint presentation for a university AI Overview mini-lecture.
->
-> The audience consists of first-year students with limited prior knowledge of AI.
->
-> Our module covers:
->
-> 1. Introduction to Artificial Intelligence.
-> 2. Types of Artificial Intelligence.
-> 3. How Artificial Intelligence Works.
-> 4. Applications of AI.
-> 5. AI Ethics and Limitations.
->
-> Help create a presentation outline based on the approved learning material.
->
-> Requirements:
->
-> - Begin with the learning objectives.
-> - Introduce fundamental concepts before technical explanations.
-> - Use concise bullet points.
-> - Avoid placing full paragraphs on slides.
-> - Suggest relevant diagrams and visual examples.
-> - Explain relationships between related AI concepts.
-> - Include a simple example of an AI workflow.
-> - End with a summary of the main learning points.
->
-> For each slide, provide:
->
-> 1. Slide title.
-> 2. Main learning point.
-> 3. Suggested bullet points.
-> 4. Recommended visual.
-> 5. Short speaker notes.
->
-> Do not introduce unsupported information or present outline-only material as completed chapter content.
-
-### Illustrative AI Output
-
-A suitable slide sequence could introduce the meaning of AI, explain common AI categories, show a simplified AI workflow, and connect these ideas to applications and ethical concerns.
-
-For the workflow slide, a diagram could illustrate:
-
-**Data → Training → Trained Model → Inference → Output**
-
-The AI might also recommend using separate slides for definitions, comparisons, examples, and summaries.
-
-### Verification and Human Judgment
-
-The slide creator should compare the suggested content with the approved Study Guide.
-
-Technical terminology and examples should remain consistent across the slides and written materials.
-
-The final presentation should be checked for readability, organization, and appropriate visual design.
-
-### Supporting Project Material
-
-- AI Overview Study Guide.
-- Presentation slides.
-- Module learning objectives.
-
-### Learning Reflection
-
-This activity demonstrates how AI can help organize presentation content, while the presenter remains responsible for selecting and explaining the information.
+| Entry ID | Team Member         | Date            | Purpose                                                              | AI Tool      |
+| -------- | ------------------- | --------------- | -------------------------------------------------------------------- | ------------ |
+| AI-001   | Benedict Subhata    | 16 October 2026 | GitHub repository creation guidance                                  | [TO CONFIRM] |
+| AI-002   | Benedict Subhata    | 22 October 2026 | Understanding assignment requirements                                | [TO CONFIRM] |
+| AI-003   | Benedict Subhata    | 22 October 2026 | Understanding how AI works                                           | [TO CONFIRM] |
+| AI-004   | Benedict Subhata    | 22 October 2026 | Learning GitHub Markdown                                             | [TO CONFIRM] |
+| AI-005   | Jonathan Sugianto   | [TO COMPLETE]   | Chapter 1 development                                                | [TO CONFIRM] |
+| AI-006   | Jonathan Sugianto   | [TO COMPLETE]   | Chapter revision                                                     | [TO CONFIRM] |
+| AI-007   | Joseph Lokman       | [TO COMPLETE]   | Chapter 5 development                                                | [TO CONFIRM] |
+| AI-008   | Joseph Lokman       | [TO COMPLETE]   | Project Plan corrections and updates                                 | [TO CONFIRM] |
+| AI-009   | Brian Djoni Suzanna | 24 October 2026 | Understanding project requirements and Quality Lead responsibilities | Claude       |
+| AI-010   | Brian Djoni Suzanna | 24 October 2026 | Planning GitHub workflow and branches                                | Claude       |
 
 ---
 
-## AI-004 — Video Tutorial Planning and Script Development
+# 4. Detailed AI Usage Records
 
-**Responsible:** Ghandi Bestin Dhammanada  
-**AI Tool:** ChatGPT  
-**Related Deliverable:** Video Tutorial  
-**Record Type:** Sample interaction for member verification
+## AI-001 — GitHub Repository Creation Guidance
 
-### Purpose
+**Team Member:** Benedict Subhata
+**Date:** 16 October 2026
+**AI Tool:** [TO CONFIRM]
 
-This activity focuses on preparing an educational video tutorial that explains AI concepts clearly and logically.
+**Purpose:**
 
-### Representative Prompt
+I used AI to help me understand how to create a GitHub repository after signing in to GitHub for the first time.
 
-> Act as an educational video scriptwriter for a university AI Overview module.
->
-> We are preparing a beginner-friendly video tutorial explaining different types of artificial intelligence.
->
-> The learning material includes:
->
-> - Artificial Narrow Intelligence.
-> - Artificial General Intelligence.
-> - Machine Learning.
-> - Generative AI.
-> - Relationships between these categories.
->
-> Develop a short educational script with:
->
-> 1. An introduction explaining the learning goal.
-> 2. A clear explanation of each concept.
-> 3. Real-world examples.
-> 4. A comparison of related concepts.
-> 5. Suggested visuals or diagrams.
-> 6. A short summary.
->
-> Separate narration from visual instructions.
->
-> Use natural spoken English suitable for university students.
->
-> Avoid describing hypothetical AI capabilities as already established real-world systems.
->
-> Make the explanation consistent with the Chapter 2 module outline.
+I wanted to follow the professor's instructions and set up the repository correctly for our team project.
 
-### Illustrative AI Output
+**How AI Output Was Used:**
 
-A suitable response could introduce Narrow AI through familiar applications, then explain General AI as a broader capability concept.
+The AI explanation helped me understand the initial steps involved in creating a repository and preparing it for collaborative work.
 
-It could distinguish machine learning as an approach used to build AI systems and generative AI as a category of systems designed to generate content.
+**Verification:**
 
-The script could conclude with a comparison explaining why these categories should not all be treated as equivalent classifications.
+[TO COMPLETE — Explain how the instructions were checked or whether the repository was successfully created.]
 
-### Verification and Human Judgment
+**Evidence:**
 
-The responsible member should verify the technical explanations and adjust the script to match the actual tutorial.
-
-Examples should be consistent with the Study Guide.
-
-### Supporting Project Material
-
-- Chapter 2 module outline.
-- Video tutorial script.
-- Final video tutorial.
-
-### Learning Reflection
-
-This activity demonstrates how AI can support educational script development, but the final narration must be checked for accuracy and clarity.
+![AI-001 — GitHub repository guidance](assets/ai-001.png)
 
 ---
 
-## AI-005 — Practice Questions and Learning Activities
+## AI-002 — Understanding the Assignment Requirements
 
-**Responsible:** Jonathan Sugianto  
-**AI Tool:** ChatGPT  
-**Related Deliverable:** Chapter 1 — Introduction to Artificial Intelligence  
-**Record Type:** Sample interaction for member verification
+**Team Member:** Benedict Subhata
+**Date:** 22 October 2026
+**AI Tool:** [TO CONFIRM]
 
-### Purpose
+**Purpose:**
 
-This activity focuses on designing learning activities that help students understand the difference between AI-based and traditional programming approaches.
+I used AI to help me understand the project assignment and what our team needed to prepare.
 
-### Representative Prompt
+Some parts of the assignment were difficult for me to understand, so I asked AI to explain the requirements in simpler language.
 
-> Act as an assessment designer for an introductory university AI course.
->
-> I am preparing practice questions for Chapter 1, "Introduction to Artificial Intelligence."
->
-> The chapter covers:
->
-> - What AI is.
-> - A brief history of AI.
-> - AI versus traditional programming.
-> - Basic AI terminology.
-> - A simple AI example.
->
-> The required worked example compares a rule-based program with a learning-based program solving the same task.
->
-> Create beginner-friendly practice questions that test:
->
-> 1. Understanding of basic AI terminology.
-> 2. Differences between rule-based and learning-based approaches.
-> 3. Recognition of AI applications.
-> 4. Basic reasoning about how AI systems learn from examples.
->
-> Include correct answers and short explanations.
->
-> Avoid questions that require knowledge not introduced in the chapter.
->
-> Clearly distinguish supervised learning from machine learning in general.
+**How AI Output Was Used:**
 
-### Illustrative AI Output
+The explanation helped me identify the expected project tasks and understand how the different deliverables were connected.
 
-A suitable activity could compare two spam-filtering systems.
+**Verification:**
 
-**System A:** Uses predefined rules to identify suspicious messages.
+[TO COMPLETE — State whether the explanation was compared with the professor's assignment instructions.]
 
-**System B:** Learns patterns from labeled examples of spam and non-spam messages.
+**Evidence:**
 
-Students could be asked to identify which system is rule-based and which uses supervised learning.
-
-A correct explanation would emphasize that System A follows explicitly written rules, while System B learns patterns from examples.
-
-### Verification and Human Judgment
-
-The responsible member should verify the answer explanations and confirm that the questions match the chapter content.
-
-The activity should not imply that all machine-learning methods require labeled examples.
-
-### Supporting Project Material
-
-- Chapter 1 module outline.
-- Planned rule-based versus learning-based worked example.
-- Chapter 1 practice questions and answers.
-
-### Learning Reflection
-
-This activity illustrates how AI can help develop learning activities, while the author remains responsible for checking the correctness and educational value of each question.
+![AI-002 — Assignment explanation](assets/ai-002.png)
 
 ---
 
-## AI-006 — Chapter 1 Quality Review
+## AI-003 — Understanding How Artificial Intelligence Works
 
-**Responsible:** Brian Djoni Suzanna  
-**AI Tool:** ChatGPT  
-**Related Deliverable:** Chapter 1 Quality Review Report  
-**Review ID:** QR-001  
-**Record Type:** AI-assisted review activity
+**Team Member:** Benedict Subhata
+**Date:** 22 October 2026
+**AI Tool:** [TO CONFIRM]
 
-### Purpose
+**Purpose:**
 
-As the Quality Lead, I used ChatGPT to support the review of Chapter 1, "Introduction to Artificial Intelligence."
+I used AI to learn more about how artificial intelligence works because I had limited previous experience with AI and computer science.
 
-The main objective was to identify important issues involving technical accuracy, clarity, examples, and alignment with the module outline.
+I wanted to understand the basic concepts before working on the learning materials.
 
-### Interaction Summary
+**How AI Output Was Used:**
 
-I supplied the Chapter 1 draft and requested a structured quality review.
+The AI explanation helped me develop a basic understanding of concepts such as data, algorithms, machine learning, training, and inference.
 
-The discussion identified several important concerns:
+This supported my preparation for the AI Overview project.
 
-1. The need to distinguish supervised learning from machine learning in general.
-2. The explanation of spam-filtering scores.
-3. The comparison between rule-based and learning-based systems.
-4. The completeness of the chapter relative to the module requirements.
+**Verification:**
 
-### Significant AI Assistance
+[TO COMPLETE — State which concepts or explanations were checked against learning resources.]
 
-The review highlighted that an example using labeled training data should be described specifically as supervised learning.
+**Evidence:**
 
-It also identified that a spam-filtering score should not automatically be presented as a calibrated probability.
-
-Another important concern was the need for a clearer comparison between rule-based and machine-learning approaches.
-
-### Verification and Human Judgment
-
-I compared the suggested findings with the supplied Chapter 1 material and the module outline.
-
-I focused on issues that could affect students' understanding rather than minor stylistic preferences.
-
-The module outline specifically required a worked example comparing rule-based and learning-based programs.
-
-Therefore, the quality of this comparison was relevant to the assigned learning objectives.
-
-### Outcome
-
-The AI-assisted review supported the preparation of QR-001.
-
-The findings focused on improving conceptual accuracy and making the chapter more useful for beginner students.
-
-### Learning Reflection
-
-I learned that reviewing educational content requires attention to explanations that may be technically incomplete or misleading.
-
-I also learned that review findings should be specific and connected to the learning objectives.
-
-### Supporting Project Material
-
-- Chapter 1 draft.
-- Chapter 1 module outline.
-- `reviews/detailed-reviews/QR-001.md`
+![AI-003 — How AI works](assets/ai-003.png)
 
 ---
 
-## AI-007 — Chapter 2 Quality Review
+## AI-004 — Learning Markdown in GitHub
 
-**Responsible:** Brian Djoni Suzanna  
-**AI Tool:** ChatGPT  
-**Related Deliverable:** Chapter 2 Quality Review Report  
-**Review ID:** QR-002  
-**Record Type:** AI-assisted review activity
+**Team Member:** Benedict Subhata
+**Date:** 22 October 2026
+**AI Tool:** [TO CONFIRM]
 
-### Purpose
+**Purpose:**
 
-I used ChatGPT to assist with reviewing Chapter 2, "Types of Artificial Intelligence."
+I used AI to understand how Markdown works in GitHub.
 
-My objective was to evaluate whether the chapter covered the required concepts and supported the planned learning activity.
+Since our team uses Markdown to organize learning materials, I needed to learn how to write and format Markdown files.
 
-### Interaction Summary
+**How AI Output Was Used:**
 
-I supplied the Chapter 2 material and compared it with the module outline.
+The AI explanation helped me understand basic Markdown formatting and how Markdown files are displayed in GitHub.
 
-The chapter discussed AI classifications such as:
+**Verification:**
 
-- Artificial Narrow Intelligence.
-- Artificial General Intelligence.
-- Artificial Superintelligence.
-- Reactive Machines.
-- Limited-Memory AI.
-- Theory-of-Mind AI.
-- Self-Aware AI.
+[TO COMPLETE — State whether the Markdown formatting was tested in GitHub.]
 
-The review discussion identified that the module outline also required machine learning, generative AI, relationships between the different categories, and real-world examples.
+**Evidence:**
 
-### Significant AI Assistance
-
-The review helped identify a difference between the chapter's existing classification content and the expected module coverage.
-
-It also highlighted the importance of including a practical classification activity involving real AI products.
-
-### Verification and Human Judgment
-
-I compared the chapter topics with the module outline.
-
-I considered the missing or insufficient coverage important because the chapter should help students understand how different AI concepts relate to one another.
-
-I organized the related concerns into a main finding about completeness and alignment instead of creating several repetitive issues.
-
-### Outcome
-
-The AI-assisted review supported the preparation of QR-002.
-
-The review recommended improving the coverage of the required concepts and strengthening the practical learning activity.
-
-### Learning Reflection
-
-I learned that a chapter can contain correct explanations but still require improvement if it does not fully address the learning objectives.
-
-This activity also helped me understand the importance of reviewing educational content against the assigned outline.
-
-### Supporting Project Material
-
-- Chapter 2 draft.
-- Chapter 2 module outline.
-- `reviews/detailed-reviews/QR-002.md`
+![AI-004 — GitHub Markdown explanation](assets/ai-004.png)
 
 ---
 
-## AI-008 — Project Planning and Task Organization
+## AI-005 — Chapter 1 Development
 
-**Responsible:** Joseph Lokman  
-**AI Tool:** ChatGPT  
-**Related Deliverable:** Team Plan and Task List  
-**Record Type:** Sample interaction for member verification
+**Team Member:** Jonathan Sugianto
+**Date:** [TO COMPLETE]
+**AI Tool:** [TO CONFIRM]
 
-### Purpose
+**Purpose:**
 
-This activity focuses on organizing the team's Stage 1 responsibilities and deliverables.
+AI was used to support the development of Chapter 1, Introduction to Artificial Intelligence.
 
-The project requires coordination between members working on different chapters and educational materials.
+**How AI Output Was Used:**
 
-### Representative Prompt
+[TO COMPLETE — Explain whether AI helped with explanations, chapter organization, examples, terminology, or another specific task.]
 
-> Act as a project planning assistant for a university team assignment.
->
-> Our team is preparing an AI Overview learning module.
->
-> The Stage 1 deliverables include:
->
-> - Study Guide development.
-> - PowerPoint slides.
-> - Video tutorials.
-> - Learning activities.
-> - Quality review documentation.
-> - Contribution records.
-> - AI-use documentation.
->
-> The module contains five chapters.
->
-> Chapters 1–3 have a Stage 1 target of draft development, while Chapters 4–5 have a target of outline development.
->
-> Help prepare a realistic task plan that includes:
->
-> 1. Major tasks.
-> 2. Expected outputs.
-> 3. Responsible members.
-> 4. Dependencies between tasks.
-> 5. Quality checks.
-> 6. Final submission preparation.
->
-> Ensure that the plan follows the assigned Stage 1 scope.
->
-> Do not assume that an unfinished task has already been completed.
->
-> Team responsibilities:
-> [Insert actual responsibilities]
+**Verification:**
 
-### Illustrative AI Output
+[TO COMPLETE — Explain how the AI-assisted content was reviewed or checked.]
 
-A suitable response could recommend completing the chapter outlines before preparing presentation materials.
+**Evidence:**
 
-It could also suggest reviewing Study Guide drafts before using their content in slides and videos.
-
-The final planning stage could include checking the consistency of deliverables, contribution records, and AI-use documentation.
-
-### Verification and Human Judgment
-
-The responsible member should compare the suggested plan with the actual team responsibilities and deadline.
-
-The final task list should reflect the team's agreed decisions and progress.
-
-### Supporting Project Material
-
-- Team Plan.
-- Task List.
-- Module Outline and Development Status.
-
-### Learning Reflection
-
-This activity illustrates how AI can help organize project tasks, while responsibility for coordination and completion remains with the team.
+![AI-005 — Chapter 1 development](assets/ai-005.png)
 
 ---
 
-# 4. Overall Reflection
+## AI-006 — Chapter Revision
 
-AI tools can support different stages of an educational team project, from planning and content development to presentation preparation and quality review.
+**Team Member:** Jonathan Sugianto
+**Date:** [TO COMPLETE]
+**AI Tool:** [TO CONFIRM]
 
-The AI Overview module requires clear explanations of fundamental AI concepts, practical examples, and learning activities.
+**Purpose:**
 
-AI assistance can help suggest ways to organize these materials, but its outputs must be checked against the module outline and the actual chapter content.
+AI was used to assist with revising chapter content.
 
-During my Quality Lead work, ChatGPT helped me identify potential issues in Chapters 1 and 2.
+**How AI Output Was Used:**
 
-The most important lesson was that AI suggestions should not automatically become review findings.
+[TO COMPLETE — Identify the chapter, what needed revision, and how the AI response helped.]
 
-I needed to consider whether each suggestion was supported by the chapter text and relevant to the assigned learning objectives.
+**Verification:**
 
-The broader project also shows the importance of clear communication between team members.
+[TO COMPLETE — Explain how the revised content was checked.]
 
-Study Guide content, presentation slides, video tutorials, and learning activities should be consistent with one another.
+**Evidence:**
 
-Overall, AI can support the development process, but the accuracy and quality of the final materials remain the responsibility of the team.
-
----
-
-# 5. Supporting Project Documents
-
-| Activity | Related Project Material |
-|:---|:---|
-| Study Guide Planning | `Main/README.md` |
-| AI Ethics Content | `content` |
-| PowerPoint Development | `Main/content/chapter-1-introduction-to-artificial-Intelligence` |
-| Video Tutorial Development | `Main/content/chapter-1-introduction-to-artificial-Intelligence/assets` |
-| Practice Questions | `Main/content/chapter-1-introduction-to-artificial-Intelligence` |
-| Chapter 1 Quality Review | `quality/reviews/detailed reviews/QR-001-I01.md` |
-| Chapter 2 Quality Review | `quality/reviews/detailed reviews/QR-002-I01.md` |
-| Project Planning | `Main/master-task-list.md` |
+![AI-006 — Chapter revision](assets/ai-006.png)
 
 ---
 
-# 6. Documentation Note
+## AI-007 — Chapter 5 Development
 
-This document was prepared by Brian Djoni Suzanna to organize significant AI-related activities across the Stage 1 project.
+**Team Member:** Joseph Lokman
+**Date:** [TO COMPLETE]
+**AI Tool:** [TO CONFIRM]
 
-The two Quality Lead entries describe AI-assisted reviews of Chapters 1 and 2.
+**Purpose:**
 
-The other entries provide project-specific sample interactions aligned with the assigned module outline. They are not presented as verified historical transcripts.
+AI was used to support the development of Chapter 5, AI Ethics and Limitations.
 
-The responsible team members should confirm the interaction details and attach original evidence if required by the assignment.
+**How AI Output Was Used:**
 
-The team remains responsible for ensuring that the submitted documentation accurately reflects its work.
+[TO COMPLETE — Explain which parts of Chapter 5 were supported by AI.]
+
+**Verification:**
+
+[TO COMPLETE — Explain how the information was checked before inclusion in the chapter.]
+
+**Evidence:**
+
+![AI-007 — Chapter 5 development](assets/ai-007.png)
+
+---
+
+## AI-008 — Project Plan Updates and Corrections
+
+**Team Member:** Joseph Lokman
+**Date:** [TO COMPLETE]
+**AI Tool:** [TO CONFIRM]
+
+**Purpose:**
+
+AI was used to help identify and correct problems in the Project Plan.
+
+**How AI Output Was Used:**
+
+The AI assistance supported the process of reviewing and improving the Project Plan.
+
+[TO COMPLETE — Describe the specific corrections made.]
+
+**Verification:**
+
+[TO COMPLETE — Explain how the corrections were checked against the project requirements.]
+
+**Evidence:**
+
+![AI-008 — Project Plan corrections](assets/ai-008.png)
+
+---
+
+## AI-009 — Understanding Team Requirements and Quality Lead Responsibilities
+
+**Team Member:** Brian Djoni Suzanna
+**Date:** 24 October 2026
+**AI Tool:** Claude
+
+**Purpose:**
+
+I used Claude to better understand the team project requirements and my responsibilities as the Quality Lead.
+
+I provided background information about the project, including the Stage 1 assignments, team responsibilities, suggested GitHub structure, and AI Overview content outline.
+
+I then asked Claude to explain the required team deliverables and my individual responsibilities in simple language.
+
+**Prompt (English version):**
+
+> Please explain in as much detail as possible what we must produce for the team project, and separately what I must do myself. Explain it very simply, since there is a lot involved, including branches. Tell me everything.
+
+**How AI Output Was Used:**
+
+Claude explained basic GitHub terminology, including repositories, folders, Markdown, commits, branches, pull requests, and Issues.
+
+It also summarized the team deliverables and separated my responsibilities into official requirements, Quality Lead recommendations, and points requiring confirmation.
+
+The explanation helped me better understand the project workflow and the tasks I needed to manage.
+
+**Problem Identified:**
+
+Claude incorrectly assumed that the current date was 22 October 2026, while the actual date was 24 October 2026.
+
+**Verification:**
+
+The date error was identified and corrected.
+
+[TO COMPLETE — Confirm whether the remaining assignment requirements were checked against the professor's original instructions.]
+
+**Evidence:**
+
+![AI-009 — Project requirements and Quality Lead responsibilities](assets/ai-009.png)
+
+---
+
+## AI-010 — GitHub Workflow and Branch Planning
+
+**Team Member:** Brian Djoni Suzanna
+**Date:** 24 October 2026
+**AI Tool:** Claude
+
+**Purpose:**
+
+I used Claude to understand how our team could organize GitHub branches and collaborate using the Option B workflow.
+
+**Prompt (English version):**
+
+> We want Option B. Please explain how the system works and create the full set of branches, meaning the branch map the professor asks for.
+
+**How AI Output Was Used:**
+
+Claude explained a possible GitHub collaboration workflow and proposed guidelines for managing branches and contributions.
+
+Its suggestions included:
+
+* Creating branches for individual tasks.
+* Using pull requests to review changes.
+* Having another team member review contributions.
+* Keeping a readable commit history.
+* Organizing responsibilities for different files.
+
+Claude also stated that a branch map was not explicitly required by the professor and that the important evidence concerned actual contributions and collaboration.
+
+These suggestions were used as planning guidance rather than automatically treated as official assignment requirements.
+
+**Verification:**
+
+[TO COMPLETE — Confirm the professor's actual GitHub requirements and which workflow suggestions the team adopted.]
+
+**Evidence:**
+
+![AI-010 — GitHub workflow and branch planning](assets/ai-010.png)
+
+---
+
+## 5. Verification and Responsible AI Use
+
+Our team recognizes that AI-generated responses may contain errors or misunderstand assignment requirements.
+
+To use AI responsibly, we aim to follow these practices:
+
+1. Compare AI explanations of assignment requirements with the professor's original instructions.
+2. Check technical explanations against reliable learning resources.
+3. Review AI-assisted content before including it in project deliverables.
+4. Record significant AI-assisted activities and keep supporting evidence.
+5. Correct identified errors instead of accepting AI responses without checking them.
+6. Clearly distinguish AI suggestions from official assignment requirements.
+
+Verification details for individual activities are recorded in their respective entries.
+
+---
+
+## 6. Supporting Evidence
+
+Screenshots are organized in the `assets` folder.
+
+Each screenshot should show the relevant prompt and AI-generated response.
+
+| Entry ID | Screenshot          |
+| -------- | ------------------- |
+| AI-001   | `assets/ai-001.png` |
+| AI-002   | `assets/ai-002.png` |
+| AI-003   | `assets/ai-003.png` |
+| AI-004   | `assets/ai-004.png` |
+| AI-005   | `assets/ai-005.png` |
+| AI-006   | `assets/ai-006.png` |
+| AI-007   | `assets/ai-007.png` |
+| AI-008   | `assets/ai-008.png` |
+| AI-009   | `assets/ai-009.png` |
+| AI-010   | `assets/ai-010.png` |
+
+**Evidence Note:** Screenshot filenames are proposed for consistency. The actual image files must be uploaded to the repository before the links will display correctly.
+
+---
+
+## 7. Final Notes
+
+This log documents ten AI-assisted activities reported by four team members during Stage 1.
+
+The recorded activities mainly involved understanding project requirements, learning technical concepts, preparing chapter content, revising documents, and planning GitHub collaboration.
+
+AI tools were used as learning and productivity support. The team remains responsible for checking information, making decisions, and preparing the final project deliverables.
+
+Entries with incomplete information should be updated by the responsible team members before final submission.
+
+**End of Stage 1 AI-Use Log**
