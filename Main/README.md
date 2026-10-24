@@ -70,6 +70,8 @@ Paths are written from the root of the repository.
 | `quality/reviews/final-submission-audit.md` | The final audit before the Stage 1 submission. |
 | `logs/stage1-ai-use-log.md` | The History of using an AI. |
 | `quality/reviews/detailed reviews` | The Detailed Reviews that have been made by Quality Lead. |
+| `Main/stage1_Content.md` | This document contains the combined learning materials developed by Team Babi Guling for the **AI Overview** module during Stage 1 of the project. |
+
 
 
 ---
