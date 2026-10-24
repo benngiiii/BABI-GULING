@@ -40,14 +40,14 @@ AI-generated information should be reviewed by the responsible team member befor
 
 | Entry ID | Team Member         | Date            | Purpose                                                              | AI Tool      |
 | -------- | ------------------- | --------------- | -------------------------------------------------------------------- | ------------ |
-| AI-001   | Benedict Subhata    | 16 October 2026 | GitHub repository creation guidance                                  | [TO CONFIRM] |
-| AI-002   | Benedict Subhata    | 22 October 2026 | Understanding assignment requirements                                | [TO CONFIRM] |
-| AI-003   | Benedict Subhata    | 22 October 2026 | Understanding how AI works                                           | [TO CONFIRM] |
-| AI-004   | Benedict Subhata    | 22 October 2026 | Learning GitHub Markdown                                             | [TO CONFIRM] |
+| AI-001   | Benedict Subhata    | 16 October 2026 | GitHub repository creation guidance                                  | ChatGPT  |
+| AI-002   | Benedict Subhata    | 22 October 2026 | Understanding assignment requirements                                | ChatGPT  |
+| AI-003   | Benedict Subhata    | 22 October 2026 | Understanding how AI works                                           | ChatGPT  |
+| AI-004   | Benedict Subhata    | 22 October 2026 | Learning GitHub Markdown                                             | ChatGPT |
 | AI-005   | Jonathan Sugianto   | 22 October 2026| Chapter 1 development                                                 | Claude       |
-| AI-006   | Jonathan Sugianto   | 22 October 2026   | Chapter revision                                                     | Claude  |
-| AI-007   | Joseph Lokman       | 23 October 2026 | Chapter 5 development                                                | [TO CONFIRM] |
-| AI-008   | Joseph Lokman       | 22 October 2026 | Project Plan corrections and updates                                 | [TO CONFIRM] |
+| AI-006   | Jonathan Sugianto   | 22 October 2026   | Chapter revision                                                   | Claude  |
+| AI-007   | Joseph Lokman       | 23 October 2026 | Chapter 5 development                                                | Claude |
+| AI-008   | Joseph Lokman       | 22 October 2026 | Project Plan corrections and updates                                 | Grock |
 | AI-009   | Brian Djoni Suzanna | 22 October 2026 | Understanding project requirements and Quality Lead responsibilities | Claude       |
 | AI-010   | Brian Djoni Suzanna | 21 October 2026 | Planning GitHub workflow and branches                                | Claude       |
 
@@ -55,37 +55,11 @@ AI-generated information should be reviewed by the responsible team member befor
 
 # 4. Detailed AI Usage Records
 
-## AI-001 — GitHub Repository Creation Guidance
-
-**Team Member:** Benedict Subhata
-**Date:** 16 October 2026
-**AI Tool:** [TO CONFIRM]
-
-**Purpose:**
-
-I used AI to help me understand how to create a GitHub repository after signing in to GitHub for the first time.
-
-I wanted to follow the professor's instructions and set up the repository correctly for our team project.
-
-**How AI Output Was Used:**
-
-The AI explanation helped me understand the initial steps involved in creating a repository and preparing it for collaborative work.
-
-**Verification:**
-
-[TO COMPLETE — Explain how the instructions were checked or whether the repository was successfully created.]
-
-**Evidence:**
-
-![AI-001 — GitHub repository guidance](assets/ai-001.png)
-
----
-
-## AI-002 — Understanding the Assignment Requirements
+## AI-001 — Understanding the Assignment Requirements
 
 **Team Member:** Benedict Subhata
 **Date:** 22 October 2026
-**AI Tool:** [TO CONFIRM]
+**AI Tool:** ChatGPT
 
 **Purpose:**
 
@@ -107,11 +81,12 @@ The explanation helped me identify the expected project tasks and understand how
 
 ---
 
-## AI-003 — Understanding How Artificial Intelligence Works
+## AI-002 — Understanding How Artificial Intelligence Works
 
 **Team Member:** Benedict Subhata
 **Date:** 22 October 2026
-**AI Tool:** [TO CONFIRM]
+**AI Tool:** ChatGPT
+
 
 **Purpose:**
 
@@ -135,11 +110,12 @@ This supported my preparation for the AI Overview project.
 
 ---
 
-## AI-004 — Learning Markdown in GitHub
+## AI-003 — Learning Markdown in GitHub
 
 **Team Member:** Benedict Subhata
 **Date:** 22 October 2026
-**AI Tool:** [TO CONFIRM]
+**AI Tool:** ChatGPT
+
 
 **Purpose:**
 
@@ -158,7 +134,7 @@ The AI explanation helped me understand basic Markdown formatting and how Markdo
 
 ---
 
-## AI-005 — Chapter 1 Development
+## AI-004 — Chapter 1 Development
 
 **Team Member:** Jonathan Sugianto
 **Date:** 22 October 2026
@@ -178,7 +154,7 @@ AI was used to support the development of Chapter 1, Introduction to Artificial 
 
 ---
 
-## AI-006 — Chapter Revision
+## AI-005 — Chapter Revision
 
 **Team Member:** Jonathan Sugianto
 **Date:** 22 October 2026  
@@ -199,11 +175,11 @@ AI was used to assist with revising chapter content.
 
 ---
 
-## AI-007 — Chapter 5 Development
+## AI-006 — Chapter 5 Development
 
 **Team Member:** Joseph Lokman
 **Date:** [TO COMPLETE]
-**AI Tool:** [TO CONFIRM]
+**AI Tool:** Claude
 
 **Purpose:**
 
@@ -219,15 +195,15 @@ AI was used to support the development of Chapter 5, AI Ethics and Limitations.
 
 **Evidence:**
 
-![AI-007 — Chapter 5 development](assets/ai-007.png)
+![AI-007 — Chapter 5 development](assets/making-chapter-5.png)
 
 ---
 
-## AI-008 — Project Plan Updates and Corrections
+## AI-007 — Project Plan Updates and Corrections
 
 **Team Member:** Joseph Lokman
-**Date:** [TO COMPLETE]
-**AI Tool:** [TO CONFIRM]
+**Date:** 22 October 2026
+**AI Tool:** Grock
 
 **Purpose:**
 
@@ -239,17 +215,14 @@ The AI assistance supported the process of reviewing and improving the Project P
 
 [TO COMPLETE — Describe the specific corrections made.]
 
-**Verification:**
-
-[TO COMPLETE — Explain how the corrections were checked against the project requirements.]
 
 **Evidence:**
 
-![AI-008 — Project Plan corrections](assets/ai-008.png)
+![AI-008 — Project Plan corrections](assets/update-and-fix-problems-on-project-plan.png)
 
 ---
 
-## AI-009 — Understanding Team Requirements and Quality Lead Responsibilities
+## AI-008 — Understanding Team Requirements and Quality Lead Responsibilities
 
 **Team Member:** Brian Djoni Suzanna
 **Date:** 24 October 2026
@@ -291,7 +264,7 @@ The date error was identified and corrected.
 
 ---
 
-## AI-010 — GitHub Workflow and Branch Planning
+## AI-009 — GitHub Workflow and Branch Planning
 
 **Team Member:** Brian Djoni Suzanna
 **Date:** 24 October 2026
@@ -356,16 +329,15 @@ Each screenshot should show the relevant prompt and AI-generated response.
 
 | Entry ID | Screenshot          |
 | -------- | ------------------- |
-| AI-001   | `assets/ai-001.png` |
-| AI-002   | `assets/ai-002.png` |
-| AI-003   | `assets/ai-003.png` |
-| AI-004   | `assets/ai-004.png` |
-| AI-005   | `assets/ai-005.png` |
-| AI-006   | `assets/ai-006.png` |
-| AI-007   | `assets/ai-007.png` |
-| AI-008   | `assets/ai-008.png` |
-| AI-009   | `assets/ai-009.png` |
-| AI-010   | `assets/ai-010.png` |
+| AI-001   | `assets/ai-002.png` |
+| AI-002   | `assets/ai-003.png` |
+| AI-003   | `assets/ai-004.png` |
+| AI-004   | `assets/ai-005.png` |
+| AI-005   | `assets/ai-006.png` |
+| AI-006   | `assets/ai-007.png` |
+| AI-007   | `assets/ai-008.png` |
+| AI-008   | `assets/ai-009.png` |
+| AI-009   | `assets/ai-010.png` |
 
 **Evidence Note:** Screenshot filenames are proposed for consistency. The actual image files must be uploaded to the repository before the links will display correctly.
 
