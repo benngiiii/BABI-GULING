@@ -3,7 +3,7 @@
 > **Module:** AI Overview
 > **Chapter:** 1 — Introduction to CS and AI (course Chapter 1)
 > **Version:** 1.1 (Stage 1, rebuilt from the lecturer's course slides)
-> **Author:** Jonathan Sugianto (proposed owner)
+> **Author:** Jonathan Sugianto 
 > **Reviewer:** Brian Djoni Suzanna
 > **Audience:** Complete beginners with basic computer and internet literacy; no programming experience needed
 > **Estimated study time:** about 2 hours, including activities
