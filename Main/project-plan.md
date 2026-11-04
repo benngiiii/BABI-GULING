@@ -112,7 +112,7 @@ Statuses: **Outline only**, **Drafted** (written, no signed review), **Checked**
 | Explanations | Yes | Topics 1–6 |
 | Terminology | Yes | Glossary; definitions at first use |
 | Worked examples | Yes | Truth tables, forward chaining, BFS/DFS, A*, minimax |
-| Visual | Yes | Figures 2.1–2.6 |
+| Visual | Yes | Figures 2.1–2.6 (PNG files in the chapter's `assets/` folder) |
 | Learner activity | Yes | Rule-based Smart Classroom; practice questions |
 | Explained answers | Yes | Answer Key |
 | References | Yes | References (some marked "Not opened") |
@@ -183,7 +183,7 @@ The lecturer's Stage 1 package is a ZIP named `TeamName_Stage1_GitHub_Markdown_V
 - [ ] README, Module Outline, Project Plan, and Master Task List v2.0 merged.
 - [ ] Signed review records for the chapters (QR-121 to QR-124) and the project documents (QR-125).
 - [ ] Submission Report with repository URL, snapshot date, latest commit identifier, content status, evidence, contributions, review outcome, and next steps.
-- [ ] Markdown source snapshot with assets.
+- [ ] Markdown source snapshot with assets (every `assets/` folder included and every image link checked).
 - [ ] Readable PDF of the content.
 - [ ] Project Log and Personal Logs with light-theme screenshots.
 - [ ] ZIP extracted into a clean folder and checked.
