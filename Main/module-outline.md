@@ -3,7 +3,7 @@
 > **Project:** Babi Guling – AI Overview  
 > **Module:** AI Overview (Introduction to Computer Science and Artificial Intelligence)  
 > **Intended learners:** Beginners with no background in AI or programming. Learners need only basic computer and internet literacy.  
-> **Version:** v2.0 (Stage 1 fix: rebuilt on the lecturer's four course chapters)  
+> **Version:** v2.1 (Stage 1 fix: four course chapters, PNG figures, linked references)  
 > **Last updated:** 2026-11-05
 
 ## Why the Structure Changed
@@ -64,10 +64,10 @@ The Stage 1 requirement is at least one substantively developed topic, plus a co
 | Explanations | Topics 1–6 | Present |
 | Terminology | Glossary; terms defined at first use | Present |
 | Worked examples | Truth tables, forward chaining, BFS and DFS, A*, minimax | Present |
-| Visuals | Figures 2.1–2.6 (diagrams) | Present; GitHub rendering to be confirmed |
+| Visuals | Figures 2.1–2.6 (PNG files in `assets/`) | Present; GitHub rendering to be confirmed |
 | Learner activity | Rule-Based Smart Classroom; practice questions Q1–Q14 | Present |
 | Explained answers | Answer Key | Present |
-| References | References section | Present; items marked "Not opened" must be checked |
+| References | References section, with links | Present; each link must be opened and checked |
 
 ## Section-Level Development Status
 
@@ -116,6 +116,35 @@ The Stage 1 requirement is at least one substantively developed topic, plus a co
 | Topic 7: Challenges and Limitations | Drafted |
 | Hands-On Activities A–C; Comparing the Three Approaches; Key Takeaways; Practice Questions (Q1–Q14); Answer Key; Glossary; References | Drafted |
 
+## Figures and Assets
+
+Every diagram is a PNG file. Each chapter keeps its figures in an `assets/` folder next to its Markdown file, and the Markdown links to them with a relative path such as `assets/fig-2-5-search-tree.png`. The file names below are exact. Keep them unchanged when uploading to GitHub, because GitHub paths are case-sensitive.
+
+| Figure | File name | Shows | Chapter folder |
+|---|---|---|---|
+| 1.1 | `fig-1-1-chapter-map.png` | Chapter 1 shared vocabulary and history | `chapter-1-introduction-to-cs-and-ai/assets/` |
+| 1.2 | `fig-1-2-cs-map.png` | Map of Computer Science (ACM-style grouping) | same |
+| 1.3 | `fig-1-3-ai-map.png` | Map of AI areas | same |
+| 1.4 | `fig-1-4-ml-families.png` | Families of machine learning | same |
+| 2.1 | `fig-2-1-symbolic-pipeline.png` | The symbolic pipeline | `chapter-2-symbolic-ai/assets/` |
+| 2.2 | `fig-2-2-knowledge-representation.png` | Knowledge representation in the AI pipeline | same |
+| 2.3 | `fig-2-3-semantic-network.png` | A small semantic network | same |
+| 2.4 | `fig-2-4-expert-system.png` | Parts of an expert system | same |
+| 2.5 | `fig-2-5-search-tree.png` | A small search tree | same |
+| 2.6 | `fig-2-6-game-tree.png` | A tiny game tree | same |
+| 3.1 | `fig-3-1-connectionist-and-big-data.png` | How Connectionist AI and Big Data belong together | `chapter-3-connectionist-ai-and-big-data/assets/` |
+| 3.2 | `fig-3-2-neuron.png` | One artificial neuron | same |
+| 3.3 | `fig-3-3-feedforward-network.png` | A small feedforward network | same |
+| 3.4 | `fig-3-4-data-pipeline.png` | A typical data pipeline | same |
+| 3.5 | `fig-3-5-downloads-chart.png` | Bar chart of the example data (chart-choice example) | same |
+| 4.1 | `fig-4-1-rl-loop.png` | The reinforcement learning loop | `chapter-4-behaviorist-ai/assets/` |
+| 4.2 | `fig-4-2-corridor.png` | The corridor used in the Q-learning example | same |
+| 4.3 | `fig-4-3-subsumption-layers.png` | Layers of behaviour for a robot vacuum | same |
+| M1 | `fig-main-1-stage-timeline.png` | Stage timeline of the project | `Main/assets/` |
+| M2 | `fig-main-2-workflow.png` | Workflow repeated in each stage | `Main/assets/` |
+
+Upload order for each chapter: put the `assets/` folder and the `.md` file in the same chapter folder, then open the Markdown preview on GitHub and confirm that every figure appears.
+
 ## Prerequisites
 
 No prior knowledge of AI or programming is required. Read the chapters in order. Chapter 1 gives the vocabulary. Chapter 2 introduces symbols and rules. Chapter 3 builds on Chapter 2 by showing the learning alternative. Chapter 4 introduces learning from reward and ends with a comparison of the three approaches.
@@ -133,14 +162,16 @@ The same Smart Classroom task is used in Chapters 1, 2, and 3 so that learners s
 
 ## Source Verification
 
-The chapters list the lecturer's slides as the primary source. Other references are marked **Not opened during this revision** unless the author or reviewer has opened them. The Quality Lead must check each marked reference before the final submission and then change the label.
+The chapters list the lecturer's slides as the primary source (no public link). Every other reference now has a link. The links were written from the publisher, DOI, or official site of each work. **Most of them could not be opened during this revision** because the working environment blocks most outside sites, so the author or reviewer must open each one, confirm that it leads to the cited work, and then change the label in the chapter from "not opened" to "opened" with the date.
 
-| Chapter | Primary source | Other references to verify |
+| Chapter | Primary source | Linked references to open and check |
 |---|---|---|
-| 1 | Course slides chap1 | McCulloch/OECD summaries, Russell and Norvig, Turing (1950), ACM classification |
-| 2 | Course slides chap4 | Russell and Norvig, Haugeland (1985), Shortliffe (1976) |
-| 3 | Course slides chap5 | McCulloch and Pitts, Rumelhart et al., LeCun et al., Goodfellow et al., Buolamwini and Gebru, Sweeney, Dean and Ghemawat |
-| 4 | Course slides chap6 | Sutton and Barto, Brooks, Mnih et al., Silver et al., Krakovna et al., OpenAI (2016), Ouyang et al., Tesauro |
+| 1 | Course slides chap1 | [McCarthy](http://jmc.stanford.edu/artificial-intelligence/what-is-ai/), [OECD](https://www.oecd.org/en/topics/ai-principles.html), [IBM](https://www.ibm.com/think/topics/artificial-intelligence), [Russell and Norvig](https://aima.cs.berkeley.edu/), [Turing 1950](https://doi.org/10.1093/mind/LIX.236.433), [ACM CCS](https://dl.acm.org/ccs) |
+| 2 | Course slides chap4 | [Russell and Norvig](https://aima.cs.berkeley.edu/), [Haugeland (GOFAI overview)](https://en.wikipedia.org/wiki/GOFAI), [Shortliffe (MYCIN overview)](https://en.wikipedia.org/wiki/Mycin) |
+| 3 | Course slides chap5 | [McCulloch and Pitts](https://doi.org/10.1007/BF02478259), [Rumelhart et al.](https://doi.org/10.1038/323533a0), [LeCun et al.](https://doi.org/10.1038/nature14539), [Goodfellow et al.](https://www.deeplearningbook.org/), [Buolamwini and Gebru](https://proceedings.mlr.press/v81/buolamwini18a.html), [Sweeney](https://dataprivacylab.org/projects/identifiability/paper1.pdf), [Dean and Ghemawat](https://research.google/pubs/mapreduce-simplified-data-processing-on-large-clusters/), [GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj) |
+| 4 | Course slides chap6 | [Sutton and Barto](http://incompleteideas.net/book/the-book-2nd.html), [Brooks](https://doi.org/10.1016/0004-3702(91)90053-M), [Mnih et al.](https://doi.org/10.1038/nature14236), [Silver et al. 2016](https://doi.org/10.1038/nature16961), [Silver et al. 2017](https://arxiv.org/abs/1712.01815), [Tesauro](https://doi.org/10.1145/203330.203343), [Krakovna et al.](https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/), [OpenAI 2016](https://openai.com/index/faulty-reward-functions/), [Ouyang et al.](https://arxiv.org/abs/2203.02155) |
+
+Haugeland (1985) and Shortliffe (1976) are books. The links above lead to overview pages, not to the books, so the reviewer should confirm the claims from the books or from another source that can be opened.
 
 ## Known Gaps and Uncertainties
 
@@ -148,9 +179,9 @@ The chapters list the lecturer's slides as the primary source. Other references 
 - The team has not yet recorded a review of at least three previous-year projects (symbolic, connectionist, behaviorist).
 - The exact text of the lecturer's assignment is not in the repository. The Project Plan's "five content parts" must be compared with it.
 - No chapter has a signed review of the rebuilt version.
-- Images, diagrams, and GitHub rendering must be confirmed on the live repository.
+- The figures are PNG files that have not yet been viewed on the live repository. Confirm file names, relative links, and appearance after upload.
 - Learner testing has not been run.
-- Items marked "Not opened" in the reference lists are unverified.
+- Reference links are written but not yet opened. Any link that fails must be replaced before the final submission.
 
 ## Revision History
 
@@ -159,3 +190,4 @@ The chapters list the lecturer's slides as the primary source. Other references 
 | Before 2026-10-23 | v1.0 | Initial chapter overview, prerequisites, activities and known gaps | None |
 | 2026-10-23 – 2026-10-24 | v1.1 – v1.5 | Learning outcomes, status labels, source table, and suggested answers for the old five-chapter structure | QR-009 series |
 | 2026-11-05 | v2.0 | Rebuilt on the lecturer's four course chapters: new chapter titles, outcomes, section tables, activities, and honest "Drafted" status; removed the old "Checked" labels | Pending (QR-121-I01 to QR-125-I01) |
+| 2026-11-05 | v2.1 | Diagrams converted to PNG files in each chapter's `assets/` folder; figure table added; every reference now has a link; source verification table rewritten | Pending (QR-121-I01 to QR-125-I01) |
