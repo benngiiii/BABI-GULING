@@ -169,22 +169,18 @@ We will use a screening measure called the **four-fifths rule**.
 
 - **Selection rate:** the share of a group that receives the favourable outcome.
 
-  \[
-  \text{Selection rate}=\frac{\text{Number selected}}{\text{Number of applicants}}
-  \]
+  **Selection rate** = (Number selected) ÷ (Number of applicants)
 
 - **Impact ratio:** a group's selection rate divided by the highest selection rate.
 
-  \[
-  \text{Impact ratio}=\frac{\text{Group's selection rate}}{\text{Highest group selection rate}}
-  \]
+  **Impact ratio** = (Group's selection rate) ÷ (Highest group selection rate)
 
 - **Four-fifths (80%) rule:** a screening indicator from US employment guidance. If a group's selection rate is less than 80% of the highest group's rate, the result is a warning sign of possible adverse impact. It is not proof of discrimination (US EEOC et al., 1978, 29 CFR §1607.4(D)).
 
 ### Step 1: Calculate each group's selection rate
 
-- Group A: \(60 \div 100 = 0.60\), or **60%**.
-- Group B: \(30 \div 100 = 0.30\), or **30%**.
+- Group A: 60 ÷ 100 = 0.60, or **60%**.
+- Group B: 30 ÷ 100 = 0.30, or **30%**.
 
 ### Step 2: Identify the highest selection rate
 
@@ -192,8 +188,8 @@ Group A has the highest rate: **0.60**.
 
 ### Step 3: Calculate the impact ratio
 
-- Group A: \(0.60 \div 0.60 = 1.00\).
-- Group B: \(0.30 \div 0.60 = 0.50\).
+- Group A: 0.60 ÷ 0.60 = 1.00.
+- Group B: 0.30 ÷ 0.60 = 0.50.
 
 ### Step 4: Compare the impact ratio with 0.80
 
@@ -286,9 +282,9 @@ In 3–4 sentences, explain why "we removed the sensitive column from the data" 
 
 ### Part A
 
-1. Group C: \(20 \div 50 = 0.40\), or **40%**. Group D: \(36 \div 80 = 0.45\), or **45%**.
+1. Group C: 20 ÷ 50 = 0.40, or **40%**. Group D: 36 ÷ 80 = 0.45, or **45%**.
 2. Group D has the highest selection rate: **0.45**.
-3. Group C's impact ratio: \(0.40 \div 0.45 \approx 0.89\).
+3. Group C's impact ratio: 0.40 ÷ 0.45 ≈ 0.89.
 4. **No.** The impact ratio of approximately 0.89 is above 0.80, so this screening check does not flag the result. Passing does not prove that the system is fair.
 
 ### Part B
