@@ -3,7 +3,7 @@
 > **Module:** AI Overview
 > **Chapter:** 4 — Behaviorist AI (course Chapter 6)
 > **Version:** 1.1 (Stage 1, rebuilt from the lecturer's course slides)
-> **Author:** Joseph Lokman (proposed owner)
+> **Author:** Joseph Lokman
 > **Reviewer:** Brian Djoni Suzanna
 > **Audience:** Complete beginners with basic computer and internet literacy; no programming experience needed
 > **Estimated study time:** about 2.5 hours, including activities
