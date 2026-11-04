@@ -1,7 +1,7 @@
 # Chapter 1: Introduction to Artificial Intelligence
 
 **Team:** Babi Guling | **Module:** AI Overview | **Version:** 2.0
-**Author:** Jonathan Sugianto
+**Author:** Joseph Lokman
 **Audience:** Complete beginners. No programming or AI background needed.
 **Estimated time:** about 2 hours and 35 minutes (including activities)
 **How to work through it:** Predict, read, try the activity, check yourself, then compare with the answers.
