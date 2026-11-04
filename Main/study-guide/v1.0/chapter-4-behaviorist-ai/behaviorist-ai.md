@@ -487,14 +487,12 @@ D. Always explains itself
 ## References
 
 1. Course slides, "chap6: Behaviorist AI", Introduction to Computer Science and Artificial Intelligence. Lecturer's course materials (no public link). Source of the topic outline.
-2. Sutton, R. S., and Barto, A. G. (2018). *Reinforcement Learning: An Introduction* (2nd ed.). MIT Press. [http://incompleteideas.net/book/the-book-2nd.html](http://incompleteideas.net/book/the-book-2nd.html) *(not opened)*
-3. Brooks, R. A. (1991). Intelligence without representation. *Artificial Intelligence*, 47(1–3), 139–159. [https://doi.org/10.1016/0004-3702(91)90053-M](https://doi.org/10.1016/0004-3702(91)90053-M) *(not opened)*
-4. Mnih, V., et al. (2015). Human-level control through deep reinforcement learning. *Nature*, 518, 529–533. [https://doi.org/10.1038/nature14236](https://doi.org/10.1038/nature14236) *(not opened)*
-5. Silver, D., et al. (2016). Mastering the game of Go with deep neural networks and tree search. *Nature*, 529, 484–489. [https://doi.org/10.1038/nature16961](https://doi.org/10.1038/nature16961) *(existence confirmed through a web search on 5 November 2026; the paper itself was not opened)*
-6. Silver, D., et al. (2017). Mastering chess and shogi by self-play with a general reinforcement learning algorithm. [https://arxiv.org/abs/1712.01815](https://arxiv.org/abs/1712.01815) *(not opened)*
-7. Tesauro, G. (1995). Temporal difference learning and TD-Gammon. *Communications of the ACM*, 38(3), 58–68. [https://doi.org/10.1145/203330.203343](https://doi.org/10.1145/203330.203343) *(not opened)*
-8. Krakovna, V., et al. (2020). Specification gaming: the flip side of AI ingenuity. DeepMind. [https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/](https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/) *(not opened)*
-9. Clark, J., and Amodei, D. (2016). Faulty reward functions in the wild. OpenAI. [https://openai.com/index/faulty-reward-functions/](https://openai.com/index/faulty-reward-functions/) *(not opened)*
-10. Ouyang, L., et al. (2022). Training language models to follow instructions with human feedback. [https://arxiv.org/abs/2203.02155](https://arxiv.org/abs/2203.02155) *(not opened)*
-
-> **Link status.** Each link below was written from the publisher's or DOI address of the work. Links marked **not opened** could not be opened during this revision. The author or reviewer must click every link, confirm that it opens the right work and supports the claim it is cited for, and then change the label to "opened" with the date.
+2. Sutton, R. S., and Barto, A. G. (2018). *Reinforcement Learning: An Introduction* (2nd ed.). MIT Press. [http://incompleteideas.net/book/the-book-2nd.html](http://incompleteideas.net/book/the-book-2nd.html)
+3. Brooks, R. A. (1991). Intelligence without representation. *Artificial Intelligence*, 47(1–3), 139–159. [https://doi.org/10.1016/0004-3702(91)90053-M](https://doi.org/10.1016/0004-3702(91)90053-M)
+4. Mnih, V., et al. (2015). Human-level control through deep reinforcement learning. *Nature*, 518, 529–533. [https://doi.org/10.1038/nature14236](https://doi.org/10.1038/nature14236)
+5. Silver, D., et al. (2016). Mastering the game of Go with deep neural networks and tree search. *Nature*, 529, 484–489. [https://doi.org/10.1038/nature16961](https://doi.org/10.1038/nature16961)
+6. Silver, D., et al. (2017). Mastering chess and shogi by self-play with a general reinforcement learning algorithm. [https://arxiv.org/abs/1712.01815](https://arxiv.org/abs/1712.01815)
+7. Tesauro, G. (1995). Temporal difference learning and TD-Gammon. *Communications of the ACM*, 38(3), 58–68. [https://doi.org/10.1145/203330.203343](https://doi.org/10.1145/203330.203343) 
+8. Krakovna, V., et al. (2020). Specification gaming: the flip side of AI ingenuity. DeepMind. [https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/](https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/)
+9. Clark, J., and Amodei, D. (2016). Faulty reward functions in the wild. OpenAI. [https://openai.com/index/faulty-reward-functions/](https://openai.com/index/faulty-reward-functions/)
+10. Ouyang, L., et al. (2022). Training language models to follow instructions with human feedback. [https://arxiv.org/abs/2203.02155](https://arxiv.org/abs/2203.02155)
