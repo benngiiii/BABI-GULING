@@ -1,8 +1,13 @@
-# Chapter 1: Introduction to Artificial Intelligence
+# Chapter 1: Introduction to CS and AI
 
-> **Status:** Revised (V1.2), awaiting final recheck of QR-001-I03
-> **Author:** Jonathan Sugianto | **Reviewer:** Brian Djoni Suzanna
-> **Audience:** Complete beginners. No programming or AI background needed.
+> **Module:** AI Overview
+> **Chapter:** 1 — Introduction to CS and AI (course Chapter 1)
+> **Version:** 1.1 (Stage 1, rebuilt from the lecturer's course slides)
+> **Author:** Jonathan Sugianto (proposed owner)
+> **Reviewer:** Brian Djoni Suzanna
+> **Audience:** Complete beginners with basic computer and internet literacy; no programming experience needed
+> **Estimated study time:** about 2 hours, including activities
+> **Course source:** Lecturer's slides "chap1: Intro to CS and AI". The chapter follows the slides' outline: history, definitions, main topics, and a hands-on machine-learning activity.
 
 ---
 
@@ -10,388 +15,466 @@
 
 1. [Learning Outcomes](#learning-outcomes)
 2. [Chapter Map](#chapter-map)
-3. [1.1 What is AI?](#11-what-is-ai)
-4. [1.2 A Brief History of AI](#12-a-brief-history-of-ai)
-5. [1.3 AI vs Traditional Programming](#13-ai-vs-traditional-programming)
-6. [1.4 Basic AI Terminology](#14-basic-ai-terminology)
-7. [1.5 Worked Example: A Spam Filter That Learns](#15-worked-example-a-spam-filter-that-learns)
-8. [1.6 Practice Questions and Answers](#16-practice-questions-and-answers)
-9. [1.7 Summary, Reuse Plan, and References](#17-summary-reuse-plan-and-references)
+3. [Topic 1: Computer Science](#topic-1-computer-science)
+4. [Topic 2: Artificial Intelligence](#topic-2-artificial-intelligence)
+5. [Topic 3: Machine Learning: A First Look](#topic-3-machine-learning-a-first-look)
+6. [Topic 4: Hands-On Activity: Machine Learning](#topic-4-hands-on-activity-machine-learning)
+7. [Topic 5: Ask, Then Verify (Using an AI Assistant for Study)](#topic-5-ask-then-verify-using-an-ai-assistant-for-study)
+8. [Key Takeaways](#key-takeaways)
+9. [Practice Questions](#practice-questions)
+10. [Answer Key](#answer-key)
+11. [Glossary](#glossary)
+12. [References](#references)
 
 ---
 
 ## Learning Outcomes
 
-After this chapter, you should be able to:
+After completing this chapter, you should be able to:
 
-1. Explain in your own words what Artificial Intelligence (AI) is.
-2. Describe five key moments in the history of AI.
-3. Explain the difference between traditional programming and AI that learns from data.
-4. Use nine basic AI terms correctly: data, algorithm, label, machine learning, model, training, inference, neural network, deep learning.
-5. Walk through a simple example of a program that learns from examples, and explain why it works and where it fails.
+1. Give two or more definitions of **Computer Science (CS)** and **Artificial Intelligence (AI)**, and explain how they differ in wording.
+2. Describe the main milestones in the history of CS and of AI, using the form *year, event, people, technology*.
+3. Name the main areas of CS and the main areas of AI, and explain where AI sits inside CS.
+4. Describe the three families of machine learning (supervised, unsupervised, reinforcement) with one example each.
+5. Explain, in your own words, how a machine learns from labelled examples, using a small hands-on activity.
+6. Name the three classic approaches to AI that the next three chapters cover: Symbolic AI, Connectionist AI, and Behaviorist AI.
+
+---
 
 ## Chapter Map
 
-| Section | Topic |
-|:-------:|-------|
-| 1.1 | What is AI? |
-| 1.2 | A Brief History of AI |
-| 1.3 | AI vs Traditional Programming |
-| 1.4 | Basic AI Terminology |
-| 1.5 | Worked Example: A Spam Filter That Learns |
-| 1.6 | Practice Questions and Answers |
-| 1.7 | Summary, Reuse Plan, and References |
+```mermaid
+flowchart LR
+    A["Chapter 1<br/>Introduction to CS and AI"] --> B["Chapter 2<br/>Symbolic AI<br/>(rules and logic)"]
+    A --> C["Chapter 3<br/>Connectionist AI and Big Data<br/>(neural networks and data)"]
+    A --> D["Chapter 4<br/>Behaviorist AI<br/>(reward and trial and error)"]
+```
+
+*Figure 1.1: Chapter 1 gives the shared vocabulary and history. Chapters 2 to 4 each explain one approach to building AI.*
 
 ---
 
-## 1.1 What is AI?
+## Topic 1: Computer Science
 
-### A simple definition
+### 1.1 What Is Computer Science?
 
-**Artificial Intelligence (AI)** is the part of computer science that tries to make computers do tasks that normally need human intelligence. Examples are recognizing faces, understanding speech, translating languages, and making decisions.
+**Computer Science (CS)** is the study of computers and computation: what can be computed, how to compute it efficiently, how to build software and hardware that does it, and how people use the results.
 
-Three things to keep in mind:
+There is no single official sentence that everyone uses. Different books and organisations stress different parts. The table shows the typical emphasis. These are summaries in simple words, not direct quotations.
 
-- **AI is a field of study**, just like biology or physics. People also say "an AI" for a specific system built using that field, such as a chatbot.
-- **There is no single official definition.** Different textbooks describe AI in slightly different ways. For example, Russell and Norvig (2021) organize the field around building systems that *act rationally*, meaning they choose actions that are likely to reach a goal. In this module, we use the simple definition above.
-- **AI is usually built for one specific job.** A system that is very good at chess cannot cook rice or drive a car. We will come back to this in Chapter 2.
+| Viewpoint | What it stresses |
+|---|---|
+| Computation | CS studies algorithms, which are step-by-step procedures, and what problems they can solve. |
+| Information | CS studies how information is represented, stored, processed, and communicated. |
+| Engineering | CS studies how to design, build, and test reliable hardware and software systems. |
+| Automation | CS studies which tasks can be done automatically by machines. |
+| Human use | CS studies how people interact with computers and how computers affect society. |
 
-### AI around you
+**Try it yourself.** The lecturer's slides suggest asking an AI assistant to "list as many definitions of Computer Science as possible". Do this in Topic 5, then compare the answers with the table above.
 
-You probably used AI several times today without noticing.
+### 1.2 A Short History of CS
 
-| Situation | What the AI is doing |
-|-----------|----------------------|
-| Unlocking your phone with your face | Checking if the face matches the owner |
-| Watching a video app | Predicting which videos you may like next |
-| Typing a message | Suggesting the next word |
-| Pointing your camera at a foreign sign | Reading the text and translating it |
-| Checking your email | Moving suspicious emails to the spam folder |
-| Using a chatbot | Writing a reply to your question |
+The slides ask for the history as a table with the columns **Year, Key Events, Key People, Key Technologies**. Here is a starter version.
 
-### Three common myths
+| Year | Key events | Key people | Key technologies |
+|---|---|---|---|
+| 1830s–1840s | Design of the Analytical Engine; the first published algorithm for it | Charles Babbage, Ada Lovelace | Mechanical computing design, punched cards |
+| 1936 | A mathematical model of computation, the "Turing machine" | Alan Turing | Theory of computation |
+| 1945 | Stored-program computer design described | John von Neumann and colleagues | Stored-program architecture |
+| 1946 | ENIAC, an early large electronic computer, is completed | J. Presper Eckert, John Mauchly | Vacuum tubes |
+| 1947 | The transistor is invented | John Bardeen, Walter Brattain, William Shockley | Transistors |
+| 1957 | FORTRAN, an early high-level programming language | John Backus and team | Compilers |
+| 1958–1959 | The integrated circuit | Jack Kilby, Robert Noyce | Integrated circuits |
+| 1969 | ARPANET connects its first computers; Unix is started | ARPA researchers; Ken Thompson, Dennis Ritchie | Packet networks, operating systems |
+| 1971 | First commercial microprocessor (Intel 4004) | Intel engineers | Microprocessors |
+| 1981 | IBM Personal Computer released | IBM team | Personal computers |
+| 1989–1991 | The World Wide Web | Tim Berners-Lee | HTTP, HTML, browsers |
+| 2007 | Smartphones become mainstream (iPhone) | Apple team | Touch screens, mobile apps |
+| 2010s | Cloud computing and large-scale data centres become common | Many companies | Cloud, GPUs |
 
-| Myth | What is actually true |
-|------|-----------------------|
-| "AI is a robot." | Most AI is just software with no body. A robot is a machine, and AI can act as its "brain," but they are not the same thing. |
-| "AI thinks like a human." | Today's AI finds patterns in data. Scientists still debate what "understanding" means for a machine, but AI does not work like a human brain. |
-| "AI is always right." | AI makes mistakes, sometimes confident ones. We cover this in Chapter 5. |
+> **Note for reviewers:** The rows are well-known facts from standard computing histories. Stage 2 should add a citation for each row.
 
----
+### 1.3 Main Topics of CS
 
-## 1.2 A Brief History of AI
+The lecturer's slides show a mind map of CS based on the **ACM classification**, the classification of computing topics by the Association for Computing Machinery. Here is a simplified version.
 
-The history of AI has exciting breakthroughs and also long periods of disappointment. Here are some important moments. The sources for each event are listed in Section 1.7.
+```mermaid
+mindmap
+  root((Computer Science))
+    Algorithms and data structures
+      Sorting and searching
+      Graph algorithms
+      Complexity theory
+    Artificial intelligence
+      Machine learning
+      Natural language processing
+      Computer vision
+      Robotics
+      Knowledge representation
+    Computer architecture
+      Processor design
+      Memory systems
+    Operating systems
+      Process management
+      Memory and file systems
+    Networks
+      Network protocols
+      Internet of Things
+    Databases
+      Relational databases
+      NoSQL databases
+      Data mining
+    Software engineering
+      Requirements
+      Testing
+      Agile methods
+    Theory of computation
+      Automata
+      Computability
+    Human-computer interaction
+      Interface design
+      Accessibility
+    Information security
+      Cryptography
+      Cybersecurity
+```
 
-![Timeline of key moments in AI history from 1950 to 2022](assets/fig-1-2-timeline.png)
-*Figure 1.1: Timeline of key moments in AI history. Source: created by our team, based on the references in Section 1.7.*
+*Figure 1.2: A simplified map of Computer Science, following the ACM-style grouping shown in the lecturer's slides. AI is one branch among many.*
 
-| Year | Event | Why it matters |
-|:----:|-------|----------------|
-| 1950 | Alan Turing publishes the paper *Computing Machinery and Intelligence* (Turing, 1950). He suggests the "imitation game" (later called the **Turing Test**): if a person chatting with a machine cannot tell it apart from a human, can we say the machine is intelligent? | He turned the question "Can machines think?" into something that can be tested. |
-| 1955–1956 | John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon write a proposal in 1955 for a summer workshop at Dartmouth College (McCarthy et al., 1955/2006). The proposal uses the term "artificial intelligence." The workshop takes place in summer 1956. | Many people see this as the start of AI as a research field. |
-| 1959 | Arthur Samuel describes a checkers program that improves by playing and learning from experience (Samuel, 1959). | One of the first examples of a computer **learning** instead of only following fixed instructions. |
-| 1966 | Joseph Weizenbaum creates **ELIZA**, a program that chats using simple keyword rules (Weizenbaum, 1966). | An early chatbot. Many users felt that ELIZA understood them, even though it did not. |
-| 1997 | IBM's **Deep Blue** beats world chess champion Garry Kasparov in a six-game match (3½ to 2½) (Campbell et al., 2002). | A machine beat the best human at a game people linked with intelligence. |
-| 2012 | A neural network called **AlexNet** wins the ImageNet image recognition competition by a large margin (Krizhevsky et al., 2012). | Started the modern boom of **deep learning**. |
-| 2016 | **AlphaGo** (made by Google DeepMind) beats Lee Sedol, a top Go player, 4 games to 1 (Silver et al., 2016). | Go is much harder for computers than chess. AlphaGo learned from many human games and then improved by playing against itself. |
-| 2017 | Google researchers publish the **Transformer**, a new design for neural networks (Vaswani et al., 2017). | It is the base of today's large language models. |
-| 2022 | OpenAI releases **ChatGPT** to the public on 30 November (OpenAI, 2022). | Made generative AI available to millions of ordinary users. |
-
-### Two famous moments in pictures
-
-![Alan Turing at age 16](assets/turing-aged-16.jpg)
-*Figure 1.2: Alan Turing at age 16 (passport photo, around 1927–1928). Source: Wikimedia Commons, "File:Alan Turing Aged 16.jpg" (https://commons.wikimedia.org/wiki/File:Alan_Turing_Aged_16.jpg). License: public domain (Public Domain Mark 1.0), as stated on the Commons file page.*
-
-![A computer similar to Deep Blue at the Computer History Museum](assets/deep-blue-chm.jpg)
-*Figure 1.3: A computer similar to Deep Blue, displayed at the Computer History Museum. Photo by James (originally on Flickr). Source: Wikimedia Commons, "File:Deep Blue.jpg" (https://commons.wikimedia.org/wiki/File:Deep_Blue.jpg), also used in the Wikipedia article "Deep Blue (chess computer)". License: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/).*
-
-### Booms and "AI winters"
-
-In the early years, researchers expected fast progress. But computers were slow, and there was little data, so many promises were not kept. Funding and interest dropped, first in the 1970s and again from the late 1980s into the early 1990s. These quiet periods are called **AI winters**.
-
-Progress became fast again when three things came together: **much more data** (from the internet), **much faster computers**, and **better learning methods**.
-
----
-
-## 1.3 AI vs Traditional Programming
-
-### Traditional programming: a human writes the rules
-
-Think of a **recipe**. It gives exact steps, and if you follow them, you get the same dish every time.
-
-Traditional programming works the same way. The programmer writes exact instructions, called **rules**. The computer takes the **rules** and the **data**, and gives **answers**.
-
-*Example:* A program that changes Celsius to Fahrenheit uses the fixed rule `F = C × 9/5 + 32`. The rule is clear and always correct.
-
-### Machine learning: the computer finds the rules
-
-Now imagine you must write exact rules to decide "Is this mango ripe?" You would need to describe color, smell, softness, and more, and every mango is a little different. It is very hard to write rules for this.
-
-Instead, a person learns from experience: after seeing and touching many mangoes, you can tell if one is ripe, even if you cannot explain every rule. **Machine learning** does something similar. We give the computer many **examples with the correct answers**, and it finds the patterns by itself.
-
-> This is an example of **supervised learning**, where a model learns from labeled data. Other machine learning approaches may learn without labeled answers.
-
-![Diagram comparing traditional programming (rules and data go in, answers come out) with machine learning (data and correct answers go in, rules come out)](assets/fig-1-3-traditional-vs-ml.png)
-*Figure 1.4: Traditional programming vs machine learning. Source: created by our team.*
-
-### Side-by-side comparison
-
-| | Traditional Programming | Machine Learning |
-|---|------------------------|------------------|
-| Who creates the rules? | The programmer | The computer, from examples |
-| What goes in? | Data + rules | Data + correct answers |
-| What comes out? | Answers | Rules (a **model**) that can give answers for new data |
-| Works best when | Rules are clear and exact (calculating tax, sorting names) | Rules are hard to write (recognizing faces, understanding speech) |
-| Main weakness | Fails on cases the programmer did not think of | Needs a lot of good data, and learns mistakes if the data is bad |
-
-> **Important note:** Not all AI learns from data. Some early AI systems, such as *expert systems*, used rules written by human experts. We focus on learning-based AI because it powers most modern tools, but the two ideas are not the same thing.
-
-In Section 1.5, you will see both approaches solve the same task, so you can compare them directly.
+**Key idea:** AI is a **branch of CS**. It uses algorithms, data structures, databases, and computer hardware, and it also borrows from mathematics, statistics, psychology, and neuroscience.
 
 ---
 
-## 1.4 Basic AI Terminology
+## Topic 2: Artificial Intelligence
 
-These terms appear again in the rest of the module.
+### 2.1 What Is AI?
 
-| Term | Simple meaning | Example |
-|------|----------------|---------|
-| **Data** | Information a computer can process, like numbers, text, images, or sound. | A collection of 1,000 emails |
-| **Algorithm** | A step-by-step method for solving a problem. | The steps for sorting names from A to Z |
-| **Label** | The correct answer attached to an example. | "Spam" or "Not spam" |
-| **Machine Learning (ML)** | A way of building AI where the computer learns patterns from data instead of being given exact rules. | A system that learns to detect spam from examples |
-| **Model** | What the computer has learned: patterns used to make predictions on new data. | A spam filter after it has studied many emails |
-| **Training** | Showing data to a learning algorithm so it can build a model. | Studying 10,000 labelled emails |
-| **Inference** | Using a trained model on new data to get a result. | Checking a brand-new email |
-| **Neural network** | A model made of many simple connected units. It is loosely inspired by the brain, and it learns by adjusting how strong each connection is. | A network that recognizes handwritten digits |
-| **Deep learning** | Machine learning that uses neural networks with many layers. | Speech recognition and image recognition |
+**Artificial Intelligence (AI)** is the field of making machines do things that we normally say need intelligence, such as understanding language, recognising pictures, making plans, and learning from experience.
 
-### Training vs inference: an everyday comparison
+As with CS, there are many definitions. The slides ask you to "list as many definitions of AI as possible". Here are four common ways to define it.
 
-Think of studying for an exam and taking the exam.
+| Viewpoint | Summary of the idea | Typical source |
+|---|---|---|
+| Making intelligent machines | AI is the science and engineering of making intelligent machines, especially intelligent computer programs. | John McCarthy, who named the field in 1955–1956 (McCarthy, 2007) |
+| Acting rationally | An AI system is an *agent* that perceives its environment and chooses actions that best achieve its goals. | Russell and Norvig (textbook) |
+| Machine that infers | An AI system is a machine-based system that, from the input it receives, infers how to produce outputs such as predictions, content, recommendations, or decisions. | OECD (2023) |
+| Acting like a human | A machine is intelligent if a person cannot tell it apart from a human in conversation. | Alan Turing's "imitation game" (1950) |
 
-- **Training** is like studying many past questions. It takes a long time, and you do it before the exam.
-- **Inference** is like answering questions in the real exam. You use what you learned on questions you have not seen before.
+> **Note for reviewers:** The McCarthy and OECD rows are summaries of the sources listed in the References. Check the exact wording in the originals before quoting.
 
-![Diagram showing training (data and labels go into a learning algorithm to build a model) and inference (new data goes through the model to give a prediction)](assets/fig-1-4b-training-vs-inference.png)
-*Figure 1.5: Training vs inference. Source: created by our team.*
+**Three things to remember**
 
-### How the fields fit together
+1. There is no single agreed definition, so always check which one a source is using.
+2. "Intelligence" is a moving target. Tasks that once seemed to need intelligence (such as playing chess) can later feel like "just a program".
+3. Today's AI is **narrow**: each system is good at specific tasks. A chess program cannot translate a letter.
 
-![Nested circles showing deep learning inside machine learning inside artificial intelligence](assets/fig-1-4-ai-ml-dl.png)
-*Figure 1.6: How AI, machine learning, and deep learning fit together. Source: created by our team.*
+### 2.2 A Short History of AI
 
-Deep learning is a part of machine learning, and machine learning is a part of AI.
+| Year | Key events | Key people | Key technologies |
+|---|---|---|---|
+| 1943 | First mathematical model of an artificial neuron | Warren McCulloch, Walter Pitts | Neuron models |
+| 1950 | "Computing Machinery and Intelligence" proposes the imitation game (Turing test) | Alan Turing | Idea of machine intelligence |
+| 1956 | The Dartmouth summer workshop, where the term "artificial intelligence" was used | John McCarthy, Marvin Minsky, Nathaniel Rochester, Claude Shannon | Symbolic reasoning programs |
+| 1958 | The perceptron, a learning neuron model | Frank Rosenblatt | Early neural networks |
+| 1966 | ELIZA, a chatbot that follows keyword rules | Joseph Weizenbaum | Rule-based language processing |
+| 1970s | MYCIN, an expert system for infections; first "AI winter" of reduced funding in the mid-1970s | Edward Shortliffe and colleagues | Expert systems |
+| 1980s | Expert systems used by companies; backpropagation is popularised in 1986 | David Rumelhart, Geoffrey Hinton, Ronald Williams | Rule engines, multi-layer networks |
+| Late 1980s–1990s | Second "AI winter"; reinforcement learning grows; TD-Gammon learns backgammon (1992) | Gerald Tesauro; Richard Sutton and others | Reinforcement learning |
+| 1997 | Deep Blue beats world chess champion Garry Kasparov | IBM team | Game-tree search, special hardware |
+| 2012 | AlexNet wins the ImageNet image contest by a wide margin | Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton | Deep neural networks, GPUs, big data |
+| 2016 | AlphaGo beats Go champion Lee Sedol 4–1 | DeepMind team | Deep learning plus reinforcement learning |
+| 2017 | The Transformer architecture | Ashish Vaswani and colleagues | Attention-based neural networks |
+| 2022 | ChatGPT is released to the public | OpenAI | Large language models |
 
----
+**Reading the table through the three approaches.** The history of AI is partly a story of three ideas competing and combining. This module follows them one by one.
 
-## 1.5 Worked Example: A Spam Filter That Learns
+| Approach | Core idea | Typical milestones above | Chapter |
+|---|---|---|---|
+| **Symbolic AI** | Intelligence comes from explicit rules, logic, and search. | Dartmouth programs, ELIZA, MYCIN, Deep Blue (search) | 2 |
+| **Connectionist AI** | Intelligence comes from many simple connected units that learn from data. | McCulloch–Pitts, perceptron, backpropagation, AlexNet, Transformer | 3 |
+| **Behaviorist AI** | Intelligence comes from acting, receiving rewards, and adjusting behaviour. | TD-Gammon, AlphaGo (with deep learning) | 4 |
 
-Let's build a very small spam filter by hand. Real filters are much more advanced, but this shows the full cycle: **data → training → model → inference**. At the end, we also compare it with a filter made of hand-written rules.
+### 2.3 The Main Areas of AI
 
-### Step 1: Collect labelled data
+The slides show an AI map with these areas:
 
-We have six short emails with labels.
+```mermaid
+mindmap
+  root((Artificial Intelligence))
+    Machine learning
+      Deep learning
+      Predictive analytics
+    Natural language processing
+      Translation
+      Classification and clustering
+      Information extraction
+    Speech
+      Speech to text
+      Text to speech
+    Expert systems
+    Planning, scheduling and optimization
+    Robotics
+    Vision
+      Image recognition
+      Machine vision
+```
 
-| # | Email text | Label |
-|:-:|-----------|:-----:|
-| 1 | win free prize now | Spam |
-| 2 | free money offer | Spam |
-| 3 | meeting at noon | Not spam |
-| 4 | project report due | Not spam |
-| 5 | claim your free prize | Spam |
-| 6 | lunch at noon tomorrow | Not spam |
+*Figure 1.3: A simplified map of AI areas, following the lecturer's slides.*
 
-### Step 2: Train by counting
+Each area is a **task** (what we want the machine to do). The three approaches in this module are **methods** (how we build it). One task can be tackled by more than one method. Language translation, for example, was once done with hand-written grammar rules (Symbolic) and is now mostly done with neural networks (Connectionist).
 
-For each word, count how many spam emails contain it, and how many not-spam emails contain it. Then calculate the word's **score**:
-
-> **score = (number of spam emails with the word) − (number of not-spam emails with the word)**
-
-| Word | In spam | In not spam | Score |
-|------|:-------:|:-----------:|:-----:|
-| free | 3 | 0 | **+3** |
-| prize | 2 | 0 | **+2** |
-| win, now, money, offer, claim, your | 1 each | 0 | **+1** each |
-| meeting, project, report, due, lunch, tomorrow | 0 | 1 each | **−1** each |
-| at | 0 | 2 | **−2** |
-| noon | 0 | 2 | **−2** |
-
-This score table is our **model**. We never wrote a rule like "the word *free* means spam." The scores came from the examples.
-
-> **Note:** These scores are simple counts taken from the six training emails. They are **not probabilities** and they do not measure how confident the filter is. They are only used together with this model's decision rule (Step 3).
-
-### Step 3: Make a decision rule
-
-> Add up the scores of all the words in an email. If the total is **greater than 0**, predict **Spam**. Otherwise, predict **Not spam**. A word that is not in the table scores 0.
-
-### Step 4: Inference on a new email
-
-New email: **"free offer tomorrow"**
-
-| Word | Score |
-|------|:-----:|
-| free | +3 |
-| offer | +1 |
-| tomorrow | −1 |
-| **Total** | **+3** |
-
-The total is above 0, so the prediction is **Spam**.
-
-### Step 5: See where it struggles
-
-New email: **"free lunch at noon"** (a friend inviting you to eat)
-
-| Word | Score |
-|------|:-----:|
-| free | +3 |
-| lunch | −1 |
-| at | −2 |
-| noon | −2 |
-| **Total** | **−2** |
-
-The prediction is **Not spam**, which is correct here. But look at how it happened: the harmless words "at" and "noon" pulled the score down. Now try **"free prize at noon"**: +3 +2 −2 −2 = **+1**, so the filter says **Spam**. Is it really spam? The filter cannot know, because it only counts words.
-
-### Step 6: Compare with a rule-based filter
-
-Now let's solve the same task the traditional way. A programmer looks at the emails and writes a rule by hand:
-
-> **Rule:** If the email contains the word "free" or "prize", predict **Spam**. Otherwise, predict **Not spam**.
-
-On our six training emails, this rule is correct every time: emails 1, 2, and 5 contain "free", and emails 3, 4, and 6 contain neither word. Now test both filters on two new emails:
-
-| New email | What it really is | Rule-based filter | Learning-based filter (score table) |
-|-----------|-------------------|-------------------|-------------------------------------|
-| win money now | Spam | Not spam ✗ (no "free" or "prize") | Spam ✓ (total +3) |
-| free lunch at noon | Not spam (a friend's invitation) | Spam ✗ (contains "free") | Not spam ✓ (total −2) |
-
-What we can learn from this comparison:
-
-- The rule-based filter only knows what the programmer thought of. To fix its mistakes, the programmer must edit the rule by hand.
-- The learning-based filter found useful words such as "money" and "noon" from the examples. To improve it, we add more labelled examples and count again.
-- Neither filter is perfect. The learning-based filter predicts "Spam" for "free prize at noon" (Step 5) because its total score is +1, but the prediction may still be unreliable because the model uses only simple word counts from six training emails. The rule-based filter would also call that email spam.
-
-### What this example teaches
-
-- **A model depends on its training data.** The words "at" and "noon" look "safe" only because our six emails happened to include them in not-spam messages.
-- **More and varied data makes a better model.** Six emails is far too few. Real filters learn from millions.
-- **Models make mistakes.** Even good filters sometimes block real emails or let spam through.
-- **Training and inference are separate.** We counted once (training), then used the same table for any number of new emails (inference).
-- **Hand-written rules and learned rules have different weaknesses.** Rules only cover what the programmer imagined, while learned models only cover what the data showed.
-
-> **Note:** This word-scoring method is a simplified teaching version. Real spam filters use more advanced statistical or neural network methods, and they look at much more than single words.
+| Area | What the machine does | Example | A method often used |
+|---|---|---|---|
+| Machine learning | Learns patterns from data | Predicting house prices | Connectionist and statistical methods |
+| Natural language processing | Works with human language | Translation, chatbots | Symbolic rules, neural networks |
+| Speech | Converts between speech and text | Voice assistants | Neural networks |
+| Expert systems | Gives expert-like advice from rules | Diagnosis helper | Symbolic |
+| Planning and optimization | Chooses a good sequence of actions | Delivery routes | Symbolic search, reinforcement learning |
+| Robotics | Senses and acts in the physical world | Robot vacuum | Behaviorist and others |
+| Vision | Understands images and video | Face unlock | Neural networks |
 
 ---
 
-## 1.6 Practice Questions and Answers
+## Topic 3: Machine Learning: A First Look
 
-### Part A: Check your understanding
+**Machine learning (ML)** means that a program improves at a task by learning from data instead of following only hand-written rules. The lecturer's slides show the classic split into three families.
 
-**Q1.** Which statement describes AI best?
+```mermaid
+flowchart TB
+    ML["Machine learning"] --> S["Supervised learning<br/>data has labels"]
+    ML --> U["Unsupervised learning<br/>data has no labels"]
+    ML --> R["Reinforcement learning<br/>learn from rewards"]
+    S --> S1["Classification<br/>predict a category"]
+    S --> S2["Regression<br/>predict a number"]
+    U --> U1["Clustering<br/>group similar items"]
+    U --> U2["Association<br/>find items that go together"]
+    U --> U3["Dimensionality reduction<br/>simplify the data"]
+```
 
-- A. A robot that looks like a human
-- B. Computer systems that do tasks that normally need human intelligence
-- C. Any program that connects to the internet
-- D. A computer that thinks exactly like a human brain
+*Figure 1.4: Families of machine learning.*
 
-**Q2.** In traditional programming, who writes the rules? In machine learning, where do the rules come from?
+| Family | What the data looks like | Example | Where it comes back |
+|---|---|---|---|
+| Supervised, classification | Examples with a category label | Email labelled *spam* or *not spam* | Chapter 3 |
+| Supervised, regression | Examples with a number label | Past house sizes and prices | Chapter 3 |
+| Unsupervised, clustering | Examples with no labels | Grouping customers by buying habits | Chapter 3 |
+| Unsupervised, association | Shopping baskets | "People who buy bread often buy butter" | Chapter 3 |
+| Reinforcement | An agent that acts and gets rewards | A program learning to play a game | Chapter 4 |
 
-**Q3.** Put these steps in the correct order:
+**How ML relates to the approaches.** Supervised and unsupervised learning are mostly studied inside Connectionist AI and statistics (Chapter 3). Reinforcement learning is the engine of Behaviorist AI (Chapter 4). Symbolic AI (Chapter 2) is the opposite starting point: the knowledge is written by people, not learned.
 
-- A. Use the model to check a new email
-- B. Train the model
-- C. Collect emails with labels
+### Worked Example: Rules Versus Learning
 
-Which step is **inference**?
+Task: decide whether a short email is spam.
 
-**Q4.** What is the difference between **data** and a **model**?
+**Symbolic way (rules written by a person)**
 
-**Q5.** True or False: "All AI systems learn from data." Explain your answer.
+```
+IF the email contains "free money" THEN spam
+IF the email contains "meeting at 3pm" THEN not spam
+```
 
-**Q6.** Give one reason why it is hard to recognize a cat in a photo using hand-written rules.
+This is easy to read, but it fails on any email the author did not think of.
 
-### Part B: Apply the idea
+**Machine learning way (supervised classification)**
 
-Use the model from Section 1.5 (the score table and the rule "total > 0 means spam").
+1. Collect 1,000 emails that people have already labelled *spam* or *not spam*.
+2. Let the program find which words and patterns often appear in spam.
+3. Test the program on emails it has not seen.
 
-**Q7.** Classify the email **"win money now"**. Show the total.
-
-**Q8.** Classify the email **"project meeting tomorrow"**. Show the total.
-
-**Q9.** Classify the email **"claim free money at noon"**. Show the total, then explain in one sentence why this result is uncertain.
-
-**Q10.** Classify the email **"hello friend"**. What does the result tell you about the model's limits?
-
-**Q11 (Think).** Our filter was trained on only six emails. Name **two** ways to improve it.
-
-### Answers and Explanations
-
-**A1. B.** AI is about systems that do tasks needing human-like intelligence. A is wrong because most AI has no body. C is wrong because AI and the internet are different things. D is wrong because AI does not work like a human brain.
-
-**A2.** In traditional programming, the **programmer** writes the rules. In machine learning, the **computer finds the rules** by studying examples with correct answers.
-
-**A3.** The order is **C → B → A**. Step **A** is **inference**, because it uses the trained model on a new email. Step B is training.
-
-**A4.** **Data** is the information the computer receives (for example, emails). A **model** is what the computer learns from that data: patterns used to make predictions.
-
-**A5. False.** Many modern AI systems learn from data, but not all. Some early systems, such as expert systems, used rules written by people.
-
-**A6.** Any one of these: cats come in many colors, sizes, and poses; photos have different lighting and angles; a cat may be partly hidden. It is almost impossible to write exact rules for every case.
-
-**A7.** win (+1) + money (+1) + now (+1) = **+3**, so **Spam**.
-
-**A8.** project (−1) + meeting (−1) + tomorrow (−1) = **−3**, so **Not spam**.
-
-**A9.** claim (+1) + free (+3) + money (+1) + at (−2) + noon (−2) = **+1**, so **Spam**. The total is barely above 0, and harmless words ("at", "noon") pulled the score down, so a small change in the training data could flip the result. The score is not a probability or a direct measure of confidence. Since the model uses only a small training dataset and simple word counts, its predictions may not always be reliable.
-
-**A10.** Both words are not in the table, so each scores 0. The total is **0**, which is not greater than 0, so the prediction is **Not spam**. The model has no knowledge about words it never saw during training, so it may be wrong on new kinds of emails.
-
-**A11.** Any two of these: add many more training emails; include more varied examples (different senders and topics); ignore very common words such as "at"; check the mistakes it makes and add them as new training examples; use a smarter scoring method.
+The learned filter can handle new emails, but it is harder to explain *why* it called one email spam. This trade-off between **explainable rules** and **flexible learning** returns in every chapter.
 
 ---
 
-## 1.7 Summary, Reuse Plan, and References
+## Topic 4: Hands-On Activity: Machine Learning
 
-### Key takeaways
+The lecturer's slides include two hands-on tasks built with a block-based programming tool: **Rock Paper Scissors** and **Smart Classroom**. If your lecture uses that tool, follow your lecturer's instructions for the tool itself. The paper version below teaches the same idea without any software.
 
-- AI is the field of making computers do tasks that normally need human intelligence.
-- AI has a history of breakthroughs and "winters." The recent boom came from more data, faster computers, and better methods.
-- Traditional programming uses rules written by humans. Machine learning lets the computer find rules from examples.
-- **Training** builds a model from data. **Inference** uses the model on new data.
-- A model depends on its data, and it can make mistakes.
+### Activity A: Rock Paper Scissors (image classification)
 
-### How this chapter will be reused
+**Idea.** The computer looks at a camera picture of your hand and decides *rock*, *paper*, or *scissors*. It does this because you first **trained** it with labelled pictures.
 
-| Resource | Planned use |
-|----------|-------------|
-| **Study Guide** | Sections 1.1–1.4 become the reading text. The terminology table becomes a glossary. Questions Q1–Q11 go into the Test Bank with the explained answers. |
-| **PPT Slides** | The timeline (1.2), the two flow diagrams (1.3), and the nested diagram (1.4) become full-slide visuals. The spam filter (1.5) becomes a step-by-step slide sequence that builds the score table, followed by the rule-based comparison. |
-| **Video Tutorial** | A short video that follows Section 1.5: show the six emails, build the score table on screen, test new emails while narrating each step, then compare with the rule-based filter. |
+**Steps in the tool (as in the slides)**
 
-### Development status of this chapter
+1. Create three classes (labels): *rock*, *paper*, *scissors*.
+2. Take several photos of your hand for each class. These are the **training examples**.
+3. Train the model.
+4. Run the program. The program recognises the new picture, picks the label, and chooses the move that beats it.
+5. Test with different lighting and hand positions.
 
-| Section | Status | Notes |
-|---------|:------:|-------|
-| 1.1 What is AI? | Drafted | Needs peer review |
-| 1.2 Brief History | Revised | In-text citations added; image licenses filled in; reviewer should re-check dates against the references |
-| 1.3 AI vs Traditional Programming | Revised | Supervised learning note added; diagrams to be redrawn as images by the Visual Design Lead |
-| 1.4 Terminology | Drafted | Needs peer review |
-| 1.5 Worked Example | Revised | Score note and rule-based comparison (Step 6) added; wording about "uncertain" corrected in Step 6; all scores recalculated by hand; needs independent check |
-| 1.6 Practice Questions | Revised | A9 clarified; should be tested by a member who has not seen the answers |
-| 1.7 References | Drafted | All entries need to be verified by the Quality Lead |
+**Paper version.** Imagine each photo is reduced to two numbers: *how many fingers are open* (0–5) and *how spread out they are* (low, medium, high).
 
-### References
+| Training example | Fingers open | Spread | Label |
+|---|--:|---|---|
+| 1 | 0 | low | rock |
+| 2 | 0 | low | rock |
+| 3 | 5 | high | paper |
+| 4 | 4 | high | paper |
+| 5 | 2 | medium | scissors |
+| 6 | 2 | medium | scissors |
 
-1. Turing, A. M. (1950). Computing machinery and intelligence. *Mind*, 59(236), 433–460. https://doi.org/10.1093/mind/LIX.236.433
-2. McCarthy, J., Minsky, M. L., Rochester, N., & Shannon, C. E. (2006). A proposal for the Dartmouth summer research project on artificial intelligence, August 31, 1955. *AI Magazine*, 27(4), 12–14. https://doi.org/10.1609/aimag.v27i4.1904
-3. Samuel, A. L. (1959). Some studies in machine learning using the game of checkers. *IBM Journal of Research and Development*, 3(3), 210–229. https://doi.org/10.1147/rd.33.0210
-4. Weizenbaum, J. (1966). ELIZA: A computer program for the study of natural language communication between man and machine. *Communications of the ACM*, 9(1), 36–45. https://doi.org/10.1145/365153.365168
-5. Campbell, M., Hoane, A. J., & Hsu, F.-h. (2002). Deep Blue. *Artificial Intelligence*, 134(1–2), 57–83. https://doi.org/10.1016/S0004-3702(01)00129-1
-6. Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). ImageNet classification with deep convolutional neural networks. *Advances in Neural Information Processing Systems*, 25. https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks
-7. Silver, D., et al. (2016). Mastering the game of Go with deep neural networks and tree search. *Nature*, 529, 484–489. https://doi.org/10.1038/nature16961
-8. Vaswani, A., et al. (2017). Attention is all you need. *Advances in Neural Information Processing Systems*, 30. https://arxiv.org/abs/1706.03762
-9. OpenAI. (2022, November 30). *Introducing ChatGPT*. https://openai.com/index/chatgpt/
-10. Russell, S., & Norvig, P. (2021). *Artificial Intelligence: A Modern Approach* (4th ed.). Pearson.
+New picture: **2 fingers open, medium spread.** Which label is the closest match? Compare it with each row, as a computer would.
 
-> The spam filter in Section 1.5 is the team's own simplified teaching example, inspired by word-counting spam filters. It does not copy a specific source.
+*Expected answer:* scissors, because examples 5 and 6 match both numbers.
+
+**Questions to discuss**
+
+1. What happens if the new picture shows 3 fingers open? (The model has no training example for it. It must guess from the closest ones, and may be wrong.)
+2. What happens if every training photo of "rock" was taken in a dark room? (The model may learn "dark means rock". This is a **biased training set**.)
+3. How many photos per class are enough? (There is no fixed number. More varied examples usually help.)
+
+### Activity B: Smart Classroom (text and command recognition)
+
+**Idea.** You type or say a command such as "Fan on" or "Lamp off", and a program switches a virtual fan or lamp.
+
+* In the **rule-based version**, a person writes an IF-THEN block for each exact command. You will build this in Chapter 2.
+* In the **machine-learning version**, the program is trained with example sentences for each label (*fan on*, *fan off*, *lamp on*, *lamp off*) and recognises new wording. You will meet the idea again in Chapter 3.
+
+**Task now.** Predict: will a rule that checks for the exact text "Fan on" also catch "Please turn the fan on"? Write your prediction down. You will test it in Chapter 2.
+
+---
+
+## Topic 5: Ask, Then Verify (Using an AI Assistant for Study)
+
+The lecturer's slides list questions to ask an AI assistant. Use them as a study activity, with one rule: **never copy an answer without checking it.** AI assistants can make confident mistakes.
+
+| Slide question | What to do with the answer |
+|---|---|
+| "Give me a list of buzzwords of the past 50 years regarding computer technology." | Check three of them in a textbook or encyclopedia. |
+| "List as many definitions of Computer Science as possible." | Group the definitions into the viewpoints in Section 1.1. |
+| "Use a table to list the history of CS, with columns of Year, Key Events, Key People, and Key Technologies." | Compare with Section 1.2. Mark every row that differs, and find out which is right. |
+| "Generate a CS knowledge map for freshmen." | Compare with Figure 1.2. What is missing? |
+| "List as many definitions of Artificial Intelligence as possible." | Compare with Section 2.1. |
+| "Use a table to list the history of AI, with the same four columns." | Compare with Section 2.2. Check at least three dates. |
+| "Generate an AI knowledge map for freshmen." | Compare with Figure 1.3. |
+
+**Record your work.** For each question write down: the tool you used, the date, what you asked, and what you corrected. The team's AI-use log needs this information.
+
+---
+
+## Key Takeaways
+
+* **CS** is the study of computation, information, and the systems that process them. **AI is one branch of CS.**
+* There is **no single definition** of CS or AI. Read which viewpoint a source uses.
+* AI history moves through three big ideas: **rules and logic** (Symbolic), **connected learning units** (Connectionist), and **learning from reward** (Behaviorist).
+* AI areas (vision, language, speech, planning, robotics) are **tasks**. The three approaches are **methods**.
+* Machine learning has three families: **supervised**, **unsupervised**, and **reinforcement**.
+* A model learns from **examples**. Poor or biased examples lead to poor or biased results.
+* Always **verify** what an AI assistant tells you.
+
+---
+
+## Practice Questions
+
+### Part A: Multiple Choice
+
+**Q1.** Which statement about AI and CS is correct?
+A. AI and CS are unrelated fields.
+B. AI is a branch of CS.
+C. CS is a branch of AI.
+D. AI only studies robots.
+
+**Q2.** In which decade did the Dartmouth workshop use the term "artificial intelligence"?
+A. 1930s
+B. 1940s
+C. 1950s
+D. 1990s
+
+**Q3.** Which task is an example of *supervised classification*?
+A. Grouping customers with no labels
+B. Labelling emails as spam or not spam using labelled examples
+C. A robot learning to walk from rewards
+D. Compressing a file
+
+**Q4.** Which family of machine learning learns from rewards?
+A. Supervised
+B. Unsupervised
+C. Reinforcement
+D. Association
+
+**Q5.** Which pair matches an approach with its core idea?
+A. Symbolic AI: learning from rewards
+B. Connectionist AI: explicit rules and logic
+C. Behaviorist AI: acting and receiving rewards
+D. Symbolic AI: neurons and weights
+
+**Q6.** Why can a Rock Paper Scissors model fail if all "rock" photos were taken in a dark room?
+A. The model may learn lighting instead of hand shape.
+B. The camera breaks.
+C. Rock is a hard word.
+D. It cannot fail.
+
+**Q7.** Which is a *task* (not a method)?
+A. Symbolic AI
+B. Image recognition
+C. Connectionist AI
+D. Behaviorist AI
+
+**Q8.** What should you do with an answer from an AI assistant?
+A. Copy it as it is.
+B. Verify key facts with a reliable source.
+C. Ignore it completely.
+D. Assume it is always correct.
+
+### Part B: Short Answer
+
+**Q9.** Give two different definitions of AI and say how they differ.
+
+**Q10.** Explain the difference between supervised and unsupervised learning in two sentences, with one example each.
+
+**Q11.** In the Smart Classroom activity, why might a rule-based program fail on "Please turn the fan on"?
+
+### Part C: Apply It
+
+**Q12.** A school wants a system that sorts student questions into the categories *homework*, *exam*, and *other*. Would you start with hand-written rules or with machine learning? List one advantage and one disadvantage of your choice.
+
+---
+
+## Answer Key
+
+| Q | Answer | Explanation |
+|---|---|---|
+| Q1 | B | AI is a branch of CS (Figure 1.2). |
+| Q2 | C | The Dartmouth workshop took place in 1956. |
+| Q3 | B | Classification with labelled examples is supervised learning. |
+| Q4 | C | Reinforcement learning learns from rewards. |
+| Q5 | C | Behaviorist AI is about acting and receiving rewards. Symbolic = rules; Connectionist = neurons and weights. |
+| Q6 | A | The model can pick up an accidental pattern (lighting). This is a biased training set. |
+| Q7 | B | Image recognition is something we want done. The others are ways to do it. |
+| Q8 | B | Verify with a reliable source (Topic 5). |
+| Q9 | Sample | For example: McCarthy's view (making intelligent machines) is about the goal; the OECD view (a machine that infers outputs from input) describes what the system does. Any two viewpoints from Section 2.1 with a fair comparison is correct. |
+| Q10 | Sample | Supervised learning uses labelled examples, such as emails marked spam or not spam. Unsupervised learning uses unlabelled data to find structure, such as grouping customers by buying habits. |
+| Q11 | Sample | The rule checks for the exact text, so different wording does not match. A learned model may handle the new wording because it has seen many example sentences. |
+| Q12 | Sample | Rules: easy to explain and no training data needed, but each new wording needs a new rule. Machine learning: handles varied wording, but needs many labelled questions and is harder to explain. Either choice is correct with a fair advantage and disadvantage. |
+
+---
+
+## Glossary
+
+| Term | Meaning |
+|---|---|
+| **Algorithm** | A step-by-step procedure for solving a problem. |
+| **Artificial Intelligence (AI)** | The field of making machines perform tasks that normally need intelligence. |
+| **Classification** | Predicting a category for an item. |
+| **Clustering** | Grouping similar items without labels. |
+| **Computer Science (CS)** | The study of computation, information, and computing systems. |
+| **Label** | The correct answer attached to a training example. |
+| **Machine learning (ML)** | A way for programs to improve at a task by learning from data. |
+| **Regression** | Predicting a number. |
+| **Reinforcement learning** | Learning to act by receiving rewards. |
+| **Supervised learning** | Learning from labelled examples. |
+| **Training example** | One piece of data used to teach a model. |
+| **Unsupervised learning** | Finding structure in data that has no labels. |
+
+---
+
+## References
+
+1. Course slides, "chap1: Intro to CS and AI", Introduction to Computer Science and Artificial Intelligence (lecturer's materials). Primary source for the outline, the CS and AI maps, and the hands-on activities.
+2. McCarthy, J. (2007). *What is Artificial Intelligence?* Stanford University. (Definition summarised in Section 2.1; check the wording in the original.)
+3. OECD (2023). Updated definition of an AI system. (Summarised in Section 2.1; check the wording in the original.)
+4. Russell, S., and Norvig, P. (2021). *Artificial Intelligence: A Modern Approach* (4th ed.). Pearson. (Agent view of AI. *Not opened during this revision.*)
+5. Turing, A. M. (1950). Computing Machinery and Intelligence. *Mind*, 59(236), 433–460. (*Not opened during this revision.*)
+6. Association for Computing Machinery. ACM Computing Classification System. (Basis of the CS map. *Not opened during this revision.*)
+
+> The two source lines above marked "Not opened" must be checked by the author or reviewer before submission.
