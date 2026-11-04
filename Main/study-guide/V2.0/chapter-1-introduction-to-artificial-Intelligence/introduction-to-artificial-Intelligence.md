@@ -3,7 +3,7 @@
 **Team:** Babi Guling | **Module:** AI Overview | **Version:** 2.0
 **Author:** Jonathan Sugianto
 **Audience:** Complete beginners. No programming or AI background needed.
-**Estimated time:** about 2.5 hours (including activities)
+**Estimated time:** about 2 hours and 35 minutes (including activities)
 **How to work through it:** Predict, read, try the activity, check yourself, then compare with the answers.
 
 ---
@@ -48,7 +48,7 @@ This module tells one story in five chapters. This chapter gives you the basic v
 After this chapter, you should be able to:
 
 1. Explain in your own words what Artificial Intelligence (AI) is.
-2. Describe five key moments in the history of AI.
+2. Describe important moments in the history of AI.
 3. Explain the difference between traditional programming and AI that learns from data.
 4. Use nine basic AI terms correctly: data, algorithm, label, machine learning, model, training, inference, neural network, deep learning.
 5. Walk through a simple example of a program that learns from examples, and explain why it works and where it fails.
