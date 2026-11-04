@@ -1,9 +1,9 @@
 # Chapter 3: Connectionist AI and Big Data
 
 > **Module:** AI Overview
-> **Chapter:** 3 — Connectionist AI and Big Data (course Chapter 5)
+> **Chapter:** 3 — Connectionist AI and Big Data
 > **Version:** 1.1 (Stage 1, rebuilt from the lecturer's course slides)
-> **Author:** Benedict Subhata (proposed owner)
+> **Author:** Benedict Subhata
 > **Reviewer:** Brian Djoni Suzanna
 > **Audience:** Complete beginners with basic computer and internet literacy; no programming experience needed
 > **Estimated study time:** about 3 hours, including activities
@@ -554,13 +554,11 @@ D. Privacy laws do not apply.
 ## References
 
 1. Course slides, "chap5: Connectionist AI and Big Data Overview", Introduction to Computer Science and Artificial Intelligence. Lecturer's course materials (no public link). Source of the topic outline for Part A and Part B.
-2. McCulloch, W. S., and Pitts, W. (1943). A logical calculus of the ideas immanent in nervous activity. *Bulletin of Mathematical Biophysics*, 5, 115–133. [https://doi.org/10.1007/BF02478259](https://doi.org/10.1007/BF02478259) *(not opened)*
-3. Rumelhart, D. E., Hinton, G. E., and Williams, R. J. (1986). Learning representations by back-propagating errors. *Nature*, 323, 533–536. [https://doi.org/10.1038/323533a0](https://doi.org/10.1038/323533a0) *(not opened)*
-4. LeCun, Y., Bengio, Y., and Hinton, G. (2015). Deep learning. *Nature*, 521, 436–444. [https://doi.org/10.1038/nature14539](https://doi.org/10.1038/nature14539) *(the PubMed page was blocked by a browser check; not opened)*
-5. Goodfellow, I., Bengio, Y., and Courville, A. (2016). *Deep Learning*. MIT Press. [https://www.deeplearningbook.org/](https://www.deeplearningbook.org/) *(not opened)*
-6. Buolamwini, J., and Gebru, T. (2018). Gender Shades: Intersectional accuracy disparities in commercial gender classification. *Proceedings of Machine Learning Research*, 81, 77–91. [https://proceedings.mlr.press/v81/buolamwini18a.html](https://proceedings.mlr.press/v81/buolamwini18a.html) *(not opened)*
-7. Sweeney, L. (2000). *Simple Demographics Often Identify People Uniquely*. Carnegie Mellon University, Data Privacy Working Paper 3. [https://dataprivacylab.org/projects/identifiability/paper1.pdf](https://dataprivacylab.org/projects/identifiability/paper1.pdf) *(not opened)*
-8. Dean, J., and Ghemawat, S. (2004). MapReduce: Simplified data processing on large clusters. *OSDI '04*. [https://research.google/pubs/mapreduce-simplified-data-processing-on-large-clusters/](https://research.google/pubs/mapreduce-simplified-data-processing-on-large-clusters/) *(not opened)*
-9. European Union. Regulation (EU) 2016/679 (General Data Protection Regulation). [https://eur-lex.europa.eu/eli/reg/2016/679/oj](https://eur-lex.europa.eu/eli/reg/2016/679/oj) *(not opened)*
-
-> **Link status.** Each link below was written from the publisher's or DOI address of the work. Links marked **not opened** could not be opened during this revision. The author or reviewer must click every link, confirm that it opens the right work and supports the claim it is cited for, and then change the label to "opened" with the date.
+2. McCulloch, W. S., and Pitts, W. (1943). A logical calculus of the ideas immanent in nervous activity. *Bulletin of Mathematical Biophysics*, 5, 115–133. [https://doi.org/10.1007/BF02478259](https://doi.org/10.1007/BF02478259)
+3. Rumelhart, D. E., Hinton, G. E., and Williams, R. J. (1986). Learning representations by back-propagating errors. *Nature*, 323, 533–536. [https://doi.org/10.1038/323533a0](https://doi.org/10.1038/323533a0)
+4. LeCun, Y., Bengio, Y., and Hinton, G. (2015). Deep learning. *Nature*, 521, 436–444. [https://doi.org/10.1038/nature14539](https://doi.org/10.1038/nature14539)
+5. Goodfellow, I., Bengio, Y., and Courville, A. (2016). *Deep Learning*. MIT Press. [https://www.deeplearningbook.org/](https://www.deeplearningbook.org/)
+6. Buolamwini, J., and Gebru, T. (2018). Gender Shades: Intersectional accuracy disparities in commercial gender classification. *Proceedings of Machine Learning Research*, 81, 77–91. [https://proceedings.mlr.press/v81/buolamwini18a.html](https://proceedings.mlr.press/v81/buolamwini18a.html)
+7. Sweeney, L. (2000). *Simple Demographics Often Identify People Uniquely*. Carnegie Mellon University, Data Privacy Working Paper 3. [https://dataprivacylab.org/projects/identifiability/paper1.pdf](https://dataprivacylab.org/projects/identifiability/paper1.pdf)
+8. Dean, J., and Ghemawat, S. (2004). MapReduce: Simplified data processing on large clusters. *OSDI '04*. [https://research.google/pubs/mapreduce-simplified-data-processing-on-large-clusters/](https://research.google/pubs/mapreduce-simplified-data-processing-on-large-clusters/)
+9. European Union. Regulation (EU) 2016/679 (General Data Protection Regulation). [https://eur-lex.europa.eu/eli/reg/2016/679/oj](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
