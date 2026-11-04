@@ -51,12 +51,14 @@ Some entries in the original register contained duplicate IDs or conflicting doc
 
 ## 3. Stage 2 — Quality Review Records (V2.0)
 
-| No. | Review ID  | Document / Chapter                                  | Review Iteration | Latest Known Status           |
-| --: | ---------- | --------------------------------------------------- | ---------------- | ----------------------------- |
-|   1 | QR-201-I01 | Chapter 1 — Introduction to Artificial Intelligence | Initial Review   | Approved with Minor Revisions |
+| No. | Review ID  | Document / Chapter                                                       | Review Iteration | Latest Known Status           |
+| --: | ---------- | ------------------------------------------------------------------------ | ---------------- | ----------------------------- |
+|   1 | QR-201-I01 | Chapter 1 — Introduction to Artificial Intelligence                      | Initial Review   | Approved with Minor Revisions |
 |   2 | QR-202-I01 | Chapter 2 - Introduction to Computer Science and Artificial Intelligence | Initial Review   | Approved with Minor Revisions |
-|   3 | QR-203-I01 | Chapter 3 -  How Artificial Intelligence Works | Initial Review   | Approved with Minor Revisions |
-
+|   3 | QR-203-I01 | Chapter 3 - How Artificial Intelligence Works                            | Initial Review   | Approved with Minor Revisions |
+|   4 | QR-204-I01 | Chapter 4 - Applications of AI                                           | Initial Review   | Approved with Minor Revisions |
+|   5 | QR-205-I01 | Chapter 5 - AI Ethics and Limitation                                     | Initial Review   | Approved with Minor Revisions |
+|   6 | QR-201_I02 | Chapter 1 — Introduction to Artificial Intelligence                      | Second Review    | Approved                      |
 **Stage 2 Review Notes:**
 
 * QR-201-I01 is the initial quality review of Chapter 1 V2.0.
