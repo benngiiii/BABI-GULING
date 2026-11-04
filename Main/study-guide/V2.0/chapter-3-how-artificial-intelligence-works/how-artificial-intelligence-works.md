@@ -1,7 +1,11 @@
 # Chapter 3: How Artificial Intelligence Works
 
-> **Module:** AI Overview | **Level:** Beginner → Intermediate | **Estimated study time:** Approximately 100 minutes  
-> **Status:** Draft (Stage 2)
+> **Project:** BABI GULING — AI Overview  
+> **Module:** AI Overview  
+> **Level:** Beginner → Intermediate  
+> **Estimated study time:** Approximately 150–180 minutes  
+> **Version:** V2.1 — Revised Stage 2 Draft  
+> **Status:** Pending quality recheck
 
 ## Contents
 
@@ -12,9 +16,9 @@
 - [3.5 Machine Learning: Learning from Examples](#35-machine-learning-learning-from-examples)
 - [3.6 Neural Networks and Deep Learning](#36-neural-networks-and-deep-learning)
 - [3.7 How Modern Language AI Works](#37-how-modern-language-ai-works)
-- [3.8 Training vs. Inference](#38-training-vs-inference)
+- [3.8 Training, Evaluation, and Inference](#38-training-evaluation-and-inference)
 - [3.9 Evaluating a Model](#39-evaluating-a-model)
-- [3.10 The AI Workflow](#310-the-ai-workflow)
+- [3.10 The AI Workflow: An Integrated Case Study](#310-the-ai-workflow-an-integrated-case-study)
 - [3.11 From Beginner to Expert](#311-from-beginner-to-expert)
 - [3.12 Common Misconceptions](#312-common-misconceptions)
 - [3.13 Key Takeaways](#313-key-takeaways)
@@ -30,56 +34,125 @@
 
 By the end of this chapter, you will be able to:
 
-1. Explain the role of **data** in an AI system and why data quality matters.
-2. Distinguish between an **algorithm** and a **model**.
-3. Describe how **machine learning** discovers patterns through examples.
-4. Explain how **neural networks**, **deep learning**, and **large language models** work at a basic level.
-5. Distinguish **training** from **inference**, including methods that improve an existing model without retraining it.
-6. Understand common **evaluation metrics** and explain why the best metric depends on the application.
-7. Describe the main stages of an AI system's development and maintenance.
-8. Use AI tools more effectively and evaluate their outputs critically.
+1. Explain how data, algorithms, and computing resources contribute to building an AI system.
+2. Identify different types of data and explain why data preparation and quality matter.
+3. Distinguish between an algorithm, a model, parameters, and hyperparameters.
+4. Describe how machine learning discovers patterns through training examples.
+5. Explain how loss, backpropagation, gradient descent, batches, and epochs work together during model training.
+6. Describe the basic structure and learning process of neural networks and deep learning.
+7. Explain how large language models process tokens, use embeddings and attention, and generate responses.
+8. Distinguish between training, evaluation, and inference.
+9. Interpret common model evaluation metrics and explain why the appropriate metric depends on the application.
+10. Trace an AI system from problem definition and data collection to deployment and monitoring.
+11. Explain how prompting, retrieval, and tools can improve the use of an existing model.
+12. Evaluate AI-generated outputs critically and identify situations that require additional verification.
 
-**Prerequisites:** Chapter 1 (What Is AI?) and Chapter 2 (Types of AI). Chapter 2 classifies AI by its capabilities and functionality. This chapter looks inside an AI system to understand how it works.
+**Prerequisites:** Chapter 1 (What Is AI?) and Chapter 2 (Types of Artificial Intelligence). Chapter 2 introduces AI classifications and capabilities. This chapter examines how AI systems are developed, trained, evaluated, and used.
+
+### Estimated learning time
+
+| Learning component | Estimated time |
+|---|---:|
+| Reading and understanding Sections 3.1–3.15 | 75–90 minutes |
+| Working through numerical examples and diagrams | 20–25 minutes |
+| Completing the 14 practice questions | 20–25 minutes |
+| Completing Activities A–C | 30–40 minutes |
+| Optional Activity D: Teachable Machine | 20–30 minutes |
+| **Estimated total** | **150–180 minutes** |
+
+The estimate assumes that learners pause to understand the examples and complete the activities. Learners who only read the chapter may finish sooner.
 
 ---
 
 ## 3.2 The Big Picture
 
-Traditional software follows instructions written by programmers. Machine-learning-based AI takes a different approach: instead of manually writing every rule, developers provide examples and allow the computer to learn patterns from them.
+Traditional software follows instructions written by programmers. Machine-learning-based AI takes a different approach: instead of manually writing every decision rule, developers provide examples and allow a computer to learn patterns from them.
 
-![Diagram contrasting traditional programming with machine learning](assets/traditional-vs-ml.png)
+Consider an email spam filter.
 
-*Figure 3.1: Traditional programming uses written rules, while machine learning uses examples to learn patterns.*
+A programmer could write a rule that marks every email containing the word "lottery" as spam. However, spammers can use different words, spelling variations, and sentence structures. A manually written rule may fail to recognise many suspicious messages.
+
+A machine-learning system can examine thousands of examples of spam and legitimate emails. It learns patterns that help distinguish between them, such as suspicious phrases, links, formatting, and sender behaviour.
+
+The important difference is that the system learns from examples rather than relying entirely on rules written by a programmer.
+
+### Traditional programming vs. machine learning
 
 | | Traditional Programming | Machine-Learning-Based AI |
 |---|---|---|
-| **You provide** | Rules and input | Data and, when required, desired outputs |
+| **You provide** | Rules and input data | Training data and, in supervised learning, correct outputs |
 | **The computer produces** | An output | A trained model |
-| **Example** | If an email contains a certain word, mark it as spam | Study thousands of labelled emails and learn patterns associated with spam |
+| **Example** | If an email contains a certain word, mark it as spam | Study labelled emails and learn patterns associated with spam |
 | **New situations** | Depends heavily on the rules written by the programmer | Can generalise to similar situations not seen during training |
 | **Common weakness** | Rules may not cover every situation | Training data may be incomplete, biased, or outdated |
 
-Consider a spam filter. A programmer could write a rule that marks every email containing the word "lottery" as spam. However, spammers can use different words, spellings, or sentence structures. A manually written rule may not recognise these variations.
+![Diagram contrasting traditional programming and machine learning](assets/traditional-vs-ml.png)
 
-A machine-learning system can instead examine thousands of examples of spam and legitimate emails. It learns patterns that help distinguish between them, such as suspicious phrases, links, formatting, and sender behaviour.
-
-The model does not need to memorise every possible spam message. It attempts to **generalise**: apply patterns learned from previous examples to new emails.
+*Figure 3.1: Traditional programming uses written rules, while machine learning learns patterns from examples.*
 
 ### The three main ingredients
 
 A machine-learning system depends on three important ingredients:
 
 ```text
-DATA + ALGORITHM + COMPUTING POWER → TRAINED MODEL
+DATA + ALGORITHM + COMPUTING POWER
+                  |
+                  v
+             TRAINING
+                  |
+                  v
+            TRAINED MODEL
 ```
 
-- **Data** provides the examples from which the system learns.
+- **Data** provides examples from which the system can learn.
 - **Algorithms** provide the mathematical procedures used to learn patterns.
 - **Computing power** allows the system to process data and perform the calculations required during training.
 
-The growth of modern AI was made possible partly because these ingredients improved together. The internet and digital devices created enormous amounts of data, research produced more effective algorithms, and GPUs and specialised AI chips made large-scale calculations practical.
+These ingredients work together. Large datasets alone do not guarantee a good model. The learning method must be appropriate, and the computing resources must be sufficient for the task.
 
-**Core idea:** Machine learning does not eliminate programming. Developers still design the system, select algorithms, prepare data, and decide how the model should be evaluated. The difference is that the model learns many of its decision-making patterns from data rather than receiving every rule directly from a programmer.
+### How the main AI processes connect
+
+The following diagram shows the overall process of developing and using a machine-learning system.
+
+```mermaid
+flowchart TD
+    A["1. Define the problem"]
+    B["2. Collect data"]
+    C["3. Prepare data"]
+    D["4. Select an algorithm"]
+    E["5. Train the model"]
+    F["6. Evaluate performance"]
+    G{"Meets requirements?"}
+    H["7. Deploy the model"]
+    I["8. Inference: process new inputs"]
+    J["9. Monitor real-world performance"]
+    K["Improve data, model, or system"]
+
+    A --> B --> C --> D --> E --> F --> G
+    G -- No --> C
+    G -- Yes --> H --> I --> J --> K
+    K --> B
+```
+
+*Figure 3.2: The main stages of an AI development process. Evaluation can send a project back to earlier stages when improvements are needed.*
+
+Each stage has a specific responsibility:
+
+| Stage | What happens | Why it matters |
+|---|---|---|
+| Problem definition | Decide what the system should do | Prevents building a model for an unclear goal |
+| Data collection | Gather relevant examples | Provides information for learning |
+| Data preparation | Clean, organise, and divide the data | Makes the examples suitable for training and evaluation |
+| Algorithm selection | Choose a suitable learning method | Determines how the model learns |
+| Training | Adjust model parameters using examples | Allows the model to learn patterns |
+| Evaluation | Measure performance using separate data | Checks whether the model generalises |
+| Deployment | Make the model available for use | Connects the model to a real application |
+| Inference | Process new inputs and produce outputs | Allows the system to perform its task |
+| Monitoring | Observe performance after deployment | Helps detect problems and changing conditions |
+
+The stages are connected. For example, poor data preparation can lead to weak training results. Weak training can lead to poor evaluation results. Even a model with good evaluation results may perform poorly if the real-world data is different from the data used during development.
+
+**Core idea:** A successful AI system is not simply a model. It is a complete process involving data, learning, evaluation, deployment, and continuous monitoring.
 
 ---
 
@@ -89,7 +162,9 @@ The growth of modern AI was made possible partly because these ingredients impro
 
 Data is recorded information that an AI system can process. It may include text, images, audio, video, numbers, website activity, or readings from sensors.
 
-An AI system uses data to identify relationships and patterns. For example, a system designed to predict house prices may examine:
+An AI system uses data to identify relationships and patterns.
+
+For example, a system designed to predict house prices may examine:
 
 - The size of each house.
 - The number of bedrooms.
@@ -143,6 +218,8 @@ For example, consider a dataset used to predict house prices:
 
 Size and number of bedrooms are features. Price is the label. Each row is one example.
 
+For a spam filter, the features might include the email's subject, message text, sender information, and number of suspicious links. The label would be either "spam" or "not spam."
+
 ### Preparing data
 
 Preparing data is often one of the most demanding parts of an AI project. A model cannot reliably learn from information that is incorrectly recorded, inconsistent, or unsuitable for the problem.
@@ -151,32 +228,51 @@ Common preparation steps include:
 
 | Step | Meaning | Example |
 |---|---|---|
-| **Cleaning** | Fix or remove errors, duplicates, and missing values | Remove duplicate customer records |
+| **Cleaning** | Fix or remove errors, duplicates, and missing values | Remove duplicate email records |
 | **Labelling** | Attach the correct answers to examples | Mark emails as spam or legitimate |
-| **Feature engineering** | Create useful inputs from existing information | Convert a date into its day of the week |
+| **Feature engineering** | Create useful inputs from existing information | Count the number of links in an email |
 | **Normalising / scaling** | Put numerical features on comparable scales | Scale salary and age to suitable numerical ranges |
-| **Encoding** | Convert categories into a numerical representation | Convert colour categories into numerical codes |
+| **Encoding** | Convert categories into numerical representations | Convert email categories into numerical codes |
 | **Splitting** | Divide data for training, validation, and testing | Keep some examples separate for evaluation |
 
 Not every project needs every preparation step. The appropriate methods depend on the data and the task.
 
-### Splitting the data
+### Dataset splitting: Training, validation, and testing
 
 A model should not be evaluated only on the examples it used to learn. Otherwise, it may appear successful because it has memorised those examples rather than learned patterns that work on new data.
 
 For this reason, datasets are commonly divided into three groups:
 
-![Dataset divided into training, validation, and test sets](assets/dataset-split.png)
+```text
+                 TOTAL DATASET
+                      100%
+                       |
+        +--------------+--------------+
+        |              |              |
+        v              v              v
+    TRAINING        VALIDATION       TEST
+      70%              15%            15%
+```
 
-*Figure 3.2: Separating data allows developers to evaluate a model using examples that were not used to train it.*
+*Figure 3.3: Example of a dataset divided into three non-overlapping groups.*
 
-| Split | Typical share | Purpose | Analogy |
-|---|---:|---|---|
-| **Training set** | 70–80% | Used to learn model parameters | Textbook |
-| **Validation set** | 10–15% | Used to compare models and adjust settings during development | Practice quiz |
-| **Test set** | 10–15% | Used for a final evaluation after development decisions are complete | Final exam |
+A common example is:
 
-These percentages are examples, not fixed rules. The correct division depends on the size and characteristics of the dataset.
+| Dataset | Percentage | Purpose |
+|---|---:|---|
+| **Training set** | 70% | Used to learn model parameters |
+| **Validation set** | 15% | Used to compare models and adjust settings during development |
+| **Test set** | 15% | Used for final evaluation after development decisions are complete |
+| **Total** | **100%** | |
+
+The percentages must add up to 100%. They are not fixed rules; they are one possible allocation. A dataset with a different size or structure may require a different split.
+
+For example, if a project has 10,000 labelled emails:
+
+- Training: 7,000 emails.
+- Validation: 1,500 emails.
+- Test: 1,500 emails.
+- Total: 10,000 emails.
 
 The three sets have different responsibilities:
 
@@ -184,9 +280,11 @@ The three sets have different responsibilities:
 2. The **validation set** helps developers decide whether the model or its settings should be changed.
 3. The **test set** estimates how well the final model performs on unseen data.
 
-The test set should remain untouched during development. If developers repeatedly check its results and use them to make improvements, they gradually begin adapting the model to that particular dataset. The final score may then become overly optimistic.
+The test set should remain separate during development. If developers repeatedly check its results and use them to make improvements, they gradually begin adapting the model to that particular dataset. The final score may then become overly optimistic.
 
-If substantial changes are made after examining the test results, a new, untouched test set may be needed for another final evaluation.
+For classification problems, developers may use **stratified splitting** to keep the proportions of important classes reasonably similar across the three sets. For example, if 10% of all emails are spam, the training, validation, and test sets should ideally contain similar spam proportions.
+
+Some problems require different splitting methods. Time-dependent data, such as stock prices, should generally be divided chronologically so that future examples do not accidentally influence predictions about the past.
 
 ### Why data quality matters
 
@@ -194,16 +292,16 @@ A common expression in machine learning is:
 
 > "Garbage in, garbage out."
 
-The quality of the training data strongly influences the quality of the model.
+The quality of training data strongly influences the quality of the model.
 
 | Data problem | What goes wrong | Example |
 |---|---|---|
 | **Bias** | Certain groups are represented unfairly or inadequately | A face-recognition system performs worse on skin tones underrepresented in its training data |
 | **Noise and errors** | Incorrect examples teach incorrect patterns | Images of wolves are labelled as dogs |
 | **Unrepresentative data** | The model struggles with conditions it rarely encountered | A system trained only on daytime photographs performs poorly at night |
-| **Data leakage** | Information that should not be available becomes part of the model's input | A prediction system accidentally receives information about the outcome it is supposed to predict |
+| **Data leakage** | Information that should not be available becomes part of the model's input | A prediction system receives information about the outcome it is supposed to predict |
 | **Outdated data** | The data no longer represents current conditions | A pricing model relies on information from before a major market change |
-| **Insufficient data** | There are too few examples to learn a reliable pattern | A model is trained using very few examples of a rare disease |
+| **Insufficient data** | There are too few examples to learn a reliable pattern | A model is trained using very few examples of a rare condition |
 
 Data quality is not only about removing errors. It also involves ensuring that the examples represent the situations in which the model will eventually be used.
 
@@ -227,7 +325,13 @@ A simple analogy is cooking:
 - The model is the finished dish.
 
 ```text
-ALGORITHM + TRAINING DATA → TRAINED MODEL
+ALGORITHM + TRAINING DATA
+            |
+            v
+          TRAINING
+            |
+            v
+       TRAINED MODEL
 ```
 
 The algorithm determines how learning takes place, while the trained model contains the patterns learned from the examples.
@@ -283,7 +387,7 @@ flowchart TD
     C -- No --> F
 ```
 
-*Figure 3.3: A simplified decision tree for screening loan applications.*
+*Figure 3.4: A simplified decision tree for screening loan applications.*
 
 The system follows a series of conditions to reach a result. In a machine-learning decision tree, the learning algorithm can determine which features and thresholds are useful by examining the training data.
 
@@ -353,7 +457,7 @@ This approach is useful when an AI system must make a sequence of decisions, suc
 
 ### A worked example: Predicting exam scores
 
-Consider a simple machine-learning task:
+Consider a simple machine-learning task.
 
 **Goal:** Predict a student's exam score based on the number of hours studied.
 
@@ -376,28 +480,84 @@ Here:
 
 The model needs to learn suitable values for `w` and `b`.
 
-1. **Start with a guess.** Suppose `w = 0` and `b = 0`. The model predicts zero for every student.
-2. **Calculate the error.** Compare the predictions with the actual exam scores.
-3. **Measure the loss.** A loss function converts the prediction errors into a numerical value. One common choice is mean squared error, which averages the squared differences.
-4. **Adjust the parameters.** Use gradient descent to change the parameters in a direction that reduces the loss.
-5. **Repeat.** Continue making updates until the model learns a suitable relationship.
+#### Step 1: Make an initial prediction
 
-For this simple dataset, the relationship is:
+Suppose the model begins with:
+
+```text
+w = 0
+b = 0
+```
+
+Its prediction for every student is zero:
+
+| Hours | Actual score | Initial prediction |
+|---:|---:|---:|
+| 1 | 55 | 0 |
+| 2 | 65 | 0 |
+| 3 | 75 | 0 |
+
+The model is clearly not performing well.
+
+#### Step 2: Calculate the loss
+
+A **loss function** measures how incorrect the model's predictions are.
+
+One common choice is mean squared error (MSE):
+
+```text
+MSE = (sum of squared prediction errors) / number of examples
+```
+
+For the initial predictions:
+
+```text
+MSE = ((55 - 0)² + (65 - 0)² + (75 - 0)²) / 3
+
+MSE = (3025 + 4225 + 5625) / 3
+
+MSE = 4291.67
+```
+
+The large value indicates that the predictions are far from the actual scores.
+
+#### Step 3: Adjust the parameters
+
+The model must change its parameters to reduce the loss. It uses an optimisation method such as gradient descent.
+
+After learning a suitable relationship, the model may approach:
+
+```text
+w = 10
+b = 45
+```
+
+Its prediction becomes:
 
 ```text
 score = 10 × hours + 45
 ```
 
-A student who studies for four hours would receive a predicted score of:
+| Hours | Actual score | Model prediction |
+|---:|---:|---:|
+| 1 | 55 | 55 |
+| 2 | 65 | 65 |
+| 3 | 75 | 75 |
+
+For this deliberately simple dataset, the predictions match the examples exactly.
+
+#### Step 4: Use the model on a new input
+
+A student who studies for four hours receives the following predicted score:
 
 ```text
 score = 10 × 4 + 45
 score = 85
 ```
 
-The model has learned a pattern from three examples and applied it to a new input.
+The model has learned a relationship from three examples and applied it to a new input.
 
-This example is deliberately simple. Real student performance depends on many factors, and a real prediction system would require more representative data and careful evaluation.
+This example is intentionally simple. Real student performance depends on many factors, and a real prediction system would require more representative data and careful evaluation.
 
 ### Gradient descent: How the model improves
 
@@ -415,12 +575,12 @@ Training a model follows a similar idea:
 
 ![Gradient descent moving toward the minimum of a loss curve](assets/gradient-descent.png)
 
-*Figure 3.4: Gradient descent gradually moves toward a parameter value that reduces the loss.*
+*Figure 3.5: Gradient descent gradually moves toward a parameter value that reduces the loss.*
 
 Consider a simplified loss function:
 
 ```text
-Loss = (w − 5)²
+Loss = (w - 5)²
 ```
 
 The best value is `w = 5`, where the loss is zero.
@@ -458,7 +618,7 @@ A model must learn enough to recognise useful patterns, but it should not simply
 
 ![Three plots showing underfitting, good fitting, and overfitting](assets/fitting.png)
 
-*Figure 3.5: A good model captures the general pattern without memorising random noise.*
+*Figure 3.6: A good model captures the general pattern without memorising random noise.*
 
 | Problem | Meaning | Analogy | Possible solutions |
 |---|---|---|---|
@@ -479,7 +639,7 @@ Neural networks are loosely inspired by the structure of biological brains. Howe
 
 ![Neural network with input, hidden, and output layers](assets/neural-network.png)
 
-*Figure 3.6: Information moves through connected layers. Training adjusts the weights between neurons.*
+*Figure 3.7: Information moves through connected layers. Training adjusts the weights between neurons.*
 
 ### What does one artificial neuron do?
 
@@ -498,8 +658,8 @@ Consider a neuron with:
 The weighted sum is:
 
 ```text
-sum = (2 × 0.5) + (1 × −1) + 0.5
-sum = 1 − 1 + 0.5
+sum = (2 × 0.5) + (1 × -1) + 0.5
+sum = 1 - 1 + 0.5
 sum = 0.5
 ```
 
@@ -533,16 +693,61 @@ In an image-recognition network, different layers may learn different visual fea
 
 These are simplified descriptions. Real networks do not necessarily learn features in such clearly separated stages.
 
-### How does a neural network learn?
+### How a neural network learns
 
 Training a neural network involves four connected steps:
+
+```mermaid
+flowchart TD
+    A["Input data"]
+    B["Forward pass"]
+    C["Prediction"]
+    D["Loss function compares prediction with correct answer"]
+    E["Backpropagation calculates gradients"]
+    F["Optimizer updates weights and biases"]
+    G["Repeat with more batches and epochs"]
+
+    A --> B --> C --> D --> E --> F --> G
+    G --> B
+```
+
+*Figure 3.8: The training loop connects predictions, loss calculation, backpropagation, and parameter updates.*
+
+The four main steps are:
 
 1. **Forward pass:** Input data travels through the network to produce a prediction.
 2. **Loss calculation:** The prediction is compared with the correct answer.
 3. **Backpropagation:** The network calculates how changes to its parameters would affect the loss.
 4. **Parameter update:** An optimisation method, commonly gradient descent, adjusts the weights and biases.
 
-This process repeats across many batches of training examples.
+These terms have different responsibilities:
+
+| Concept | Role during training |
+|---|---|
+| **Forward pass** | Produces a prediction using the current parameters |
+| **Loss function** | Measures the prediction error |
+| **Backpropagation** | Calculates gradients that show how parameters contribute to the error |
+| **Gradient descent / optimizer** | Uses the gradients to update the parameters |
+| **Batch** | A group of examples processed together |
+| **Epoch** | One complete pass through the training dataset |
+
+Backpropagation does not directly mean "change every weight." It calculates the gradients needed by the optimizer. The optimizer then uses those gradients to update the parameters.
+
+### Understanding the relationship through an example
+
+Imagine a neural network that identifies whether an image contains a cat.
+
+1. The network receives an image.
+2. Its current weights produce a prediction, such as 0.30 probability for "cat."
+3. The correct label is "cat," so the model's prediction is compared with the expected answer.
+4. The loss function measures the error.
+5. Backpropagation calculates how each weight contributed to the error.
+6. The optimizer adjusts the weights.
+7. The model processes another batch and repeats the process.
+
+After many updates, the model may become better at identifying cats in images it has not seen before.
+
+The improvement is not guaranteed after every individual update. Training involves many calculations, and the overall objective is to reduce loss and improve performance across the dataset.
 
 Backpropagation became an important method for training multi-layer neural networks through the work of Rumelhart, Hinton, and Williams in 1986. [[3]](#ref-3)
 
@@ -566,10 +771,6 @@ Different network architectures are suited to different kinds of data.
 ## 3.7 How Modern Language AI Works
 
 Many modern AI assistants are built using **large language models (LLMs)**. These models process language mathematically and generate responses by predicting sequences of tokens.
-
-![A sentence divided into tokens, followed by next-token prediction](assets/tokens-next-token.png)
-
-*Figure 3.7: An LLM processes text as tokens and repeatedly predicts what should come next.*
 
 ### Step 1: Tokens and embeddings
 
@@ -598,6 +799,24 @@ For example, the word "bank" has different meanings in:
 - "We sat beside the river bank."
 
 Context helps the model distinguish these uses.
+
+```text
+TEXT
+ |
+ v
+TOKENISATION
+ |
+ v
+TOKEN IDs
+ |
+ v
+EMBEDDINGS
+ |
+ v
+TRANSFORMER LAYERS
+```
+
+*Figure 3.9: A simplified view of how text becomes numerical input for a language model.*
 
 ### Step 2: Next-token prediction
 
@@ -635,7 +854,7 @@ Attention helps the model weigh relationships between tokens and use surrounding
 
 ![Attention links showing how words relate to each other in a sentence](assets/attention.png)
 
-*Figure 3.8: Attention helps a transformer relate different parts of an input.*
+*Figure 3.10: Attention helps a transformer relate different parts of an input.*
 
 Transformers also use feed-forward layers and other components to process information. Their architecture allows efficient parallel processing during training, which helped make large-scale language-model training practical.
 
@@ -682,7 +901,7 @@ flowchart LR
     A --> B --> C --> D --> E --> F
 ```
 
-*Figure 3.9: A simplified pipeline for developing an instruction-following language model.*
+*Figure 3.11: A simplified pipeline for developing an instruction-following language model.*
 
 | Stage | What happens | Result |
 |---|---|---|
@@ -706,28 +925,65 @@ Not every AI assistant uses exactly the same training pipeline. These stages are
 
 ---
 
-## 3.8 Training vs. Inference
+## 3.8 Training, Evaluation, and Inference
 
-Training and inference are two different phases in the life of an AI model.
+Training, evaluation, and inference are three related but different processes.
 
-![Comparison of training and inference](assets/training-vs-inference.png)
+Understanding their relationship is important because they describe how a model is developed, checked, and used.
 
-*Figure 3.10: Training changes the model's parameters, while inference uses the trained model.*
+### Comparing the three processes
 
-| | **Training** | **Inference** |
+| Process | Main purpose | What happens |
 |---|---|---|
-| **Purpose** | Teach the model patterns from data | Use the model to produce outputs |
-| **Parameters** | Adjusted during training | Normally fixed during inference |
-| **Input** | Training examples | New inputs, such as prompts or images |
-| **Computing requirements** | Often very high | Usually lower per request, but may be substantial at large scale |
-| **Typical users** | Developers and researchers | People and applications using the model |
-| **Analogy** | A student studying for an examination | The student answering questions |
+| **Training** | Learn patterns | The model adjusts its parameters using training data |
+| **Evaluation** | Measure performance | The model is checked using data that was not used to train it |
+| **Inference** | Produce predictions | The trained model processes new inputs and generates outputs |
+
+```mermaid
+flowchart TD
+    A["Training data"]
+    B["Training"]
+    C["Trained model"]
+    D["Validation and test data"]
+    E["Evaluation"]
+    F{"Performance acceptable?"}
+    G["Deploy model"]
+    H["New real-world input"]
+    I["Inference"]
+    J["Prediction or generated output"]
+
+    A --> B --> C
+    D --> E
+    C --> E --> F
+    F -- No --> B
+    F -- Yes --> G --> H --> I --> J
+```
+
+*Figure 3.12: Training creates the model, evaluation measures its performance, and inference uses it to produce outputs.*
+
+### Following the same model through each process
+
+Imagine an email provider developing a spam filter.
+
+**1. Training**
+
+The model receives labelled examples of spam and legitimate emails. It adjusts its parameters to learn patterns associated with each category.
+
+**2. Evaluation**
+
+The developers use validation data to compare models and adjust settings. Once they select a final model, they use the untouched test set to estimate how well it performs on unseen emails.
+
+**3. Inference**
+
+After deployment, the model receives new incoming emails and predicts whether each one is spam or legitimate.
+
+The model's core parameters normally remain fixed during ordinary inference. It uses what it learned during training to process new inputs.
 
 ### What happens when you chat with an AI?
 
 When you send a message to an AI assistant, the model normally performs inference. Its core parameters are not being retrained by every message.
 
-The conversation is provided as context, allowing the model to consider earlier messages when generating its response. This does not mean that its underlying weights are being updated.
+The conversation is provided as context, allowing the model to consider earlier messages when generating a response. This does not mean that its underlying weights are being updated.
 
 Whether a company later uses conversations to improve future models is a separate policy and data-handling question. Users should check the privacy settings and policies of the services they use.
 
@@ -746,9 +1002,19 @@ These methods use an existing model without updating its core weights.
 | **Tools** | Connects the model to software such as calculators, search engines, or code execution | Calculations, research, and data processing |
 | **Agents** | Allows a model to coordinate multiple tool-use steps | Tasks that require a sequence of actions |
 
-![RAG process diagram](assets/rag-process.png)
+```mermaid
+flowchart TD
+    A["User question"]
+    B["Search or retrieve relevant documents"]
+    C["Selected information"]
+    D["Provide information and question to model"]
+    E["Generate response"]
+    F["Check response against source material"]
 
-*Figure 3.11: RAG retrieves relevant information and provides it to the model before the response is generated.*
+    A --> B --> C --> D --> E --> F
+```
+
+*Figure 3.13: A simplified Retrieval-Augmented Generation process.*
 
 RAG can make answers more closely grounded in available documents, but it does not guarantee correctness. The retrieved information may be incomplete, outdated, or misunderstood by the model.
 
@@ -773,7 +1039,7 @@ How can developers determine whether an AI model is reliable enough to use?
 
 They evaluate its performance using examples that were not used to train it. Evaluation is important because a model can perform well during training but fail when it encounters new situations.
 
-### Training, validation, and test data
+### The role of each dataset
 
 | Dataset | Purpose | When it is used |
 |---|---|---|
@@ -824,13 +1090,17 @@ Four important metrics can be calculated from the confusion matrix.
 For the spam filter:
 
 ```text
-Accuracy  = (80 + 890) / 1000 = 97.0%
+Accuracy  = (80 + 890) / 1000
+          = 97.0%
 
-Precision = 80 / (80 + 10) = 88.9%
+Precision = 80 / (80 + 10)
+          = 88.9%
 
-Recall    = 80 / (80 + 20) = 80.0%
+Recall    = 80 / (80 + 20)
+          = 80.0%
 
-F1        ≈ 0.84
+F1        = 2 × (0.889 × 0.80) / (0.889 + 0.80)
+          ≈ 0.84
 ```
 
 F1 is the harmonic mean of precision and recall. It gives a single score that is high only when both metrics are reasonably high.
@@ -896,78 +1166,275 @@ Benchmark scores should not be treated as complete proof of real-world performan
 
 ---
 
-## 3.10 The AI Workflow
+## 3.10 The AI Workflow: An Integrated Case Study
 
-Developing an AI system involves more than choosing an algorithm and training a model. It requires a complete process, from defining the problem to monitoring the system after deployment.
+This section brings together the concepts introduced throughout the chapter.
+
+Instead of examining data, training, evaluation, and inference separately, we will follow one AI application from the beginning to its use in the real world.
+
+### Case study: Building an email spam filter
+
+Imagine an email provider wants to develop a system that automatically identifies spam.
+
+The goal is not simply to achieve high accuracy. The system must identify unwanted emails while avoiding the blocking of legitimate messages.
+
+The development team follows the complete AI workflow.
+
+### Stage 1: Define the problem
+
+Before collecting data or selecting an algorithm, the team must understand the problem.
+
+They define:
+
+- **Input:** Incoming email information.
+- **Output:** A prediction of "spam" or "not spam."
+- **Goal:** Identify spam while minimising incorrect classifications.
+- **Success criteria:** Suitable precision and recall, acceptable processing time, and reliable performance on new emails.
+
+This step matters because the model's success depends on what the system is expected to achieve.
+
+For example, a system that blocks every suspicious email may achieve high spam recall but could also block important messages. The team must consider the consequences of both types of error.
+
+### Stage 2: Collect data
+
+The team gathers examples of previous emails.
+
+Each example may contain:
+
+| Feature | Example |
+|---|---|
+| Subject | "Congratulations! You won a prize" |
+| Message text | "Claim your reward now" |
+| Sender information | Unknown sender |
+| Number of links | 4 |
+| Attachment information | Contains an unexpected attachment |
+| Label | Spam |
+
+Another example may be a legitimate email:
+
+| Feature | Example |
+|---|---|
+| Subject | "Meeting schedule for Friday" |
+| Message text | "Please review the updated timetable" |
+| Sender information | Known colleague |
+| Number of links | 1 |
+| Attachment information | Contains a meeting document |
+| Label | Not spam |
+
+The label provides the correct answer during supervised learning. The features provide information that the model can use to make its prediction.
+
+The examples must be collected responsibly. Personal information should be protected, and the dataset should be checked for consent, privacy, and appropriate access.
+
+### Stage 3: Prepare the data
+
+The team cannot immediately use every collected email. The data must first be checked and organised.
+
+The preparation process may include:
+
+1. Remove duplicate emails.
+2. Check that labels are correct.
+3. Handle missing or incorrectly recorded information.
+4. Convert text and categories into representations the model can process.
+5. Create useful features, such as the number of links or suspicious phrases.
+6. Divide the data into training, validation, and test sets.
+
+Suppose the team has 10,000 labelled emails.
+
+| Dataset | Percentage | Number of emails |
+|---|---:|---:|
+| Training | 70% | 7,000 |
+| Validation | 15% | 1,500 |
+| Test | 15% | 1,500 |
+| **Total** | **100%** | **10,000** |
+
+The team should also ensure that the sets are representative of the emails the system will encounter. If nearly all examples in the test set are legitimate emails, the evaluation may not provide enough information about spam detection.
+
+### Stage 4: Select an algorithm
+
+The team chooses a classification algorithm.
+
+Possible choices include:
+
+- Logistic regression.
+- Decision trees.
+- Random forests.
+- Neural networks.
+
+For an introductory project, logistic regression or a decision tree may be a reasonable starting point because they are easier to understand and compare.
+
+The best choice depends on the dataset, performance requirements, available resources, and the need to explain predictions.
+
+### Stage 5: Train the model
+
+The team uses the 7,000 training emails to teach the model.
+
+The model begins with initial parameters. It processes the training examples and predicts whether each email is spam.
+
+The training process follows this loop:
 
 ```mermaid
 flowchart TD
-    A["1. Define the problem<br/>and success criteria"]
-    B["2. Collect data"]
-    C["3. Clean and prepare data"]
-    D["4. Choose an algorithm"]
-    E["5. Train the model"]
-    F["6. Evaluate using validation data"]
-    G{"Good enough?"}
-    H["7. Final test"]
-    I["8. Deploy the model"]
-    J["9. Use the model<br/>(inference)"]
-    K["10. Monitor performance"]
-    L["Update data or model<br/>when necessary"]
-    A --> B --> C --> D --> E --> F --> G
-    G -- No --> C
-    G -- Yes --> H --> I --> J --> K --> L
-    L --> B
+    A["Training email enters model"]
+    B["Model predicts spam probability"]
+    C["Compare prediction with correct label"]
+    D["Calculate loss"]
+    E["Calculate gradients"]
+    F["Optimizer updates parameters"]
+    G["Process next batch"]
+    H["Complete epoch"]
+    I["Repeat for additional epochs"]
+
+    A --> B --> C --> D --> E --> F --> G --> H --> I
+    I --> A
 ```
 
-*Figure 3.12: A simplified AI development workflow. Evaluation may send a project back to earlier stages when improvements are needed.*
+*Figure 3.14: The spam-filter training loop.*
 
-### Understanding each stage
+Each part has a different responsibility:
 
-1. **Define the problem:** Identify what the AI system should do and decide how success will be measured.
-2. **Collect data:** Obtain examples that represent the problem.
-3. **Prepare data:** Clean, label, organise, and split the data.
-4. **Choose an algorithm:** Select an appropriate method based on the task and available resources.
-5. **Train the model:** Allow the algorithm to learn patterns from the training data.
-6. **Evaluate:** Use validation data to compare performance and decide whether changes are needed.
-7. **Final test:** Evaluate the selected model using the untouched test set.
-8. **Deploy:** Make the model available to users or connect it to an application.
-9. **Inference:** The deployed model receives new inputs and produces outputs.
-10. **Monitor:** Track performance, errors, and changes in real-world conditions.
-
-The workflow is not always a straight line. If evaluation reveals a problem, developers may return to data preparation, algorithm selection, or training.
-
-### Case study: Building a spam filter
-
-Imagine an email provider wants to develop an AI system that detects spam.
-
-| Stage | What the team does |
+| Training component | What it does in the spam-filter example |
 |---|---|
-| **1. Define the problem** | Decide that the system should identify spam while avoiding the blocking of legitimate emails. |
-| **2. Collect data** | Gather examples of spam and legitimate emails. |
-| **3. Prepare data** | Remove duplicates, check labels, and divide the dataset into training, validation, and test sets. |
-| **4. Choose an algorithm** | Select a suitable classification algorithm. |
-| **5. Train the model** | Allow the model to learn patterns associated with spam. |
-| **6. Evaluate** | Check precision and recall using validation data and adjust the model or threshold if needed. |
-| **7. Final test** | Measure performance on the untouched test set. |
-| **8. Deploy** | Integrate the model into the email service. |
-| **9. Inference** | Evaluate new incoming emails. |
-| **10. Monitor** | Track incorrect predictions and changes in spam patterns. |
+| **Prediction** | Estimates whether an email is spam |
+| **Loss function** | Measures how different the prediction is from the correct label |
+| **Backpropagation or gradient calculation** | Determines how model parameters contribute to the loss |
+| **Optimizer** | Updates the model parameters to reduce the loss |
+| **Batch** | A group of emails processed together |
+| **Epoch** | One complete pass through the 7,000 training emails |
 
-### Why monitoring matters
+The model repeats this process across many batches and epochs.
 
-An AI model does not remain reliable automatically after deployment.
+The objective is to learn useful patterns rather than memorise the exact emails in the training set.
 
-The world can change, and the data received by a model may become different from the data used during training.
+### Stage 6: Evaluate during development
 
-Two important problems are:
+After training, the team uses the validation set to measure performance.
 
-- **Data drift:** The distribution of incoming data changes. For example, customers begin using a different purchasing pattern.
-- **Concept drift:** The relationship between the input and the correct answer changes. For example, spammers develop new techniques that make old spam patterns less useful.
+Suppose the model performs well on training data but poorly on validation data. This may indicate overfitting.
 
-Monitoring helps developers detect these changes. They may need to collect new data, update the model, adjust the system, or temporarily introduce human review.
+The team may then:
 
-**Important:** Deployment is not the end of AI development. A reliable AI system requires ongoing evaluation and maintenance.
+- Add more representative examples.
+- Improve data preparation.
+- Change the algorithm.
+- Adjust the learning rate or other hyperparameters.
+- Apply regularisation.
+- Train for a different number of epochs.
+
+The team repeats training and validation until it selects a model that meets the development requirements.
+
+The validation set is used for these repeated decisions. The test set remains untouched.
+
+### Stage 7: Perform the final test
+
+Once the team has selected the model, it evaluates the model using the 1,500 test emails.
+
+Suppose the final test produces the following confusion matrix:
+
+| | **Predicted: Spam** | **Predicted: Not Spam** |
+|---|---:|---:|
+| **Actually spam** | 80 | 20 |
+| **Actually not spam** | 10 | 890 |
+
+The team calculates accuracy, precision, recall, and F1 score.
+
+The results indicate that the model correctly identifies most legitimate emails, but it still misses some spam messages.
+
+The team must decide whether this performance is acceptable for the intended use.
+
+If the team changes the model after repeatedly examining the test results, the test set is no longer an independent final check. A new untouched test set may be needed.
+
+### Stage 8: Deploy the model
+
+After the model passes the required evaluation, the team integrates it into the email service.
+
+The model is now available to process incoming emails.
+
+Deployment may involve connecting the model to the email application, preparing the required computing environment, and ensuring that the system can handle incoming messages efficiently.
+
+### Stage 9: Use the model through inference
+
+When a new email arrives, the system performs inference.
+
+```mermaid
+flowchart LR
+    A["New email"]
+    B["Extract and prepare features"]
+    C["Trained spam model"]
+    D["Spam probability"]
+    E{"Above threshold?"}
+    F["Move to spam folder"]
+    G["Deliver to inbox"]
+
+    A --> B --> C --> D --> E
+    E -- Yes --> F
+    E -- No --> G
+```
+
+*Figure 3.15: The input, model processing, and output of a deployed spam filter.*
+
+For example:
+
+```text
+New email
+    |
+    v
+Feature extraction
+    |
+    v
+Trained model
+    |
+    v
+Spam probability = 0.92
+    |
+    v
+Threshold = 0.50
+    |
+    v
+Prediction = Spam
+```
+
+The model uses the parameters learned during training to produce the prediction. It does not normally retrain its core parameters every time a new email arrives.
+
+### Stage 10: Monitor performance
+
+The development process does not end after deployment.
+
+Over time, spammers may change their methods. New phrases, links, and message formats may appear.
+
+Two important problems can occur:
+
+- **Data drift:** The distribution of incoming data changes. For example, email formats or sender patterns become different from those in the training data.
+- **Concept drift:** The relationship between input features and the correct answer changes. For example, old spam patterns become less useful because spammers develop new techniques.
+
+The team should monitor:
+
+- False positives and false negatives.
+- Changes in spam patterns.
+- User reports of incorrectly classified emails.
+- Processing time and system reliability.
+- Performance across different types of incoming emails.
+
+If performance decreases, the team may need to collect new examples, prepare updated data, retrain the model, and evaluate it again.
+
+### Connecting the complete process
+
+| Stage | Main concept from this chapter |
+|---|---|
+| Define the problem | AI problem definition and success criteria |
+| Collect data | Data sources, features, and labels |
+| Prepare data | Data cleaning, feature engineering, and dataset splitting |
+| Select an algorithm | Algorithms and models |
+| Train the model | Machine learning, loss, parameters, and gradient descent |
+| Evaluate | Validation, testing, and evaluation metrics |
+| Deploy | Making a trained model available |
+| Inference | Processing new inputs and producing predictions |
+| Monitor | Data drift, concept drift, and continuous improvement |
+
+**What should learners understand from this case study?**
+
+The spam filter is not a collection of unrelated AI concepts. Each stage depends on the previous one. Data provides examples, the algorithm learns from them, training produces a model, evaluation measures its performance, inference uses it on new emails, and monitoring checks whether it remains useful.
+
+This is the general structure behind many machine-learning applications, even though their data, algorithms, and outputs may differ.
 
 ---
 
@@ -1041,6 +1508,8 @@ Becoming an effective AI user does not mean trusting AI more. It means knowing w
 | "AI is objective because it uses mathematics." | Models can inherit biases from data and decisions made during development. |
 | "Accuracy is the only metric that matters." | Precision, recall, and the consequences of errors can be more important. |
 | "Once a model is deployed, it no longer needs attention." | Models must be monitored because real-world conditions and data can change. |
+| "Backpropagation and gradient descent are the same thing." | Backpropagation calculates gradients; the optimizer uses them to update parameters. |
+| "A high test score guarantees real-world success." | Test data may not fully represent the conditions the model encounters after deployment. |
 
 ---
 
@@ -1049,13 +1518,14 @@ Becoming an effective AI user does not mean trusting AI more. It means knowing w
 1. **Data** provides the examples that allow a model to learn. Poor or unrepresentative data can produce unreliable results.
 2. An **algorithm** is the learning procedure, while a **model** is the result of applying that procedure to data.
 3. **Machine learning** improves predictions by measuring errors and adjusting parameters.
-4. **Neural networks** use connected layers of mathematical units to learn complex patterns.
-5. **LLMs** process text as tokens and generate responses through repeated next-token prediction.
-6. **Training** changes a model's parameters, while **inference** uses the trained model to produce outputs.
-7. **Prompting, RAG, and tools** can improve inference without retraining the model. Fine-tuning and training from scratch are training-based approaches.
-8. **Evaluation** requires suitable metrics and data that was not used during training.
-9. A complete AI system follows a workflow of problem definition, data preparation, training, evaluation, deployment, and monitoring.
-10. Effective AI use requires both understanding its capabilities and checking its limitations.
+4. **Loss** measures prediction error, **backpropagation** calculates gradients, and an **optimizer** uses those gradients to update parameters.
+5. **Neural networks** use connected layers of mathematical units to learn complex patterns.
+6. **LLMs** process text as tokens and generate responses through repeated next-token prediction.
+7. **Training** changes a model's parameters, **evaluation** measures its performance, and **inference** uses it to produce outputs.
+8. **Prompting, RAG, and tools** can improve inference without retraining the model. Fine-tuning and training from scratch are training-based approaches.
+9. **Evaluation** requires suitable metrics and data that was not used during training.
+10. A complete AI system follows a workflow of problem definition, data preparation, training, evaluation, deployment, and monitoring.
+11. Effective AI use requires both understanding its capabilities and checking its limitations.
 
 ### One-page cheat sheet
 
@@ -1066,11 +1536,15 @@ Becoming an effective AI user does not mean trusting AI more. It means knowing w
 | Algorithm | Learning procedure |
 | Model | Learned result |
 | Loss | Measurement of prediction error |
-| Gradient descent | Adjusting parameters to reduce loss |
+| Backpropagation | Calculates gradients |
+| Gradient descent | Uses gradients to update parameters |
+| Batch | Group of training examples |
+| Epoch | One complete pass through training data |
 | Overfitting | Memorising training examples |
 | Validation set | Used during development |
 | Test set | Used for final evaluation |
 | Training | Learning and changing parameters |
+| Evaluation | Measuring model performance |
 | Inference | Using a trained model |
 | Token | A unit of text processed by an LLM |
 | Embedding | Numerical representation |
@@ -1098,6 +1572,7 @@ Becoming an effective AI user does not mean trusting AI more. It means knowing w
 | **Backpropagation** | A method for calculating how model parameters contribute to prediction error |
 | **Batch** | A group of training examples processed together |
 | **Bias (in data)** | A systematic skew or gap in data that may cause unfair or unreliable results |
+| **Bias parameter** | A learned numerical value added within a model's calculation |
 | **Classification** | Predicting a category or label |
 | **Classification threshold** | A score cut-off used to determine a positive or negative prediction |
 | **CNN** | Convolutional neural network; a network architecture commonly used for image-related tasks |
@@ -1109,9 +1584,11 @@ Becoming an effective AI user does not mean trusting AI more. It means knowing w
 | **Diffusion model** | A generative model that learns to create data by gradually removing noise |
 | **Embedding** | A numerical vector representing a token or other item |
 | **Epoch** | One complete pass through the training dataset |
+| **Evaluation** | The process of measuring a model's performance |
 | **F1 score** | The harmonic mean of precision and recall |
 | **Feature** | An input variable used by a model |
 | **Fine-tuning** | Further training an existing model using specialised data |
+| **Gradient** | A mathematical quantity showing how a function changes with respect to its parameters |
 | **Gradient descent** | An optimisation method that adjusts parameters to reduce loss |
 | **Hallucination** | An AI output that sounds plausible but is false or unsupported |
 | **Hyperparameter** | A setting chosen to control training or model design |
@@ -1123,6 +1600,7 @@ Becoming an effective AI user does not mean trusting AI more. It means knowing w
 | **Model** | A trained system containing learned parameters used to produce predictions or outputs |
 | **Multimodal model** | A model that can process or generate multiple data types |
 | **Neural network** | A model made of connected layers of mathematical units |
+| **Optimizer** | A method that updates model parameters using calculated gradients |
 | **Overfitting** | When a model memorises training data and performs poorly on new examples |
 | **Parameter / Weight** | A numerical value learned during training |
 | **Pre-training** | Large-scale initial training of a model, often through next-token prediction for LLMs |
@@ -1154,9 +1632,11 @@ Becoming an effective AI user does not mean trusting AI more. It means knowing w
 Before moving on, answer these questions in your own words:
 
 1. Why can an AI chatbot sound confident even when its answer is incorrect?
-2. Give an example of a situation where improving the training data could be more useful than choosing a different algorithm.
-3. What is the difference between training and inference?
-4. Which habit from Section 3.11 would help you use AI more responsibly?
+2. Give an example of a situation where improving training data could be more useful than choosing a different algorithm.
+3. What is the difference between training, evaluation, and inference?
+4. How do loss, backpropagation, and gradient descent work together during training?
+5. Why should a test set remain separate from the training and validation sets?
+6. Which habit from Section 3.11 would help you use AI more responsibly?
 
 ---
 
@@ -1266,8 +1746,8 @@ Because missing a cancer case can have serious consequences, the team may priori
 First calculate the weighted sum:
 
 ```text
-(3 × 1) + (−2 × 0.5) + 1
-= 3 − 1 + 1
+(3 × 1) + (-2 × 0.5) + 1
+= 3 - 1 + 1
 = 3
 ```
 
@@ -1345,22 +1825,34 @@ The team may choose this change when blocking important legitimate emails is mor
 
 ### Activity A: See the limits of inference
 
+**Objective:** Understand how an existing model uses prompts and context during inference.
+
 1. Open an AI chat assistant.
 2. Ask a factual question about a recent event.
 3. Ask the same question with web search enabled, if available.
 4. Compare the answers and identify what information changed.
-5. Ask the assistant to write a creative slogan three times. Observe whether the responses vary.
-6. Write a short reflection connecting your observations to inference, context, and generation settings.
+5. Ask the assistant to write a creative slogan three times.
+6. Observe whether the responses vary.
+7. Write a short reflection connecting your observations to inference, context, and generation settings.
+
+**Expected learning:** A model can use different context and tools during inference without necessarily changing its core parameters.
 
 ### Activity B: Weak prompt vs. strong prompt
+
+**Objective:** Understand how prompt structure affects model output.
 
 1. Choose a topic you are currently studying.
 2. Ask an AI assistant to explain it using a short, vague prompt.
 3. Save the answer.
 4. Rewrite the prompt using the Role, Context, Task, Format, and Constraints structure from Section 3.11.
-5. Compare the two answers. Identify which details improved and why.
+5. Compare the two answers.
+6. Identify which details improved and why.
+
+**Expected learning:** A prompt that gives relevant context and clear requirements can make the response more useful and better suited to the task.
 
 ### Activity C: Fact-check an AI answer
+
+**Objective:** Practise evaluating AI-generated information.
 
 1. Ask an AI assistant to provide three statistics about a topic you know.
 2. Ask it to provide sources for each statistic.
@@ -1368,80 +1860,169 @@ The team may choose this change when blocking important legitimate emails is mor
 4. Record which claims were correct, partly correct, or unverifiable.
 5. Write a short reflection about what this exercise reveals about trusting AI-generated information.
 
+Use reliable sources rather than accepting a citation merely because the model provided it.
+
+**Expected learning:** Fluent responses and citations do not guarantee that information is accurate or supported by the cited source.
+
 ### Activity D (Optional): Teach a tiny model
 
 **Tool:** Google's Teachable Machine, a browser-based tool that allows users to train simple image, sound, and pose classifiers without writing code. [[10]](#ref-10)
 
 Open: https://teachablemachine.withgoogle.com/
 
-**Part 1: Train a classifier (approximately 10 minutes)**
+**Objective:** Experience a simplified machine-learning workflow by collecting examples, training a model, and testing it on new inputs.
 
-1. Select **Get Started** and choose **Image Project**.
-2. Choose **Standard image model**.
-3. Rename two classes to clearly different objects, such as "pen" and "mug".
-4. Add at least 30 example images to each class using a webcam or uploaded pictures.
-5. Select **Train Model** and wait for training to finish.
-6. Use the preview panel to test the model with the two objects.
+#### Part 1: Gather examples
 
-**Part 2: Test its limitations (approximately 10 minutes)**
+1. Open Teachable Machine.
+2. Choose the image-project option.
+3. Select the standard image model if the option is available.
+4. Create two classes with clearly different objects, such as "pen" and "mug."
+5. Gather at least 30 example images for each class, using a webcam or uploaded pictures.
+6. Include different angles and backgrounds where possible.
 
-1. **Unbalanced data:** Retrain using five examples of one class and 50 of the other. Observe whether the predictions change.
-2. **Narrow data:** Use images of one object taken only in bright light and the other only in dim light. Then test under different lighting conditions.
-3. **Fresh test:** Try images that were not used during training. Compare the results with the training examples.
+#### Part 2: Train the model
 
-**Reflection:** Write three to four sentences connecting your observations to data quality, bias, overfitting, and held-out testing.
+1. Check that the examples are placed in the correct classes.
+2. Start model training.
+3. Wait for the training process to finish.
+4. Use the preview panel to test the model with examples from the classes.
 
-*Privacy tip:* Avoid recording other people without permission. If a webcam is unavailable, use uploaded images instead. If the tool is unavailable, another no-code image-classification tool can support similar learning goals.
+#### Part 3: Test the model with new examples
+
+1. Present an object that was not used in the training examples.
+2. Test the object from a different angle.
+3. Change the background or lighting.
+4. Observe whether the model still predicts the correct class.
+5. Record any incorrect predictions.
+
+#### Part 4: Investigate data quality
+
+Try one or more of these experiments:
+
+- **Unbalanced data:** Use many more examples for one class than the other. Observe whether predictions become less reliable.
+- **Narrow data:** Train using examples captured only in bright lighting, then test under dim lighting.
+- **Limited variation:** Train using one angle of an object, then test with a different angle.
+- **New examples:** Compare predictions on training examples with predictions on examples that were not used during training.
+
+#### Reflection
+
+Answer these questions:
+
+1. What information did you provide to the model?
+2. What happened when you tested it with new examples?
+3. How did the number and variety of training examples affect the results?
+4. Which experiment demonstrated a possible limitation of the model?
+5. How does this activity relate to training, inference, and evaluation?
+
+**Expected learning:** A model learns patterns from the examples provided. If the examples are too limited or unrepresentative, the model may struggle with new inputs.
+
+**Privacy note:** Avoid recording other people without permission. If the tool is unavailable, another no-code image-classification tool can support similar learning goals.
+
+### Peer learner testing: Required before final publication
+
+The author should ask at least one teammate who did not write this chapter to follow the material as a beginner learner.
+
+The purpose is to identify problems that the author may not notice because they already understand the subject.
+
+The reviewer should not simply read the chapter and say whether it looks good. They should attempt the explanations, numerical examples, and activities.
+
+#### Learner testing record
+
+| Item | Record |
+|---|---|
+| Learner / tester | To be completed |
+| Date | To be completed |
+| Sections completed | To be completed |
+| Concepts understood clearly | To be completed |
+| Explanations that caused confusion | To be completed |
+| Numerical examples that were difficult | To be completed |
+| Activities completed successfully | To be completed |
+| Activities that required additional help | To be completed |
+| Suggested improvements | To be completed |
+
+#### Questions for the learner
+
+1. Could you explain the difference between training, evaluation, and inference after reading the chapter?
+2. Could you follow the training example and explain how loss and parameter updates are related?
+3. Could you understand the spam-filter case study from data collection to inference?
+4. Were any diagrams or tables confusing?
+5. Could you complete the activities without the author's help?
+
+After receiving feedback, the author should record the changes made and explain which feedback was accepted or not accepted.
+
+**Important:** This table is a template, not completed learner-testing evidence. The team must conduct the test and record actual results before claiming that learner testing has passed.
 
 ---
 
 ## 3.18 Further Reading and References
 
+The following sources support the main technical explanations in this chapter. External links and the availability of online resources should be checked again before final publication.
+
 ### References cited in this chapter
 
-**[1] Google for Developers.** *Machine Learning Crash Course.* Beginner-friendly lessons covering machine learning, data, loss, gradient descent, and evaluation metrics.
+**[1] Google for Developers.** *Machine Learning Crash Course.*
+
+A practical introduction to machine learning, including data, training, loss, gradient descent, embeddings, and evaluation.
 
 https://developers.google.com/machine-learning/crash-course
 
-Related lessons:
+Related lesson:
 
-- Dividing datasets: https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets
-- Classification thresholds: https://developers.google.com/machine-learning/crash-course/classification/thresholding
-- Embeddings: https://developers.google.com/machine-learning/crash-course/embeddings/embedding-space
+- Datasets: Dividing the original dataset  
+  https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets
 
 **[2] Goodfellow, I., Bengio, Y., and Courville, A. (2016).** *Deep Learning.* MIT Press.
+
+A comprehensive textbook covering the mathematical and conceptual foundations of deep learning.
 
 https://www.deeplearningbook.org/
 
 **[3] Rumelhart, D. E., Hinton, G. E., and Williams, R. J. (1986).** "Learning representations by back-propagating errors." *Nature*, 323, 533–536.
 
+Research paper describing the use of backpropagation for learning internal representations in neural networks.
+
 https://doi.org/10.1038/323533a0
 
-**[4] Sanderson, G. (3Blue1Brown).** *Neural Networks.* Video series explaining neural networks, gradient descent, and backpropagation.
+**[4] Sanderson, G. (3Blue1Brown).** *Neural Networks.*
+
+An educational video series explaining neural networks, gradient descent, and backpropagation through visual demonstrations.
 
 https://www.3blue1brown.com/topics/neural-networks
 
-**[5] Vaswani, A., et al. (2017).** "Attention Is All You Need." The research paper introducing the transformer architecture.
+**[5] Vaswani, A., et al. (2017).** "Attention Is All You Need." *Advances in Neural Information Processing Systems.*
+
+The research paper introducing the Transformer architecture.
 
 https://arxiv.org/abs/1706.03762
 
-**[6] Ouyang, L., et al. (2022).** "Training language models to follow instructions with human feedback." Research on instruction-following models and reinforcement learning from human feedback.
+**[6] Ouyang, L., et al. (2022).** "Training language models to follow instructions with human feedback." *Advances in Neural Information Processing Systems 35.*
+
+Research on instruction-following language models and reinforcement learning from human feedback.
 
 https://arxiv.org/abs/2203.02155
 
-**[7] Anthropic.** *Prompt Engineering Overview.* Practical guidance on writing effective prompts.
+**[7] Anthropic.** *Prompt Engineering Overview.*
+
+Practical guidance on writing effective prompts and improving model responses.
 
 https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 
-**[8] Lewis, P., et al. (2020).** "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks." Research paper introducing RAG.
+**[8] Lewis, P., et al. (2020).** "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks."
+
+Research paper introducing retrieval-augmented generation for knowledge-intensive natural-language tasks.
 
 https://arxiv.org/abs/2005.11401
 
-**[9] Stanford Institute for Human-Centered AI.** *AI Index Report 2026.* Annual report on AI development, research, and industry trends.
+**[9] Stanford Institute for Human-Centered Artificial Intelligence. (2026).** *AI Index Report 2026.*
+
+An annual report covering AI research, technical progress, industry developments, and broader societal trends.
 
 https://hai.stanford.edu/ai-index/2026-ai-index-report
 
-**[10] Google Creative Lab.** *Teachable Machine.* Browser-based tool for training simple machine-learning models without coding.
+**[10] Google Creative Lab.** *Teachable Machine.*
+
+A browser-based tool for training simple machine-learning models without coding.
 
 https://teachablemachine.withgoogle.com/
 
@@ -1449,9 +2030,11 @@ https://teachablemachine.withgoogle.com/
 
 - **Andrew Ng, AI for Everyone (Coursera):** A non-technical introduction to AI and its applications.
 
-https://www.coursera.org/learn/ai-for-everyone
+  https://www.coursera.org/learn/ai-for-everyone
 
-*External links and the availability of online resources should be checked again before publication.*
+- **Google Machine Learning Crash Course:** A practical learning resource for students who want to explore machine learning in greater depth.
+
+  https://developers.google.com/machine-learning/crash-course
 
 ---
 
