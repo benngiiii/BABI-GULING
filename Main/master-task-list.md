@@ -276,19 +276,13 @@ After completing this module, learners should be able to:
 
 ## Workflow
 
-```mermaid
-flowchart TB
-    subgraph Stages["Stage timeline"]
-        direction LR
-        S1["Stage 1<br/>Foundation, Oct 24"] --> S2["Stage 2<br/>First versions, Nov 7"] --> S3["Stage 3<br/>Final, Nov 28"]
-    end
-    subgraph Flow["Workflow repeated in each stage"]
-        direction LR
-        R["Research<br/>Outline first"] --> M["Markdown<br/>Draft, self-check"] --> V["Review<br/>Peer, quality"] --> P["Produce<br/>3 resources"] --> H["Rehearse<br/>Collect feedback"] --> C["Corrections<br/>Fix Markdown first"] --> Sub["Submit<br/>Jonathan compiles*"]
-    end
-```
+![Stage timeline: Stage 1 foundation (Oct 24), Stage 2 first versions (Nov 7), Stage 3 final (Nov 28)](assets/fig-main-1-stage-timeline.png)
 
-*Jonathan compiles as CIO.
+*Figure M1: The three stages and their official due dates.*
+
+![Workflow repeated in each stage: research, Markdown, review, produce, rehearse, corrections, submit](assets/fig-main-2-workflow.png)
+
+*Figure M2: The workflow repeated in each stage. Jonathan compiles the submission as CIO.*
 
 ## Rough Plan
 
