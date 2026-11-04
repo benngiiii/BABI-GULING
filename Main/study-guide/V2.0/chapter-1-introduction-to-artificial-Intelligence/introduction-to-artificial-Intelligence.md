@@ -1,9 +1,9 @@
 # Chapter 1: Introduction to Artificial Intelligence
 
-**Team:** Babi Guling | **Module:** AI Overview | **Version:** 2.0
-**Author:** Joseph Lokman
+**Team:** Babi Guling | **Module:** AI Overview | **Version:** 2.1
+**Author:** Jonathan Sugianto
 **Audience:** Complete beginners. No programming or AI background needed.
-**Estimated time:** about 2 hours and 35 minutes (including activities)
+**Estimated time:** about 3 hours and 20 minutes (including activities)
 **How to work through it:** Predict, read, try the activity, check yourself, then compare with the answers.
 
 ---
@@ -52,17 +52,18 @@ After this chapter, you should be able to:
 3. Explain the difference between traditional programming and AI that learns from data.
 4. Use nine basic AI terms correctly: data, algorithm, label, machine learning, model, training, inference, neural network, deep learning.
 5. Walk through a simple example of a program that learns from examples, and explain why it works and where it fails.
+6. Compare several definitions of AI, name the main fields of AI, and name the three classic approaches to building AI (symbolic, connectionist, and behaviorist).
 
 ## Chapter Map
 
 | Section | Topic | What you will do | Time |
 |:-------:|-------|------------------|:----:|
-| 1.1 | What is AI? | Predict, then look for AI in your own day | 20 min |
-| 1.2 | A Brief History of AI | Order key events and find a wrong claim | 20 min |
+| 1.1 | What is AI? | Predict, compare definitions, then look for AI in your own day | 25 min |
+| 1.2 | A Brief History of AI | Order key events, read the history table, and find a wrong claim | 25 min |
 | 1.3 | AI vs Traditional Programming | Find a rule from examples, like a computer would | 25 min |
-| 1.4 | Basic AI Terminology | Learn nine terms and check them | 15 min |
-| 1.5 | Worked Example: A Spam Filter That Learns | Trace the filter, label its parts, retrain it, and look ahead to Chapter 2 | 45 min |
-| 1.6 | Practice Questions and Answers | Practice, apply, and find mistakes | 25 min |
+| 1.4 | Basic AI Terminology | Learn nine terms, see the main fields of AI, and check them | 25 min |
+| 1.5 | Worked Example: A Spam Filter That Learns | Trace the filter, label its parts, retrain it, look ahead to Chapter 2, and teach a computer to recognise hand signs | 65 min |
+| 1.6 | Practice Questions and Answers | Practice, apply, find mistakes, and connect fields and approaches | 30 min |
 | 1.7 | Summary, Bridge to Chapter 2, and References | Review and self-check | 5 min |
 
 ---
@@ -82,6 +83,21 @@ Three things to keep in mind:
 - **AI is a field of study**, just like biology or physics. People also say "an AI" for a specific system built using that field, such as a chatbot.
 - **There is no single official definition.** Different textbooks describe AI in slightly different ways. For example, Russell and Norvig (2021) organize the field around building systems that *act rationally*, meaning they choose actions that are likely to reach a goal. In this module, we use the simple definition above.
 - **AI is usually built for one specific job.** A system that is very good at chess cannot cook rice or drive a car. We will come back to this in Chapter 2 (§2.2.1, Artificial Narrow Intelligence).
+
+### Several ways to define AI
+
+Because AI is a young and fast-moving field, experts describe it in different ways. The table shows six well-known descriptions. Read the "Perspective" column: it shows what each description pays attention to.
+
+| Definition (summary or short quotation) | Source | Perspective |
+|-----------------------------------------|--------|-------------|
+| Instead of asking "Can machines think?", test whether a machine can take part in an "imitation game" so well that a person cannot tell it from a human. | Turing (1950) | **Behaviour**: judge a machine by how it behaves |
+| The founding proposal assumes that every aspect of learning, or any other feature of intelligence, can in principle be described so precisely that a machine can be made to simulate it. | McCarthy et al. (1955/2006) | **Simulation**: intelligence can be described and copied |
+| "It is the science and engineering of making intelligent machines, especially intelligent computer programs." | McCarthy (2007) | **Engineering**: a field of science and building |
+| AI is the study of agents that perceive their environment and act, with the goal of acting *rationally*, meaning choosing the action expected to best reach a goal. The authors also describe four views: thinking like humans, thinking rationally, acting like humans, and acting rationally. | Russell and Norvig (2021) | **Rational agent**: do the right thing for a goal |
+| "An AI system is a machine-based system that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments." | OECD (revised 2023) | **Policy and law**: what counts as an AI system |
+| The part of computer science that tries to make computers do tasks that normally need human intelligence. | This module | **Simple teaching definition** |
+
+**Why does this matter?** There is no single official definition because "intelligence" itself is hard to define. A definition about *behaviour* (Turing) is easy to test. A definition about *rational action* (Russell and Norvig) suits engineers. A definition for *policy* (OECD) helps lawmakers decide which systems need rules. In this module we use the simple definition above, and we say when another view helps.
 
 ### AI around you
 
@@ -162,16 +178,39 @@ The history of AI has exciting breakthroughs and also long periods of disappoint
 
 Check your predictions: Turing's paper (1950) came before the Dartmouth workshop (1956), and ELIZA (1966) came before Deep Blue (1997).
 
+### AI history at a glance
+
+The table above explains each moment. This second table shows the same history, plus a few more turning points, in the layout *Year, Key Events, Key People, Key Technologies*. The last column shows which **approach** the technology belongs to. Chapter 3 (§3.3) explains the three approaches.
+
+| Year | Key events | Key people | Key technologies | Approach |
+|:----:|------------|------------|------------------|:--------:|
+| 1950 | Turing proposes the imitation game as a test of machine intelligence | Alan Turing | Idea of a behaviour test for machines | (idea) |
+| 1956 | Dartmouth workshop; the 1955 proposal uses the term "artificial intelligence" | McCarthy, Minsky, Rochester, Shannon | First programs that reason with symbols | Symbolic |
+| 1959 | A checkers program improves by playing | Arthur Samuel | Early machine learning | Learning |
+| 1966 | ELIZA chats using keyword rules | Joseph Weizenbaum | Hand-written pattern rules | Symbolic |
+| 1970s | MYCIN, an expert system that advised doctors on infections, is developed at Stanford (Yu et al., 1979) | Edward Shortliffe and colleagues | IF-THEN rule bases and an inference engine | Symbolic |
+| 1986 | A paper on back-propagation shows how multi-layer neural networks can learn (Rumelhart et al., 1986) | David Rumelhart, Geoffrey Hinton, Ronald Williams | Back-propagation, neural networks | Connectionist |
+| 1997 | Deep Blue beats the world chess champion | IBM team (Campbell, Hoane, Hsu) | Special chess hardware and game-tree search | Symbolic (search) |
+| 2012 | AlexNet wins the ImageNet competition | Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton | Deep convolutional neural networks trained on GPUs | Connectionist |
+| 2015 | A deep network learns to play Atari games from the screen and the score (Mnih et al., 2015) | Volodymyr Mnih and colleagues at DeepMind | Deep reinforcement learning | Behaviorist and connectionist |
+| 2016 | AlphaGo beats Lee Sedol | David Silver and colleagues at DeepMind | Neural networks, tree search, and self-play reinforcement learning | All three |
+| 2017 | The Transformer is published | Ashish Vaswani and colleagues at Google | Attention-based neural networks | Connectionist |
+| 2022 | ChatGPT is released to the public | OpenAI | Large language models tuned with human feedback | Connectionist and behaviorist |
+
+Two patterns stand out. Early AI (1950s to 1980s) relied mostly on **rules and search written by people**. Since the 2010s, most headline results have come from **neural networks trained on large amounts of data**, often combined with learning from rewards. The "booms and winters" section below explains why progress was uneven.
+
 ### Where you will meet these again
 
-Several events in the table come back in later chapters:
+Several events in the tables come back in later chapters:
 
 | Event | Where it returns |
 |-------|------------------|
-| ELIZA (1966), which followed hand-written keyword rules | Chapter 2, §2.4.7: rule-based systems and symbolic AI |
-| Deep Blue (1997) | Chapter 2, §2.3.1: reactive machines |
-| AlexNet (2012) and deep learning | Chapter 2, §2.4.4, and Chapter 3, §3.6 |
-| The Transformer (2017) and ChatGPT (2022) | Chapter 2, §2.4.5 (generative AI) and Chapter 3, §3.7 (how modern language AI works) |
+| ELIZA (1966), which followed hand-written keyword rules | Chapter 2, §2.4.7, and Chapter 3, §3.4: rule-based systems and symbolic AI |
+| MYCIN (1970s), an expert system | Chapter 3, §3.4: expert systems and the MYCIN case study |
+| Deep Blue (1997) | Chapter 2, §2.3.1 (reactive machines) and Chapter 3, §3.4 (search) |
+| AlexNet (2012) and deep learning | Chapter 2, §2.4.4, and Chapter 3, §3.5 and §3.10 |
+| Atari-playing networks (2015) and AlphaGo (2016) | Chapter 3, §3.6: Behaviorist AI and reinforcement learning |
+| The Transformer (2017) and ChatGPT (2022) | Chapter 2, §2.4.5 (generative AI) and Chapter 3, §3.11 (how modern language AI works) |
 
 In the table above, **generative AI** means AI that creates new content such as text or images, and a **large language model** is an AI model trained on very large amounts of text so that it can generate text. Chapters 2 and 3 explain both in detail.
 
@@ -330,11 +369,11 @@ These terms appear again in the rest of the module.
 
 | Term | Developed further in |
 |------|----------------------|
-| Data | Chapter 3, §3.3 *Data: The Fuel of AI* |
-| Algorithm, model | Chapter 3, §3.4 *Algorithms and Models* |
-| Machine learning, label | Chapter 2, §2.4.1 and §2.4.2 (supervised, unsupervised, and reinforcement learning); Chapter 3, §3.5 |
-| Neural network, deep learning | Chapter 2, §2.4.4; Chapter 3, §3.6 |
-| Training, inference | Chapter 3, §3.8 *Training vs. Inference* |
+| Data | Chapter 3, §3.7 *Data: The Fuel of AI* |
+| Algorithm, model | Chapter 3, §3.8 *Algorithms and Models* |
+| Machine learning, label | Chapter 2, §2.4.1 and §2.4.2 (supervised, unsupervised, and reinforcement learning); Chapter 3, §3.9 |
+| Neural network, deep learning | Chapter 2, §2.4.4; Chapter 3, §3.10 |
+| Training, inference | Chapter 3, §3.12 *Training, Evaluation, and Inference* |
 
 Later chapters use these terms with the meaning given in the table above.
 
@@ -354,6 +393,54 @@ Think of studying for an exam and taking the exam.
 *Figure 1.6: How AI, machine learning, and deep learning fit together. Source: created by our team.*
 
 Deep learning is a part of machine learning, and machine learning is a part of AI.
+
+### A map of the main AI fields
+
+AI is not one technique. It is a family of fields that work on different kinds of problems. The map below shows eight main areas. Machine learning has the most branches because it supports many of the others.
+
+```mermaid
+flowchart TD
+    AI["Artificial Intelligence"]
+    ML["Machine learning"]
+    NLP["Natural language processing"]
+    CV["Computer vision"]
+    ROB["Robotics"]
+    KRR["Knowledge representation and reasoning"]
+    ETH["AI ethics and fairness"]
+    APP["Applications"]
+    SOC["AI and society"]
+    SUP["Supervised learning"]
+    UNS["Unsupervised learning"]
+    RL["Reinforcement learning"]
+    DL["Deep learning"]
+    AI --> ML
+    AI --> NLP
+    AI --> CV
+    AI --> ROB
+    AI --> KRR
+    AI --> ETH
+    AI --> APP
+    AI --> SOC
+    ML --> SUP
+    ML --> UNS
+    ML --> RL
+    ML --> DL
+```
+
+*Figure 1.7: A map of the main fields of AI. The fields overlap in real systems; for example, a chatbot combines machine learning and natural language processing.*
+
+| Field | What it is about | Everyday example | Where this module covers it |
+|-------|------------------|------------------|------------------------------|
+| **Machine learning** (supervised, unsupervised, reinforcement, deep learning) | Building models that learn patterns from data or experience | The spam filter in §1.5 | Chapter 2, §2.4; Chapter 3, §3.9 and §3.10 |
+| **Natural language processing (NLP)** | Letting computers read, write, and respond to human language | Translating a sign; a chatbot | Chapter 3, §3.4 (rule-based language) and §3.11 (language models) |
+| **Computer vision** | Letting computers understand images and video | Unlocking a phone with your face | Chapter 3, §3.5 (neural networks); Chapter 4 (perception and medical imaging) |
+| **Robotics** | Machines that sense, decide, and move in the real world | A robot vacuum choosing a route | Chapter 3, §3.6 (behaviour-based robotics) |
+| **Knowledge representation and reasoning** | Storing facts and rules so a computer can draw conclusions | A medical system that applies IF-THEN rules | Chapter 3, §3.4 |
+| **AI ethics and fairness** | Making AI safe, fair, and accountable | Checking a hiring tool for unfair results | Chapter 5 |
+| **Applications** | Using AI to solve real problems | Health, education, transport, finance | Chapter 4 |
+| **AI and society** | How AI changes work, privacy, and daily life | Deciding when to trust an AI answer | Chapter 5 |
+
+**Three ways to build AI.** Across these fields, researchers use three classic approaches: **symbolic AI** (knowledge written as rules and logic), **connectionist AI** (networks that learn from data), and **behaviorist AI** (learning by trial, error, and reward). They are not rivals, and many systems combine them. Chapter 3 (§3.3) introduces all three, and the spam filter you build in §1.5 is a small example of the learning-from-data idea.
 
 ### Check your understanding
 
@@ -554,6 +641,46 @@ One system can have several valid descriptions at once. That is the main idea of
 
 **Reflection (model answer):** Adding just two emails changed the model and flipped a prediction. The model only reflects the examples it was shown, so if some words or patterns are over-represented in one label, the model learns that pattern even when it is not meaningful. More data helps only when it is varied and balanced.
 
+### Activity 1.5b: Teach a computer to recognise rock, paper, scissors
+
+The spam filter learned from words. This activity lets you teach a computer to learn from **images**, with no coding. You will repeat the same steps you saw in §1.5: collect labeled data, train, and use the model on new data.
+
+**Goal:** Experience the data, label, training, model, and inference cycle with your own hand signs, and see how the quality of the training data changes the result.
+
+**Preparation:** A computer or phone with a camera, and a browser. We suggest Google's free Teachable Machine (https://teachablemachine.withgoogle.com/), which lets you train an image model in the browser without coding. Any similar no-code tool works. Time: about 20 minutes. *If you have no camera, use the fallback below.*
+
+**Privacy note:** Use only your own hand. Do not record other people without their permission, and read the tool's privacy information before you start.
+
+**Task**
+
+1. **Create three classes.** Name them *Rock*, *Paper*, and *Scissors*. Each class is a **label**.
+2. **Collect data.** Record about 30 images of each hand sign with your camera. Hold your hand in slightly different positions and distances.
+3. **Predict:** before training, how well do you think the model will do on a sign it has not seen? Write a number from 0 to 10.
+4. **Train** the model, then test it by showing each sign (this is **inference**). Write down whether each prediction was right.
+5. **Break it on purpose.** Retrain with only 5 images of each sign taken in the same position, and test again. Then test with the sign held very close to the camera, or with a different background.
+
+**Observation:** Record how the confidence changed between the 30-image model and the 5-image model, and which situation fooled the model.
+
+**Reflection (3 to 4 sentences):**
+
+1. Which of the nine terms in §1.4 did you use in each step?
+2. Why did the model get worse with few, similar images?
+3. How is this like the spam filter, where two new emails changed a prediction?
+4. Suggest one way to make the model work for many different people's hands.
+
+**Feedback (expected outcome and sample answers)**
+
+*Expected outcome:* The model with about 30 varied images per class is usually accurate on signs similar to those it saw. The model with 5 near-identical images is less reliable and can be confidently wrong when the hand, light, or background changes. Exact numbers differ between computers and cameras, so check the pattern rather than a specific score.
+
+1. Labels = the class names; data = the images; training = pressing the train button; model = the trained classifier; inference = showing a new sign; machine learning = the whole approach; neural network = the kind of model many such tools use.
+2. The model only knows the examples it was shown. With few, similar images it learns details that are not about the sign itself (such as the background), the same effect as the words "at" and "noon" in §1.5.
+3. In both cases, the predictions depend on the training data. A small change in the data changed the model.
+4. Collect images from many people, with different skin tones, hand sizes, lighting, and backgrounds, and test on people who were not in the training set.
+
+**Fallback (no camera or no internet):** Do the same activity on paper. Draw 10 simple stick-figure hand signs per class, split them into 7 for "training" and 3 for "testing", and write the features you would use to tell the classes apart (for example "number of extended fingers"). Describe where a rule on those features would fail, and why learning from examples can handle it better.
+
+**Optional extension (smart classroom idea):** Think of a classroom that reacts to commands such as "lights on" or "start the projector". List what data you would collect, what the labels would be, and what could go wrong (privacy, accents, noise).
+
 ---
 
 ## 1.6 Practice Questions and Answers
@@ -605,6 +732,23 @@ Use the model from Section 1.5 (the score table and the rule "total > 0 means sp
 
 **Q14 (Explain).** In 3 to 4 sentences, explain why the learning-based filter did better than the rule-based filter on "win money now" (Section 1.5, Step 6), but still cannot be trusted completely.
 
+### Part D: Definitions, fields, and approaches
+
+**Q15.** Which AI field focuses on letting computers read, write, and respond to human language?
+
+- A. Computer vision
+- B. Natural language processing
+- C. Robotics
+- D. Knowledge representation and reasoning
+
+**Q16.** Match each situation to a field from the map in §1.4: (a) a phone unlocks when it sees your face; (b) a translation app converts a menu; (c) a robot vacuum chooses a route around furniture; (d) a medical program applies stored IF-THEN rules to a patient's symptoms.
+
+**Q17.** In one sentence each, say where the "intelligence" comes from in **symbolic**, **connectionist**, and **behaviorist** AI (see the table in Chapter 3, §3.3).
+
+**Q18 (Find the mistake).** A classmate says: "ELIZA was created in 1966, so it was a neural network that learned from lots of conversations." What is wrong?
+
+**Q19.** Pick two definitions of AI from the table in §1.1. Explain in 2 to 3 sentences why they emphasise different things.
+
 ### Answers and Explanations
 
 **A1. B.** AI is about systems that do tasks needing human-like intelligence. A is wrong because most AI has no body. C is wrong because AI and the internet are different things. D is wrong because AI does not work like a human brain.
@@ -615,7 +759,7 @@ Use the model from Section 1.5 (the score table and the rule "total > 0 means sp
 
 **A4.** **Data** is the information the computer receives (for example, emails). A **model** is what the computer learns from that data: patterns used to make predictions.
 
-**A5. False.** Many modern AI systems learn from data, but not all. Some early systems, such as expert systems, used rules written by people. Chapter 2 (§2.4.7) explains symbolic AI.
+**A5. False.** Many modern AI systems learn from data, but not all. Some early systems, such as expert systems, used rules written by people. Chapter 2 (§2.4.7) and Chapter 3 (§3.4) explain symbolic AI.
 
 **A6.** Any one of these: cats come in many colors, sizes, and poses; photos have different lighting and angles; a cat may be partly hidden. It is almost impossible to write exact rules for every case.
 
@@ -635,6 +779,16 @@ Use the model from Section 1.5 (the score table and the rule "total > 0 means sp
 
 **A14.** *(Model answer)* The rule-based filter only looks for "free" or "prize", so it misses "win money now". The learning-based filter found from the examples that words like "win", "money", and "now" also appear in spam, so it catches that email. But it still relies on simple word counts from only six emails, so harmless words such as "at" and "noon" can pull a score the wrong way, as in "free prize at noon". Learned rules only cover what the training data showed.
 
+**A15. B.** Natural language processing (NLP) is about human language. Computer vision is about images, robotics is about machines acting in the world, and knowledge representation and reasoning is about storing facts and rules.
+
+**A16.** (a) Computer vision. (b) Natural language processing. (c) Robotics. (d) Knowledge representation and reasoning. Real products often combine fields; this question asks for the main field in each case.
+
+**A17.** *(Model answer)* **Symbolic:** the intelligence comes from facts and rules written by people. **Connectionist:** it comes from patterns learned from large amounts of data by connected units (a neural network). **Behaviorist:** it comes from experience, by acting and receiving rewards or penalties.
+
+**A18.** ELIZA used simple keyword rules written by its author (Weizenbaum, 1966). It did not learn from conversations and it was not a neural network. This is an early example of the symbolic approach (Chapter 3, §3.4). Neural networks became dominant much later (for example AlexNet in 2012).
+
+**A19.** *(Model answer, one possible pair)* Turing's description focuses on **behaviour**: a machine counts as intelligent if people cannot tell it from a human in conversation. The OECD description focuses on **what the system does with inputs**: it infers how to produce outputs such as predictions or decisions. The first suits a test of conversation skill; the second helps decide which systems should be covered by rules and laws. Any two definitions are accepted if the answer names a difference in what each one pays attention to.
+
 ---
 
 ## 1.7 Summary, Bridge to Chapter 2, and References
@@ -646,6 +800,8 @@ Use the model from Section 1.5 (the score table and the rule "total > 0 means sp
 - Traditional programming uses rules written by humans. Machine learning lets the computer find rules from examples.
 - **Training** builds a model from data. **Inference** uses the model on new data.
 - A model depends on its data, and it can make mistakes.
+- There is no single official definition of AI. Different definitions focus on behaviour, rational action, engineering, or policy.
+- AI is a family of fields (machine learning, NLP, computer vision, robotics, knowledge representation and reasoning, ethics, applications, and society), and researchers build AI with three classic approaches: symbolic, connectionist, and behaviorist. Chapter 3 explains how each one works.
 
 ### Self-check (answer without looking back)
 
@@ -672,6 +828,8 @@ Chapter 2 (*Types of Artificial Intelligence*) sorts AI systems from four perspe
 - **Learning approach:** how a system learns patterns from data (for example supervised learning and deep learning).
 - **Output and application:** what a system produces or helps accomplish (for example generative AI).
 
+Chapter 3 later returns to *how* AI is built, comparing the three classic approaches (symbolic, connectionist, and behaviorist) introduced in §1.4.
+
 You already took the first step: in Activity 1.5, Part C, you described our spam filter from several perspectives. Chapter 2 shows that these perspectives overlap, and that one system can have several valid descriptions.
 
 ### References
@@ -686,5 +844,13 @@ You already took the first step: in Activity 1.5, Part C, you described our spam
 8. Vaswani, A., et al. (2017). Attention is all you need. *Advances in Neural Information Processing Systems*, 30. https://arxiv.org/abs/1706.03762
 9. OpenAI. (2022, November 30). *Introducing ChatGPT*. https://openai.com/index/chatgpt/
 10. Russell, S., & Norvig, P. (2021). *Artificial Intelligence: A Modern Approach* (4th ed.). Pearson.
+11. McCarthy, J. (2007). *What is artificial intelligence?* Computer Science Department, Stanford University. https://www-formal.stanford.edu/jmc/whatisai.pdf (Opened 5 November 2026)
+12. OECD. (2023). *Definition of an AI system, as revised in 2023*. OECD.AI Policy Observatory. https://oecd.ai/en/wonk/definition (Opened 5 November 2026)
+13. Yu, V. L., Fagan, L. M., Wraith, S. M., Clancey, W. J., Scott, A. C., Hannigan, J., Blum, R. L., Buchanan, B. G., & Cohen, S. N. (1979). Antimicrobial selection by a computer: a blinded evaluation by infectious diseases experts. *JAMA*, 242(12), 1279–1282. (Reprinted as Chapter 31 of Buchanan & Shortliffe, 1984, *Rule-Based Expert Systems*. https://people.dbmi.columbia.edu/shortliffe/Buchanan-Shortliffe-1984/Chapter-31.pdf, opened 5 November 2026)
+14. Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). Learning representations by back-propagating errors. *Nature*, 323, 533–536. https://doi.org/10.1038/323533a0
+15. Mnih, V., et al. (2015). Human-level control through deep reinforcement learning. *Nature*, 518(7540), 529–533. https://research.google/blog/from-pixels-to-actions-human-level-control-through-deep-reinforcement-learning/ (Opened 5 November 2026)
+16. Google Creative Lab. *Teachable Machine*. https://teachablemachine.withgoogle.com/ *(Not verified: the site could not be opened during the review on 5 November 2026; check it works without an account before using it in class.)*
 
+> The six-row definition table in §1.1 uses direct quotations only for McCarthy (2007) and the OECD (2023). The other rows are summaries; check them against the sources before final submission. The Russell and Norvig description is a summary of their well-known four views and is *(Not verified)* against the 4th edition.
+>
 > The spam filter in Section 1.5 is the team's own simplified teaching example, inspired by word-counting spam filters. It does not copy a specific source. The mango table in Activity 1.3 and the two extra emails in Activity 1.5 are also invented for teaching.
