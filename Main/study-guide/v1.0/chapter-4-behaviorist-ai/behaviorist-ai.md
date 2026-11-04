@@ -1,7 +1,7 @@
 # Chapter 4: Behaviorist AI
 
 > **Module:** AI Overview
-> **Chapter:** 4 — Behaviorist AI (course Chapter 6)
+> **Chapter:** 4 — Behaviorist AI
 > **Version:** 1.1 (Stage 1, rebuilt from the lecturer's course slides)
 > **Author:** Joseph Lokman
 > **Reviewer:** Brian Djoni Suzanna
