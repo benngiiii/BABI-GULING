@@ -1,3204 +1,2318 @@
-# Stage 1 — AI Overview Study Guide
+# Stage 1 Combined Learning Content
 
-## About This Document
+**Babi Guling – AI Overview** | Version 1.1 | 2026-11-05
 
-This document contains the combined learning materials developed by Team Babi Guling for the **AI Overview** module during Stage 1 of the project.
-
-It brings together all five chapters into one document, making it easier to read, review, and export as a PDF for submission.
-
-The study guide covers the introduction to artificial intelligence, different types of AI, how AI works, real-world applications, and AI ethics and limitations.
-
-All materials were prepared by the team members and reviewed as part of the project's quality assurance process. The review records are kept in the project repository.
-
-## Chapters Included
-
-1. [Chapter 1: Introduction to Artificial Intelligence](#chapter-1-introduction-to-artificial-intelligence)
-2. [Chapter 2: Types of Artificial Intelligence](#chapter-2-types-of-artificial-intelligence)
-3. [Chapter 3: How Artificial Intelligence Works](#chapter-3-how-artificial-intelligence-works)
-4. [Chapter 4: Applications of AI](#chapter-4-applications-of-ai)
-5. [Chapter 5: AI Ethics and Limitations](#chapter-5-ai-ethics-and-limitations)
+This file combines the four rebuilt chapters (Chapter 1: Introduction to CS and AI; Chapter 2: Symbolic AI; Chapter 3: Connectionist AI and Big Data; Chapter 4: Behaviorist AI). Regenerate it from the final chapter files before submission. Anchors inside each chapter work only in the separate chapter files.
 
 ---
 
+# Chapter 1: Introduction to CS and AI
 
-# Chapter 1: Introduction to Artificial Intelligence
-> **Author:** Jonathan Sugianto | **Reviewer:** Brian Djoni Suzanna  
-> **Audience:** Complete beginners. No programming or AI background needed.  
-> **Estimated study time:** Approximately 2–3 hours (including practice questions)
+> **Module:** AI Overview
+> **Chapter:** 1 — Introduction to CS and AI (course Chapter 1)
+> **Version:** 1.1 (Stage 1, rebuilt from the lecturer's course slides)
+> **Author:** Jonathan Sugianto (proposed owner)
+> **Reviewer:** Brian Djoni Suzanna
+> **Audience:** Complete beginners with basic computer and internet literacy; no programming experience needed
+> **Estimated study time:** about 2 hours, including activities
+> **Course source:** Lecturer's slides "chap1: Intro to CS and AI". The chapter follows the slides' outline: history, definitions, main topics, and a hands-on machine-learning activity.
 
 ---
-
-<a id="chapter-1-table-of-contents"></a>
 
 ## Table of Contents
 
-1. [Learning Outcomes](#chapter-1-learning-outcomes)
-2. [Chapter Map](#chapter-1-chapter-map)
-3. [1.1 What is AI?](#11-what-is-ai)
-4. [1.2 A Brief History of AI](#12-a-brief-history-of-ai)
-5. [1.3 AI vs Traditional Programming](#13-ai-vs-traditional-programming)
-6. [1.4 Basic AI Terminology](#14-basic-ai-terminology)
-7. [1.5 Worked Example: A Spam Filter That Learns](#15-worked-example-a-spam-filter-that-learns)
-8. [1.6 Practice Questions and Answers](#16-practice-questions-and-answers)
-9. [1.7 Summary, Reuse Plan, and References](#17-summary-reuse-plan-and-references)
+1. [Learning Outcomes](#learning-outcomes)
+2. [Chapter Map](#chapter-map)
+3. [Topic 1: Computer Science](#topic-1-computer-science)
+4. [Topic 2: Artificial Intelligence](#topic-2-artificial-intelligence)
+5. [Topic 3: Machine Learning: A First Look](#topic-3-machine-learning-a-first-look)
+6. [Topic 4: Hands-On Activity: Machine Learning](#topic-4-hands-on-activity-machine-learning)
+7. [Topic 5: Ask, Then Verify (Using an AI Assistant for Study)](#topic-5-ask-then-verify-using-an-ai-assistant-for-study)
+8. [Key Takeaways](#key-takeaways)
+9. [Practice Questions](#practice-questions)
+10. [Answer Key](#answer-key)
+11. [Glossary](#glossary)
+12. [References](#references)
 
 ---
 
-<a id="chapter-1-learning-outcomes"></a>
-
 ## Learning Outcomes
 
-After this chapter, you should be able to:
+After completing this chapter, you should be able to:
 
-1. Explain in your own words what Artificial Intelligence (AI) is.
-2. Describe five key moments in the history of AI.
-3. Explain the difference between traditional programming and AI that learns from data.
-4. Use nine basic AI terms correctly: data, algorithm, label, machine learning, model, training, inference, neural network, deep learning.
-5. Walk through a simple example of a program that learns from examples, and explain why it works and where it fails.
+1. Give two or more definitions of **Computer Science (CS)** and **Artificial Intelligence (AI)**, and explain how they differ in wording.
+2. Describe the main milestones in the history of CS and of AI, using the form *year, event, people, technology*.
+3. Name the main areas of CS and the main areas of AI, and explain where AI sits inside CS.
+4. Describe the three families of machine learning (supervised, unsupervised, reinforcement) with one example each.
+5. Explain, in your own words, how a machine learns from labelled examples, using a small hands-on activity.
+6. Name the three classic approaches to AI that the next three chapters cover: Symbolic AI, Connectionist AI, and Behaviorist AI.
 
-<a id="chapter-1-chapter-map"></a>
+---
 
 ## Chapter Map
 
-| Section | Topic |
-|:-------:|-------|
-| 1.1 | What is AI? |
-| 1.2 | A Brief History of AI |
-| 1.3 | AI vs Traditional Programming |
-| 1.4 | Basic AI Terminology |
-| 1.5 | Worked Example: A Spam Filter That Learns |
-| 1.6 | Practice Questions and Answers |
-| 1.7 | Summary, Reuse Plan, and References |
-
----
-
-## 1.1 What is AI?
-
-### A simple definition
-
-**Artificial Intelligence (AI)** is the part of computer science that tries to make computers do tasks that normally need human intelligence. Examples are recognizing faces, understanding speech, translating languages, and making decisions.
-
-Three things to keep in mind:
-
-- **AI is a field of study**, just like biology or physics. People also say "an AI" for a specific system built using that field, such as a chatbot.
-- **There is no single official definition.** Different textbooks describe AI in slightly different ways. For example, Russell and Norvig (2021) organize the field around building systems that *act rationally*, meaning they choose actions that are likely to reach a goal. In this module, we use the simple definition above.
-- **AI is usually built for one specific job.** A system that is very good at chess cannot cook rice or drive a car. We will come back to this in Chapter 2.
-
-### AI around you
-
-You probably used AI several times today without noticing.
-
-| Situation | What the AI is doing |
-|-----------|----------------------|
-| Unlocking your phone with your face | Checking if the face matches the owner |
-| Watching a video app | Predicting which videos you may like next |
-| Typing a message | Suggesting the next word |
-| Pointing your camera at a foreign sign | Reading the text and translating it |
-| Checking your email | Moving suspicious emails to the spam folder |
-| Using a chatbot | Writing a reply to your question |
-
-### Three common myths
-
-| Myth | What is actually true |
-|------|-----------------------|
-| "AI is a robot." | Most AI is just software with no body. A robot is a machine, and AI can act as its "brain," but they are not the same thing. |
-| "AI thinks like a human." | Today's AI finds patterns in data. Scientists still debate what "understanding" means for a machine, but AI does not work like a human brain. |
-| "AI is always right." | AI makes mistakes, sometimes confident ones. We cover this in Chapter 5. |
-
----
-
-## 1.2 A Brief History of AI
-
-The history of AI has exciting breakthroughs and also long periods of disappointment. Here are some important moments. The sources for each event are listed in Section 1.7.
-
-![Timeline of key moments in AI history from 1950 to 2022](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/assets/fig-1-2-timeline.png)
-*Figure 1.1: Timeline of key moments in AI history. Source: created by our team, based on the references in Section 1.7.*
-
-| Year | Event | Why it matters |
-|:----:|-------|----------------|
-| 1950 | Alan Turing publishes the paper *Computing Machinery and Intelligence* (Turing, 1950). He suggests the "imitation game" (later called the **Turing Test**): if a person chatting with a machine cannot tell it apart from a human, can we say the machine is intelligent? | He turned the question "Can machines think?" into something that can be tested. |
-| 1955–1956 | John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon write a proposal in 1955 for a summer workshop at Dartmouth College (McCarthy et al., 1955/2006). The proposal uses the term "artificial intelligence." The workshop takes place in summer 1956. | Many people see this as the start of AI as a research field. |
-| 1959 | Arthur Samuel describes a checkers program that improves by playing and learning from experience (Samuel, 1959). | One of the first examples of a computer **learning** instead of only following fixed instructions. |
-| 1966 | Joseph Weizenbaum creates **ELIZA**, a program that chats using simple keyword rules (Weizenbaum, 1966). | An early chatbot. Many users felt that ELIZA understood them, even though it did not. |
-| 1997 | IBM's **Deep Blue** beats world chess champion Garry Kasparov in a six-game match (3½ to 2½) (Campbell et al., 2002). | A machine beat the best human at a game people linked with intelligence. |
-| 2012 | A neural network called **AlexNet** wins the ImageNet image recognition competition by a large margin (Krizhevsky et al., 2012). | Started the modern boom of **deep learning**. |
-| 2016 | **AlphaGo** (made by Google DeepMind) beats Lee Sedol, a top Go player, 4 games to 1 (Silver et al., 2016). | Go is much harder for computers than chess. AlphaGo learned from many human games and then improved by playing against itself. |
-| 2017 | Google researchers publish the **Transformer**, a new design for neural networks (Vaswani et al., 2017). | It is the base of today's large language models. |
-| 2022 | OpenAI releases **ChatGPT** to the public on 30 November (OpenAI, 2022). | Made generative AI available to millions of ordinary users. |
-
-### Two famous moments in pictures
-
-![Alan Turing at age 16](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/assets/turing-aged-16.jpg)
-*Figure 1.2: Alan Turing at age 16 (passport photo, around 1927–1928). Source: Wikimedia Commons, "File:Alan Turing Aged 16.jpg" (https://commons.wikimedia.org/wiki/File:Alan_Turing_Aged_16.jpg). License: public domain (Public Domain Mark 1.0), as stated on the Commons file page.*
-
-![A computer similar to Deep Blue at the Computer History Museum](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/assets/deep-blue-chm.jpg)
-*Figure 1.3: A computer similar to Deep Blue, displayed at the Computer History Museum. Photo by James (originally on Flickr). Source: Wikimedia Commons, "File:Deep Blue.jpg" (https://commons.wikimedia.org/wiki/File:Deep_Blue.jpg), also used in the Wikipedia article "Deep Blue (chess computer)". License: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/).*
-
-### Booms and "AI winters"
-
-In the early years, researchers expected fast progress. But computers were slow, and there was little data, so many promises were not kept. Funding and interest dropped, first in the 1970s and again from the late 1980s into the early 1990s. These quiet periods are called **AI winters**.
-
-Progress became fast again when three things came together: **much more data** (from the internet), **much faster computers**, and **better learning methods**.
-
----
-
-## 1.3 AI vs Traditional Programming
-
-### Traditional programming: a human writes the rules
-
-Think of a **recipe**. It gives exact steps, and if you follow them, you get the same dish every time.
-
-Traditional programming works the same way. The programmer writes exact instructions, called **rules**. The computer takes the **rules** and the **data**, and gives **answers**.
-
-*Example:* A program that changes Celsius to Fahrenheit uses the fixed rule `F = C × 9/5 + 32`. The rule is clear and always correct.
-
-### Machine learning: the computer finds the rules
-
-Now imagine you must write exact rules to decide "Is this mango ripe?" You would need to describe color, smell, softness, and more, and every mango is a little different. It is very hard to write rules for this.
-
-Instead, a person learns from experience: after seeing and touching many mangoes, you can tell if one is ripe, even if you cannot explain every rule. **Machine learning** does something similar. We give the computer many **examples with the correct answers**, and it finds the patterns by itself.
-
-> This is an example of **supervised learning**, where a model learns from labeled data. Other machine learning approaches may learn without labeled answers.
-
-![Diagram comparing traditional programming (rules and data go in, answers come out) with machine learning (data and correct answers go in, rules come out)](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/assets/fig-1-3-traditional-vs-ml.png)
-*Figure 1.4: Traditional programming vs machine learning. Source: created by our team.*
-
-### Side-by-side comparison
-
-| | Traditional Programming | Machine Learning |
-|---|------------------------|------------------|
-| Who creates the rules? | The programmer | The computer, from examples |
-| What goes in? | Data + rules | Data + correct answers |
-| What comes out? | Answers | Rules (a **model**) that can give answers for new data |
-| Works best when | Rules are clear and exact (calculating tax, sorting names) | Rules are hard to write (recognizing faces, understanding speech) |
-| Main weakness | Fails on cases the programmer did not think of | Needs a lot of good data, and learns mistakes if the data is bad |
-
-> **Important note:** Not all AI learns from data. Some early AI systems, such as *expert systems*, used rules written by human experts. We focus on learning-based AI because it powers most modern tools, but the two ideas are not the same thing.
-
-In Section 1.5, you will see both approaches solve the same task, so you can compare them directly.
-
----
-
-## 1.4 Basic AI Terminology
-
-These terms appear again in the rest of the module.
-
-| Term | Simple meaning | Example |
-|------|----------------|---------|
-| **Data** | Information a computer can process, like numbers, text, images, or sound. | A collection of 1,000 emails |
-| **Algorithm** | A step-by-step method for solving a problem. | The steps for sorting names from A to Z |
-| **Label** | The correct answer attached to an example. | "Spam" or "Not spam" |
-| **Machine Learning (ML)** | A way of building AI where the computer learns patterns from data instead of being given exact rules. | A system that learns to detect spam from examples |
-| **Model** | What the computer has learned: patterns used to make predictions on new data. | A spam filter after it has studied many emails |
-| **Training** | Showing data to a learning algorithm so it can build a model. | Studying 10,000 labelled emails |
-| **Inference** | Using a trained model on new data to get a result. | Checking a brand-new email |
-| **Neural network** | A model made of many simple connected units. It is loosely inspired by the brain, and it learns by adjusting how strong each connection is. | A network that recognizes handwritten digits |
-| **Deep learning** | Machine learning that uses neural networks with many layers. | Speech recognition and image recognition |
-
-### Training vs inference: an everyday comparison
-
-Think of studying for an exam and taking the exam.
-
-- **Training** is like studying many past questions. It takes a long time, and you do it before the exam.
-- **Inference** is like answering questions in the real exam. You use what you learned on questions you have not seen before.
-
-![Diagram showing training (data and labels go into a learning algorithm to build a model) and inference (new data goes through the model to give a prediction)](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/assets/fig-1-4b-training-vs-inference.png)
-*Figure 1.5: Training vs inference. Source: created by our team.*
-
-### How the fields fit together
-
-![Nested circles showing deep learning inside machine learning inside artificial intelligence](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/assets/fig-1-4-ai-ml-dl.png)
-*Figure 1.6: How AI, machine learning, and deep learning fit together. Source: created by our team.*
-
-Deep learning is a part of machine learning, and machine learning is a part of AI.
-
----
-
-## 1.5 Worked Example: A Spam Filter That Learns
-
-Let's build a very small spam filter by hand. Real filters are much more advanced, but this shows the full cycle: **data → training → model → inference**. At the end, we also compare it with a filter made of hand-written rules.
-
-### Step 1: Collect labelled data
-
-We have six short emails with labels.
-
-| # | Email text | Label |
-|:-:|-----------|:-----:|
-| 1 | win free prize now | Spam |
-| 2 | free money offer | Spam |
-| 3 | meeting at noon | Not spam |
-| 4 | project report due | Not spam |
-| 5 | claim your free prize | Spam |
-| 6 | lunch at noon tomorrow | Not spam |
-
-### Step 2: Train by counting
-
-For each word, count how many spam emails contain it, and how many not-spam emails contain it. Then calculate the word's **score**:
-
-> **score = (number of spam emails with the word) − (number of not-spam emails with the word)**
-
-| Word | In spam | In not spam | Score |
-|------|:-------:|:-----------:|:-----:|
-| free | 3 | 0 | **+3** |
-| prize | 2 | 0 | **+2** |
-| win, now, money, offer, claim, your | 1 each | 0 | **+1** each |
-| meeting, project, report, due, lunch, tomorrow | 0 | 1 each | **−1** each |
-| at | 0 | 2 | **−2** |
-| noon | 0 | 2 | **−2** |
-
-This score table is our **model**. We never wrote a rule like "the word *free* means spam." The scores came from the examples.
-
-> **Note:** These scores are simple counts taken from the six training emails. They are **not probabilities** and they do not measure how confident the filter is. They are only used together with this model's decision rule (Step 3).
-
-### Step 3: Make a decision rule
-
-> Add up the scores of all the words in an email. If the total is **greater than 0**, predict **Spam**. Otherwise, predict **Not spam**. A word that is not in the table scores 0.
-
-### Step 4: Inference on a new email
-
-New email: **"free offer tomorrow"**
-
-| Word | Score |
-|------|:-----:|
-| free | +3 |
-| offer | +1 |
-| tomorrow | −1 |
-| **Total** | **+3** |
-
-The total is above 0, so the prediction is **Spam**.
-
-### Step 5: See where it struggles
-
-New email: **"free lunch at noon"** (a friend inviting you to eat)
-
-| Word | Score |
-|------|:-----:|
-| free | +3 |
-| lunch | −1 |
-| at | −2 |
-| noon | −2 |
-| **Total** | **−2** |
-
-The prediction is **Not spam**, which is correct here. But look at how it happened: the harmless words "at" and "noon" pulled the score down. Now try **"free prize at noon"**: +3 +2 −2 −2 = **+1**, so the filter says **Spam**. Is it really spam? The filter cannot know, because it only counts words.
-
-### Step 6: Compare with a rule-based filter
-
-Now let's solve the same task the traditional way. A programmer looks at the emails and writes a rule by hand:
-
-> **Rule:** If the email contains the word "free" or "prize", predict **Spam**. Otherwise, predict **Not spam**.
-
-On our six training emails, this rule is correct every time: emails 1, 2, and 5 contain "free", and emails 3, 4, and 6 contain neither word. Now test both filters on two new emails:
-
-| New email | What it really is | Rule-based filter | Learning-based filter (score table) |
-|-----------|-------------------|-------------------|-------------------------------------|
-| win money now | Spam | Not spam ✗ (no "free" or "prize") | Spam ✓ (total +3) |
-| free lunch at noon | Not spam (a friend's invitation) | Spam ✗ (contains "free") | Not spam ✓ (total −2) |
-
-What we can learn from this comparison:
-
-- The rule-based filter only knows what the programmer thought of. To fix its mistakes, the programmer must edit the rule by hand.
-- The learning-based filter found useful words such as "money" and "noon" from the examples. To improve it, we add more labelled examples and count again.
-- Neither filter is perfect. The learning-based filter predicts "Spam" for "free prize at noon" (Step 5) because its total score is +1, but the prediction may still be unreliable because the model uses only simple word counts from six training emails. The rule-based filter would also call that email spam.
-
-### What this example teaches
-
-- **A model depends on its training data.** The words "at" and "noon" look "safe" only because our six emails happened to include them in not-spam messages.
-- **More and varied data makes a better model.** Six emails is far too few. Real filters learn from millions.
-- **Models make mistakes.** Even good filters sometimes block real emails or let spam through.
-- **Training and inference are separate.** We counted once (training), then used the same table for any number of new emails (inference).
-- **Hand-written rules and learned rules have different weaknesses.** Rules only cover what the programmer imagined, while learned models only cover what the data showed.
-
-> **Note:** This word-scoring method is a simplified teaching version. Real spam filters use more advanced statistical or neural network methods, and they look at much more than single words.
-
----
-
-## 1.6 Practice Questions and Answers
-
-<a id="chapter-1-part-a-check-your-understanding"></a>
-
-### Part A: Check your understanding
-
-**Q1.** Which statement describes AI best?
-
-- A. A robot that looks like a human
-- B. Computer systems that do tasks that normally need human intelligence
-- C. Any program that connects to the internet
-- D. A computer that thinks exactly like a human brain
-
-**Q2.** In traditional programming, who writes the rules? In machine learning, where do the rules come from?
-
-**Q3.** Put these steps in the correct order:
-
-- A. Use the model to check a new email
-- B. Train the model
-- C. Collect emails with labels
-
-Which step is **inference**?
-
-**Q4.** What is the difference between **data** and a **model**?
-
-**Q5.** True or False: "All AI systems learn from data." Explain your answer.
-
-**Q6.** Give one reason why it is hard to recognize a cat in a photo using hand-written rules.
-
-### Part B: Apply the idea
-
-Use the model from Section 1.5 (the score table and the rule "total > 0 means spam").
-
-**Q7.** Classify the email **"win money now"**. Show the total.
-
-**Q8.** Classify the email **"project meeting tomorrow"**. Show the total.
-
-**Q9.** Classify the email **"claim free money at noon"**. Show the total, then explain in one sentence why this result is uncertain.
-
-**Q10.** Classify the email **"hello friend"**. What does the result tell you about the model's limits?
-
-**Q11 (Think).** Our filter was trained on only six emails. Name **two** ways to improve it.
-
-<a id="chapter-1-answers-and-explanations"></a>
-
-### Answers and Explanations
-
-**A1. B.** AI is about systems that do tasks needing human-like intelligence. A is wrong because most AI has no body. C is wrong because AI and the internet are different things. D is wrong because AI does not work like a human brain.
-
-**A2.** In traditional programming, the **programmer** writes the rules. In machine learning, the **computer finds the rules** by studying examples with correct answers.
-
-**A3.** The order is **C → B → A**. Step **A** is **inference**, because it uses the trained model on a new email. Step B is training.
-
-**A4.** **Data** is the information the computer receives (for example, emails). A **model** is what the computer learns from that data: patterns used to make predictions.
-
-**A5. False.** Many modern AI systems learn from data, but not all. Some early systems, such as expert systems, used rules written by people.
-
-**A6.** Any one of these: cats come in many colors, sizes, and poses; photos have different lighting and angles; a cat may be partly hidden. It is almost impossible to write exact rules for every case.
-
-**A7.** win (+1) + money (+1) + now (+1) = **+3**, so **Spam**.
-
-**A8.** project (−1) + meeting (−1) + tomorrow (−1) = **−3**, so **Not spam**.
-
-**A9.** claim (+1) + free (+3) + money (+1) + at (−2) + noon (−2) = **+1**, so **Spam**. The total is barely above 0, and harmless words ("at", "noon") pulled the score down, so a small change in the training data could flip the result. The score is not a probability or a direct measure of confidence. Since the model uses only a small training dataset and simple word counts, its predictions may not always be reliable.
-
-**A10.** Both words are not in the table, so each scores 0. The total is **0**, which is not greater than 0, so the prediction is **Not spam**. The model has no knowledge about words it never saw during training, so it may be wrong on new kinds of emails.
-
-**A11.** Any two of these: add many more training emails; include more varied examples (different senders and topics); ignore very common words such as "at"; check the mistakes it makes and add them as new training examples; use a smarter scoring method.
-
----
-
-## 1.7 Summary, Reuse Plan, and References
-
-<a id="chapter-1-key-takeaways"></a>
-
-### Key takeaways
-
-- AI is the field of making computers do tasks that normally need human intelligence.
-- AI has a history of breakthroughs and "winters." The recent boom came from more data, faster computers, and better methods.
-- Traditional programming uses rules written by humans. Machine learning lets the computer find rules from examples.
-- **Training** builds a model from data. **Inference** uses the model on new data.
-- A model depends on its data, and it can make mistakes.
-
-### How this chapter will be reused
-
-| Resource | Planned use |
-|----------|-------------|
-| **Study Guide** | Sections 1.1–1.4 become the reading text. The terminology table becomes a glossary. Questions Q1–Q11 go into the Test Bank with the explained answers. |
-| **PPT Slides** | The timeline (1.2), the two flow diagrams (1.3), and the nested diagram (1.4) become full-slide visuals. The spam filter (1.5) becomes a step-by-step slide sequence that builds the score table, followed by the rule-based comparison. |
-| **Video Tutorial** | A short video that follows Section 1.5: show the six emails, build the score table on screen, test new emails while narrating each step, then compare with the rule-based filter. |
-
-<a id="chapter-1-references"></a>
-
-### References
-
-1. Turing, A. M. (1950). Computing machinery and intelligence. *Mind*, 59(236), 433–460. https://doi.org/10.1093/mind/LIX.236.433
-2. McCarthy, J., Minsky, M. L., Rochester, N., & Shannon, C. E. (2006). A proposal for the Dartmouth summer research project on artificial intelligence, August 31, 1955. *AI Magazine*, 27(4), 12–14. https://doi.org/10.1609/aimag.v27i4.1904
-3. Samuel, A. L. (1959). Some studies in machine learning using the game of checkers. *IBM Journal of Research and Development*, 3(3), 210–229. https://doi.org/10.1147/rd.33.0210
-4. Weizenbaum, J. (1966). ELIZA: A computer program for the study of natural language communication between man and machine. *Communications of the ACM*, 9(1), 36–45. https://doi.org/10.1145/365153.365168
-5. Campbell, M., Hoane, A. J., & Hsu, F.-h. (2002). Deep Blue. *Artificial Intelligence*, 134(1–2), 57–83. https://doi.org/10.1016/S0004-3702(01)00129-1
-6. Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). ImageNet classification with deep convolutional neural networks. *Advances in Neural Information Processing Systems*, 25. https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks
-7. Silver, D., et al. (2016). Mastering the game of Go with deep neural networks and tree search. *Nature*, 529, 484–489. https://doi.org/10.1038/nature16961
-8. Vaswani, A., et al. (2017). Attention is all you need. *Advances in Neural Information Processing Systems*, 30. https://arxiv.org/abs/1706.03762
-9. OpenAI. (2022, November 30). *Introducing ChatGPT*. https://openai.com/index/chatgpt/
-10. Russell, S., & Norvig, P. (2021). *Artificial Intelligence: A Modern Approach* (4th ed.). Pearson.
-
-> The spam filter in Section 1.5 is the team's own simplified teaching example, inspired by word-counting spam filters. It does not copy a specific source.
-
-# Chapter 2: Types of Artificial Intelligence
-
-> **Author:** Gandhi Bestin Dhammananda | **Reviewer:** Brian Djoni Suzanna  
-> **Audience:** Complete beginners. No programming or AI background needed.  
-> **Estimated study time:** Approximately 2–3 hours (including activities)
-
-<a id="chapter-2-learning-outcomes"></a>
-
-## Learning Outcomes
-
-After completing this chapter, readers should be able to:
-
-- Explain why AI can be classified in different ways.
-- Describe the three capability-based categories: Artificial Narrow Intelligence (ANI), Artificial General Intelligence (AGI), and Artificial Superintelligence (ASI).
-- Explain the four commonly discussed functionality-based categories.
-- Distinguish between established AI capabilities and those that remain hypothetical.
-- Explain the differences between Machine Learning and Generative AI.
-- Compare capability, functionality, Machine Learning, and Generative AI as different perspectives on AI.
-- Classify familiar AI applications and explain their classifications.
-- Recognize common misunderstandings and limitations of AI classification frameworks.
-
-<a id="chapter-2-chapter-map"></a>
-
-## Chapter Map
-
-| Section | Topic | Estimated time |
-| --- | --- | --- |
-| 2.1 | Introduction to AI Classification | 3 min |
-| 2.2 | AI Based on Capability | 8 min |
-| 2.3 | AI Based on Functionality | 10 min |
-| 2.4 | Machine Learning and Generative AI | 8 min |
-| 2.5 | Comparing the Classification Frameworks | 5 min |
-| 2.6 | Classification Activity | 5 min |
-| 2.7 | Common Misunderstandings | 3 min |
-| 2.8 | Practice Questions and Answers | 10 min |
-| 2.9 | Summary and References | 3 min |
-| **Total** |  | **55 min** |
-
-## 2.1 Introduction to AI Classification
-
-In Chapter 1, we learned that Artificial Intelligence (AI) allows computers to perform tasks that normally require human intelligence. Examples include recognizing images, answering questions, detecting spam, and recommending videos.
-
-However, AI systems do not all have the same abilities, designs, or purposes. Some are developed for specific tasks, while others can handle a variety of requests. Some use information from earlier observations, while others generate new content such as text or images.
-
-To understand these differences, we use classification systems.
-
-A classification system groups things according to shared characteristics. For example, animals can be classified by their habitats or diets. Similarly, AI systems can be described according to their capabilities, functionality, learning methods, and intended outputs.
-
-This chapter introduces four useful perspectives:
-
-1. **Capability:** How broadly can an AI system perform intellectual tasks?
-2. **Functionality:** How does an AI system behave or use information within a commonly taught classification framework?
-3. **Machine Learning:** How does a system learn patterns from data?
-4. **Generative AI:** What kind of content can a system generate?
-
-These perspectives answer different questions. They are useful for introductory learning, but they do not form one universally standardized scientific taxonomy. Their categories may overlap, and the best description of a system depends on its design and the framework being used (IBM, n.d.; Stanford HAI, n.d.-a).
-
-## 2.2 AI Based on Capability
-
-Capability refers to the range and level of tasks an AI system can perform. A commonly used capability framework distinguishes three categories:
-
-- Artificial Narrow Intelligence (ANI)
-- Artificial General Intelligence (AGI)
-- Artificial Superintelligence (ASI)
-
-These categories describe different levels of possible intellectual capability. They should not be understood as three equally developed technologies (IBM, n.d.; Stanford HAI, n.d.-b).
-
-### 2.2.1 Artificial Narrow Intelligence (ANI)
-
-Artificial Narrow Intelligence (ANI), also called narrow AI, is AI designed or developed to perform a specific task or a limited range of tasks.
-
-Consider a calculator. It can perform calculations quickly, but it cannot automatically become a doctor, write a novel, or drive a car. Similarly, an AI system may perform its intended task very well without possessing general intelligence.
-
-ANI is sometimes called weak AI. The word _weak_ does not necessarily mean that the system performs poorly. It refers to the limited scope of its abilities compared with the broad capabilities associated with human intelligence.
-
-**Examples of ANI**
-
-- **Facial recognition:** Compares facial information to help identify or verify a person.
-- **Spam detection:** Identifies suspicious emails and helps filter unwanted messages.
-- **Recommendation systems:** Suggests videos, music, or products based on relevant information.
-- **Conversational AI:** Answers questions, summarizes text, and assists with writing.
-- **Image generation:** Produces images in response to instructions.
-
-These systems perform different tasks, but their ability to perform those tasks does not automatically establish general human-level intelligence.
-
-**Main characteristics of ANI**
-
-- It performs a particular task or a defined range of tasks.
-- It may outperform people on its intended task.
-- It can still make mistakes.
-- Strong performance in one area does not prove that it can perform every intellectual task.
-
-Modern conversational AI can handle many different requests. However, this breadth alone does not establish that a system meets a particular definition of AGI. Current AI systems are generally discussed as narrow AI under this framework (IBM, n.d.; Stanford HAI, n.d.-a).
-
-### 2.2.2 Artificial General Intelligence (AGI)
-
-Artificial General Intelligence (AGI) refers to a proposed form of AI with broad, flexible intellectual abilities, potentially comparable to human abilities across a wide range of tasks.
-
-Imagine someone who learns to cook and then applies their general problem-solving abilities to learn a language, repair a bicycle, or plan a journey. People can often transfer knowledge between different situations. AGI aims for similarly broad and flexible abilities in an artificial system.
-
-AGI does not need to look like a human or have a human body. The central idea is the breadth and flexibility of its intellectual abilities.
-
-**What might AGI be able to do?**
-
-A system that meets a strong definition of AGI might be able to:
-
-- Learn unfamiliar intellectual tasks with limited task-specific preparation.
-- Apply knowledge from one area to another.
-- Solve new problems it has not encountered before.
-- Adapt flexibly to different situations.
-
-These are proposed characteristics. Researchers and organizations do not all agree on the exact abilities necessary to qualify as AGI.
-
-**Does AGI exist today?**
-
-There is no universally accepted definition or test for AGI. Researchers and technology organizations may disagree about which abilities are necessary for a system to qualify.
-
-Current AI systems can perform many impressive tasks. However, broad performance alone does not settle whether a system meets a particular definition of AGI (Stanford HAI, n.d.-b).
-
-For this chapter, AGI is treated as a proposed level of general intelligence whose achievement has not been universally confirmed.
-
-### 2.2.3 Artificial Superintelligence (ASI)
-
-Artificial Superintelligence (ASI) refers to a hypothetical form of AI that would surpass human intellectual abilities across many or most important domains.
-
-The distinction between AGI and ASI can be understood simply:
-
-- **AGI:** Broad intellectual abilities comparable to humans under a given definition.
-- **ASI:** Intellectual abilities that surpass human abilities across many important domains.
-
-A hypothetical ASI might solve difficult scientific problems, develop new mathematical ideas, and plan complex projects beyond the abilities of the best human experts.
-
-These are possible future scenarios, not descriptions of an AI system known to exist today.
-
-**Possible benefits and concerns**
-
-If such a system were developed, it might help researchers investigate difficult scientific questions or find solutions to complex problems. However, it could also raise serious concerns about safety, control, responsibility, and the consequences of its decisions.
-
-Its effects would depend on how it was designed, managed, and used. It would be inaccurate to assume that superintelligence would automatically be helpful or harmful.
-
-**Does ASI exist today?**
-
-ASI remains hypothetical. There is no verified evidence that an AI system currently surpasses human intellectual abilities across all or nearly all relevant domains.
-
-High performance also does not automatically imply consciousness, emotions, or self-awareness. These are separate questions.
-
-### 2.2.4 Comparing ANI, AGI, and ASI
-
-| Feature | ANI | AGI | ASI |
-| --- | --- | --- | --- |
-| Main idea | Specific or limited tasks | Broad, flexible intellectual abilities | Intellectual abilities beyond humans across many domains |
-| Scope | A defined or learned range of tasks | Broad and adaptable | Hypothetically beyond human capabilities in many areas |
-| Status | Established in current AI applications | No universally accepted confirmation of achievement | Hypothetical |
-| Example | Spam filter or facial recognition system | Hypothetical system with broad, flexible learning | Hypothetical system surpassing human experts across many fields |
-
-**Key takeaway:** ANI is established in practical AI applications today. AGI and ASI describe broader levels of possible capability whose achievement has not been universally established.
-
-## 2.3 AI Based on Functionality
-
-A second commonly taught framework groups AI according to its behavior and use of information. It contains four categories:
-
-1. Reactive Machines
-2. Limited-Memory AI
-3. Theory-of-Mind AI
-4. Self-Aware AI
-
-These categories are useful teaching concepts, not a universally standardized technical taxonomy. Real AI systems may have more complex architectures and behaviors than these introductory descriptions suggest (IBM, n.d.).
-
-### 2.3.1 Reactive Machines
-
-Reactive machines are systems that respond to current inputs without relying on stored memories of past events to guide decisions in the way described by this category.
-
-A classic example is IBM's Deep Blue chess computer, which defeated world chess champion Garry Kasparov in 1997. Deep Blue evaluated chess positions and selected moves using its computational methods. It is commonly used to illustrate reactive AI because it did not learn from a personal memory of previous games during play.
-
-Deep Blue was technically complex. Its use as an example does not mean that every chess-playing system belongs to the same category.
-
-**Main characteristics**
-
-- Responds to currently available inputs.
-- Does not use stored personal experiences in the way described by the limited-memory category.
-- Can perform a specific task very well.
-- Does not automatically gain broader abilities outside its intended task.
-
-**Advantages**
-
-Reactive systems can be useful for tasks with clear goals and defined conditions. Their behavior may be easier to analyze when their operating methods are well understood.
-
-**Limitations**
-
-A purely reactive system, as described here, cannot rely on a stored history of earlier situations in the way a memory-based system can. It may therefore be unsuitable for tasks that depend heavily on remembering previous events.
-
-### 2.3.2 Limited-Memory AI
-
-Limited-Memory AI refers to systems that use information from earlier observations, historical data, or stored contextual information when producing outputs or making decisions.
-
-Imagine a driver approaching a busy road. The driver observes nearby cars and considers what happened moments earlier to decide whether to slow down. An AI driving system may similarly use recent sensor observations to track traffic and help make decisions.
-
-**Examples**
-
-- **Driver-assistance systems:** Some use recent sensor observations to track nearby vehicles.
-- **Recommendation systems:** Some use a person's earlier viewing or listening activity to suggest content.
-- **Conversational AI:** A system may use earlier messages in the same conversation to make a reply more relevant.
-
-These examples illustrate different uses of past information. Not every recommendation system or chatbot has the same memory design.
-
-**Main characteristics**
-
-- Uses previous observations or stored information in some form.
-- Can consider changes over time when its design supports this.
-- May make more context-sensitive decisions than a system using only one isolated input.
-- Remains limited by the information it can access and the way it was designed.
-
-**An important clarification about memory**
-
-Limited memory does not always mean that a system remembers only for a few seconds. Some systems use information during a short interaction, while others can use historical records over longer periods.
-
-Also, a system that uses stored information does not necessarily learn or improve automatically every time it is used. Updating a model and using existing information to produce a response are different things.
-
-Many modern AI applications use historical or contextual information, although their designs vary considerably (IBM, n.d.).
-
-### 2.3.3 Theory-of-Mind AI
-
-Theory-of-Mind AI is a proposed category of AI that would understand other people's beliefs, intentions, emotions, and perspectives in a deeper and more flexible way.
-
-In everyday life, people try to understand what others know or feel. For example, a teacher may notice that a student is confused even when the student does not say so directly. The teacher can then change the explanation to help the student.
-
-A hypothetical AI with strong theory-of-mind abilities would ideally reason about another person's mental state and use that understanding appropriately.
-
-**What might it do?**
-
-A hypothetical system might:
-
-- Recognize that two people have different beliefs about the same situation.
-- Consider what another person knows or does not know.
-- Adjust an explanation to account for a person's perspective.
-- Reason about possible intentions while recognizing uncertainty.
-
-These examples describe a proposed capability, not proof that current AI systems possess it in the full human sense.
-
-**Does this type of AI exist today?**
-
-AI systems can recognize certain emotional cues, classify facial expressions, or generate responses that sound empathetic. However, these abilities do not establish that a system genuinely understands another person's inner experience.
-
-Full theory-of-mind AI, as described here, remains an unestablished capability.
-
-**Main limitation**
-
-Human emotions and intentions are complex. The same expression can mean different things in different situations. An AI system may misinterpret someone's behavior, words, or cultural background.
-
-Therefore, we should not assume that an AI understands a person's feelings simply because it produces a convincing response.
-
-### 2.3.4 Self-Aware AI
-
-Self-aware AI is a hypothetical form of AI that would possess meaningful awareness of its own existence and internal state.
-
-Consider the difference between a machine that reports its battery level and a being that is aware of itself as an individual. A machine can monitor its battery and report that it is low without this demonstrating consciousness.
-
-**What might self-aware AI involve?**
-
-A hypothetical self-aware system might possess:
-
-- Meaningful awareness of itself as an entity.
-- An understanding of its own internal states.
-- Some form of subjective experience, if consciousness is included in the definition being used.
-
-There is no single agreed scientific definition of self-aware AI. These proposed features should not be treated as a confirmed technical specification.
-
-**Does self-aware AI exist today?**
-
-There is no widely accepted scientific demonstration that current AI systems possess consciousness or self-awareness in this strong sense.
-
-An AI system may describe itself, monitor its own performance, or say phrases such as "I think" and "I feel." These statements alone do not prove that it has subjective experiences or a conscious sense of self.
-
-**Main limitation**
-
-Consciousness is difficult to define and measure. It is therefore difficult to establish what evidence would be sufficient to prove machine consciousness. Claims about self-aware AI should be made carefully.
-
-### 2.3.5 Comparing the Four Functionality Categories
-
-| Category | Main idea | Illustrative example | Current status |
-| --- | --- | --- | --- |
-| Reactive Machines | Respond to current information without using stored past experiences in the described way | Deep Blue's chess-playing system | Classic examples exist |
-| Limited-Memory AI | Uses past observations or stored information | Driving system tracking nearby vehicles | Common in current AI applications |
-| Theory-of-Mind AI | Would reason about beliefs, intentions, and perspectives | Hypothetical assistant that understands what another person knows | Full capability remains unestablished |
-| Self-Aware AI | Would possess meaningful self-awareness or consciousness | Hypothetical conscious machine | Hypothetical; no accepted demonstration |
-
-The table describes the categories as used in this introductory framework. It does not mean that every system assigned to a category shares the same design or abilities.
-
-## 2.4 Machine Learning and Generative AI
-
-Machine Learning and Generative AI are important concepts in modern AI. They describe different aspects of systems and should not be treated as additional levels in the capability framework or as extra categories in the four-part functionality framework.
-
-### 2.4.1 What Is Machine Learning?
-
-Machine Learning (ML) is an approach in which computer systems learn patterns from data to make predictions, classifications, recommendations, or other outputs. Instead of relying only on manually specified rules, a machine-learning model uses patterns learned during training (NIST, n.d.-a; Stanford HAI, n.d.-c).
-
-Imagine teaching a system to distinguish between pictures of cats and dogs. Developers provide examples, and a model learns patterns that help it classify new images.
-
-**Common applications of Machine Learning**
-
-- **Spam detection:** Learns patterns associated with unwanted email.
-- **Recommendation systems:** Uses relevant activity and other data to suggest content.
-- **Fraud detection:** Identifies transactions that appear suspicious.
-- **Image recognition:** Classifies or detects objects in pictures.
-- **Forecasting:** Uses data to predict possible future values.
-
-Machine Learning does not guarantee accurate results. Models depend on the quality and suitability of their data, training methods, and evaluation.
-
-**How is ML related to AI?**
-
-AI is the broader field. Machine Learning is one approach used to develop AI systems. Not every AI method necessarily uses Machine Learning, and not every machine-learning application generates content.
-
-### 2.4.2 What Is Generative AI?
-
-Generative AI refers to AI systems that create new content, such as text, images, audio, video, or computer code. These systems learn patterns from data and use them to produce new outputs (NIST, n.d.-b; Stanford HAI, n.d.-d).
-
-**Examples include:**
-
-- **Text generation:** Drafts explanations, stories, or summaries.
-- **Image generation:** Creates pictures from text instructions.
-- **Audio generation:** Produces speech or music.
-- **Code generation:** Suggests or creates computer code.
-- **Video generation:** Produces video content from prompts or other inputs.
-
-Generative AI can produce useful and convincing content, but its output may contain factual errors, misleading information, or unsuitable material. Generated content should be checked when accuracy matters.
-
-Generating content also does not prove that a system understands it as a human would or possesses consciousness.
-
-### 2.4.3 How Are ML and Generative AI Different?
-
-| Feature | Machine Learning | Generative AI |
-| --- | --- | --- |
-| What does it describe? | An approach for learning patterns from data | AI systems designed to generate content |
-| Common outputs or functions | Predictions, classifications, recommendations, and other results | Text, images, audio, video, code, and other content |
-| Example | Predicting whether an email is spam | Generating an image from a text prompt |
-| Relationship to AI | A major approach used to develop AI systems | A category of AI systems focused on generating content |
-| Can they overlap? | Yes | Yes; many generative AI systems use Machine Learning |
-
-**Key takeaway:** Machine Learning describes how a system learns patterns from data. Generative AI describes systems that create content. Many generative AI systems use Machine Learning, but ML also supports applications that do not generate content.
-
-## 2.5 Comparing the Classification Frameworks
-
-The four perspectives discussed in this chapter answer different questions:
-
-- **Capability:** How broad are the system's intellectual abilities?
-- **Functionality:** How does it respond to information, or what proposed cognitive features does it illustrate?
-- **Machine Learning:** Does it learn patterns from data using a machine-learning approach?
-- **Generative AI:** Does it generate new content?
-
-These perspectives are related, but they are not interchangeable. They also do not form one standardized hierarchy.
-
-For example, a conversational AI system may answer science questions, write stories, and generate summaries. These abilities do not, by themselves, establish that it is AGI, understands emotions as a human does, or is self-aware.
-
-### 2.5.1 A Simplified Relationship Diagram
-
-The following diagram summarizes the four perspectives and their relationships.
-
-```
-                     ARTIFICIAL INTELLIGENCE
-                               |
-             +-----------------+-----------------+
-             |                 |                 |
-         CAPABILITY        FUNCTIONALITY    OTHER PERSPECTIVES
-             |                 |                 |
-        ANI, AGI, ASI     Four commonly      +----+----+
-                          taught categories  |         |
-                                             ML      Generative
-                                          (Machine      AI
-                                          Learning)
-                                             |         |
-                                             +----+----+
-                                                  |
-                                      Often used together
-```
-
-**How to read the diagram**
-
-- **Capability** describes the breadth of an AI system's intellectual abilities.
-- **Functionality** describes how a system behaves or uses information within the simplified framework introduced in Section 2.3.
-- **Machine Learning** describes an approach in which systems learn patterns from data.
-- **Generative AI** describes systems designed to generate content, such as text, images, audio, video, or code.
-- The connecting relationship between ML and Generative AI indicates that many generative AI systems use Machine Learning. It does not mean that the two terms are interchangeable or that Generative AI is a separate level of the ML hierarchy.
-
-This diagram is a simplified teaching aid, not a formal or universally standardized taxonomy. The four perspectives answer different questions, and one AI system may be described using more than one of them. Many Generative AI systems use ML, but the terms describe different aspects of AI (IBM, n.d.; NIST, n.d.-a, n.d.-b; Stanford HAI, n.d.-c, n.d.-d).
-
-### 2.5.2 Applying the Four Perspectives
-
-Consider a conversational AI system that can answer questions, summarize reports, and generate stories.
-
-- **Capability:** It may be described as ANI under the framework used in this chapter. Its broad performance alone does not establish AGI.
-- **Functionality:** Its classification depends on how it uses inputs, context, and stored information. A chatbot should not automatically be assigned a category solely because it produces conversational responses.
-- **Machine Learning:** It may use models trained on data to produce its outputs.
-- **Generative AI:** It qualifies as generative AI when it generates content such as text or stories.
-
-This example shows why one system can be described from several perspectives without those descriptions contradicting one another.
-
-### 2.5.3 Comparing the Perspectives
-
-| Question | Perspective | What it helps us understand |
-| --- | --- | --- |
-| How broadly can the system perform intellectual tasks? | Capability | The intended breadth of its abilities |
-| How does it respond to information or use memory? | Functionality | Its behavior under the introductory functionality framework |
-| How does it learn patterns from data? | Machine Learning | Its learning approach |
-| What kinds of content can it create? | Generative AI | Its content-generation abilities |
-
-These perspectives help describe AI systems, but no single perspective explains every aspect of a system.
-
-## 2.6 Classification Activity
-
-**Instructions:** Read each example. Identify the most suitable category or perspective and explain your choice in one or two sentences. Some examples can fit more than one perspective.
-
-| No. | Familiar application | Your task |
-| --- | --- | --- |
-| 1 | An email service identifies suspicious messages and moves them into a spam folder. | Identify its capability category and explain whether it may use ML. |
-| 2 | A music application recommends songs based on listening history. | Explain how ML and stored information may be involved. |
-| 3 | A chatbot writes a birthday greeting and summarizes a report. | Identify whether it is Generative AI and explain why this does not automatically establish AGI. |
-| 4 | A driving-assistance system uses recent observations of nearby cars to help determine when to slow down. | Identify the functionality category illustrated by its use of recent observations. |
-| 5 | A tool creates an image from the instruction "Draw a house beside a lake." | Identify the type of output and explain how it relates to Generative AI. |
-| 6 | A hypothetical AI reasons reliably about what different people believe and know. | Identify the proposed functionality category and state whether the full capability is established. |
-
-### Suggested Answers and Explanations
-
-**1\. ANI; possibly ML.** The system performs a specific task. It may use a machine-learning model trained to recognize patterns in spam, although not every spam filter must use ML.
-
-**2\. ANI; potentially ML and stored information.** A recommendation system may learn patterns from listening activity and use historical data to suggest songs. Its exact design determines how it works.
-
-**3\. Generative AI; generally ANI under this chapter's framework.** The chatbot generates text, but the ability to perform several language tasks does not automatically establish AGI.
-
-**4\. Limited-Memory AI.** The example illustrates the use of recent observations to support decisions. Actual driving systems vary in design.
-
-**5\. Generative AI.** The tool generates an image from a prompt. This describes its output, not its general level of intelligence.
-
-**6\. Theory-of-Mind AI.** The example describes a proposed ability to reason about other people's mental states. Full theory-of-mind capability, in the sense used here, remains unestablished.
-
-The purpose of this activity is not to force every application into a single label. It is to practise explaining which aspect of an AI system a category describes.
-
-## 2.7 Common Misunderstandings About AI Types
-
-### Misunderstanding 1: Every AI system has the same abilities.
-
-**Reality:** AI systems are designed for different purposes. A spam filter and a conversational assistant have different tasks and capabilities.
-
-### Misunderstanding 2: A powerful chatbot must be AGI.
-
-**Reality:** A chatbot may handle many types of requests, but broad performance alone does not establish AGI. The definition and assessment criteria matter (Stanford HAI, n.d.-b).
-
-### Misunderstanding 3: An AI that talks about emotions must feel them.
-
-**Reality:** Generating emotional language does not prove that a system has emotional experiences or consciousness.
-
-### Misunderstanding 4: All four functionality categories are established technologies.
-
-**Reality:** Reactive and limited-memory systems have practical examples. Full theory-of-mind and self-aware AI, as described in this chapter, remain unestablished.
-
-### Misunderstanding 5: Machine Learning and Generative AI mean the same thing.
-
-**Reality:** Machine Learning is an approach to learning patterns from data. Generative AI describes systems that generate content. Many generative AI systems use ML, but the terms are not interchangeable (NIST, n.d.-a, n.d.-b).
-
-### Misunderstanding 6: Every AI system belongs to exactly one category.
-
-**Reality:** A system may be described from multiple perspectives. For example, a generative AI application may use Machine Learning and still be considered ANI under the capability framework.
-
-## 2.8 Practice Questions and Answers
-
-<a id="chapter-2-part-a-check-your-understanding"></a>
-
-### Part A: Check Your Understanding
-
-**Q1. What is the main difference between ANI and AGI?**
-
-A. ANI is always a robot, while AGI is always software.
-
-B. ANI is designed for specific or limited tasks, while AGI refers to broader, general intellectual abilities.
-
-C. ANI is conscious, while AGI is not.
-
-D. ANI can only perform calculations.
-
-**Q2. Which capability category describes a hypothetical AI that surpasses human intellectual abilities across many important domains?**
-
-A. ANI
-
-B. AGI
-
-C. ASI
-
-D. Reactive Machines
-
-**Q3. Why should we be careful when someone claims that an AI system has achieved AGI?**
-
-**Q4. What is the main difference between reactive machines and limited-memory AI?**
-
-**Q5. Does an AI system that says "I feel sad" prove that it has emotions? Explain your answer.**
-
-### Part B: Apply the Ideas
-
-**Q6.** A company creates an AI system that detects damaged products on a factory conveyor belt. Which capability category best describes this system, and why?
-
-**Q7.** A driving system uses recent observations of nearby vehicles to help decide when to slow down. Which functionality category does this illustrate?
-
-**Q8.** Imagine a future AI that could reliably consider what different people believe, what information they have, and why they may act differently. Which functionality category would this resemble? Is the full capability established in current AI?
-
-**Q9.** A conversational assistant can write stories, answer questions, and summarize reports. Does this automatically make it AGI? Explain why or why not.
-
-**Q10.** Explain in your own words why capability classification and functionality classification are different.
-
-**Q11.** Explain the difference between Machine Learning and Generative AI. Give one example of each.
-
-**Q12.** An AI system uses Machine Learning to generate pictures from text instructions. Which of the four perspectives introduced in this chapter describe it, and what does each perspective tell us?
-
-<a id="chapter-2-answers-and-explanations"></a>
-
-### Answers and Explanations
-
-**A1. B.** ANI is designed for specific or limited tasks, while AGI refers to broad intellectual abilities across different tasks and domains.
-
-**A2. C.** ASI describes a hypothetical AI that would surpass human intellectual abilities across many or most relevant domains.
-
-**A3.** There is no universally accepted definition or test for AGI. A system may perform well on many tasks without satisfying every proposed definition of general intelligence.
-
-**A4.** A reactive machine responds to current information without relying on stored past experiences in the way described by this category. Limited-memory AI can use earlier observations or stored information to guide outputs or decisions.
-
-**A5.** No. Producing words about emotions does not prove that a system experiences them. Language output and consciousness are different questions.
-
-**A6. ANI.** The system is designed for a specific task: detecting damaged products. Performing that task well does not establish general intelligence.
-
-**A7. Limited-Memory AI.** The example uses recent observations over time to help make a decision.
-
-**A8. Theory-of-Mind AI.** The example describes the proposed ability to reason about people's beliefs and perspectives. The full capability described here has not been established in current AI.
-
-**A9.** No. Handling several kinds of requests does not automatically establish AGI. The system must be assessed against a clear definition of general intelligence, and no universally accepted test exists.
-
-**A10.** Capability classification describes how broadly an AI system can perform intellectual tasks. Functionality classification describes behavior, information use, or proposed features such as understanding other minds and self-awareness.
-
-**A11.** Machine Learning is an approach in which systems learn patterns from data; a spam detector is one example. Generative AI produces content; an image generator is one example. Many generative AI systems use Machine Learning.
-
-**A12.** All four perspectives can be relevant. Capability classification may describe the system as ANI if its abilities remain within the narrow-AI framework. Functionality classification depends on how it uses information and memory. Machine Learning describes how it learns patterns from data. Generative AI describes its ability to produce images.
-
-## 2.9 Summary and References
-
-<a id="chapter-2-key-takeaways"></a>
-
-### Key Takeaways
-
-- AI can be classified in different ways because systems have different abilities, designs, and purposes.
-- The capability framework distinguishes ANI, AGI, and ASI.
-- ANI is established in current practical applications. AGI has no universally accepted confirmation of achievement, and ASI remains hypothetical.
-- The commonly taught functionality framework distinguishes reactive machines, limited-memory AI, theory-of-mind AI, and self-aware AI.
-- Reactive and limited-memory systems have practical examples. Full theory-of-mind and self-aware AI remain unestablished in the senses described here.
-- Machine Learning is an approach to learning patterns from data.
-- Generative AI describes systems that generate content such as text, images, audio, video, and code.
-- Many generative AI systems use Machine Learning, but the terms describe different aspects of AI.
-- One system can be described through multiple perspectives. No single framework explains every aspect of an AI system.
-- Fluent language, broad task performance, or statements about feelings do not by themselves establish AGI, emotions, or consciousness.
-
-<a id="chapter-2-references"></a>
-
-### References
-
-IBM. (n.d.). _Understanding the different types of artificial intelligence_. IBM Think. https://www.ibm.com/think/topics/artificial-intelligence-types
-
-National Institute of Standards and Technology. (n.d.-a). _Machine learning_. CSRC Glossary. https://csrc.nist.gov/glossary/term/machine\_learning
-
-National Institute of Standards and Technology. (n.d.-b). _Generative artificial intelligence_. CSRC Glossary. https://csrc.nist.gov/glossary/term/generative\_artificial\_intelligence
-
-Stanford Institute for Human-Centered Artificial Intelligence. (n.d.-a). _What is artificial intelligence (AI)?_ https://hai.stanford.edu/ai-definitions/what-is-artificial-intelligence-ai
-
-Stanford Institute for Human-Centered Artificial Intelligence. (n.d.-b). _What is AGI (artificial general intelligence)?_ https://hai.stanford.edu/ai-definitions/what-is-agi-artificial-general-intelligence
-
-Stanford Institute for Human-Centered Artificial Intelligence. (n.d.-c). _What is Machine Learning (ML)?_ https://hai.stanford.edu/ai-definitions/what-is-machine-learning
-
-Stanford Institute for Human-Centered Artificial Intelligence. (n.d.-d). _What is Generative AI?_ https://hai.stanford.edu/ai-definitions/what-is-generative-ai
-
-# Chapter 3: How Artificial Intelligence Works
-
-> **Author:** Benedict Subhata | **Reviewer:** Brian Djoni Suzanna  
-> **Audience:** Learners who have completed Chapter 1 and Chapter 2  
-> **Estimated study time:** 90–120 minutes  
-> **Module:** AI Overview | **Level:** Beginner → Intermediate
-
-**Contents**
-
-- [3.1 Learning Objectives](#31-learning-objectives)
-- [3.2 The Big Picture](#32-the-big-picture)
-- [3.3 Data: The Fuel of AI](#33-data-the-fuel-of-ai)
-- [3.4 Algorithms and Models](#34-algorithms-and-models)
-- [3.5 Machine Learning: Learning from Examples](#35-machine-learning-learning-from-examples)
-- [3.6 Neural Networks and Deep Learning](#36-neural-networks-and-deep-learning)
-- [3.7 How Modern Language AI Works](#37-how-modern-language-ai-works)
-- [3.8 Training vs. Inference](#38-training-vs-inference)
-- [3.9 Evaluating a Model](#39-evaluating-a-model)
-- [3.10 The AI Workflow](#310-the-ai-workflow)
-- [3.11 From Beginner to Expert](#311-from-beginner-to-expert)
-- [3.12 Common Misconceptions](#312-common-misconceptions)
-- [3.13 Key Takeaways](#313-key-takeaways)
-- [3.14 Glossary](#314-glossary)
-- [3.15 Self-Check Reflection](#315-self-check-reflection)
-- [3.16 Practice Questions](#316-practice-questions)
-- [3.17 Hands-On Activities (No Coding Required)](#317-hands-on-activities-no-coding-required)
-- [3.18 Further Reading and References](#318-further-reading-and-references)
-
----
-
-## 3.1 Learning Objectives
-
-By the end of this chapter, you will be able to:
-
-1. Explain the role of **data** in an AI system and why its quality matters.
-2. Distinguish between an **algorithm** and a **model**.
-3. Describe how **machine learning** learns patterns instead of following hand-written rules.
-4. Explain, in plain language, how **neural networks** and **large language models** work.
-5. Distinguish **training** from **inference**, and tell apart improvements that *use* an existing model (inference-time) from those that *change or create* one (training-based).
-6. Read the basic **evaluation metrics** used to judge a model, and explain why deciding whether a result is "good enough" depends on the application.
-7. Trace the **end-to-end workflow** of an AI system.
-8. Use this understanding to **use AI tools more effectively and critically**.
-
-**Prerequisites:** Chapter 1 (What is AI) and Chapter 2 (Types of AI). Chapter 2 classified AI by *capability* and by *functionality*. This chapter looks *inside* the machine to see how it works.
-
----
-
-## 3.2 The Big Picture
-
-Traditional software follows rules that a programmer writes by hand. Machine-learning-based AI works the other way round.
-
-![Diagram contrasting traditional programming (rules and input produce output) with machine learning (data and answers produce rules)](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/assets/traditional-vs-ml.png)
-
-*Figure 3.1: In machine learning, you supply data and answers, and the computer discovers the rules.*
-
-| | Traditional Programming | Machine-Learning-Based AI |
-|---|---|---|
-| **You provide** | Rules + Input | Data + Desired Outputs (examples) |
-| **The computer produces** | Output | The rules (a *model*) |
-| **Example** | "If the email contains the word 'lottery', mark as spam." | Show the system 100,000 labelled emails; it discovers what spam looks like. |
-| **Handles new situations** | Only those the programmer anticipated | Can generalise to similar cases it has never seen |
-| **Breaks when** | Rules are incomplete | Data is poor, biased, or outdated |
-
-**Core idea:** Most modern AI does not get *told* how to solve a problem. It **learns patterns from data**, then applies those patterns to new situations.
-
-Three ingredients make this possible:
-
-```
- DATA  +  ALGORITHM  +  COMPUTING POWER  →  TRAINED MODEL
-```
-
-> **Why did AI take off in the 2010s and 2020s?** Not because of one invention, but because all three ingredients matured together: huge digital datasets (the internet, smartphones, sensors), better algorithms (deep learning, transformers), and cheap, powerful hardware (GPUs and specialised AI chips).
-
----
-
-## 3.3 Data: The Fuel of AI
-
-### What is data?
-
-Data is any recorded information an AI system can learn from: text, images, audio, video, numbers in a spreadsheet, clicks on a website, or sensor readings.
-
-### Types of data
-
-| Type | Description | Examples |
-|---|---|---|
-| **Structured** | Organised in rows and columns | Sales tables, bank records |
-| **Unstructured** | No fixed format | Emails, photos, videos, social media posts |
-| **Labelled** | Each example has the correct answer attached | A photo tagged "cat" |
-| **Unlabelled** | No answers attached | A pile of raw photos |
-
-Modern large language models (LLMs) are trained mostly on huge amounts of **unstructured text**, using a trick (Section 3.7) that creates the "labels" automatically from the text itself.
-
-### Where does training data come from?
-
-- **Collected by the organisation:** customer records, transactions, sensor logs.
-- **Public or open datasets:** government statistics, scientific datasets, benchmark collections.
-- **Web-scale text and images:** large-scale collections of public content (this raises ongoing questions about copyright and consent).
-- **Licensed data:** purchased or partnered content.
-- **Human-labelled data:** people tag images, rate answers, or write example responses.
-- **Synthetic data:** data generated by software or by another AI model, useful when real data is rare, private, or expensive, but risky if it simply repeats the original model's mistakes.
-
-### Key terms
-
-- **Feature:** an individual measurable input (e.g., house size, number of bedrooms).
-- **Label / Target:** the answer we want the model to predict (e.g., house price).
-- **Example (or sample):** one row of data: its features plus its label.
-
-### Preparing data: the unglamorous part
-
-Practitioners often report that preparing data takes more time than building the model. Google's Machine Learning Crash Course puts it at around 80% of the time on a typical project. [[1]](#ref-1) Typical steps:
-
-| Step | What it means | Example |
-|---|---|---|
-| **Cleaning** | Fix or remove errors, duplicates, and missing values | Delete duplicate customer rows; fill in a missing age |
-| **Labelling** | Attach the correct answers | Humans mark which emails are spam |
-| **Feature engineering** | Create more useful inputs from raw data | Turn a date into "day of week" and "is holiday" |
-| **Normalising / scaling** | Put numbers on comparable scales | Convert salary (in thousands) and age (in tens) to a common range |
-| **Encoding** | Convert non-numbers into numbers | Turn the word "red" into a numeric code |
-| **Splitting** | Divide data into training, validation, and test sets | See below |
-
-### Splitting the data
-
-![A dataset divided into training, validation, and test sets](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/assets/dataset-split.png)
-
-*Figure 3.2: A dataset is divided so the model is graded on data it has never seen.*
-
-| Split | Typical share | Purpose | Analogy |
-|---|---|---|---|
-| **Training set** | ~70–80% | The model learns from this | The textbook |
-| **Validation set** | ~10–15% | Tune settings and compare versions during development. Used again and again | A practice quiz |
-| **Test set** | ~10–15% | One final check of real-world performance, after all development decisions are made | The final exam |
-
-Use the **validation set** for every decision made along the way (which algorithm, which settings, which features). Keep the **test set** untouched until the very end. If you keep adjusting the model to improve its test score, the test set quietly becomes a second validation set, and the final score will look better than real-world performance will be. If you do have to change the model after seeing the test result, collect a fresh, untouched test set for the next final check. Section 3.9 explains why. [[1]](#ref-1)
-
-### Why data quality matters
-
-> **"Garbage in, garbage out."** A model can only be as good as the data it learns from.
-
-| Data problem | What goes wrong | Example |
-|---|---|---|
-| **Bias** | Under-represented groups get worse results | A face-recognition system trained mostly on one skin tone performs worse on others |
-| **Noise and errors** | Wrong labels teach wrong patterns | Images labelled "dog" that are actually wolves |
-| **Unrepresentative data** | The model fails outside the conditions it saw | A model trained on daytime photos fails at night |
-| **Data leakage** | Answers slip into the inputs, so scores look better than reality | A model predicting hospital readmission accidentally sees the discharge outcome |
-| **Outdated data** | The world changed since training | A pricing model trained before a market shift |
-| **Too little data** | Not enough examples to learn a reliable pattern | Rare diseases with only a few hundred recorded cases |
-
-**Data-centric thinking:** Experienced practitioners often get bigger improvements by *improving the data* (fixing labels, adding missing cases) than by switching to a fancier algorithm.
-
-**Practical takeaway:** When an AI tool gives a poor answer, ask: *"What data was this likely trained on, and what might be missing from it?"*
-
----
-
-## 3.4 Algorithms and Models
-
-These two terms are often confused.
-
-- **Algorithm:** a step-by-step procedure for learning or solving a problem (the *recipe*).
-- **Model:** the result of running a learning algorithm on data (the *finished dish*). It is a set of learned numbers, called **parameters** or **weights**, that captures patterns.
-
-> **Algorithm + Data → Model**
-
-### Two basic kinds of prediction task
-
-| Task | Question it answers | Output | Example |
-|---|---|---|---|
-| **Classification** | "Which category?" | A label | Spam or not spam; cat, dog, or bird |
-| **Regression** | "How much?" | A number | House price; tomorrow's temperature |
-
-Classification and regression are both **supervised learning** tasks: the model learns from examples that come with correct answers. Other approaches include **unsupervised learning** (finding structure in unlabelled data, as in clustering) and **reinforcement learning** (learning by trial and error from rewards).
-
-### Common algorithm families
-
-| Family | Idea in one line | Typical use | Strength | Limitation |
-|---|---|---|---|---|
-| **Linear / Logistic Regression** | Fit a straight line (or S-curve) to the data | Prices, yes/no outcomes | Simple, fast, easy to explain | Misses complex patterns |
-| **Decision Trees** | A flowchart of yes/no questions | Loan approval, triage | Very easy to read | Can overfit |
-| **Random Forests / Gradient Boosting** | Combine many trees into one stronger model | Fraud detection, tabular business data | Often best for spreadsheet-style data | Harder to explain |
-| **Clustering (e.g., k-means)** | Group similar items without labels | Customer segments | Finds hidden structure | Results need human interpretation |
-| **Neural Networks** | Layers of simple units that learn complex patterns | Images, speech, language | Powerful on unstructured data | Needs lots of data and computing power |
-| **Transformers** *(a neural network design)* | Use "attention" to relate parts of the input | ChatGPT-style assistants, translation, many image and audio systems | Handles context very well | Very expensive to train |
-
-### Example: a decision tree
-
-A bank might use a simple tree to pre-screen loan applications:
-
-```mermaid
-flowchart TD
-    A{"Income above threshold?"}
-    B{"Existing debt low?"}
-    C{"Has a guarantor?"}
-    D["Approve"]
-    E["Refer to human officer"]
-    F["Decline"]
-    A -- Yes --> B
-    A -- No --> C
-    B -- Yes --> D
-    B -- No --> E
-    C -- Yes --> E
-    C -- No --> F
-```
-
-*Figure 3.3: A decision tree. In real ML, the algorithm learns which questions to ask and which thresholds to use from the data.*
-
-### Choosing an algorithm
-
-There is **no single best algorithm**. A useful rule of thumb:
-
-| Your situation | Good starting point |
-|---|---|
-| Small, structured (spreadsheet-like) data; need an explainable result | Linear/logistic regression or decision trees |
-| Medium to large structured data; accuracy matters most | Gradient boosting or random forests |
-| Images, audio, video, or free text | Neural networks |
-| Generating or understanding natural language | Transformer-based models |
-
----
-
-## 3.5 Machine Learning: Learning from Examples
-
-**Machine learning (ML)** is the branch of AI where systems improve at a task through experience (data) rather than explicit programming.
-
-### A worked example (simple enough to follow by hand)
-
-**Goal:** predict a student's exam score from hours studied.
-
-| Hours studied (feature) | Exam score (label) |
-|---|---|
-| 1 | 55 |
-| 2 | 65 |
-| 3 | 75 |
-
-**Model:** `score = w × hours + b`, where `w` (weight) and `b` (bias) are the parameters to learn. (This `b` is a *bias parameter*, a number added to the output. It is unrelated to *bias in data* from Section 3.3, which means an unfair skew.)
-
-1. **Start with a guess.** Set `w = 0`, `b = 0`. The model predicts 0 for everyone.
-2. **Measure the error.** Compare predictions with the true scores. The number that summarises the total error is the **loss**. A common choice is *mean squared error*: the average of the squared gaps.
-3. **Adjust the parameters** slightly in the direction that reduces the loss. This method is called **gradient descent**.
-4. **Repeat** thousands of times. The model settles near `w ≈ 10`, `b ≈ 45`, so `score = 10 × hours + 45`.
-5. **Use it on new data.** A student who studies 4 hours → predicted score **85**.
-
-> This tiny loop (*guess → measure error → adjust → repeat*) is the logic behind even the largest AI systems. The difference is scale: today's large models have **billions of parameters** instead of two. [[1]](#ref-1) [[2]](#ref-2)
-
-### Gradient descent in more detail
-
-![Curve of loss against weight with numbered steps moving down toward the minimum](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/assets/gradient-descent.png)
-
-*Figure 3.4: Each numbered dot is one update step, moving toward the lowest loss.*
-
-> *Analogy:* You are on a foggy hillside and want to reach the valley. You cannot see the bottom, but you can feel which direction slopes downward, so you take a step that way, again and again.
-
-The figure follows a single weight `w` with loss `(w − 5)²`, a **learning rate** of 0.18, and a starting value of 0.8:
-
-| Step | Weight w | Loss |
-|---|---|---|
-| 0 | 0.80 | 17.64 |
-| 1 | 2.31 | 7.23 |
-| 2 | 3.28 | 2.96 |
-| 3 | 3.90 | 1.21 |
-| 4 | 4.30 | 0.50 |
-| 5 | 4.55 | 0.20 |
-
-Notice that the steps get smaller as the slope flattens near the bottom. With this learning rate, each step removes 36% of the remaining distance to the best weight (new gap = 0.64 × old gap). The best weight is 5, where the loss reaches zero.
-
-### Parameters vs. hyperparameters
-
-| | Parameters (weights) | Hyperparameters |
-|---|---|---|
-| **Set by** | The learning process | The human (or an automated search) |
-| **Examples** | The `w` and `b` above; billions of weights in an LLM | Learning rate, number of layers, number of training rounds |
-| **Analogy** | What the student learns | How the student is taught (study hours, textbook choice) |
-
-**Learning rate matters:** too large and training overshoots the minimum and becomes unstable; too small and training is painfully slow. One full pass through the training data is called an **epoch**. Models usually train for many epochs, processing data in small groups called **batches**.
-
-### Overfitting and underfitting
-
-![Three plots showing an underfitted, a well-fitted, and an overfitted model](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/assets/fitting.png)
-
-*Figure 3.5: A good model captures the trend without memorising the noise.*
-
-| Problem | Meaning | Analogy | Common fixes |
-|---|---|---|---|
-| **Underfitting** | Model too simple to capture the pattern | A student who barely studied | Use a more powerful model; add better features |
-| **Overfitting** | Model memorises training data and fails on new data | A student who memorised past exam answers but cannot solve new questions | More diverse data; simpler model; *regularisation* (a penalty that discourages overly complex models); stop training earlier |
-
-The **validation set** is how you catch overfitting while you are still developing: if training performance is excellent but validation performance is poor, the model has memorised rather than learned. The **test set** then gives a final, one-time confirmation (Section 3.9).
-
----
-
-## 3.6 Neural Networks and Deep Learning
-
-A **neural network** is a model made of layers of small mathematical units called "neurons". It is *loosely* inspired by the brain, but it is a mathematical tool, not a copy of one.
-
-![Neural network with an input layer, hidden layers, and an output layer joined by weighted connections](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/assets/neural-network.png)
-
-*Figure 3.6: Data flows left to right; every line is a weight that training adjusts.*
-
-### What a single neuron does
-
-Each neuron performs three simple actions:
-
-1. **Multiplies** each input by a weight.
-2. **Adds** the results together with a bias.
-3. **Applies an activation function**, which decides how strongly the neuron "fires".
-
-**Tiny numeric example:** inputs `x₁ = 2`, `x₂ = 1`; weights `0.5` and `−1`; bias `0.5`.
-
-```
-sum = (2 × 0.5) + (1 × −1) + 0.5 = 0.5
-```
-
-With the common **ReLU** activation (output the number if positive, otherwise 0), the neuron outputs **0.5**. Had the sum been −0.3, it would output 0.
-
-Why bother with an activation function? Without it, stacking layers would still only produce straight-line relationships. Activation functions let networks learn **curved, complex patterns**.
-
-### Layers build up understanding
-
-In a typical image classifier (a convolutional network), the layers tend to specialise like this:
-
-| Layer depth | What it tends to detect |
-|---|---|
-| Early layers | Edges, colours, simple textures |
-| Middle layers | Shapes and parts (eyes, wheels, fur) |
-| Late layers | Whole objects (a cat, a car) |
-
-**Deep learning** simply means neural networks with *many* hidden layers.
-
-### How a neural network learns
-
-Training repeats four steps over many batches of data:
-
-1. **Forward pass:** data flows through the network to produce a prediction.
-2. **Loss:** compare the prediction with the correct answer.
-3. **Backpropagation:** work backwards through the network to calculate how much each weight contributed to the error.
-4. **Update:** gradient descent nudges every weight slightly to reduce the loss.
-
-Backpropagation was popularised as a way to train multi-layer networks by Rumelhart, Hinton, and Williams in 1986. [[3]](#ref-3) For an animated walk-through of all four steps, see the 3Blue1Brown series. [[4]](#ref-4)
-
-### Common neural network designs
-
-| Design | Best known for |
-|---|---|
-| **Convolutional neural networks (CNNs)** | Image recognition, medical imaging |
-| **Recurrent networks (RNNs, LSTMs)** | Older approach for sequences such as speech and text |
-| **Transformers** | Language models, translation, and increasingly images, audio, and video |
-| **Diffusion models** | Image and video generation (they learn to turn random noise into a clear picture step by step) |
-
----
-
-## 3.7 How Modern Language AI Works
-
-Tools such as ChatGPT, Claude, and Gemini are built on **large language models (LLMs)**. The core mechanism is easier than it sounds.
-
-![A sentence split into tokens, with the model predicting the next token](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/assets/tokens-next-token.png)
-
-*Figure 3.7: An LLM writes by repeatedly predicting the next token.*
-
-### Step 1: Tokens and embeddings
-
-- Text is split into **tokens**: words or word-pieces. A rough rule for English is that 1 token ≈ ¾ of a word.
-- Each token is converted into a list of numbers called an **embedding** (a *vector*). During training, the model learns these numbers so that tokens used in similar ways tend to receive similar vectors. This is how the model can work with *relationships between meanings* mathematically. [[1]](#ref-1)
-
-> **Careful:** An embedding is not a dictionary definition. It is a learned set of numbers that is useful for the task the model was trained on. Vectors that are close together often reflect related meanings or similar usage, but not always, and the individual numbers usually have no meaning a human can read off. A token's first embedding is the same wherever it appears, but the transformer's attention layers (Step 3) then adjust each token's representation using its context. That is how "bank" in "river bank" and "bank" in "bank loan" can end up with different representations.
-
-### Step 2: Next-token prediction (the training trick)
-
-During training, the model reads enormous amounts of text and repeatedly tries to predict *the next token*. The correct answer is already in the text, so **no human labelling is required**. This is called **self-supervised learning**, and it is why LLMs could be trained at such a vast scale.
-
-To predict well, the model is forced to learn grammar, facts, reasoning patterns, coding conventions, and writing styles.
-
-### Step 3: The transformer and attention
-
-![Attention links showing which earlier words matter when interpreting the word "it"](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/assets/attention.png)
-
-*Figure 3.8: Attention lets the model decide which earlier words matter for interpreting the current one.*
-
-In the sentence "The animal didn't cross the street because it was tired", what does "it" refer to? Humans know instantly. The transformer's **attention mechanism** lets the model weigh how strongly each word relates to every other word, so it can resolve references and capture context across long passages. Transformers also process many tokens in parallel, which makes training on massive hardware practical. The transformer architecture, introduced by Vaswani et al. in 2017, uses attention as a core mechanism for relating different parts of an input. Combined with feed-forward layers and other components, this design underpins most modern language models. [[5]](#ref-5)
-
-### Step 4: Generating a response
-
-To answer a question, the model:
-
-1. Reads your prompt as tokens.
-2. Produces a probability for every possible next token.
-3. **Picks one** (the choice is shaped by settings such as *temperature*).
-4. Adds it to the text and repeats until the response is complete.
-
-| Setting | Effect |
-|---|---|
-| **Low temperature** | Picks the most likely tokens: focused, consistent, repeatable |
-| **High temperature** | Samples more widely: varied, creative, less predictable |
-
-Temperature changes *how the model chooses* among its options. It does not make the model more knowledgeable or more accurate.
-
-### How an LLM is built: the training pipeline
-
 ```mermaid
 flowchart LR
-    A["Vast text, code,<br/>and other data"]
-    B["Pre-training:<br/>predict the next token"]
-    C["Base model:<br/>knows language and facts"]
-    D["Fine-tuning:<br/>learn from curated<br/>example conversations"]
-    E["Preference tuning:<br/>feedback on which answers<br/>are better, e.g. RLHF"]
-    F["Assistant model:<br/>helpful, safer,<br/>follows instructions"]
-    A --> B --> C --> D --> E --> F
+    A["Chapter 1<br/>Introduction to CS and AI"] --> B["Chapter 2<br/>Symbolic AI<br/>(rules and logic)"]
+    A --> C["Chapter 3<br/>Connectionist AI and Big Data<br/>(neural networks and data)"]
+    A --> D["Chapter 4<br/>Behaviorist AI<br/>(reward and trial and error)"]
 ```
 
-*Figure 3.9: The usual stages of building an AI assistant.*
-
-| Stage | What happens | Result |
-|---|---|---|
-| **Pre-training** | Learns language and general knowledge by predicting the next token | A powerful but unfocused "base model" |
-| **Fine-tuning** | Trained on high-quality examples of instructions and good answers | Follows instructions and holds a conversation |
-| **Preference tuning (e.g., RLHF)** | Human (or AI) feedback on which answers are better steers the model | More helpful, honest, and safe behaviour |
-
-Reinforcement learning from human feedback was shown to make a much smaller model preferred over a far larger base model in human evaluations of instruction-following. [[6]](#ref-6)
-
-### Important properties of LLMs
-
-- **Context window:** the maximum amount of text (prompt plus conversation plus reply) the model can consider at once. Anything outside it is effectively invisible. Context windows have grown very large, but they are still finite.
-- **Knowledge cutoff:** the model knows nothing after the end of its training data unless connected to a tool such as web search.
-- **Multimodal models:** many current models accept and produce more than text, including images, audio, and sometimes video.
-- **Reasoning models:** some newer models are trained to spend extra effort "thinking" through a problem step by step before answering, which often improves results on maths, coding, and logic tasks at the cost of speed and expense.
-- **AI agents:** systems that wrap a model with tools (search, code execution, software controls) and let it carry out multi-step tasks, checking results along the way.
-
-> **Important insight:** An LLM generates text that is *statistically plausible*, not text it has *verified as true*. This is why AI can sound confident and still be wrong (a "hallucination", covered in Chapter 5). Fluency is not accuracy.
+*Figure 1.1: Chapter 1 gives the shared vocabulary and history. Chapters 2 to 4 each explain one approach to building AI.*
 
 ---
 
-## 3.8 Training vs. Inference
+## Topic 1: Computer Science
 
-These are the two phases of an AI model's life.
+### 1.1 What Is Computer Science?
 
-![Side-by-side comparison of the training phase, where weights change, and the inference phase, where weights are frozen](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/assets/training-vs-inference.png)
+**Computer Science (CS)** is the study of computers and computation: what can be computed, how to compute it efficiently, how to build software and hardware that does it, and how people use the results.
 
-*Figure 3.10: Training changes the model. Inference only uses it.*
+There is no single official sentence that everyone uses. Different books and organisations stress different parts. The table shows the typical emphasis. These are summaries in simple words, not direct quotations.
 
-| | **Training** | **Inference** |
-|---|---|---|
-| **What happens** | The model *learns* by adjusting its parameters | The trained model is *used* to produce outputs |
-| **Parameters** | Updated repeatedly | **Fixed** (frozen) |
-| **Data used** | Large datasets | A single new input (your prompt, photo, etc.) |
-| **Cost and time** | Very high (days to months, specialised hardware such as GPUs/TPUs) | Low per use (milliseconds to seconds), but large at scale |
-| **Who does it** | AI developers and companies | Everyone who uses the AI |
-| **Analogy** | A student studying for years | The graduate answering a question |
+| Viewpoint | What it stresses |
+|---|---|
+| Computation | CS studies algorithms, which are step-by-step procedures, and what problems they can solve. |
+| Information | CS studies how information is represented, stored, processed, and communicated. |
+| Engineering | CS studies how to design, build, and test reliable hardware and software systems. |
+| Automation | CS studies which tasks can be done automatically by machines. |
+| Human use | CS studies how people interact with computers and how computers affect society. |
 
-### Key points to remember
+**Try it yourself.** The lecturer's slides suggest asking an AI assistant to "list as many definitions of Computer Science as possible". Do this in Topic 5, then compare the answers with the table above.
 
-- When you chat with an AI, **it is not learning from you in real time.** Its core parameters are frozen. It only uses what is inside the current conversation (its **context window**).
-- Whether a company later uses conversations to improve future models is a separate policy decision. Check the privacy settings of any tool you use.
-- Some inference settings are in your control, such as **temperature**, and the *quality of your prompt*.
+### 1.2 A Short History of CS
 
-### Two ways to improve results
+The slides ask for the history as a table with the columns **Year, Key Events, Key People, Key Technologies**. Here is a starter version.
 
-There is a simple test for any improvement technique: **did the model's weights change?**
+| Year | Key events | Key people | Key technologies |
+|---|---|---|---|
+| 1830s–1840s | Design of the Analytical Engine; the first published algorithm for it | Charles Babbage, Ada Lovelace | Mechanical computing design, punched cards |
+| 1936 | A mathematical model of computation, the "Turing machine" | Alan Turing | Theory of computation |
+| 1945 | Stored-program computer design described | John von Neumann and colleagues | Stored-program architecture |
+| 1946 | ENIAC, an early large electronic computer, is completed | J. Presper Eckert, John Mauchly | Vacuum tubes |
+| 1947 | The transistor is invented | John Bardeen, Walter Brattain, William Shockley | Transistors |
+| 1957 | FORTRAN, an early high-level programming language | John Backus and team | Compilers |
+| 1958–1959 | The integrated circuit | Jack Kilby, Robert Noyce | Integrated circuits |
+| 1969 | ARPANET connects its first computers; Unix is started | ARPA researchers; Ken Thompson, Dennis Ritchie | Packet networks, operating systems |
+| 1971 | First commercial microprocessor (Intel 4004) | Intel engineers | Microprocessors |
+| 1981 | IBM Personal Computer released | IBM team | Personal computers |
+| 1989–1991 | The World Wide Web | Tim Berners-Lee | HTTP, HTML, browsers |
+| 2007 | Smartphones become mainstream (iPhone) | Apple team | Touch screens, mobile apps |
+| 2010s | Cloud computing and large-scale data centres become common | Many companies | Cloud, GPUs |
 
-- **No:** it is an *inference-time* improvement. You use the existing model better. Most people only ever do this.
-- **Yes:** it is a *training-based* improvement. You change or create a model.
+> **Note for reviewers:** The rows are well-known facts from standard computing histories. Stage 2 should add a citation for each row.
 
-#### A. Inference-time improvements (no retraining)
+### 1.3 Main Topics of CS
 
-From simplest to most involved:
-
-| Technique | What it is | Best for |
-|---|---|---|
-| **Prompting** | Giving clear instructions, context, examples, and a desired format [[7]](#ref-7) | Almost every task; always try this first |
-| **Retrieval-Augmented Generation (RAG)** | The system searches documents or the web, then hands the relevant passages to the model [[8]](#ref-8) | Up-to-date or private information; reducing made-up answers |
-| **Tools and agents** | The model calls calculators, code, search, or other software | Accurate maths, data analysis, multi-step tasks |
+The lecturer's slides show a mind map of CS based on the **ACM classification**, the classification of computing topics by the Association for Computing Machinery. Here is a simplified version.
 
 ```mermaid
-flowchart LR
-    Q["Your question"]
-    R["Search company documents<br/>or the web"]
-    P["Relevant passages<br/>added to the prompt"]
-    M["Language model"]
-    A["Answer grounded<br/>in the retrieved text"]
-    Q --> R --> P --> M --> A
+mindmap
+  root((Computer Science))
+    Algorithms and data structures
+      Sorting and searching
+      Graph algorithms
+      Complexity theory
+    Artificial intelligence
+      Machine learning
+      Natural language processing
+      Computer vision
+      Robotics
+      Knowledge representation
+    Computer architecture
+      Processor design
+      Memory systems
+    Operating systems
+      Process management
+      Memory and file systems
+    Networks
+      Network protocols
+      Internet of Things
+    Databases
+      Relational databases
+      NoSQL databases
+      Data mining
+    Software engineering
+      Requirements
+      Testing
+      Agile methods
+    Theory of computation
+      Automata
+      Computability
+    Human-computer interaction
+      Interface design
+      Accessibility
+    Information security
+      Cryptography
+      Cybersecurity
 ```
 
-*Figure 3.11: Retrieval-Augmented Generation (RAG), an inference-time technique. The model is given facts to work from instead of relying only on memory.*
+*Figure 1.2: A simplified map of Computer Science, following the ACM-style grouping shown in the lecturer's slides. AI is one branch among many.*
 
-#### B. Training-based improvements (the model changes)
-
-| Technique | What it is | Best for |
-|---|---|---|
-| **Fine-tuning** | Further training of an existing model on your own examples (changes the weights) | A consistent style or specialised behaviour at scale |
-| **Training from scratch** | Building a new model from raw data | Mostly large companies and research labs |
-
-**At a glance:** inference-time methods *use* the model you already have, so the weights stay frozen. Training-based methods *change or create* a model, so the weights change.
-
-**Rule of thumb:** work down the first table before touching the second. Fine-tuning and training cost far more time, data, and money, and a fine-tuned model must be updated again whenever the knowledge it was taught goes out of date.
+**Key idea:** AI is a **branch of CS**. It uses algorithms, data structures, databases, and computer hardware, and it also borrows from mathematics, statistics, psychology, and neuroscience.
 
 ---
 
-## 3.9 Evaluating a Model
+## Topic 2: Artificial Intelligence
 
-How do we know whether a model is any good? We measure it on data it was **not trained on**. Two held-out sets do two different jobs. [[1]](#ref-1)
+### 2.1 What Is AI?
 
-| Data | Used for | How often |
+**Artificial Intelligence (AI)** is the field of making machines do things that we normally say need intelligence, such as understanding language, recognising pictures, making plans, and learning from experience.
+
+As with CS, there are many definitions. The slides ask you to "list as many definitions of AI as possible". Here are four common ways to define it.
+
+| Viewpoint | Summary of the idea | Typical source |
 |---|---|---|
-| **Training set** | Learning: the weights change | Throughout training |
-| **Validation set** | Comparing versions and tuning settings, including the decision threshold described below | Repeatedly, during development |
-| **Test set** | One final, honest estimate of real-world performance | **Once**, after all development decisions are made |
+| Making intelligent machines | AI is the science and engineering of making intelligent machines, especially intelligent computer programs. | John McCarthy, who named the field in 1955–1956 (McCarthy, 2007) |
+| Acting rationally | An AI system is an *agent* that perceives its environment and chooses actions that best achieve its goals. | Russell and Norvig (textbook) |
+| Machine that infers | An AI system is a machine-based system that, from the input it receives, infers how to produce outputs such as predictions, content, recommendations, or decisions. | OECD (2023) |
+| Acting like a human | A machine is intelligent if a person cannot tell it apart from a human in conversation. | Alan Turing's "imitation game" (1950) |
 
-**Why the separation matters.** Every time you use the same data to decide what to change, that data "wears out": the model and your choices start to fit its quirks, and scores on it become too optimistic. The validation set is expected to wear out, because you use it many times. The test set must stay fresh. If you change the model after seeing the test results, those results no longer give an unbiased estimate, so you need a new, untouched test set (more fresh data) for the next final check. [[1]](#ref-1)
+> **Note for reviewers:** The McCarthy and OECD rows are summaries of the sources listed in the References. Check the exact wording in the originals before quoting.
 
-The confusion matrix and metrics below are the results of that **final test**. Section 3.10 shows where it fits in the workflow.
+**Three things to remember**
 
-### The confusion matrix
+1. There is no single agreed definition, so always check which one a source is using.
+2. "Intelligence" is a moving target. Tasks that once seemed to need intelligence (such as playing chess) can later feel like "just a program".
+3. Today's AI is **narrow**: each system is good at specific tasks. A chess program cannot translate a letter.
 
-Take a spam filter whose final test used **1,000 emails**, of which 100 are really spam. The filter flags 90 emails as spam.
+### 2.2 A Short History of AI
 
-| | **Predicted: spam** | **Predicted: not spam** |
-|---|---|---|
-| **Actually spam (100)** | 80 (true positives) | 20 (false negatives: spam that got through) |
-| **Actually not spam (900)** | 10 (false positives: good emails wrongly flagged) | 890 (true negatives) |
-
-### Key metrics
-
-| Metric | Question it answers | Calculation | Result |
+| Year | Key events | Key people | Key technologies |
 |---|---|---|---|
-| **Accuracy** | What share of all predictions were right? | (80 + 890) / 1000 | 97.0% |
-| **Precision** | Of the emails flagged as spam, how many really were? | 80 / (80 + 10) | 88.9% |
-| **Recall** | Of all real spam, how much did we catch? | 80 / (80 + 20) | 80.0% |
-| **F1 score** | A single balance of precision and recall | 2 × (0.889 × 0.80) / (0.889 + 0.80) | 0.84 |
+| 1943 | First mathematical model of an artificial neuron | Warren McCulloch, Walter Pitts | Neuron models |
+| 1950 | "Computing Machinery and Intelligence" proposes the imitation game (Turing test) | Alan Turing | Idea of machine intelligence |
+| 1956 | The Dartmouth summer workshop, where the term "artificial intelligence" was used | John McCarthy, Marvin Minsky, Nathaniel Rochester, Claude Shannon | Symbolic reasoning programs |
+| 1958 | The perceptron, a learning neuron model | Frank Rosenblatt | Early neural networks |
+| 1966 | ELIZA, a chatbot that follows keyword rules | Joseph Weizenbaum | Rule-based language processing |
+| 1970s | MYCIN, an expert system for infections; first "AI winter" of reduced funding in the mid-1970s | Edward Shortliffe and colleagues | Expert systems |
+| 1980s | Expert systems used by companies; backpropagation is popularised in 1986 | David Rumelhart, Geoffrey Hinton, Ronald Williams | Rule engines, multi-layer networks |
+| Late 1980s–1990s | Second "AI winter"; reinforcement learning grows; TD-Gammon learns backgammon (1992) | Gerald Tesauro; Richard Sutton and others | Reinforcement learning |
+| 1997 | Deep Blue beats world chess champion Garry Kasparov | IBM team | Game-tree search, special hardware |
+| 2012 | AlexNet wins the ImageNet image contest by a wide margin | Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton | Deep neural networks, GPUs, big data |
+| 2016 | AlphaGo beats Go champion Lee Sedol 4–1 | DeepMind team | Deep learning plus reinforcement learning |
+| 2017 | The Transformer architecture | Ashish Vaswani and colleagues | Attention-based neural networks |
+| 2022 | ChatGPT is released to the public | OpenAI | Large language models |
 
-F1 is the *harmonic mean* of precision and recall, so it is high only when both are reasonably high. (Computed directly from the matrix: 2 × 80 / (2 × 80 + 10 + 20) = 160 / 190 ≈ 0.84.)
+**Reading the table through the three approaches.** The history of AI is partly a story of three ideas competing and combining. This module follows them one by one.
 
-### Why accuracy alone can mislead
+| Approach | Core idea | Typical milestones above | Chapter |
+|---|---|---|---|
+| **Symbolic AI** | Intelligence comes from explicit rules, logic, and search. | Dartmouth programs, ELIZA, MYCIN, Deep Blue (search) | 2 |
+| **Connectionist AI** | Intelligence comes from many simple connected units that learn from data. | McCulloch–Pitts, perceptron, backpropagation, AlexNet, Transformer | 3 |
+| **Behaviorist AI** | Intelligence comes from acting, receiving rewards, and adjusting behaviour. | TD-Gammon, AlphaGo (with deep learning) | 4 |
 
-If only 10% of emails are spam, a "model" that labels *everything* as not spam scores **90% accuracy** while catching **zero** spam. Always ask which kind of mistake is more costly:
+### 2.3 The Main Areas of AI
 
-| Situation | More costly mistake | Metric to favour |
-|---|---|---|
-| Cancer screening | Missing a real case (false negative) | Recall |
-| Spam filter | Blocking an important email (false positive) | Precision |
-| Fraud detection | Depends on the cost of fraud vs. annoying customers | A balance (F1) |
-
-### Is the result "good enough"? Metrics inform the decision
-
-A number such as "80% recall" does not say, by itself, whether a model is ready. That depends on the application, not just the maths. Before the final test, a team should agree what *good enough* means by asking:
-
-| Question | Spam-filter example |
-|---|---|
-| What does each kind of mistake cost? | A missed spam message is an annoyance. A blocked genuine email (a job offer, an invoice) may be costly. |
-| What does the application require? | An email service may require that genuine mail is almost never blocked, even if more spam gets through. |
-| How does it compare with the alternative? | Is it better than the current filter, or than a simple baseline? |
-| What safety nets exist? | A spam folder users can check, a "not spam" button, and monitoring after launch. |
-
-#### The decision threshold
-
-Many classifiers first produce a score between 0 and 1 (for the spam filter, the estimated chance that an email is spam). A **classification threshold** turns that score into a yes/no decision: scores above the threshold are labelled "spam". Moving the threshold trades one kind of mistake for another. [[1]](#ref-1)
-
-| Threshold | Effect |
-|---|---|
-| **Higher** (stricter, such as 0.9) | Fewer genuine emails are blocked, so precision usually rises, but more spam gets through, so recall falls |
-| **Lower** (more permissive, such as 0.3) | More spam is caught, so recall rises, but more genuine emails are blocked, so precision usually falls |
-
-A threshold of 0.5 sounds natural, but it is not automatically the best choice when one kind of mistake costs more than the other. In the example above, the filter blocked 10 genuine emails out of 900. Whether that is acceptable is a judgment call: a team might raise the threshold to protect genuine mail and accept lower recall. The threshold is a setting, so it is chosen on the **validation set**, never on the test set.
-
-**Metrics inform the deployment decision; people make it.** The team weighs the metrics against the cost of each error, the application's requirements, and the available safety nets.
-
-### Evaluating language models
-
-Language-model quality is harder to score with one number. Common approaches include **benchmark tests** (standard question sets), **human evaluation** (people rate answers), and **task-specific tests** built for your own use case. Benchmark scores can be inflated if test questions leaked into training data, so for important work, **test the model on your own examples**. For a yearly overview of how model performance is measured and reported, see the Stanford AI Index. [[9]](#ref-9)
-
----
-
-## 3.10 The AI Workflow
-
-The diagram below shows the life cycle of a typical AI system.
+The slides show an AI map with these areas:
 
 ```mermaid
-flowchart TD
-    A["1. Define the problem and<br/>agree what good enough means"]
-    B["2. Collect data"]
-    C["3. Clean and prepare data:<br/>select features, split into<br/>train / validation / test"]
-    subgraph TRAINING ["TRAINING PHASE"]
-        D["4. Choose algorithm"]
-        E["5. Train model:<br/>guess, measure loss, adjust"]
-        F{"6. Evaluate on the<br/>validation set"}
-        G["Improve data, tune settings,<br/>or change algorithm"]
-        L{"7. Final check on the<br/>test set, once"}
-    end
-    subgraph INFERENCE ["INFERENCE PHASE"]
-        H["8. Deploy model"]
-        I["9. New input arrives:<br/>prompt, image, data"]
-        J["10. Model produces output:<br/>prediction or generated content"]
-    end
-    K["11. Monitor, collect feedback,<br/>update with new data"]
-    A --> B --> C --> D --> E --> F
-    F -- "Not good enough" --> G
-    G --> D
-    F -- "Good enough" --> L
-    L -- "Meets the targets" --> H
-    L -- "Does not meet targets:<br/>revise, then use fresh test data" --> G
-    H --> I --> J --> K
-    K -.-> B
+mindmap
+  root((Artificial Intelligence))
+    Machine learning
+      Deep learning
+      Predictive analytics
+    Natural language processing
+      Translation
+      Classification and clustering
+      Information extraction
+    Speech
+      Speech to text
+      Text to speech
+    Expert systems
+    Planning, scheduling and optimization
+    Robotics
+    Vision
+      Image recognition
+      Machine vision
 ```
 
-*Figure 3.12: The AI life cycle. Steps 4 to 6 form a loop that uses the validation set; step 7 uses the test set once; step 11 feeds back to step 2.*
+*Figure 1.3: A simplified map of AI areas, following the lecturer's slides.*
 
-### Case study: an email spam filter, end to end
+Each area is a **task** (what we want the machine to do). The three approaches in this module are **methods** (how we build it). One task can be tackled by more than one method. Language translation, for example, was once done with hand-written grammar rules (Symbolic) and is now mostly done with neural networks (Connectionist).
 
-| Step | What happens in this example |
-|---|---|
-| 1. Define the problem | Automatically separate spam from genuine email (a classification task). The team agrees what "good enough" means, for example how much genuine mail may be blocked and how much spam may slip through |
-| 2. Collect data | 200,000 past emails, each marked spam or not spam by users |
-| 3. Prepare data | Remove duplicates; convert text to numbers; split 70/15/15 |
-| 4. Choose algorithm | Start with logistic regression as a baseline, then try a neural network |
-| 5. Train | The model learns which words and patterns signal spam |
-| 6. Evaluate on validation data | The team checks results on the validation set, chooses the decision threshold there, and improves labels and retrains until the validation results look good enough |
-| 7. Final test | The untouched test set is used once and shows 80% recall and 89% precision (the results in Section 3.9). The team compares them with the targets agreed at step 1 and the cost of each kind of error, then decides whether to deploy |
-| 8. Deploy | The model is placed inside the email service |
-| 9–10. Inference | Each incoming email is scored in milliseconds and filed to inbox or spam |
-| 11. Monitor | Spammers change tactics (**drift**), so performance drops; new examples are collected and the model is retrained |
-
-### Reading the diagram
-
-- Steps 1–3 are **preparation**, often the largest share of a project's time. Step 1 includes agreeing what "good enough" will mean, *before* any results are seen.
-- Steps 4–6 form a **loop** that uses the **validation set**. Models are rarely right on the first attempt.
-- Step 7 is the **final exam**. The test set is used once, after development decisions are finished. If the model is revised after this result, the next final check needs fresh test data.
-- Steps 9–10 are what *you* experience as a user.
-- Step 11 closes the loop. Real-world conditions change (**data drift** and **concept drift**), so AI systems must be **continuously monitored and maintained**, not built once and forgotten.
-
----
-
-## 3.11 From Beginner to Expert
-
-Understanding *how* AI works directly improves *how well you use it*.
-
-| What you now know | How it makes you a better user |
-|---|---|
-| AI learns from data | You understand its blind spots and biases and question outputs on topics where data may be thin. |
-| LLMs predict plausible text | You **verify** facts, numbers, and citations instead of trusting fluent answers. |
-| Parameters are frozen at inference | You know AI will not "remember" you across chats unless a memory feature exists, so you supply the context. |
-| The context window is limited | You give clear, relevant background and avoid overloading long conversations. |
-| Knowledge cutoff exists | You use search-enabled tools for recent information. |
-| Temperature and prompts shape output | You adjust instructions to get consistent or creative results. |
-| RAG and tools exist | You attach documents or enable tools instead of expecting the model to "just know". |
-| Models need evaluation | You test AI outputs against known answers before relying on them for important work. |
-
-### A reliable prompt structure
-
-A well-formed prompt gives the model what it cannot guess. [[7]](#ref-7)
-
-| Element | Question it answers | Example |
-|---|---|---|
-| **Role** | Who should the AI act as? | "You are an experienced statistics tutor." |
-| **Context** | What is the situation? | "I'm a first-year student who knows basic algebra." |
-| **Task** | What exactly should it do? | "Explain gradient descent." |
-| **Format** | What should the answer look like? | "Use an everyday analogy, then a 5-step summary." |
-| **Constraints** | Any limits or must-haves? | "Under 200 words; avoid jargon." |
-
-**Weak prompt:** "Explain gradient descent."
-
-**Stronger prompt:** "You are a patient statistics tutor. I'm a first-year student who knows basic algebra. Explain gradient descent using an everyday analogy, then summarise it in 5 steps. Keep it under 200 words and avoid jargon."
-
-Further techniques worth practising: giving **examples** of the output you want, asking the model to **work step by step**, asking it to **state its assumptions**, and asking it to **critique and improve its own draft**.
-
-### A verification checklist for AI output
-
-1. **Facts and figures:** can I confirm them from a reliable source?
-2. **Citations:** do the references actually exist and say what is claimed?
-3. **Recency:** could this have changed since the model's training?
-4. **Reasoning:** does each step follow, and does the maths check out?
-5. **Bias and gaps:** whose perspective might be missing?
-6. **Stakes:** if this is wrong, what is the cost? (Medical, legal, and financial decisions need qualified human review.)
-7. **Privacy:** did I share anything confidential that I should not have?
-
-### Skill ladder
-
-| Level | Characteristics |
-|---|---|
-| **Beginner** | Asks simple questions; accepts answers as given |
-| **Intermediate** | Writes structured prompts; gives context; checks and refines outputs; understands limitations |
-| **Advanced** | Chooses the right tool or model for the task; uses documents, search, and tools to ground answers; builds repeatable workflows |
-| **Expert** | Evaluates quality systematically on their own test cases; understands trade-offs of cost, accuracy, privacy, and risk; can explain *why* a model behaves as it does |
-
----
-
-## 3.12 Common Misconceptions
-
-| Misconception | Reality |
-|---|---|
-| "AI thinks like a human." | AI finds statistical patterns in data. It has no human-style understanding, intent, or consciousness. |
-| "AI looks up the answer in a database." | A trained LLM generates responses from learned patterns, unless it is explicitly connected to a search or retrieval tool. |
-| "AI learns from every chat I have." | Parameters are fixed at inference. Learning happens during training, and separate policies control whether chats are ever used later. |
-| "More data always means a better model." | Quality, relevance, and diversity matter as much as quantity. |
-| "If AI sounds confident, it is correct." | Fluency is not accuracy. Always verify important claims. |
-| "A bigger model is always better." | Smaller, specialised models can beat larger ones on specific tasks, and they cost less to run. |
-| "AI is objective because it is maths." | Models inherit the biases and gaps in their data and in the choices people make when building them. |
-| "Accuracy is the only number that matters." | Precision, recall, and the real-world cost of errors often matter more. |
-
----
-
-## 3.13 Key Takeaways
-
-1. **Data** is the raw material. Its quality sets the ceiling on performance.
-2. An **algorithm** is the learning procedure. A **model** is what it produces.
-3. **Machine learning** works by *guess → measure error → adjust → repeat*.
-4. **Neural networks** learn layered patterns; **transformers** with attention power today's language AI.
-5. **LLMs** are trained to predict the next token. They produce plausible text, not verified truth.
-6. **Training** builds the model (expensive, done by developers). **Inference** uses it (fast, done by everyone).
-7. You can improve results **without retraining** through **prompting, RAG, and tools**. Fine-tuning and training from scratch are the *training-based* options that change the model itself.
-8. **Evaluate** with the right metric on data the model has never seen: tune on the validation set, test once at the end, and judge "good enough" against the cost of each kind of error.
-9. Real AI systems follow a **loop**: prepare data, train, evaluate, deploy, monitor, improve.
-10. Knowing these mechanics helps you **use AI more effectively and critically**.
-
-### One-page cheat sheet
-
-| Concept | One-line memory aid |
-|---|---|
-| Data | The examples the model learns from |
-| Feature / Label | The inputs / the answer |
-| Algorithm | The recipe |
-| Model | The finished dish (learned weights) |
-| Loss | How wrong the model is |
-| Gradient descent | Walking downhill to reduce the loss |
-| Overfitting | Memorised the exam instead of learning the subject |
-| Validation set | The practice quiz: used again and again to tune |
-| Test set | The final exam: used once, at the end |
-| Threshold | The cut-off that turns a score into a yes or no |
-| Training | Learning (weights change) |
-| Inference | Using (weights frozen) |
-| Token | A chunk of text |
-| Attention | Deciding which words matter |
-| Temperature | Randomness dial |
-| Context window | The model's short-term working memory |
-| RAG | Give the model the facts to read first |
-| Fine-tuning | Extra training that changes the weights |
-| Precision / Recall | How trustworthy the flags are / how much was caught |
-| Hallucination | Fluent text that is not true |
-
----
-
-## 3.14 Glossary
-
-| Term | Definition |
-|---|---|
-| **Accuracy** | The share of all predictions that were correct |
-| **Activation function** | A function in each neuron that decides its output strength and lets networks learn curved patterns |
-| **Agent** | A system that lets a model use tools and take multiple steps to complete a task |
-| **Algorithm** | A step-by-step procedure used to learn from data or solve a problem |
-| **Attention** | A mechanism that lets a model weigh how strongly different parts of the input relate to each other |
-| **Backpropagation** | The method of working out each weight's contribution to the error so it can be adjusted |
-| **Batch** | A small group of examples processed together during training |
-| **Bias (in data)** | Systematic gaps or skews that lead a model to treat some cases or groups unfairly |
-| **Classification** | Predicting a category |
-| **Classification threshold** | The score cut-off that turns a model's probability into a yes/no decision |
-| **CNN (convolutional neural network)** | A neural network design well suited to images |
-| **Concept drift** | A change in the relationship between inputs and the correct answer over time (for example, spammers adopt new tricks) |
-| **Confusion matrix** | A table of true positives, false positives, true negatives, and false negatives used to evaluate a classifier |
-| **Context window** | The amount of text a model can consider at one time |
-| **Data drift** | A change in real-world data over time that makes a model less accurate |
-| **Deep learning** | Machine learning using neural networks with many layers |
-| **Diffusion model** | A generative model that learns to turn random noise into a clear image step by step |
-| **Embedding** | A list of numbers (a vector) that represents a token, word, or other item. Training makes the vectors useful for the task, but they are not dictionary definitions |
-| **Epoch** | One full pass through the training data |
-| **F1 score** | A single score combining precision and recall (their harmonic mean) |
-| **Feature** | An input variable used for prediction |
-| **Fine-tuning** | Further training of an existing model on specialised examples |
-| **Gradient descent** | A method that repeatedly adjusts parameters to reduce the loss |
-| **Hallucination** | Fluent output that sounds confident but is false or unsupported |
-| **Hyperparameter** | A setting chosen by humans before training, such as the learning rate |
-| **Inference** | The phase where a trained model produces outputs for new inputs |
-| **Label** | The correct answer the model tries to predict |
-| **Learning rate** | How large each training update step is |
-| **LLM** | Large language model: a transformer trained on massive amounts of text |
-| **Loss** | A number measuring how wrong the model's predictions are |
-| **Model** | The learned result of training: a set of parameters that makes predictions |
-| **Multimodal model** | A model that can accept or produce more than one kind of data, such as text, images, and audio |
-| **Neural network** | A model of connected layers of simple units |
-| **Overfitting** | Memorising training data so that performance on new data suffers |
-| **Parameter / Weight** | A number inside the model that is adjusted during training |
-| **Pre-training** | The first, large-scale training stage in which a language model learns by predicting the next token |
-| **Precision** | Of the items flagged positive, the share that truly were |
-| **Preference tuning** | Training stage that steers a model toward answers people judge to be better (for example, RLHF) |
-| **RAG** | Retrieval-Augmented Generation: giving a model retrieved documents to improve answers |
-| **Reasoning model** | A model trained to work through a problem step by step before answering |
-| **Recall** | Of all true positives, the share that were found |
-| **Regression** | Predicting a number |
-| **Regularisation** | Techniques that discourage overly complex models in order to reduce overfitting |
-| **Reinforcement learning** | Learning by trial and error, guided by rewards |
-| **RLHF** | Reinforcement learning from human feedback: tuning a model using people's judgments of its answers |
-| **Self-supervised learning** | Learning in which the labels come from the data itself, such as the next word in a text |
-| **Supervised learning** | Learning from examples that come with correct answers |
-| **Temperature** | A setting controlling the randomness of generated output |
-| **Test set** | Data held back and used once, after all development decisions are made, to estimate real-world performance |
-| **Token** | A small chunk of text processed by a language model |
-| **Training** | The phase where a model learns from data |
-| **Training set** | The data a model learns from |
-| **Transformer** | A neural network design that uses attention, together with feed-forward layers and other components; the basis of most modern LLMs |
-| **Underfitting** | A model too simple to capture the pattern in the data |
-| **Unsupervised learning** | Finding structure in data that has no labels |
-| **Validation set** | Data used repeatedly during development to tune settings and compare versions |
-
----
-
-## 3.15 Self-Check Reflection
-
-Before moving on, write a short answer to each in your own words:
-
-1. In one paragraph, explain to a friend why an AI chatbot can sound certain and still be wrong.
-2. Name one situation where *improving the data* would help more than choosing a different algorithm.
-3. Describe one habit from Section 3.11 that you will start using this week.
-
----
-
-## 3.16 Practice Questions
-
-Try answering each question before opening the answer.
-
-**Q1. Which best describes the difference between an algorithm and a model?**
-
-- A) They mean the same thing
-- B) An algorithm is the learning procedure; a model is the result of applying it to data
-- C) A model is the procedure; an algorithm is the data
-- D) An algorithm only exists in traditional programming
-
-<details>
-<summary>Answer</summary>
-
-**B.** The algorithm is the "recipe" for learning. Running it on data produces the model (the "finished dish").
-
-A is wrong because the two are different things. C reverses the definitions. D is wrong because algorithms exist throughout computing, including machine learning.
-
-</details>
-
-**Q2. A model scores 99% on its training data but only 60% on new, unseen data. What is the most likely problem, and name two ways to address it.**
-
-<details>
-<summary>Answer</summary>
-
-**Overfitting.** The model memorised the training data instead of learning general patterns.
-
-Fixes include using more diverse data, simplifying the model, applying regularisation, or stopping training earlier.
-
-</details>
-
-**Q3. True or False: When you chat with an AI assistant, its core model is being retrained by your conversation in real time.**
-
-<details>
-<summary>Answer</summary>
-
-**False.** During inference the parameters are frozen. The model uses your conversation only as temporary context.
-
-Any later retraining is a separate process controlled by the developer.
-
-</details>
-
-**Q4. Why is the test set kept separate from the training set?**
-
-<details>
-<summary>Answer</summary>
-
-To measure performance on data the model has **never seen**, which estimates real-world performance and reveals overfitting.
-
-If test data leaked into training, the results would be misleadingly high (data leakage).
-
-Note that the *validation* set is separate again: it guides development decisions, while the test set is kept for one final check.
-
-</details>
-
-**Q5. In your own words, explain how an LLM generates a sentence.**
-
-<details>
-<summary>Answer</summary>
-
-The LLM splits the input into tokens, converts them to embeddings, uses its transformer layers (attention) to weigh how the tokens relate, produces probabilities for the next token, picks one, appends it, and repeats token by token until the response is complete.
-
-</details>
-
-**Q6. Only 10% of emails are spam. A model labels every email "not spam". What is its accuracy, and why is it useless?**
-
-<details>
-<summary>Answer</summary>
-
-Accuracy is **90%**, but its recall for spam is **0%**: it never catches any spam.
-
-This shows why accuracy alone can mislead when classes are imbalanced. Precision and recall give a more honest picture.
-
-</details>
-
-**Q7. Name three things you can do at inference time to improve an AI's answer *without* retraining the model.**
-
-<details>
-<summary>Answer</summary>
-
-Any three of:
-
-- write a clearer, more specific prompt;
-- provide relevant background context or examples;
-- use RAG or web search to supply current information;
-- adjust settings such as temperature;
-- connect the model to tools (calculator, code execution);
-- ask for step-by-step work and then verify the output.
-
-Fine-tuning would **not** count, because it changes the model's weights.
-
-</details>
-
-**Q8. A cancer-screening model has 95% accuracy but low recall. Why might this be dangerous, and which metric should the team prioritise?**
-
-<details>
-<summary>Answer</summary>
-
-Low recall means many real cases are missed (false negatives).
-
-Missing a cancer diagnosis is very costly, so the team should prioritise **recall**, even if it produces more false alarms that doctors then check.
-
-</details>
-
-**Q9. A neuron has inputs 3 and −2, weights 1 and 0.5, and bias 1. With a ReLU activation, what does it output?**
-
-<details>
-<summary>Answer</summary>
-
-Sum = (3 × 1) + (−2 × 0.5) + 1 = 3 − 1 + 1 = **3**.
-
-ReLU keeps positive values, so the output is **3**.
-
-</details>
-
-**Q10. Your company chatbot must answer questions using the latest internal policy documents, which change monthly. Would you fine-tune the model or use RAG? Explain.**
-
-<details>
-<summary>Answer</summary>
-
-**RAG** is the better choice.
-
-The documents change often, and RAG retrieves the current version at question time, whereas fine-tuning would need to be repeated for every update and bakes information into the weights. RAG also makes it easier to point to the source of an answer.
-
-</details>
-
-**Q11. During gradient descent, the loss keeps jumping up and down wildly and never settles. What hyperparameter is the most likely culprit, and how would you adjust it?**
-
-<details>
-<summary>Answer</summary>
-
-The **learning rate** is probably too large, so each step overshoots the minimum.
-
-Reduce it.
-
-</details>
-
-**Q12 (Challenge). Trace the workflow of building a model that detects defective products on a factory line. List the main steps in order (use the numbering of Figure 3.12), and name one risk at the monitoring stage.**
-
-<details>
-<summary>Answer</summary>
-
-| Step (Figure 3.12) | What happens in this example |
-|---|---|
-| 1. Define the problem | Classify each product as "defective" or "normal", and agree targets (for example, catch almost all defects) |
-| 2. Collect data | Thousands of product images, including rare defect types |
-| 3. Clean and prepare data | Label and clean the images; split into training, validation, and test sets |
-| 4. Choose algorithm | For example, a convolutional neural network |
-| 5. Train model | Guess → measure loss → adjust, repeated over many batches |
-| 6. Evaluate on validation data | Check held-out validation images, focusing on recall for defects; improve and retrain until good enough |
-| 7. Final test | Check once on the untouched test images against the agreed targets |
-| 8. Deploy model | Install on the production line |
-| 9–10. Inference | A new image arrives and the model labels it in real time |
-| 11. Monitor and update | Track errors, collect new examples, retrain periodically |
-
-**Risk at monitoring:** *data drift*, such as a new lighting setup, new camera, or a changed product design that the model has never seen, causing accuracy to drop silently.
-
-</details>
-
-**Q13. A team keeps adjusting its model and checks the test-set score after every change, stopping when the score looks good. Why is the final test score no longer trustworthy, and what should they do instead?**
-
-<details>
-<summary>Answer</summary>
-
-Each time the test score guides a decision, information from the test set leaks into development. The model and the team's choices start to fit that particular data, so the score becomes too optimistic about real-world performance.
-
-Instead, use the **validation set** for all tuning and comparison, and use the **test set once**, at the end. If the model is revised after seeing the test result, collect a fresh, untouched test set for the next final check.
-
-</details>
-
-**Q14. A spam filter outputs a score from 0 to 1. The team raises the classification threshold from 0.5 to 0.9. What usually happens to precision and recall, and why might they make this change?**
-
-<details>
-<summary>Answer</summary>
-
-Fewer emails are flagged as spam. Fewer genuine emails are wrongly blocked, so **precision usually rises**, but more real spam slips through, so **recall falls**.
-
-A team might do this when blocking a genuine email is more costly than letting some spam into the inbox. Metrics do not decide this automatically: the choice depends on the cost of each error and the application's requirements.
-
-</details>
-
----
-
-## 3.17 Hands-On Activities (No Coding Required)
-
-### Activity A: See the limits of inference
-
-1. Open any AI chat assistant.
-2. Ask a factual question about a very recent event, then ask the same question with web search enabled (if available). Compare the answers.
-3. Ask the same creative request (e.g., "write a slogan for a recycling campaign") three times. Observe how the answers vary.
-4. Write a 3–4 sentence reflection linking each observation to a concept from this chapter (knowledge cutoff, randomness, prompting and context).
-
-### Activity B: Weak prompt vs. strong prompt
-
-1. Pick a topic you are studying.
-2. Ask for an explanation using a vague one-line prompt. Save the answer.
-3. Rewrite the prompt using the Role, Context, Task, Format, Constraints structure (Section 3.11). Save the answer.
-4. Compare the two. Which details improved the result, and why?
-
-### Activity C: Fact-check an AI answer
-
-1. Ask an AI assistant for three statistics and their sources on a topic you know about.
-2. Use the verification checklist in Section 3.11 to check each one.
-3. Record how many were fully correct, partly correct, or unverifiable. What does this tell you about how much to trust AI output?
-
-### Activity D (Optional): Teach a tiny model
-
-**Tool:** Google's Teachable Machine, a free, browser-based tool that trains a small image classifier from examples, with no coding and no account needed. [[10]](#ref-10) Open <https://teachablemachine.withgoogle.com/>.
-
-**Part 1: Train a classifier (about 10 minutes)**
-
-1. Click **Get Started**, choose **Image Project**, then **Standard image model**.
-2. Rename the two classes to two clearly different objects, for example "pen" and "mug".
-3. Add at least 30 example images to each class. Use **Webcam** (hold the record button) or **Upload** pictures from your device.
-4. Click **Train Model** and wait for it to finish.
-5. In the **Preview** panel, show each object to the camera (or upload a new picture) and watch the confidence bars.
-
-**Part 2: Break it on purpose (about 10 minutes)**
-
-1. **Unbalanced data:** retrain with 5 examples of one class and 50 of the other. What does the model tend to predict?
-2. **Narrow data:** retrain using images of one class taken only in bright light and the other class only in dim light. Then test with the lighting swapped.
-3. **Fresh test:** always test with new examples the model was **not** trained on, as in Section 3.3. How does the result compare with what you saw on the training images?
-
-**Reflect (3–4 sentences):** link what you saw to **data quality**, **bias**, **overfitting**, and the idea of a held-out test (Sections 3.3, 3.5, and 3.9).
-
-*Privacy tip:* images you record stay in your browser unless you choose to save or upload the project. Avoid recording other people. If a webcam is not available, use uploaded images instead. If the tool is unavailable when you read this, any other no-code, browser-based image classifier supports the same learning goals.
-
----
-
-## 3.18 Further Reading and References
-
-### References cited in this chapter
-
-<a id="ref-1"></a>**[1]** Google for Developers. *Machine Learning Crash Course.* Free, beginner-friendly lessons covering loss, gradient descent, data splits, classification metrics, embeddings, and language models. <https://developers.google.com/machine-learning/crash-course>
-
-- *Datasets: Dividing the original dataset* (training, validation, and test sets; why test sets "wear out"): <https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets>
-- *Thresholds and the confusion matrix* (classification thresholds and the four outcomes): <https://developers.google.com/machine-learning/crash-course/classification/thresholding>
-- *Embeddings: Embedding space and static embeddings*: <https://developers.google.com/machine-learning/crash-course/embeddings/embedding-space>
-
-<a id="ref-2"></a>**[2]** Goodfellow, I., Bengio, Y., and Courville, A. (2016). *Deep Learning.* MIT Press. Free to read online. <https://www.deeplearningbook.org/>
-
-<a id="ref-3"></a>**[3]** Rumelhart, D. E., Hinton, G. E., and Williams, R. J. (1986). "Learning representations by back-propagating errors." *Nature*, 323, 533–536. The article itself is behind a paywall. <https://doi.org/10.1038/323533a0>
-
-<a id="ref-4"></a>**[4]** Sanderson, G. (3Blue1Brown). *Neural Networks* (video series). Outstanding visual explanations of neural networks, gradient descent, and backpropagation. <https://www.3blue1brown.com/topics/neural-networks>
-
-<a id="ref-5"></a>**[5]** Vaswani, A., et al. (2017). "Attention Is All You Need." The paper that introduced the transformer (advanced). <https://arxiv.org/abs/1706.03762>
-
-<a id="ref-6"></a>**[6]** Ouyang, L., et al. (2022). "Training language models to follow instructions with human feedback." Describes the RLHF approach used to build instruction-following assistants (advanced). <https://arxiv.org/abs/2203.02155>
-
-<a id="ref-7"></a>**[7]** Anthropic. *Prompt engineering overview.* A practical prompting guide; it points to a "Prompting best practices" page covering clarity, examples, and role prompting. Other major AI providers publish similar guides. <https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview>
-
-<a id="ref-8"></a>**[8]** Lewis, P., et al. (2020). "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks." The paper that introduced RAG (advanced). <https://arxiv.org/abs/2005.11401>
-
-<a id="ref-9"></a>**[9]** Stanford Institute for Human-Centered AI. *AI Index Report 2026* (ninth edition, published April 2026). An annual, data-rich overview of where AI stands. <https://hai.stanford.edu/ai-index/2026-ai-index-report>
-
-<a id="ref-10"></a>**[10]** Google Creative Lab. *Teachable Machine.* A free, browser-based tool for training image, sound, and pose classifiers without code; used in Activity D. <https://teachablemachine.withgoogle.com/>
-
-### More to explore
-
-- **Andrew Ng, "AI for Everyone" (Coursera):** a non-technical overview of AI in practice. <https://www.coursera.org/learn/ai-for-everyone>
-
-*Links were checked on 23 October 2026. The Nature paper is paywalled, so only its record page was confirmed. Pages, courses, and report editions change, so please re-check shortly before publication.*
-
----
-
-*Previous chapter: Chapter 2, Types of Artificial Intelligence | Next chapter: Chapter 4, Applications of AI*
-
-# Chapter 4: Applications of AI
-
-*A beginner-friendly learning module (one branch of the AI Overview course)*
-
-> **Author:** Brian Djoni Suzanna | **Reviewer:** Brian Djoni Suzanna  
-> **Audience:** Learners with no technical background in AI  
-> **Estimated study time:** Approximately 3.5–4.5 hours (including activities)
-
-**How to use this module:** Read each topic, work through the example, try the activity questions, then click **Show answer** to check your thinking.
-
----
-
-<a id="chapter-4-table-of-contents"></a>
-
-## Table of Contents
-
-1. [Learning Outcomes](#chapter-4-learning-outcomes)
-2. [Prerequisites and Framing](#chapter-4-prerequisites-and-framing)
-3. [Module Map](#chapter-4-module-map)
-4. [Applications at a Glance](#applications-at-a-glance)
-5. [Topic 1: Healthcare (fully developed)](#topic-1-healthcare)
-6. [Topic 2: Education](#topic-2-education)
-7. [Topic 3: Transportation](#topic-3-transportation)
-8. [Topic 4: Everyday Life](#topic-4-everyday-life)
-9. [Topic 5: Finance and Trading](#topic-5-finance-and-trading)
-10. [Cross-Topic Synthesis Activity](#cross-topic-synthesis-activity)
-11. [Teacher Notes](#teacher-notes)
-12. [Glossary](#chapter-4-glossary)
-13. [References](#chapter-4-references)
-
----
-
-<a id="chapter-4-learning-outcomes"></a>
-
-## Learning Outcomes
-
-By the end of this module, learners will be able to:
-
-- **Describe** how AI is used in healthcare, education, transportation, everyday life, and finance.
-- **Match** a real-world problem to the type of AI task it involves (for example classification, recommendation, prediction, anomaly detection).
-- **Calculate and interpret** basic performance measures (sensitivity, specificity, precision) for a diagnostic AI tool.
-- **Evaluate** the benefits and limits of an AI application, including who is affected if it makes a mistake.
-- **Compare** applications by the level of human oversight each one needs.
-
-<a id="chapter-4-prerequisites-and-framing"></a>
-
-## Prerequisites and Framing
-
-This module is one branch of the wider **AI Overview** course. It assumes learners have already met the basic vocabulary from earlier chapters, so those definitions are not repeated here:
-
-- artificial intelligence, machine learning, model, training data
-
-Terms specific to **applications** (for example *sensitivity*, *adaptive learning*, *backtesting*) are defined where they first appear and collected in the [Glossary](#chapter-4-glossary). Ethical issues such as bias, privacy, and hallucination are covered in the **AI Ethics and Limitations** module; this module points to them where they matter.
-
-> **Core idea of this module:** AI is not one tool. It is a set of techniques applied to specific problems. To judge any application, ask three questions: *What is the task? What data does it use? What happens when it is wrong?*
-
-<a id="chapter-4-module-map"></a>
-
-## Module Map
-
-| Topic | Depth of coverage | What is included |
-|---|---|---|
-| 1. Healthcare | **Fully developed** | Explanations, terms, pipeline diagram, worked example with code, 3-question activity, answers |
-| 2. Education | Developed | Explanation, comparison table, step-by-step adaptive-learning example, activity with answer |
-| 3. Transportation | Developed | Pipeline diagram, automation-levels table, classification activity with answers |
-| 4. Everyday Life | Developed | Examples table, worked spam-filter scoring example, activity with answer |
-| 5. Finance and Trading | Developed | Explanation, worked trading-rule example, risk discussion, activity with answer |
-| Synthesis | Developed | Cross-topic comparison activity |
-
-## Applications at a Glance
-
-| Sector | Typical AI task | Example application | Main benefit | Main risk |
-|---|---|---|---|---|
-| Healthcare | Classification (sorting into categories) | Detecting disease in medical images | Earlier, more consistent detection | Missed cases, false alarms, unequal performance across patients |
-| Education | Personalisation, prediction | Adaptive practice, tutoring systems | Learning matched to each student | Over-reliance, privacy of student data |
-| Transportation | Perception and planning | Driver assistance, route planning | Safety and efficiency | Failures in rare or unusual situations |
-| Everyday life | Recommendation, speech recognition, filtering | Streaming suggestions, voice assistants, spam filters | Convenience | Filter bubbles, data collection |
-| Finance and trading | Prediction, anomaly detection | Fraud alerts, algorithmic trading | Speed and scale | Fast-moving errors, over-confidence in past patterns |
-
----
-
-## Topic 1: Healthcare
-
-### 1.1 Why healthcare?
-
-Healthcare produces large amounts of data (scans, test results, patient records) and many decisions that depend on spotting patterns. AI is used here mainly to **support** clinicians, not replace them. Common uses include:
-
-- **Medical imaging:** analysing X-rays, retinal photos, mammograms, and skin images.
-- **Triage:** deciding which cases a doctor should look at first.
-- **Administrative support:** summarising notes, scheduling, coding records.
-- **Drug discovery:** predicting which molecules might work as medicines.
-
-This topic focuses on **medical imaging classification**, because it clearly shows how an AI application is built, measured, and limited.
-
-**Terms defined:**
-
-- **Clinician:** a health professional who treats patients, such as a doctor or nurse.
-- **Diagnosis:** deciding what condition, if any, a patient has.
-- **Screening:** commonly involves testing people who have **no symptoms** to identify possible disease early.
-- **Classification:** an AI task where the model puts an input into one of several categories (for example "disease" or "no disease").
-- **Clinical decision support:** software that provides information or recommendations to assist healthcare professionals.
-
-### 1.2 Evidence that this works, and its limits
-
-| Study | What it showed | Why it matters |
-|---|---|---|
-| Gulshan et al. (2016) | A deep learning system detected diabetic retinopathy (eye damage from diabetes) in retinal photographs with high accuracy on the test data used. | Shows AI can screen images for a specific condition. |
-| Esteva et al. (2017) | A neural network classified skin lesion images, with performance comparable to dermatologists on the tested tasks. | Shows AI can match experts on a defined image task. |
-| McKinney et al. (2020) | An AI system for breast cancer screening reported fewer false positives and false negatives than radiologists in the UK and US datasets studied. | Shows possible benefit in a high-volume screening setting. |
-
-> **Important limit:** These results come from specific datasets and test conditions. Performance can drop when a tool is used on different hospitals, equipment, or patient populations (Topol, 2019). That is why evaluation and human oversight matter.
-
-### 1.3 How a medical imaging tool works
-
-![Flow diagram of a medical imaging AI tool: image, preparation, model, probability, threshold check, clinician decision](study-guide/v1.0/chapter-4-applications-of-aI/assets/foto-chapter-4.png)
-
-If the diagram does not render in your viewer, read it as: **image → preparation → model → probability → threshold check → clinician decision**.
-
-**Term defined:**
-
-- **Threshold:** the cut-off probability above which the tool raises a flag. Lowering the threshold catches more true cases but also raises more false alarms.
-
-### 1.4 How do we measure whether a diagnostic AI is good?
-
-"Accuracy" alone can mislead. Healthcare uses measures based on four outcomes, usually shown in a **confusion matrix**.
-
-**Terms defined:**
-
-- **Confusion matrix:** a table that counts how often the tool was right or wrong, split by what was actually true.
-- **True positive (TP):** the patient has the disease and the tool says "disease".
-- **False negative (FN):** the patient has the disease but the tool says "no disease" (a **missed case**).
-- **False positive (FP):** the patient is healthy but the tool says "disease" (a **false alarm**).
-- **True negative (TN):** the patient is healthy and the tool says "no disease".
-- **Prevalence:** the proportion of a population that actually has the disease.
-
-|  | **Tool says: disease** | **Tool says: no disease** |
-|---|---|---|
-| **Patient has disease** | True positive (TP) | False negative (FN) |
-| **Patient is healthy** | False positive (FP) | True negative (TN) |
-
-From these four counts we calculate:
-
-| Measure | Plain-language question | Formula |
-|---|---|---|
-| **Sensitivity** (also called recall) | Of the people who *have* the disease, how many did the tool catch? | TP ÷ (TP + FN) |
-| **Specificity** | Of the people who are *healthy*, how many did the tool correctly clear? | TN ÷ (TN + FP) |
-| **Precision** (also called positive predictive value) | When the tool says "disease", how often is it right? | TP ÷ (TP + FP) |
-| **Accuracy** | Overall, how often is the tool right? | (TP + TN) ÷ total |
-
-### 1.5 Worked example: evaluating a screening tool
-
-**Scenario.** A hospital tests an AI tool that screens chest X-rays for a lung condition. (The numbers are invented for teaching.) The tool is used on **1,000 patients**, and **10% (100 patients)** actually have the condition.
-
-After comparing the tool's output with confirmed diagnoses, the results are:
-
-|  | Tool says: disease | Tool says: no disease | Total |
+| Area | What the machine does | Example | A method often used |
 |---|---|---|---|
-| **Has disease** | TP = 90 | FN = 10 | 100 |
-| **Healthy** | FP = 45 | TN = 855 | 900 |
+| Machine learning | Learns patterns from data | Predicting house prices | Connectionist and statistical methods |
+| Natural language processing | Works with human language | Translation, chatbots | Symbolic rules, neural networks |
+| Speech | Converts between speech and text | Voice assistants | Neural networks |
+| Expert systems | Gives expert-like advice from rules | Diagnosis helper | Symbolic |
+| Planning and optimization | Chooses a good sequence of actions | Delivery routes | Symbolic search, reinforcement learning |
+| Robotics | Senses and acts in the physical world | Robot vacuum | Behaviorist and others |
+| Vision | Understands images and video | Face unlock | Neural networks |
 
-**Step 1: Sensitivity.** 90 ÷ (90 + 10) = 90 ÷ 100 = **0.90** (90%). The tool catches 9 of every 10 sick patients.
+---
 
-**Step 2: Specificity.** 855 ÷ (855 + 45) = 855 ÷ 900 = **0.95** (95%). The tool correctly clears 95 of every 100 healthy patients.
+## Topic 3: Machine Learning: A First Look
 
-**Step 3: Precision.** 90 ÷ (90 + 45) = 90 ÷ 135 ≈ **0.667** (66.7%). When the tool flags a patient, it is right about two times in three.
+**Machine learning (ML)** means that a program improves at a task by learning from data instead of following only hand-written rules. The lecturer's slides show the classic split into three families.
 
-**Step 4: Accuracy.** (90 + 855) ÷ 1,000 = **0.945** (94.5%).
-
-**Step 5: Interpret.** The tool looks strong, but notice that 1 in 3 flagged patients is a false alarm. Each false alarm may cause worry and extra tests.
-
-**Step 6: Change one thing: the population.** Now use the **same tool** (same sensitivity 0.90 and specificity 0.95) to screen **10,000 people** where only **1% (100 people)** have the condition.
-
-- People with the disease: 100. The tool catches 90 (TP = 90, FN = 10).
-- Healthy people: 9,900. The tool wrongly flags 5% of them: 9,900 × 0.05 = **495** false positives. TN = 9,405.
-- Precision = 90 ÷ (90 + 495) = 90 ÷ 585 ≈ **0.154** (15.4%).
-
-The tool did not get worse. The disease is just rarer, so a **much larger share of the flags are false alarms**. When a disease is rare, there are many more healthy people than affected people. Even a small false-positive rate can therefore produce more false alarms than true detections. This is why screening tools need careful planning, and why a positive result is usually followed by confirmation tests.
-
-You can reproduce both scenarios with this Python script:
-
-```python
-def metrics(tp, fn, fp, tn):
-    sensitivity = tp / (tp + fn)
-    specificity = tn / (tn + fp)
-    precision = tp / (tp + fp)
-    accuracy = (tp + tn) / (tp + fn + fp + tn)
-    return sensitivity, specificity, precision, accuracy
-
-scenarios = {
-    "Scenario 1 (10% prevalence)": (90, 10, 45, 855),
-    "Scenario 2 (1% prevalence)": (90, 10, 495, 9405),
-}
-
-for name, (tp, fn, fp, tn) in scenarios.items():
-    s, sp, p, a = metrics(tp, fn, fp, tn)
-    print(f"{name}: sensitivity={s:.4f} specificity={sp:.4f} "
-          f"precision={p:.4f} accuracy={a:.4f}")
+```mermaid
+flowchart TB
+    ML["Machine learning"] --> S["Supervised learning<br/>data has labels"]
+    ML --> U["Unsupervised learning<br/>data has no labels"]
+    ML --> R["Reinforcement learning<br/>learn from rewards"]
+    S --> S1["Classification<br/>predict a category"]
+    S --> S2["Regression<br/>predict a number"]
+    U --> U1["Clustering<br/>group similar items"]
+    U --> U2["Association<br/>find items that go together"]
+    U --> U3["Dimensionality reduction<br/>simplify the data"]
 ```
 
-**Expected output:**
+*Figure 1.4: Families of machine learning.*
 
-```text
-Scenario 1 (10% prevalence): sensitivity=0.9000 specificity=0.9500 precision=0.6667 accuracy=0.9450
-Scenario 2 (1% prevalence): sensitivity=0.9000 specificity=0.9500 precision=0.1538 accuracy=0.9495
+| Family | What the data looks like | Example | Where it comes back |
+|---|---|---|---|
+| Supervised, classification | Examples with a category label | Email labelled *spam* or *not spam* | Chapter 3 |
+| Supervised, regression | Examples with a number label | Past house sizes and prices | Chapter 3 |
+| Unsupervised, clustering | Examples with no labels | Grouping customers by buying habits | Chapter 3 |
+| Unsupervised, association | Shopping baskets | "People who buy bread often buy butter" | Chapter 3 |
+| Reinforcement | An agent that acts and gets rewards | A program learning to play a game | Chapter 4 |
+
+**How ML relates to the approaches.** Supervised and unsupervised learning are mostly studied inside Connectionist AI and statistics (Chapter 3). Reinforcement learning is the engine of Behaviorist AI (Chapter 4). Symbolic AI (Chapter 2) is the opposite starting point: the knowledge is written by people, not learned.
+
+### Worked Example: Rules Versus Learning
+
+Task: decide whether a short email is spam.
+
+**Symbolic way (rules written by a person)**
+
+```
+IF the email contains "free money" THEN spam
+IF the email contains "meeting at 3pm" THEN not spam
 ```
 
-### 1.6 Learner activity
+This is easy to read, but it fails on any email the author did not think of.
 
-Use the same 1,000 patients, with 100 who have the condition (10% prevalence), for all three questions.
+**Machine learning way (supervised classification)**
 
-**Question 1: Calculate.** A second tool, **Model B**, gives these results:
+1. Collect 1,000 emails that people have already labelled *spam* or *not spam*.
+2. Let the program find which words and patterns often appear in spam.
+3. Test the program on emails it has not seen.
 
-|  | Tool says: disease | Tool says: no disease |
-|---|---|---|
-| **Has disease (100)** | TP = 75 | FN = 25 |
-| **Healthy (900)** | FP = 90 | TN = 810 |
-
-Calculate sensitivity, specificity, precision, and accuracy for Model B.
-
-<details>
-<summary>Show answer to Question 1</summary>
-
-- Sensitivity = 75 ÷ (75 + 25) = **0.75**
-- Specificity = 810 ÷ (810 + 90) = 810 ÷ 900 = **0.90**
-- Precision = 75 ÷ (75 + 90) = 75 ÷ 165 ≈ **0.455**
-- Accuracy = (75 + 810) ÷ 1,000 = **0.885**
-
-</details>
-
-**Question 2: Choose.** Compare Model B with the tool from the worked example (call it Model A: sensitivity 0.90, specificity 0.95). The condition is serious and treatable if found early. Which model would you prefer for screening, and why?
-
-<details>
-<summary>Show answer to Question 2</summary>
-
-**Model A.** It misses fewer sick patients (sensitivity 0.90 versus 0.75) and also raises fewer false alarms (specificity 0.95 versus 0.90), so it is better on both measures. A good answer also explains that in a serious, treatable condition, missed cases (false negatives) usually cost more than false alarms, so high sensitivity is especially important. Accept any well-reasoned answer that refers to the numbers.
-
-</details>
-
-**Question 3: Spot the trap.** A "lazy" tool simply says **"no disease" for every patient**. Calculate its accuracy and sensitivity on these 1,000 patients. What does this tell you about using accuracy alone?
-
-<details>
-<summary>Show answer to Question 3</summary>
-
-The lazy tool gets all 900 healthy patients right (TN = 900) and misses all 100 sick patients (FN = 100, TP = 0, FP = 0).
-
-- Accuracy = 900 ÷ 1,000 = **0.90** (90%)
-- Sensitivity = 0 ÷ 100 = **0** (0%)
-
-It looks 90% accurate while catching **no one who is sick**. Accuracy can be misleading when one group (here, healthy patients) is much larger than the other, so healthcare tools must be judged with sensitivity and specificity too. (Its precision is undefined, because the tool never says "disease" and the formula would divide by zero.)
-
-</details>
-
-### 1.7 Limits and responsibilities
-
-| Issue | Explanation | Where to learn more |
-|---|---|---|
-| **Unequal performance** | A tool trained mostly on one patient group may perform worse on others. | AI Ethics and Limitations: Bias |
-| **Patient privacy** | Medical data is highly sensitive and must be protected. | AI Ethics and Limitations: Privacy |
-| **Overtrust** | Clinicians may accept the tool's output without question. | Topic 5 (Teacher Notes) |
-| **Accountability** | Responsibility and oversight depend on the clinical workflow, the type of tool, and applicable regulations. | WHO (2021) |
+The learned filter can handle new emails, but it is harder to explain *why* it called one email spam. This trade-off between **explainable rules** and **flexible learning** returns in every chapter.
 
 ---
 
-## Topic 2: Education
+## Topic 4: Hands-On Activity: Machine Learning
 
-### 2.1 What does AI do in education?
+The lecturer's slides include two hands-on tasks built with a block-based programming tool: **Rock Paper Scissors** and **Smart Classroom**. If your lecture uses that tool, follow your lecturer's instructions for the tool itself. The paper version below teaches the same idea without any software.
 
-AI in education aims to make learning more **personal**. A teacher with 30 students cannot give each one a different explanation at every moment. Software can help by adapting to each student's responses.
+### Activity A: Rock Paper Scissors (image classification)
 
-**Terms defined:**
+**Idea.** The computer looks at a camera picture of your hand and decides *rock*, *paper*, or *scissors*. It does this because you first **trained** it with labelled pictures.
 
-- **Adaptive learning:** a system that changes the difficulty, order, or type of content based on how the learner is performing.
-- **Intelligent tutoring system (ITS):** software that gives step-by-step hints and feedback on problems, somewhat like a one-to-one tutor.
-- **Learning analytics:** collecting and analysing data about learners (for example time spent, mistakes made) to understand and improve learning.
+**Steps in the tool (as in the slides)**
 
-**Background.** Bloom (1984) reported that students tutored one-to-one performed far better than students taught in a conventional class, which became known as the "2 sigma problem". Researchers have since studied whether software tutors can capture part of that benefit. A review by VanLehn (2011) found that well-designed intelligent tutoring systems can be nearly as effective as human tutoring in some settings, though research findings vary across subjects, systems, and study conditions.
+1. Create three classes (labels): *rock*, *paper*, *scissors*.
+2. Take several photos of your hand for each class. These are the **training examples**.
+3. Train the model.
+4. Run the program. The program recognises the new picture, picks the label, and chooses the move that beats it.
+5. Test with different lighting and hand positions.
 
-### 2.2 Common uses
+**Paper version.** Imagine each photo is reduced to two numbers: *how many fingers are open* (0–5) and *how spread out they are* (low, medium, high).
 
-| Use | What the AI does | Example |
-|---|---|---|
-| Adaptive practice | Chooses the next question based on past answers | Maths practice that gets harder as you improve |
-| Tutoring and feedback | Gives hints on a step the student is stuck on | Hints on an algebra step |
-| Automated marking support | Scores certain question types and flags unusual answers | Marking multiple-choice and short answers |
-| Language learning | Recognises speech and corrects pronunciation | Speaking practice apps |
-| Early warning | Predicts which students may struggle | Flags a student who has stopped logging in |
+| Training example | Fingers open | Spread | Label |
+|---|--:|---|---|
+| 1 | 0 | low | rock |
+| 2 | 0 | low | rock |
+| 3 | 5 | high | paper |
+| 4 | 4 | high | paper |
+| 5 | 2 | medium | scissors |
+| 6 | 2 | medium | scissors |
 
-### 2.3 Worked example: a simple adaptive quiz
+New picture: **2 fingers open, medium spread.** Which label is the closest match? Compare it with each row, as a computer would.
 
-> **Note:** The following example uses fixed rules to demonstrate how automated decisions work. In real AI applications, machine-learning models may learn patterns from data instead of relying only on manually defined rules.
+*Expected answer:* scissors, because examples 5 and 6 match both numbers.
 
-**Rule used by the system** (invented for teaching):
+**Questions to discuss**
 
-- Difficulty has 5 levels (1 = easiest, 5 = hardest). The student starts at level 3.
-- A **correct** answer moves the next question **up one level** (maximum 5).
-- A **wrong** answer moves the next question **down one level** (minimum 1).
+1. What happens if the new picture shows 3 fingers open? (The model has no training example for it. It must guess from the closest ones, and may be wrong.)
+2. What happens if every training photo of "rock" was taken in a dark room? (The model may learn "dark means rock". This is a **biased training set**.)
+3. How many photos per class are enough? (There is no fixed number. More varied examples usually help.)
 
-**Student answers in order:** Correct, Correct, Correct, Wrong, Wrong.
+### Activity B: Smart Classroom (text and command recognition)
 
-| Question | Level of question | Result | Next level |
-|---|---|---|---|
-| 1 | 3 | Correct | 4 |
-| 2 | 4 | Correct | 5 |
-| 3 | 5 | Correct | 5 (already at maximum) |
-| 4 | 5 | Wrong | 4 |
-| 5 | 4 | Wrong | 3 |
+**Idea.** You type or say a command such as "Fan on" or "Lamp off", and a program switches a virtual fan or lamp.
 
-**Reading the result.** The student started at level 3, climbed to the top, and then dropped back. A teacher can see where the student's comfortable level seems to sit. Real systems use more advanced statistical models, but the idea is the same: **respond to each answer by adjusting what comes next.**
+* In the **rule-based version**, a person writes an IF-THEN block for each exact command. You will build this in Chapter 2.
+* In the **machine-learning version**, the program is trained with example sentences for each label (*fan on*, *fan off*, *lamp on*, *lamp off*) and recognises new wording. You will meet the idea again in Chapter 3.
 
-### 2.4 Learner activity
-
-A student starts at level 3 under the same rule. The student's answers are: **Correct, Wrong, Wrong, Wrong, Wrong, Wrong**.
-
-1. Fill in the level of each question.
-2. What is the level at the end, and what happens at the minimum?
-3. A teacher says: "This system makes my job unnecessary." Write two sentences responding, one on what the system does well and one on what it cannot do.
-
-<details>
-<summary>Show answer</summary>
-
-1. Question levels: Q1 = 3 (correct → 4), Q2 = 4 (wrong → 3), Q3 = 3 (wrong → 2), Q4 = 2 (wrong → 1), Q5 = 1 (wrong → stays 1, minimum), Q6 = 1 (wrong → stays 1).
-2. The next level after the final answer is **1**. At the minimum the level cannot drop further, so the student stays at level 1 and a good system would flag that the student may need human help.
-3. *Model answer:* The system is good at giving each student instant, personalised practice and alternative explanations, and at showing patterns in their answers. It cannot reliably replace a teacher's judgment, emotional support, classroom management, or responsibility for students' wellbeing, so teachers remain essential.
-
-</details>
-
-**Things to watch:** Student data is sensitive (see AI Ethics: Privacy), and learners may rely on AI answers without building their own understanding. Holmes, Bialik and Fadel (2019) discuss both the promise and these concerns.
+**Task now.** Predict: will a rule that checks for the exact text "Fan on" also catch "Please turn the fan on"? Write your prediction down. You will test it in Chapter 2.
 
 ---
 
-## Topic 3: Transportation
+## Topic 5: Ask, Then Verify (Using an AI Assistant for Study)
 
-### 3.1 AI on the road
+The lecturer's slides list questions to ask an AI assistant. Use them as a study activity, with one rule: **never copy an answer without checking it.** AI assistants can make confident mistakes.
 
-Transportation uses AI for several tasks, from helping drivers to planning journeys:
-
-- **Driver assistance:** lane-keeping, adaptive cruise control, collision warning.
-- **Self-driving (autonomous) vehicles:** the vehicle performs some or all of the driving.
-- **Navigation and routing:** estimating arrival times and choosing routes using live traffic.
-- **Fleet and logistics:** planning delivery routes and predicting maintenance needs.
-
-**Terms defined:**
-
-- **Autonomous vehicle:** a vehicle that can perform driving tasks without constant human control.
-- **Sensor:** a device that collects information about the surroundings, such as a camera, radar (uses radio waves), or lidar (uses laser light to measure distance).
-- **Geofenced area:** a mapped zone where an automated vehicle is allowed to operate.
-
-### 3.2 How a self-driving system makes decisions
-
-![Loop diagram of a self-driving system: sense, perceive, predict, plan, act](study-guide/v1.0/chapter-4-applications-of-aI/assets/foto-chapter-4.1.png)
-
-Read it as a loop that repeats many times per second: **sense → perceive → predict → plan → act**.
-
-### 3.3 Levels of driving automation
-
-The SAE J3016 standard describes six levels, from 0 to 5 (SAE International, 2021).
-
-| Level | Name | Who is responsible for monitoring the road? | Example |
-|---|---|---|---|
-| 0 | No automation | Human | Warnings only; human does all driving |
-| 1 | Driver assistance | Human | Adaptive cruise control **or** lane centering |
-| 2 | Partial automation | Human (must supervise constantly) | Steering **and** speed support together |
-| 3 | Conditional automation | System, but human must take over when asked | Traffic-jam driving on a motorway |
-| 4 | High automation | System, within limited conditions or areas | Driverless taxi in a mapped zone |
-| 5 | Full automation | System, everywhere and in all conditions | Not yet widely available |
-
-> **Key idea:** The big jump is between **Level 2 and Level 3**. Up to Level 2 the human must always watch the road. From Level 3, the system takes on that duty in some conditions.
-
-### 3.4 Learner activity
-
-Assign an SAE level (0 to 5) to each scenario and give a reason.
-
-- **(a)** A car beeps when you drift out of your lane but never steers.
-- **(b)** A car holds speed, keeps a safe gap, and keeps itself centred in the lane, but you must keep your eyes on the road and hands ready.
-- **(c)** In a traffic jam on a motorway, an approved Level 3 automated driving system performs the driving task within its operating conditions. The driver does not need to continuously monitor the road but must remain available to take over when requested.
-- **(d)** A car with no driver picks up passengers inside a mapped city zone, and nobody needs to supervise.
-
-<details>
-<summary>Show answer</summary>
-
-- **(a) Level 0.** It only warns; it does not control the car.
-- **(b) Level 2.** Speed and steering are both supported, but the human must supervise constantly.
-- **(c) Level 3.** The system handles driving in limited conditions, but the human must remain available and take over when requested.
-- **(d) Level 4.** The system drives without supervision, but only inside a limited area (geofenced). No human fallback driver is needed while it operates within its specified conditions.
-
-</details>
-
-**Why rare events matter:** Driving contains millions of ordinary situations and a long tail of unusual ones (odd road works, unusual objects). A system can perform well on typical roads and still fail in a rare case, which is why testing and human oversight are central to safety.
-
----
-
-## Topic 4: Everyday Life
-
-### 4.1 AI you may use without noticing
-
-| Everyday tool | AI task | What it uses as input |
-|---|---|---|
-| Video or music suggestions | **Recommendation** | What you watched, skipped, and liked, and what similar users liked (see Gomez-Uribe and Hunt, 2016) |
-| Voice assistant | **Speech recognition** and language understanding | Your voice |
-| Email spam filter | **Classification** (spam or not spam) | Words, sender, links in the message |
-| Map and ride apps | **Prediction** (arrival time) and route planning | Live location and traffic data |
-| Phone camera | **Image processing** | Photo data to adjust faces, light, and focus |
-| Autocomplete and translation | **Language generation and translation** | The text you type |
-
-**Terms defined:**
-
-- **Recommendation system:** software that predicts what content or products you are likely to want, based on your past behaviour and on similar users.
-- **Filter bubble:** a situation where recommendations mostly show you content similar to what you have already seen, narrowing what you are exposed to.
-
-### 4.2 Worked example: how a simple spam filter scores a message
-
-> **Note:** The following example uses fixed rules to demonstrate how automated decisions work. In real AI applications, machine-learning models may learn patterns from data instead of relying only on manually defined rules.
-
-A filter can give each word a **score**: positive numbers push toward "spam", negative numbers toward "not spam". Real filters learn these scores from many examples. In this example the scores are assigned by hand for teaching purposes, so they are invented and do not come from a trained model.
-
-| Word | Score |
+| Slide question | What to do with the answer |
 |---|---|
-| "free" | +2 |
-| "winner" | +3 |
-| "click" | +1 |
-| "meeting" | −2 |
-| "report" | −2 |
+| "Give me a list of buzzwords of the past 50 years regarding computer technology." | Check three of them in a textbook or encyclopedia. |
+| "List as many definitions of Computer Science as possible." | Group the definitions into the viewpoints in Section 1.1. |
+| "Use a table to list the history of CS, with columns of Year, Key Events, Key People, and Key Technologies." | Compare with Section 1.2. Mark every row that differs, and find out which is right. |
+| "Generate a CS knowledge map for freshmen." | Compare with Figure 1.2. What is missing? |
+| "List as many definitions of Artificial Intelligence as possible." | Compare with Section 2.1. |
+| "Use a table to list the history of AI, with the same four columns." | Compare with Section 2.2. Check at least three dates. |
+| "Generate an AI knowledge map for freshmen." | Compare with Figure 1.3. |
 
-**Rule:** Add the scores of the words in the message. If the total is **3 or more**, mark it as spam.
-
-**Message 1:** "You are a winner click now for a free prize"
-- Matching words: winner (+3), click (+1), free (+2)
-- Total = 3 + 1 + 2 = **+6** → 6 ≥ 3 → **Spam**.
-
-**Message 2:** "Please send the report before the meeting"
-- Matching words: report (−2), meeting (−2)
-- Total = **−4** → below 3 → **Not spam**.
-
-**Message 3:** "Free tickets to the team meeting"
-- Matching words: free (+2), meeting (−2)
-- Total = **0** → below 3 → **Not spam**.
-
-**Reading the result.** The filter treats *patterns of words* as signals of spam. It can make mistakes: a real message containing "free" and "click" might be wrongly marked as spam (a false positive, as in Topic 1).
-
-### 4.3 Learner activity
-
-Using the scores above, classify the message: **"Click here, free winner, report this meeting"**. Then explain what this shows about the limits of the method.
-
-<details>
-<summary>Show answer</summary>
-
-Matching words: click (+1), free (+2), winner (+3), report (−2), meeting (−2).
-Total = 1 + 2 + 3 − 2 − 2 = **+2**, which is below 3, so the filter marks it **not spam**.
-
-*What this shows:* the filter only counts words and ignores meaning, so a spammer can add harmless words ("report", "meeting") to lower the score. Real filters use many more signals and keep updating, and they still make errors.
-
-</details>
-
-**Things to watch:** Everyday AI collects data about you (see AI Ethics: Privacy) and recommendation systems can shape what you see (filter bubbles).
+**Record your work.** For each question write down: the tool you used, the date, what you asked, and what you corrected. The team's AI-use log needs this information.
 
 ---
 
-## Topic 5: Finance and Trading
+## Key Takeaways
 
-> **Educational note:** This section explains how AI and automated tools are used in finance. It is not investment advice. Anyone making financial decisions should consult a qualified financial professional.
+* **CS** is the study of computation, information, and the systems that process them. **AI is one branch of CS.**
+* There is **no single definition** of CS or AI. Read which viewpoint a source uses.
+* AI history moves through three big ideas: **rules and logic** (Symbolic), **connected learning units** (Connectionist), and **learning from reward** (Behaviorist).
+* AI areas (vision, language, speech, planning, robotics) are **tasks**. The three approaches are **methods**.
+* Machine learning has three families: **supervised**, **unsupervised**, and **reinforcement**.
+* A model learns from **examples**. Poor or biased examples lead to poor or biased results.
+* Always **verify** what an AI assistant tells you.
 
-### 5.1 Where AI is used in finance
+---
 
-| Use | What AI does | Example |
+## Practice Questions
+
+### Part A: Multiple Choice
+
+**Q1.** Which statement about AI and CS is correct?
+A. AI and CS are unrelated fields.
+B. AI is a branch of CS.
+C. CS is a branch of AI.
+D. AI only studies robots.
+
+**Q2.** In which decade did the Dartmouth workshop use the term "artificial intelligence"?
+A. 1930s
+B. 1940s
+C. 1950s
+D. 1990s
+
+**Q3.** Which task is an example of *supervised classification*?
+A. Grouping customers with no labels
+B. Labelling emails as spam or not spam using labelled examples
+C. A robot learning to walk from rewards
+D. Compressing a file
+
+**Q4.** Which family of machine learning learns from rewards?
+A. Supervised
+B. Unsupervised
+C. Reinforcement
+D. Association
+
+**Q5.** Which pair matches an approach with its core idea?
+A. Symbolic AI: learning from rewards
+B. Connectionist AI: explicit rules and logic
+C. Behaviorist AI: acting and receiving rewards
+D. Symbolic AI: neurons and weights
+
+**Q6.** Why can a Rock Paper Scissors model fail if all "rock" photos were taken in a dark room?
+A. The model may learn lighting instead of hand shape.
+B. The camera breaks.
+C. Rock is a hard word.
+D. It cannot fail.
+
+**Q7.** Which is a *task* (not a method)?
+A. Symbolic AI
+B. Image recognition
+C. Connectionist AI
+D. Behaviorist AI
+
+**Q8.** What should you do with an answer from an AI assistant?
+A. Copy it as it is.
+B. Verify key facts with a reliable source.
+C. Ignore it completely.
+D. Assume it is always correct.
+
+### Part B: Short Answer
+
+**Q9.** Give two different definitions of AI and say how they differ.
+
+**Q10.** Explain the difference between supervised and unsupervised learning in two sentences, with one example each.
+
+**Q11.** In the Smart Classroom activity, why might a rule-based program fail on "Please turn the fan on"?
+
+### Part C: Apply It
+
+**Q12.** A school wants a system that sorts student questions into the categories *homework*, *exam*, and *other*. Would you start with hand-written rules or with machine learning? List one advantage and one disadvantage of your choice.
+
+---
+
+## Answer Key
+
+| Q | Answer | Explanation |
 |---|---|---|
-| **Fraud detection** | Spots unusual transactions (anomaly detection) | A card used in two countries within an hour triggers an alert (see Ngai et al., 2011) |
-| **Credit scoring** | Estimates the chance a borrower will repay | Loan approval support |
-| **Algorithmic trading** | Executes buy and sell orders using programmed rules or models | A program trades when price patterns appear |
-| **Robo-advisers** | Suggest portfolios based on goals and risk tolerance | Automated investment suggestions |
-| **Customer service** | Answers common questions | Banking chatbots |
-
-**Terms defined:**
-
-- **Anomaly detection:** finding data points that do not fit the usual pattern.
-- **Algorithmic trading:** using computer programs to decide when and how to buy or sell financial assets.
-- **High-frequency trading (HFT):** algorithmic trading that makes very large numbers of trades at extremely high speed.
-- **Backtesting:** testing a trading rule on **past** data to see how it would have performed.
-- **Overfitting:** when a model or rule fits past data so closely that it captures noise and then performs poorly on new data.
-- **Moving average:** the average price over a recent number of days, used to smooth out daily ups and downs.
-
-### 5.2 Worked example: a simple trading rule
-
-> **Note:** The following example uses fixed rules to demonstrate how automated decisions work. Moving-average trading rules are examples of algorithmic automation and do not necessarily involve AI. In real AI applications, machine-learning models may learn patterns from data instead of relying only on manually defined rules.
-
-A classic rule compares a **short-term** moving average with a **long-term** one:
-
-- If the short-term average moves **above** the long-term average → **enter** (buy).
-- If the short-term average falls **below** the long-term average → **exit** (sell).
-
-Here we use a 2-day average (short) and a 3-day average (long) on invented daily prices.
-
-**Assumptions (kept the same throughout this example and the activity):**
-
-- Prices are **daily closing prices**.
-- The rule is **evaluated after each day's close**, once that day's price is known.
-- Because the signal only appears after the market has closed, the trade is carried out at the **next day's closing price**. (This is a simplification; real trades happen at whatever price is available when the order executes.)
-- We trade **one unit**, hold only one position at a time, and ignore fees and taxes.
-- For this simplified example, the first day when both moving averages are available counts as a buy signal if the short-term average is above the long-term average. After that, new signals occur when their relative positions change.
-
-| Day | Closing price | 2-day average | 3-day average | Short above long? | Signal (after close) | Trade (at this day's close) |
-|---|---|---|---|---|---|---|
-| 1 | 10 | – | – | – | – | – |
-| 2 | 11 | – | – | – | – | – |
-| 3 | 12 | (11 + 12) ÷ 2 = 11.50 | (10 + 11 + 12) ÷ 3 = 11.00 | Yes | **Buy signal** | – |
-| 4 | 11 | (12 + 11) ÷ 2 = 11.50 | (11 + 12 + 11) ÷ 3 ≈ 11.33 | Yes | Hold | **Buy at 11** (from the Day 3 signal) |
-| 5 | 10 | (11 + 10) ÷ 2 = 10.50 | (12 + 11 + 10) ÷ 3 = 11.00 | No | **Sell signal** | – |
-| 6 | 9 | (10 + 9) ÷ 2 = 9.50 | (11 + 10 + 9) ÷ 3 = 10.00 | No | Stay out | **Sell at 9** (from the Day 5 signal) |
-
-**Result:** Bought at 11, sold at 9, giving a **loss of 2 per unit**. (If we had assumed the trades happened at the same day's close as each signal, we would have bought at 12 and sold at 10, which is also a loss of 2. The delay between signal and trade can change the result, which is why the assumption must always be stated.)
-
-**What this teaches:**
-
-1. The rule is purely mechanical; a computer can follow it instantly and without emotion.
-2. Moving averages **lag**: they react after prices have already moved, and the trade happens after the signal, so the entry came late and the trade lost money. Assumptions about **when** the signal is evaluated and **at what price** the trade happens can change a result, so they must always be stated.
-3. A rule that works on one period of past data may fail on another, which is why **backtesting** uses long and varied data and why **overfitting** is dangerous.
-4. AI/machine learning models can replace the fixed rule with patterns learned from data, but the same risks apply.
-
-### 5.3 When automation goes wrong: the 2010 Flash Crash
-
-On 6 May 2010, US stock markets fell sharply within minutes and then largely recovered. Official investigations by US regulators found that a large automated sell order interacted with fast-reacting trading algorithms, which amplified the drop (US CFTC and SEC, 2010; Kirilenko et al., 2017).
-
-**Lessons:**
-
-- Automated systems can react **faster than humans can intervene**.
-- Many algorithms reacting to each other can create effects no single designer intended (a **feedback loop**).
-- Markets now use safeguards such as automatic trading pauses, and firms use human monitoring and "kill switches".
-
-### 5.4 Learner activity
-
-Using the same rule and the same assumptions as the worked example (2-day versus 3-day average; buy signal when short goes above long; signal evaluated after the close; trade at the **next day's closing price**), analyse these closing prices for days 1 to 6: **10, 9, 8, 9, 10, 11**.
-
-1. Calculate the 2-day and 3-day averages from day 3 onwards.
-2. On which day does the rule first give a "buy" signal, and at what price would the trade be carried out?
-3. What does this show about the rule's timing?
-
-<details>
-<summary>Show answer</summary>
-
-1. - Day 3: 2-day = (9 + 8) ÷ 2 = 8.50; 3-day = (10 + 9 + 8) ÷ 3 = 9.00
-   - Day 4: 2-day = (8 + 9) ÷ 2 = 8.50; 3-day = (9 + 8 + 9) ÷ 3 ≈ 8.67
-   - Day 5: 2-day = (9 + 10) ÷ 2 = 9.50; 3-day = (8 + 9 + 10) ÷ 3 = 9.00
-   - Day 6: 2-day = (10 + 11) ÷ 2 = 10.50; 3-day = (9 + 10 + 11) ÷ 3 = 10.00
-2. The short average first rises above the long average on **day 5** (9.50 > 9.00), so the buy **signal** appears after the day-5 close. Under the stated assumption, the trade is carried out at the day-6 closing price of **11**.
-3. The price actually bottomed on day 3 (at 8), so the rule bought **three days after the low**, at a much higher price (11). It shows the signal **lags** the market, and the delay before the trade adds to the lag. (The rule was also still "short below long" on days 3 and 4, so it stayed out while the price fell, which is the benefit of a rule like this.)
-
-</details>
+| Q1 | B | AI is a branch of CS (Figure 1.2). |
+| Q2 | C | The Dartmouth workshop took place in 1956. |
+| Q3 | B | Classification with labelled examples is supervised learning. |
+| Q4 | C | Reinforcement learning learns from rewards. |
+| Q5 | C | Behaviorist AI is about acting and receiving rewards. Symbolic = rules; Connectionist = neurons and weights. |
+| Q6 | A | The model can pick up an accidental pattern (lighting). This is a biased training set. |
+| Q7 | B | Image recognition is something we want done. The others are ways to do it. |
+| Q8 | B | Verify with a reliable source (Topic 5). |
+| Q9 | Sample | For example: McCarthy's view (making intelligent machines) is about the goal; the OECD view (a machine that infers outputs from input) describes what the system does. Any two viewpoints from Section 2.1 with a fair comparison is correct. |
+| Q10 | Sample | Supervised learning uses labelled examples, such as emails marked spam or not spam. Unsupervised learning uses unlabelled data to find structure, such as grouping customers by buying habits. |
+| Q11 | Sample | The rule checks for the exact text, so different wording does not match. A learned model may handle the new wording because it has seen many example sentences. |
+| Q12 | Sample | Rules: easy to explain and no training data needed, but each new wording needs a new rule. Machine learning: handles varied wording, but needs many labelled questions and is harder to explain. Either choice is correct with a fair advantage and disadvantage. |
 
 ---
-
-## Cross-Topic Synthesis Activity
-
-Complete the table for **three** of the five sectors, then answer the question below.
-
-| Sector | Task type | Cost of a wrong output | Level of human oversight needed (low / medium / high) | Reason |
-|---|---|---|---|---|
-| Healthcare |  |  |  |  |
-| Education |  |  |  |  |
-| Transportation |  |  |  |  |
-| Everyday life |  |  |  |  |
-| Finance and trading |  |  |  |  |
-
-**Question:** A film recommendation and a cancer screening tool both use AI to predict. Explain in 3 to 4 sentences why they should be treated differently.
-
-<details>
-<summary>Show model answers</summary>
-
-**Sample table (accept reasoned variations):**
-
-| Sector | Task type | Cost of a wrong output | Oversight needed | Reason |
-|---|---|---|---|---|
-| Healthcare | Classification | Missed disease or unnecessary treatment | **High** | Errors can seriously harm health. |
-| Education | Personalisation | A student gets work that is too easy or hard | **Medium** | Errors are usually recoverable but affect learning over time. |
-| Transportation | Perception and planning | Crash, injury | **High** | Safety-critical and fast-moving. |
-| Everyday life | Recommendation, filtering | Wasted time, missed email | **Low** | Errors are usually minor and reversible (spam folders can be checked). |
-| Finance and trading | Prediction, anomaly detection | Financial loss, market disruption | **High** (for trading), **medium** (for fraud alerts) | Losses can be large and fast. |
-
-**Question, model answer:** Both tools make predictions, but the cost of an error differs greatly. A poor film suggestion wastes a few minutes, while a missed cancer can cost a life and a false alarm can cause distress and unnecessary procedures. Because the stakes are higher, the screening tool needs rigorous testing, careful measurement (sensitivity and specificity), and a clinician who reviews and takes responsibility for the decision. The general rule: **the higher the cost of error, the more evaluation and human oversight are needed.**
-
-</details>
-
----
-
-## Teacher Notes
-
-- **Suggested pacing:** Healthcare (60 to 75 min), Education, Transportation, Everyday life, Finance (about 30 to 40 min each), Synthesis (20 min).
-- **Common misconception (Topic 1):** Learners often assume high accuracy means a good tool. Question 3 (the "lazy" tool) and Step 6 of the worked example (changing prevalence) address this directly. Ask learners to predict the answer before revealing it.
-- **Common misconception (Topic 3):** Learners confuse driver assistance (Level 2) with self-driving. Stress that at Level 2 the human is still responsible at all times.
-- **Common misconception (Topic 5):** The trading rule is a fixed algorithm, not a learning model. Use it to show how automated decisions work, then discuss how machine learning would replace the fixed rule.
-- **Rule-based automation versus machine learning (Topics 2, 4, and 5):** The adaptive quiz, the spam-filter scores, and the moving-average trading rule use fixed or hand-assigned rules to show how automated decisions work. They are not trained machine-learning models. Ask learners how a real system might learn these rules or scores from data instead.
-- **Trading assumptions (Topic 5):** Insist that learners state when the signal is evaluated and at what price the trade happens before calculating a result. Ask them to redo the worked example with trades at the same day's close and compare.
-- **Extension:** Ask learners to find one current example of AI in a sector and evaluate it with the three questions from the Core idea: *What is the task? What data does it use? What happens when it is wrong?*
-- **Linking to ethics:** Each topic notes where bias, privacy, or accountability issues arise. Use these as bridges to the AI Ethics and Limitations module.
-- **Data note:** All patient numbers, quiz rules, spam scores, and prices are **invented for teaching**.
-
----
-
-<a id="chapter-4-glossary"></a>
 
 ## Glossary
 
-| Term | Definition |
+| Term | Meaning |
 |---|---|
-| **Accuracy** | The share of all cases a tool gets right: (TP + TN) ÷ total. |
-| **Adaptive learning** | A system that adjusts content based on a learner's performance. |
-| **Algorithmic trading** | Using computer programs to decide when and how to buy or sell assets. |
-| **Anomaly detection** | Finding data points that do not fit the usual pattern. |
-| **Autonomous vehicle** | A vehicle able to perform driving tasks without constant human control. |
-| **Backtesting** | Testing a rule or model on past data to estimate how it would have performed. |
-| **Classification** | An AI task that places an input into one of several categories. |
-| **Clinical decision support** | Software that provides information or recommendations to assist healthcare professionals. |
-| **Clinician** | A health professional who treats patients. |
-| **Confusion matrix** | A table counting correct and incorrect outputs by true category. |
-| **Diagnosis** | Deciding what condition, if any, a patient has. |
-| **False negative (FN)** | A real case the tool missed. |
-| **False positive (FP)** | A false alarm: the tool flags something that is not there. |
-| **Filter bubble** | A narrowed range of content caused by recommendations that match past behaviour. |
-| **Geofenced area** | A mapped zone where an automated vehicle may operate. |
-| **High-frequency trading** | Algorithmic trading at very high speed and volume. |
-| **Intelligent tutoring system** | Software that gives step-by-step hints and feedback like a tutor. |
-| **Learning analytics** | Collecting and analysing learner data to improve learning. |
-| **Moving average** | The average price over a recent number of days. |
-| **Overfitting** | Fitting past data so closely that performance on new data is poor. |
-| **Precision** | When the tool says "positive", how often it is right: TP ÷ (TP + FP). |
-| **Prevalence** | The proportion of a population that has a condition. |
-| **Recommendation system** | Software that predicts what content or products you are likely to want. |
-| **Screening** | Commonly testing people without symptoms to identify possible disease early. |
-| **Sensitivity** | Of the people who have the condition, the share the tool catches: TP ÷ (TP + FN). |
-| **Sensor** | A device that collects information about the surroundings. |
-| **Specificity** | Of the people who are healthy, the share the tool clears: TN ÷ (TN + FP). |
-| **Threshold** | The cut-off probability above which a tool raises a flag. |
-| **True negative (TN)** | A healthy case correctly cleared. |
-| **True positive (TP)** | A real case correctly detected. |
+| **Algorithm** | A step-by-step procedure for solving a problem. |
+| **Artificial Intelligence (AI)** | The field of making machines perform tasks that normally need intelligence. |
+| **Classification** | Predicting a category for an item. |
+| **Clustering** | Grouping similar items without labels. |
+| **Computer Science (CS)** | The study of computation, information, and computing systems. |
+| **Label** | The correct answer attached to a training example. |
+| **Machine learning (ML)** | A way for programs to improve at a task by learning from data. |
+| **Regression** | Predicting a number. |
+| **Reinforcement learning** | Learning to act by receiving rewards. |
+| **Supervised learning** | Learning from labelled examples. |
+| **Training example** | One piece of data used to teach a model. |
+| **Unsupervised learning** | Finding structure in data that has no labels. |
 
 ---
-
-<a id="chapter-4-references"></a>
 
 ## References
 
-Bloom, B.S. (1984) 'The 2 sigma problem: The search for methods of group instruction as effective as one-to-one tutoring', *Educational Researcher*, 13(6), pp. 4-16. https://doi.org/10.3102/0013189X013006004
+1. Course slides, "chap1: Intro to CS and AI", Introduction to Computer Science and Artificial Intelligence (lecturer's materials). Primary source for the outline, the CS and AI maps, and the hands-on activities.
+2. McCarthy, J. (2007). *What is Artificial Intelligence?* Stanford University. (Definition summarised in Section 2.1; check the wording in the original.)
+3. OECD (2023). Updated definition of an AI system. (Summarised in Section 2.1; check the wording in the original.)
+4. Russell, S., and Norvig, P. (2021). *Artificial Intelligence: A Modern Approach* (4th ed.). Pearson. (Agent view of AI. *Not opened during this revision.*)
+5. Turing, A. M. (1950). Computing Machinery and Intelligence. *Mind*, 59(236), 433–460. (*Not opened during this revision.*)
+6. Association for Computing Machinery. ACM Computing Classification System. (Basis of the CS map. *Not opened during this revision.*)
 
-Esteva, A. et al. (2017) 'Dermatologist-level classification of skin cancer with deep neural networks', *Nature*, 542, pp. 115-118. https://doi.org/10.1038/nature21056
+> The two source lines above marked "Not opened" must be checked by the author or reviewer before submission.
 
-Gomez-Uribe, C.A. and Hunt, N. (2016) 'The Netflix recommender system: Algorithms, business value, and innovation', *ACM Transactions on Management Information Systems*, 6(4), Article 13. https://doi.org/10.1145/2843948
-
-Gulshan, V. et al. (2016) 'Development and validation of a deep learning algorithm for detection of diabetic retinopathy in retinal fundus photographs', *JAMA*, 316(22), pp. 2402-2410. https://doi.org/10.1001/jama.2016.17216
-
-Holmes, W., Bialik, M. and Fadel, C. (2019) *Artificial intelligence in education: Promises and implications for teaching and learning*. Boston: Center for Curriculum Redesign.
-
-Kirilenko, A., Kyle, A.S., Samadi, M. and Tuzun, T. (2017) 'The Flash Crash: High-frequency trading in an electronic market', *The Journal of Finance*, 72(3), pp. 967-998. https://doi.org/10.1111/jofi.12498
-
-McKinney, S.M. et al. (2020) 'International evaluation of an AI system for breast cancer screening', *Nature*, 577, pp. 89-94. https://doi.org/10.1038/s41586-019-1799-6
-
-Ngai, E.W.T., Hu, Y., Wong, Y.H., Chen, Y. and Sun, X. (2011) 'The application of data mining techniques in financial fraud detection: A classification framework and an academic review of literature', *Decision Support Systems*, 50(3), pp. 559-569. https://doi.org/10.1016/j.dss.2010.08.006
-
-SAE International (2021) *J3016: Taxonomy and definitions for terms related to driving automation systems for on-road motor vehicles*. Warrendale, PA: SAE International. https://www.sae.org/standards/content/j3016_202104/
-
-Topol, E.J. (2019) 'High-performance medicine: the convergence of human and artificial intelligence', *Nature Medicine*, 25, pp. 44-56. https://doi.org/10.1038/s41591-018-0300-7
-
-US Commodity Futures Trading Commission and US Securities and Exchange Commission (2010) *Findings regarding the market events of May 6, 2010: Report of the staffs of the CFTC and SEC to the Joint Advisory Committee on Emerging Regulatory Issues*. Washington, DC. https://www.sec.gov/news/studies/2010/marketevents-report.pdf
-
-VanLehn, K. (2011) 'The relative effectiveness of human tutoring, intelligent tutoring systems, and other tutoring systems', *Educational Psychologist*, 46(4), pp. 197-221. https://doi.org/10.1080/00461520.2011.611369
-
-World Health Organization (2021) *Ethics and governance of artificial intelligence for health: WHO guidance*. Geneva: WHO. https://www.who.int/publications/i/item/9789240029200
-
-> **Note on examples:** All numbers in the worked examples and activities are **invented for teaching purposes**. The studies, standards, and the 2010 Flash Crash are real and cited above. Links to the original publications or standards are given where available (Holmes, Bialik and Fadel, 2019, has no link here). Please check each link and bibliographic detail against the original source before formal use.
-
-
-# Chapter 5: AI Ethics and Limitations
-
-> **Author:** Joseph Lokman | **Reviewer:** Brian Djoni Suzanna  
-> **Audience:** Learners with no technical background in AI  
-> **Estimated study time:** 3 to 4 hours (including activities)
-
-**Format:** Read, work through the examples, complete the activities, then check the answer keys.
 
 ---
 
-<a id="chapter-5-table-of-contents"></a>
+# Chapter 2: Symbolic AI
+
+> **Module:** AI Overview
+> **Chapter:** 2 — Symbolic AI (course Chapter 4)
+> **Version:** 1.1 (Stage 1, rebuilt from the lecturer's course slides)
+> **Author:** Gandhi Bestin Dhammananda (proposed owner)
+> **Reviewer:** Brian Djoni Suzanna
+> **Audience:** Complete beginners with basic computer and internet literacy; no programming experience needed
+> **Estimated study time:** about 3 hours, including activities
+> **Course source:** Lecturer's slides "chap4: Symbolic AI". The chapter follows the slides' six topics: Introduction, Logic and Reasoning, Knowledge Representation, Rule-Based Systems and Expert Systems, Planning and Problem Solving, and Natural Language Processing in Symbolic AI.
+
+---
 
 ## Table of Contents
 
-1. [Learning Outcomes](#chapter-5-learning-outcomes)
-2. [Module Map](#chapter-5-module-map)
-3. [Prerequisites and Framing](#chapter-5-prerequisites-and-framing)
-4. [Topic 1: Bias (fully developed)](#topic-1-bias)
-5. [Topic 2: Privacy](#topic-2-privacy)
-6. [Topic 3: Hallucinations](#topic-3-hallucinations)
-7. [Topic 4: Responsible AI](#topic-4-responsible-ai)
-8. [Topic 5: Discussion Scenario](#topic-5-discussion-scenario-bias-or-hallucination)
-9. [Glossary](#chapter-5-glossary)
-10. [References](#chapter-5-references)
+1. [Learning Outcomes](#learning-outcomes)
+2. [Topic 1: Introduction to Symbolic AI](#topic-1-introduction-to-symbolic-ai)
+3. [Topic 2: Logic and Reasoning](#topic-2-logic-and-reasoning)
+4. [Topic 3: Knowledge Representation](#topic-3-knowledge-representation)
+5. [Topic 4: Rule-Based Systems and Expert Systems](#topic-4-rule-based-systems-and-expert-systems)
+6. [Topic 5: Planning and Problem Solving](#topic-5-planning-and-problem-solving)
+7. [Topic 6: Natural Language Processing in Symbolic AI](#topic-6-natural-language-processing-in-symbolic-ai)
+8. [Hands-On Activity: A Rule-Based Smart Classroom](#hands-on-activity-a-rule-based-smart-classroom)
+9. [Key Takeaways](#key-takeaways)
+10. [Practice Questions](#practice-questions)
+11. [Answer Key](#answer-key)
+12. [Glossary](#glossary)
+13. [References](#references)
 
 ---
-
-<a id="chapter-5-learning-outcomes"></a>
 
 ## Learning Outcomes
 
-By the end of this module, learners will be able to:
+After completing this chapter, you should be able to:
 
-- **Explain** what bias, privacy risk, and hallucination mean in an AI context.
-- **Identify** where in an AI system's life cycle bias can enter.
-- **Calculate** a simple fairness check (selection rate and the four-fifths rule) and interpret the result.
-- **Verify** an AI-generated claim using a short checking routine.
-- **Apply** responsible AI principles to a realistic scenario and justify a decision.
+1. Define Symbolic AI (also called GOFAI) and state its main benefits and limitations.
+2. Use propositional logic (AND, OR, NOT, implication) and read simple predicate-logic statements with ∀ and ∃.
+3. Apply modus ponens and modus tollens to simple examples.
+4. Describe five ways to represent knowledge: logic, semantic networks, frames and scripts, rules, and ontologies.
+5. Explain the parts of a rule-based system and of an expert system, and trace a small rule example.
+6. Describe planning as search in a state space, and trace breadth-first, depth-first, A*, and minimax on small examples.
+7. Describe how rules, grammars, and logic are used for natural language processing, and explain where they fail.
 
-<a id="chapter-5-module-map"></a>
+```mermaid
+flowchart LR
+    K["Knowledge<br/>facts and rules<br/>written by people"] --> I["Inference engine<br/>applies logic and search"]
+    I --> C["Conclusion<br/>or plan"]
+    C --> E["Explanation<br/>which rules were used"]
+```
 
-## Module Map
+*Figure 2.1: The symbolic pipeline. People write the knowledge; the machine reasons with it.*
 
-| Topic | What is included |
+---
+
+## Topic 1: Introduction to Symbolic AI
+
+### 1.1 What Is Symbolic AI?
+
+**Symbolic AI**, also called **Good Old-Fashioned AI (GOFAI)**, builds intelligence by manipulating **symbols** (words, labels, logical statements) with **explicit rules and logic**. Knowledge is written down in a form the computer can reason with.
+
+The lecturer's example is a medical diagnosis rule:
+
+```
+IF   patient has a fever
+AND  patient has a cough
+AND  patient has difficulty breathing
+THEN patient may have pneumonia
+```
+
+The system checks each condition. If all are true, it concludes "may have pneumonia". Because we can point at the exact rule that fired, we can **explain the decision**, and a person can **edit the rule** when medical knowledge changes.
+
+> **Reading the example carefully.** The rule says *may have*, not *has*. A real medical system is a decision-support tool for doctors. It does not replace them.
+
+### 1.2 Where Symbolic AI Is Used
+
+The slides list four application areas: digital assistants such as Siri, medical diagnosis systems, autonomous cars, and computer vision. The table shows the symbolic part in each.
+
+| Application | Symbolic part | Note |
+|---|---|---|
+| Digital assistants | Rules and grammars that interpret a command, and dialogue rules | Modern assistants combine such parts with machine-learning models (Chapter 3). |
+| Medical diagnosis | Rules and knowledge bases that suggest a condition from symptoms | Classic expert systems such as MYCIN worked this way. |
+| Autonomous cars | Traffic rules such as "if the light is red, stop", and route planning by search | Recognising a stop sign from a camera picture is mostly done with neural networks. |
+| Computer vision | Rules that reason about what was detected (for example, "a pedestrian near a crossing means slow down") | Detecting objects in pixels is mostly done with neural networks. |
+
+**Key point.** Most real systems are **hybrids**. The symbolic part handles *reasoning with known rules*; the learning part handles *messy sensor data*.
+
+### 1.3 Benefits and Limitations
+
+| Benefits | What it means |
 |---|---|
-| 1. Bias | Explanations, terms, diagram, worked example with code, activity, answer key |
-| 2. Privacy | Explanation, table, short activity with answer |
-| 3. Hallucinations | Explanation, verification routine, short activity with answer |
-| 4. Responsible AI | Principles table, checklist |
-| 5. Discussion scenario | Real case, guided questions, teacher notes |
-
----
-
-<a id="chapter-5-prerequisites-and-framing"></a>
-
-## Prerequisites and Framing
-
-This module is one branch of the wider **AI Overview** course. It assumes learners have already met the basic vocabulary from the earlier chapters, so those definitions are not repeated here:
-
-- artificial intelligence, machine learning, model, and training data (see Chapter 1, *Introduction to Artificial Intelligence*, and Chapter 3, *How Artificial Intelligence Works*)
-
-Terms that are **specific to ethics and limitations** (for example *proxy variable*, *impact ratio*, *hallucination*) are defined where they first appear and collected in the [Glossary](#chapter-5-glossary).
-
-> **Core idea of this module:** AI systems do not have opinions or intentions. They reflect the data, goals, and choices of the people who build and use them. Ethics is about those choices.
-
----
-
-## Topic 1: Bias
-
-### 1.1 What is bias?
-
-In everyday language, *bias* means unfair preference. In AI, **bias** means that a system produces results that are **systematically** less accurate or less favourable for some people or groups than for others.
-
-Two words in that definition matter:
-
-- **Systematically:** the unfairness follows a pattern. It is not random bad luck.
-- **Groups:** bias is usually discovered by comparing results across groups (for example by gender, age, skin tone, language, or region).
-
-Bias is not always intentional. Most harmful AI bias happens even when the builders had good intentions.
-
-### 1.2 Where does bias come from?
-
-Bias can enter at several stages of an AI system's life cycle:
-
-![Flowchart of the AI life cycle (collect data, label data, train model, test model, deploy and use) showing where each type of bias can enter](study-guide/v1.0/chapter-5-aI-ethics-and-limitations/assets/bias-occurence-diagram.png)
-
-*Figure 1. Where bias can enter an AI system's life cycle.*
-
-If the image does not display in your viewer, use this table instead (it contains the same information):
-
-| Stage | Type of bias | Plain-language meaning | Example |
-|---|---|---|---|
-| Collect data | **Historical bias** | The world was unfair, so the data is too | Past hiring records favour one gender |
-| Collect data | **Sampling bias** | Some groups are barely in the data | A face dataset with mostly light-skinned faces |
-| Label data | **Labelling bias** | Human labellers add their own assumptions | Labelling certain dialects as "rude" |
-| Train model | **Proxy variable** | A harmless-looking input correlates with a protected trait | Postcode standing in for ethnicity |
-| Test model | **Measurement bias** | Success is only checked on a convenient group | Testing accuracy overall, not per group |
-| Use model | **Feedback loop** | Biased outputs create new biased data | Police sent to a "high-crime" area record more crime there |
-
-**Terms defined:**
-
-- **Protected characteristic:** a trait that laws or ethics say should not be used to treat people unfairly, such as race, sex, religion, age, or disability.
-- **Proxy variable:** an input that is not itself a protected characteristic but is strongly linked to one.
-- **Feedback loop:** when a system's outputs influence the data it later learns from, which can amplify an original error.
-
-### 1.3 Real-world evidence
-
-| Case | What happened | Lesson |
-|---|---|---|
-| **Gender Shades (2018)** | Researchers tested commercial facial-analysis systems and found much higher error rates for darker-skinned women than for lighter-skinned men (Buolamwini & Gebru, 2018). | Overall accuracy can hide large gaps between groups. |
-| **Healthcare risk algorithm (2019)** | An algorithm used to decide who gets extra care used past healthcare *spending* as a stand-in for health *need*. Because less money had been spent on Black patients with the same level of illness, it under-estimated their needs (Obermeyer et al., 2019). | A proxy variable (cost) quietly encoded unequal access to care. |
-| **Recruiting tool (reported 2018)** | Reuters reported that Amazon abandoned an experimental hiring tool that learned to downgrade résumés associated with women, because it was trained on past, male-dominated hiring (Dastin, 2018). | Historical bias in training data is reproduced by the model. |
-
-### 1.4 Worked example: checking a hiring tool for unequal outcomes
-
-**Scenario.** A company uses an AI tool to shortlist job applicants. You are asked to check whether it treats two groups, Group A and Group B, fairly. (The numbers below are invented for teaching.)
-
-| | Applicants | Shortlisted by the tool |
-|---|---|---|
-| Group A | 100 | 60 |
-| Group B | 100 | 30 |
-
-We will use a common screening measure called the **four-fifths rule**.
-
-**Terms defined:**
-
-- **Selection rate:** the share of a group that receives the favourable outcome. Formula: `shortlisted ÷ applicants`.
-- **Four-fifths (80%) rule:** a rule of thumb from US employment guidance. If one group's selection rate is **less than 80% (4/5)** of the highest group's rate, this is treated as a warning sign of possible adverse impact (US EEOC et al., 1978, 29 CFR §1607.4(D)). It is a **screening indicator, not proof** of discrimination.
-
-**Step 1: Calculate each group's selection rate.**
-
-- Group A: 60 ÷ 100 = **0.60** (60%)
-- Group B: 30 ÷ 100 = **0.30** (30%)
-
-**Step 2: Identify the highest rate.** Group A, at 0.60.
-
-**Step 3: Divide each other group's rate by the highest rate.** This is the **impact ratio**.
-
-- Group B: 0.30 ÷ 0.60 = **0.50**
-
-**Step 4: Compare to the threshold of 0.80.**
-
-- 0.50 is less than 0.80, so the tool **fails** the screening check. Group B is shortlisted at half the rate of Group A.
-
-**Step 5: Decide what to do next.** The result is a warning, not a verdict. A sensible next step is to investigate: Which inputs does the model use? Are any of them proxies? Was it trained on biased historical hiring decisions? Do qualified applicants in Group B get rejected more often?
-
-You can reproduce the calculation with this short Python script:
-
-```python
-# Fairness check: selection rates and the four-fifths rule
-groups = {
-    "Group A": {"applicants": 100, "shortlisted": 60},
-    "Group B": {"applicants": 100, "shortlisted": 30},
-}
-
-# Step 1: selection rate for each group
-rates = {name: g["shortlisted"] / g["applicants"] for name, g in groups.items()}
-
-# Step 2: highest rate
-highest = max(rates.values())
-
-# Steps 3 and 4: impact ratio and comparison with 0.8
-for name, rate in rates.items():
-    ratio = rate / highest
-    status = "PASS" if ratio >= 0.8 else "FLAG for review"
-    print(f"{name}: selection rate = {rate:.2f}, impact ratio = {ratio:.2f} -> {status}")
-```
-
-**Expected output:**
-
-```text
-Group A: selection rate = 0.60, impact ratio = 1.00 -> PASS
-Group B: selection rate = 0.30, impact ratio = 0.50 -> FLAG for review
-```
-
-> **Limitation of this check.** The four-fifths rule only compares outcome rates. It does not tell you *why* the gap exists, and a tool can pass this check while still making more *mistakes* for one group. There are several competing definitions of fairness, and they cannot all be satisfied at once (Chouldechova, 2017). Real audits use several measures plus human judgment.
-
-### 1.5 Learner activity
-
-**Part A: Calculation (10 minutes).** A different company's tool produces these results:
-
-| | Applicants | Shortlisted |
-|---|---|---|
-| Group C | 50 | 20 |
-| Group D | 80 | 36 |
-
-1. Calculate the selection rate for each group.
-2. Calculate the impact ratio.
-3. Does the tool pass the four-fifths rule? Explain in one sentence.
-
-**Part B: Spot the proxy (10 minutes).** A bank builds a loan-approval model. It is **not** given any information about race or gender, but it **is** given the applicant's postcode, first language, and job title.
-
-1. Which input might act as a proxy variable? Why?
-2. Name one way the team could check whether the proxy is causing unfair results.
-
-**Part C: Reflection (5 minutes).** In 3 to 4 sentences, explain why "we removed the sensitive column from the data" does not guarantee a fair model.
-
-### 1.6 Answer key and expected outcomes
-
-**Part A**
-
-1. Group C: 20 ÷ 50 = **0.40**. Group D: 36 ÷ 80 = **0.45**.
-2. Highest rate is Group D (0.45). Impact ratio for Group C = 0.40 ÷ 0.45 ≈ **0.89**.
-3. 0.89 is above 0.80, so the tool **passes** this screening check; the gap is small enough that this rule does not flag it. (A good answer also notes that passing does not prove the tool is fair, as it ignores error rates and the reasons for the gap.)
-
-**Part B**
-
-1. **Postcode** is the strongest candidate, because neighbourhoods are often strongly linked to ethnicity and income due to historical patterns (a proxy). First language can also act as a proxy for national origin. Job title may be a weaker proxy for gender in some fields. *Accept any well-reasoned answer.*
-2. Acceptable checks: compare approval rates and error rates across groups (using group information held *only for auditing*); remove or test the model without the suspected proxy and see whether outcomes change; review whether the input is truly relevant to repayment ability.
-
-**Part C** *(Model answer)*: Other inputs can still carry the same information (proxy variables), and the historical data may already reflect unfair past decisions. Removing the column also makes it impossible to measure whether groups are treated differently, so unfairness can become harder to detect, not easier.
-
-**Teacher check:** Learners demonstrate understanding if they (a) compute rates correctly, (b) interpret the ratio relative to 0.8, and (c) recognise that fairness requires investigating causes, not only removing columns.
-
-### 1.7 Ways to reduce bias (overview)
-
-| Approach | What it means | Example |
-|---|---|---|
-| Better data | Collect more representative data | Add faces with a wider range of skin tones |
-| Per-group testing | Report accuracy for each group, not just overall | Publish results by gender and skin tone |
-| Documentation | Describe a model's intended use and limits | **Model cards** (Mitchell et al., 2019); **datasheets for datasets** (Gebru et al., 2021) |
-| Human oversight | A person can review and override decisions | Manager reviews all automated rejections |
-| Ongoing monitoring | Re-check after launch | Re-run the fairness check every quarter |
-
----
-
-## Topic 2: Privacy
-
-### 2.1 What is privacy in AI?
-
-**Privacy** is a person's ability to control information about themselves. **Personal data** (also called **personally identifiable information, PII**) is any information that can identify a person, directly (name, ID number, face) or indirectly (a combination of age, postcode, and job).
-
-AI raises privacy concerns because it:
-
-1. **Is trained on large amounts of data**, which may include personal information collected without clear consent.
-2. **Can memorise** parts of its training data. Researchers have shown that large language models can sometimes be prompted to reproduce text from their training sets, including personal details (Carlini et al., 2021).
-3. **Can infer sensitive facts** (such as health conditions) from innocent-looking data.
-4. **Receives user input.** Anything typed into an AI tool may be stored or used according to that service's policy.
-
-### 2.2 Risks and protections
-
-| Risk | Plain-language description | Protection |
-|---|---|---|
-| Data collection without consent | Data gathered for one purpose is reused for another | Collect only what is needed (**data minimisation**); get clear consent |
-| Memorisation / leakage | The model repeats private training text | Remove personal data before training; test for leakage |
-| Re-identification | "Anonymous" data is matched with other data to find the person | Aggregate or add noise (**differential privacy**) |
-| Oversharing by users | A user pastes confidential text into a chatbot | Read the tool's data policy; never paste secrets or personal data |
-
-**Terms defined:**
-
-- **Data minimisation:** collecting and keeping only the data that is necessary for a stated purpose.
-- **Anonymisation:** removing identifying details. It is hard to do perfectly, which is why re-identification is a risk.
-- **Differential privacy:** a technique that adds carefully measured random noise so that results reveal patterns about a group without revealing facts about any one individual.
-
-**Legal context:** Laws such as the EU's General Data Protection Regulation (GDPR) give people rights over their personal data, including rights of access and erasure, and require a lawful basis for processing (European Union, 2016).
-
-### 2.3 Learner activity
-
-You work for a clinic. A colleague wants to paste a patient's full name, date of birth, and symptoms into a public AI chatbot to "help draft a letter faster."
-
-1. Identify two privacy risks.
-2. Suggest a safer way to get help with the letter.
-
-**Answer key.**
-1. Possible risks: the data may be stored or used for training under the provider's terms; it may be exposed to people without authorisation; it may breach the clinic's policies or health-privacy law; the patient did not consent to this use.
-2. Safer options: remove all identifying details and use placeholders such as "[Patient]"; use an approved tool covered by the clinic's data agreement; or write the sensitive parts manually.
-
----
-
-## Topic 3: Hallucinations
-
-### 3.1 What is a hallucination?
-
-In AI, a **hallucination** is an output that is **fluent and confident but false, made up, or unsupported** by the source it should rely on (Ji et al., 2023).
-
-**Why does it happen?** A **large language model (LLM)** is trained to predict which words are likely to come next. It is optimised to produce **plausible** text, not to check **truth**. When it lacks information, it may still generate something that *sounds* right.
-
-**Terms defined:**
-
-- **Large language model (LLM):** an AI model trained on very large amounts of text that generates text by predicting likely next words.
-- **Grounding:** connecting a model's answer to trusted sources, for example by letting it retrieve documents and cite them.
-- **Fabricated citation:** a reference that looks real (author, title, journal) but does not exist.
-
-### 3.2 Common types
-
-| Type | Example |
+| **Interpretability** | You can trace the reasoning from conclusion back to the rules. |
+| **Knowledge representation** | Complex knowledge can be stored in a formal, structured way. |
+| **Flexibility** | Change the rules or knowledge base and the system adapts to a new domain. |
+
+| Limitations | What it means |
 |---|---|
-| Made-up facts | Stating a wrong date or statistic with confidence |
-| Fabricated sources | Inventing a court case, paper, or URL |
-| Wrong reasoning | A maths or logic answer that looks neat but is incorrect |
-| Unfaithful summary | A summary that adds details not in the original document |
-
-### 3.3 Worked example: verifying an AI-generated claim
-
-**Scenario.** You ask an AI assistant for a source on a claim, and it replies:
-
-> "According to Henderson & Zhou (2019), published in the *Journal of Applied Cognitive Ethics*, 87% of students prefer AI tutors."
-
-**Step 1: Flag it.** It contains specific details (names, year, journal, percentage). Specific does not mean true.
-
-**Step 2: Search the exact title and authors** in a scholarly database or a search engine.
-
-**Step 3: Check the journal exists** and whether that article, volume, and page are listed.
-
-**Step 4: Check the claim inside the source** (if found). Does the paper actually report 87%?
-
-**Step 5: Decide and record.**
-
-- *Not found anywhere* → treat as **likely fabricated**; do not cite or use it.
-- *Found but says something different* → use what the real source says.
-- *Found and matches* → cite the **original source**, not the AI.
-
-**Rule of thumb:** *Trust, but verify; the more important the decision, the more you verify.*
-
-### 3.4 Reducing the risk
-
-- Ask the AI to **cite sources, then check them yourself.**
-- Ask for **uncertainty**: "If you are unsure, say so."
-- Provide the source text and ask the AI to answer **only from that text.**
-- Cross-check with a second, independent source.
-- Keep a **human in the loop** for high-stakes uses (legal, medical, financial).
-
-### 3.5 Learner activity
-
-An AI summary of a news article says: "The mayor announced a 20% tax cut." You have the original article, and it never mentions a tax cut.
-
-1. What type of hallucination is this?
-2. List two steps you would take before sharing the summary.
-
-**Answer key.**
-1. An **unfaithful summary** (an unsupported added detail).
-2. Re-read the original article and compare; re-run the summary with the instruction "only use facts stated in the article"; check another news source; do not share until verified.
+| **Incomplete knowledge** | The system works only if the knowledge is complete and well defined. |
+| **Scalability** | The more symbols and rules, the more computing work. |
+| **Uncertain or ambiguous information** | Rules need precise statements; "fairly warm" or "maybe" is hard. |
+| **Limited ability to learn** | People must write and update the rules by hand. |
 
 ---
 
-## Topic 4: Responsible AI
+## Topic 2: Logic and Reasoning
 
-### 4.1 What is responsible AI?
+Logic gives the computer a precise language for statements and a method to derive new statements from old ones.
 
-**Responsible AI** means designing, building, and using AI in ways that are safe, fair, transparent, and accountable, and that respect human rights. It turns the concerns in Topics 1 to 3 into practical commitments.
+### 2.1 Propositional Logic
 
-Many organisations have published similar principles. The OECD AI Principles (2019) and the NIST AI Risk Management Framework (2023) are widely referenced starting points.
+A **proposition** is a declarative sentence that is either **true or false, but not both**.
 
-### 4.2 Core principles
+* "The sky is blue." (a proposition)
+* "It is raining." (a proposition)
+* "2 + 2 = 4." (a proposition, true)
+* "Close the door!" (not a proposition; it is a command)
 
-| Principle | Meaning | Question to ask |
+**Boolean operators.** Take two propositions: **p** = "It is raining" and **q** = "It is windy".
+
+| Operator | Symbol | Reads as | True when |
+|---|:-:|---|---|
+| AND | ∧ | p ∧ q: "raining and windy" | both p and q are true |
+| OR | ∨ | p ∨ q: "raining or windy (or both)" | at least one is true |
+| NOT | ¬ | ¬p: "not raining" | p is false |
+
+**Truth table for AND, OR, and NOT**
+
+| p | q | p ∧ q | p ∨ q | ¬p |
+|:-:|:-:|:-:|:-:|:-:|
+| T | T | T | T | F |
+| T | F | F | T | F |
+| F | T | F | T | T |
+| F | F | F | F | T |
+
+**Logical equivalences.** Two statements are equivalent when they have the same truth value in every case.
+
+* De Morgan's laws: ¬(p ∧ q) ≡ ¬p ∨ ¬q and ¬(p ∨ q) ≡ ¬p ∧ ¬q
+* Double negation: ¬(¬p) ≡ p
+
+*Check one case.* Let p = T and q = F. Then p ∧ q = F, so ¬(p ∧ q) = T. On the other side ¬p = F and ¬q = T, so ¬p ∨ ¬q = T. Both sides agree. ✔
+
+**Implication and biconditional**
+
+* **p → q** reads "if p, then q". p is the **antecedent** (premise) and q is the **consequent** (conclusion).
+* **p ↔ q** reads "p if and only if q": p and q have the same truth value.
+
+| p | q | p → q | p ↔ q |
+|:-:|:-:|:-:|:-:|
+| T | T | T | T |
+| T | F | **F** | F |
+| F | T | T | F |
+| F | F | T | T |
+
+"If it is raining, then the ground is wet" is false in only one situation: it is raining and the ground is *not* wet. If it is not raining, the statement does not claim anything, so it counts as true.
+
+**Inference rules.** These let us derive new facts.
+
+| Rule | Form | Example |
 |---|---|---|
-| **Fairness** | Treat people and groups equitably | Have we tested results across groups? |
-| **Transparency** | Be open about when and how AI is used | Do users know AI is involved? |
-| **Explainability** | Be able to give understandable reasons for outputs | Can we explain why this decision was made? |
-| **Privacy and security** | Protect data and systems | Do we collect only what we need? |
-| **Accountability** | A person or organisation is answerable for outcomes | Who is responsible if it goes wrong? |
-| **Reliability and safety** | The system works as intended, including in unusual cases | What happens when it fails? |
-| **Human oversight** | People can review, challenge, and override | Can a human step in? |
+| **Modus ponens** ("mode that affirms") | From p → q and p, conclude q | "If it rains, the ground is wet." "It rains." Therefore: "The ground is wet." |
+| **Modus tollens** ("mode that denies") | From p → q and ¬q, conclude ¬p | "If it rains, the ground is wet." "The ground is not wet." Therefore: "It is not raining." |
 
-**Term defined:**
+> **Common mistake.** From p → q and **q**, you *cannot* conclude p. The ground can be wet because someone watered it.
 
-- **Accountability:** the idea that humans and organisations, not "the algorithm," are responsible for outcomes.
+**Why this matters in AI.** Propositional logic lets a system represent facts ("the lights are on", "the door is locked") and make inferences ("the traffic light is red" and "if red, then stop" lead to "stop the vehicle").
 
-### 4.3 A simple pre-use checklist
+### 2.2 Predicate Logic (First-Order Logic)
 
-```text
-Before using AI for a task, ask:
-[ ] What is the purpose, and is AI appropriate for it?
-[ ] What could go wrong, and who could be harmed?
-[ ] Is any personal or confidential data involved?
-[ ] Have outputs been checked for accuracy and bias?
-[ ] Is a human reviewing high-stakes outputs?
-[ ] Is it clear to others that AI was used?
-[ ] Who is accountable, and how can someone appeal a decision?
+Propositional logic treats "Socrates is a man" as one block. **Predicate logic** looks inside the sentence.
+
+* A **predicate** is a statement with variables that is true or false depending on the values. Example: **Even(x)** is true for x = 4 and false for x = 5.
+* The **universal quantifier ∀** means "for all". ∀x (Cat(x) → Mammal(x)) reads "every cat is a mammal".
+* The **existential quantifier ∃** means "there exists at least one". ∃x (Prime(x) ∧ x < 10) reads "some prime number is less than 10" (true: 2, 3, 5, 7).
+
+**Turning a sentence into logic (four steps)**
+
+| Step | Action | Example: "Some birds can fly." |
+|---|---|---|
+| a | Identify the predicates | Bird(·), CanFly(·) |
+| b | Introduce variables | y |
+| c | Apply the quantifier | "Some" means ∃ |
+| d | Write the expression | ∃y (Bird(y) ∧ CanFly(y)) |
+
+**Connectives in predicate logic**
+
+| Expression | Meaning |
+|---|---|
+| Even(x) ∧ Prime(x) | x is even and prime |
+| Positive(x) ∨ Negative(x) | x is positive or negative |
+| Adult(x) → CanVote(x) | if x is an adult, x can vote (in a given rule set) |
+| ¬Married(x) | x is not married |
+| ∀x (Even(x) → Positive(x)) | every even x is positive (false if x ranges over all integers, because −2 is even; it is true only when x ranges over positive numbers) |
+
+> **Why the last row matters.** A logic statement is true or false *relative to a domain*. A knowledge base must say what its variables range over.
+
+**Rules of inference with quantifiers**
+
+| Rule | In words | Form |
+|---|---|---|
+| **Universal instantiation** | If it is true for all x, it is true for a particular a | from ∀x (P(x) → Q(x)) to P(a) → Q(a) |
+| **Existential instantiation** | If something exists with the property, give it a *new* name c | from ∃x (P(x) ∧ Q(x)) to P(c) ∧ Q(c) |
+| **Universal generalization** | If it holds for an *arbitrary* a, it holds for all | from P(a) → Q(a) to ∀x (P(x) → Q(x)) |
+| **Existential generalization** | If it holds for a particular c, then something exists | from P(c) ∧ Q(c) to ∃x (P(x) ∧ Q(x)) |
+| **Universal modus ponens** | From ∀x (P(x) → Q(x)) and P(a) | conclude Q(a) |
+| **Universal modus tollens** | From ∀x (P(x) → Q(x)) and ¬Q(a) | conclude ¬P(a) |
+
+**The slides ask: "Do you see anything strange for the above four rules?"** Here is the answer.
+
+* **Existential generalization** is always safe. If c has the property, then *something* has it.
+* **Universal instantiation** is always safe. What holds for everything holds for a. 
+* **Existential instantiation** is safe only if the name c is **new**. We know *some* x has the property; we do not know which one. If c is already a name for something else, the step is wrong.
+* **Universal generalization** is the strange one. Going from **one** example to **all** is **not valid** in general. "My cat is black" does not prove "all cats are black". The rule is valid only if a is **arbitrary**, meaning we assumed nothing special about it.
+
+**Example of the universal rules.** Premises: ∀x (Human(x) → Mortal(x)) and Human(Socrates). Universal modus ponens gives **Mortal(Socrates)**.
+
+---
+
+## Topic 3: Knowledge Representation
+
+**Knowledge representation (KR)** is the process of structuring information so that a computer program can use it to reason, solve problems, and make decisions. A system needs knowledge about the world before it can reason about it.
+
+Why KR matters (from the slides):
+
+1. **Reasoning.** It allows logical inference and drawing conclusions.
+2. **Problem solving.** Well-organised information makes hard problems easier.
+3. **Learning.** Structured knowledge can be extended and generalised.
+
+```mermaid
+flowchart LR
+    P["Perception"] --> KR["Knowledge representation"]
+    L["Learning"] --> KR
+    KR <--> R["Reasoning"]
+    R --> PL["Planning"]
+    PL --> EX["Execution"]
 ```
 
-### 4.4 Regulation snapshot
+*Figure 2.2: Knowledge representation sits between perception and learning on one side, and reasoning, planning, and action on the other.*
 
-Governments are introducing rules. For example, the EU AI Act (Regulation (EU) 2024/1689) takes a **risk-based approach**: it bans a small set of practices, sets stricter requirements for **high-risk** uses (its list includes some uses in employment, such as recruitment, and in access to essential services, such as assessing creditworthiness), and sets lighter requirements for lower-risk uses (European Union, 2024). The full text is available from the [official EUR-Lex page](https://eur-lex.europa.eu/eli/reg/2024/1689/oj). Learners should check the rules that apply in their own country and sector, as these are changing.
+### 3.1 Five Ways to Represent Knowledge
+
+**1. Logic-based representation**
+
+* Propositional: P = "It is raining"; "It is not raining" is ¬P.
+* First-order: "All humans are mortal" is ∀x (Human(x) → Mortal(x)).
+
+**2. Semantic networks.** Knowledge is a graph. **Nodes** are concepts; **links** are relationships.
+
+```mermaid
+flowchart LR
+    Cat -->|is a| Mammal
+    Whale -->|is a| Mammal
+    Mammal -->|is an| Animal
+    Cat -->|has| Fur
+    Whale -->|lives in| Water
+    Fish -->|is an| Animal
+    Fish -->|lives in| Water
+```
+
+*Figure 2.3: A small semantic network. From it we can infer that a cat is an animal by following "is a" links.*
+
+**3. Frames and scripts**
+
+* A **frame** is a data structure for a typical object or situation, with **slots**. A "car" frame has slots: make, model, year, colour.
+* A **script** is a sequence of frames for a typical event. "Going to a restaurant" has the frames *reservation*, *ordering*, and *paying the bill*.
+
+| Slot | Value in a frame for "my car" |
+|---|---|
+| make | (example) Toyota |
+| model | (example) Corolla |
+| year | (example) 2019 |
+| colour | (example) white |
+
+**4. Rule-based representation.** Knowledge as **IF–THEN** production rules: "If the patient has fever and cough, then consider a respiratory infection."
+
+**5. Ontologies.** A formal description of the **concepts in a domain and their relationships**, giving everyone a **shared vocabulary**. A medical ontology defines *disease*, *symptom*, and *treatment*, and how they relate (a disease *has symptom* a symptom; a treatment *treats* a disease).
+
+| Method | Best for | Weakness |
+|---|---|---|
+| Logic | Precise reasoning | Hard to write for everyday knowledge |
+| Semantic network | Showing relationships; "is-a" inheritance | Can be vague about exact meaning |
+| Frames and scripts | Typical objects and routines | Struggles with exceptions |
+| Rules | Decisions and advice | Many rules are hard to keep consistent |
+| Ontology | Shared vocabulary across systems | Costly to build and agree on |
+
+### 3.2 Applications of Knowledge Representation
+
+1. **Medical diagnosis.** Capture symptoms, diseases, and medical expertise.
+2. **Natural language understanding.** Represent linguistic knowledge to understand and produce language.
+3. **Robotics.** Spatial reasoning, object handling, and task planning.
+4. **Expert systems.** Domain knowledge used to give expert-level advice.
 
 ---
 
-## Topic 5: Discussion Scenario (Bias or Hallucination)
+## Topic 4: Rule-Based Systems and Expert Systems
 
-### 5.1 Case: Fabricated court cases (hallucination)
+### 4.1 Rule-Based Systems
 
-In 2023, in the US case *Mata v. Avianca, Inc.*, lawyers submitted a legal brief that cited several court decisions. The decisions had been produced by an AI chatbot and **did not exist**. The court later sanctioned the lawyers and their firm, noting that they continued to stand by the citations after questions were raised (*Mata v. Avianca, Inc.*, 2023).
+A **rule-based system** (also called a **production system**) works with a collection of **condition–action rules**: each rule has a condition (the IF part) and an action (the THEN part).
 
-### 5.2 Guided discussion questions
+Examples:
 
-1. **Identify:** Which type of hallucination is this (see Section 3.2)?
-2. **Process:** At what step could the error have been caught? Use the verification steps in Section 3.3.
-3. **Responsibility:** Who was accountable, the AI, the tool's maker, or the lawyers? Why?
-4. **Principles:** Which responsible AI principles (Section 4.2) were not followed?
-5. **Prevention:** Write three rules a law firm should adopt for AI use.
-6. **Compare:** How is this different from a *bias* problem? Could a tool be free of hallucination and still biased? Give an example.
+* If the temperature is greater than 30 °C, then turn on the air conditioning.
+* If the customer has purchased more than $100 of goods, then offer a 10% discount.
 
-### 5.3 Alternative scenario: a biased résumé screener (bias)
+A rule-based system has three parts:
 
-A company's screener rejects many applicants who have career gaps. Data shows women, who more often take caregiving breaks, are rejected at a much higher rate. Discuss: Is "career gap" a proxy? Is it job-relevant? Who should decide, and how should the company monitor outcomes?
+| Part | Role |
+|---|---|
+| **Condition–action rules** | The knowledge: what to do in which situation |
+| **Knowledge base** | The facts the system currently knows |
+| **Inference engine** | The program that checks the conditions and triggers the actions |
 
-### 5.4 Teacher notes and expected discussion points
+**Worked example: a thermostat**
 
-- **Q1:** Fabricated sources (invented court cases).
-- **Q2:** Step 2 or 3 of the verification routine: looking up the case in an official legal database would have shown the cases did not exist.
-- **Q3:** Accountability rests with the **professionals who signed and submitted** the brief. Tool makers may share responsibility for communicating limits, but users cannot hand off professional duties to a tool.
-- **Q4:** Accountability, human oversight, reliability, transparency.
-- **Q5:** Acceptable rules include: all citations independently verified; AI use disclosed internally; no confidential client data in public tools; a named reviewer signs off.
-- **Q6:** Hallucination is about **truth**; bias is about **fair treatment across groups**. A system can give accurate answers yet systematically serve one group worse.
-- **Section 5.3:** Strong answers recognise that the gap may be a proxy for sex, question its relevance to the job, and propose outcome monitoring by group plus human review.
+Rules:
+
+* R1: If temperature > 25 °C, then turn on the air conditioning.
+* R2: If temperature < 20 °C, then turn on the heating.
+
+| Current temperature | R1 fires? | R2 fires? | Action |
+|--:|:-:|:-:|---|
+| 28 °C | yes | no | Air conditioning on |
+| 22 °C | no | no | Nothing |
+| 15 °C | no | yes | Heating on |
+
+### 4.2 Forward Chaining: Rules Triggering Rules
+
+Real systems chain rules together. In **forward chaining**, the engine starts from known facts and keeps applying rules until no new fact appears.
+
+**Facts:** it is raining; I am going outside.
+
+**Rules**
+
+* R1: If it is raining, then the ground is wet.
+* R2: If the ground is wet and I am going outside, then take an umbrella and wear waterproof shoes.
+
+**Trace**
+
+| Step | Facts known | Rule checked | Result |
+|--:|---|---|---|
+| 0 | raining; going outside | — | start |
+| 1 | raining; going outside | R1 (raining) fires | adds "ground is wet" |
+| 2 | raining; going outside; ground wet | R2 (wet and going outside) fires | adds "take umbrella and waterproof shoes" |
+| 3 | all facts | no rule has a new result | stop |
+
+The trace itself is the **explanation**: the system can say "I suggest an umbrella because the ground is wet, and the ground is wet because it is raining."
+
+### 4.3 Expert Systems
+
+An **expert system** is an AI system built to copy the decision-making of a **human expert in a narrow domain** such as medicine, finance, or engineering. It has three parts.
+
+| Part | Role |
+|---|---|
+| **Knowledge base** | Domain facts, rules, and *heuristics* (expert rules of thumb) |
+| **Inference engine** | Reasoning that draws conclusions from the knowledge base and the user's input |
+| **User interface** | How the user enters data and receives recommendations |
+
+```mermaid
+flowchart LR
+    U["User"] <--> UI["User interface"]
+    UI <--> IE["Inference engine"]
+    IE <--> KB["Knowledge base<br/>facts, rules, heuristics"]
+    EX["Human expert"] -.->|knowledge engineering| KB
+```
+
+*Figure 2.4: Parts of an expert system. A "knowledge engineer" interviews human experts and turns what they know into rules.*
+
+**Rule-based system versus expert system**
+
+| | Rule-based system | Expert system |
+|---|---|---|
+| Focus | Conditional rules for decisions or tasks | Copy the reasoning of a human expert |
+| Scope | General-purpose | Specialised in one domain |
+| Example | Thermostat | MYCIN-style infection advisor |
+
+**History note.** MYCIN, built at Stanford in the 1970s, suggested infection diagnoses and treatments from rules written with doctors. Expert systems were widely used in business in the 1980s. Their main weakness is the **knowledge acquisition bottleneck**: it takes a long time to get an expert's knowledge into rules.
 
 ---
 
-<a id="chapter-5-glossary"></a>
+## Topic 5: Planning and Problem Solving
+
+### 5.1 What Are Planning and Problem Solving?
+
+* **Planning** finds a **sequence of actions** that changes an **initial state** into a **goal state**.
+* **Problem solving** finds solutions to hard problems by searching, reasoning about possible actions, and evaluating results.
+
+Four building blocks:
+
+| Block | Meaning | Example: a delivery robot in a building |
+|---|---|---|
+| **State space** | All states the system can be in | Every position of the robot |
+| **Actions** | Steps that move from one state to another, with **preconditions** and **effects** | "Move through door" needs the door open |
+| **Goal state** | The desired end state | Robot at room 305 |
+| **Search** | Systematically exploring the state space to find the action sequence | Try routes until room 305 is reached |
+
+### 5.2 Uninformed (Blind) Search
+
+These methods know nothing about where the goal is.
+
+* **Breadth-first search (BFS)**: explores all neighbours at the current depth before going deeper.
+* **Depth-first search (DFS)**: goes as deep as possible along a branch, then backtracks.
+* **Uniform-cost search**: always expands the node with the lowest path cost so far.
+
+**Worked example.** Graph: A is connected to B and C; B to D and E; C to F. Goal: **E**. Neighbours are visited left to right.
+
+```mermaid
+flowchart TB
+    A --> B
+    A --> C
+    B --> D
+    B --> E
+    C --> F
+```
+
+*Figure 2.5: A small search tree.*
+
+| Method | Order of visiting | Nodes visited before reaching E |
+|---|---|:-:|
+| BFS | A, B, C, D, E | 5 |
+| DFS | A, B, D, E | 4 (D was a dead end, so DFS backtracked to B) |
+
+BFS finds the **shallowest** goal (fewest steps) but must remember many nodes. DFS needs little memory but can wander down a long wrong branch and does not guarantee the shortest path.
+
+### 5.3 Informed Search
+
+Informed search uses a **heuristic**, an estimate of how close a state is to the goal.
+
+* **Greedy best-first search** expands the node that *looks* closest to the goal.
+* **A\* search** uses **f(n) = g(n) + h(n)**, where g is the cost so far and h is the estimated cost to the goal.
+
+**Worked example (A\*).** Start S, goal G. Roads: S→A cost 1, S→B cost 2, A→G cost 6, B→G cost 3. Estimated remaining costs: h(A) = 5, h(B) = 3 (both are never larger than the true remaining cost).
+
+| Node | g (cost so far) | h (estimate) | f = g + h |
+|---|--:|--:|--:|
+| A | 1 | 5 | 6 |
+| B | 2 | 3 | 5 |
+
+A\* expands **B** first (lowest f = 5), reaches G with total cost 2 + 3 = **5**. The other route costs 1 + 6 = 7. A\* is both **efficient** and **optimal** when the heuristic never overestimates.
+
+### 5.4 Adversarial Search (Games)
+
+In two-player games, one player's gain is the other's loss.
+
+* **Minimax**: assume the opponent plays the best reply. Choose the move that gives the best result in the worst case.
+* **Alpha-beta pruning**: skips branches that cannot change the final decision, so it gives the same answer with less work.
+
+**Worked example.** Max moves first, then Min. The leaf scores (good for Max = high) are: left branch 3 and 5; right branch 2 and 9.
+
+```mermaid
+flowchart TB
+    R["Max chooses"] --> L["Min (left)"]
+    R --> Ri["Min (right)"]
+    L --> L1["3"]
+    L --> L2["5"]
+    Ri --> R1["2"]
+    Ri --> R2["9"]
+```
+
+*Figure 2.6: A tiny game tree.*
+
+* Left Min picks the smaller leaf: min(3, 5) = **3**.
+* Right Min picks the smaller leaf: min(2, 9) = **2**.
+* Max picks the larger: max(3, 2) = **3**, so Max chooses the **left** move.
+
+**Alpha-beta shortcut.** After the left branch Max is already guaranteed 3. In the right branch the first leaf is 2, which is already worse than 3, so Min's branch cannot help Max. The leaf 9 is **never examined**.
+
+### 5.5 Local Search
+
+Local search starts with a complete solution and keeps moving to a **neighbouring** better one.
+
+* **Hill climbing**: always move uphill. Simple, but can get stuck on a small hill (a *local maximum*).
+* **Simulated annealing**: sometimes accepts a worse move, with decreasing probability, to escape local maxima.
+
+| Family | Looks at | Example use |
+|---|---|---|
+| Uninformed | Only the structure of the problem | Finding any route in a maze |
+| Informed | Structure plus a heuristic | Shortest road route |
+| Adversarial | A game with an opponent | Chess, checkers |
+| Local | Neighbouring complete solutions | Timetables, circuit layout |
+
+---
+
+## Topic 6: Natural Language Processing in Symbolic AI
+
+**Natural Language Processing (NLP)** is the part of AI that lets computers **understand, interpret, and generate human language**. In symbolic NLP, the work is done with **formal rules, logic, and symbolic representations**.
+
+### 6.1 Syntax and Semantics
+
+* **Syntax** is the *structure* of a sentence: word order, phrases, and clauses.
+* **Semantics** is the *meaning*.
+
+**Formal grammar.** Context-free grammar rules describe valid sentences. Example sentence: *The cat chased the mouse.*
+
+| Rule | Meaning |
+|---|---|
+| S → NP VP | A sentence is a noun phrase plus a verb phrase |
+| NP → Det N | A noun phrase is a determiner plus a noun |
+| VP → V NP | A verb phrase is a verb plus a noun phrase |
+
+Parse: **S** = [NP: The cat] + [VP: chased + NP: the mouse]. So *cat* is the subject, *chased* is the verb, and *mouse* is the object.
+
+**Semantic representation.** The meaning can be written in logic: **chased(cat, mouse)**. Now the system "knows" who did what to whom, and a different sentence such as *The mouse was chased by the cat* can map to the same representation.
+
+### 6.2 Rule-Based NLP Tasks
+
+| Task | How a rule-based system does it | Example |
+|---|---|---|
+| **Part-of-speech tagging** | Pattern rules for each word | "the" is a determiner; "quick", "brown" are adjectives; "fox" is a noun |
+| **Syntactic parsing** | Grammar rules | Find subject, verb, object |
+| **Information extraction** | Patterns for names, dates, organisations | Capitalised words near "Mr." may be a person's name |
+| **Sentiment analysis** | Lists of positive and negative words | "good", "excellent", "happy" → positive; "bad", "poor", "disappointed" → negative |
+| **Question answering** | Knowledge graph plus logical inference | "Which symptoms go with disease X?" → follow links in a medical knowledge graph |
+| **Information retrieval** | Formal representations of documents, e.g. legal concepts | Match a legal question to relevant statutes |
+
+**Logic and inference in NLP.** A knowledge base stores relations such as parent(Ann, Ben) and parent(Ann, Carla). A rule says: **sibling(x, y) if both have the same parent and x ≠ y**. The system infers sibling(Ben, Carla) without being told.
+
+### 6.3 Why Rules Break
+
+Rule-based NLP is transparent but brittle.
+
+| Rule | Where it fails |
+|---|---|
+| "A word ending in *-ing* is a verb." | *Thing* and *king* end in -ing and are nouns. |
+| "Words in the positive list make the review positive." | "This is **not good**" contains *good* but is negative. |
+| "The sentence has the form NP VP NP." | "Time flies like an arrow" can be parsed in more than one way. |
+
+Language is full of exceptions and ambiguity. This is one reason that modern NLP mostly uses learning (Chapter 3), often combined with symbolic parts.
+
+---
+
+## Hands-On Activity: A Rule-Based Smart Classroom
+
+The lecturer's hands-on slide shows a block program for a virtual classroom with a **fan** and a **lamp**. The program *asks* for a command, then uses IF–THEN blocks to react. Build this in your block tool, or follow the paper version.
+
+**Rules (pseudocode)**
+
+```
+ASK "Enter your command"
+IF answer = "Fan on"   OR answer = "Fan on please"  THEN broadcast  fan-on
+IF answer = "Fan off"                                THEN broadcast  fan-off
+IF answer = "Lamp on"                                THEN broadcast  lamp-on
+IF answer = "Lamp off"                               THEN broadcast  lamp-off
+```
+
+**Test table**
+
+| Typed command | Which rule matches? | Result | Expected? |
+|---|---|---|:-:|
+| Fan on | Rule 1 | fan turns on | yes |
+| Fan on please | Rule 1 | fan turns on | yes |
+| Lamp off | Rule 4 | lamp turns off | yes |
+| Turn on the fan | none | nothing happens | **no, this is the limitation** |
+| fan ON | depends on the tool: some compare text ignoring capital letters | maybe | ? |
+
+**Discussion**
+
+1. Return to your prediction from Chapter 1, Activity B. Was it correct?
+2. How many rules would you need to cover ten ways of saying "turn on the fan"?
+3. Is the program **explainable**? (Yes. Every action comes from a visible rule.)
+4. Is the program **flexible** with new wording? (No. Someone must add a rule.)
+
+In Chapter 3 you will see the **machine-learning version** of the same classroom, which recognises new wording because it has learned from examples.
+
+---
+
+## Key Takeaways
+
+* **Symbolic AI (GOFAI)** uses **explicit rules, logic, and symbols**. People write the knowledge.
+* Its strength is **interpretability**: you can trace and edit the rules.
+* **Propositional logic** uses AND, OR, NOT, and →; **predicate logic** adds predicates and the quantifiers ∀ and ∃.
+* **Modus ponens** and **modus tollens** are valid; "affirming the consequent" is not. Generalising from **one** example to **all** is not valid unless the example is arbitrary.
+* Knowledge can be represented by **logic, semantic networks, frames and scripts, rules, and ontologies**.
+* A **rule-based system** has rules, a knowledge base, and an inference engine. An **expert system** adds a user interface and a narrow expert domain.
+* **Planning** is search in a state space: **BFS, DFS, uniform cost** (uninformed), **A\*** (informed), **minimax and alpha-beta** (games), **hill climbing and simulated annealing** (local).
+* Symbolic **NLP** uses grammars, patterns, and logic. It is transparent, but breaks on exceptions and ambiguity.
+* Main limits: **incomplete knowledge, scalability, uncertainty, and no automatic learning**.
+
+---
+
+## Practice Questions
+
+### Part A: Multiple Choice
+
+**Q1.** Which description fits Symbolic AI best?
+A. Learning weights from millions of images
+B. Reasoning with explicit rules and logic
+C. Learning from rewards by trial and error
+D. Grouping data without any rules
+
+**Q2.** For p = true and q = false, what is p → q?
+A. true
+B. false
+C. unknown
+D. both
+
+**Q3.** "If it rains, the ground is wet. The ground is not wet." Which conclusion is valid?
+A. It is raining.
+B. It is not raining.
+C. The ground is dry because of the sun.
+D. No conclusion is possible.
+
+**Q4.** Which statement is written correctly in predicate logic: "Every cat is a mammal"?
+A. ∃x (Cat(x) ∧ Mammal(x))
+B. ∀x (Cat(x) → Mammal(x))
+C. ∀x (Cat(x) ∧ Mammal(x))
+D. ¬Cat(x)
+
+**Q5.** Which is *not* part of an expert system?
+A. Knowledge base
+B. Inference engine
+C. User interface
+D. Neural network weights
+
+**Q6.** In BFS on the tree of Figure 2.5, which node is visited right after A?
+A. D
+B. B
+C. F
+D. E
+
+**Q7.** In alpha-beta pruning, what is the main benefit?
+A. It changes the answer of minimax.
+B. It gives the same answer while examining fewer nodes.
+C. It removes the need for a heuristic.
+D. It makes the opponent play worse.
+
+**Q8.** Which problem is a typical limit of Symbolic AI?
+A. It cannot be explained.
+B. It copes poorly with uncertain or ambiguous information.
+C. It cannot use logic.
+D. It cannot be edited.
+
+### Part B: Short Answer
+
+**Q9.** Write "Some students are not tired" in predicate logic, using Student(x) and Tired(x).
+
+**Q10.** Explain why "From p → q and q, conclude p" is invalid. Give an example.
+
+**Q11.** Explain the difference between a frame and a script, with one example of each.
+
+**Q12.** Show one step of forward chaining on the rules: R1: if it is raining, then the ground is wet; R2: if the ground is wet, then the road is slippery. The fact: it is raining.
+
+### Part C: Apply It
+
+**Q13.** In the A\* example (Section 5.3), the heuristic h(A) was changed to 1. Which node does A\* expand first now, and does the result change? Explain.
+
+**Q14.** Give one example where a rule-based sentiment analyser fails, and say why.
+
+---
+
+## Answer Key
+
+| Q | Answer | Explanation |
+|---|---|---|
+| Q1 | B | Symbolic AI reasons with explicit rules and logic. |
+| Q2 | B | An implication is false only when the premise is true and the conclusion is false. |
+| Q3 | B | Modus tollens: from p → q and ¬q, conclude ¬p. |
+| Q4 | B | "For all x, if x is a cat then x is a mammal." Option C would say everything is a cat and a mammal. |
+| Q5 | D | Neural network weights belong to Connectionist AI (Chapter 3). |
+| Q6 | B | BFS visits all neighbours of A (B, C) before going deeper. |
+| Q7 | B | Pruning skips branches that cannot affect the final choice. |
+| Q8 | B | Rules need precise statements; uncertainty is hard. |
+| Q9 | ∃x (Student(x) ∧ ¬Tired(x)) | "Some" means ∃. Use ∧ with ∃. |
+| Q10 | Sample | The conclusion may come from another cause. "If it rains, the ground is wet. The ground is wet." The ground might be wet because of a sprinkler, so we cannot conclude it rained. |
+| Q11 | Sample | A frame describes one typical object with slots (a car: make, model, year, colour). A script is a sequence of frames for a typical event (a restaurant visit: reservation, ordering, paying). |
+| Q12 | Sample | R1 fires because it is raining, so we add "the ground is wet". Next, R2 can fire because the ground is wet, so we add "the road is slippery". |
+| Q13 | Sample | f(A) = 1 + 1 = 2 and f(B) = 2 + 3 = 5, so A is expanded first. From A the goal G is reached with g = 1 + 6 = 7, so f(G) = 7. B (f = 5) is still waiting and is expanded next. Through B, G is reached with cost 5, which is better than 7, so A\* returns the optimal cost 5. The result does not change, because h(A) = 1 never overestimates the true remaining cost (6). A weaker heuristic only makes A\* do extra work. |
+| Q14 | Sample | "The film was not good" contains the positive word *good*, so a word-list rule marks it positive, although the sentence is negative. The rule cannot see negation. |
+
+---
 
 ## Glossary
 
-| Term | Definition |
+| Term | Meaning |
 |---|---|
-| **Accountability** | Humans and organisations are responsible for AI outcomes. |
-| **Anonymisation** | Removing identifying details from data. |
-| **Bias (AI)** | Systematically less accurate or less favourable results for some groups. |
-| **Data minimisation** | Collecting only the data needed for a purpose. |
-| **Differential privacy** | Adding measured noise so group patterns are visible but individuals are not. |
-| **Feedback loop** | Outputs that influence future data, possibly amplifying errors. |
-| **Four-fifths rule** | Screening indicator: a group's selection rate below 80% of the highest group's rate is a warning sign, not proof of discrimination. |
-| **Grounding** | Tying AI answers to trusted, citable sources. |
-| **Hallucination** | A confident but false or unsupported AI output. |
-| **Impact ratio** | A group's selection rate divided by the highest group's selection rate. |
-| **Large language model (LLM)** | A model that generates text by predicting likely next words. |
-| **Personal data / PII** | Information that can identify a person. |
-| **Protected characteristic** | A trait (e.g. race, sex, age) that should not be a basis for unfair treatment. |
-| **Proxy variable** | An input that stands in for a protected characteristic. |
-| **Responsible AI** | Building and using AI safely, fairly, transparently, and accountably. |
-| **Selection rate** | The share of a group receiving the favourable outcome. |
+| **Alpha-beta pruning** | A way to speed up minimax by skipping branches that cannot change the result. |
+| **A\* search** | An informed search that uses cost so far plus an estimate of the remaining cost. |
+| **Breadth-first search** | Search that explores all nodes at one depth before the next. |
+| **Depth-first search** | Search that follows one branch as deep as possible before backtracking. |
+| **Expert system** | A system that copies the decision-making of a human expert in a narrow domain. |
+| **Forward chaining** | Reasoning from known facts, applying rules until no new fact appears. |
+| **Frame** | A data structure with slots describing a typical object or situation. |
+| **GOFAI** | Good Old-Fashioned AI, another name for Symbolic AI. |
+| **Heuristic** | A rule of thumb that estimates how good a state or choice is. |
+| **Inference engine** | The part of a system that applies rules to knowledge to reach conclusions. |
+| **Knowledge base** | The stored facts and rules a system uses. |
+| **Modus ponens / tollens** | Valid inference rules: from p → q and p conclude q; from p → q and ¬q conclude ¬p. |
+| **Ontology** | A formal description of the concepts in a domain and how they relate. |
+| **Predicate** | A statement with variables that is true or false depending on their values. |
+| **Proposition** | A sentence that is either true or false. |
+| **Quantifier** | ∀ ("for all") or ∃ ("there exists"). |
+| **Script** | A sequence of frames describing a typical event. |
+| **Semantic network** | A graph of concepts (nodes) and relationships (links). |
+| **State space** | The set of all states a system can be in. |
 
 ---
 
-<a id="chapter-5-references"></a>
+## References
+
+1. Course slides, "chap4: Symbolic AI", Introduction to Computer Science and Artificial Intelligence (lecturer's materials). Primary source for the structure, examples, and hands-on activity.
+2. Russell, S., and Norvig, P. (2021). *Artificial Intelligence: A Modern Approach* (4th ed.). Pearson. (Logic, knowledge representation, and search. *Not opened during this revision.*)
+3. Haugeland, J. (1985). *Artificial Intelligence: The Very Idea*. MIT Press. (Origin of the term GOFAI. *Not opened during this revision.*)
+4. Shortliffe, E. H. (1976). *Computer-Based Medical Consultations: MYCIN*. Elsevier. (Expert system history. *Not opened during this revision.*)
+
+> References 2 to 4 must be checked by the author or reviewer before submission.
+
+
+---
+
+# Chapter 3: Connectionist AI and Big Data
+
+> **Module:** AI Overview
+> **Chapter:** 3 — Connectionist AI and Big Data (course Chapter 5)
+> **Version:** 1.1 (Stage 1, rebuilt from the lecturer's course slides)
+> **Author:** Benedict Subhata (proposed owner)
+> **Reviewer:** Brian Djoni Suzanna
+> **Audience:** Complete beginners with basic computer and internet literacy; no programming experience needed
+> **Estimated study time:** about 3 hours, including activities
+> **Course source:** Lecturer's slides "chap5: Connectionist AI and Big Data Overview". The slides list two groups of topics. This chapter covers both, in the same order.
+> **Stage 1 scope:** Every topic in the lecturer's outline is explained with an example. Stage 2 will add depth, more diagrams, and a full test bank.
+
+---
+
+## Table of Contents
+
+1. [Learning Outcomes](#learning-outcomes)
+2. [Part A: Connectionist AI](#part-a-connectionist-ai)
+3. [A1. Introduction to Connectionist AI](#a1-introduction-to-connectionist-ai)
+4. [A2. Basics of Neural Networks](#a2-basics-of-neural-networks)
+5. [A3. Architectures of Neural Networks](#a3-architectures-of-neural-networks)
+6. [A4. Deep Learning and Advanced Concepts](#a4-deep-learning-and-advanced-concepts)
+7. [A5. Key Applications of Connectionist AI](#a5-key-applications-of-connectionist-ai)
+8. [A6. Ethical Considerations and Challenges](#a6-ethical-considerations-and-challenges)
+9. [Part B: Big Data](#part-b-big-data)
+10. [B1. Introduction to Big Data](#b1-introduction-to-big-data)
+11. [B2. Big Data Technologies](#b2-big-data-technologies)
+12. [B3. Data Processing and Analytics](#b3-data-processing-and-analytics)
+13. [B4. Data Analysis and Visualization](#b4-data-analysis-and-visualization)
+14. [B5. Big Data Use Cases](#b5-big-data-use-cases)
+15. [B6. Big Data Ethics and Privacy](#b6-big-data-ethics-and-privacy)
+16. [Hands-On Activities](#hands-on-activities)
+17. [Key Takeaways](#key-takeaways)
+18. [Practice Questions](#practice-questions)
+19. [Answer Key](#answer-key)
+20. [Glossary](#glossary)
+21. [References](#references)
+
+---
+
+## Learning Outcomes
+
+After completing this chapter, you should be able to:
+
+1. Explain the connectionist idea: intelligence from many simple connected units that **learn from data**.
+2. Describe an artificial neuron (inputs, weights, bias, activation) and compute its output.
+3. Explain, in simple words, how a network learns using a loss, gradient descent, and backpropagation.
+4. Name the main network architectures (feedforward, convolutional, recurrent, transformer) and what each is good for.
+5. Explain deep learning, overfitting, and why deep learning needs a lot of data and computing power.
+6. Describe Big Data using its Vs, name the main Big Data technologies, and explain batch and stream processing.
+7. Choose a suitable chart for a simple data question.
+8. Identify ethical and privacy problems in connectionist AI and Big Data, such as bias, lack of explanation, and re-identification.
+
+```mermaid
+flowchart LR
+    BD["Big Data<br/>large, fast, varied data"] --> NN["Neural network<br/>learns weights from data"]
+    NN --> PR["Predictions and decisions"]
+    PR --> NEW["New data from use"]
+    NEW --> BD
+```
+
+*Figure 3.1: Connectionist AI and Big Data belong together. Neural networks learn from data, and their use creates more data.*
+
+---
+
+# Part A: Connectionist AI
+
+## A1. Introduction to Connectionist AI
+
+**Connectionist AI** builds intelligence from **many simple units that are connected to one another**. Each unit does a tiny calculation. The **strength of each connection**, called a **weight**, decides how much one unit influences another. The system is not given rules. It **learns the weights from examples**.
+
+The idea is inspired, loosely, by the brain: neurons connected by synapses. Artificial neural networks are **much simpler** than a real brain. They are mathematical models, not copies of biological neurons.
+
+**Short history**
+
+| Year | Event |
+|---|---|
+| 1943 | McCulloch and Pitts propose a simple mathematical model of a neuron |
+| 1958 | Frank Rosenblatt's perceptron: a neuron model that can learn |
+| 1986 | Backpropagation is popularised (Rumelhart, Hinton, Williams) |
+| 1989–1998 | Convolutional networks for reading handwritten digits (Yann LeCun and colleagues) |
+| 2012 | AlexNet wins the ImageNet image contest by a large margin |
+| 2017 | The Transformer architecture is introduced |
+
+**Symbolic versus connectionist**
+
+| | Symbolic AI (Chapter 2) | Connectionist AI (this chapter) |
+|---|---|---|
+| Where knowledge lives | Explicit rules written by people | Numbers (weights) learned from data |
+| How it is built | Knowledge engineering | Training on examples |
+| Strength | Explainable; works with little data | Handles messy data such as images and speech |
+| Weakness | Cannot learn; brittle with uncertainty | Needs much data; hard to explain |
+| Example | Rule: "IF fever AND cough THEN …" | Network that recognises a cat in a photo |
+
+---
+
+## A2. Basics of Neural Networks
+
+### The artificial neuron
+
+A neuron takes several **inputs**, multiplies each by a **weight**, adds them with a **bias**, and passes the result through an **activation function**.
+
+```mermaid
+flowchart LR
+    x1["input x1"] -->|weight w1| S(("sum + bias"))
+    x2["input x2"] -->|weight w2| S
+    S --> A["activation function"]
+    A --> Y["output"]
+```
+
+*Figure 3.2: One artificial neuron.*
+
+**z = w1 × x1 + w2 × x2 + b**, then **output = activation(z)**.
+
+Common activation functions:
+
+| Function | Behaviour | Typical use |
+|---|---|---|
+| Step | 0 below a threshold, 1 above | The first perceptron |
+| Sigmoid | Smooth curve between 0 and 1 | Probabilities |
+| ReLU | 0 for negative values, the value itself for positive | Hidden layers of modern networks |
+
+**Worked example.** Inputs x1 = 1 and x2 = 0.5. Weights w1 = 0.4 and w2 = −0.2. Bias b = 0.1.
+
+* z = 0.4 × 1 + (−0.2) × 0.5 + 0.1 = 0.4 − 0.1 + 0.1 = **0.4**
+* ReLU(0.4) = **0.4**
+* Sigmoid(0.4) ≈ **0.60**
+
+### A neuron that decides: the AND perceptron
+
+A perceptron with w1 = 1, w2 = 1, bias b = −1.5 and a step activation (output 1 if z > 0) computes **AND**.
+
+| x1 | x2 | z = x1 + x2 − 1.5 | Output |
+|:-:|:-:|--:|:-:|
+| 0 | 0 | −1.5 | 0 |
+| 0 | 1 | −0.5 | 0 |
+| 1 | 0 | −0.5 | 0 |
+| 1 | 1 | 0.5 | 1 |
+
+Here the weights were chosen by hand. The point of a network is that training **finds good weights automatically**.
+
+### Layers
+
+Neurons are arranged in **layers**: an **input layer** (the data), one or more **hidden layers** (calculation), and an **output layer** (the answer).
+
+```mermaid
+flowchart LR
+    I1((x1)) --> H1((h1))
+    I1 --> H2((h2))
+    I2((x2)) --> H1
+    I2 --> H2
+    I3((x3)) --> H1
+    I3 --> H2
+    H1 --> O((y))
+    H2 --> O
+```
+
+*Figure 3.3: A small feedforward network with three inputs, two hidden neurons, and one output. Every arrow has its own weight.*
+
+### How a network learns
+
+1. **Forward pass.** The input goes through the layers to give a prediction.
+2. **Loss.** A number says how wrong the prediction is. For a house price, the loss could be the squared difference between the predicted and the true price.
+3. **Backpropagation.** The network works out how much each weight contributed to the error.
+4. **Gradient descent.** Each weight is moved a small step in the direction that reduces the loss. The step size is the **learning rate**.
+5. **Repeat** over many examples and many rounds (**epochs**).
+
+**Worked example of gradient descent.** Suppose the loss is (w − 3)², so the best weight is 3. We start at w = 0 with learning rate 0.1. The slope of the loss is 2 × (w − 3).
+
+| Step | w before | Slope 2(w − 3) | w after = w − 0.1 × slope |
+|--:|--:|--:|--:|
+| 1 | 0 | −6 | 0.6 |
+| 2 | 0.6 | −4.8 | 1.08 |
+| 3 | 1.08 | −3.84 | 1.464 |
+
+The weight moves toward 3 in smaller and smaller steps. A real network does this for millions of weights at once.
+
+---
+
+## A3. Architectures of Neural Networks
+
+An **architecture** is the way the neurons are connected. Different data call for different architectures.
+
+| Architecture | Idea | Good for | Example |
+|---|---|---|---|
+| **Feedforward network (MLP)** | Layers connected in one direction | Tables of numbers, simple prediction | Predicting house prices |
+| **Convolutional neural network (CNN)** | Small filters slide across the data and detect patterns such as edges and shapes | Images, video | Recognising faces or tumours in scans |
+| **Recurrent neural network (RNN, LSTM)** | Passes information from one step to the next, so it has a kind of memory | Sequences such as speech and text (older approach) | Speech recognition |
+| **Transformer** | Uses *attention* to decide which parts of the input matter for each part of the output | Language, and now images, audio, and more | Large language models |
+| **Autoencoder** | Compresses the input and then rebuilds it | Noise removal, anomaly detection | Finding unusual machine readings |
+| **Generative adversarial network (GAN)** | A generator and a discriminator compete | Creating realistic images | Synthetic faces |
+
+**Reading the table.** You do not need to memorise every architecture. Remember the pairing: **CNN → images**, **Transformer → language**, **feedforward → tables**.
+
+---
+
+## A4. Deep Learning and Advanced Concepts
+
+**Deep learning** means neural networks with **many hidden layers**. Each layer builds on the one before it. In an image network, early layers detect edges, middle layers detect shapes, and later layers detect whole objects.
+
+### Why deep learning took off around 2012
+
+| Ingredient | Why it mattered |
+|---|---|
+| **Big data** | Large labelled datasets such as ImageNet |
+| **Computing power** | Graphics processing units (GPUs) made training much faster |
+| **Better methods** | Improved activation functions, training tricks, and architectures |
+
+### Advanced concepts
+
+| Concept | Plain meaning | Why it matters |
+|---|---|---|
+| **Overfitting** | The model memorises the training examples and does badly on new ones | The main enemy of learning. Always test on unseen data |
+| **Training, validation, and test sets** | Separate data for learning, tuning, and a final fair check | A fair estimate of how the model will behave in real use |
+| **Regularisation and dropout** | Tricks that make overfitting less likely (for example, randomly switching off neurons during training) | Better results on new data |
+| **Transfer learning** | Start from a model trained on a big task and adjust it to a smaller one | Saves data and time |
+| **Foundation model / large language model** | A very large model trained on huge data that can be adapted to many tasks | Basis of modern chatbots |
+| **Embedding** | Turning words or images into lists of numbers, so that similar items are close together | How networks "understand" meaning mathematically |
+
+**Overfitting example.** A student memorises last year's exam answers and scores 100% on those exact questions, but only 40% on this year's different questions. A network can do the same: 99% on training data and 60% on test data means it has overfitted.
+
+---
+
+## A5. Key Applications of Connectionist AI
+
+| Field | What the network does | Example |
+|---|---|---|
+| **Image recognition** | Classifies or locates objects in pictures | Face unlock, reading handwritten digits |
+| **Medical imaging** | Marks suspicious regions in scans | Screening support for radiologists |
+| **Speech** | Converts speech to text and text to speech | Voice assistants, subtitles |
+| **Language translation and chat** | Reads and writes text | Online translation, chatbots |
+| **Recommendation** | Predicts what you may like | Video and music suggestions |
+| **Self-driving perception** | Detects cars, people, and signs in camera data | Driver-assistance systems |
+| **Generative AI** | Creates images, text, and audio | Image and text generators |
+
+**Back to the Smart Classroom.** In Chapter 2 the rule-based classroom failed on "Turn on the fan". A connectionist version is trained with many example sentences labelled *fan on*, *fan off*, *lamp on*, *lamp off*. The network learns which words and patterns go with each label, so it can handle new wording, but it can still be wrong on unusual sentences, and we cannot easily point to "the rule" that decided.
+
+---
+
+## A6. Ethical Considerations and Challenges
+
+| Challenge | What can go wrong | Example |
+|---|---|---|
+| **Bias** | The model learns unfair patterns from unrepresentative data | A 2018 study of commercial face-analysis systems found much higher error rates for darker-skinned women than for lighter-skinned men (Buolamwini and Gebru, 2018) |
+| **Lack of explanation** | We cannot easily say why the network gave an answer | A loan is refused and nobody can say why |
+| **Privacy** | Training data may contain personal data that the model can leak | A model repeating private text it saw in training |
+| **Reliability** | Networks can be fooled by small changes or be wrong with high confidence | A sticker on a sign changes how a vision system reads it |
+| **Energy and cost** | Training large models uses a lot of electricity and hardware | Large data-centre training runs |
+| **Misuse** | Synthetic images, voices, and text can mislead | Fake videos |
+
+**Questions to ask about any connectionist system**
+
+1. What data was it trained on, and who is missing from that data?
+2. How was it tested, and on whom?
+3. Can its decisions be explained well enough for the situation?
+4. Who is responsible when it is wrong?
+5. Is a human able to check or overrule the result?
+
+---
+
+# Part B: Big Data
+
+## B1. Introduction to Big Data
+
+**Big Data** means data that is so **large, fast, or varied** that ordinary tools cannot store or process it well. It does not mean "any big file". It is a set of challenges.
+
+**The Vs of Big Data**
+
+| V | Meaning | Example |
+|---|---|---|
+| **Volume** | A very large amount | Billions of photos |
+| **Velocity** | Data arrives and changes quickly | Live payments and sensor readings |
+| **Variety** | Many kinds: tables, text, images, video, sensor streams | Posts, photos, and clicks together |
+| **Veracity** | Data quality and trustworthiness | Missing, wrong, or fake records |
+| **Value** | Usefulness: data matters only if it helps a decision | Better recommendations or safer roads |
+
+The first three Vs (volume, velocity, variety) are the classic description. Veracity and value are often added.
+
+**Types of data**
+
+| Type | Description | Example |
+|---|---|---|
+| Structured | Rows and columns | A bank table |
+| Semi-structured | Tags or keys but no fixed table | JSON or XML files |
+| Unstructured | No fixed format | Photos, audio, free text |
+
+**Why Big Data matters for AI.** A deep network has millions of weights. To set them well it needs **many varied examples**. This is why deep learning grew together with Big Data.
+
+---
+
+## B2. Big Data Technologies
+
+| Need | Technology idea | Examples |
+|---|---|---|
+| **Store very large data** | **Distributed file systems**: split files over many computers, keep copies | HDFS |
+| **Store flexible data** | **NoSQL databases**: key-value, document, column, or graph stores | MongoDB, Cassandra, Neo4j |
+| **Store for analysis** | **Data warehouse** (organised, ready for reports) and **data lake** (raw data of all kinds) | Cloud warehouses and lakes |
+| **Process in parallel** | Split the work across many machines | MapReduce, Apache Spark |
+| **Process live streams** | Handle events as they arrive | Apache Kafka, stream processors |
+| **Rent computing** | Cloud platforms that provide storage and computing on demand | Public cloud services |
+
+**Worked example: MapReduce word count.** Task: count words in two lines of text.
+
+* Line 1: *ai is fun*
+* Line 2: *ai is big*
+
+**Map** (each machine handles one line and emits pairs): (ai,1) (is,1) (fun,1) | (ai,1) (is,1) (big,1)
+
+**Shuffle** (group by word): ai → [1,1]; is → [1,1]; fun → [1]; big → [1]
+
+**Reduce** (add up each group): **ai = 2, is = 2, fun = 1, big = 1**
+
+With billions of lines the same recipe works, because each machine only handles its own part.
+
+---
+
+## B3. Data Processing and Analytics
+
+### The data pipeline
+
+```mermaid
+flowchart LR
+    C["Collect"] --> S["Store"]
+    S --> CL["Clean and transform<br/>(ETL)"]
+    CL --> AN["Analyse"]
+    AN --> V["Visualise and report"]
+    V --> D["Decide and act"]
+```
+
+*Figure 3.4: A typical data pipeline. ETL means extract, transform, load.*
+
+Most of the effort goes into **cleaning**: removing duplicates, fixing wrong values, handling missing values, and putting data in one format.
+
+### Batch versus stream processing
+
+| | Batch | Stream |
+|---|---|---|
+| Data handled | A large collection at once | Events one by one, as they arrive |
+| Speed of result | Minutes to hours | Seconds or less |
+| Example | Monthly sales report | Flagging a suspicious card payment immediately |
+
+### Four levels of analytics
+
+| Level | Question | Example |
+|---|---|---|
+| **Descriptive** | What happened? | Sales fell 5% last month |
+| **Diagnostic** | Why did it happen? | A popular item was out of stock |
+| **Predictive** | What will probably happen? | Next month's demand (machine learning) |
+| **Prescriptive** | What should we do? | Order 500 more units |
+
+---
+
+## B4. Data Analysis and Visualization
+
+**Visualization** shows data as pictures so that people see patterns quickly. The right chart depends on the question.
+
+| Question | Good chart | Why |
+|---|---|---|
+| How does a value change over time? | Line chart | Shows trends |
+| How do categories compare? | Bar chart | Easy to compare lengths |
+| What share does each part have of a whole? | Pie chart (few parts) or stacked bar | Shows proportions |
+| Are two numbers related? | Scatter plot | Shows patterns and outliers |
+| How is one number spread out? | Histogram | Shows the shape of the data |
+
+**Worked example.** Monthly app downloads (in thousands): January 12, February 15, March 21, April 18.
+
+```mermaid
+xychart-beta
+    title "App downloads per month (thousands)"
+    x-axis [Jan, Feb, Mar, Apr]
+    y-axis "Downloads (thousands)" 0 --> 25
+    bar [12, 15, 21, 18]
+```
+
+*Figure 3.5: A bar chart of the example data.*
+
+* Highest month: March (21 thousand).
+* Change from January to March: 21 − 12 = 9 thousand, which is 9 ÷ 12 = 75% more.
+* Change from March to April: 18 − 21 = −3 thousand, which is −3 ÷ 21 ≈ −14%.
+
+**Rules for honest charts**
+
+1. Start bar charts at zero. A bar chart that starts at 10 makes small differences look big.
+2. Label axes and units.
+3. Do not use too many colours or 3-D effects.
+4. Show where the data comes from.
+
+---
+
+## B5. Big Data Use Cases
+
+| Field | Use | Data used | Possible concern |
+|---|---|---|---|
+| **Retail and media** | Recommend products and videos | Purchase and viewing history | Profiling and manipulation |
+| **Healthcare** | Spot disease patterns; support diagnosis | Records, scans, wearable data | Sensitive personal data |
+| **Transport** | Predict traffic; plan routes | GPS and sensor data | Location tracking |
+| **Finance** | Detect fraud in real time | Transaction streams | Wrongly blocked customers |
+| **Smart cities** | Manage energy, waste, and public transport | Sensor networks | Surveillance |
+| **Education** | Find students who need extra help | Quiz and attendance data | Labelling students unfairly |
+
+**Link to the three approaches.** Fraud detection can use symbolic rules ("flag a payment above a limit"), a neural network (learned patterns), or both.
+
+---
+
+## B6. Big Data Ethics and Privacy
+
+| Issue | Meaning | Example |
+|---|---|---|
+| **Consent** | People should know what is collected and agree to it | An app that collects location without telling users |
+| **Purpose limitation** | Use data only for the stated purpose | Health data reused for advertising |
+| **Anonymisation is hard** | Removing names does not always make people unidentifiable | See the example below |
+| **Security** | Large collections are attractive targets | Data breaches |
+| **Bias and fairness** | Data reflects past unfairness, and models copy it | A hiring model trained on past decisions |
+| **Transparency and control** | People should be able to see, correct, or delete their data | Rights under privacy laws such as the EU GDPR |
+
+**Re-identification example.** Latanya Sweeney (2000) showed that, using 1990 US census data, **87%** of the US population could be uniquely identified by just three facts: a five-digit ZIP code, gender, and date of birth. A "de-identified" dataset that still contains these three fields can often be matched with a public list (such as a voter list) to find a person.
+
+**Good practice checklist**
+
+1. Collect only the data you need.
+2. Explain what you collect and why.
+3. Remove or mask direct identifiers, and be careful with combinations of fields.
+4. Protect the data (access control, encryption).
+5. Delete it when it is no longer needed.
+6. Check the results for unfair outcomes.
+
+---
+
+# Hands-On Activities
+
+### Activity A: Compute a neuron by hand
+
+Inputs x1 = 2 and x2 = −1. Weights w1 = 0.5 and w2 = 1. Bias b = 0.5.
+
+1. Compute z.
+2. Apply ReLU.
+3. Apply a step function that outputs 1 if z > 0.
+
+*Expected answers:* z = 0.5 × 2 + 1 × (−1) + 0.5 = **0.5**; ReLU gives **0.5**; step gives **1**.
+
+### Activity B: Make the perceptron compute OR
+
+Use w1 = 1, w2 = 1 and find a bias b so that the step neuron outputs 1 when *at least one* input is 1. Fill in the truth table.
+
+*Expected answer:* any b with −1 < b ≤ 0 works, for example b = −0.5. The inputs (0,0) give z = −0.5 → 0; (0,1) and (1,0) give 0.5 → 1; (1,1) gives 1.5 → 1.
+
+### Activity C: Smart Classroom, machine-learning version
+
+In the block tool, switch from IF-THEN blocks to a **recognise text** block that you train with several example sentences for each label (*fan on*, *fan off*, *lamp on*, *lamp off*).
+
+1. Test the sentences from Chapter 2, especially "Turn on the fan".
+2. Find a sentence the model gets wrong. Add it as a new example with the right label and retest.
+3. Compare: How many examples did you need? What did you gain compared with the rule-based version? What did you lose (explanation)?
+
+### Activity D: Check a data claim
+
+A news post says "87% of people can be identified from their ZIP code, gender, and birth date." Find the original study, read how it was measured (which data, which year), and decide whether the claim is accurate and complete.
+
+---
+
+## Key Takeaways
+
+* **Connectionist AI** uses many simple connected units. Knowledge is stored as **weights learned from data**.
+* A neuron computes **z = Σ w·x + b** and applies an **activation function**.
+* Networks learn by reducing a **loss** with **gradient descent**, using **backpropagation** to find each weight's share of the error.
+* **CNNs** suit images, **transformers** suit language, **feedforward networks** suit tables.
+* **Deep learning** = many layers. It grew because of **big data, GPUs, and better methods**. **Overfitting** is the main risk.
+* **Big Data** is described by **volume, velocity, variety** (plus veracity and value).
+* Tools: **distributed storage, NoSQL, MapReduce and Spark, stream processing, cloud**.
+* Choose the chart to fit the question, and keep charts honest.
+* Risks: **bias, no explanation, privacy leaks, re-identification, energy use, misuse**.
+
+---
+
+## Practice Questions
+
+### Part A: Multiple Choice
+
+**Q1.** In Connectionist AI, where is the knowledge stored?
+A. In hand-written IF-THEN rules
+B. In the weights of the connections
+C. In a table of rewards
+D. In a user manual
+
+**Q2.** A neuron has x1 = 1, x2 = 0.5, w1 = 0.4, w2 = −0.2, b = 0.1. What is z?
+A. 0.4
+B. 0.6
+C. 0.1
+D. −0.4
+
+**Q3.** Which architecture is most suited to images?
+A. CNN
+B. Rule base
+C. MapReduce
+D. Scatter plot
+
+**Q4.** 99% accuracy on training data and 60% on new data suggests:
+A. Underfitting
+B. Overfitting
+C. Perfect learning
+D. Too little training time only
+
+**Q5.** Which is *not* one of the three classic Vs of Big Data?
+A. Volume
+B. Velocity
+C. Variety
+D. Vacation
+
+**Q6.** In MapReduce word count, what does the *reduce* step do?
+A. Splits text into lines
+B. Adds up the counts for each word
+C. Draws the chart
+D. Deletes the data
+
+**Q7.** Which analytics level answers "What should we do?"
+A. Descriptive
+B. Diagnostic
+C. Predictive
+D. Prescriptive
+
+**Q8.** Why is removing names not always enough to protect privacy?
+A. Names are not personal data.
+B. Combinations such as ZIP code, gender, and birth date can identify people.
+C. Computers cannot read names.
+D. Privacy laws do not apply.
+
+### Part B: Short Answer
+
+**Q9.** Give two differences between Symbolic AI and Connectionist AI.
+
+**Q10.** Explain gradient descent in two or three sentences.
+
+**Q11.** Explain why Big Data and deep learning grew together.
+
+**Q12.** A company wants to flag suspicious card payments within seconds. Should it use batch or stream processing? Explain.
+
+### Part C: Apply It
+
+**Q13.** A hospital trains an image network to detect a disease. Most training scans came from one hospital with one brand of scanner. Name two risks and one way to reduce each.
+
+**Q14.** A bar chart of sales starts its vertical axis at 95 instead of 0, which makes a drop from 100 to 98 look dramatic. Explain the problem.
+
+---
+
+## Answer Key
+
+| Q | Answer | Explanation |
+|---|---|---|
+| Q1 | B | Weights learned from data (Section A1). |
+| Q2 | A | 0.4 × 1 + (−0.2) × 0.5 + 0.1 = 0.4 |
+| Q3 | A | Convolutional networks detect patterns in images. |
+| Q4 | B | A big gap between training and new-data performance is overfitting. |
+| Q5 | D | The classic Vs are volume, velocity, and variety. |
+| Q6 | B | Reduce combines the grouped counts into totals. |
+| Q7 | D | Prescriptive analytics recommends actions. |
+| Q8 | B | Re-identification from a few combined facts (Sweeney, 2000). |
+| Q9 | Sample | Symbolic: knowledge written as rules by people; explainable; needs little data; cannot learn. Connectionist: knowledge learned as weights; hard to explain; needs a lot of data; handles messy data such as images. |
+| Q10 | Sample | Gradient descent repeatedly changes each weight by a small step in the direction that lowers the loss. The learning rate sets the step size. After many steps the loss becomes small. |
+| Q11 | Sample | Deep networks have millions of weights and need many examples to set them well. Big Data supplied large datasets, and GPUs supplied computing power, so training became possible. |
+| Q12 | Sample | Stream processing, because the result is needed in seconds, as each payment arrives. Batch would give the answer too late. |
+| Q13 | Sample | Risk 1: the model may fail on other hospitals' scanners (add data from several hospitals and test on them). Risk 2: bias toward the patient group at that hospital (check performance for different groups and add missing groups). |
+| Q14 | Sample | A bar chart's bar length should show the value. Cutting the axis exaggerates a 2% drop to look like a collapse. Start at zero or use a line chart and label the axis clearly. |
+
+---
+
+## Glossary
+
+| Term | Meaning |
+|---|---|
+| **Activation function** | The function that turns a neuron's sum into its output. |
+| **Backpropagation** | The method that works out each weight's share of the error. |
+| **Big Data** | Data too large, fast, or varied for ordinary tools. |
+| **Bias (in a neuron)** | A number added to the weighted sum. |
+| **Bias (fairness)** | Unfair patterns in data or results. |
+| **CNN** | Convolutional neural network, suited to images. |
+| **Data lake / warehouse** | Stores for raw data / for organised data used in reports. |
+| **Deep learning** | Neural networks with many hidden layers. |
+| **ETL** | Extract, transform, load: preparing data for analysis. |
+| **Gradient descent** | Repeated small weight changes that reduce the loss. |
+| **Loss** | A number that measures how wrong a prediction is. |
+| **MapReduce** | A way to process big data in parallel by mapping then reducing. |
+| **Neural network** | A model made of connected neurons arranged in layers. |
+| **Overfitting** | Doing well on training data but poorly on new data. |
+| **Transformer** | A network architecture based on attention, used in language models. |
+| **Weight** | The strength of a connection between two neurons. |
+
+---
 
 ## References
 
-Buolamwini, J. and Gebru, T. (2018) 'Gender Shades: Intersectional accuracy disparities in commercial gender classification', *Proceedings of Machine Learning Research*, 81, pp. 77-91. Conference on Fairness, Accountability and Transparency. https://proceedings.mlr.press/v81/buolamwini18a.html
+1. Course slides, "chap5: Connectionist AI and Big Data Overview", Introduction to Computer Science and Artificial Intelligence (lecturer's materials). Source of the topic outline (Part A and Part B).
+2. McCulloch, W. S., and Pitts, W. (1943). A logical calculus of the ideas immanent in nervous activity. *Bulletin of Mathematical Biophysics*, 5, 115–133. (*Not opened during this revision.*)
+3. Rumelhart, D. E., Hinton, G. E., and Williams, R. J. (1986). Learning representations by back-propagating errors. *Nature*, 323, 533–536. (*Not opened during this revision.*)
+4. LeCun, Y., Bengio, Y., and Hinton, G. (2015). Deep learning. *Nature*, 521, 436–444. (*Not opened during this revision.*)
+5. Goodfellow, I., Bengio, Y., and Courville, A. (2016). *Deep Learning*. MIT Press. (*Not opened during this revision.*)
+6. Buolamwini, J., and Gebru, T. (2018). Gender Shades: Intersectional accuracy disparities in commercial gender classification. *Proceedings of Machine Learning Research*, 81, 77–91. (*Not opened during this revision.*)
+7. Sweeney, L. (2000). *Simple Demographics Often Identify People Uniquely*. Carnegie Mellon University, Data Privacy Working Paper 3. (*Not opened during this revision.*)
+8. Dean, J., and Ghemawat, S. (2004). MapReduce: Simplified data processing on large clusters. *OSDI '04*. (*Not opened during this revision.*)
 
-Carlini, N. et al. (2021) 'Extracting training data from large language models', *30th USENIX Security Symposium*. https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting
+> References 2 to 8 must be checked by the author or reviewer before submission.
 
-Chouldechova, A. (2017) 'Fair prediction with disparate impact: A study of bias in recidivism prediction instruments', *Big Data*, 5(2), pp. 153-163. https://doi.org/10.1089/big.2016.0047
 
-Dastin, J. (2018) 'Amazon scraps secret AI recruiting tool that showed bias against women', *Reuters*, 10 October. Republished at: https://www.euronews.com/2018/10/10/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women
+---
 
-European Union (2016) *Regulation (EU) 2016/679 (General Data Protection Regulation)*. https://eur-lex.europa.eu/eli/reg/2016/679/oj
+# Chapter 4: Behaviorist AI
 
-European Union (2024) *Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)*. https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+> **Module:** AI Overview
+> **Chapter:** 4 — Behaviorist AI (course Chapter 6)
+> **Version:** 1.1 (Stage 1, rebuilt from the lecturer's course slides)
+> **Author:** Joseph Lokman (proposed owner)
+> **Reviewer:** Brian Djoni Suzanna
+> **Audience:** Complete beginners with basic computer and internet literacy; no programming experience needed
+> **Estimated study time:** about 2.5 hours, including activities
+> **Course source:** Lecturer's slides "chap6: Behaviorist AI". The chapter follows the slides' seven topics: Introduction, Basics of Reinforcement Learning, RL Algorithms and Techniques, Markov Decision Processes, Behavioral AI in Robotics and Games, Applications and Use Cases, and Challenges and Limitations.
+> **Stage 1 scope:** Every topic in the lecturer's outline is explained with an example. Stage 2 will add depth, more diagrams, and a full test bank.
 
-Gebru, T. et al. (2021) 'Datasheets for datasets', *Communications of the ACM*, 64(12), pp. 86-92. https://doi.org/10.1145/3458723
+---
 
-Ji, Z. et al. (2023) 'Survey of hallucination in natural language generation', *ACM Computing Surveys*, 55(12), Article 248. https://doi.org/10.1145/3571730
+## Table of Contents
 
-*Mata v. Avianca, Inc.* (2023) No. 22-cv-1461 (PKC) (S.D.N.Y.), opinion and order on sanctions, 22 June 2023, 678 F. Supp. 3d 443. Court filings: https://storage.courtlistener.com/recap/gov.uscourts.nysd.575368/
+1. [Learning Outcomes](#learning-outcomes)
+2. [Topic 1: Introduction to Behaviorist AI](#topic-1-introduction-to-behaviorist-ai)
+3. [Topic 2: Basics of Reinforcement Learning](#topic-2-basics-of-reinforcement-learning)
+4. [Topic 3: RL Algorithms and Techniques](#topic-3-rl-algorithms-and-techniques)
+5. [Topic 4: Markov Decision Processes (MDPs)](#topic-4-markov-decision-processes-mdps)
+6. [Topic 5: Behavioral AI in Robotics and Games](#topic-5-behavioral-ai-in-robotics-and-games)
+7. [Topic 6: Applications and Use Cases of Behaviorist AI](#topic-6-applications-and-use-cases-of-behaviorist-ai)
+8. [Topic 7: Challenges and Limitations](#topic-7-challenges-and-limitations)
+9. [Hands-On Activities](#hands-on-activities)
+10. [Comparing the Three Approaches](#comparing-the-three-approaches)
+11. [Key Takeaways](#key-takeaways)
+12. [Practice Questions](#practice-questions)
+13. [Answer Key](#answer-key)
+14. [Glossary](#glossary)
+15. [References](#references)
 
-Mitchell, M. et al. (2019) 'Model cards for model reporting', *Proceedings of the Conference on Fairness, Accountability, and Transparency*, pp. 220-229. https://doi.org/10.1145/3287560.3287596
+---
 
-National Institute of Standards and Technology (NIST) (2023) *Artificial Intelligence Risk Management Framework (AI RMF 1.0)*. NIST AI 100-1. https://doi.org/10.6028/NIST.AI.100-1
+## Learning Outcomes
 
-Obermeyer, Z. et al. (2019) 'Dissecting racial bias in an algorithm used to manage the health of populations', *Science*, 366(6464), pp. 447-453. https://doi.org/10.1126/science.aax2342
+After completing this chapter, you should be able to:
 
-OECD (2019) *Recommendation of the Council on Artificial Intelligence*. OECD/LEGAL/0449. https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449
+1. Explain Behaviorist AI: intelligence as **behaviour learned through interaction and reward**.
+2. Name the parts of a reinforcement learning (RL) problem: agent, environment, state, action, reward, and policy.
+3. Explain exploration versus exploitation, and discounted return.
+4. Describe Q-learning and compute a Q-learning update by hand.
+5. Describe a Markov Decision Process (MDP) and calculate a simple discounted return and value.
+6. Describe how behaviour-based robots and game-playing programs use reward.
+7. Give examples of RL applications, and explain the main challenges: reward design, reward hacking, data hunger, and safety.
+8. Compare Symbolic, Connectionist, and Behaviorist AI.
 
-US Equal Employment Opportunity Commission et al. (1978) *Uniform Guidelines on Employee Selection Procedures*, 29 CFR Part 1607 (the four-fifths rule is at §1607.4(D)). https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XIV/part-1607
+---
 
-> **Note on examples:** The hiring-tool numbers in Sections 1.4 and 1.5 and the "Henderson & Zhou" citation in Section 3.3 are **invented for teaching purposes**. All other cases are real and cited above. Please check each link and bibliographic detail against the original source before formal use.
+## Topic 1: Introduction to Behaviorist AI
+
+### 1.1 The Idea
+
+**Behaviorist AI** builds intelligence by letting a system **act in an environment, receive feedback (reward or penalty), and adjust its behaviour**. The system is not told the right answer for each situation, and no one writes all the rules. It finds good behaviour by **trial and error**.
+
+### 1.2 Where the Name Comes From
+
+| Idea | Who | Meaning |
+|---|---|---|
+| **Law of effect** | Edward Thorndike (around 1898–1911) | Actions followed by a satisfying result become more likely to be repeated. |
+| **Operant conditioning** | B. F. Skinner (1930s) | Behaviour is shaped by its consequences: rewards and punishments. |
+| **Behaviour-based robotics** | Rodney Brooks (1980s–1990s) | Build robots from simple behaviours that connect sensing directly to acting, layered one on top of another, instead of building a full world model first. |
+| **Reinforcement learning** | Richard Sutton, Andrew Barto and others | A mathematical framework for learning from reward. |
+
+Psychologists observed that animals learn from consequences. AI researchers turned the same idea into algorithms.
+
+### 1.3 Three Approaches Side by Side (Preview)
+
+| | Symbolic AI (Ch. 2) | Connectionist AI (Ch. 3) | Behaviorist AI (this chapter) |
+|---|---|---|---|
+| Source of intelligence | Rules and logic written by people | Weights learned from labelled data | Behaviour learned from reward |
+| What the system needs | Expert knowledge | Many examples with answers | An environment to act in and a reward signal |
+| Typical output | A conclusion or plan | A prediction or classification | A policy: what to do in each situation |
+| Typical example | Expert system | Image classifier | Game-playing agent, robot |
+
+---
+
+## Topic 2: Basics of Reinforcement Learning
+
+**Reinforcement learning (RL)** is machine learning in which an **agent** learns what to do by interacting with an **environment** to maximise total reward.
+
+```mermaid
+flowchart LR
+    A["Agent<br/>(the learner)"] -->|action| E["Environment"]
+    E -->|new state| A
+    E -->|reward| A
+```
+
+*Figure 4.1: The reinforcement learning loop. The agent acts, then sees the new state and a reward, and repeats.*
+
+### 2.1 Key Terms
+
+| Term | Meaning | Example: a robot vacuum |
+|---|---|---|
+| **Agent** | The learner and decision-maker | The robot vacuum |
+| **Environment** | Everything the agent interacts with | The room |
+| **State** | A description of the current situation | Position, battery level, dirt nearby |
+| **Action** | A choice the agent can make | Move forward, turn, return to charger |
+| **Reward** | A number that says how good the last step was | +1 for cleaning dirt; −10 for bumping a wall |
+| **Policy** | The agent's rule for choosing actions: what to do in each state | "If dirt is ahead, move forward" |
+| **Episode** | One run from start to end | One cleaning session |
+| **Value** | Expected total future reward from a state or action | How promising "being near the charger with low battery" is |
+
+### 2.2 Return and Discounting
+
+The agent wants **total future reward**, not just the next reward. Rewards in the future are usually counted a little less. The **discount factor γ** (gamma) is between 0 and 1.
+
+**Return = r₁ + γ·r₂ + γ²·r₃ + …**
+
+**Example.** Rewards 0, 0, 10 with γ = 0.9: Return = 0 + 0.9 × 0 + 0.9² × 10 = 0.81 × 10 = **8.1**.
+
+A γ near 0 makes the agent short-sighted. A γ near 1 makes it patient.
+
+### 2.3 Exploration Versus Exploitation
+
+* **Exploitation**: choose the action that looks best from what you already know.
+* **Exploration**: try something new that might be better.
+
+You need both. If you only exploit, you may never find the best restaurant in town; if you only explore, you never enjoy the good one you found. A common method is **ε-greedy**: with probability ε (for example 10%) pick a random action, otherwise pick the best-known action.
+
+### 2.4 The Difference From the Other Kinds of Learning
+
+| | Supervised | Reinforcement |
+|---|---|---|
+| Feedback | The correct answer for each example | A reward that may come **late** and says only how good, not what was right |
+| Data | A fixed dataset | Created by the agent's own actions |
+| Goal | Predict labels | Maximise total reward |
+
+The **delayed reward** is the core difficulty. A chess move may only prove good or bad 40 moves later.
+
+---
+
+## Topic 3: RL Algorithms and Techniques
+
+### 3.1 Families of Methods
+
+| Family | Idea | Example algorithms |
+|---|---|---|
+| **Value-based** | Learn how good each action is in each state, then pick the best | Q-learning, SARSA |
+| **Policy-based** | Learn the policy directly | Policy gradient methods (such as REINFORCE) |
+| **Actor–critic** | Combine both: an actor chooses actions and a critic judges them | Many modern methods |
+| **Model-based** | Learn a model of how the environment works and plan with it | Planning with a learned model |
+| **Deep RL** | Use a neural network to represent the value or policy | Deep Q-Network (DQN) |
+
+### 3.2 Q-Learning
+
+Q-learning keeps a table of **Q-values**: **Q(state, action)** is how good it is to take that action in that state. After each step it updates the value:
+
+**Q(s, a) ← Q(s, a) + α × [ r + γ × (best Q of the next state) − Q(s, a) ]**
+
+* **α** (alpha) is the **learning rate**: how far to move toward the new information.
+* **r** is the reward just received.
+* **γ** is the discount factor.
+
+**Worked example.** A corridor with four squares **A – B – C – D**. D is the goal. Moving right from C into D gives **+10**; every other step gives 0. Use α = 0.5 and γ = 0.9. All Q-values start at 0. We only follow the action "right" (R).
+
+```mermaid
+flowchart LR
+    A["A"] --> B["B"] --> C["C"] --> D["D<br/>goal +10"]
+```
+
+*Figure 4.2: The corridor.*
+
+| Step | Move | Update | New Q-value |
+|--:|---|---|--:|
+| 1 | C → D (reward 10) | Q(C,R) = 0 + 0.5 × (10 + 0.9 × 0 − 0) | **5.0** |
+| 2 | B → C (reward 0) | Q(B,R) = 0 + 0.5 × (0 + 0.9 × 5.0 − 0) | **2.25** |
+| 3 | C → D again | Q(C,R) = 5.0 + 0.5 × (10 + 0 − 5.0) | **7.5** |
+| 4 | B → C again | Q(B,R) = 2.25 + 0.5 × (0 + 0.9 × 7.5 − 2.25) | **4.5** |
+
+**What happened.** The reward at the goal **spreads backward** along the path, one step at a time. After many repeats the values approach 10 for C, 9 for B, and 8.1 for A (see Topic 4). The agent now knows that "right" is the good action in every square, even though only the last step gave a reward.
+
+### 3.3 SARSA, in One Sentence
+
+SARSA is similar to Q-learning, but it updates using the action the agent *actually takes next*, so it learns the value of the policy it is really following, including its exploring.
+
+### 3.4 Deep Reinforcement Learning
+
+A Q-table works only for small problems. A game screen has far too many possible states to put in a table. **Deep RL** uses a **neural network** (Chapter 3) to estimate the Q-values from raw input such as screen pixels. The Deep Q-Network (DQN) of DeepMind (published 2015) learned to play 49 Atari video games from pixels and scores alone, reaching more than 75% of a professional human tester's score on more than half of them.
+
+### 3.5 Useful Techniques
+
+| Technique | Purpose |
+|---|---|
+| **ε-greedy exploration** | Keep trying new actions |
+| **Experience replay** | Store past experiences and learn from random samples of them, so learning is more stable |
+| **Reward shaping** | Add small helper rewards to guide learning (risky; see Topic 7) |
+| **Simulation** | Train in a simulated world first, because trial and error is slow and unsafe in reality |
+| **Self-play** | The agent plays against copies of itself to improve |
+
+---
+
+## Topic 4: Markov Decision Processes (MDPs)
+
+### 4.1 What Is an MDP?
+
+An **MDP** is the standard mathematical model of an RL problem. It has five parts.
+
+| Part | Symbol | Meaning |
+|---|:-:|---|
+| States | S | All situations the agent can be in |
+| Actions | A | All choices the agent has |
+| Transition | P(s′ \| s, a) | The chance of reaching state s′ if the agent does action a in state s |
+| Reward | R | The reward for a step |
+| Discount | γ | How much the future counts |
+
+**The Markov property.** The next state depends only on the **current state and action**, not on the whole history. The current state must therefore contain all the information that matters. *Example:* in chess the board position is enough to choose a move; you do not need to know the order of earlier moves.
+
+### 4.2 Policy and Value
+
+* A **policy π** says which action to take in each state.
+* The **value of a state** is the expected return if you start there and follow the policy.
+* The **Bellman idea**: the value of a state equals the immediate reward plus the discounted value of the next state. This is why Q-learning's update above has the form "reward + γ × next value".
+
+### 4.3 Worked Example: Values in the Corridor
+
+Use the same corridor A – B – C – D, with reward +10 for entering D and γ = 0.9. If the agent always moves right:
+
+| State | Value (best policy) | Calculation |
+|---|--:|---|
+| C | 10 | Moving right gives +10 and the episode ends |
+| B | 9 | 0 + 0.9 × V(C) = 0.9 × 10 |
+| A | 8.1 | 0 + 0.9 × V(B) = 0.9 × 9 |
+
+The values **decrease the farther the state is from the reward**, which is exactly the effect of discounting. The Q-values from Topic 3 head toward these numbers.
+
+### 4.4 MDP Example in Words: the Robot Vacuum
+
+| MDP part | Robot vacuum |
+|---|---|
+| States | Position, battery level, dirt map |
+| Actions | Move ahead, turn left, turn right, return to charger |
+| Transition | Moving ahead may fail if the wheel slips (this is why transitions are *probabilities*) |
+| Reward | +1 per dirt cleaned; −10 for bumping; −100 for running out of battery away from the charger |
+| Discount γ | 0.95 (cares about the future, for example battery) |
+
+---
+
+## Topic 5: Behavioral AI in Robotics and Games
+
+### 5.1 Behaviour-Based Robotics
+
+Rodney Brooks argued in the 1980s and 1990s that intelligent behaviour can come from **simple layers of behaviour tied directly to sensors and motors**, without a complete symbolic model of the world. This is the **subsumption architecture**: higher layers can override lower ones.
+
+```mermaid
+flowchart TB
+    L3["Layer 3: Explore and clean the room"] --> M["Motors"]
+    L2["Layer 2: Follow walls"] --> M
+    L1["Layer 1: Avoid obstacles (highest priority)"] --> M
+    S["Sensors"] --> L1
+    S --> L2
+    S --> L3
+```
+
+*Figure 4.3: Layers of behaviour for a robot vacuum. Avoiding obstacles overrides the rest.*
+
+| Symbolic robot | Behaviour-based robot |
+|---|---|
+| Builds a detailed world model, then plans | Reacts directly to what it senses |
+| Slow when the world changes | Fast reactions |
+| Good at long-range planning | Weaker at long-range planning |
+
+Many modern robots combine both: behaviours for reflexes, planning for goals, and learned networks for seeing.
+
+### 5.2 Games
+
+Games are good test grounds for RL. The rules are clear, the score is the reward, and simulation is cheap.
+
+| Year | System | What it did |
+|---|---|---|
+| 1992 (and 1995) | **TD-Gammon** (Gerald Tesauro) | Learned backgammon by playing against itself; reached a very high level |
+| 2015 | **DQN** (DeepMind) | Learned to play many Atari games from pixels and score |
+| 2015–2016 | **AlphaGo** (DeepMind) | Beat European champion Fan Hui 5–0 and then Lee Sedol 4–1, using deep neural networks, search, and reinforcement learning |
+| 2017 | **AlphaZero** (DeepMind) | Learned Go, chess, and shogi through self-play from the rules alone |
+
+**Why games first?** There is a clear reward (win or lose), unlimited safe practice, and an easy way to measure progress.
+
+---
+
+## Topic 6: Applications and Use Cases of Behaviorist AI
+
+| Field | How RL is used | Example | Reward idea |
+|---|---|---|---|
+| **Games** | Play and test games | Game-playing agents | Score, win or loss |
+| **Robotics** | Learn movement and manipulation | Robot arms learning to grasp; walking robots | Reached the target, stayed upright |
+| **Language assistants** | Fine-tune chatbots with human feedback (RLHF) | People rank answers; a reward model learns their preferences | Higher human rating |
+| **Recommendation and advertising** | Choose what to show, learn from clicks and viewing | Feeds that adapt to user behaviour | Engagement (a risky reward; see Topic 7) |
+| **Resource control** | Control systems such as energy use or traffic signals | Adaptive traffic-light control | Less waiting time, less energy |
+| **Autonomous driving** | Decision making in simulation | Lane-changing policies tested in simulators | Safe, smooth progress |
+
+> **Note.** In real products RL is usually **one component** next to rules and trained networks. Check each claim about "an AI that taught itself" for what was actually learned and how.
+
+---
+
+## Topic 7: Challenges and Limitations
+
+| Challenge | What it means | Example |
+|---|---|---|
+| **Reward design** | It is hard to write a reward that matches what we really want | A vacuum rewarded for "dirt collected" might dump dirt and collect it again |
+| **Reward hacking (specification gaming)** | The agent finds a loophole that raises the reward without doing the task | In a boat-racing game, an agent scored points by circling targets instead of finishing the race (OpenAI, 2016). In a block-stacking task, an agent was rewarded by the height of a block's bottom face and learned to flip the block over rather than stack it (Krakovna et al., 2020) |
+| **Sample inefficiency** | RL often needs millions of trials | Learning a game takes far more practice than a human needs |
+| **Delayed reward** | It is hard to know which earlier action caused a late reward | A chess win after 60 moves |
+| **Exploration is risky** | Trial and error in the real world can cause harm | A robot or car "trying" a dangerous action |
+| **Simulation-to-reality gap** | Skills learned in simulation may fail in the real world | A robot trained in a perfect simulator slips on a real floor |
+| **Generalisation** | An agent may fail when conditions change a little | A game agent fails in a slightly changed level |
+| **Explainability** | A learned policy can be hard to explain | "Why did it take this action?" |
+| **Ethics** | Rewards such as engagement can push harmful behaviour | A feed that maximises watch time may promote extreme content |
+
+**A checklist for reward design**
+
+1. Write down what you *really* want.
+2. Ask: "How could an agent score high without doing that?"
+3. Test in a safe simulation and watch the behaviour, not just the score.
+4. Add penalties for harmful side effects.
+5. Keep a human able to stop the system.
+
+---
+
+## Hands-On Activities
+
+### Activity A: Train the Corridor by Hand
+
+Use the corridor A – B – C – D, with +10 for moving right from C into D, α = 0.5, γ = 0.9, and all Q-values at 0. The agent always moves right.
+
+Do these updates in order and fill in the table.
+
+| Step | Move | Q-value after the update |
+|--:|---|--:|
+| 1 | C → D | ? |
+| 2 | B → C | ? |
+| 3 | A → B | ? |
+| 4 | C → D again | ? |
+
+*Expected answers:* Step 1: Q(C,R) = 5.0. Step 2: Q(B,R) = 0.5 × (0 + 0.9 × 5.0 − 0) = 2.25. Step 3: Q(A,R) = 0.5 × (0 + 0.9 × 2.25 − 0) = **1.0125**. Step 4: Q(C,R) = 5.0 + 0.5 × (10 − 5.0) = **7.5**.
+
+*Question:* After more repeats, which Q-value will be the largest? (Q(C,R), because it is closest to the reward.)
+
+### Activity B: Spot the Reward Hack
+
+For each reward, describe one way an agent could "cheat" and propose a better reward.
+
+| System | Reward | Possible hack | Better reward |
+|---|---|---|---|
+| Robot vacuum | +1 for each dirt particle collected | |  |
+| Online learning app | +1 for each minute the student stays in the app | | |
+| Delivery robot | +10 for reaching the destination | | |
+
+*Sample answers:* (1) The vacuum dumps dirt and collects it again; reward only dirt that was on the floor at the start, or reward a clean floor. (2) The app keeps students busy with pointless tasks; reward learning progress on a test. (3) The robot reaches the destination by taking a dangerous short cut; add penalties for collisions and for breaking rules.
+
+### Activity C: Rock Paper Scissors Against a Learner
+
+Play 10 rounds against a classmate who tries to **learn your habits**. Your classmate scores +1 for a win, 0 for a draw, −1 for a loss, and keeps notes of what you played after each of your previous moves.
+
+1. Do you have a pattern? (For example, "after rock I often play paper.")
+2. How many rounds did your classmate need before the notes helped?
+3. What would you change to be unpredictable? (Choose at random.)
+4. How is this like exploration and exploitation?
+
+---
+
+## Comparing the Three Approaches
+
+| | Symbolic AI | Connectionist AI | Behaviorist AI |
+|---|---|---|---|
+| **Chapter** | 2 | 3 | 4 |
+| **Core idea** | Reason with explicit rules and symbols | Learn connection weights from data | Learn behaviour from reward |
+| **Where knowledge comes from** | People write it | Training data | Experience in an environment |
+| **Strengths** | Explainable; editable; works with little data | Strong with images, speech, and text | Learns to act and plan in changing situations |
+| **Weaknesses** | Brittle; cannot learn; knowledge bottleneck | Needs data; hard to explain; can be biased | Needs many trials; reward design; safety |
+| **Typical applications** | Expert systems, planning, rule-based NLP | Image recognition, translation, chatbots | Games, robot control, tuning chatbots with feedback |
+| **Typical risk** | Wrong or missing rule | Biased data; hidden errors | Reward hacking; unsafe exploration |
+
+**Hybrid systems.** Modern systems combine the approaches. AlphaGo combined neural networks (Connectionist), tree search (Symbolic-style search), and reinforcement learning (Behaviorist).
+
+---
+
+## Key Takeaways
+
+* **Behaviorist AI** learns **behaviour from reward** by trial and error.
+* An RL problem has an **agent, environment, state, action, reward, and policy**.
+* The agent maximises **discounted return**: r₁ + γr₂ + γ²r₃ + …
+* It must balance **exploration and exploitation**.
+* **Q-learning** updates Q(s, a) toward **reward + γ × best next Q**, so reward spreads backward along a path.
+* An **MDP** is the formal model: states, actions, transitions, rewards, and discount; the next state depends only on the current state and action.
+* **Deep RL** uses neural networks to handle large state spaces (Atari, Go).
+* Behaviour-based robots use **layers of simple behaviours** tied to sensors.
+* Main limits: **reward design and hacking, huge number of trials, safety, simulation gap, and explainability**.
+
+---
+
+## Practice Questions
+
+### Part A: Multiple Choice
+
+**Q1.** In reinforcement learning, what does the agent receive after each action?
+A. The correct label
+B. A new state and a reward
+C. A rule book
+D. A dataset
+
+**Q2.** Rewards are 0, 0, 10 and γ = 0.9. What is the discounted return?
+A. 10
+B. 9
+C. 8.1
+D. 0
+
+**Q3.** What does ε-greedy do?
+A. Always picks the best action
+B. Sometimes picks a random action to explore
+C. Removes all rewards
+D. Learns from labelled data
+
+**Q4.** In the corridor example, after the first update, Q(C,R) = ?
+A. 0
+B. 2.25
+C. 5.0
+D. 10
+
+**Q5.** What does the Markov property say?
+A. The next state depends on the whole history.
+B. The next state depends only on the current state and action.
+C. Rewards are always positive.
+D. The agent never explores.
+
+**Q6.** Which statement about reward hacking is correct?
+A. The agent raises its score by exploiting a loophole instead of doing the task.
+B. The agent is attacked by an outside hacker.
+C. It happens only in supervised learning.
+D. It means the reward is too small.
+
+**Q7.** Which system used deep neural networks, search, and reinforcement learning to beat a Go champion?
+A. ELIZA
+B. MYCIN
+C. AlphaGo
+D. Deep Blue
+
+**Q8.** Which is a Behaviorist AI strength?
+A. Learns to act in changing situations from experience
+B. Needs no trial and error
+C. Never needs a reward
+D. Always explains itself
+
+### Part B: Short Answer
+
+**Q9.** Explain exploration versus exploitation with an everyday example.
+
+**Q10.** Why is delayed reward a difficulty for RL?
+
+**Q11.** Describe the difference between supervised learning and reinforcement learning in two sentences.
+
+**Q12.** A robot is rewarded +1 for each second it spends moving. Describe a hack and a better reward.
+
+### Part C: Apply It
+
+**Q13.** Using the corridor A – B – C – D (reward +10 for C → D, α = 0.5, γ = 0.9, all Q = 0), compute Q(B,R) after the sequence: C → D, then B → C.
+
+**Q14.** A video app uses RL to maximise watch time. Give one benefit and two risks, and suggest one safeguard.
+
+---
+
+## Answer Key
+
+| Q | Answer | Explanation |
+|---|---|---|
+| Q1 | B | The agent sees the new state and a reward (Figure 4.1). |
+| Q2 | C | 0 + 0.9 × 0 + 0.81 × 10 = 8.1 |
+| Q3 | B | With probability ε it explores. |
+| Q4 | C | 0 + 0.5 × (10 + 0 − 0) = 5.0 |
+| Q5 | B | The current state carries all the information needed. |
+| Q6 | A | The agent games the reward (Topic 7). |
+| Q7 | C | AlphaGo. Deep Blue used search without learning from reward in this way; ELIZA and MYCIN are Symbolic systems. |
+| Q8 | A | Learning to act from experience is the strength; the other options are false. |
+| Q9 | Sample | Choosing a restaurant: going to your favourite place is exploitation; trying a new place is exploration. You need both to find even better places while still enjoying good ones. |
+| Q10 | Sample | The reward may come many steps after the action that caused it, so the agent must work out which earlier actions deserve credit. |
+| Q11 | Sample | In supervised learning the system is given the correct answer for each example. In reinforcement learning it only gets a reward after acting, and must discover which actions lead to high total reward. |
+| Q12 | Sample | The robot could spin in circles to keep "moving". Reward progress toward a goal, such as distance covered along a path, and penalise wasted motion. |
+| Q13 | 2.25 | Q(C,R) = 5.0 after the first step. Then Q(B,R) = 0 + 0.5 × (0 + 0.9 × 5.0 − 0) = 2.25. |
+| Q14 | Sample | Benefit: the app can learn what each user finds interesting. Risks: it may promote extreme or addictive content, and it may reduce variety. Safeguards: add rewards for variety and user wellbeing, limit session length prompts, and review the results with people. |
+
+---
+
+## Glossary
+
+| Term | Meaning |
+|---|---|
+| **Action** | A choice the agent can make. |
+| **Agent** | The learner and decision-maker. |
+| **Discount factor (γ)** | A number between 0 and 1 that reduces the weight of future rewards. |
+| **Environment** | Everything the agent interacts with. |
+| **Episode** | One run from start to finish. |
+| **Exploration / exploitation** | Trying new actions / using the best-known action. |
+| **MDP** | Markov Decision Process: states, actions, transitions, rewards, and discount. |
+| **Policy** | A rule that chooses an action in each state. |
+| **Q-learning** | A value-based RL method that learns Q(s, a). |
+| **Reward** | A number telling the agent how good the last step was. |
+| **Reward hacking** | Raising the reward by exploiting a loophole instead of doing the intended task. |
+| **State** | A description of the current situation. |
+| **Subsumption architecture** | A robot design with layers of simple behaviours, where higher-priority layers override lower ones. |
+| **Value** | Expected total future reward. |
+
+---
+
+## References
+
+1. Course slides, "chap6: Behaviorist AI", Introduction to Computer Science and Artificial Intelligence (lecturer's materials). Source of the topic outline.
+2. Sutton, R. S., and Barto, A. G. (2018). *Reinforcement Learning: An Introduction* (2nd ed.). MIT Press. (*Not opened during this revision.*)
+3. Brooks, R. A. (1991). Intelligence without representation. *Artificial Intelligence*, 47(1–3), 139–159. (*Not opened during this revision.*)
+4. Mnih, V., et al. (2015). Human-level control through deep reinforcement learning. *Nature*, 518, 529–533. (*Not opened during this revision.*)
+5. Silver, D., et al. (2016). Mastering the game of Go with deep neural networks and tree search. *Nature*, 529, 484–489. (Existence confirmed by search; not opened.)
+6. Krakovna, V., et al. (2020). Specification gaming: the flip side of AI ingenuity. DeepMind blog. (*Not opened during this revision.*)
+7. Clark, J., and Amodei, D. (2016). Faulty reward functions in the wild. OpenAI blog. (*Not opened during this revision.*)
+8. Ouyang, L., et al. (2022). Training language models to follow instructions with human feedback. (*Not opened during this revision.*)
+9. Tesauro, G. (1995). Temporal difference learning and TD-Gammon. *Communications of the ACM*, 38(3), 58–68. (*Not opened during this revision.*)
+
+> References 2 to 9 must be checked by the author or reviewer before submission.
