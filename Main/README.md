@@ -111,7 +111,7 @@ The main project documents are maintained together to provide continuous documen
 | **Quality Review Register**  | Tracks quality review reports, identified issues, and review progress.                            | [review-register.md](../quality/reviews/review-register.md)               |
 | **Final Submission Audit**   | Records final quality checks for submission preparation.                                          | [final-submission-audit.md](../quality/reviews/final-submission-audit.md) |
 | **Stage 1 AI Use Log**       | Records AI-assisted activities during Stage 1.                                                    | [stage1-ai-use-log.md](../logs/stage1-ai-use-log.md)                      |
-| **Stage 1 Combined Content** | Preserves the combined learning content developed during Stage 1.                                 | [stage1_Content.md](stage1_Content.md)                                    |
+| **Stage 1 Combined Content** | Preserves the combined learning content developed during Stage 1.                                 | [stage1_Content.md](study-guide/v1.0/stage1_Content.md)                                    |
 
 The project documents remain in the main branch and are updated when necessary.
 
@@ -134,13 +134,28 @@ BABI-GULING/
 │   ├── master-task-list.md
 │   ├── module-outline.md
 │   │
+│   ├── assets/
+│   │   ├── fig-main-1-stage-timeline.png
+│   │   └── fig-main-2-workflow.png
+│   │
 │   └── study-guide/
 │       ├── v1.0/
-│       │   └── Chapter 1–4 (Stage 1, rebuilt on the course chapters)
+│       │   ├── chapter-1-introduction-to-cs-and-ai/
+│       │   │   ├── introduction-to-cs-and-ai.md
+│       │   │   └── assets/            (fig-1-1 … fig-1-4, PNG)
+│       │   ├── chapter-2-symbolic-ai/
+│       │   │   ├── symbolic-ai.md
+│       │   │   └── assets/            (fig-2-1 … fig-2-6, PNG)
+│       │   ├── chapter-3-connectionist-ai-and-big-data/
+│       │   │   ├── connectionist-ai-and-big-data.md
+│       │   │   └── assets/            (fig-3-1 … fig-3-5, PNG)
+│       │   ├── chapter-4-behaviorist-ai/
+│       │   │   ├── behaviorist-ai.md
+│       │   │   └── assets/            (fig-4-1 … fig-4-3, PNG)
 │       │   └── stage1_Content.md
 │       │
 │       └── v2.0/
-│           └── Chapter 1–4 (Stage 2)
+│           └── Chapter 1–4 (Stage 2, same layout)
 │           └── stage2_Content.md
 │
 ├── logs/
@@ -162,6 +177,20 @@ BABI-GULING/
 ```
 
 *The diagram describes the logical organization of the project. Stage-specific content is maintained in its corresponding development branch.*
+
+### Figures and Assets
+
+All figures are PNG images, not Mermaid code, so they look the same on GitHub, in the PDF, and in the slides.
+
+| Rule | Detail |
+|---|---|
+| Location | Each chapter keeps its images in its own `assets/` folder next to the chapter file. Project-level figures are in `Main/assets/`. |
+| File name | `fig-<chapter>-<number>-<short-name>.png`, in lowercase with hyphens, for example `fig-2-5-search-tree.png`. |
+| Link in Markdown | `![Alt text that describes the figure](assets/fig-2-5-search-tree.png)` followed by an italic caption such as `*Figure 2.5: A small search tree.*` |
+| Alt text | Every image has alt text that explains what it shows. |
+| Check before merge | The file exists, the name matches the link exactly (GitHub is case-sensitive), and the image opens in the GitHub preview. |
+
+The full list of figures is in the [Module Outline](module-outline.md#figures-and-assets).
 
 ### Branch Management
 
