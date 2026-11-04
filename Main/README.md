@@ -4,7 +4,7 @@
 **Team Name:** BABI GULING
 **Project:** Introduction to Computer Science and Artificial Intelligence
 **Current Stage:** Stage 2 — Content Development and Learning Resource Production
-**Last Updated:** November 4, 2026
+**Last Updated:** November 5, 2026
 
 ---
 
@@ -30,13 +30,12 @@ The BABI GULING team project aims to introduce **Artificial Intelligence (AI)** 
 
 The project focuses on explaining fundamental AI concepts through structured learning materials, practical examples, and beginner-friendly explanations.
 
-The module covers five main topics:
+The module covers four chapters, taken from the lecturer's course chapters:
 
-1. Introduction to Artificial Intelligence.
-2. Types of Artificial Intelligence.
-3. How Artificial Intelligence Works.
-4. Applications of Artificial Intelligence.
-5. AI Ethics and Limitations.
+1. Introduction to CS and AI.
+2. Symbolic AI.
+3. Connectionist AI and Big Data.
+4. Behaviorist AI.
 
 The project uses a shared Markdown content base as the main reference for developing three learning resources.
 
@@ -58,25 +57,24 @@ Learners are expected to have basic computer and internet literacy. Technical te
 
 After completing this module, learners should be able to:
 
-1. Explain what Artificial Intelligence is and describe how it differs from traditional programming.
-2. Distinguish AI by capability, including Narrow AI and General AI, and recognize approaches such as Machine Learning and Generative AI.
-3. Describe the basic AI workflow, including data collection, algorithms, training, and inference.
-4. Identify real-world applications of AI in healthcare, education, transportation, industry, and everyday life.
-5. Recognize important AI limitations and ethical concerns, including bias, privacy, transparency, and hallucinations.
+1. Define Computer Science and Artificial Intelligence, describe their history and main areas, and explain the three families of machine learning.
+2. Explain Symbolic AI: logic, knowledge representation, rule-based and expert systems, planning and search, and symbolic natural language processing.
+3. Explain Connectionist AI (neural networks and deep learning) and Big Data (the Vs, technologies, processing, visualization, and ethics).
+4. Explain Behaviorist AI: reinforcement learning, Markov decision processes, Q-learning, applications in robotics and games, and its challenges.
+5. Compare the three approaches, match them to suitable applications, and identify the typical risks of each.
 
 ---
 
 ## 3. Module Content
 
-The AI Overview module consists of five chapters.
+The AI Overview module consists of four chapters. Each chapter follows one of the lecturer's course chapters.
 
-| Chapter | Topic                         | Main Content                                                                                       |
-| :-----: | ----------------------------- | -------------------------------------------------------------------------------------------------- |
-|    1    | **Introduction to AI**        | Definition of AI, basic concepts, history, and differences between AI and traditional programming. |
-|    2    | **Types of AI**               | AI classifications, Narrow AI, General AI, Machine Learning, and Generative AI.                    |
-|    3    | **How AI Works**              | Data, algorithms, model training, inference, and the basic AI development process.                 |
-|    4    | **Applications of AI**        | AI applications in healthcare, education, transportation, industry, and everyday life.             |
-|    5    | **AI Ethics and Limitations** | AI bias, privacy, transparency, hallucinations, reliability, and responsible AI use.               |
+| Chapter | Topic | Main Content | Version |
+| :-----: | ----------------------------- | -------------------------------------------------------------------------------------------------- | :-----: |
+| 1 | **Introduction to CS and AI** | Definitions and history of CS and AI, main areas, machine-learning families, and hands-on machine learning. | 1.1 |
+| 2 | **Symbolic AI** | Logic and reasoning, knowledge representation, rule-based and expert systems, planning and search, and symbolic NLP. | 1.1 |
+| 3 | **Connectionist AI and Big Data** | Neural networks, architectures, deep learning, applications and ethics; Big Data technologies, analytics, visualization, and privacy. | 1.1 |
+| 4 | **Behaviorist AI** | Reinforcement learning, Q-learning, Markov decision processes, robotics and games, applications, and limitations. | 1.1 |
 
 For detailed chapter descriptions, learning objectives, and the planned module structure, refer to the [Module Outline](module-outline.md).
 
@@ -88,11 +86,11 @@ Each team member has a specific role supporting project development and coordina
 
 | Team Member                   | Role               | Main Responsibilities                                                                                                                      |
 | ----------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Joseph Lokman**             | CEO                | Coordinates overall project progress, monitors deadlines, organizes team responsibilities, and supports final submission preparation.      |
-| **Jonathan Sugianto**         | CIO                | Supports repository organization, technical documentation, GitHub workflow, and integration of project materials.                          |
-| **Benedict Subhata**          | Visual Design Lead | Supports visual consistency, presentation design, diagrams, and the organization of visual learning materials.                             |
-| **Gandhi Bestin Dhammananda** | Video Lead         | Coordinates video tutorial development, narration planning, and preparation of video learning materials.                                   |
-| **Brian Djoni Suzanna**       | Quality Lead       | Reviews learning content and project documentation, checks consistency and completeness, records quality issues, and monitors corrections. |
+| **Joseph Lokman**             | CEO                | Writes Chapter 4, coordinates overall progress and deadlines, keeps the Project Log, and manages the GitHub repository.                    |
+| **Jonathan Sugianto**         | CIO and Content Lead | Writes Chapter 1, supports repository organization, and compiles the project materials and submissions.                                 |
+| **Benedict Subhata**          | Visual Design Lead | Writes Chapter 3, and supports visual consistency, presentation design, diagrams, and the Study Guide.                                     |
+| **Gandhi Bestin Dhammananda** | Video Lead         | Writes Chapter 2, and coordinates video tutorials, narration planning, and the live teaching session.                                     |
+| **Brian Djoni Suzanna**       | Quality Lead       | Reviews all four chapters independently (he writes no chapter), maintains the project documents and Quality Standards, and records findings. |
 
 All members contribute to the development, revision, and improvement of the AI Overview learning materials.
 
@@ -138,11 +136,11 @@ BABI-GULING/
 │   │
 │   └── study-guide/
 │       ├── v1.0/
-│       │   └── Chapter 1–5 (Stage 1)
+│       │   └── Chapter 1–4 (Stage 1, rebuilt on the course chapters)
 │       │   └── stage1_Content.md
 │       │
 │       └── v2.0/
-│           └── Chapter 1–5 (Stage 2)
+│           └── Chapter 1–4 (Stage 2)
 │           └── stage2_Content.md
 │
 ├── logs/
@@ -173,7 +171,7 @@ The team uses different Git branches to separate development stages while keepin
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | `main`                     | Maintains the main project documentation, project management files, quality review records, and shared documentation. |
 | `AI-Overview`              | Preserves the Stage 1 content development and its V1.0 learning materials.                                            |
-| Stage 2 development branch | Supports the development and revision of V2.0 learning materials for Chapters 1–5.                                    |
+| Stage 2 development branch | Supports the development and revision of V2.0 learning materials for Chapters 1–4.                                    |
 
 The Stage 1 branch is preserved to maintain the history of the original learning materials.
 
@@ -213,7 +211,7 @@ The Project Plan and Master Task List are used to coordinate activities and moni
 
 ### Step 2 — Content Development
 
-Team members develop learning materials for the five AI Overview chapters.
+Team members develop learning materials for the four AI Overview chapters.
 
 The materials are written in Markdown and organized according to the Module Outline.
 
@@ -277,7 +275,7 @@ The review process focuses on ensuring that the content is understandable, logic
 
 Quality review reports from Stage 1 are preserved as part of the project's quality history.
 
-Reports QR-001 to QR-008 document the initial review activities and selected rechecks conducted during Stage 1.
+Reports QR-001 to QR-008 document the initial review activities conducted during Stage 1 for the earlier five-chapter version. Reviews of the rebuilt four-chapter version use QR-121 to QR-125. A chapter is called Checked only after the Quality Lead has signed its report.
 
 For Stage 2, new review reports will be added to the same quality review system. The Review Register will continue to track review IDs, reviewed files, findings, corrections, and final results.
 
@@ -323,7 +321,7 @@ Stage 1 and Stage 2 AI-use records are maintained separately to preserve the his
 
 ## 10. Current Project Progress
 
-**Last Updated:** November 4, 2026
+**Last Updated:** November 5, 2026
 **Current Stage:** Stage 2 — Content Development and Learning Resource Production
 
 ### Stage 1 — Completed
@@ -334,8 +332,8 @@ Completed activities included:
 
 * Establishing the team structure and assigning project roles.
 * Defining the project purpose, intended learners, and learning outcomes.
-* Organizing the AI Overview module into five chapters.
-* Developing the initial learning materials for Chapters 1–5.
+* Organizing the AI Overview module into chapters (rebuilt on 5 November 2026 to follow the lecturer's four course chapters).
+* Developing the initial learning materials for Chapters 1–4.
 * Preparing the combined Stage 1 learning content.
 * Preparing the Project Plan and Master Task List.
 * Organizing the Module Outline.
@@ -353,7 +351,8 @@ Stage 2 focuses on improving and expanding the existing learning materials and p
 
 Current activities include:
 
-* Revising and developing the Markdown content for Chapters 1–5 as V2.0.
+* Expanding the rebuilt Chapters 1–4 into V2.0 with more depth, examples, and a full Study Guide and Test Bank.
+* Waiting for the Quality Lead's signed review of the rebuilt chapters.
 * Improving explanations, examples, diagrams, and learning activities.
 * Checking consistency between chapters.
 * Conducting quality reviews of the revised content.
@@ -381,7 +380,7 @@ The project produces several connected learning and documentation deliverables.
 | **Project Plan**                   | Documents project objectives, workflow, timeline, and team responsibilities. |
 | **Master Task List**               | Records assigned tasks, deadlines, and progress across all stages.           |
 | **Module Outline**                 | Defines the learning structure and topics of the AI Overview module.         |
-| **Markdown Study Guide**           | Contains the main educational content for all five chapters.                 |
+| **Markdown Study Guide**           | Contains the main educational content for all four chapters.                 |
 | **Study Guide + Test Bank**        | Provides structured learning materials and practice questions.               |
 | **PPT Slides**                     | Presents key concepts through visual explanations and examples.              |
 | **Video Tutorials**                | Provides narrated explanations and demonstrations of selected topics.        |
@@ -398,7 +397,7 @@ Deliverables are developed and updated according to the requirements of each pro
 
 Following the Stage 2 development schedule, the team will:
 
-1. Complete the V2.0 Markdown content for all five chapters.
+1. Merge the rebuilt chapters, complete the signed quality review and corrections, then expand the chapters into V2.0.
 2. Conduct cross-reviews and quality checks.
 3. Improve the Study Guide and Test Bank.
 4. Complete the first version of the PPT Slides.
@@ -419,6 +418,6 @@ The BABI GULING AI Overview project aims to make Artificial Intelligence easier 
 
 Stage 1 established the project's foundation and initial learning content.
 
-Stage 2 builds on that foundation by revising and expanding the five chapters, improving the learning resources, and preparing the teaching materials.
+Stage 2 builds on that foundation by revising and expanding the four chapters, improving the learning resources, and preparing the teaching materials.
 
 By maintaining shared project documentation, organized content versions, and continuous quality reviews, the team aims to produce consistent and useful learning materials throughout the project.
