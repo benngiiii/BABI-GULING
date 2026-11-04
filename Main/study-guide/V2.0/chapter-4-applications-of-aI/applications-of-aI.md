@@ -2,10 +2,10 @@
 
 > **Module:** AI Overview
 > **Chapter:** 4 — Applications of AI
-> **Version:** 2.0
+> **Version:** 2.1
 > **Audience:** Complete beginners with no technical background in AI
-> **Estimated Study Time:** Approximately 4–5 hours, including activities
-> **Author:** Brian Djoni Suzanna
+> **Estimated Study Time:** Approximately 5–6 hours, including activities
+> **Author:** Brian Djoni Suzanna (V2.0 draft). V2.1 course-alignment revision prepared for Jonathan Sugianto, who now owns this chapter.
 
 ---
 
@@ -20,12 +20,13 @@
 7. [Topic 3: AI in Transportation](#topic-3-ai-in-transportation)
 8. [Topic 4: AI in Everyday Life](#topic-4-ai-in-everyday-life)
 9. [Topic 5: AI in Finance and Trading](#topic-5-ai-in-finance-and-trading)
-10. [Cross-Topic Comparison](#cross-topic-comparison)
-11. [Final Learning Activity](#final-learning-activity)
-12. [Chapter Summary](#chapter-summary)
-13. [Glossary](#glossary)
-14. [Practice Questions and Answers](#practice-questions-and-answers)
-15. [References](#references)
+10. [Topic 6: AI in Games and Robotics](#topic-6-ai-in-games-and-robotics)
+11. [Cross-Topic Comparison](#cross-topic-comparison)
+12. [Final Learning Activity](#final-learning-activity)
+13. [Chapter Summary](#chapter-summary)
+14. [Glossary](#glossary)
+15. [Practice Questions and Answers](#practice-questions-and-answers)
+16. [References](#references)
 
 ---
 
@@ -33,13 +34,15 @@
 
 By the end of this chapter, learners should be able to:
 
-1. **Identify** common applications of AI in healthcare, education, transportation, everyday life, and finance.
+1. **Identify** common applications of AI in healthcare, education, transportation, everyday life, finance, and games and robotics.
 2. **Explain** how AI systems use data and models to support real-world tasks.
 3. **Distinguish** between common AI tasks, including classification, prediction, recommendation, perception, and anomaly detection.
 4. **Interpret** basic performance measures used in AI applications, including sensitivity, specificity, precision, and accuracy.
 5. **Analyse** the benefits, limitations, and possible consequences of AI applications.
 6. **Compare** different AI applications according to their purpose, data requirements, risks, and need for human oversight.
 7. **Recognise** the difference between machine-learning systems and ordinary rule-based automation.
+8. **Explain** which of the three classic approaches (Symbolic, Connectionist, and Behaviorist AI) an application mainly uses, and why many applications combine them.
+9. **Describe** how a learning agent uses rewards, and explain why a badly designed reward can lead to unwanted behaviour.
 
 ---
 
@@ -56,6 +59,7 @@ Learners are expected to have a general understanding of:
 * Models
 * Training and inference
 * Neural networks and deep learning
+* The three classic approaches to building AI: Symbolic, Connectionist, and Behaviorist (Chapter 3, §3.3)
 
 These concepts will be used throughout this chapter without repeating their full technical explanations.
 
@@ -170,8 +174,24 @@ Examples:
 | Anomaly detection           | Identify unusual patterns           | Fraud alerts            |
 | Perception                  | Interpret sensory information       | Pedestrian recognition  |
 | Natural Language Processing | Process human language              | Translation             |
+| Planning and control        | Choose a sequence of actions to reach a goal | A robot vacuum's route |
 
 **Important:** These tasks are not mutually exclusive. A single application may combine several AI tasks. For example, a self-driving vehicle may use perception to recognise pedestrians, prediction to estimate their movement, and planning to choose an appropriate response.
+
+## Which Approach Powers Which Application?
+
+Chapter 3 (§3.3 to §3.6) explains three classic approaches to building AI: **Symbolic AI** (rules and logic written by people), **Connectionist AI** (networks that learn patterns from data), and **Behaviorist AI** (behaviour learned from rewards). Real applications rarely use only one. This table shows which approach supplies which part of some familiar systems. It does not repeat how the approaches work; follow the Chapter 3 links for that.
+
+| Application | Symbolic part | Connectionist part | Behaviorist part | Read more |
+| ----------- | ------------- | ------------------ | ---------------- | --------- |
+| Medical decision support | Rule-based expert systems such as MYCIN, which applied hand-written IF-THEN rules to advise on antibiotics (Yu et al., 1979); clinical alert rules | Deep neural networks that analyse medical images (Gulshan et al., 2016; McKinney et al., 2020) | Not the main approach in current tools | Ch. 3, §3.4 and §3.5 |
+| Driver assistance and navigation | Route planning by search; traffic rules written as explicit constraints | Neural networks that recognise pedestrians, vehicles, and signs from camera data | Learning driving behaviour from reward, mostly in simulation and research | Ch. 3, §3.4 to §3.6 |
+| Recommendations and fraud detection | Business rules and thresholds (for example, "always review transfers above a set limit") | Models trained on very large data sets of past behaviour (Big Data) | Some systems treat clicks or feedback as rewards and adjust what they show | Ch. 3, §3.5 and §3.6 |
+| Game-playing programs | Game-tree search, as in Deep Blue (Campbell et al., 2002) | Neural networks that judge positions or suggest moves | Learning from self-play and from the game score (Mnih et al., 2015; Silver et al., 2016) | Ch. 3, §3.4 and §3.6 |
+| AI chat assistant | Tools and hand-written rules around the model, such as a calculator or safety filters | A transformer language model trained on very large amounts of text | Tuning with human feedback, a form of reinforcement learning (Ouyang et al., 2022) | Ch. 3, §3.3 and §3.11 |
+| Spam filter (our running example) | Hand-written rules such as "contains 'free prize'" | Word scores or a neural network learned from labelled emails | In principle, "moved back to the inbox" can act as a penalty | Ch. 1, §1.5; Ch. 2, §2.4.10 |
+
+**Reading the table.** The Symbolic column is usually the easiest to explain, because you can point to a rule. The Connectionist column handles messy input such as images and free text, but its decisions are harder to explain. The Behaviorist column matters when a system must choose a sequence of actions and learn from feedback. Chapter 5 returns to the strengths and risks of each approach.
 
 ---
 
@@ -184,6 +204,7 @@ Examples:
 | Transportation      | Perception, prediction, planning                    | Driver assistance, autonomous vehicles, route planning        | Safety support and operational efficiency | Rare situations, sensor limitations, safety risks              |
 | Everyday Life       | Recommendation, classification, language processing | Streaming platforms, spam filters, voice assistants           | Convenience and personalisation           | Privacy, inaccurate outputs, limited recommendations           |
 | Finance and Trading | Classification, prediction, anomaly detection       | Fraud detection, credit scoring, automated trading            | Faster analysis and monitoring            | Financial losses, incorrect alerts, changing market conditions |
+| Games and Robotics  | Planning, perception, decision-making from rewards  | Game-playing programs, robot vacuums, warehouse and industrial robots | Safe practice in simulated worlds; automation of repetitive physical tasks | Reward design, simulation-to-reality gap, safety around people |
 
 ---
 
@@ -497,6 +518,8 @@ However, a real medical system should also be evaluated using appropriate clinic
 | Can support research and drug discovery.                       | Requires clinical validation and professional oversight.            |
 
 **Healthcare takeaway:** AI can improve medical analysis and support clinical decisions, but medical professionals remain important for interpreting results and making patient-care decisions.
+
+> **Big Data in healthcare.** Medical-imaging models are trained on very large collections of labelled scans. These data are highly sensitive, because they link a person's identity to their health, so they must be protected. A data set that mostly contains one patient group can also make a model less reliable for others. See Chapter 3 (§3.5) for what "Big Data" means, and Chapter 5, Topic 1 (Bias) and Topic 2 (Privacy), for the risks.
 
 ---
 
@@ -1111,6 +1134,8 @@ A **filter bubble** occurs when a recommendation system repeatedly presents simi
 
 **Everyday life takeaway:** AI makes many digital services more convenient, but users should understand that recommendations and automated outputs are based on patterns and may not always reflect their actual needs.
 
+> **Big Data in everyday life.** A recommendation system learns from huge numbers of views, clicks, and searches that arrive continuously from many users. The same records can reveal personal interests and habits, so a platform must decide what to collect and how long to keep it (Chapter 5, Topic 2: Privacy).
+
 ---
 
 # Topic 5: AI in Finance and Trading
@@ -1288,7 +1313,7 @@ Under the stated assumptions:
 * Sell at 9 on Day 6.
 * Difference = 9 - 11 = **-2 per unit**.
 
-This simplified example shows that a trading rule can generate a loss even when it follows its instructions correctly.
+This simplified example shows that a trading rule can generate a loss even when it follows its instructions correctly. The example is deliberately simple. Real trading systems use many more signals, costs, and risk controls, and a moving-average rule reacts to past prices, so it can lag behind sudden changes.
 
 ## 5.5 Why Can Automated Trading Make Mistakes?
 
@@ -1368,11 +1393,126 @@ Answer:
 
 **Finance takeaway:** AI can help financial institutions analyse information and detect unusual activity, but financial decisions and automated systems require careful evaluation because errors may result in financial losses.
 
+> **Big Data in finance.** Fraud-detection systems check very large streams of transactions in near real time. The data show where and how a customer spends money, which is personal, and a wrong alert can inconvenience a customer or restrict an account. Data protection and the right to challenge a decision are therefore part of the design (Chapter 5, Topic 2).
+
+---
+
+# Topic 6: AI in Games and Robotics
+
+## 6.1 Why Are Games and Robots Used to Study AI?
+
+Games and robots may seem very different, but both give an AI system something that real life often does not: **a clear goal and quick feedback**.
+
+* A game has fixed rules and a score. The program can play many times, learn from the result, and try again.
+* A robot has a body. It senses the world, chooses an action, and sees what happens. Learning by trial and error is possible, but mistakes in the real world can break things or hurt people.
+
+Because of this, games and robots are the main home of **Behaviorist AI**, in which a system learns what to do from rewards (Chapter 3, §3.6). They also use Symbolic AI (for example, search through possible moves) and Connectionist AI (for example, neural networks that recognise objects), as the table in *Which Approach Powers Which Application?* shows.
+
+## 6.2 Common Applications
+
+| Application | What the AI does | Main approaches |
+| ----------- | ---------------- | --------------- |
+| Game-playing programs | Chooses moves in games such as chess or Go | Search (Symbolic), neural networks, reinforcement learning |
+| Computer-controlled game characters | Chooses actions so that a character reacts to the player | Rules (Symbolic), sometimes learning |
+| Robot vacuum cleaners | Senses obstacles, plans a route, and avoids bumping into furniture | Simple behaviours, planning, sometimes learning |
+| Warehouse and industrial robots | Moves or handles objects repeatedly and safely | Planning, perception, control |
+| Simulated training worlds | Lets an AI practise before it works in the real world | Reinforcement learning |
+
+### Important Terms
+
+| Term | Meaning |
+| ---- | ------- |
+| **Agent** | The part of the system that chooses actions (the game player, the robot's controller). |
+| **Environment** | Everything the agent interacts with (the game board, the room). |
+| **Reward** | A number that tells the agent how good or bad the result of an action was. |
+| **Policy** | The agent's way of choosing an action in each situation. |
+| **Simulation** | A computer model of the world in which an agent can practise safely. |
+
+## 6.3 How Does a Learning Agent Work?
+
+A learning agent repeats a simple loop:
+
+1. **Sense:** observe the situation (the board, the camera image, the distance sensors).
+2. **Choose:** pick an action using its current policy.
+3. **Act:** make the move or movement.
+4. **Receive a reward:** get a score for the result (for example +1 for a win, −1 for a loss).
+5. **Update:** adjust the policy so that actions leading to higher rewards become more likely.
+
+Chapter 3 (§3.6) explains this loop, and a small worked example of Q-learning, in detail. This chapter focuses on how it is *applied* and where it goes wrong.
+
+**Behaviour-based robotics** is a different route. Instead of giving the robot a detailed model of the world to reason about, the designer builds it from layers of simple behaviours, such as "avoid obstacles" and "wander", that react directly to what the robot senses (Brooks, 1991). Many simple robots, including some cleaning robots, work this way.
+
+## 6.4 Worked Example: Rewarding a Robot Vacuum
+
+A robot vacuum is tested in a small room. Its designers give it this reward:
+
+* **+1** each time it cleans a tile that was dirty,
+* **−2** each time it bumps into something,
+* **−0.1** for every move it makes (so it does not wander without purpose).
+
+Two test runs, each lasting 10 moves:
+
+| | Dirty tiles cleaned | Bumps | Moves |
+| --- | :---: | :---: | :---: |
+| Run A (random wandering) | 4 | 3 | 10 |
+| Run B (planned sweep of the room) | 8 | 0 | 10 |
+
+**Run A:** (4 × 1) + (3 × −2) + (10 × −0.1) = 4 − 6 − 1.0 = **−3.0**
+
+**Run B:** (8 × 1) + (0 × −2) + (10 × −0.1) = 8 + 0 − 1.0 = **+7.0**
+
+Run B earns a much higher reward, so a learning agent would gradually favour the behaviour of Run B. The reward told the robot *what we want*: clean more, bump less, and do not waste moves.
+
+**What can go wrong?** Suppose the designers had written a simpler reward: "+1 every time a tile is cleaned", with nothing about whether the tile was dirty. A robot could earn reward by cleaning the same tile again and again. It would maximise the reward that was *written*, not the result that was *wanted*. This problem is called **reward hacking**. A well-known real example is a boat-racing game in which an agent was rewarded for hitting targets. It found a spot where it could circle and hit the same targets repeatedly, and scored about 20% higher than human players instead of finishing the race (OpenAI, 2016).
+
+## 6.5 Real Examples from Games
+
+* **Atari video games.** A system called Deep Q-Network (DQN) learned to play 49 classic Atari games using only the raw screen pixels and the game score. It beat earlier methods in 43 of them, and in more than half of the games it reached over 75% of a professional human tester's level, with the same design and settings for every game (Mnih et al., 2015).
+* **Go.** AlphaGo combined deep neural networks, tree search, and reinforcement learning from self-play, and beat the European Go champion Fan Hui 5–0 (Silver et al., 2016).
+
+These examples show the main idea of this topic: a clear score, plus a very large amount of practice in a simulated world, can produce impressive skill. They also show why the approaches are combined, since AlphaGo used all three.
+
+## 6.6 Games and Robotics Activity
+
+A delivery robot in a building earns **+5** for each package delivered, **−1** for each minute a delivery is late, and **−10** if it bumps into a person.
+
+1. **Calculate.** In one hour the robot delivers 6 packages, is late by a total of 8 minutes, and does not bump into anyone. What is its total reward?
+2. **Compare.** A second robot delivers 9 packages, is late by a total of 4 minutes, and bumps into 2 people. What is its total reward? Which robot behaved better, and does the reward agree with your opinion?
+3. **Find a loophole.** Suggest one way a robot might get a high reward without doing the job we really want.
+4. **Improve the reward.** Change the reward so that the loophole no longer pays off.
+5. **Classify and decide.** Which of the three classic approaches does the *learning* part of this robot mainly use? Should a human supervise it while it works in a building with people? Explain.
+
+<details>
+<summary><strong>Sample Answers: Games and Robotics</strong></summary>
+
+**1.** (6 × 5) + (8 × −1) + 0 = 30 − 8 = **+22**.
+
+**2.** (9 × 5) + (4 × −1) + (2 × −10) = 45 − 4 − 20 = **+21**. The first robot scores slightly higher (+22 against +21), so the reward says it behaved better. Whether that agrees with your opinion depends on how serious you think bumping into people is. Many people would say that bumping into two people is much worse than delivering three more packages, so the penalty of −10 may be too small. Choosing the numbers is a design decision, not a fact.
+
+**3.** *(Any reasonable loophole.)* The robot could deliver packages only to nearby rooms and ignore far ones; or it could stay still so that it never bumps into anyone; or, if a delivery is counted when the robot *says* it delivered, it could report deliveries without making them.
+
+**4.** *(Any reasonable fix.)* Count a delivery only when the recipient confirms it; add a small penalty for each minute with no delivery in progress; or increase the penalty for bumping into a person (for example, −50).
+
+**5.** The learning part mainly uses **Behaviorist AI** (reinforcement learning), although the robot also needs perception (Connectionist) and route planning (Symbolic). Yes, a human should supervise it, because errors can harm people and the robot may find loopholes in its reward.
+
+</details>
+
+## 6.7 Benefits and Limitations of Games and Robotics AI
+
+| Benefits | Limitations |
+| -------- | ----------- |
+| Systems can practise safely in simulation before acting in the real world. | A skill learned in simulation can fail on real hardware (the simulation-to-reality gap). |
+| Can reach very high skill in games with clear rules and scores. | Often needs millions of practice trials. |
+| Can automate repetitive physical tasks. | A badly designed reward can lead to reward hacking. |
+| Gives researchers a clear way to measure progress. | Real robots can damage property or hurt people, so safe exploration matters. |
+
+**Games and robotics takeaway:** Learning from rewards can produce impressive behaviour, but the reward must describe what people really want, and physical robots need careful testing and human oversight.
+
 ---
 
 # Cross-Topic Comparison
 
-The five sectors discussed in this chapter use AI for different purposes.
+The six topics discussed in this chapter use AI for different purposes.
 
 However, they can be compared using the same evaluation criteria.
 
@@ -1383,6 +1523,7 @@ However, they can be compared using the same evaluation criteria.
 | Transportation | Perception, prediction, and planning | Vehicle response                | Safety incidents                                | High            |
 | Everyday Life  | Recommendation and classification    | Suggested content or spam alert | Inconvenience or missed information             | Low to medium   |
 | Finance        | Anomaly detection and prediction     | Transaction alert               | Financial loss or incorrect account restriction | Medium to high  |
+| Games and robotics | Planning and learning from rewards | Next move or robot action | A lost game, or, for a physical robot, damage or injury | Low for games; high for robots working near people |
 
 The level of human oversight depends on the application and the consequences of incorrect results.
 
@@ -1420,6 +1561,7 @@ Imagine that a company wants to introduce an AI system to improve one of the fol
 * Transportation.
 * Everyday digital services.
 * Finance.
+* Games and robotics.
 
 Choose **one** area and complete the following analysis.
 
@@ -1479,13 +1621,23 @@ An AI-based learning recommendation system may help students practise topics tha
 
 </details>
 
+**Self-check checklist for your answer.** Your analysis is complete if you can tick every item:
+
+- [ ] You named one sector and one clear problem.
+- [ ] You described what the AI system does in one or two sentences.
+- [ ] You listed the information (data) the system needs.
+- [ ] You named the AI task (classification, prediction, recommendation, anomaly detection, perception, or language).
+- [ ] You named the approach behind it (Symbolic, Connectionist, or Behaviorist, or a mix) and gave a reason.
+- [ ] You gave at least one benefit and at least one limitation or risk.
+- [ ] You said where a human should stay in control.
+
 ---
 
 # Chapter Summary
 
 Artificial Intelligence is used in many industries to support tasks that involve analysing information, recognising patterns, making predictions, and recommending actions.
 
-The five sectors discussed in this chapter demonstrate different ways AI can be applied.
+The six topics discussed in this chapter demonstrate different ways AI can be applied.
 
 ### 1. Healthcare
 
@@ -1517,6 +1669,16 @@ AI can help identify unusual transactions, analyse financial information, and su
 
 However, financial predictions are uncertain, and automated systems can produce significant errors.
 
+### 6. Games and Robotics
+
+AI can learn to play games and control robots by trying actions and receiving rewards (Behaviorist AI), often together with search and neural networks.
+
+The reward must describe what people really want, otherwise the system may exploit it (reward hacking). Robots that act near people need careful testing and human oversight.
+
+### Which approach powers which application?
+
+Applications often combine the three classic approaches: Symbolic AI supplies rules and search, Connectionist AI recognises patterns in large data sets, and Behaviorist AI learns from rewards (Chapter 3, §3.3 to §3.6).
+
 ## Key Takeaways
 
 * AI is applied to specific problems rather than being one universal solution.
@@ -1528,6 +1690,9 @@ However, financial predictions are uncertain, and automated systems can produce 
 * Human oversight is particularly important when incorrect outputs may have serious consequences.
 * Rule-based automation and machine-learning systems are not the same thing.
 * AI should be evaluated based on its actual usefulness, reliability, and limitations.
+* Many applications combine Symbolic, Connectionist, and Behaviorist AI. Naming which part uses which approach helps explain how a system works and where it may fail.
+* Big Data makes many applications possible, but it also raises privacy and fairness questions.
+* A reward tells a learning agent what to maximise. If the reward is badly designed, the agent may reach the reward without doing what people wanted (reward hacking).
 
 **Final Principle:**
 
@@ -1537,42 +1702,54 @@ However, financial predictions are uncertain, and automated systems can produce 
 
 # Glossary
 
-| Term                                  | Definition                                                                                                        |
-| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **Accuracy**                          | The proportion of all predictions that are correct.                                                               |
-| **Adaptive Learning**                 | A learning approach that adjusts content based on student performance.                                            |
-| **Algorithmic Trading**               | Using computer programs to make or execute trading decisions.                                                     |
-| **Anomaly Detection**                 | Identifying information that differs from expected patterns.                                                      |
-| **Autonomous Vehicle**                | A vehicle capable of performing some or all driving tasks automatically, depending on its automation level.       |
-| **Backtesting**                       | Evaluating a model or rule using historical data.                                                                 |
-| **Classification**                    | Assigning information to predefined categories.                                                                   |
-| **Clinical Decision Support**         | Software that provides information or recommendations to assist healthcare professionals.                         |
-| **Clinician**                         | A healthcare professional involved in patient care.                                                               |
-| **Collaborative Filtering**           | A recommendation approach that uses patterns among users with similar preferences.                                |
-| **Confusion Matrix**                  | A table comparing predicted categories with actual categories.                                                    |
-| **Diagnosis**                         | The process of determining what condition a patient may have.                                                     |
-| **False Negative (FN)**               | A positive case that the system incorrectly identifies as negative.                                               |
-| **False Positive (FP)**               | A negative case that the system incorrectly identifies as positive.                                               |
-| **Filter Bubble**                     | A situation in which recommendations repeatedly show similar content and may limit exposure to other information. |
-| **High-Frequency Trading (HFT)**      | Algorithmic trading that executes transactions at very high speed and volume.                                     |
-| **Intelligent Tutoring System (ITS)** | Software that provides learning guidance, feedback, or hints.                                                     |
-| **Learning Analytics**                | The collection and analysis of information about learning activities.                                             |
-| **LiDAR**                             | A sensing method that uses laser light to measure distances.                                                      |
-| **Moving Average**                    | The average value over a selected number of recent periods.                                                       |
-| **Operational Design Domain (ODD)**   | The conditions under which an automated driving system is designed to operate.                                    |
-| **Overfitting**                       | When a model fits historical data too closely and performs poorly on new data.                                    |
-| **Perception**                        | Interpreting information from images, sound, or other sensors.                                                    |
-| **Precision**                         | The proportion of positive predictions that are correct.                                                          |
-| **Prediction**                        | Estimating an unknown or future value using available information.                                                |
-| **Prevalence**                        | The proportion of a population that has a particular condition.                                                   |
-| **Recommendation System**             | Software that suggests items based on user information or patterns.                                               |
-| **Screening**                         | Testing people to identify possible signs of a condition, often before symptoms appear.                           |
-| **Sensitivity**                       | The proportion of actual positive cases correctly identified by a system.                                         |
-| **Sensor**                            | A device that collects information about the environment.                                                         |
-| **Specificity**                       | The proportion of actual negative cases correctly identified by a system.                                         |
-| **Threshold**                         | A selected cut-off used to determine when a system produces a particular result or alert.                         |
-| **True Negative (TN)**                | A negative case correctly identified as negative.                                                                 |
-| **True Positive (TP)**                | A positive case correctly identified as positive.                                                                 |
+| Term                                  | Definition                                                                                                               |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Accuracy**                          | The proportion of all predictions that are correct.                                                                      |
+| **Adaptive Learning**                 | A learning approach that adjusts content based on student performance.                                                   |
+| **Agent**                             | The part of an AI system that chooses actions, such as a game player or a robot's controller.                            |
+| **Algorithmic Trading**               | Using computer programs to make or execute trading decisions.                                                            |
+| **Anomaly Detection**                 | Identifying information that differs from expected patterns.                                                             |
+| **Autonomous Vehicle**                | A vehicle capable of performing some or all driving tasks automatically, depending on its automation level.              |
+| **Backtesting**                       | Evaluating a model or rule using historical data.                                                                        |
+| **Behaviorist AI**                    | An approach in which a system learns what to do from experience, by acting and receiving rewards or penalties.           |
+| **Behaviour-Based Robotics**          | Building a robot from layers of simple behaviours, such as avoiding obstacles, instead of a detailed model of the world. |
+| **Big Data**                          | Data sets that are very large, fast-growing, or varied enough to need special tools to store and analyse them.           |
+| **Classification**                    | Assigning information to predefined categories.                                                                          |
+| **Clinical Decision Support**         | Software that provides information or recommendations to assist healthcare professionals.                                |
+| **Clinician**                         | A healthcare professional involved in patient care.                                                                      |
+| **Collaborative Filtering**           | A recommendation approach that uses patterns among users with similar preferences.                                       |
+| **Confusion Matrix**                  | A table comparing predicted categories with actual categories.                                                           |
+| **Connectionist AI**                  | An approach in which many simple connected units, such as a neural network, learn patterns from data.                    |
+| **Diagnosis**                         | The process of determining what condition a patient may have.                                                            |
+| **Environment**                       | Everything an agent interacts with, such as a game board or a room.                                                      |
+| **False Negative (FN)**               | A positive case that the system incorrectly identifies as negative.                                                      |
+| **False Positive (FP)**               | A negative case that the system incorrectly identifies as positive.                                                      |
+| **Filter Bubble**                     | A situation in which recommendations repeatedly show similar content and may limit exposure to other information.        |
+| **High-Frequency Trading (HFT)**      | Algorithmic trading that executes transactions at very high speed and volume.                                            |
+| **Intelligent Tutoring System (ITS)** | Software that provides learning guidance, feedback, or hints.                                                            |
+| **Learning Analytics**                | The collection and analysis of information about learning activities.                                                    |
+| **LiDAR**                             | A sensing method that uses laser light to measure distances.                                                             |
+| **Moving Average**                    | The average value over a selected number of recent periods.                                                              |
+| **Operational Design Domain (ODD)**   | The conditions under which an automated driving system is designed to operate.                                           |
+| **Overfitting**                       | When a model fits historical data too closely and performs poorly on new data.                                           |
+| **Perception**                        | Interpreting information from images, sound, or other sensors.                                                           |
+| **Policy**                            | An agent's way of choosing an action in each situation.                                                                  |
+| **Precision**                         | The proportion of positive predictions that are correct.                                                                 |
+| **Prediction**                        | Estimating an unknown or future value using available information.                                                       |
+| **Prevalence**                        | The proportion of a population that has a particular condition.                                                          |
+| **Recommendation System**             | Software that suggests items based on user information or patterns.                                                      |
+| **Reinforcement Learning**            | Machine learning in which an agent learns by trial and error from rewards and penalties.                                 |
+| **Reward**                            | A number that tells a learning agent how good or bad the result of an action was.                                        |
+| **Reward Hacking**                    | When an agent finds a way to earn reward without achieving what the designers wanted.                                    |
+| **Screening**                         | Testing people to identify possible signs of a condition, often before symptoms appear.                                  |
+| **Sensitivity**                       | The proportion of actual positive cases correctly identified by a system.                                                |
+| **Sensor**                            | A device that collects information about the environment.                                                                |
+| **Simulation**                        | A computer model of the world in which an agent can practise safely.                                                     |
+| **Specificity**                       | The proportion of actual negative cases correctly identified by a system.                                                |
+| **Symbolic AI**                       | An approach in which knowledge is written as symbols, rules, and logic that a program can reason with.                   |
+| **Threshold**                         | A selected cut-off used to determine when a system produces a particular result or alert.                                |
+| **True Negative (TN)**                | A negative case correctly identified as negative.                                                                        |
+| **True Positive (TP)**                | A positive case correctly identified as positive.                                                                        |
 
 ---
 
@@ -1696,6 +1873,30 @@ d. Accuracy
 
 **Q25.** A bank's AI system flags a transaction because it differs from the customer's normal activity. Explain why the bank should investigate the alert instead of automatically assuming fraud.
 
+## Part D: Approaches, Games and Robotics, and Big Data
+
+**Q26.** Which classic approach does a rule-based expert system such as MYCIN mainly use?
+
+A. Symbolic AI
+B. Connectionist AI
+C. Behaviorist AI
+D. Generative AI
+
+**Q27.** A robot vacuum earns a reward for each newly cleaned tile and a penalty for each bump. Which approach does this describe?
+
+A. Symbolic AI, because the room has fixed walls
+B. Connectionist AI, because it has sensors
+C. Behaviorist AI, because it learns from rewards and penalties
+D. None of them, because robots do not use AI
+
+**Q28.** Explain in 3 to 4 sentences why an AI chat assistant is said to combine all three classic approaches.
+
+**Q29.** A cleaning robot's reward is +1 for each dirty tile cleaned, −2 for each bump, and −0.1 for each move. In one run it cleans 6 dirty tiles, bumps twice, and makes 12 moves. Calculate its total reward.
+
+**Q30.** A robot is rewarded +1 every time a tile is cleaned, even if the tile was already clean. Describe how it could exploit this reward, and suggest a better reward.
+
+**Q31.** Name two kinds of data a recommendation system may use, and one privacy risk of collecting them.
+
 ## Suggested Answers
 
 **Q1. B — Classification.**
@@ -1756,11 +1957,27 @@ d. Accuracy = (80 + 360) / 500 = **88%**
 
 **Q25.** The transaction may be legitimate even though it is unusual. Further verification helps distinguish actual fraud from normal but uncommon activity.
 
+**Q26.** **A.** MYCIN applied hand-written IF-THEN rules, so it is a Symbolic AI system. Connectionist AI learns patterns from data, and Behaviorist AI learns from rewards.
+
+**Q27.** **C.** The robot improves through rewards and penalties, which is the Behaviorist idea (reinforcement learning). Option A is wrong because the *learning method* is not a set of written rules, and option B is wrong because having sensors does not make a system Connectionist.
+
+**Q28.** *(Model answer)* The core of a chat assistant is a neural language model trained on very large amounts of text, which is Connectionist AI. Tools and safety rules written by people, such as a calculator or content filters, are Symbolic. Developers also tune the model with human feedback so that its answers are preferred, which uses reinforcement learning from the Behaviorist family. The three approaches therefore each supply a different part of one system (Chapter 3, §3.3).
+
+**Q29.** (6 × 1) + (2 × −2) + (12 × −0.1) = 6 − 4 − 1.2 = **+0.8**.
+
+**Q30.** The robot could go back and forth over one clean tile and collect +1 each time, scoring highly without cleaning the room. This is reward hacking. A better reward is +1 only when a tile that was dirty becomes clean, together with a small penalty for each move.
+
+**Q31.** *(Model answer)* Viewing history and search or rating history are two examples. A privacy risk is that these records can reveal personal interests and habits, and may be stored or shared without the person fully understanding it. Any two reasonable kinds of data and any one reasonable risk are accepted.
+
 ---
 
 # References
 
 Bloom, B. S. (1984). The 2 sigma problem: The search for methods of group instruction as effective as one-to-one tutoring. *Educational Researcher, 13*(6), 4–16. https://doi.org/10.3102/0013189X013006004
+
+Brooks, R. A. (1991). Intelligence without representation. *Artificial Intelligence, 47*(1–3), 139–159. https://doi.org/10.1016/0004-3702(91)90053-M *(Not verified: link not opened on 5 November 2026.)*
+
+Campbell, M., Hoane, A. J., & Hsu, F.-h. (2002). Deep Blue. *Artificial Intelligence, 134*(1–2), 57–83. https://doi.org/10.1016/S0004-3702(01)00129-1
 
 Esteva, A., et al. (2017). Dermatologist-level classification of skin cancer with deep neural networks. *Nature, 542*, 115–118. https://doi.org/10.1038/nature21056
 
@@ -1774,9 +1991,17 @@ Kirilenko, A., Kyle, A. S., Samadi, M., & Tuzun, T. (2017). The Flash Crash: Hig
 
 McKinney, S. M., et al. (2020). International evaluation of an AI system for breast cancer screening. *Nature, 577*, 89–94. https://doi.org/10.1038/s41586-019-1799-6
 
+Mnih, V., et al. (2015). Human-level control through deep reinforcement learning. *Nature, 518*(7540), 529–533. Summary used to check the figures: https://research.google/blog/from-pixels-to-actions-human-level-control-through-deep-reinforcement-learning/ (Opened 5 November 2026)
+
 Ngai, E. W. T., Hu, Y., Wong, Y. H., Chen, Y., & Sun, X. (2011). The application of data mining techniques in financial fraud detection: A classification framework and an academic review of literature. *Decision Support Systems, 50*(3), 559–569. https://doi.org/10.1016/j.dss.2010.08.006
 
+OpenAI. (2016). *Faulty reward functions in the wild*. https://openai.com/index/faulty-reward-functions/ (Opened 5 November 2026)
+
+Ouyang, L., et al. (2022). Training language models to follow instructions with human feedback. *Advances in Neural Information Processing Systems, 35*. https://arxiv.org/abs/2203.02155
+
 SAE International. (2021). *J3016: Taxonomy and definitions for terms related to driving automation systems for on-road motor vehicles*. https://www.sae.org/standards/content/j3016_202104/
+
+Silver, D., et al. (2016). Mastering the game of Go with deep neural networks and tree search. *Nature, 529*, 484–489. https://research.google/pubs/mastering-the-game-of-go-with-deep-neural-networks-and-tree-search/ *(Not verified: link not opened on 5 November 2026.)*
 
 Topol, E. J. (2019). High-performance medicine: The convergence of human and artificial intelligence. *Nature Medicine, 25*, 44–56. https://doi.org/10.1038/s41591-018-0300-7
 
@@ -1785,6 +2010,8 @@ U.S. Commodity Futures Trading Commission and U.S. Securities and Exchange Commi
 VanLehn, K. (2011). The relative effectiveness of human tutoring, intelligent tutoring systems, and other tutoring systems. *Educational Psychologist, 46*(4), 197–221. https://doi.org/10.1080/00461520.2011.611369
 
 World Health Organization. (2021). *Ethics and governance of artificial intelligence for health: WHO guidance*. https://www.who.int/publications/i/item/9789240029200
+
+Yu, V. L., et al. (1979). An evaluation of MYCIN's advice (antimicrobial selection by a computer: a blinded evaluation by infectious diseases experts). *JAMA, 242*, 1279–1282. Reprinted as Chapter 31 of Buchanan, B. G., & Shortliffe, E. H. (Eds.) (1984), *Rule-Based Expert Systems*. https://people.dbmi.columbia.edu/shortliffe/Buchanan-Shortliffe-1984/Chapter-31.pdf (Opened 5 November 2026)
 
 ---
 
