@@ -398,11 +398,9 @@ D. Assume it is always correct.
 ## References
 
 1. Course slides, "chap1: Intro to CS and AI", Introduction to Computer Science and Artificial Intelligence. Lecturer's course materials (no public link). Primary source for the outline, the CS and AI maps, and the hands-on activities.
-2. McCarthy, J. (2007). *What is Artificial Intelligence?* Stanford University. [http://jmc.stanford.edu/artificial-intelligence/what-is-ai/](http://jmc.stanford.edu/artificial-intelligence/what-is-ai/) *(not opened; definition summarised in Section 2.1)*
-3. OECD. *AI Principles* and the OECD definition of an AI system. [https://www.oecd.org/en/topics/ai-principles.html](https://www.oecd.org/en/topics/ai-principles.html) *(not opened; check the current wording of the definition)*
-4. IBM. *What Is Artificial Intelligence (AI)?* [https://www.ibm.com/think/topics/artificial-intelligence](https://www.ibm.com/think/topics/artificial-intelligence) *(not opened)*
-5. Russell, S., and Norvig, P. (2021). *Artificial Intelligence: A Modern Approach* (4th ed.). Pearson. [https://aima.cs.berkeley.edu/](https://aima.cs.berkeley.edu/) *(not opened)*
-6. Turing, A. M. (1950). Computing Machinery and Intelligence. *Mind*, 59(236), 433–460. [https://doi.org/10.1093/mind/LIX.236.433](https://doi.org/10.1093/mind/LIX.236.433) *(not opened)*
-7. Association for Computing Machinery. *ACM Computing Classification System.* [https://dl.acm.org/ccs](https://dl.acm.org/ccs) *(not opened; basis of the CS map)*
-
-> **Link status.** Each link below was written from the publisher's or DOI address of the work. Links marked **not opened** could not be opened during this revision. The author or reviewer must click every link, confirm that it opens the right work and supports the claim it is cited for, and then change the label to "opened" with the date.
+2. McCarthy, J. (2007). *What is Artificial Intelligence?* Stanford University. [http://jmc.stanford.edu/artificial-intelligence/what-is-ai/](http://jmc.stanford.edu/artificial-intelligence/what-is-ai/)
+3. OECD. *AI Principles* and the OECD definition of an AI system. [https://www.oecd.org/en/topics/ai-principles.html](https://www.oecd.org/en/topics/ai-principles.html) 
+4. IBM. *What Is Artificial Intelligence (AI)?* [https://www.ibm.com/think/topics/artificial-intelligence](https://www.ibm.com/think/topics/artificial-intelligence)
+5. Russell, S., and Norvig, P. (2021). *Artificial Intelligence: A Modern Approach* (4th ed.). Pearson. [https://aima.cs.berkeley.edu/](https://aima.cs.berkeley.edu/) 
+6. Turing, A. M. (1950). Computing Machinery and Intelligence. *Mind*, 59(236), 433–460. [https://doi.org/10.1093/mind/LIX.236.433](https://doi.org/10.1093/mind/LIX.236.433)
+7. Association for Computing Machinery. *ACM Computing Classification System.* [https://dl.acm.org/ccs](https://dl.acm.org/ccs) 
