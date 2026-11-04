@@ -2,9 +2,9 @@
 
 > **Module:** AI Overview  
 > **Chapter:** 5 — AI Ethics and Limitations  
-> **Version:** 2.0  
+> **Version:** 2.1  
 > **Audience:** Complete beginners with basic computer and internet literacy; no prior AI or programming experience required  
-> **Estimated Study Time:** Approximately 3–4 hours, including activities
+> **Estimated Study Time:** Approximately 3 hours and 50 minutes, including activities
 
 ---
 
@@ -49,6 +49,24 @@ By the end of this chapter, learners will be able to:
 | 4. Responsible AI | What should people and organisations do before and during AI use? | Apply a checklist based on fairness, transparency, privacy, accountability, safety, and oversight |
 | 5. Discussion scenario | Who is responsible when AI contributes to a harmful or incorrect outcome? | Analyse a real legal case and compare it with a hiring-bias scenario |
 
+## Suggested Study-Time Breakdown
+
+The following schedule helps learners plan their study. Times are approximate and include reading, worked examples, and activities.
+
+| Section | Suggested time |
+|---|---:|
+| Prerequisites and framing | 10 minutes |
+| Topic 1: Bias, including calculation and activities | 55 minutes |
+| Topic 2: Privacy, including the worked example and activity | 30 minutes |
+| Topic 3: Hallucinations, including verification and activity | 30 minutes |
+| Topic 4: Responsible AI, including checklist and activity | 35 minutes |
+| Topic 5: Discussion scenarios and final reflection | 30 minutes |
+| Chapter summary and glossary | 10 minutes |
+| Practice questions and self-checking | 30 minutes |
+| **Total** | **230 minutes (3 hours 50 minutes)** |
+
+Learners may divide the chapter into several study sessions. The suggested times are a guide; some activities may take longer when completed as group discussions.
+
 ---
 
 # Prerequisites and Framing
@@ -63,7 +81,7 @@ Chapter 5 examines these limitations and the responsibilities that come with usi
 
 This chapter assumes that learners have already encountered the basic vocabulary from earlier chapters, including **artificial intelligence**, **machine learning**, **model**, **training**, and **data**. These terms are used with their established meanings rather than redefined here. Ethics-specific terms are explained when they first appear.
 
-> **Core idea:** AI systems do not have human intentions or moral responsibility. Their outcomes are influenced by the data, objectives, design choices, and decisions of the people and organisations that build, deploy, and use them.
+> **Core idea:** AI systems do not have human intentions or moral responsibility in the way people do. Their outcomes are influenced by the data, objectives, design choices, and decisions of the people and organisations that build, deploy, and use them. Responsibility depends on the roles, decisions, control, and applicable duties of those involved.
 
 ## A Simple Way to Examine an AI Problem
 
@@ -162,22 +180,20 @@ We will use a screening measure called the **four-fifths rule**.
 
 - **Selection rate:** the share of a group that receives the favourable outcome.
 
-  \[
-  \text{Selection rate}=\frac{\text{Number selected}}{\text{Number of applicants}}
-  \]
+  **Selection rate** = (Number selected) ÷ (Number of applicants)
 
 - **Impact ratio:** a group's selection rate divided by the highest selection rate.
 
-  \[
-  \text{Impact ratio}=\frac{\text{Group's selection rate}}{\text{Highest group selection rate}}
-  \]
+  **Impact ratio** = (Group's selection rate) ÷ (Highest group selection rate)
 
-- **Four-fifths (80%) rule:** a screening indicator from US employment guidance. If a group's selection rate is less than 80% of the highest group's rate, the result is a warning sign of possible adverse impact. It is not proof of discrimination (US EEOC et al., 1978, 29 CFR §1607.4(D)).
+- **Four-fifths (80%) rule:** a screening indicator associated with US employment-selection guidance. If a group's selection rate is less than 80% of the highest group's rate, the result is a warning sign of possible adverse impact. It is not proof of discrimination.
+
+**Important scope:** The four-fifths rule comes from US employment-selection guidance, specifically the Uniform Guidelines on Employee Selection Procedures. It is a practical screening measure for this educational example, not a universal legal definition of fairness. Its legal and practical interpretation depends on the context and applicable rules. Other forms of analysis may also be necessary (US EEOC et al., 1978, 29 CFR §1607.4(D)).
 
 ### Step 1: Calculate each group's selection rate
 
-- Group A: \(60 \div 100 = 0.60\), or **60%**.
-- Group B: \(30 \div 100 = 0.30\), or **30%**.
+- Group A: 60 ÷ 100 = 0.60, or **60%**.
+- Group B: 30 ÷ 100 = 0.30, or **30%**.
 
 ### Step 2: Identify the highest selection rate
 
@@ -185,8 +201,8 @@ Group A has the highest rate: **0.60**.
 
 ### Step 3: Calculate the impact ratio
 
-- Group A: \(0.60 \div 0.60 = 1.00\).
-- Group B: \(0.30 \div 0.60 = 0.50\).
+- Group A: 0.60 ÷ 0.60 = 1.00.
+- Group B: 0.30 ÷ 0.60 = 0.50.
 
 ### Step 4: Compare the impact ratio with 0.80
 
@@ -241,7 +257,9 @@ Group B: selection rate = 0.30, impact ratio = 0.50 -> FLAG for review
 
 The four-fifths rule compares selection rates. It does not explain why a difference exists, and it does not measure every type of unfairness. A system may pass this check while making more mistakes for one group. There are also competing definitions of fairness that cannot always be satisfied at the same time (Chouldechova, 2017).
 
-Therefore, a fairness assessment should use more than one measure and should include context and human judgment.
+The rule is therefore best understood as an initial screening indicator in the relevant US employment context. It should not be used alone to make a final legal or ethical judgment.
+
+A fairness assessment should use more than one measure and should include context and human judgment.
 
 ## 1.5 Learner Activity: Test and Investigate a Hiring Tool
 
@@ -279,9 +297,9 @@ In 3–4 sentences, explain why "we removed the sensitive column from the data" 
 
 ### Part A
 
-1. Group C: \(20 \div 50 = 0.40\), or **40%**. Group D: \(36 \div 80 = 0.45\), or **45%**.
+1. Group C: 20 ÷ 50 = 0.40, or **40%**. Group D: 36 ÷ 80 = 0.45, or **45%**.
 2. Group D has the highest selection rate: **0.45**.
-3. Group C's impact ratio: \(0.40 \div 0.45 \approx 0.89\).
+3. Group C's impact ratio: 0.40 ÷ 0.45 ≈ 0.89.
 4. **No.** The impact ratio of approximately 0.89 is above 0.80, so this screening check does not flag the result. Passing does not prove that the system is fair.
 
 ### Part B
@@ -316,10 +334,16 @@ Other inputs may carry similar information even after the sensitive column is re
 
 **Privacy** is a person's ability to have appropriate control over information about themselves.
 
-**Personal data**, also called **personally identifiable information (PII)**, is information that can identify a person directly or indirectly.
+**Personal data** is information relating to an identified or identifiable person. This is the terminology used in privacy frameworks such as the European Union's General Data Protection Regulation (GDPR).
 
-- Direct identifiers include a person's name, identification number, or identifiable face image.
-- Indirect identifiers include combinations of details such as age, postcode, workplace, and job title. One detail alone may not identify someone, but several details together may do so.
+**Personally identifiable information (PII)** is a term commonly used in other privacy and information-security contexts. It generally refers to information that can identify a person, directly or indirectly.
+
+Personal data and PII are closely related concepts, but they are not universally identical. Their definitions and legal usage can differ between jurisdictions and frameworks. In this chapter, both terms refer broadly to information that can identify or relate to an individual.
+
+Examples include:
+
+- **Direct identifiers:** a person's name, identification number, or identifiable face image.
+- **Indirect identifiers:** combinations of details such as age, postcode, workplace, and job title. One detail alone may not identify someone, but several details together may do so.
 
 AI systems can involve privacy risks because they may process large datasets, learn patterns from information, generate outputs based on what they have learned, or receive information directly from users.
 
@@ -345,9 +369,26 @@ AI systems can involve privacy risks because they may process large datasets, le
 ### Important Terms
 
 - **Data minimisation:** collecting and keeping only the information necessary for a clearly stated purpose.
-- **Anonymisation:** removing identifying details from data. Perfect anonymisation can be difficult because other datasets may allow people to be identified again.
+- **Anonymisation:** processing data so that individuals are no longer identifiable. Simply removing names or identification numbers does not necessarily achieve effective anonymisation.
 - **Re-identification:** identifying a person in data that was intended to be anonymous by combining it with other information.
 - **Differential privacy:** a mathematical technique that adds carefully measured noise to data analysis so that useful group patterns can be studied while limiting what the results reveal about any one individual.
+
+### Worked Example: Removing Identifiers Is Not Always Anonymisation
+
+Imagine a university survey spreadsheet contains the following information:
+
+| Name | Student ID | Age | Programme | Survey response |
+|---|---|---:|---|---|
+| Alex Tan | 20260031 | 19 | Computer Science | Prefers evening classes |
+| Jamie Lim | 20260052 | 42 | Computer Science | Prefers morning classes |
+
+Suppose someone removes the names and student IDs before sharing the spreadsheet.
+
+The remaining information may still identify a person. For example, if only one 42-year-old student is enrolled in that programme, someone familiar with the class may recognise Jamie from the combination of age and programme.
+
+This illustrates the difference between removing direct identifiers and achieving effective anonymisation.
+
+**Key point:** Removing names and ID numbers reduces identification risk, but it does not automatically make data anonymous. Consider combinations of details, the size of the group, and other information that may be available.
 
 ### Legal Context
 
@@ -379,7 +420,7 @@ The patient's name and date of birth are direct identifiers. Diagnosis and sympt
 
 ### Step 4: Keep responsibility clear
 
-The employee and clinic remain responsible for following professional duties and privacy rules. Using AI does not transfer those responsibilities to the software.
+The employee and clinic have responsibilities according to their professional roles, organisational policies, and applicable privacy rules. The clinic is responsible for establishing appropriate procedures and approved tools, while the employee must follow those procedures. Using AI does not transfer these responsibilities to the software.
 
 ## 2.4 Learner Activity: What Should Be Shared?
 
@@ -544,13 +585,22 @@ Organisations have published frameworks and principles to guide responsible AI. 
 | **Transparency** | Be open about when and how AI is being used | Do affected people know that AI is involved? |
 | **Explainability** | Provide understandable reasons for outputs or decisions where appropriate | Can the decision be explained in a meaningful way? |
 | **Privacy and security** | Protect personal data and the system against misuse or unauthorised access | Are we collecting only what is needed and protecting it? |
-| **Accountability** | A person or organisation is answerable for outcomes | Who is responsible if the system causes harm? |
+| **Accountability** | A person or organisation is answerable for outcomes within their role and responsibilities | Who is responsible for each part of the process if the system causes harm? |
 | **Reliability and safety** | The system works as intended and is tested for failures and unusual conditions | What happens when the system makes a mistake? |
 | **Human oversight** | People can review, challenge, and override important outputs | Can a qualified person intervene? |
 
 ### Important Term: Accountability
 
-**Accountability** means that humans and organisations remain responsible for AI-related outcomes. Saying "the algorithm decided" does not remove the responsibility of the people who selected, deployed, or relied on the system.
+**Accountability** means that people and organisations can be answerable for AI-related outcomes according to their roles, decisions, control, and applicable duties.
+
+Responsibility is not necessarily identical for everyone involved:
+
+- **Developers** may be responsible for design choices, testing, documentation, and communicating known limitations.
+- **Deployers and organisations** may be responsible for choosing appropriate systems, checking whether they are suitable for the intended context, establishing procedures, and monitoring their use.
+- **Users and professionals** may be responsible for following relevant policies, checking outputs when required, and exercising appropriate judgment.
+- **Decision-makers** may be responsible for decisions they make using AI recommendations, particularly when they have authority to review or override them.
+
+The exact responsibilities depend on the situation, applicable law, professional duties, and each party's role. Saying "the algorithm decided" does not automatically remove the responsibility of the people or organisations that designed, selected, deployed, or relied on the system.
 
 ## 4.3 Worked Example: Reviewing an AI Hiring System
 
@@ -564,13 +614,15 @@ Apply the responsible AI principles:
 | Transparency | Do applicants know AI is used in screening? | Explain the role of AI in the process |
 | Explainability | Can the company explain why an applicant was ranked poorly? | Keep understandable records of relevant criteria |
 | Privacy and security | Does the system need every detail in each résumé? | Limit data collection and restrict access |
-| Accountability | Who is responsible for the final hiring decision? | Assign a responsible human decision-maker |
+| Accountability | Who is responsible for selecting the system and making the final hiring decision? | Assign clear responsibilities to the organisation and relevant decision-makers |
 | Reliability and safety | Does the system handle unusual résumé formats and career paths? | Test different cases and monitor failures |
 | Human oversight | Can a person review an unexpected rejection? | Provide meaningful human review and a way to raise concerns |
 
 ### What Does This Example Show?
 
 A system should not be judged only by whether it processes résumés quickly. The company should also consider whether it treats applicants fairly, protects their information, explains its role, and allows appropriate human review.
+
+Responsibility should be assigned clearly. For example, developers may be responsible for communicating technical limitations, while the hiring organisation is responsible for deciding whether and how to use the system in its recruitment process. A hiring manager remains responsible for decisions they make within their authority.
 
 ## 4.4 A Simple Responsible AI Checklist
 
@@ -586,7 +638,8 @@ Before using or deploying an AI system, ask:
 [ ] Has the system been tested in the conditions where it will be used?
 [ ] Is a qualified human reviewing high-impact outputs?
 [ ] Is it clear to people when AI is involved?
-[ ] Who is accountable, and can an affected person challenge a decision?
+[ ] Who is accountable for each important decision or responsibility?
+[ ] Can an affected person challenge a decision?
 [ ] Will the system be monitored after deployment?
 ```
 
@@ -615,6 +668,7 @@ Discuss and answer:
 3. What should staff check before contacting a student based on the system's output?
 4. Why should the system not automatically decide that a student will fail?
 5. Name at least three responsible AI principles that apply.
+6. Which responsibilities belong to the university, and which responsibilities belong to the staff using the system?
 
 ## 4.7 Answer Key and Expected Outcomes
 
@@ -623,8 +677,9 @@ Discuss and answer:
 3. Staff should review the student's actual circumstances, check whether the data is complete and accurate, and treat the system's output as a signal for further discussion rather than a final judgment.
 4. The model may be wrong or may not understand circumstances such as illness, family responsibilities, or technical access problems. A human should consider context and allow the student to explain.
 5. Fairness, privacy and security, transparency, reliability and safety, accountability, and human oversight are all relevant.
+6. The university is responsible for selecting an appropriate system, establishing data-protection and review procedures, and monitoring its use. Staff are responsible for following those procedures, reviewing outputs appropriately, and using professional judgment within their roles.
 
-**Topic takeaway:** Responsible AI is not one feature or a single checklist. It is an ongoing responsibility shared by the people and organisations that design, deploy, and use AI.
+**Topic takeaway:** Responsible AI is not one feature or a single checklist. It is an ongoing responsibility shared by the people and organisations that design, deploy, and use AI. The responsibilities differ according to each party's role and duties.
 
 ---
 
@@ -667,14 +722,18 @@ Discuss:
 
 - **Question 1:** Fabricated sources — the AI-generated citations referred to court cases that did not exist.
 - **Question 2:** Steps 2 and 3 of the verification routine. Searching an official legal database and checking the case details would have revealed that the cited cases did not exist.
-- **Question 3:** The lawyers who signed and submitted the brief remained responsible for checking the citations. Tool makers may have responsibilities concerning the limits and behaviour of their products, but professionals cannot transfer their own duties to a chatbot.
+- **Question 3:** The lawyers who signed and submitted the brief remained responsible for checking the citations. Tool makers may have responsibilities concerning the limits and behaviour of their products, but professionals cannot transfer their own duties to a chatbot. Responsibility should be considered according to each party's role and applicable duties.
 - **Question 4:** Accountability, human oversight, reliability and safety, and transparency are relevant.
 - **Question 5:** Acceptable rules include: independently verify every legal citation; do not submit AI-generated authorities without checking original records; do not enter confidential client information into unapproved tools; disclose AI use internally where required; and assign a named professional to review the final document.
 - **Question 6:** Hallucination concerns whether information is true or supported. Bias concerns whether outcomes are systematically less accurate or less favourable for some groups. A hiring tool could use factually correct applicant data but still rank one group unfairly.
 
 ### Case 2: Biased Résumé Screener
 
-Strong answers should recognise that a career gap may correlate with caregiving responsibilities and may therefore act as a proxy in some circumstances. The company should ask whether the gap is genuinely relevant to the job, compare outcomes across groups, examine error patterns, and provide human review. The scenario does not provide enough evidence to conclude that discrimination has been legally established; it provides a reason to investigate.
+Strong answers should recognise that a career gap may correlate with caregiving responsibilities and may therefore act as a proxy in some circumstances. The company should ask whether the gap is genuinely relevant to the job, compare outcomes across groups, examine error patterns, and provide human review.
+
+The scenario does not provide enough evidence to conclude that discrimination has been legally established; it provides a reason to investigate.
+
+The organisation should also establish clear responsibilities. For example, the team responsible for the system should investigate its technical performance, while the hiring organisation should decide whether the system remains suitable for recruitment and ensure that affected applicants have an appropriate review process.
 
 ## 5.5 Final Reflection
 
@@ -689,7 +748,19 @@ Your response should:
 - Explain why human review matters.
 - Suggest one way to prevent a similar problem in the future.
 
-**Expected outcome:** There is no single required wording. A strong response explains that responsibility depends on the roles and decisions of the people and organisations involved. It should not treat the AI system as the only responsible party. It should also recommend investigation, correction, protection for affected people, and monitoring.
+### Assessment Checklist
+
+Use the following checklist to review your response:
+
+| Criterion | What a successful response should demonstrate |
+|---|---|
+| Responsibility | Identifies relevant people or organisations and explains their roles rather than treating all parties as equally responsible |
+| Responsible AI principles | Correctly applies at least two principles to the situation |
+| Human oversight | Explains how human review can identify errors, consider context, or allow intervention |
+| Prevention | Suggests at least one practical improvement, such as better testing, clearer procedures, monitoring, or training |
+| Clarity | Presents a clear and relevant explanation within the suggested word range |
+
+**Expected outcome:** There is no single required wording. A strong response explains that responsibility depends on the roles, decisions, and duties of the people and organisations involved. It should not treat the AI system as the only responsible party. It should also recommend investigation, correction, protection for affected people, and monitoring.
 
 ---
 
@@ -703,14 +774,23 @@ This chapter examined three important limitations and risks of AI, followed by p
 | Privacy | AI systems may process, reveal, or receive personal information | Minimise data, use approved tools, protect information, and follow applicable rules |
 | Hallucinations | AI can produce fluent but false or unsupported information | Verify claims and citations against reliable original sources |
 | Responsible AI | AI should be designed and used with fairness, safety, transparency, and accountability | Apply a checklist, provide human oversight, and monitor systems |
-| Discussion scenario | People remain responsible for decisions made with AI assistance | Investigate errors, correct harm, and establish clear review procedures |
+| Discussion scenario | People and organisations have responsibilities when making decisions with AI assistance | Investigate errors, correct harm, and establish clear review procedures |
+
+## Bias and Hallucination: A Quick Comparison
+
+| Concept | Main concern | Example |
+|---|---|---|
+| **Bias** | Unequal or systematically less favourable outcomes for some people or groups | A hiring system rejects applicants from one group more frequently |
+| **Hallucination** | False, fabricated, or unsupported information | A chatbot invents a research paper and presents it as real |
+
+These are different problems. A system can have bias without producing fabricated information, and it can hallucinate without necessarily treating groups unequally. It can also have both problems.
 
 ## Five Questions to Remember
 
 1. **Bias:** Does the system work equally well for the people affected by it?
 2. **Privacy:** Is the information necessary, appropriate, and protected?
 3. **Hallucination:** Can the claim be verified using a reliable source?
-4. **Responsible AI:** Who is accountable, and can a human intervene?
+4. **Responsible AI:** Who is accountable for each decision, and can a human intervene?
 5. **Overall:** What could go wrong, who could be harmed, and what should happen next?
 
 ## Bridge to Further Learning
@@ -723,18 +803,19 @@ Chapter 4 showed how AI can be applied to real-world tasks. Chapter 5 showed why
 
 | Term | Definition |
 |---|---|
-| **Accountability** | The responsibility of people and organisations for AI-related outcomes. |
-| **Anonymisation** | Removing identifying details from data, while recognising that re-identification may still be possible. |
+| **Accountability** | The responsibility of people and organisations for AI-related outcomes according to their roles, decisions, and applicable duties. |
+| **Anonymisation** | Processing data so that individuals are no longer identifiable, while recognising that effective anonymisation can be difficult to achieve. |
 | **Bias (AI)** | A systematic pattern of less accurate or less favourable results for some people or groups. |
 | **Data minimisation** | Collecting and keeping only the information needed for a stated purpose. |
 | **Differential privacy** | A technique that adds carefully measured noise to limit what an analysis reveals about an individual. |
 | **Feedback loop** | A process in which a system's outputs influence future data and may amplify an existing pattern. |
-| **Four-fifths rule** | A screening indicator: a group's selection rate below 80% of the highest group's rate is a warning sign, not proof of discrimination. |
+| **Four-fifths rule** | A US employment-selection screening indicator: a group's selection rate below 80% of the highest group's rate is a warning sign, not proof of discrimination or a universal definition of fairness. |
 | **Grounding** | Connecting an AI answer to trusted information that can be checked. |
 | **Hallucination** | A fluent but false, fabricated, or unsupported AI output. |
 | **Impact ratio** | A group's selection rate divided by the highest group's selection rate. |
 | **Large language model (LLM)** | An AI model that generates text by predicting likely next words or pieces of text. |
-| **Personal data / PII** | Information that can identify a person directly or indirectly. |
+| **Personal data** | Information relating to an identified or identifiable person; this is terminology used in frameworks such as the GDPR. |
+| **Personally identifiable information (PII)** | Information that can identify a person directly or indirectly; terminology commonly used in other privacy and information-security contexts. |
 | **Protected characteristic** | A trait, such as race, sex, age, or disability, that should not be a basis for unfair treatment. Legal definitions vary. |
 | **Proxy variable** | An input that is not itself a protected characteristic but is related to one. |
 | **Re-identification** | Identifying a person in data intended to be anonymous by combining it with other information. |
@@ -770,124 +851,144 @@ Write **True** or **False** for each statement. Correct the false statements.
 Choose **one best answer** for each question.
 
 1. What does AI bias mean in this chapter?
+
    - A. Any random mistake made by a computer
    - B. A systematic pattern of less accurate or less favourable results for some groups
    - C. A computer refusing to answer a question
    - D. A system that uses a large dataset
 
 2. Which is the clearest example of sampling bias?
+
    - A. A dataset contains mostly images of lighter-skinned people
    - B. A model uses a computer with a slow processor
    - C. A user enters a misspelled word
    - D. A system displays its result slowly
 
 3. What is a proxy variable?
+
    - A. A variable that is always irrelevant
    - B. A variable that directly identifies every person
    - C. An input that may indirectly represent a protected characteristic
    - D. A variable used only to calculate accuracy
 
 4. A group has a selection rate of 30%, while the highest group has a selection rate of 60%. What is the impact ratio?
+
    - A. 0.20
    - B. 0.30
    - C. 0.50
    - D. 0.90
 
 5. Under the four-fifths screening rule, which impact ratio should be flagged for review?
+
    - A. 1.00
    - B. 0.95
    - C. 0.85
    - D. 0.60
 
 6. Which statement about the four-fifths rule is correct?
+
    - A. It proves discrimination whenever a group falls below 0.80.
    - B. It is a screening indicator and does not explain the cause of a gap.
    - C. It measures every type of model error.
    - D. It guarantees fairness when passed.
 
 7. Which item is a direct identifier?
+
    - A. A person's full name
    - B. A general course opinion
    - C. A broad subject category
    - D. An anonymous average score
 
 8. What is data minimisation?
+
    - A. Collecting as much data as possible
    - B. Keeping all data forever
    - C. Collecting only the data needed for a stated purpose
    - D. Removing every number from a dataset
 
 9. What is re-identification?
+
    - A. Deleting duplicate records
    - B. Identifying a person from data intended to be anonymous
    - C. Training a model for a second time
    - D. Translating a dataset
 
 10. Which is the safest first response when a colleague wants to paste a patient's identifiable medical information into an unapproved public chatbot?
-    - A. Paste it because the task is urgent
-    - B. Change only the patient's first name
-    - C. Check policy and use an approved tool or a permitted de-identified workflow
-    - D. Ask the chatbot to promise confidentiality
+
+   - A. Paste it because the task is urgent
+   - B. Change only the patient's first name
+   - C. Check policy and use an approved tool or a permitted de-identified workflow
+   - D. Ask the chatbot to promise confidentiality
 
 11. What is an AI hallucination?
-    - A. A computer screen displaying an image
-    - B. A fluent but false or unsupported output
-    - C. A system refusing to process data
-    - D. A model learning from examples
+
+   - A. A computer screen displaying an image
+   - B. A fluent but false or unsupported output
+   - C. A system refusing to process data
+   - D. A model learning from examples
 
 12. Which is an example of a fabricated citation?
-    - A. A real paper with a correct title and author
-    - B. A source that can be found in a scholarly database
-    - C. An invented journal article presented as real
-    - D. A direct quotation with a verified page number
+
+   - A. A real paper with a correct title and author
+   - B. A source that can be found in a scholarly database
+   - C. An invented journal article presented as real
+   - D. A direct quotation with a verified page number
 
 13. What should you do when an AI-generated reference cannot be found in reliable databases?
-    - A. Cite it because the AI gave a full title
-    - B. Treat it as likely fabricated and do not use it
-    - C. Change the publication year until a result appears
-    - D. Assume it exists but is difficult to find
+
+   - A. Cite it because the AI gave a full title
+   - B. Treat it as likely fabricated and do not use it
+   - C. Change the publication year until a result appears
+   - D. Assume it exists but is difficult to find
 
 14. Which principle asks whether people know when AI is being used?
-    - A. Transparency
-    - B. Data minimisation
-    - C. Sampling
-    - D. Prediction
+
+   - A. Transparency
+   - B. Data minimisation
+   - C. Sampling
+   - D. Prediction
 
 15. Which principle asks who is answerable when an AI system causes harm?
-    - A. Perception
-    - B. Accountability
-    - C. Recommendation
-    - D. Classification
+
+   - A. Perception
+   - B. Accountability
+   - C. Recommendation
+   - D. Classification
 
 16. Why is human oversight important?
-    - A. Humans never make mistakes
-    - B. It allows people to review context, challenge outputs, and intervene
-    - C. It makes every AI model accurate
-    - D. It removes the need for testing
+
+   - A. Humans never make mistakes
+   - B. It allows people to review context, challenge outputs, and intervene
+   - C. It makes every AI model accurate
+   - D. It removes the need for testing
 
 17. What is the main purpose of a responsible AI checklist?
-    - A. To guarantee that no problem can occur
-    - B. To replace legal and technical review
-    - C. To guide people through important risks and responsibilities
-    - D. To increase the amount of data collected
+
+   - A. To guarantee that no problem can occur
+   - B. To replace legal and technical review
+   - C. To guide people through important risks and responsibilities
+   - D. To increase the amount of data collected
 
 18. Which is a high-risk concern in an AI hiring system?
-    - A. The interface uses a small font
-    - B. Applicants from one group are systematically rejected more often
-    - C. The system has a modern design
-    - D. The company uses a spreadsheet
+
+   - A. The interface uses a small font
+   - B. Applicants from one group are systematically rejected more often
+   - C. The system has a modern design
+   - D. The company uses a spreadsheet
 
 19. In *Mata v. Avianca, Inc.*, what was the central AI-related problem discussed in this chapter?
-    - A. The chatbot refused to translate a document
-    - B. Lawyers submitted fabricated court cases generated by an AI chatbot
-    - C. A hiring system rejected applicants
-    - D. A hospital leaked medical images
+
+   - A. The chatbot refused to translate a document
+   - B. Lawyers submitted fabricated court cases generated by an AI chatbot
+   - C. A hiring system rejected applicants
+   - D. A hospital leaked medical images
 
 20. Which statement best describes the relationship between bias and hallucination?
-    - A. They mean exactly the same thing.
-    - B. Bias concerns unequal outcomes; hallucination concerns false or unsupported outputs.
-    - C. Hallucination always causes bias.
-    - D. A system cannot have both problems.
+
+   - A. They mean exactly the same thing.
+   - B. Bias concerns unequal outcomes; hallucination concerns false or unsupported outputs.
+   - C. Hallucination always causes bias.
+   - D. A system cannot have both problems.
 
 ## Part C: Open-Ended Questions
 
@@ -925,7 +1026,7 @@ Answer each question with a clear explanation and relevant examples.
 12. **True.**
 13. **False.** A source document can reduce unsupported additions, but the summary still needs to be checked.
 14. **True.**
-15. **False.** People and organisations remain accountable for decisions they make using AI.
+15. **False.** People and organisations remain accountable for decisions they make using AI according to their roles and applicable duties.
 
 ## Part B: Multiple Choice
 
@@ -934,7 +1035,7 @@ Answer each question with a clear explanation and relevant examples.
 | 1 | B | Bias is a systematic pattern of less accurate or less favourable results for some groups. |
 | 2 | A | A dataset dominated by one group may not represent the full population. |
 | 3 | C | A proxy indirectly carries information related to a protected characteristic. |
-| 4 | C | \(0.30 \div 0.60 = 0.50\). |
+| 4 | C | 0.30 ÷ 0.60 = 0.50. |
 | 5 | D | 0.60 is below the 0.80 screening threshold. |
 | 6 | B | The rule flags a possible issue but does not explain its cause or prove discrimination. |
 | 7 | A | A full name directly identifies a person. |
@@ -969,13 +1070,13 @@ The answer should explain that per-group evaluation and context are important be
 
 ### 2. Fairness Calculation
 
-- Group A selection rate: \(100 \div 200 = 0.50\), or **50%**.
-- Group B selection rate: \(56 \div 160 = 0.35\), or **35%**.
+- Group A selection rate: 100 ÷ 200 = 0.50, or **50%**.
+- Group B selection rate: 56 ÷ 160 = 0.35, or **35%**.
 - Highest selection rate: Group A at **0.50**.
-- Group B impact ratio: \(0.35 \div 0.50 = 0.70\), or **70%**.
+- Group B impact ratio: 0.35 ÷ 0.50 = 0.70, or **70%**.
 - Since 0.70 is below 0.80, the result should be **flagged for review** under the four-fifths screening rule.
 
-The result is not proof of discrimination because the measure does not explain why the gap exists. Further investigation should examine job relevance, group qualifications, inputs, historical data, and error rates.
+The result is not proof of discrimination because the measure does not explain why the gap exists. Further investigation should examine job relevance, group qualifications, inputs, historical data, and error rates. Learners should also recognise that the four-fifths rule is associated with US employment-selection guidance and is not a universal definition of fairness.
 
 ### 3. Privacy in Education
 
@@ -1004,16 +1105,18 @@ Relevant principles include:
 - **Privacy and security:** protect student records and limit data collection.
 - **Transparency:** explain that AI is used and what role it plays.
 - **Reliability and safety:** test the system and monitor errors.
-- **Accountability:** identify who is responsible for decisions.
+- **Accountability:** identify who is responsible for decisions and system oversight.
 - **Human oversight:** staff should review outputs, consider personal context, and allow students to explain their circumstances.
 
-The system should support staff rather than automatically determine a student's future.
+The university should establish appropriate procedures and take responsibility for selecting and monitoring the system. Staff should follow those procedures and use professional judgment when interpreting outputs. The system should support staff rather than automatically determine a student's future.
 
 ### 6. Comparing Bias and Hallucination
 
 Bias is a systematic pattern of unequal or less favourable outcomes for some groups. Hallucination is a false, fabricated, or unsupported output. A hiring system that rejects one group more often may show bias. A chatbot that invents a research paper shows hallucination.
 
-A system can provide factually correct information while still being biased. For example, it may accurately read every résumé but use a criterion that disadvantages applicants with caregiving-related career gaps. Organisations should test outcomes across groups, investigate proxies, protect data, verify generated information, document limitations, and provide human review.
+A system can provide factually correct information while still being biased. For example, it may accurately read every résumé but use a criterion that disadvantages applicants with caregiving-related career gaps.
+
+Organisations should test outcomes across groups, investigate proxies, protect data, verify generated information, document limitations, and provide human review. They should also assign clear responsibilities for investigating problems and correcting harmful outcomes.
 
 ---
 
@@ -1047,5 +1150,4 @@ OECD (2019) *Recommendation of the Council on Artificial Intelligence*. OECD/LEG
 
 US Equal Employment Opportunity Commission et al. (1978) *Uniform Guidelines on Employee Selection Procedures*, 29 CFR Part 1607 (the four-fifths rule is at §1607.4(D)). https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XIV/part-1607
 
-> **Note on examples and verification:** The numerical examples in the hiring-tool exercises are invented for teaching purposes. The Henderson & Zhou (2019) citation used in the original Chapter 5 V1 worked example is retained only as an intentionally fabricated example for teaching citation verification; it is not a real reference and must not be cited as evidence. Check bibliographic details and current legal requirements against the original sources before formal submission.
-
+> **Note on examples and verification:** The numerical examples in the hiring-tool exercises are invented for teaching purposes. The Henderson & Zhou (2019) citation used in the hallucination worked example is intentionally fabricated for teaching citation verification. It is not a real reference and must not be cited as evidence. Check bibliographic details and current legal requirements against the original sources before formal submission.
