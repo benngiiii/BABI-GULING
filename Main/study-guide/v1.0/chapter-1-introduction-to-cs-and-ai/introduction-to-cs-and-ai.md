@@ -43,12 +43,7 @@ After completing this chapter, you should be able to:
 
 ## Chapter Map
 
-```mermaid
-flowchart LR
-    A["Chapter 1<br/>Introduction to CS and AI"] --> B["Chapter 2<br/>Symbolic AI<br/>(rules and logic)"]
-    A --> C["Chapter 3<br/>Connectionist AI and Big Data<br/>(neural networks and data)"]
-    A --> D["Chapter 4<br/>Behaviorist AI<br/>(reward and trial and error)"]
-```
+![Chapter 1 gives the shared vocabulary and history](assets/fig-1-1-chapter-map.png)
 
 *Figure 1.1: Chapter 1 gives the shared vocabulary and history. Chapters 2 to 4 each explain one approach to building AI.*
 
@@ -98,46 +93,7 @@ The slides ask for the history as a table with the columns **Year, Key Events, K
 
 The lecturer's slides show a mind map of CS based on the **ACM classification**, the classification of computing topics by the Association for Computing Machinery. Here is a simplified version.
 
-```mermaid
-mindmap
-  root((Computer Science))
-    Algorithms and data structures
-      Sorting and searching
-      Graph algorithms
-      Complexity theory
-    Artificial intelligence
-      Machine learning
-      Natural language processing
-      Computer vision
-      Robotics
-      Knowledge representation
-    Computer architecture
-      Processor design
-      Memory systems
-    Operating systems
-      Process management
-      Memory and file systems
-    Networks
-      Network protocols
-      Internet of Things
-    Databases
-      Relational databases
-      NoSQL databases
-      Data mining
-    Software engineering
-      Requirements
-      Testing
-      Agile methods
-    Theory of computation
-      Automata
-      Computability
-    Human-computer interaction
-      Interface design
-      Accessibility
-    Information security
-      Cryptography
-      Cybersecurity
-```
+![A simplified map of Computer Science, following the ACM-style grouping shown in the lecturer's slides](assets/fig-1-2-cs-map.png)
 
 *Figure 1.2: A simplified map of Computer Science, following the ACM-style grouping shown in the lecturer's slides. AI is one branch among many.*
 
@@ -198,26 +154,7 @@ As with CS, there are many definitions. The slides ask you to "list as many defi
 
 The slides show an AI map with these areas:
 
-```mermaid
-mindmap
-  root((Artificial Intelligence))
-    Machine learning
-      Deep learning
-      Predictive analytics
-    Natural language processing
-      Translation
-      Classification and clustering
-      Information extraction
-    Speech
-      Speech to text
-      Text to speech
-    Expert systems
-    Planning, scheduling and optimization
-    Robotics
-    Vision
-      Image recognition
-      Machine vision
-```
+![A simplified map of AI areas, following the lecturer's slides](assets/fig-1-3-ai-map.png)
 
 *Figure 1.3: A simplified map of AI areas, following the lecturer's slides.*
 
@@ -239,17 +176,7 @@ Each area is a **task** (what we want the machine to do). The three approaches i
 
 **Machine learning (ML)** means that a program improves at a task by learning from data instead of following only hand-written rules. The lecturer's slides show the classic split into three families.
 
-```mermaid
-flowchart TB
-    ML["Machine learning"] --> S["Supervised learning<br/>data has labels"]
-    ML --> U["Unsupervised learning<br/>data has no labels"]
-    ML --> R["Reinforcement learning<br/>learn from rewards"]
-    S --> S1["Classification<br/>predict a category"]
-    S --> S2["Regression<br/>predict a number"]
-    U --> U1["Clustering<br/>group similar items"]
-    U --> U2["Association<br/>find items that go together"]
-    U --> U3["Dimensionality reduction<br/>simplify the data"]
-```
+![Families of machine learning](assets/fig-1-4-ml-families.png)
 
 *Figure 1.4: Families of machine learning.*
 
@@ -470,11 +397,12 @@ D. Assume it is always correct.
 
 ## References
 
-1. Course slides, "chap1: Intro to CS and AI", Introduction to Computer Science and Artificial Intelligence (lecturer's materials). Primary source for the outline, the CS and AI maps, and the hands-on activities.
-2. McCarthy, J. (2007). *What is Artificial Intelligence?* Stanford University. (Definition summarised in Section 2.1; check the wording in the original.)
-3. OECD (2023). Updated definition of an AI system. (Summarised in Section 2.1; check the wording in the original.)
-4. Russell, S., and Norvig, P. (2021). *Artificial Intelligence: A Modern Approach* (4th ed.). Pearson. (Agent view of AI. *Not opened during this revision.*)
-5. Turing, A. M. (1950). Computing Machinery and Intelligence. *Mind*, 59(236), 433–460. (*Not opened during this revision.*)
-6. Association for Computing Machinery. ACM Computing Classification System. (Basis of the CS map. *Not opened during this revision.*)
+1. Course slides, "chap1: Intro to CS and AI", Introduction to Computer Science and Artificial Intelligence. Lecturer's course materials (no public link). Primary source for the outline, the CS and AI maps, and the hands-on activities.
+2. McCarthy, J. (2007). *What is Artificial Intelligence?* Stanford University. [http://jmc.stanford.edu/artificial-intelligence/what-is-ai/](http://jmc.stanford.edu/artificial-intelligence/what-is-ai/) *(not opened; definition summarised in Section 2.1)*
+3. OECD. *AI Principles* and the OECD definition of an AI system. [https://www.oecd.org/en/topics/ai-principles.html](https://www.oecd.org/en/topics/ai-principles.html) *(not opened; check the current wording of the definition)*
+4. IBM. *What Is Artificial Intelligence (AI)?* [https://www.ibm.com/think/topics/artificial-intelligence](https://www.ibm.com/think/topics/artificial-intelligence) *(not opened)*
+5. Russell, S., and Norvig, P. (2021). *Artificial Intelligence: A Modern Approach* (4th ed.). Pearson. [https://aima.cs.berkeley.edu/](https://aima.cs.berkeley.edu/) *(not opened)*
+6. Turing, A. M. (1950). Computing Machinery and Intelligence. *Mind*, 59(236), 433–460. [https://doi.org/10.1093/mind/LIX.236.433](https://doi.org/10.1093/mind/LIX.236.433) *(not opened)*
+7. Association for Computing Machinery. *ACM Computing Classification System.* [https://dl.acm.org/ccs](https://dl.acm.org/ccs) *(not opened; basis of the CS map)*
 
-> The two source lines above marked "Not opened" must be checked by the author or reviewer before submission.
+> **Link status.** Each link below was written from the publisher's or DOI address of the work. Links marked **not opened** could not be opened during this revision. The author or reviewer must click every link, confirm that it opens the right work and supports the claim it is cited for, and then change the label to "opened" with the date.
