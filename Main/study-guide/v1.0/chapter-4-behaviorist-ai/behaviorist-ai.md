@@ -79,12 +79,7 @@ Psychologists observed that animals learn from consequences. AI researchers turn
 
 **Reinforcement learning (RL)** is machine learning in which an **agent** learns what to do by interacting with an **environment** to maximise total reward.
 
-```mermaid
-flowchart LR
-    A["Agent<br/>(the learner)"] -->|action| E["Environment"]
-    E -->|new state| A
-    E -->|reward| A
-```
+![The reinforcement learning loop](assets/fig-4-1-rl-loop.png)
 
 *Figure 4.1: The reinforcement learning loop. The agent acts, then sees the new state and a reward, and repeats.*
 
@@ -154,10 +149,7 @@ Q-learning keeps a table of **Q-values**: **Q(state, action)** is how good it is
 
 **Worked example.** A corridor with four squares **A – B – C – D**. D is the goal. Moving right from C into D gives **+10**; every other step gives 0. Use α = 0.5 and γ = 0.9. All Q-values start at 0. We only follow the action "right" (R).
 
-```mermaid
-flowchart LR
-    A["A"] --> B["B"] --> C["C"] --> D["D<br/>goal +10"]
-```
+![The corridor](assets/fig-4-2-corridor.png)
 
 *Figure 4.2: The corridor.*
 
@@ -242,15 +234,7 @@ The values **decrease the farther the state is from the reward**, which is exact
 
 Rodney Brooks argued in the 1980s and 1990s that intelligent behaviour can come from **simple layers of behaviour tied directly to sensors and motors**, without a complete symbolic model of the world. This is the **subsumption architecture**: higher layers can override lower ones.
 
-```mermaid
-flowchart TB
-    L3["Layer 3: Explore and clean the room"] --> M["Motors"]
-    L2["Layer 2: Follow walls"] --> M
-    L1["Layer 1: Avoid obstacles (highest priority)"] --> M
-    S["Sensors"] --> L1
-    S --> L2
-    S --> L3
-```
+![Layers of behaviour for a robot vacuum](assets/fig-4-3-subsumption-layers.png)
 
 *Figure 4.3: Layers of behaviour for a robot vacuum. Avoiding obstacles overrides the rest.*
 
@@ -502,14 +486,15 @@ D. Always explains itself
 
 ## References
 
-1. Course slides, "chap6: Behaviorist AI", Introduction to Computer Science and Artificial Intelligence (lecturer's materials). Source of the topic outline.
-2. Sutton, R. S., and Barto, A. G. (2018). *Reinforcement Learning: An Introduction* (2nd ed.). MIT Press. (*Not opened during this revision.*)
-3. Brooks, R. A. (1991). Intelligence without representation. *Artificial Intelligence*, 47(1–3), 139–159. (*Not opened during this revision.*)
-4. Mnih, V., et al. (2015). Human-level control through deep reinforcement learning. *Nature*, 518, 529–533. (*Not opened during this revision.*)
-5. Silver, D., et al. (2016). Mastering the game of Go with deep neural networks and tree search. *Nature*, 529, 484–489. (Existence confirmed by search; not opened.)
-6. Krakovna, V., et al. (2020). Specification gaming: the flip side of AI ingenuity. DeepMind blog. (*Not opened during this revision.*)
-7. Clark, J., and Amodei, D. (2016). Faulty reward functions in the wild. OpenAI blog. (*Not opened during this revision.*)
-8. Ouyang, L., et al. (2022). Training language models to follow instructions with human feedback. (*Not opened during this revision.*)
-9. Tesauro, G. (1995). Temporal difference learning and TD-Gammon. *Communications of the ACM*, 38(3), 58–68. (*Not opened during this revision.*)
+1. Course slides, "chap6: Behaviorist AI", Introduction to Computer Science and Artificial Intelligence. Lecturer's course materials (no public link). Source of the topic outline.
+2. Sutton, R. S., and Barto, A. G. (2018). *Reinforcement Learning: An Introduction* (2nd ed.). MIT Press. [http://incompleteideas.net/book/the-book-2nd.html](http://incompleteideas.net/book/the-book-2nd.html) *(not opened)*
+3. Brooks, R. A. (1991). Intelligence without representation. *Artificial Intelligence*, 47(1–3), 139–159. [https://doi.org/10.1016/0004-3702(91)90053-M](https://doi.org/10.1016/0004-3702(91)90053-M) *(not opened)*
+4. Mnih, V., et al. (2015). Human-level control through deep reinforcement learning. *Nature*, 518, 529–533. [https://doi.org/10.1038/nature14236](https://doi.org/10.1038/nature14236) *(not opened)*
+5. Silver, D., et al. (2016). Mastering the game of Go with deep neural networks and tree search. *Nature*, 529, 484–489. [https://doi.org/10.1038/nature16961](https://doi.org/10.1038/nature16961) *(existence confirmed through a web search on 5 November 2026; the paper itself was not opened)*
+6. Silver, D., et al. (2017). Mastering chess and shogi by self-play with a general reinforcement learning algorithm. [https://arxiv.org/abs/1712.01815](https://arxiv.org/abs/1712.01815) *(not opened)*
+7. Tesauro, G. (1995). Temporal difference learning and TD-Gammon. *Communications of the ACM*, 38(3), 58–68. [https://doi.org/10.1145/203330.203343](https://doi.org/10.1145/203330.203343) *(not opened)*
+8. Krakovna, V., et al. (2020). Specification gaming: the flip side of AI ingenuity. DeepMind. [https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/](https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/) *(not opened)*
+9. Clark, J., and Amodei, D. (2016). Faulty reward functions in the wild. OpenAI. [https://openai.com/index/faulty-reward-functions/](https://openai.com/index/faulty-reward-functions/) *(not opened)*
+10. Ouyang, L., et al. (2022). Training language models to follow instructions with human feedback. [https://arxiv.org/abs/2203.02155](https://arxiv.org/abs/2203.02155) *(not opened)*
 
-> References 2 to 9 must be checked by the author or reviewer before submission.
+> **Link status.** Each link below was written from the publisher's or DOI address of the work. Links marked **not opened** could not be opened during this revision. The author or reviewer must click every link, confirm that it opens the right work and supports the claim it is cited for, and then change the label to "opened" with the date.
