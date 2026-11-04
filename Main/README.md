@@ -147,15 +147,19 @@ BABI-GULING/
 │
 ├── logs/
 │   ├── stage1-ai-use-log.md
-│   └── Stage 2 activity and AI-use records
+│   └── Stage 2 activity and AI-use records.md
 │
 └── quality/
     └── reviews/
-        ├── quality-standards.md
+        ├── quality-standards-V1.0.md
+        ├── quality-standards-V2.0.md 
         ├── review-register.md
-        ├── final-submission-audit.md
+        ├── final-submission-audit-V1.0.md
+        ├── final-submission-audit-V1.0.md
         │
-        └── detailed reviews/
+        ├── detailed review V1.0/
+        │   └── Individual quality review reports
+        └── detailed review V2.0/
             └── Individual quality review reports
 ```
 
