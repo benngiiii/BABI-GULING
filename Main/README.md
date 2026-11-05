@@ -1,3 +1,5 @@
+![BABI GULING AI Overview banner](assets/brand/readme-banner.png)
+
 # BABI GULING — AI OVERVIEW
 
 **Module:** AI Overview
@@ -5,6 +7,25 @@
 **Project:** Introduction to Computer Science and Artificial Intelligence
 **Current Stage:** Stage 2 — Content Development and Learning Resource Production
 **Last Updated:** November 5, 2026
+
+---
+
+## Start Reading
+
+Each chapter is one Markdown page that you read directly on GitHub. Nothing needs to be downloaded, and every example and answer is on the page. Read the chapters in order.
+
+| Chapter | Central question | Core study time | Read it |
+|:-:|---|:-:|---|
+| 1 | What are Computer Science and AI, and how does a machine learn from examples? | 3 h | [Introduction to CS and AI](study-guide/v2.0/chapter-1-introduction-to-cs-and-ai/introduction-to-cs-and-ai.md) |
+| 2 | How can a machine reason with rules and logic that people write? | 4.5 h | [Symbolic AI](study-guide/v2.0/chapter-2-symbolic-ai/symbolic-ai.md) |
+| 3 | How can a machine learn its own rules from data, and where does the data come from? | 6 h | [Connectionist AI and Big Data](study-guide/v2.0/chapter-3-connectionist-ai-and-big-data/connectionist-ai-and-big-data.md) |
+| 4 | How can a machine learn what to do from reward alone, and what can go wrong? | 5 h | [Behaviorist AI](study-guide/v2.0/chapter-4-behaviorist-ai/behaviorist-ai.md) |
+
+The four chapters take about 18.5 hours in total. Each chapter opens with *Where This Chapter Fits*, which says what you already know, what is new in the chapter, and what comes next, so you always know where you are in the module.
+
+**How each chapter is written.** Every chapter follows the lecturer's slides, topic by topic, in the lecturer's order. A chapter starts with *Where This Chapter Fits* (a figure of the four chapters and a table: before, now, next) and a list of what you will learn. Each topic then explains one idea in plain sentences, uses one running example, and shows figures that are each followed by a paragraph called **How to read this figure**. A topic ends with one to three *Check yourself* questions (open the answer when you have tried) and a short **In short** box. After the topics come a hands-on activity that needs only pen and paper, common misconceptions, key takeaways, 17 practice questions with explained answers, and a short bridge to the next chapter. There are no games, no mascot, and no emoji. Everything is on the page, so nothing has to be downloaded.
+
+**What Stage 2 adds to Stage 1.** Stage 1 delivered the module structure and a first version (1.1) of every chapter. Stage 2 develops each chapter into **version 2.0**: 51,171 words in total, 66 numbered figures that are each explained in words, 66 *Check yourself* questions, 7 hands-on activities, 68 practice questions, and 47 references with links. The [Stage 2 Revision Summary](stage2-revision-summary.md) lists each problem, the change, and where to find it.
 
 ---
 
@@ -71,12 +92,14 @@ The AI Overview module consists of four chapters. Each chapter follows one of th
 
 | Chapter | Topic | Main Content | Version |
 | :-----: | ----------------------------- | -------------------------------------------------------------------------------------------------- | :-----: |
-| 1 | **Introduction to CS and AI** | Definitions and history of CS and AI, main areas, machine-learning families, and hands-on machine learning. | 1.1 |
-| 2 | **Symbolic AI** | Logic and reasoning, knowledge representation, rule-based and expert systems, planning and search, and symbolic NLP. | 1.1 |
-| 3 | **Connectionist AI and Big Data** | Neural networks, architectures, deep learning, applications and ethics; Big Data technologies, analytics, visualization, and privacy. | 1.1 |
-| 4 | **Behaviorist AI** | Reinforcement learning, Q-learning, Markov decision processes, robotics and games, applications, and limitations. | 1.1 |
+| 1 | **Introduction to CS and AI** | Definitions and history of CS and AI, main areas, machine-learning families, and hands-on machine learning. | 2.0 |
+| 2 | **Symbolic AI** | Logic and reasoning, knowledge representation, rule-based and expert systems, planning and search, and symbolic NLP. | 2.0 |
+| 3 | **Connectionist AI and Big Data** | Neural networks, architectures, deep learning, applications and ethics; Big Data technologies, analytics, visualization, and privacy. | 2.0 |
+| 4 | **Behaviorist AI** | Reinforcement learning, Q-learning, Markov decision processes, robotics and games, applications, and limitations. | 2.0 |
 
-For detailed chapter descriptions, learning objectives, and the planned module structure, refer to the [Module Outline](module-outline.md).
+Version 2.0 (Stage 2) explains each topic of the lecturer's slides in full, with a storyline between chapters (*Where This Chapter Fits* and *What Comes Next*), figures that explain themselves, a few questions after each topic, one hands-on activity, common misconceptions, and practice questions with explained answers. The four chapters share terms (see the [shared glossary](study-guide/v2.0/shared-glossary.md)) and running examples (the Smart Classroom in Chapters 1 to 3, the corridor and robot vacuum in Chapter 4).
+
+For detailed chapter descriptions, learning objectives, figures, and known gaps, refer to the [Module Outline](module-outline.md). All four V2.0 chapters are also combined in [stage2_Content.md](study-guide/v2.0/stage2_Content.md).
 
 ---
 
@@ -107,11 +130,16 @@ The main project documents are maintained together to provide continuous documen
 | **Project Plan**             | Explains project objectives, workflow, timeline, team responsibilities, and development approach. | [project-plan.md](project-plan.md)                                        |
 | **Master Task List**         | Records project tasks, assigned members, deadlines, and completion status across all stages.      | [master-task-list.md](master-task-list.md)                                |
 | **Module Outline**           | Describes the module structure, learning outcomes, chapter topics, and content development plan.  | [module-outline.md](module-outline.md)                                    |
-| **Quality Standards**        | Defines the criteria used to review learning materials and project documentation.                 | [quality-standards.md](../quality/reviews/quality-standards.md)           |
+| **Quality Standards**        | Defines the criteria used to review learning materials and project documentation (V2.2 adds the Stage 2 criteria in Section 23). | [quality-standards-V2.2.md](../quality/reviews/quality-standards-V2.2.md) |
 | **Quality Review Register**  | Tracks quality review reports, identified issues, and review progress.                            | [review-register.md](../quality/reviews/review-register.md)               |
 | **Final Submission Audit**   | Records final quality checks for submission preparation.                                          | [final-submission-audit.md](../quality/reviews/final-submission-audit.md) |
 | **Stage 1 AI Use Log**       | Records AI-assisted activities during Stage 1.                                                    | [stage1-ai-use-log.md](../logs/stage1-ai-use-log.md)                      |
 | **Stage 1 Combined Content** | Preserves the combined learning content developed during Stage 1.                                 | [stage1_Content.md](study-guide/v1.0/stage1_Content.md)                                    |
+| **Stage 2 Combined Content** | All four Markdown V2.0 chapters in one file (the source for the Study Guide, PPT, and videos).    | [stage2_Content.md](study-guide/v2.0/stage2_Content.md)                   |
+| **Shared Glossary**          | One meaning for every term used in the four chapters.                                             | [shared-glossary.md](study-guide/v2.0/shared-glossary.md)                 |
+| **Stage 2 Revision Summary** | Lists the problems found, the changes made in V2.0, and where to find them; includes the mapping table to be completed. | [stage2-revision-summary.md](stage2-revision-summary.md) |
+| **Stage 2 Submission Report (draft)** | Draft of the report for the Markdown V2.0 submission; items that need team input are marked. | [stage2-submission-report-DRAFT.md](stage2-submission-report-DRAFT.md) |
+| **Reference Check Register** | Records, for each reference, who opened the link, when, and the result.                           | [reference-check-register-DRAFT.md](../quality/reviews/detailed-review-Stage2-V2.0-DRAFT/reference-check-register-DRAFT.md) |
 
 The project documents remain in the main branch and are updated when necessary.
 
@@ -136,51 +164,55 @@ BABI-GULING/
 │   │
 │   ├── assets/
 │   │   ├── fig-main-1-stage-timeline.png
-│   │   └── fig-main-2-workflow.png
+│   │   ├── fig-main-2-workflow.png
+│   │   └── brand/                
 │   │
 │   └── study-guide/
-│       ├── v1.0/
-│       │   ├── chapter-1-introduction-to-cs-and-ai/
-│       │   │   ├── introduction-to-cs-and-ai.md
-│       │   │   └── assets/            (fig-1-1 … fig-1-4, PNG)
-│       │   ├── chapter-2-symbolic-ai/
-│       │   │   ├── symbolic-ai.md
-│       │   │   └── assets/            (fig-2-1 … fig-2-6, PNG)
-│       │   ├── chapter-3-connectionist-ai-and-big-data/
-│       │   │   ├── connectionist-ai-and-big-data.md
-│       │   │   └── assets/            (fig-3-1 … fig-3-5, PNG)
-│       │   ├── chapter-4-behaviorist-ai/
-│       │   │   ├── behaviorist-ai.md
-│       │   │   └── assets/            (fig-4-1 … fig-4-3, PNG)
+│       ├── v1.0/                      
+│       │   ├── chapter-1-introduction-to-cs-and-ai/ ... chapter-4-behaviorist-ai/
 │       │   └── stage1_Content.md
 │       │
-│       └── v2.0/
-│           └── Chapter 1–4 (Stage 2, same layout)
+│       └── v2.0/                    
+│           ├── chapter-1-introduction-to-cs-and-ai/
+│           │   ├── introduction-to-cs-and-ai.md
+│           │   └── assets/            
+│           ├── chapter-2-symbolic-ai/
+│           │   ├── symbolic-ai.md
+│           │   └── assets/          
+│           ├── chapter-3-connectionist-ai-and-big-data/
+│           │   ├── connectionist-ai-and-big-data.md
+│           │   └── assets/            
+│           ├── chapter-4-behaviorist-ai/
+│           │   ├── behaviorist-ai.md
+│           │   └── assets/            
+│           ├── shared-glossary.md
 │           └── stage2_Content.md
 │
 ├── logs/
 │   ├── stage1-ai-use-log.md
-│   └── Stage 2 activity and AI-use records.md
+│   └── (Stage 2 project log, personal logs, and AI-use records)
 │
 └── quality/
     └── reviews/
-        ├── quality-standards-V1.0.md
-        ├── quality-standards-V2.0.md 
+        ├── quality-standards-V2.1.md
+        ├── quality-standards-V2.2.md
         ├── review-register.md
         ├── final-submission-audit-V1.0.md
-        ├── final-submission-audit-V1.0.md
+        ├── stage2-revision-summary.md
         │
         ├── detailed review V1.0/
-        │   └── Individual quality review reports
-        └── detailed review V2.0/
-            └── Individual quality review reports
+        │   └── Individual quality review reports (Stage 1)
+        └── detailed-review-Stage2-V2.0-DRAFT/
+            ├── QR-221-I01-DRAFT.md … QR-225-I01-DRAFT.md
+            ├── review-register-additions-DRAFT.md
+            └── reference-check-register-DRAFT.md
 ```
 
-*The diagram describes the logical organization of the project. Stage-specific content is maintained in its corresponding development branch.*
+*The diagram describes the logical organization of the project. Stage-specific content is maintained in its corresponding development branch. The review folder names are the team's choice; if you rename a folder or file in the repository, update the links in this README. Drafts keep the word DRAFT in the file name until a reviewer has signed them.*
 
 ### Figures and Assets
 
-All figures are PNG images, not Mermaid code, so they look the same on GitHub, in the PDF, and in the slides.
+All figures are PNG images, not Mermaid code, so they look the same on GitHub, in a PDF, and in the slides.
 
 | Rule | Detail |
 |---|---|
@@ -190,7 +222,7 @@ All figures are PNG images, not Mermaid code, so they look the same on GitHub, i
 | Alt text | Every image has alt text that explains what it shows. |
 | Check before merge | The file exists, the name matches the link exactly (GitHub is case-sensitive), and the image opens in the GitHub preview. |
 
-The full list of figures is in the [Module Outline](module-outline.md#figures-and-assets).
+The full list of all 66 numbered figures, with exact file names, is in the [Module Outline](module-outline.md#figures-and-assets). When copying a chapter into the repository, copy the chapter's `.md` file **and** its `assets/` folder together, so that the relative links keep working.
 
 ### Branch Management
 
@@ -306,7 +338,7 @@ Quality review reports from Stage 1 are preserved as part of the project's quali
 
 Reports QR-001 to QR-008 document the initial review activities conducted during Stage 1 for the earlier five-chapter version. Reviews of the rebuilt four-chapter version use QR-121 to QR-125. A chapter is called Checked only after the Quality Lead has signed its report.
 
-For Stage 2, new review reports will be added to the same quality review system. The Review Register will continue to track review IDs, reviewed files, findings, corrections, and final results.
+For Stage 2, the V2.0 chapters have review plans QR-221-I01 to QR-224-I01 (one per chapter) and QR-225-I01 (project documents, to be reviewed by Joseph because Brian wrote them). These are drafts with the decision **Pending Review** until the reviewer signs them. The Review Register will continue to track review IDs, reviewed files, findings, corrections, and final results.
 
 This approach avoids duplicating the quality documentation for every content version and maintains a continuous record of the project's quality development.
 
@@ -378,17 +410,11 @@ The original Stage 1 content and review records are preserved for reference.
 
 Stage 2 focuses on improving and expanding the existing learning materials and preparing the learning resources.
 
-Current activities include:
+Status on 5 November 2026:
 
-* Expanding the rebuilt Chapters 1–4 into V2.0 with more depth, examples, and a full Study Guide and Test Bank.
-* Waiting for the Quality Lead's signed review of the rebuilt chapters.
-* Improving explanations, examples, diagrams, and learning activities.
-* Checking consistency between chapters.
-* Conducting quality reviews of the revised content.
-* Developing the Study Guide and Test Bank.
-* Preparing PPT Slides.
-* Developing Video Tutorials.
-* Preparing for the live teaching session.
+* **Done (drafted):** Chapters 1–4 were rewritten into Markdown V2.0 on the lecturer's topics (51,171 words in total, 66 numbered PNG chapter figures plus 2 project figures and the banners, 66 *Check yourself* questions, 7 hands-on activities, 68 practice questions with explained answers, 47 references with links, 138 glossary terms). The key calculations in the worked examples were recomputed with a script (23 checks, all matched). The combined file, shared glossary, style guide, revision summary, outline, project documents, review drafts, and reference register were updated to match.
+* **Not done yet:** signed reviews of the V2.0 chapters (QR-221 to QR-225), opening and checking the reference links, learner testing, the Study Guide and Test Bank, the PPT with presenter notes, the videos with the video guide, the Project Log and Personal Logs for Stage 2, and the Submission Report.
+* **Honest status label:** the V2.0 chapters are **Drafted**. They become **Checked** only after the reviewer signs the report for the current version.
 
 The detailed progress of each task is maintained in the [Master Task List](master-task-list.md).
 
@@ -426,14 +452,13 @@ Deliverables are developed and updated according to the requirements of each pro
 
 Following the Stage 2 development schedule, the team will:
 
-1. Merge the rebuilt chapters, complete the signed quality review and corrections, then expand the chapters into V2.0.
-2. Conduct cross-reviews and quality checks.
-3. Improve the Study Guide and Test Bank.
-4. Complete the first version of the PPT Slides.
-5. Complete the first version of the Video Tutorials.
-6. Collect feedback from trial activities.
-7. Prepare and rehearse the live teaching session.
-8. Compile and submit the Stage 2 deliverables.
+1. Upload the V2.0 chapter folders and the project documents to the Stage 2 branch, and check that every figure appears in the GitHub preview.
+2. Open every reference link, record the result in the reference check register, and change "not opened" to "opened" with the date.
+3. Complete the independent reviews QR-221 to QR-225 and correct the findings.
+4. Build the Study Guide and Test Bank, the PPT with presenter notes, and the videos from the approved Markdown, and fill in the mapping table in the Revision Summary.
+5. Write the Stage 2 Project Log and Personal Logs from real activity, with light-theme screenshots.
+6. Render the PDF of the final Markdown, complete the Submission Report, and compare every file name and requirement with the lecturer's assignment text.
+7. Prepare and rehearse the live teaching session, then compile and submit the Stage 2 deliverables.
 
 After Stage 2, the team will use feedback and review results to prepare the final improvements for Stage 3.
 

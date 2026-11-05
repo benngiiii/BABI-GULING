@@ -2,12 +2,14 @@
 
 ## Babi Guling – AI Overview
 
-**Document status:** Version 2.0 (2026-11-05). This plan was rebuilt after the lecturer's Stage 1 feedback. The module now follows the lecturer's four course chapters. The earlier five-chapter plan (v1.0–v1.4) is kept in the repository history.
+**Document status:** Version 4.0 (2026-11-05). Updated for Stage 2. The module follows the lecturer's four course chapters, and Markdown V2.0 of all four chapters has been rewritten around the lecturer's topics after the feedback that the earlier text was hard to understand. The earlier five-chapter plan (v1.0–v1.4) and the Stage 1 rebuild (v2.0) are kept in the version table.
 
 | Version | Date | Change |
 |---|---|---|
 | 1.0–1.4 | 2026-10-23 | Stage 1 plan for the five-chapter structure, revised after QR-007-I01 to QR-007-I03 |
 | 2.0 | 2026-11-05 | Rebuilt on the four course chapters; added five content parts, a detailed schedule, a three-stage task list, honest development statuses, and a response to each lecturer feedback point (Section 15) |
+| 3.0 | 2026-11-05 | Stage 2: Markdown V2.0 chapters, what Stage 2 adds to each chapter, Stage 2 requirements coverage, Test Bank distribution, Stage 2 submission package, risks, and review plan QR-221 to QR-225 |
+| 4.0 | 2026-11-05 | The V2.0 chapters were rewritten from the lecturer's topics: full explanations, "Where This Chapter Fits" storyline, explained figures, fewer exercises; counts, requirements coverage, and statuses updated |
 
 ## 1. Project Overview
 
@@ -15,7 +17,7 @@ The purpose of this project is to introduce Artificial Intelligence (AI) to firs
 
 All resources use the same explanations, examples, terms, and references. If we find an error, we correct the shared Markdown first and then update every affected resource.
 
-For Stage 1 the priority is a clear module structure and at least one fully developed chapter, supported by a documented review, meaningful GitHub work, and a self-contained submission. Stage 2 and Stage 3 deepen the content and produce the other resources.
+Stage 1 gave the module structure and a first version of every chapter. **Stage 2 is the current priority.** It develops the four chapters into Markdown V2.0 and produces the Study Guide and Test Bank, the PPT, the videos, the logs, and a Submission Report. Stage 3 improves everything using the feedback and prepares the live teaching session.
 
 ### Intended Learners
 
@@ -80,6 +82,19 @@ Follows the lecturer's seven topics.
 - Introduction to Behaviorist AI; basics of reinforcement learning; RL algorithms and techniques; Markov decision processes; behavioral AI in robotics and games; applications and use cases; challenges and limitations.
 - Hands-on activities, a comparison of the three approaches, key takeaways, practice questions and answers, glossary, references.
 
+### What Stage 2 Adds to Each Chapter (Markdown V2.0)
+
+Version 2.0 keeps the lecturer's topic order and explains every topic in full. The counts were taken from the files on 5 November 2026 by a script.
+
+| Chapter | Words (approx.) | Lecturer's topics | Figures (numbered) | *Check yourself* questions | Hands-on activities | Practice questions | References |
+|---|--:|--:|--:|--:|--:|--:|--:|
+| 1 Introduction to CS and AI | 12,254 | 5 | 14 | 14 | 3 | 17 | 12 |
+| 2 Symbolic AI | 12,959 | 6 | 13 | 18 | 2 | 17 | 11 |
+| 3 Connectionist AI and Big Data | 15,067 | 12 (two groups of six) | 22 | 22 | 1 | 17 | 13 |
+| 4 Behaviorist AI | 10,891 | 7 | 17 | 12 | 1 | 17 | 11 |
+
+Every chapter has the same routine: **Where This Chapter Fits** (before, now, next), **What You Will Learn**, the topics in the lecturer's order, a **hands-on activity**, **Common Misconceptions**, **Key Takeaways**, **Practice Questions** with an Answer Key, and **What Comes Next**. Inside each topic, the idea is explained in plain sentences with one running example; every figure is followed by a **How to read this figure** paragraph; and one to three **Check yourself** questions with hidden, explained answers and a short **In short** box close the topic. The chapters share one set of terms (see the [shared glossary](study-guide/v2.0/shared-glossary.md)) and two running examples: the Smart Classroom (Chapters 1 to 3) and the corridor and robot vacuum (Chapter 4).
+
 ### How the Shared Markdown Content Is Used
 
 - **Study Guide and Test Bank:** explanations, terms, worked examples, and activities become the study guide. Practice questions seed the test bank.
@@ -92,36 +107,42 @@ Statuses: **Outline only**, **Drafted** (written, no signed review), **Checked**
 
 | Chapter | Version | Owner | Status | Signed review | Remaining work |
 |---|---|---|---|---|---|
-| 1 Introduction to CS and AI | 1.1 | Jonathan | Drafted | None yet (QR-121-I01 pending) | Signed review; verify references marked "Not opened"; learner test |
-| 2 Symbolic AI | 1.1 | Gandhi | Drafted | None yet (QR-122-I01 pending) | Signed review; verify references; learner test |
-| 3 Connectionist AI and Big Data | 1.1 | Benedict | Drafted | None yet (QR-123-I01 pending) | Signed review; verify references; learner test |
-| 4 Behaviorist AI | 1.1 | Joseph | Drafted | None yet (QR-124-I01 pending) | Signed review; verify references; learner test |
-| Project documents | 2.0 | Brian | Drafted | None yet (QR-125-I01 pending, by Joseph) | Joseph's review |
+| 1 Introduction to CS and AI | 2.0 | Jonathan | Drafted | None yet (QR-221-I01 pending) | Owner reads and fact-checks; signed review; open the reference links; learner test |
+| 2 Symbolic AI | 2.0 | Gandhi | Drafted | None yet (QR-222-I01 pending) | Same; also run the Smart Classroom rules by hand |
+| 3 Connectionist AI and Big Data | 2.0 | Benedict | Drafted | None yet (QR-223-I01 pending) | Same; also redo the perceptron and word-vote tables by hand |
+| 4 Behaviorist AI | 2.0 | Joseph | Drafted | None yet (QR-224-I01 pending) | Same; also redo the Q-learning tables by hand |
+| Project documents | 4.0 | Brian | Drafted | None yet (QR-225-I01 pending, by Joseph) | Joseph's review |
 
-### Stage 1 Focus Topic
+### Stage 2 Requirements and Where the Markdown Meets Them
 
-| Field | Entry |
-|---|---|
-| Selected topic | Chapter 2, Symbolic AI (the most developed chapter; 52 lecturer slides) |
-| Selection date | 2026-11-05 |
-| Selected by | Team (to confirm) |
-| Verified status | Drafted. Becomes Checked only after the QR-122-I01 signed review. |
-
-| Required element | Present in the file | Where |
+| Requirement | Present in the files | Where |
 |---|---|---|
-| Explanations | Yes | Topics 1–6 |
-| Terminology | Yes | Glossary; definitions at first use |
-| Worked examples | Yes | Truth tables, forward chaining, BFS/DFS, A*, minimax |
-| Visual | Yes | Figures 2.1–2.6 (PNG files in the chapter's `assets/` folder) |
-| Learner activity | Yes | Rule-based Smart Classroom; practice questions |
-| Explained answers | Yes | Answer Key |
-| References | Yes | References (some marked "Not opened") |
+| Explanations and learning outcomes | Yes | Each chapter: *Where This Chapter Fits*, *What You Will Learn*, and the topics |
+| Terminology | Yes | Glossary in each chapter; one [shared glossary](study-guide/v2.0/shared-glossary.md) |
+| Worked examples | Yes | Binary conversion, nearest neighbour, truth tables, forward chaining, search of the farmer puzzle, a neuron, gradient descent, a perceptron learning OR, backpropagation, Q-learning, expected value |
+| Visuals | Yes (PNG) | 66 numbered chapter figures (plus banners) and 2 project figures, each explained in text |
+| Activities with feedback | Yes | 7 hands-on activities, each doable with pen and paper |
+| Practice with explained answers | Yes | 68 practice questions with an Answer Key; 66 *Check yourself* questions with hidden answers |
+| References | Yes | 47 references; most links not yet opened (see the reference register) |
+| Independent review | **Not yet** | QR-221-I01 to QR-225-I01 pending |
 
 ## 4. Study Guide and Test Bank
 
 **Purpose:** Help learners study alone, practise, and check their understanding.
 
-The Study Guide follows the four chapters. The Test Bank will contain, at a minimum for Stage 2, **20 true/false, 20 multiple-choice, and 6 open-ended questions**, each with an answer key. Questions come from the practice sections and the key takeaways of the chapters. The Quality Lead checks that every question tests a stated learning outcome and that the answers are correct.
+The Study Guide follows the four chapters and reuses the V2.0 explanations, figures, *Check yourself* questions, and hands-on activities. The Test Bank will contain, at a minimum for Stage 2, **20 true/false, 20 multiple-choice, and 6 open-ended questions**, each with an answer key. Questions come from the practice sections and key takeaways of the chapters. The Quality Lead checks that every question tests a stated learning outcome and that the answers are correct.
+
+Proposed distribution (the team may change it, but every chapter should be covered):
+
+| Chapter | True/false | Multiple-choice | Open-ended |
+|---|--:|--:|--:|
+| 1 Introduction to CS and AI | 5 | 5 | 1 |
+| 2 Symbolic AI | 5 | 5 | 2 |
+| 3 Connectionist AI and Big Data | 5 | 5 | 2 |
+| 4 Behaviorist AI | 5 | 5 | 1 |
+| **Total** | **20** | **20** | **6** |
+
+Each question records its chapter, section, learning outcome, difficulty, and the section of the Markdown that explains the answer. Do not copy a practice question unchanged: reword it and check the answer again.
 
 ## 5. PPT Slides
 
@@ -175,34 +196,46 @@ We avoid unnecessary mathematics.
 
 ## 9. Submission Plan
 
-### Stage 1 (rebuilt content)
+### Stage 2 package
 
-The lecturer's Stage 1 package is a ZIP named `TeamName_Stage1_GitHub_Markdown_V1.zip` with a Submission Report, a Markdown source snapshot, and a readable PDF of the learning content. The checklist is unticked because the rebuilt files have not yet been merged and packaged. Tick an item only when the file exists.
+The file names below follow the team's summary of the assignment. **Compare them with the lecturer's assignment text before submitting.** Tick an item only when the file exists and has been opened and checked.
 
-- [ ] Rebuilt chapters merged into the repository.
-- [ ] README, Module Outline, Project Plan, and Master Task List v2.0 merged.
-- [ ] Signed review records for the chapters (QR-121 to QR-124) and the project documents (QR-125).
-- [ ] Submission Report with repository URL, snapshot date, latest commit identifier, content status, evidence, contributions, review outcome, and next steps.
-- [ ] Markdown source snapshot with assets (every `assets/` folder included and every image link checked).
+| Deliverable | Proposed file | Owner | Done |
+|---|---|---|---|
+| A. Markdown V2.0 package (snapshot with assets, rendered PDF, Submission Report with Revision Summary table, review results, mapping table, GitHub evidence, known gaps) | `BABI_GULING_Stage2_Markdown_V2.zip` | Jonathan compiles; Brian checks | [ ] |
+| B. Study Guide and Test Bank (at least 20 true/false, 20 multiple-choice, 6 open-ended; activities in six parts) | `BABI_GULING_Stage2_StudyGuide_TestBank_V1.zip` | Benedict | [ ] |
+| C. PPT with presenter notes | `BABI_GULING_Stage2_PPT_V1.pptx` | Benedict | [ ] |
+| D. Videos (1 to 8 MP4 files, each at most 250 MB) and the video guide | `BABI_GULING_Stage2_VideoGuide` | Gandhi | [ ] |
+| E. Project Log | `BABI_GULING_Stage2_ProjectLog` | Joseph | [ ] |
+| F. Personal Logs | `BABI_GULING_Stage2_PersonalLogs` | Each member | [ ] |
+
+Checklist for package A:
+
+- [ ] V2.0 chapter folders (each with its `assets/` folder) uploaded to the Stage 2 branch, and every figure shown in the GitHub preview.
+- [ ] README, Module Outline, Project Plan, Master Task List, and Quality Standards V2.2 merged.
+- [ ] Signed review records QR-221 to QR-224 (chapters) and QR-225 (project documents).
+- [ ] Reference links opened and recorded in the reference check register.
+- [ ] Revision Summary table in the Submission Report matches the repository.
+- [ ] Mapping table (Markdown section to Study Guide and Test Bank, PPT, and video) filled with real numbers.
+- [ ] Repository evidence: URL, snapshot date, latest commit identifier, and links to commits and pull requests.
 - [ ] Readable PDF of the content.
-- [ ] Project Log and Personal Logs with light-theme screenshots.
 - [ ] ZIP extracted into a clean folder and checked.
 
-If the Stage 1 score is below 80%, the lecturer's policy allows one resubmission with a report; the resubmission score is capped at 80%. Decision task: S2-18 in the [Master Task List](master-task-list.md).
+The Stage 1 redo rule: if the Stage 1 score is below 80%, the lecturer's policy allows one resubmission with a report; the resubmission score is capped at 80%. Decision task S2-18 in the [Master Task List](master-task-list.md).
 
 ### Peer-Review Record (to be completed by Brian)
 
 | Field | Entry |
 |---|---|
 | Topic reviewed | Chapter 2, Symbolic AI |
-| Version reviewed | 1.1 |
+| Version reviewed | 2.0 |
 | Author | Gandhi Bestin Dhammananda |
 | Reviewer | Brian Djoni Suzanna |
 | Review date | (reviewer fills in) |
 | What was checked | (reviewer fills in) |
 | Findings | (reviewer fills in) |
 | Final outcome | Pending |
-| Record stored at | `quality/reviews/detailed review Stage 1 fix/QR-122-I01` |
+| Record stored at | `quality/reviews/detailed-review-Stage2-V2.0-DRAFT/QR-222-I01-DRAFT.md` |
 
 ## 10. Team Responsibilities
 
@@ -237,7 +270,7 @@ These registers are templates. Fill them in with real links and dates. Do not fi
 
 ## 12. AI-Use Documentation
 
-The team records AI assistance in the shared AI-use log and in personal logs. The rebuilt chapters were drafted with an AI assistant from the lecturer's slides. Each author must read their chapter, check its facts, and record the check in their personal log. Do not copy AI output without checking.
+The team records AI assistance in the shared AI-use log and in personal logs. The rebuilt chapters and their V2.0 development were drafted with an AI assistant from the lecturer's slides and standard sources. Each author must read their chapter, check its facts, open the references, and record the check in their personal log. Do not copy AI output without checking.
 
 | Record | File |
 |---|---|
@@ -267,10 +300,15 @@ Workflow:
 | Slides for Chapters 5 and 6 (course numbering) are only outlines, so explanations come from general knowledge | Reviewer compares with the lecture notes; authors check references |
 | References not yet opened | Mark them "Not opened" and check before submission |
 | Little time before Stage 2 | Use the day-by-day schedule; Brian reviews while authors fix |
+| The V2.0 chapters are long (about 8,000 to 10,000 words each) and authors may not read them closely | Each author reads the whole chapter, checks the calculations with a calculator, and signs their personal log; the reviewer samples at least all numbers and all answers |
+| Links in the reference lists may not open or may not support the claim | Record each check in the reference check register; replace a bad link before submission |
+| Figures break on GitHub because of a wrong file name or missing `assets/` folder | Copy each chapter file and its `assets/` folder together; check the preview |
+| Videos, PPT, and Study Guide drift away from the Markdown | Fill the mapping table; correct the Markdown first |
+| Online tools in the activities change or are blocked | Every activity has a version that needs no software |
 | Uneven workload | Check at every meeting and share tasks |
 | Fake or unchecked evidence | Review reports and logs are signed or dated by the person who did the work |
 
-Quality checks use the [Quality Standards V2.1](../quality/reviews/quality-standards-V2.1.md).
+Quality checks use the [Quality Standards V2.2](../quality/reviews/quality-standards-V2.2.md). Section 23 holds the Stage 2 criteria for Markdown V2.0.
 
 ## 15. Response to the Stage 1 Lecturer Feedback
 
@@ -281,7 +319,7 @@ Quality checks use the [Quality Standards V2.1](../quality/reviews/quality-stand
 | 3 | The task list must cover all assignments of the three stages | Stage 1, Stage 1 fix, Stage 2, Stage 3, and ongoing tasks | [Master Task List](master-task-list.md#master-task-list) | Done; Stage 3 to check against the assignment |
 | 4 | Sensible column widths | Tables shortened to seven columns or fewer | Master Task List | Done |
 | 5 | Review PPT2024 and three previous-year projects before deciding the structure | The structure now follows the lecturer's four course chapters. The previous-year review is task S2-17. | Module Outline; S2-17 | Structure done; previous-year review **not yet done** |
-| 6 | GitHub Markdown shows the complete structure and at least one full chapter | Module Outline v2.0 lists all sections; all four chapters exist | [Module Outline](module-outline.md) | Done; GitHub rendering to confirm |
+| 6 | GitHub Markdown shows the complete structure and at least one full chapter | Module Outline v3.0 lists all sections; all four chapters exist as V2.0 | [Module Outline](module-outline.md) | Done; GitHub rendering to confirm |
 | 7 | Detailed logs with light-theme screenshots | Project Log and Personal Logs (S2-13, S2-14) | Project Log | **Open** (human task) |
 | 8 | Redo policy: below 80% allows one resubmission with a report, capped at 80% | Decision task S2-18 | Master Task List | Open |
 
