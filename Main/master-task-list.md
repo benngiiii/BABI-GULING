@@ -2,273 +2,291 @@
 
 **Babi Guling – AI Overview**
 
-> **Version:** v4.0 (Stage 2 update: Markdown V2.0 rewritten around the lecturer's topics; covers Stages 1, 2, and 3)
-> **Last updated:** 2026-11-05
+> **Version:** v1.2 (revised in response to the findings of [QR-006-I01](../quality/reviews/detailed%20reviews/QR-006-I01.md), the initial review of v1.1)
+> **Last updated:** 2026-10-23
 
 ## Table of Contents
 
-* [Team Members](#team-members)
-* [Strengths](#strengths)
-* [Responsibilities Based on Roles](#responsibilities-based-on-roles)
-* [Five Content Parts of the Project](#five-content-parts-of-the-project)
-* [Deliverable Ownership](#deliverable-ownership)
-* [Detailed Schedule](#detailed-schedule)
-* [Master Task List](#master-task-list)
-
-  * [Status Labels](#status-labels)
-  * [Stage 1 Tasks](#stage-1-tasks-due-oct-24-internal-oct-23)
-  * [Stage 1 Fix Tasks](#stage-1-fix-tasks-rebuild-on-the-lecturers-four-course-chapters)
-  * [Stage 2 Tasks](#stage-2-tasks-due-nov-7-2359-beijing-internal-nov-7-1800)
-  * [Stage 3 Tasks](#stage-3-tasks-due-nov-28-internal-nov-24)
-  * [Ongoing Tasks](#ongoing-tasks)
-  * [How This List Is Maintained](#how-this-list-is-maintained)
-* [Project Purpose](#project-purpose)
-* [Workflow](#workflow)
-* [Rough Plan](#rough-plan)
-* [Revision History](#revision-history)
+- [Team Members](#team-members)
+- [Strengths](#strengths)
+- [Responsibilities Based on Roles](#responsibilities-based-on-roles)
+- [Deliverable Ownership](#deliverable-ownership)
+- [Master Task List](#master-task-list)
+  - [Status Labels](#status-labels)
+  - [Stage 1 Tasks](#stage-1-tasks-due-oct-24-internal-oct-23)
+  - [Stage 2 Tasks](#stage-2-tasks-due-nov-7-internal-nov-4)
+  - [Stage 3 Tasks](#stage-3-tasks-due-nov-28-internal-nov-24)
+  - [Ongoing Tasks](#ongoing-tasks)
+  - [How This List Is Maintained](#how-this-list-is-maintained)
+- [Project Purpose](#project-purpose)
+- [Workflow](#workflow)
+- [Rough Plan](#rough-plan)
+- [Revision History](#revision-history)
 
 ## Team Members
 
-| # | Name                      | Chinese Name | Student ID | Role                 |
-| - | ------------------------- | ------------ | ---------- | -------------------- |
-| 1 | Benedict Subhata          | 王志伟          | 1820262181 | Visual Design Lead   |
-| 2 | Brian Djoni Suzanna       | 吴梓诚          | 1820262162 | Quality Lead         |
-| 3 | Gandhi Bestin Dhammananda | 熊特友          | 1820262168 | Video Lead           |
-| 4 | Jonathan Sugianto         | 蔡德辉          | 1820262245 | CIO and Content Lead |
-| 5 | Joseph Lokman             | 骆韦铨          | 1820262233 | CEO                  |
+| # | Name | Chinese Name | Student ID | Role |
+|---|------|--------------|------------|------|
+| 1 | Benedict Subhata | 王志伟 | 1820262181 | Visual Design Lead |
+| 2 | Brian Djoni Suzanna | 吴梓诚 | 1820262162 | Quality Lead |
+| 3 | Gandhi Bestin Dhammananda | 熊特友 | 1820262168 | Video Lead |
+| 4 | Jonathan Sugianto | 蔡德辉 | 1820262245 | CIO and Content Lead |
+| 5 | Joseph Lokman | 骆韦铨 | 1820262233 | CEO |
 
 ## Strengths
 
-| Member                    | Strengths                                                                                          |
-| ------------------------- | -------------------------------------------------------------------------------------------------- |
-| Benedict Subhata          | Strong in problem solving, able to work under pressure, motivating the team, open-minded.          |
-| Brian Djoni Suzanna       | Familiar in programming, experienced in using AI, able to detect inaccurate details, and reliable. |
-| Gandhi Bestin Dhammananda | Cooperative, eager to learn, magnificent problem solving, creative-minded, motivator.              |
-| Jonathan Sugianto         | Reliable person, good time management, detail-oriented, structured in any form of task.            |
-| Joseph Lokman             | Patient, familiar with programming and CS, high responsibility and leadership, logical person.     |
+| Member | Strengths |
+|--------|-----------|
+| Benedict Subhata | Strong in problem solving, able to work under pressure, motivating the team, open-minded. |
+| Brian Djoni Suzanna | Familiar in programming, experienced in using AI, able to detect inaccurate details, and reliable. |
+| Gandhi Bestin Dhammananda | Cooperative, eager to learn, magnificent problem solving, creative-minded, motivator. |
+| Jonathan Sugianto | Reliable person, good time management, detail-oriented, structured in any form of task. |
+| Joseph Lokman | Patient, familiar with programming and CS, high responsibility and leadership, logical person. |
 
 ## Responsibilities Based on Roles
 
 This section gives the general overview of each role. Specific tasks, deliverables, and deadlines are tracked in the [Master Task List](#master-task-list).
 
-| Member                    | Responsibilities                                                                                                                 |
-| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Benedict Subhata          | Visual design product, word documents, study module, and powerpoint slides.                                                      |
-| Brian Djoni Suzanna       | Independent quality review of every chapter and deliverable; keeps the Quality Standards, Review Register, README, Module Outline, and Project Plan up to date; determines whether a product needs to be revised.      |
-| Gandhi Bestin Dhammananda | Live teaching product, video content, ideas, editing, and flow of how the video should be delivered.                             |
-| Jonathan Sugianto         | Progress of the whole project, submission of the project, and compiling all types of material into a finalized format or folder. |
-| Joseph Lokman             | Recording all activities and progress, speaking on behalf of the members, and providing guidance to all members who need it.     |
-
-## Five Content Parts of the Project
-
-The project produces five content parts. Each part has its own owner, reviewer, and tasks in the [Master Task List](#master-task-list). The Markdown content is the single source for the other four parts.
-
-> **Note for the team:** This list follows the structure in the Project Plan (Sections 2 and 4–7). Compare it with the exact wording of the lecturer's assignment before submission and correct the names here if they differ.
-
-| # | Content part | Main owner | Reviewer | Stage 2 form | Task IDs |
-|--:|---|---|---|---|---|
-| 1 | Shared Markdown content (Chapters 1–4) | Chapter authors; compiled by Jonathan | Brian | Markdown V2.0 ZIP + Submission Report | F-01 to F-08, S2-01 to S2-07 |
-| 2 | Study Guide + Test Bank | Benedict | Brian | Study Guide + Test Bank (≥20 true/false, ≥20 multiple-choice, ≥6 open-ended) | S2-08, S2-09 |
-| 3 | PPT Slides | Benedict | Brian | PPT with presenter notes | S2-10 |
-| 4 | Video Tutorials | Gandhi | Brian | 1–8 MP4 videos, each ≤250 MB, plus the VideoGuide | S2-11, S2-12 |
-| 5 | Live Mini Lecture | Gandhi (whole team) | Brian | Lecture plan, two rehearsals, feedback record | S2-16 |
+| Member | Responsibilities |
+|--------|------------------|
+| Benedict Subhata | Visual design product, word documents, study module, and powerpoint slides. |
+| Brian Djoni Suzanna | Quality checks of each material uploaded by team members; determines whether one's product or material needs to be revised. |
+| Gandhi Bestin Dhammananda | Live teaching product, video content, ideas, editing, and flow of how the video should be delivered. |
+| Jonathan Sugianto | Progress of the whole project, submission of the project, and compiling all types of material into a finalized format or folder. |
+| Joseph Lokman | Recording all activities and progress, speaking on behalf of the members, and providing guidance to all members who need it. |
 
 ## Deliverable Ownership
 
-Each deliverable has one member who prepares it, one who reviews it, and one who compiles it. This separates the person doing the work from the person checking it. **Brian does not write a chapter, so he can review all of them independently.** Brian's own deliverables are reviewed by Joseph.
+Each deliverable has one member who prepares it, one who reviews it, and one who compiles it. This separates the person doing the work from the person checking it.
 
 | Deliverable | Prepared by | Reviewed by | Compiled by |
-|---|---|---|---|
-| Project Plan and Master Task List | Brian Djoni Suzanna (v2.0 update) | Joseph Lokman | Jonathan Sugianto |
-| Module Outline and README | Brian Djoni Suzanna (v2.0 update) | Joseph Lokman | Jonathan Sugianto |
-| Quality standards and review register | Brian Djoni Suzanna | Joseph Lokman | Jonathan Sugianto |
-| Chapter 1: Introduction to CS and AI | Jonathan Sugianto | Brian Djoni Suzanna | Jonathan Sugianto |
-| Chapter 2: Symbolic AI | Gandhi Bestin Dhammananda | Brian Djoni Suzanna | Jonathan Sugianto |
-| Chapter 3: Connectionist AI and Big Data | Benedict Subhata | Brian Djoni Suzanna | Jonathan Sugianto |
-| Chapter 4: Behaviorist AI | Joseph Lokman | Brian Djoni Suzanna | Jonathan Sugianto |
-| Study Guide + Test Bank | Benedict Subhata (with chapter authors) | Brian Djoni Suzanna | Jonathan Sugianto |
-| PPT Slides (with presenter notes) | Benedict Subhata | Brian Djoni Suzanna | Jonathan Sugianto |
-| Video Tutorials and VideoGuide | Gandhi Bestin Dhammananda | Brian Djoni Suzanna | Jonathan Sugianto |
+|-------------|-------------|-------------|-------------|
+| Master Task List | Benedict Subhata | Brian Djoni Suzanna | Jonathan Sugianto |
+| Chapter 1: Introduction to AI | Jonathan Sugianto | Brian Djoni Suzanna | Jonathan Sugianto |
+| Chapter 2: Types of AI | Gandhi Bestin Dhammananda | Brian Djoni Suzanna | Jonathan Sugianto |
+| Chapter 3: How Artificial Intelligence Works | Benedict Subhata | Brian Djoni Suzanna | Jonathan Sugianto |
+| Chapter 4: Applications of AI | Brian Djoni Suzanna | Brian Djoni Suzanna | Jonathan Sugianto |
+| Chapter 5: AI Ethics and Limitations | Joseph Lokman | Brian Djoni Suzanna | Jonathan Sugianto |
+| Study Guide + Test Bank (Markdown base) | Benedict Subhata (study module); chapter authors (content) | Brian Djoni Suzanna | Jonathan Sugianto |
+| PPT Slides | Benedict Subhata | Brian Djoni Suzanna | Jonathan Sugianto |
+| Video Tutorials (script, narration, editing) | Gandhi Bestin Dhammananda | Brian Djoni Suzanna | Jonathan Sugianto |
 | Live teaching presentation | Gandhi Bestin Dhammananda (with the whole team) | Brian Djoni Suzanna | Not applicable |
-| GitHub repository, branches, Issues | Joseph Lokman | Brian Djoni Suzanna | Jonathan Sugianto |
-| Project Log and meeting notes | Joseph Lokman | Jonathan Sugianto | Joseph Lokman |
-| Personal Logs | Each member | Joseph Lokman | Jonathan Sugianto |
-| Project and personal AI-use records | Joseph Lokman (project); each member (personal) | Brian Djoni Suzanna | Jonathan Sugianto |
-| Submission folder, ZIP, and Submission Report for each stage | Jonathan Sugianto | Brian Djoni Suzanna | Jonathan Sugianto |
+| GitHub repository structure, branches, and Issues | Joseph Lokman | Brian Djoni Suzanna | Jonathan Sugianto |
+| Activity and progress records, meeting notes | Joseph Lokman | Jonathan Sugianto | Joseph Lokman |
+| Final submission folder for each stage | Jonathan Sugianto | Brian Djoni Suzanna | Jonathan Sugianto |
 
-Jonathan is both preparer and compiler of Chapter 1, so Brian's review is the independent check on it. The chapter owners are proposals and can be changed by the team.
+Brian reviews every deliverable, including Chapter 4, which he also prepares. The team confirmed this arrangement.
 
-## Detailed Schedule
-
-Times are Beijing time. Stage 2 is due **Saturday 7 November 2026, 23:59**; the internal deadline is 18:00 the same day so there is time to fix a failed upload. The Stage 2 log period is 25 October – 7 November.
-
-### Stage 2: day by day
-
-| Date | Who | Work | Output |
-|---|---|---|---|
-| Thu 5 Nov | Chapter authors | Read the V2.0 chapter, recompute the worked examples, check the facts, copy the chapter folder **with its `assets/` folder** to the Stage 2 branch, and open a pull request | 4 pull requests |
-| Thu 5 Nov | Brian | Start the Quality Review of Chapters 1–4 (version 2.0) with the Quality Standards V2.2 checklist (Section 23); merge the updated README, Module Outline, Project Plan, and this list | Review reports signed by Brian |
-| Thu 5 Nov | Jonathan | Open every reference link and fill the reference check register (share the 47 references among the authors) | Register with real results |
-| Thu 5 Nov | Benedict | Study Guide + Test Bank first version; PPT outline | Test-bank draft |
-| Thu 5 Nov | Gandhi | Video scripts (1–8 videos), VideoGuide outline | Scripts |
-| Fri 6 Nov | Brian | Finish chapter reviews; record findings in the Review Register | Review reports, register |
-| Fri 6 Nov | Chapter authors | Fix every Major and Minor finding in the Markdown | Corrected chapters |
-| Fri 6 Nov | Benedict, Gandhi | PPT with presenter notes; record and compress videos (each ≤250 MB) | PPT, MP4 files |
-| Fri 6 Nov | Joseph | Project Log with light-theme screenshots; collect Personal Logs | Project Log, Personal Logs |
-| Sat 7 Nov, by 12:00 | Brian | Re-review corrected chapters; check Study Guide + Test Bank counts and answer keys | Re-review records |
-| Sat 7 Nov, by 15:00 | Jonathan | Compile Markdown V2.0 ZIP, Study Guide + Test Bank, PPT, videos, VideoGuide, logs, Submission Report | Stage 2 folder |
-| Sat 7 Nov, by 17:00 | Brian | Extract the ZIP in a clean folder; check links, images, file sizes | Extraction test record |
-| Sat 7 Nov, 18:00 | Jonathan, Joseph | Submit; Joseph confirms the receipt | Stage 2 submission |
-
-### Stage 3: week by week
-
-| Dates | Work | Owner |
-|---|---|---|
-| 8–10 Nov | Plan the live class; collect the Stage 2 score and lecturer feedback; decide whether a resubmission is needed (see S2-18) | Joseph, Jonathan |
-| 9–14 Nov | Two live-teaching rehearsals with feedback; run learner testing of the test bank with someone outside the team | Gandhi, Joseph |
-| By 3 days after the live class | Collect class and lecturer feedback; list improvements | Joseph |
-| 15–20 Nov | Apply improvements to the Markdown first, then to every affected deliverable | Each deliverable owner |
-| 21–22 Nov | Final quality review of all deliverables | Brian |
-| 23–24 Nov | Final consistency check; internal deadline Nov 24 | Brian, Joseph |
-| 25–26 Nov | Compile the final folder and ZIP; extraction test | Jonathan, Brian |
-| Sat 28 Nov | Submit Stage 3 | Jonathan, Joseph |
 
 ## Master Task List
+
 
 ### Status Labels
 
 | Label | Meaning |
-|---|---|
+|-------|---------|
 | ⬜ Not Started | The task has been assigned but work has not begun. |
 | 🔄 In Progress | Work has started but is not yet complete. |
-| 🔍 Awaiting Review | The task output is finished and waits for the reviewer's signed review. |
-| ✅ Completed | The outcome is achieved and the evidence is in the Evidence column. |
-| ✏️ Needs Revision | The output requires corrections or improvements. |
+| ✅ Completed | The assigned task has been completed. |
+| ✏️ Needs Revision | The task output requires corrections or improvements. |
 | ⛔ Blocked | The task cannot continue until another issue is resolved. |
-| ❓ To confirm | Status not yet verified. The owner must replace it with another label. |
+| ❓ To confirm | Current status has not yet been verified. The responsible member must replace this with one of the five labels above. |
+
 
 ### Stage 1 Tasks (due Oct 24, internal Oct 23)
 
-> **History.** These tasks record the first Stage 1 build, which used five chapters. The rebuilt four-chapter structure is tracked in the Stage 1 Fix Tasks below.
+Content tasks (drafting, review, revision) are scheduled to finish by the internal deadline on Oct 23. Compiling and submission use the remaining time before the official deadline on Oct 24.
 
-Stage 1 has been completed. All tasks below are marked as completed following the completion of the Stage 1 work and submission process.
+| Task ID | Task | Responsible | Reviewer / Compiler | Expected Deliverable | Deadline | Status | Evidence |
+|---------|------|-------------|---------------------|----------------------|----------|--------|----------|
+| S1-01 | Write the project plan sections: team members, strengths, roles, project purpose, workflow, and rough plan | Benedict | Review: Brian | Sections of `master-task-list.md` | Oct 23 | ✅ Completed | [master-task-list.md](master-task-list.md) |
+| S1-02 | Revise Master Task List (v1.1 → v1.2) to address the findings of QR-006-I01: add explicit Stage 1 submission tasks, confirm ownership, fix evidence, review history, and navigation | Benedict | Review: Brian | Revised `master-task-list.md` (v1.2) | Oct 23 | ✅ Completed | [Master Task List](/master-task-list.md) |
+| S1-03 | Initial quality review of the Master Task List v1.1 (QR-006-I01) | Brian | Compile: Jonathan | Quality review report `QR-006-I01.md` | Oct 23 | ✅ Completed | [QR-006-I01.md](../quality/reviews/detailed%20reviews/QR-006-I01.md) |
+| S1-04 | Confirm task owners, deadlines, and current statuses with each responsible member | Jonathan | Review: Joseph | Confirmed statuses in this table | Oct 23 | ✅ Completed  | [master-task-list](master-task-list.md) |
+| S1-05 | Recheck the revised Master Task List (v1.2) against the QR-006-I01 findings | Brian | Compile: Jonathan | Recheck record and updated review history | Oct 23 (evening) | ✅ Completed | [Revised Master Plan List](../quality/reviews/detailed%20reviews/QR-006-I02.md) |
+| S1-06 | Set up the GitHub repository: folder per part, branch rules, pull request process, and Issues | Joseph | Review: Brian | Repository structure and Issues | Oct 23 | ✅ Completed | [GitHub repository: BABI-GULING](https://github.com/benngiiii/BABI-GULING); folders `Main/`, `quality/`, `logs/` |
+| S1-07 | Prepare the Markdown template and one sample section to set the writing style | Jonathan | Review: Brian | Template file and sample section | Oct 23 | ✅ Completed | [Chapter 1 draft](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/introduction-to-artificial-Intelligence.md) |
+| S1-08 | Draft Chapter 1: Introduction to AI | Jonathan | Review: Brian | Chapter 1 draft (Markdown) | Oct 23 | ✅ Completed | [Chapter 1 draft](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/introduction-to-artificial-Intelligence.md) |
+| S1-09 | Draft Chapter 2: Types of AI | Gandhi | Review: Brian | Chapter 2 draft (Markdown) | Oct 23 | ✅ Completed | [Chapter 2 draft](study-guide/v1.0/chapter-2-types-of-artificial-intelligence/types-of-artificial-intelligence.md) |
+| S1-10 | Draft Chapter 3: How Artificial Intelligence Works (data, algorithms, machine learning, training and inference, workflow diagram) | Benedict | Review: Brian | Chapter 3 draft (Markdown) | Oct 23 | ✅ Completed | [Chapter 3 draft](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/how-artificial-intelligence-works.md) |
+| S1-11 | Outline Chapter 4: Applications of AI, and Chapter 5: AI Ethics and Limitations | Brian, Joseph | Review: Brian | Chapter 4 and 5 outlines (Markdown) | Oct 23 | ✅ Completed | [Chapter 4 draft](study-guide/v1.0/chapter-4-applications-of-aI/applications-of-aI.md), [Chapter 5 draft](study-guide/v1.0/chapter-5-aI-ethics-and-limitations/aI-ethics-and-limitations.md) |
+| S1-12 | Quality review of all Stage 1 drafts and outlines | Brian | Compile: Jonathan | Review reports with approved or needs revision result for each item | Oct 23 | ✅ Completed | [review-register.md](../quality/reviews/review-register.md) |
+| S1-13 | Apply corrections from the quality review | Each chapter author | Review: Brian | Corrected drafts and outlines | Oct 23 (evening) | ✅ Completed | [Revision Logs](../quality/reviews/review-register.md) |
+| S1-14 | Record team activities, meeting notes, and progress for Stage 1 | Joseph | Review: Jonathan | Activity record | Oct 23 | ✅ Completed | [Project-logs](https://github.com/benngiiii/BABI-GULING/blob/AI-Overview/Main/project-plan.md) |
+| S1-15 | Prepare the Stage 1 Submission Report | Jonathan | Review: Brian | Submission Report | Oct 23 (evening) | ✅ Completed | [In Master Task List](https://github.com/benngiiii/BABI-GULING/blob/AI-Overview/Main/master-task-list.md) |
+| S1-16 | Prepare the Markdown source snapshot with its supporting assets (images, diagrams, linked files) | Jonathan | Review: Brian | Markdown source snapshot folder with assets | Oct 24 (morning) | ✅ Completed | [Assets in Chapter](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/assets/) |
+| S1-17 | Export the readable PDF of the Markdown content and check layout, images, and links | Benedict | Review: Brian | Readable PDF | Oct 24 (morning) | 🔄 In Progress | — |
+| S1-18 | Collect and organize Repository Evidence (structure, branches, pull requests, Issues, commits) | Joseph | Review: Jonathan | Repository Evidence file or folder | Oct 23 (evening) | ✅ Completed | [Commits Log](https://github.com/benngiiii/BABI-GULING/commits/AI-Overview/) |
+| S1-19 | Prepare the required project AI-use record and each member's personal AI-use record according to the assignment rules | Joseph (project record); each member (personal record) | Review: Brian | Project and personal AI-use records | Oct 23 (evening) | ✅ Completed | [stage1-ai-use-log.md](../logs/stage1-ai-use-log.md) (team log exists; member confirmation pending) |
+| S1-20 | Compile the Stage 1 submission folder and run a final check | Jonathan | Review: Brian | Final Stage 1 folder with only corrected versions | Oct 24 (morning) | 🔄 In Progress | [final-submission-audit.md](../quality/reviews/final-submission-audit.md) (audit in progress) |
+| S1-21 | Package the required files into the specified ZIP | Jonathan | Review: Brian | Stage 1 ZIP file | Oct 24 (morning) | 🔄 In Progress | — |
+| S1-22 | Extract the ZIP into a separate folder and check that all files, links, and assets work | Brian | Confirm: Joseph | Extraction test record | Oct 24 (morning) | 🔄 In Progress | — |
+| S1-23 | Submit Stage 1 | Jonathan | Confirm: Joseph | Stage 1 submission | Oct 24 | ⬜ Not Started | — |
 
-| Task ID | Task                                                                                                                                                                                | Responsible                                            | Reviewer / Compiler | Expected Deliverable                                                | Deadline         | Status      | Evidence                                                                                                                                                                                     |
-| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ------------------- | ------------------------------------------------------------------- | ---------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| S1-01   | Write the project plan sections: team members, strengths, roles, project purpose, workflow, and rough plan                                                                          | Benedict                                               | Review: Brian       | Sections of `master-task-list.md`                                   | Oct 23           | ✅ Completed | [master-task-list.md](master-task-list.md)                                                                                                                                                   |
-| S1-02   | Revise Master Task List (v1.1 → v1.2) to address the findings of QR-006-I01: add explicit Stage 1 submission tasks, confirm ownership, fix evidence, review history, and navigation | Benedict                                               | Review: Brian       | Revised `master-task-list.md` (v1.2)                                | Oct 23           | ✅ Completed | [Master Task List](master-task-list.md)                                                                                                                                                      |
-| S1-03   | Initial quality review of the Master Task List v1.1 (QR-006-I01)                                                                                                                    | Brian                                                  | Compile: Jonathan   | Quality review report `QR-006-I01.md`                               | Oct 23           | ✅ Completed | [QR-006-I01.md](../quality/reviews/detailed%20reviews/QR-006-I01.md)                                                                                                                         |
-| S1-04   | Confirm task owners, deadlines, and current statuses with each responsible member                                                                                                   | Jonathan                                               | Review: Joseph      | Confirmed statuses in this table                                    | Oct 23           | ✅ Completed | [master-task-list](master-task-list.md)                                                                                                                                                      |
-| S1-05   | Recheck the revised Master Task List (v1.2) against the QR-006-I01 findings                                                                                                         | Brian                                                  | Compile: Jonathan   | Recheck record and updated review history                           | Oct 23 (evening) | ✅ Completed | [QR-006-I02.md](../quality/reviews/detailed%20reviews/QR-006-I02.md)                                                                                                                         |
-| S1-06   | Set up the GitHub repository: folder per part, branch rules, pull request process, and Issues                                                                                       | Joseph                                                 | Review: Brian       | Repository structure and Issues                                     | Oct 23           | ✅ Completed | [GitHub repository: BABI-GULING](https://github.com/benngiiii/BABI-GULING); folders `Main/`, `quality/`, `logs/`                                                                             |
-| S1-07   | Prepare the Markdown template and one sample section to set the writing style                                                                                                       | Jonathan                                               | Review: Brian       | Template file and sample section                                    | Oct 23           | ✅ Completed | [Chapter 1 draft](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/introduction-to-artificial-Intelligence.md)                                                             |
-| S1-08   | Draft Chapter 1: Introduction to AI                                                                                                                                                 | Jonathan                                               | Review: Brian       | Chapter 1 draft (Markdown)                                          | Oct 23           | ✅ Completed | [Chapter 1 draft](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/introduction-to-artificial-Intelligence.md)                                                             |
-| S1-09   | Draft Chapter 2: Types of AI                                                                                                                                                        | Gandhi                                                 | Review: Brian       | Chapter 2 draft (Markdown)                                          | Oct 23           | ✅ Completed | [Chapter 2 draft](study-guide/v1.0/chapter-2-types-of-artificial-intelligence/types-of-artificial-intelligence.md)                                                                           |
-| S1-10   | Draft Chapter 3: How Artificial Intelligence Works (data, algorithms, machine learning, training and inference, workflow diagram)                                                   | Benedict                                               | Review: Brian       | Chapter 3 draft (Markdown)                                          | Oct 23           | ✅ Completed | [Chapter 3 draft](study-guide/v1.0/chapter-3-how-artificial-intelligence-works/how-artificial-intelligence-works.md)                                                                         |
-| S1-11   | Outline Chapter 4: Applications of AI, and Chapter 5: AI Ethics and Limitations                                                                                                     | Brian, Joseph                                          | Review: Brian       | Chapter 4 and 5 outlines (Markdown)                                 | Oct 23           | ✅ Completed | [Chapter 4 draft](study-guide/v1.0/chapter-4-applications-of-aI/applications-of-aI.md), [Chapter 5 draft](study-guide/v1.0/chapter-5-aI-ethics-and-limitations/aI-ethics-and-limitations.md) |
-| S1-12   | Quality review of all Stage 1 drafts and outlines                                                                                                                                   | Brian                                                  | Compile: Jonathan   | Review reports with approved or needs revision result for each item | Oct 23           | ✅ Completed | [review-register.md](../quality/reviews/review-register.md)                                                                                                                                  |
-| S1-13   | Apply corrections from the quality review                                                                                                                                           | Each chapter author                                    | Review: Brian       | Corrected drafts and outlines                                       | Oct 23 (evening) | ✅ Completed | [Revision Logs](../quality/reviews/review-register.md)                                                                                                                                       |
-| S1-14   | Record team activities, meeting notes, and progress for Stage 1                                                                                                                     | Joseph                                                 | Review: Jonathan    | Activity record                                                     | Oct 23           | ✅ Completed | [Project logs](https://github.com/benngiiii/BABI-GULING/blob/AI-Overview/Main/project-plan.md)                                                                                               |
-| S1-15   | Prepare the Stage 1 Submission Report                                                                                                                                               | Jonathan                                               | Review: Brian       | Submission Report                                                   | Oct 23 (evening) | ✅ Completed | [Master Task List](../master-task-list.md)                                                                                                                                                   |
-| S1-16   | Prepare the Markdown source snapshot with its supporting assets (images, diagrams, linked files)                                                                                    | Jonathan                                               | Review: Brian       | Markdown source snapshot folder with assets                         | Oct 24 (morning) | ✅ Completed | [Assets in Chapter](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/assets/)                                                                                              |
-| S1-17   | Export the readable PDF of the Markdown content and check layout, images, and links                                                                                                 | Benedict                                               | Review: Brian       | Readable PDF                                                        | Oct 24 (morning) | ✅ Completed | Stage 1 submission package                                                                                                                                                                   |
-| S1-18   | Collect and organize Repository Evidence (structure, branches, pull requests, Issues, commits)                                                                                      | Joseph                                                 | Review: Jonathan    | Repository Evidence file or folder                                  | Oct 23 (evening) | ✅ Completed | [Commits Log](https://github.com/benngiiii/BABI-GULING/commits/AI-Overview/)                                                                                                                 |
-| S1-19   | Prepare the required project AI-use record and each member's personal AI-use record according to the assignment rules                                                               | Joseph (project record); each member (personal record) | Review: Brian       | Project and personal AI-use records                                 | Oct 23 (evening) | ✅ Completed | [stage1-ai-use-log.md](../logs/stage1-ai-use-log.md)                                                                                                                                         |
-| S1-20   | Compile the Stage 1 submission folder and run a final check                                                                                                                         | Jonathan                                               | Review: Brian       | Final Stage 1 folder with only corrected versions                   | Oct 24 (morning) | ✅ Completed | Stage 1 final submission package                                                                                                                                                             |
-| S1-21   | Package the required files into the specified ZIP                                                                                                                                   | Jonathan                                               | Review: Brian       | Stage 1 ZIP file                                                    | Oct 24 (morning) | ✅ Completed | Stage 1 ZIP submission                                                                                                                                                                       |
-| S1-22   | Extract the ZIP into a separate folder and check that all files, links, and assets work                                                                                             | Brian                                                  | Confirm: Joseph     | Extraction test record                                              | Oct 24 (morning) | ✅ Completed | Stage 1 extraction test                                                                                                                                                                      |
-| S1-23   | Submit Stage 1                                                                                                                                                                      | Jonathan                                               | Confirm: Joseph     | Stage 1 submission                                                  | Oct 24           | ✅ Completed | Stage 1 submission                                                                                                                                                                           |
+# Stage 1 Submission Report
 
-### Stage 1 Fix Tasks (rebuild on the lecturer's four course chapters)
 
-| ID | Task | Owner | Reviewer | Deadline | Status | Evidence |
-|---|---|---|---|---|---|---|
-| F-01 | Read and fact-check Chapter 1 (Introduction to CS and AI), then place it in `Main/study-guide/v1.0/` | Jonathan | Brian | Nov 5 | 🔍 Awaiting Review | Chapter 1 file |
-| F-02 | Read and fact-check Chapter 2 (Symbolic AI), then place it in the repository | Gandhi | Brian | Nov 5 | 🔍 Awaiting Review | Chapter 2 file |
-| F-03 | Read and fact-check Chapter 3 (Connectionist AI and Big Data), then place it in the repository | Benedict | Brian | Nov 5 | 🔍 Awaiting Review | Chapter 3 file |
-| F-04 | Read and fact-check Chapter 4 (Behaviorist AI), then place it in the repository | Joseph | Brian | Nov 5 | 🔍 Awaiting Review | Chapter 4 file |
-| F-05 | Merge README, Module Outline, Project Plan, Master Task List, and Quality Standards V2.1 | Brian | Joseph | Nov 5 | 🔍 Awaiting Review | Project documents |
-| F-06 | Signed Quality Review of Chapters 1–4: QR-121-I01 to QR-124-I01 | Brian | Joseph | Nov 6 | ⬜ Not Started | Signed reports; Review Register |
-| F-07 | Joseph's review of the project documents: QR-125-I01 | Joseph | Jonathan | Nov 6 | ⬜ Not Started | Signed report |
-| F-08 | Regenerate `stage1_Content.md` from the final chapters | Jonathan | Brian | Nov 6 | ⬜ Not Started | `stage1_Content.md` |
+| Item | Details |
+|------|---------|
+| Team | Babi Guling |
+| Module | AI Overview |
+| Stage | Stage 1 (official deadline: 24 October 2026) |
+| Report date | 23 October 2026 |
+| Prepared by | Jonathan Sugianto (CIO and Content Lead) |
+| Reviewed by | Brian Djoni Suzanna (Quality Lead) — [TO CONFIRM after review] |
+| GitHub repository | https://github.com/benngiiii/BABI-GULING |
+| Submitted branch | [AI-Overview](https://github.com/benngiiii/BABI-GULING/blob/AI-Overview) |
 
-### Stage 2 Tasks (due Nov 7, 23:59 Beijing; internal Nov 7, 18:00)
+---
 
-| ID | Task | Owner | Reviewer | Deadline | Status | Evidence |
-|---|---|---|---|---|---|---|
-| S2-01 | Chapter 1 V2.0 (rewritten 5 Nov on the lecturer's topics): 5 topics, 14 explained figures, 14 *Check yourself* questions, 3 hands-on activities, 17 questions. Owner reads every topic, fact-checks it, and signs the personal log. | Jonathan | Brian | Nov 6 | 🔍 Awaiting Review | `study-guide/v2.0/chapter-1-introduction-to-cs-and-ai/`; QR-221-I01 |
-| S2-02 | Chapter 2 V2.0 (rewritten 5 Nov on the lecturer's topics): 6 topics, 13 explained figures, 18 *Check yourself* questions, 2 hands-on activities, 17 questions. Owner reads every topic, fact-checks it, and signs the personal log. | Gandhi | Brian | Nov 6 | 🔍 Awaiting Review | `study-guide/v2.0/chapter-2-symbolic-ai/`; QR-222-I01 |
-| S2-03 | Chapter 3 V2.0 (rewritten 5 Nov on the lecturer's topics): 12 topics (Part A and Part B), 22 explained figures, 22 *Check yourself* questions, 1 hands-on activity, 17 questions. Owner reads every topic, fact-checks it, and signs the personal log. | Benedict | Brian | Nov 6 | 🔍 Awaiting Review | `study-guide/v2.0/chapter-3-connectionist-ai-and-big-data/`; QR-223-I01 |
-| S2-04 | Chapter 4 V2.0 (rewritten 5 Nov on the lecturer's topics): 7 topics, 17 explained figures, 12 *Check yourself* questions, 1 hands-on activity, a module wrap-up, 17 questions. Owner reads every topic, fact-checks it, and signs the personal log. | Joseph | Brian | Nov 6 | 🔍 Awaiting Review | `study-guide/v2.0/chapter-4-behaviorist-ai/`; QR-224-I01 |
-| S2-05 | Open every reference link (47 references), fill the reference check register, and change "not opened" to "opened" with the date; replace any bad link | Chapter authors | Brian | Nov 6 | ⬜ Not Started | Reference check register; updated references |
-| S2-06 | Quality Review of the V2.0 chapters with signed reports QR-221-I01 to QR-224-I01 (draft plans exist; the decision stays Pending Review until Brian signs) | Brian | Joseph | Nov 6 | ⬜ Not Started | Signed QR-221 to QR-224; Review Register |
-| S2-07 | Fix every finding from S2-06 in the Markdown | Chapter authors | Brian | Nov 7, 12:00 | ⬜ Not Started | Commits; re-review records |
-| S2-08 | Study Guide: summaries, key terms, and practice per chapter | Benedict | Brian | Nov 6 | ⬜ Not Started | Study Guide file |
-| S2-09 | Test Bank: ≥20 true/false, ≥20 multiple-choice, ≥6 open-ended, with answer keys | Benedict | Brian | Nov 6 | ⬜ Not Started | Test Bank file |
-| S2-10 | PPT Slides with presenter notes for all chapters | Benedict | Brian | Nov 6 | ⬜ Not Started | .pptx file |
-| S2-11 | Video scripts, recording, and editing (1–8 MP4 files, each ≤250 MB) | Gandhi | Brian | Nov 6 | ⬜ Not Started | MP4 files; file-size check |
-| S2-12 | VideoGuide document for the videos | Gandhi | Brian | Nov 6 | ⬜ Not Started | VideoGuide file |
-| S2-13 | Project Log with detailed entries and light-theme screenshots (25 Oct – 7 Nov) | Joseph | Jonathan | Nov 6 | 🔄 In Progress | Project Log file |
-| S2-14 | Personal Logs from each member with light-theme screenshots | Each member | Joseph | Nov 6 | ⬜ Not Started | Five Personal Logs |
-| S2-15 | Stage 2 AI-use records (project and personal) | Joseph; each member | Brian | Nov 6 | ⬜ Not Started | AI-use records |
-| S2-16 | Prepare the live teaching session and hold two rehearsals with feedback | Gandhi (whole team) | Brian | Before the live class | ⬜ Not Started | Rehearsal notes |
-| S2-17 | Review three previous-year projects (symbolic, connectionist, behaviorist) and record what the team adopted | Benedict, Gandhi, Joseph | Brian | Nov 6 | ⬜ Not Started | Notes in the Project Log |
-| S2-18 | If the Stage 1 score is below 80%: decide on the one allowed resubmission and prepare its report (score capped at 80%) | Joseph | Jonathan | When the score is released | ❓ To confirm | Decision record |
-| S2-19 | Compile Markdown V2.0 ZIP, Submission Report, and the Stage 2 folder | Jonathan | Brian | Nov 7, 15:00 | ⬜ Not Started | Stage 2 folder |
-| S2-22 | Copy the V2.0 chapter folders (Markdown plus `assets/`), shared glossary, `stage2_Content.md`, and the updated project documents to the Stage 2 branch; check in the GitHub preview that all 66 numbered figures and the banners show, that the navigation links between chapters work, and that the callout boxes and collapsible blocks render | Jonathan (with each author) | Brian | Nov 5 | ⬜ Not Started | Pull requests; screenshots |
-| S2-23 | Joseph's review of the updated project documents: QR-225-I01 | Joseph | Jonathan | Nov 6 | ⬜ Not Started | Signed QR-225-I01 |
-| S2-24 | Render the PDF of the final Markdown (no PDF is included in this package) and check that figures, tables, and hidden answers read well; re-render if the Markdown changes | Jonathan | Brian | Nov 6 | ⬜ Not Started | PDF file |
-| S2-27 | Read each chapter in the GitHub preview from top to bottom on a laptop and on a phone, in the light and the dark theme; note any layout problem (banner, tables, callouts, collapsible blocks, figures) and any figure whose text is too small | Benedict (with each chapter author) | Brian | Nov 6 | ⬜ Not Started | Notes in the Project Log |
-| S2-28 | Confirm the visual style with the team (banner design, colours, block names in `Main/style-guide.md`) or ask for changes | Whole team | Brian | Nov 6 | ❓ To confirm | Team decision recorded |
-| S2-29 | A Chinese-speaking teammate or teacher checks the Chinese key-term tables in the four chapters | Whole team | Brian | Nov 6 | ⬜ Not Started | Corrections or confirmation |
-| S2-30 | Recompute by hand the worked examples of each chapter (for example the Q-learning table, gradient descent, the perceptron table) and compare the numbers with the chapter | Chapter authors | Brian | Nov 6 | ⬜ Not Started | Notes in the personal log |
-| S2-25 | Complete the Submission Report: repository URL, snapshot date, latest commit, Revision Summary table, review results, mapping table, evidence, and gaps (start from the drafts) | Jonathan | Brian | Nov 7, 12:00 | ⬜ Not Started | Submission Report |
-| S2-26 | Compare every Stage 2 file name and requirement with the lecturer's assignment text and correct this list and the Project Plan | Brian | Joseph | Nov 6 | ⬜ Not Started | Corrected documents |
-| S2-20 | Extract the ZIP in a clean folder; check links, images, and sizes | Brian | Joseph | Nov 7, 17:00 | ⬜ Not Started | Extraction record |
-| S2-21 | Submit Stage 2 and confirm the receipt | Jonathan | Joseph | Nov 7, 18:00 | ⬜ Not Started | Submission receipt |
+## 1. Project and Team Information
+
+The project teaches AI Overview to complete beginners. One shared Markdown content base is turned into three connected learning resources: a Study Guide with Test Bank, PPT Slides, and Video Tutorials. Corrections are made in the Markdown first, so they carry into every resource.
+
+| No. | Name | Student ID | GitHub Username | Role |
+|:---:|------|:----------:|-----------------|------|
+| 1 | Benedict Subhata | 1820262181 | benngiiii | Visual Design Lead |
+| 2 | Brian Djoni Suzanna | 1820262162 | brizz0-0 | Quality Lead |
+| 3 | Gandhi Bestin Dhammananda | 1820262168 | bestinsiuuu77 | Video Lead |
+| 4 | Jonathan Sugianto | 1820262245 | JonathanSugianto | CIO and Content Lead |
+| 5 | Joseph Lokman | 1820262233 | JosephLokman | CEO |
+
+## 2. Stage 1 Objectives
+
+Stage 1 builds the foundation of the project:
+
+- Set up the shared GitHub repository and the team's working process.
+- Write the planning documents: README, Project Plan, Master Task List, and Module Outline.
+- Develop the Markdown learning content, with at least one topic developed in depth.
+- Record quality reviews and AI-tool use.
+- Prepare the submission package for review.
+
+## 3. Work Completed
+
+| Area | Work completed | Location in the repository |
+|------|----------------|----------------------------|
+| Repository | Shared repository with folders for documents, learning content, quality records, and logs | `Main/`, `quality/`, `logs/` |
+| Planning documents | README, Project Plan, Master Task List (v1.2), Module Outline | `Main/` |
+| Learning content | Chapter drafts 1 to 5 in Markdown, with images in `assets/` folders | `Main/study-guide/v1.0/` |
+| Quality records | Quality standards, review register, detailed review reports, final submission audit | `quality/reviews/` |
+| AI-use record | Stage 1 team AI-use log | `logs/stage1-ai-use-log.md` |
+
+## 4. Developed Learning Topic
+
+**Chapter 1: Introduction to Artificial Intelligence** is the developed topic for Stage 1. It was reviewed over four rounds, and the fourth review (QR-001-I04) approved it.
+
+- Author: Jonathan Sugianto
+- File: [study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence)
+- Supporting images: [chapter-1-introduction-to-artificial-Intelligence/assets](study-guide/v1.0/chapter-1-introduction-to-artificial-Intelligence/assets)
+
+## 5. Team Contributions
+
+Responsibilities follow the Deliverable Ownership table in the Master Task List.
+
+| Member | Stage 1 responsibilities |
+|--------|--------------------------|
+| Benedict Subhata | Master Task List; Chapter 3 draft |
+| Brian Djoni Suzanna | Quality reviews and final audit; Chapter 4 draft and outline; AI-use log |
+| Gandhi Bestin Dhammananda | Chapter 2 draft |
+| Jonathan Sugianto | Chapter 1 draft; Markdown template; Stage 1 package compilation |
+| Joseph Lokman | GitHub repository setup; Chapter 5 draft; activity records |
+
+
+## 6. Quality Review Summary
+
+Quality reviews were carried out by the Quality Lead. Latest registered result for each document:
+
+| Document | Latest review | Latest registered result |
+|----------|---------------|--------------------------|
+| Chapter 1 | QR-001-I04 | Pass |
+| Chapter 2 | QR-002-I03 | Pass |
+| Chapter 3 | QR-003-I05 | Pass |
+| Chapter 4 | QR-004-I01 | Pass |
+| Chapter 5 | QR-005-I02 | Pass |
+| Master Task List | QR-006-I01 | Changes Required; revised in v1.2, recheck pending |
+| Project Plan | QR-007-I03 | Changes Required |
+| README | QR-008-I02 | Minor Revisions Recommended |
+| Module Outline | QR-009-I03 | Minor Revisions Recommended |
+
+
+## 7. AI Tools Usage Summary
+
+The team used ChatGPT. The Stage 1 AI-use log (logs/stage1-ai-use-log.md) records eight activities: study guide planning, concept explanation, slide development, video script planning, practice questions, two quality-review activities, and project planning. Each member checks the entries for their own work against their actual AI interactions.
+
+## 8. GitHub Repository Information
+
+- Repository: https://github.com/benngiiii/BABI-GULING
+- Main folders: `Main` (documents and study guide), `quality/reviews` (review records), `logs` (AI-use log)
+- Contribution evidence: GitHub commit history, pull requests, and Issues. [Contribution evidence](https://github.com/benngiiii/BABI-GULING/commits/AI-Overview/)
+
+## 9. Remaining Work and Next Steps
+
+- **Stage 2 (due 7 November):** full drafts of Chapters 4 and 5; first versions of the Study Guide and Test Bank, PPT Slides, and Video Tutorials; trial of the test-bank questions with someone outside the team; quality review and corrections; live teaching rehearsals.
+- **Stage 3 (due 28 November):** improvements from live-class and lecturer feedback, final quality review, final consistency check, and final submission.
+- Open Stage 1 corrections are tracked in the Master Task List.
+
+## 10. Submission Package Contents
+
+| Item | File or location | Status |
+|------|------------------|--------|
+| GitHub repository link | https://github.com/benngiiii/BABI-GULING | Available |
+| Markdown source snapshot | `Main/`, `quality/`, `logs/` | Available |
+| Submission Report | Part of this document | Draft |
+| Readable PDF of learning content | [TO CONFIRM] | Not yet produced |
+| AI-use records | `logs/stage1-ai-use-log.md` | Available |
+| Complete ZIP package | [TO CONFIRM] | Not yet produced |
+
+
+### Stage 2 Tasks (due Nov 7, internal Nov 4)
+
+| Task ID | Task | Responsible | Reviewer / Compiler | Expected Deliverable | Deadline | Status | Evidence |
+|---------|------|-------------|---------------------|----------------------|----------|--------|----------|
+| S2-01 | Write full draft of Chapter 4: Applications of AI | Brian | Review: Brian | Chapter 4 full draft (Markdown) | Oct 30 | 🔄 In Progress | [Chapter 4 draft](study-guide/v1.0/chapter-4-applications-of-aI/applications-of-aI.md) |
+| S2-02 | Write full draft of Chapter 5: AI Ethics and Limitations | Joseph | Review: Brian | Chapter 5 full draft (Markdown) | Oct 30 | 🔄 In Progress | [Chapter 5 draft](study-guide/v1.0/chapter-5-aI-ethics-and-limitations/aI-ethics-and-limitations.md) |
+| S2-03 | Study Guide + Test Bank, first version | Benedict (with chapter authors) | Review: Brian | Study Guide and Test Bank (Markdown) | Nov 1 | ⬜ Not Started | — |
+| S2-04 | PPT Slides, first version | Benedict | Review: Brian | Slide deck covering all chapters | Nov 2 | ⬜ Not Started | — |
+| S2-05 | Video Tutorials, first version (script, narration, editing) | Gandhi | Review: Brian | Video files and script | Nov 2 | ⬜ Not Started | — |
+| S2-06 | Trial the test-bank questions with someone outside the team | Joseph | Review: Brian | Trial feedback notes | Nov 3 | ⬜ Not Started | — |
+| S2-07 | Quality review of all first versions | Brian | Compile: Jonathan | Review reports for each deliverable | Nov 3 | ⬜ Not Started | — |
+| S2-08 | Apply corrections to the Markdown source and all affected deliverables | Each deliverable owner | Review: Brian | Corrected deliverables | Nov 4 | ⬜ Not Started | — |
+| S2-09 | Prepare live teaching and hold at least two rehearsals with feedback | Gandhi (with the whole team) | Review: Brian | Rehearsal notes and feedback record | Before the live class date (follows class schedule) | ⬜ Not Started | — |
+| S2-10 | Compile and submit Stage 2 | Jonathan | Confirm: Joseph | Stage 2 submission | Nov 7 | ⬜ Not Started | — |
 
 ### Stage 3 Tasks (due Nov 28, internal Nov 24)
 
-The Stage 3 requirements must be checked against the assignment text. The tasks below follow the project workflow.
-
-| ID | Task | Owner | Reviewer | Deadline | Status | Evidence |
-|---|---|---|---|---|---|---|
-| S3-01 | Plan the live class and prepare the teaching materials | Gandhi | Brian | Nov 10 | ⬜ Not Started | Lecture plan |
-| S3-02 | Two live-teaching rehearsals with feedback | Gandhi (whole team) | Brian | Nov 14 | ⬜ Not Started | Rehearsal notes |
-| S3-03 | Learner testing of the Test Bank with someone outside the team | Joseph | Brian | Nov 14 | ⬜ Not Started | Trial feedback notes |
-| S3-04 | Collect feedback from the live class and the lecturer; list improvements | Joseph | Jonathan | 3 days after the live class | ⬜ Not Started | Improvement list |
-| S3-05 | Apply improvements to the Markdown first, then to every affected deliverable | Each owner | Brian | Nov 20 | ⬜ Not Started | Revised deliverables |
-| S3-06 | Verify every reference marked "(Not verified)" and update the source tables | Chapter authors | Brian | Nov 20 | ⬜ Not Started | Updated references |
-| S3-07 | Final quality review of all deliverables | Brian | Joseph | Nov 22 | ⬜ Not Started | Final review reports |
-| S3-08 | Final consistency check: style, links, formatting, corrected versions only | Brian | Joseph | Nov 24 | ⬜ Not Started | Consistency record |
-| S3-09 | Compile the final folder and ZIP; extraction test | Jonathan | Brian | Nov 26 | ⬜ Not Started | Final folder |
-| S3-10 | Submit Stage 3 and confirm the receipt | Jonathan | Joseph | Nov 28 | ⬜ Not Started | Submission receipt |
+| Task ID | Task | Responsible | Reviewer / Compiler | Expected Deliverable | Deadline | Status | Evidence |
+|---------|------|-------------|---------------------|----------------------|----------|--------|----------|
+| S3-01 | Collect feedback from the live class and the lecturer, and list improvements | Joseph | Review: Jonathan | Feedback and improvement list | Within 3 days after the live class | ⬜ Not Started | — |
+| S3-02 | Apply improvements to the Markdown source first, then to every affected deliverable | Each deliverable owner | Review: Brian | Revised deliverables | Nov 20 | ⬜ Not Started | — |
+| S3-03 | Final quality review of all deliverables | Brian | Compile: Jonathan | Final review reports | Nov 22 | ⬜ Not Started | — |
+| S3-04 | Final consistency check: style, links, formatting, and corrected versions only | Brian | Review: Joseph | Consistency check record | Nov 24 | ⬜ Not Started | — |
+| S3-05 | Compile the final folder and submit | Jonathan | Confirm: Joseph | Final submission | Nov 28 (compile by Nov 26) | ⬜ Not Started | — |
 
 ### Ongoing Tasks
 
-| ID | Task | Owner | Reviewer | Frequency | Status |
-|---|---|---|---|---|---|
-| OG-01 | Update task statuses in this list after each check-in | Jonathan | Joseph | Twice a week | 🔄 In Progress |
-| OG-02 | Record activities, decisions, and meeting notes | Joseph | Jonathan | Each check-in | 🔄 In Progress |
-| OG-03 | Review at least one other member's work and leave comments | All members | Brian | After each draft | ⬜ Not Started |
+| Task ID | Task | Responsible | Reviewer / Compiler | Expected Deliverable | Frequency | Status | 
+|---------|------|-------------|---------------------|----------------------|-----------|--------|
+| OG-01 | Update task statuses in this list after each check-in | Jonathan | Review: Joseph | Up-to-date Master Task List | Twice a week | 🔄 In Progress |
+| OG-02 | Record activities, decisions, and meeting notes | Joseph | Review: Jonathan | Activity record | Each check-in | 🔄 In Progress |
+| OG-03 | Review at least one other member's work and leave comments | All members | Review: Brian | Review comments on pull requests | After each draft | ⬜ Not Started |
+
 
 ### How This List Is Maintained
 
-* Jonathan updates task statuses after each check-in (twice a week, see OG-01); each owner confirms their own status.
-* A task is marked ✅ Completed only when its outcome is achieved and its evidence (file, commit, pull request, Issue, or signed record) is available in the Evidence column.
-* A review task is marked ✅ Completed only after the reviewer has signed the report. Do not mark it before the review has taken place.
-* Any ❓ To confirm status must be replaced by the owner with another label.
-* Every change to this file is recorded in the [Revision History](#revision-history).
+- Jonathan updates task statuses after each check-in (twice a week, see OG-01); each responsible member confirms their own status.
+- A task is marked ✅ Completed only when its defined outcome is achieved and its evidence (file, commit, pull request, Issue, or record) is available in the Evidence column.
+- Any ❓ To confirm status must be replaced by the responsible member with one of the other five labels.
+- Every change to this file is recorded in the [Revision History](#revision-history).
 
 ## Project Purpose
 
 This project teaches AI Overview to complete beginners. We turn one shared Markdown content base into three connected learning resources:
 
-| Resource                | Purpose                                                           |
-| ----------------------- | ----------------------------------------------------------------- |
-| Study Guide + Test Bank | Self-paced reading, practice, and self-checking                   |
-| PPT Slides              | Visual explanation of key ideas with diagrams and worked examples |
-| Video Tutorials         | Narrated explanations and demonstrations of key processes         |
+| Resource | Purpose |
+|----------|---------|
+| Study Guide + Test Bank | Self-paced reading, practice, and self-checking |
+| PPT Slides | Visual explanation of key ideas with diagrams and worked examples |
+| Video Tutorials | Narrated explanations and demonstrations of key processes |
 
 ### Intended Learners
 
@@ -278,43 +296,44 @@ Beginners with no background in AI or programming. Learners only need basic comp
 
 After completing this module, learners should be able to:
 
-* [ ] Explain in simple words what Artificial Intelligence is and how it differs from traditional programming.
-* [ ] Distinguish AI by capability (Narrow AI, General AI) and by technique (Machine Learning, Generative AI).
-* [ ] Describe the basic AI workflow: data, algorithm, training, and inference.
-* [ ] Give examples of AI in healthcare, education, transportation, and everyday life.
-* [ ] Identify key limitations and risks of AI: bias, privacy, and hallucinations.
+- [ ] Explain in simple words what Artificial Intelligence is and how it differs from traditional programming.
+- [ ] Distinguish AI by capability (Narrow AI, General AI) and by technique (Machine Learning, Generative AI).
+- [ ] Describe the basic AI workflow: data, algorithm, training, and inference.
+- [ ] Give examples of AI in healthcare, education, transportation, and everyday life.
+- [ ] Identify key limitations and risks of AI: bias, privacy, and hallucinations.
 
 ## Workflow
 
-![Stage timeline: Stage 1 foundation (Oct 24), Stage 2 first versions (Nov 7), Stage 3 final (Nov 28)](assets/fig-main-1-stage-timeline.png)
+```mermaid
+flowchart TB
+    subgraph Stages["Stage timeline"]
+        direction LR
+        S1["Stage 1<br/>Foundation, Oct 24"] --> S2["Stage 2<br/>First versions, Nov 7"] --> S3["Stage 3<br/>Final, Nov 28"]
+    end
+    subgraph Flow["Workflow repeated in each stage"]
+        direction LR
+        R["Research<br/>Outline first"] --> M["Markdown<br/>Draft, self-check"] --> V["Review<br/>Peer, quality"] --> P["Produce<br/>3 resources"] --> H["Rehearse<br/>Collect feedback"] --> C["Corrections<br/>Fix Markdown first"] --> Sub["Submit<br/>Jonathan compiles*"]
+    end
+```
 
-*Figure M1: The three stages and their official due dates.*
-
-![Workflow repeated in each stage: research, Markdown, review, produce, rehearse, corrections, submit](assets/fig-main-2-workflow.png)
-
-*Figure M2: The workflow repeated in each stage. Jonathan compiles the submission as CIO.*
+\*Jonathan compiles as CIO.
 
 ## Rough Plan
 
-| Area          | Plan                                                                                                                                                                                                                               | Date (When)                                                                                |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Schedule      | Internal deadlines come 2 to 3 days before each official one, so we have time to review and correct. Task-level deadlines are in the [Master Task List](#master-task-list).                                                        | Stage 1: Oct 23 (due Oct 24)<br>Stage 2: Nov 4 (due Nov 7)<br>Stage 3: Nov 24 (due Nov 28) |
-| Study Content | We research from reliable sources, define every term at first use, and share short summaries. We ask the group first when something is hard, then the lecturer.                                                                    | Before and during drafting                                                                 |
-| Markdown      | We outline first, write one sample section to set the style, then write the full draft. Each draft gets a self-check and a team review before it becomes the single source for all resources.                                      | Each stage                                                                                 |
-| GitHub        | We use one repository with a folder for each part. Everyone works on their own branch, pull requests are reviewed before merging, and Issues track tasks and contributions.                                                        | Throughout                                                                                 |
-| Communication | We use a group chat with replies within 24 hours, short check-ins twice a week, and a longer meeting before each deadline. Everyone reviews at least one other member's work.                                                      | Ongoing                                                                                    |
-| Corrections   | We fix the Markdown source first, update every affected resource, re-check, and confirm the final folder has only corrected versions.                                                                                              | When an error is found                                                                     |
-| Risks         | Practice on the sample chapter and help each other. Break difficult contents into small parts and verify together. Check uneven workload at every meeting and share tasks. Maximize and set internal deadlines to minimize delays. | Ongoing                                                                                    |
+| Area | Plan | Date (When) |
+|------|------|-------------|
+| Schedule | Internal deadlines come 2 to 3 days before each official one, so we have time to review and correct. Task-level deadlines are in the [Master Task List](#master-task-list). | Stage 1: Oct 23 (due Oct 24)<br>Stage 2: Nov 4 (due Nov 7)<br>Stage 3: Nov 24 (due Nov 28) |
+| Study Content | We research from reliable sources, define every term at first use, and share short summaries. We ask the group first when something is hard, then the lecturer. | Before and during drafting |
+| Markdown | We outline first, write one sample section to set the style, then write the full draft. Each draft gets a self-check and a team review before it becomes the single source for all resources. | Each stage |
+| GitHub | We use one repository with a folder for each part. Everyone works on their own branch, pull requests are reviewed before merging, and Issues track tasks and contributions. | Throughout |
+| Communication | We use a group chat with replies within 24 hours, short check-ins twice a week, and a longer meeting before each deadline. Everyone reviews at least one other member's work. | Ongoing |
+| Corrections | We fix the Markdown source first, update every affected resource, re-check, and confirm the final folder has only corrected versions. | When an error is found |
+| Risks | Practice on the sample chapter and help each other. Break difficult contents into small parts and verify together. Check uneven workload at every meeting and share tasks. Maximize and set internal deadlines to minimize delays. | Ongoing |
 
 ## Revision History
 
-| Date              | Version | Change                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Related Review                                                                     | Result                                                                                          |
-| ----------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Before 2026-10-23 | v1.0    | Initial version: team, roles, purpose, workflow, and rough plan                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | None recorded (to be confirmed)                                                    | Superseded by v1.1                                                                              |
-| 2026-10-23        | v1.1    | Added Deliverable Ownership, Master Task List (with status labels and task-level deadlines), and a maintenance process                                                                                                                                                                                                                                                                                                                                                                                                                                      | None recorded (to be confirmed)                                                    | Reviewed in [QR-006-I01](../quality/reviews/detailed%20reviews/QR-006-I01.md); changes required |
-| 2026-10-23        | v1.2    | Added explicit Stage 1 submission tasks (S1-15 to S1-22); split Chapter 4 and Chapter 5 drafts and assigned owners; confirmed Brian as Chapter 4 reviewer (as well as author) at the team's decision; added the repository link as S1-06 evidence; corrected evidence links to the actual repository paths; updated S1-12, S1-19, S1-20, S2-01 and S2-02 to match the repository contents; corrected the review references, the Table of Contents, the "Master Task List" typo, and heading levels; added the missing "How This List Is Maintained" section | [QR-006-I01](../quality/reviews/detailed%20reviews/QR-006-I01.md), Findings 1 to 6 | Pending recheck (S1-05)                                                                         |
-| 2026-11-04        | v1.3    | Updated all Stage 1 task statuses to Completed following the completion of Stage 1; retained the existing project structure, responsibilities, workflow, and task assignments; updated the document to reflect the current Stage 2 progress.                                                                                                                                                                                                                                                                                                                | Stage 1 completion update                                                          | Completed                                                                                       |
-| 2026-11-05        | v2.1    | Rebuilt after the Stage 1 lecturer feedback and the move to the lecturer's four course chapters: added Five Content Parts, a Detailed Schedule (Nov 5 – Nov 28), Stage 1 Fix tasks F-01 to F-08, and every Stage 2 and Stage 3 deliverable with task IDs, owners, reviewers, deadlines, and evidence; four chapter owners; Brian is the independent reviewer of all chapters; added the 🔍 Awaiting Review status; stopped marking review tasks as completed before a signed review exists; shortened tables for readable column widths | Stage 1 lecturer feedback; QR-101 series | Pending review by Joseph (QR-125-I01) |
-| 2026-11-05        | v3.0    | Stage 2 update: marked S2-01 to S2-04 as drafted (🔍 Awaiting Review, V2.0 chapters); added S2-22 to S2-26 (upload with assets, QR-225, PDF, Submission Report, requirement comparison); added the reference-opening task to the schedule; re-described S2-05 and S2-06; updated the Thu 5 Nov schedule to the V2.0 chapters and Quality Standards V2.2 | QR-221-I01 to QR-225-I01 (pending) | Pending review |
-| 2026-11-05        | v3.1    | Presentation pass: re-described S2-01 to S2-04 (chapter-at-a-glance page, outcome map, deep dives, case studies, code example, chapter review); S2-22 now checks the GitHub rendering; S2-24 (PDF) not started; added S2-27 to S2-30 (reading check on GitHub, visual style, Chinese terms, code examples) | QR-221-I01 to QR-225-I01 (pending) | Pending review |
-| 2026-11-05        | v4.0    | Stage 2 rewrite: S2-01 to S2-04 re-described for the chapters rewritten on the lecturer's topics (storyline, full explanations, explained figures, fewer exercises); S2-22 checks all 66 figures; S2-30 now asks for hand recomputation of the worked examples because the code examples were removed | QR-221-I01 to QR-225-I01 (pending) | Pending review |
+| Date | Version | Change | Related Review | Result |
+|------|---------|--------|----------------|--------|
+| Before 2026-10-23 | v1.0 | Initial version: team, roles, purpose, workflow, and rough plan | None recorded (to be confirmed) | Superseded by v1.1 |
+| 2026-10-23 | v1.1 | Added Deliverable Ownership, Master Task List (with status labels and task-level deadlines), and a maintenance process | None recorded (to be confirmed) | Reviewed in [QR-006-I01](../quality/reviews/detailed%20reviews/QR-006-I01.md); changes required |
+| 2026-10-23 | v1.2 | Added explicit Stage 1 submission tasks (S1-15 to S1-22); split Chapter 4 and Chapter 5 drafts and assigned owners; confirmed Brian as Chapter 4 reviewer (as well as author) at the team's decision; added the repository link as S1-06 evidence; corrected evidence links to the actual repository paths; updated S1-12, S1-19, S1-20, S2-01 and S2-02 to match the repository contents; corrected the review references, the Table of Contents, the "Master Task List" typo, and heading levels; added the missing "How This List Is Maintained" section | [QR-006-I01](../quality/reviews/detailed%20reviews/QR-006-I01.md), Findings 1 to 6 | Pending recheck (S1-05) |
