@@ -286,4 +286,4 @@ By the end of Stage 3 the team will have eight clear chapters, a Study Guide wit
 | Date | Version | Change | Review | Result |
 | ---- | ------- | ------ | ------ | ------ |
 | Stage 1 | v1.0 and later | Five-chapter plan | See Stage 1 register | Stage 1 scored 100/100 |
-| 2026-11-06 | V2.0 | Eight-chapter plan; three-stage schedule; lecturer-feedback response; reference-project review; resource plans for all chapters; independence rule | Pending (Joseph) | Pending Review |
+| 2026-11-06 | V2.0 | Eight-chapter plan; three-stage schedule; lecturer-feedback response; reference-project review; resource plans for all chapters; independence rule | Pending | Pending Review |
