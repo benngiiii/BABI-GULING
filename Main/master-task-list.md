@@ -2,7 +2,7 @@
 
 **Babi Guling – AI Overview**
 
-> **Version:** v2.1 (rebuilt on the lecturer's four course chapters; covers Stages 1, 2, and 3)
+> **Version:** v4.0 (Stage 2 update: Markdown V2.0 rewritten around the lecturer's topics; covers Stages 1, 2, and 3)
 > **Last updated:** 2026-11-05
 
 ## Table of Contents
@@ -106,8 +106,9 @@ Times are Beijing time. Stage 2 is due **Saturday 7 November 2026, 23:59**; the 
 
 | Date | Who | Work | Output |
 |---|---|---|---|
-| Thu 5 Nov | Chapter authors | Read the rebuilt chapter, check its facts, copy it to their GitHub branch, and open a pull request | 4 pull requests |
-| Thu 5 Nov | Brian | Start the Quality Review of Chapters 1–4 (version 1.1) with the Quality Standards V2.1 checklist; merge the updated README, Module Outline, Project Plan, and this list | Review reports signed by Brian |
+| Thu 5 Nov | Chapter authors | Read the V2.0 chapter, recompute the worked examples, check the facts, copy the chapter folder **with its `assets/` folder** to the Stage 2 branch, and open a pull request | 4 pull requests |
+| Thu 5 Nov | Brian | Start the Quality Review of Chapters 1–4 (version 2.0) with the Quality Standards V2.2 checklist (Section 23); merge the updated README, Module Outline, Project Plan, and this list | Review reports signed by Brian |
+| Thu 5 Nov | Jonathan | Open every reference link and fill the reference check register (share the 47 references among the authors) | Register with real results |
 | Thu 5 Nov | Benedict | Study Guide + Test Bank first version; PPT outline | Test-bank draft |
 | Thu 5 Nov | Gandhi | Video scripts (1–8 videos), VideoGuide outline | Scripts |
 | Fri 6 Nov | Brian | Finish chapter reviews; record findings in the Review Register | Review reports, register |
@@ -195,12 +196,12 @@ Stage 1 has been completed. All tasks below are marked as completed following th
 
 | ID | Task | Owner | Reviewer | Deadline | Status | Evidence |
 |---|---|---|---|---|---|---|
-| S2-01 | Expand Chapter 1 to V2.0: more worked examples and a longer practice set | Jonathan | Brian | Nov 6 | ⬜ Not Started | Chapter 1 V2.0 |
-| S2-02 | Expand Chapter 2 to V2.0: more logic and search practice, a second worked example per topic | Gandhi | Brian | Nov 6 | ⬜ Not Started | Chapter 2 V2.0 |
-| S2-03 | Expand Chapter 3 to V2.0: a worked network example, more Big Data cases | Benedict | Brian | Nov 6 | ⬜ Not Started | Chapter 3 V2.0 |
-| S2-04 | Expand Chapter 4 to V2.0: a second MDP example, a deeper robotics and games section | Joseph | Brian | Nov 6 | ⬜ Not Started | Chapter 4 V2.0 |
-| S2-05 | Verify every reference marked "Not opened" and update the labels | Chapter authors | Brian | Nov 6 | ⬜ Not Started | Updated references |
-| S2-06 | Quality Review of the Stage 2 versions with signed reports | Brian | Joseph | Nov 6 | ⬜ Not Started | Signed QR-2xx reports; Review Register |
+| S2-01 | Chapter 1 V2.0 (rewritten 5 Nov on the lecturer's topics): 5 topics, 14 explained figures, 14 *Check yourself* questions, 3 hands-on activities, 17 questions. Owner reads every topic, fact-checks it, and signs the personal log. | Jonathan | Brian | Nov 6 | 🔍 Awaiting Review | `study-guide/v2.0/chapter-1-introduction-to-cs-and-ai/`; QR-221-I01 |
+| S2-02 | Chapter 2 V2.0 (rewritten 5 Nov on the lecturer's topics): 6 topics, 13 explained figures, 18 *Check yourself* questions, 2 hands-on activities, 17 questions. Owner reads every topic, fact-checks it, and signs the personal log. | Gandhi | Brian | Nov 6 | 🔍 Awaiting Review | `study-guide/v2.0/chapter-2-symbolic-ai/`; QR-222-I01 |
+| S2-03 | Chapter 3 V2.0 (rewritten 5 Nov on the lecturer's topics): 12 topics (Part A and Part B), 22 explained figures, 22 *Check yourself* questions, 1 hands-on activity, 17 questions. Owner reads every topic, fact-checks it, and signs the personal log. | Benedict | Brian | Nov 6 | 🔍 Awaiting Review | `study-guide/v2.0/chapter-3-connectionist-ai-and-big-data/`; QR-223-I01 |
+| S2-04 | Chapter 4 V2.0 (rewritten 5 Nov on the lecturer's topics): 7 topics, 17 explained figures, 12 *Check yourself* questions, 1 hands-on activity, a module wrap-up, 17 questions. Owner reads every topic, fact-checks it, and signs the personal log. | Joseph | Brian | Nov 6 | 🔍 Awaiting Review | `study-guide/v2.0/chapter-4-behaviorist-ai/`; QR-224-I01 |
+| S2-05 | Open every reference link (47 references), fill the reference check register, and change "not opened" to "opened" with the date; replace any bad link | Chapter authors | Brian | Nov 6 | ⬜ Not Started | Reference check register; updated references |
+| S2-06 | Quality Review of the V2.0 chapters with signed reports QR-221-I01 to QR-224-I01 (draft plans exist; the decision stays Pending Review until Brian signs) | Brian | Joseph | Nov 6 | ⬜ Not Started | Signed QR-221 to QR-224; Review Register |
 | S2-07 | Fix every finding from S2-06 in the Markdown | Chapter authors | Brian | Nov 7, 12:00 | ⬜ Not Started | Commits; re-review records |
 | S2-08 | Study Guide: summaries, key terms, and practice per chapter | Benedict | Brian | Nov 6 | ⬜ Not Started | Study Guide file |
 | S2-09 | Test Bank: ≥20 true/false, ≥20 multiple-choice, ≥6 open-ended, with answer keys | Benedict | Brian | Nov 6 | ⬜ Not Started | Test Bank file |
@@ -214,6 +215,15 @@ Stage 1 has been completed. All tasks below are marked as completed following th
 | S2-17 | Review three previous-year projects (symbolic, connectionist, behaviorist) and record what the team adopted | Benedict, Gandhi, Joseph | Brian | Nov 6 | ⬜ Not Started | Notes in the Project Log |
 | S2-18 | If the Stage 1 score is below 80%: decide on the one allowed resubmission and prepare its report (score capped at 80%) | Joseph | Jonathan | When the score is released | ❓ To confirm | Decision record |
 | S2-19 | Compile Markdown V2.0 ZIP, Submission Report, and the Stage 2 folder | Jonathan | Brian | Nov 7, 15:00 | ⬜ Not Started | Stage 2 folder |
+| S2-22 | Copy the V2.0 chapter folders (Markdown plus `assets/`), shared glossary, `stage2_Content.md`, and the updated project documents to the Stage 2 branch; check in the GitHub preview that all 66 numbered figures and the banners show, that the navigation links between chapters work, and that the callout boxes and collapsible blocks render | Jonathan (with each author) | Brian | Nov 5 | ⬜ Not Started | Pull requests; screenshots |
+| S2-23 | Joseph's review of the updated project documents: QR-225-I01 | Joseph | Jonathan | Nov 6 | ⬜ Not Started | Signed QR-225-I01 |
+| S2-24 | Render the PDF of the final Markdown (no PDF is included in this package) and check that figures, tables, and hidden answers read well; re-render if the Markdown changes | Jonathan | Brian | Nov 6 | ⬜ Not Started | PDF file |
+| S2-27 | Read each chapter in the GitHub preview from top to bottom on a laptop and on a phone, in the light and the dark theme; note any layout problem (banner, tables, callouts, collapsible blocks, figures) and any figure whose text is too small | Benedict (with each chapter author) | Brian | Nov 6 | ⬜ Not Started | Notes in the Project Log |
+| S2-28 | Confirm the visual style with the team (banner design, colours, block names in `Main/style-guide.md`) or ask for changes | Whole team | Brian | Nov 6 | ❓ To confirm | Team decision recorded |
+| S2-29 | A Chinese-speaking teammate or teacher checks the Chinese key-term tables in the four chapters | Whole team | Brian | Nov 6 | ⬜ Not Started | Corrections or confirmation |
+| S2-30 | Recompute by hand the worked examples of each chapter (for example the Q-learning table, gradient descent, the perceptron table) and compare the numbers with the chapter | Chapter authors | Brian | Nov 6 | ⬜ Not Started | Notes in the personal log |
+| S2-25 | Complete the Submission Report: repository URL, snapshot date, latest commit, Revision Summary table, review results, mapping table, evidence, and gaps (start from the drafts) | Jonathan | Brian | Nov 7, 12:00 | ⬜ Not Started | Submission Report |
+| S2-26 | Compare every Stage 2 file name and requirement with the lecturer's assignment text and correct this list and the Project Plan | Brian | Joseph | Nov 6 | ⬜ Not Started | Corrected documents |
 | S2-20 | Extract the ZIP in a clean folder; check links, images, and sizes | Brian | Joseph | Nov 7, 17:00 | ⬜ Not Started | Extraction record |
 | S2-21 | Submit Stage 2 and confirm the receipt | Jonathan | Joseph | Nov 7, 18:00 | ⬜ Not Started | Submission receipt |
 
@@ -305,3 +315,6 @@ After completing this module, learners should be able to:
 | 2026-10-23        | v1.2    | Added explicit Stage 1 submission tasks (S1-15 to S1-22); split Chapter 4 and Chapter 5 drafts and assigned owners; confirmed Brian as Chapter 4 reviewer (as well as author) at the team's decision; added the repository link as S1-06 evidence; corrected evidence links to the actual repository paths; updated S1-12, S1-19, S1-20, S2-01 and S2-02 to match the repository contents; corrected the review references, the Table of Contents, the "Master Task List" typo, and heading levels; added the missing "How This List Is Maintained" section | [QR-006-I01](../quality/reviews/detailed%20reviews/QR-006-I01.md), Findings 1 to 6 | Pending recheck (S1-05)                                                                         |
 | 2026-11-04        | v1.3    | Updated all Stage 1 task statuses to Completed following the completion of Stage 1; retained the existing project structure, responsibilities, workflow, and task assignments; updated the document to reflect the current Stage 2 progress.                                                                                                                                                                                                                                                                                                                | Stage 1 completion update                                                          | Completed                                                                                       |
 | 2026-11-05        | v2.1    | Rebuilt after the Stage 1 lecturer feedback and the move to the lecturer's four course chapters: added Five Content Parts, a Detailed Schedule (Nov 5 – Nov 28), Stage 1 Fix tasks F-01 to F-08, and every Stage 2 and Stage 3 deliverable with task IDs, owners, reviewers, deadlines, and evidence; four chapter owners; Brian is the independent reviewer of all chapters; added the 🔍 Awaiting Review status; stopped marking review tasks as completed before a signed review exists; shortened tables for readable column widths | Stage 1 lecturer feedback; QR-101 series | Pending review by Joseph (QR-125-I01) |
+| 2026-11-05        | v3.0    | Stage 2 update: marked S2-01 to S2-04 as drafted (🔍 Awaiting Review, V2.0 chapters); added S2-22 to S2-26 (upload with assets, QR-225, PDF, Submission Report, requirement comparison); added the reference-opening task to the schedule; re-described S2-05 and S2-06; updated the Thu 5 Nov schedule to the V2.0 chapters and Quality Standards V2.2 | QR-221-I01 to QR-225-I01 (pending) | Pending review |
+| 2026-11-05        | v3.1    | Presentation pass: re-described S2-01 to S2-04 (chapter-at-a-glance page, outcome map, deep dives, case studies, code example, chapter review); S2-22 now checks the GitHub rendering; S2-24 (PDF) not started; added S2-27 to S2-30 (reading check on GitHub, visual style, Chinese terms, code examples) | QR-221-I01 to QR-225-I01 (pending) | Pending review |
+| 2026-11-05        | v4.0    | Stage 2 rewrite: S2-01 to S2-04 re-described for the chapters rewritten on the lecturer's topics (storyline, full explanations, explained figures, fewer exercises); S2-22 checks all 66 figures; S2-30 now asks for hand recomputation of the worked examples because the code examples were removed | QR-221-I01 to QR-225-I01 (pending) | Pending review |
