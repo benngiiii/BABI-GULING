@@ -1,11 +1,15 @@
 # BABI GULING — AI OVERVIEW
 
+**Document author:** Brian Djoni Suzanna (Quality Lead)  
+**Version:** V2.0 (Stage 2)  
+**Last updated:** 6 November 2026
+
 ## 1. Team Information
 
-**Module:** AI Overview
+**Module:** AI Overview  
 **Team Name:** BABI GULING
-**Project:** Introduction to Computer Science and Artificial Intelligence
-**Stage:** Stage 1 — Content Development and Project Documentation
+**Project:** Introduction to Computer Science and Artificial Intelligence  
+**Stage:** Stage 2 — Content Development and Learning Resource Production
 
 ### Team Members
 
@@ -23,94 +27,96 @@
 
 ### Project Purpose
 
-This project aims to introduce **Artificial Intelligence (AI)** to beginners who have little or no previous knowledge of AI or programming.
+This project introduces **Artificial Intelligence (AI)** to beginners who have little or no knowledge of AI or programming. The materials explain AI in a simple, organised way: what AI is, its types, how it works, the three classic approaches (symbolic, connectionist and behaviorist), real applications, and ethical limits.
 
-Our team focuses on explaining AI concepts in a simple, organized, and understandable way. The learning materials cover the basic definition of AI, different types of AI, how AI works, its applications, and its ethical challenges.
-
-The project is designed around a shared Markdown content base, which supports the development of three main learning resources.
+The project is built on a shared Markdown content base that supports three learning resources.
 
 | Resource                    | Purpose                                                                                                          |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **Study Guide + Test Bank** | Provides structured learning materials, explanations, examples, and practice questions for independent learning. |
-| **PPT Slides**              | Presents important AI concepts visually through diagrams, examples, and concise explanations.                    |
-| **Video Tutorials**         | Explains selected AI concepts through narration, visual demonstrations, and examples.                            |
+| **Study Guide + Test Bank** | Structured reading, worked examples, interactive missions and practice questions for independent learning.       |
+| **PPT Slides**              | Presents the key concepts visually through diagrams, examples and short explanations.                            |
+| **Video Tutorials**         | Explains selected concepts through narration, visual demonstrations and examples.                                |
 
-The Markdown materials serve as the main content reference for these resources. This approach helps maintain consistency and makes future revisions easier.
+### What Changed in Stage 2
+
+| Area | Stage 1 (V1.0) | Stage 2 (V2.0) |
+| ---- | -------------- | -------------- |
+| Chapters | 5 | **8** (3 new chapters from the lecturer's materials) |
+| Chapter style | Reading text with examples | Reading text plus **two guided missions per chapter**, answer keys and glossaries |
+| Diagrams | Mixed | Image files for every diagram; **no Mermaid** |
+| References | List at chapter end | Numbered references with links at the end of each chapter |
+| Output formats | GitHub Markdown | Markdown that also converts cleanly to PDF |
+| Stage 1 files | — | **Kept unchanged** in `Main/study-guide/v1.0/` |
 
 ### Intended Learners
 
-The target audience consists of beginners with no prior background in AI or programming.
-
-Learners are expected to have basic computer and internet literacy. Technical terms are introduced and explained using beginner-friendly language.
+Beginners with no prior background in AI or programming. Learners are expected to have basic computer and internet literacy. Every technical term is explained in one plain sentence before its official definition.
 
 ### Learning Outcomes
 
 After completing this module, learners should be able to:
 
-1. Explain what Artificial Intelligence is and describe how it differs from traditional programming.
-2. Distinguish AI by capability, including Narrow AI and General AI, and recognize approaches such as Machine Learning and Generative AI.
-3. Describe the basic AI workflow, including data collection, algorithms, training, and inference.
-4. Identify real-world applications of AI in healthcare, education, transportation, industry, and everyday life.
-5. Recognize important AI limitations and ethical concerns, including bias, privacy, transparency, and hallucinations.
+1. Explain what AI is and how it differs from traditional programming.
+2. Distinguish AI by capability (Narrow and General AI) and by approach (Machine Learning, Generative AI).
+3. Describe the basic AI workflow: data, algorithm, training and inference, and evaluate a model with simple measures.
+4. Explain the three classic approaches: **symbolic** (rules and logic), **connectionist** (neural networks and Big Data) and **behaviorist** (learning from rewards).
+5. Identify real-world applications of AI and the human oversight they need.
+6. Recognise limitations and ethical concerns: bias, privacy, transparency, hallucination and regulation.
 
 ---
 
 ## 3. Module Content
 
-The AI Overview module is divided into five chapters.
+The AI Overview module has **eight chapters**.
 
-| Chapter | Topic                         | Main Content                                                                                       |
-| :-----: | ----------------------------- | -------------------------------------------------------------------------------------------------- |
-|    1    | **Introduction to AI**        | Definition of AI, basic concepts, history, and differences between AI and traditional programming. |
-|    2    | **Types of AI**               | AI classifications, Narrow AI, General AI, Machine Learning, and Generative AI.                    |
-|    3    | **How AI Works**              | Data, algorithms, model training, inference, and the basic AI development process.                 |
-|    4    | **Applications of AI**        | AI applications in healthcare, education, transportation, industry, and daily life.                |
-|    5    | **AI Ethics and Limitations** | AI bias, privacy, transparency, hallucinations, reliability, and responsible AI use.               |
+| Chapter | Topic                                   | Main Content                                                                                              | Chapter Author            |
+| :-----: | --------------------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------- |
+|    1    | **Introduction to AI**                  | Definition of AI, history, AI vs traditional programming, machine learning idea.                          | Jonathan Sugianto         |
+|    2    | **Types of AI**                         | Capability levels, functionality types, AI / ML / DL / generative AI.                                     | Gandhi Bestin Dhammananda |
+|    3    | **How AI Works**                        | Workflow, data, models, learning loop, overfitting, neural networks, language models, evaluation metrics. | Benedict Subhata          |
+|    4    | **Symbolic AI** *(new)*                 | Logic, knowledge representation, expert systems, search, minimax.                                         | Gandhi Bestin Dhammananda |
+|    5    | **Connectionist AI and Big Data** *(new)* | Neurons, activation functions, network designs, Big Data (5 Vs), pipelines, charts.                     | Jonathan Sugianto         |
+|    6    | **Behaviorist AI** *(new)*              | Reinforcement learning, Q-learning, subsumption robots, reward hacking.                                   | Joseph Lokman             |
+|    7    | **Applications of AI**                  | Healthcare, finance, transport, education, robotics, human in the loop.                                   | Brian Djoni Suzanna       |
+|    8    | **AI Ethics, Risks and Limitations**    | Bias, privacy, transparency, hallucination, EU AI Act, NIST AI RMF, responsible use.                      | Joseph Lokman             |
 
-Each chapter is developed to provide clear explanations, relevant examples, and learning materials suitable for beginners.
-
-For more detailed chapter information, learning objectives, and development status, refer to the [Module Outline](module-outline.md).
+Chapters 4 to 6 follow the lecturer's course slides (*Symbolic AI*, *Connectionist AI and Big Data Overview*, *Behaviorist AI*). Detailed chapter information is in the [Module Outline](module-outline.md).
 
 ---
 
 ## 4. Team Roles and Responsibilities
 
-Each team member has a specific role to support project development and coordination.
-
 | Team Member                   | Role               | Main Responsibilities                                                                                                                      |
 | ----------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Joseph Lokman**             | CEO                | Coordinates overall project progress, monitors deadlines, organizes team responsibilities, and supports final submission preparation.      |
-| **Jonathan Sugianto**         | CIO                | Supports repository organization, technical documentation, GitHub workflow, and integration of project materials.                          |
-| **Benedict Subhata**          | Visual Design Lead | Supports visual consistency, presentation design, diagrams, and the organization of visual learning materials.                             |
-| **Gandhi Bestin Dhammananda** | Video Lead         | Coordinates video tutorial development, narration planning, and the preparation of video learning materials.                               |
-| **Brian Djoni Suzanna**       | Quality Lead       | Reviews learning content and project documentation, checks consistency and completeness, records quality issues, and monitors corrections. |
+| **Joseph Lokman**             | CEO                | Coordinates overall progress, records activities and decisions, monitors deadlines, supports final submission.                             |
+| **Jonathan Sugianto**         | CIO                | Repository organisation, technical documentation, GitHub workflow, compiling each submission folder.                                       |
+| **Benedict Subhata**          | Visual Design Lead | Visual consistency, diagrams, slides, study-guide design and the readable PDF.                                                             |
+| **Gandhi Bestin Dhammananda** | Video Lead         | Video tutorial development, narration planning, and live teaching preparation.                                                             |
+| **Brian Djoni Suzanna**       | Quality Lead       | Reviews learning content and documents, checks consistency, records quality issues and monitors corrections. Authors the project documents. |
 
-All members contribute to the development, revision, and improvement of the AI Overview learning materials.
-
-Detailed task assignments, deadlines, and progress tracking are recorded in the [Master Task List](master-task-list.md).
+Task assignments, deadlines and status are tracked in the [Master Task List](master-task-list.md).
 
 ---
 
 ## 5. Project Documents
 
-The project documentation is organized into separate Markdown files. Each document has a specific purpose to support project management, content development, and quality control.
-
-| Document                    | Purpose                                                                                               | Link                                                                      |
-| --------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| **Project Plan**            | Explains the project objectives, workflow, timeline, team responsibilities, and development approach. | [project-plan.md](project-plan.md)                                        |
-| **Master Task List**        | Records project tasks, assigned members, deadlines, and completion status.                            | [master-task-list.md](master-task-list.md)                                |
-| **Module Outline**          | Describes the module structure, learning outcomes, chapter topics, and content development progress.  | [module-outline.md](module-outline.md)                                    |
-| **Stage 1 Content**         | Combines the learning materials developed for Chapters 1–5 into one document.                         | [stage1_Content.md](stage1_Content.md)                                    |
-| **AI Use Log**              | Documents the use of AI tools during project development, including their purposes and contributions. | [stage1-ai-use-log.md](../logs/stage1-ai-use-log.md)                      |
-| **Quality Review Register** | Tracks quality review reports, identified issues, and review progress.                                | [review-register.md](../quality/reviews/review-register.md)               |
-| **Quality Standards**       | Defines the criteria used to review learning materials and project documentation.                     | [quality-standards.md](../quality/reviews/quality-standards.md)           |
-| **Final Submission Audit**  | Records the final quality checks before Stage 1 submission.                                           | [final-submission-audit.md](../quality/reviews/final-submission-audit.md) |
+| Document                    | Purpose                                                                                      | Link                                                                                  |
+| --------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Project Plan**            | Objectives, workflow, schedule for all three stages, responsibilities, risks, references.    | [project-plan.md](project-plan.md)                                                    |
+| **Master Task List**        | Every task of Stages 1 to 3, owner, deadline, status and evidence.                           | [master-task-list.md](master-task-list.md)                                            |
+| **Module Outline**          | Module structure, chapter outlines and development status.                                   | [module-outline.md](module-outline.md)                                                |
+| **Stage 1 Content**         | All Stage 1 chapters in one file (unchanged).                                                | [stage1_Content.md](stage1_Content.md)                                                |
+| **Stage 2 Content**         | All eight Stage 2 chapters in one file.                                                      | [stage2_Content.md](stage2_Content.md)                                                |
+| **Study Guide V2.0**        | The eight chapter files with figures.                                                        | [study-guide/V2.0/](study-guide/V2.0/)                                                |
+| **Stage 1 AI Use Log**      | AI use during Stage 1.                                                                       | [stage1-ai-use-log.md](../logs/stage1-ai-use-log.md)                                  |
+| **Stage 2 Activity and AI-Use Records** | Activities and AI use during Stage 2.                                            | [Stage 2 activity and AI-use records.md](../logs/Stage%202%20activity%20and%20AI-use%20records.md) |
+| **Quality Review Register** | Tracks review reports, issues and progress.                                                  | [review-register.md](../quality/reviews/review-register.md)                           |
+| **Quality Standards V2.0**  | Criteria used to review the Stage 2 materials.                                               | [quality-standards-V2.0.md](../quality/reviews/quality-standards-V2.0.md)             |
+| **Final Submission Audit V2.0** | Final checks before the Stage 2 submission.                                              | [final-submission-audit-V2.0.md](../quality/reviews/final-submission-audit-V2.0.md)  |
 
 ---
 
 ## 6. Repository Structure
-
-The repository is organized to separate learning materials, project documentation, quality reviews, and AI usage records.
 
 ```text
 BABI-GULING/
@@ -121,199 +127,73 @@ BABI-GULING/
 │   ├── master-task-list.md
 │   ├── module-outline.md
 │   ├── stage1_Content.md
-│   │
+│   ├── stage2_Content.md
+│   ├── assets/                       (project diagrams)
 │   └── study-guide/
-│       └── Chapter learning materials
+│       ├── v1.0/                     (Stage 1, unchanged)
+│       └── V2.0/
+│           ├── chapter-1-introduction-to-artificial-Intelligence/
+│           ├── chapter-2-types-of-artificial-intelligence/
+│           ├── chapter-3-how-artificial-intelligence-works/
+│           ├── chapter-4-symbolic-ai/
+│           ├── chapter-5-connectionist-ai-and-big-data/
+│           ├── chapter-6-behaviorist-ai/
+│           ├── chapter-7-applications-of-ai/
+│           └── chapter-8-ai-ethics-and-limitations/
+│               (each folder: one .md file and an assets/ folder)
 │
 ├── logs/
-│   └── stage1-ai-use-log.md
+│   ├── stage1-ai-use-log.md
+│   └── Stage 2 activity and AI-use records.md
 │
 └── quality/
     └── reviews/
-        ├── quality-standards.md
+        ├── quality-standards-V1.0.md
+        ├── quality-standards-V2.0.md
+        ├── final-submission-audit-V1.0.md
+        ├── final-submission-audit-V2.0.md
         ├── review-register.md
-        ├── final-submission-audit.md
-        │
-        └── detailed reviews/
-            └── Individual quality review reports
+        ├── detailed review V1.0/
+        └── detailed review V2.0/
 ```
 
-### Repository Organization
-
-* **Main/** contains the primary project documents and learning materials.
-* **study-guide/** contains chapter-based Markdown content used as the reference for learning resources.
-* **logs/** contains documentation of AI-assisted activities during project development.
-* **quality/reviews/** contains quality standards, review records, and final audit documentation.
-* **detailed reviews/** contains individual review reports prepared during the quality assurance process.
-
-This structure helps team members locate files, track revisions, and maintain organized documentation throughout the project.
+**Image rule:** every chapter folder keeps its own `assets/` folder, and the chapter file refers to images with relative paths such as `assets/fig-4-3-bfs-vs-dfs.png`. Do not move images out of their folder.
 
 ---
 
 ## 7. Project Workflow
 
-The team follows a structured workflow to ensure that the learning materials are developed consistently.
+![Seven steps: research and outline, write the Markdown draft, self-check and peer review, quality review, fix the Markdown first, produce the three resources, compile and submit](assets/fig-plan-1-workflow.png)
+*Figure 1: Project workflow, repeated in every stage. Source: created by our team.*
 
-### Step 1 — Planning
-
-The team identifies project objectives, learning outcomes, responsibilities, deadlines, and required deliverables.
-
-The Project Plan and Master Task List are used to coordinate activities and monitor progress.
-
-### Step 2 — Content Development
-
-Team members develop learning materials for the five AI Overview chapters.
-
-The materials are written in Markdown and organized according to the Module Outline.
-
-### Step 3 — Quality Review
-
-The Quality Lead reviews the learning materials and project documents for:
-
-* Content accuracy and clarity.
-* Consistency with the learning outcomes.
-* Completeness of explanations and examples.
-* Organization and readability.
-* Markdown formatting and document structure.
-* Consistency between project documents.
-
-Identified issues and review results are recorded in the quality review documentation.
-
-### Step 4 — Revision and Improvement
-
-Team members review the feedback and make corrections to improve the materials.
-
-Updated content may be reviewed again to check whether the identified issues have been addressed.
-
-### Step 5 — Learning Resource Development
-
-The approved Markdown content is used as the reference for developing the Study Guide, PPT Slides, and Video Tutorials.
-
-This helps maintain consistency between the different learning resources.
-
-### Step 6 — Documentation and Submission
-
-The team organizes the completed materials, checks the required documents, and prepares the files for submission.
-
-The final submission audit is used to support the last quality check.
+| Step | What happens | Owner |
+| :--: | ------------ | ----- |
+| 1 | Research and outline the chapter using reliable sources and the lecturer's slides | Chapter author |
+| 2 | Write the Markdown draft in the agreed chapter template | Chapter author |
+| 3 | Self-check and peer review (check calculations, answers, links) | Author and one peer |
+| 4 | Quality review against the Quality Standards V2.0 | Brian |
+| 5 | Fix the Markdown **first** | Chapter author |
+| 6 | Update the Study Guide, PPT Slides and Video Tutorials from the fixed Markdown | Resource owners |
+| 7 | Compile, run the final audit, submit | Jonathan |
 
 ---
 
-## 8. Quality Assurance
+## 8. Stage 2 Plan at a Glance
 
-Quality assurance is an important part of the project because the materials are designed for beginners.
+![A schedule chart for the three stages with official deadlines marked](assets/fig-plan-2-schedule.png)
+*Figure 2: Three-stage schedule. Source: created by our team.*
 
-The review process focuses on ensuring that the content is understandable, logically organized, and consistent with the project objectives.
-
-### Quality Review Documents
-
-| Document                    | Description                                                                   |
-| --------------------------- | ----------------------------------------------------------------------------- |
-| **Quality Standards**       | Establishes the review criteria used throughout the project.                  |
-| **Detailed Review Reports** | Records observations, identified issues, and recommendations for improvement. |
-| **Review Register**         | Provides a centralized record of quality reviews and their status.            |
-| **Final Submission Audit**  | Supports the final verification of project documentation and deliverables.    |
-
-Quality review reports **QR-001 to QR-008** have been prepared, including additional review rounds for selected documents.
-
-The latest review results and issue statuses are maintained in the [Review Register](../quality/reviews/review-register.md).
+The full schedule, with tasks and owners, is in the [Project Plan](project-plan.md) and the [Master Task List](master-task-list.md).
 
 ---
 
-## 9. AI Tool Usage
+## 9. How to Read This Repository
 
-AI tools were used to assist with selected activities during project development.
-
-These activities included supporting explanations, organizing learning materials, reviewing document structure, and suggesting improvements to project planning.
-
-AI-generated suggestions were treated as supporting material rather than automatically accepted final content.
-
-Team members remained responsible for reviewing, editing, and integrating the suggestions into their work.
-
-### AI Usage Documentation
-
-The AI-use log records relevant information such as:
-
-1. The AI tool used.
-2. The purpose of using the tool.
-3. The prompt or instruction provided.
-4. The outcome of the AI-assisted activity.
-
-The Stage 1 AI-use documentation is available in:
-
-**[Stage 1 AI Use Log](../logs/stage1-ai-use-log.md)**
-
----
-
-## 10. Current Project Progress
-
-**Last Updated:** October 24, 2026
-**Project Stage:** Stage 1 — Content Development and Documentation
-
-### Completed Activities
-
-* Established the team structure and assigned project roles.
-* Defined the project purpose, intended learners, and learning outcomes.
-* Organized the AI Overview module into five chapters.
-* Developed chapter-based learning materials for the AI Overview module.
-* Prepared the combined Stage 1 learning content document.
-* Prepared and revised the Team Project Plan.
-* Prepared and updated the Master Task List.
-* Organized the Module Outline and chapter descriptions.
-* Established the GitHub repository structure for project documentation.
-* Prepared quality standards and review documentation.
-* Completed quality review reports QR-001 to QR-008, including additional review rounds.
-* Organized the Quality Review Register.
-* Documented AI-assisted activities in the Stage 1 AI Use Log.
-* Prepared documentation supporting team contributions and project development.
-
-### Final Submission Preparation
-
-The final submission preparation focuses on:
-
-* Confirming that the latest project documents are available in the repository.
-* Checking consistency between the Project Plan, Master Task List, and Module Outline.
-* Ensuring that the Stage 1 learning content is organized and accessible.
-* Checking Markdown formatting, file names, and document links.
-* Reviewing the AI-use documentation and quality review records.
-* Completing the final submission audit.
-* Confirming that the required Stage 1 materials are ready for submission.
-
-The detailed completion status of individual tasks is maintained in the [Master Task List](master-task-list.md).
-
----
-
-## 11. Stage 1 Deliverables
-
-The Stage 1 materials provide the foundation for the development of the complete AI Overview learning module.
-
-| Deliverable                      | Description                                                                       |
-| -------------------------------- | --------------------------------------------------------------------------------- |
-| **Team Project Plan**            | Documents project objectives, workflow, timeline, and team responsibilities.      |
-| **Master Task List**             | Records assigned tasks, deadlines, and progress.                                  |
-| **Module Outline**               | Defines the learning structure and topics of the AI Overview module.              |
-| **Study Guide Content**          | Contains the educational materials developed for the five chapters.               |
-| **Stage 1 Combined Content**     | Organizes the chapter materials into one combined document.                       |
-| **AI Use Log**                   | Records AI-assisted activities and their outcomes.                                |
-| **Quality Review Documentation** | Provides review reports, quality standards, and issue tracking.                   |
-| **Contribution Evidence**        | Supports the documentation of individual participation and project contributions. |
-
-These deliverables support the preparation of the Study Guide, PPT Slides, Video Tutorials, and live mini lecture.
-
----
-
-## 12. Next Steps
-
-After Stage 1, the team will continue improving the AI Overview learning resources based on feedback and quality review results.
-
-The next development activities include refining the Study Guide, preparing or improving presentation slides, developing video tutorials, and organizing the live mini lecture.
-
-The team will continue using the shared Markdown materials as the main content reference to maintain consistency across learning resources.
-
----
-
-## 13. Conclusion
-
-The BABI GULING AI Overview project aims to make Artificial Intelligence easier to understand for beginners through clear explanations, structured learning materials, and practical examples.
-
-During Stage 1, the team focu
+| If you want to... | Open |
+| ----------------- | ---- |
+| Read the whole module in one file | [stage2_Content.md](stage2_Content.md) |
+| Read one chapter | `Main/study-guide/V2.0/<chapter folder>/` |
+| See Stage 1 as submitted | `Main/study-guide/v1.0/` and [stage1_Content.md](stage1_Content.md) |
+| See who does what | [master-task-list.md](master-task-list.md) |
+| Check quality evidence | `quality/reviews/` |
+| Check AI use | `logs/` |
