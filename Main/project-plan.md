@@ -236,8 +236,6 @@ The lecturer asked us to refer to the course slides and **at least three previou
 | 2 | [TO FILL: name and link] | Connectionist AI and Big Data | [TO FILL] | [TO FILL] | Jonathan |
 | 3 | [TO FILL: name and link] | Behaviorist AI | [TO FILL] | [TO FILL] | Joseph |
 
-These rows are intentionally left open. Do not invent project names: use only projects the team has actually opened and read.
-
 ---
 
 ## 8. Risks and Quality Assurance
