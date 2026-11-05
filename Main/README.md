@@ -184,8 +184,7 @@ BABI-GULING/
 │           │   └── assets/            
 │           ├── chapter-4-behaviorist-ai/
 │           │   ├── behaviorist-ai.md
-│           │   └── assets/            
-│           ├── shared-glossary.md
+│           │   └── assets/               
 │           └── stage2_Content.md
 │
 ├── logs/
