@@ -7,6 +7,7 @@
 * **Review Owner:** Brian Djoni Suzanna (Quality Lead)
 * **Review Period:** October 25 – November 7, 2026
 * **Status:** Stage 2 Quality Standard
+* **Revision:** Updated 6 November 2026 for the eight-chapter structure and the V2.0 chapter template (see Section 22)
 
 ---
 
@@ -28,7 +29,7 @@ This document is specifically intended for Stage 2 quality reviews and does not 
 
 The Stage 2 quality review aims to ensure that:
 
-1. All five chapters contain sufficiently complete and developed learning content.
+1. All eight chapters contain sufficiently complete and developed learning content.
 2. Explanations are accurate, clear, logically organized, and suitable for beginners.
 3. Important concepts are supported by relevant examples and practical applications.
 4. Learning activities include appropriate questions and verified answers or expected outcomes.
@@ -196,7 +197,7 @@ Reviewers should check:
 
 ### 4.9 Consistency Across Chapters
 
-All five chapters must work together as one learning module.
+All eight chapters must work together as one learning module.
 
 Reviewers should check:
 
@@ -209,7 +210,7 @@ Reviewers should check:
 * Learning outcomes and chapter content remain aligned.
 * Concepts introduced in earlier chapters are used appropriately in later chapters.
 
-**Expected result:** Learners experience the five chapters as one connected learning module rather than five unrelated documents.
+**Expected result:** Learners experience the eight chapters as one connected learning module rather than eight unrelated documents.
 
 ### 4.10 Formatting and Markdown Quality
 
@@ -235,13 +236,16 @@ Reviewers should check:
 
 Each chapter must satisfy the general standards while also meeting its own content requirements.
 
-| Chapter | Topic                     | Specific Review Focus                                                                                                                              |
-| :-----: | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-|    1    | Introduction to AI        | Clear definition of AI, foundational concepts, historical context, and differences between AI and traditional programming.                         |
-|    2    | Types of AI               | Correct AI classifications, differences between capability-based and functionality-based classifications, and clear explanations of AI approaches. |
-|    3    | How AI Works              | Accurate explanations of data, algorithms, models, training, inference, neural networks, evaluation, and the AI workflow.                          |
-|    4    | Applications of AI        | Relevant applications, explanations of how AI is used, practical examples, limitations, and appropriate human oversight.                           |
-|    5    | AI Ethics and Limitations | Clear explanations of ethical concerns, risks, limitations, real-world implications, and responsible AI use.                                       |
+| Chapter | Topic | Specific Review Focus |
+| :-----: | ----- | --------------------- |
+| 1 | Introduction to AI | Clear definition of AI, history, AI vs traditional programming, the "rule or learn" idea |
+| 2 | Types of AI | Correct capability and functionality classifications; correct use of AI, ML, deep learning and generative AI |
+| 3 | How AI Works | Data, algorithms, models, learning loop, overfitting, neural networks, language models, evaluation metrics; calculations correct |
+| 4 | Symbolic AI | Logic, knowledge representation, expert systems, search and minimax; traces and tree values correct; agreement with the lecturer's slides |
+| 5 | Connectionist AI and Big Data | Neuron calculations, activation functions, network designs, 5 Vs, pipeline, chart choice; agreement with the lecturer's slides |
+| 6 | Behaviorist AI | RL terms, Q-learning updates, subsumption, reward hacking; agreement with the lecturer's slides |
+| 7 | Applications of AI | Relevant applications, method matching, driving levels, human oversight, threshold calculations |
+| 8 | AI Ethics, Risks and Limitations | Bias, selection-rate calculations, privacy, hallucination checks, regulation summary accuracy |
 
 ### Additional Chapter Review Requirements
 
@@ -265,7 +269,7 @@ The Study Guide must accurately represent the approved Markdown learning content
 
 Reviewers should check:
 
-* All five chapters are included.
+* All eight chapters are included.
 * Chapter order matches the Module Outline.
 * Explanations are consistent with the Markdown source.
 * Important examples and diagrams are preserved.
@@ -281,7 +285,7 @@ Reviewers should check:
 
 ## 7. Test Bank Quality Standards
 
-The Test Bank must assess learners' understanding of the five chapters.
+The Test Bank must assess learners' understanding of the eight chapters.
 
 ### 7.1 Required Question Distribution
 
@@ -301,7 +305,7 @@ The editable DOCX version of the Test Bank must also be prepared as required.
 Reviewers should check:
 
 * Questions cover the agreed learning outcomes.
-* All five chapters are represented.
+* All eight chapters are represented.
 * Questions are understandable to beginners.
 * Questions assess meaningful understanding.
 * Multiple-choice questions have one clearly correct answer unless otherwise specified.
@@ -515,7 +519,7 @@ Reviewers should check:
 
 ### 13.3 Module Outline
 
-* All five chapters are represented.
+* All eight chapters are represented.
 * Chapter titles and learning scope are accurate.
 * Learning outcomes are consistent with the content.
 * Development status reflects actual progress.
@@ -715,7 +719,7 @@ The following checklist is used to verify the overall Stage 2 submission.
 
 ### A. Markdown Content V2.0
 
-* [ ] All five chapters are included.
+* [ ] All eight chapters are included.
 * [ ] All agreed core topics are substantively developed.
 * [ ] Chapter introductions and learning outcomes are clear.
 * [ ] Explanations are accurate and beginner-friendly.
@@ -742,7 +746,7 @@ The following checklist is used to verify the overall Stage 2 submission.
 ### C. Study Guide and Test Bank
 
 * [ ] Study Guide reflects the approved Markdown content.
-* [ ] All five chapters are represented.
+* [ ] All eight chapters are represented.
 * [ ] Test Bank contains 20 True or False questions.
 * [ ] Test Bank contains 20 Multiple Choice questions.
 * [ ] Test Bank contains 6 Open-Ended questions.
@@ -839,7 +843,7 @@ The objective is to produce learning materials that are:
 * Complete and logically organized.
 * Understandable to beginners.
 * Supported by relevant examples and activities.
-* Consistent across all five chapters.
+* Consistent across all eight chapters.
 * Reviewed independently.
 * Tested from the learner's perspective.
 * Consistent across the Study Guide, Test Bank, PPT Slides, and Video Tutorials.
@@ -848,6 +852,59 @@ The objective is to produce learning materials that are:
 All team members share responsibility for the quality of the final project.
 
 The Quality Lead coordinates the review process, records findings, checks revisions, and verifies that the required quality standards are met before submission.
+
+---
+
+## 22. Stage 2 Additions (V2.0 Chapter Template)
+
+These checks apply to every Stage 2 chapter in addition to Sections 4 and 5.
+
+### 22.1 Template and Structure
+
+* [ ] The top of the chapter follows the agreed header: title, **Audience**, **Estimated time**, **Format**, line, Table of Contents, line.
+* [ ] The chapter contains Learning Outcomes, Where This Chapter Fits, numbered sections, two missions, Common Misconceptions, Quick Check, Summary and Connections, Answer Key, Glossary and References.
+* [ ] The Table of Contents works and matches the headings.
+
+### 22.2 Explanation Style
+
+* [ ] Each new term has a plain one-sentence explanation before the official definition.
+* [ ] Sentences are short and the tone is formal but simple.
+* [ ] An everyday example comes before the technical example.
+* [ ] Hard ideas are broken into steps, with a diagram or a trace table.
+* [ ] Every analogy has a "where the analogy breaks" note.
+
+### 22.3 Missions
+
+* [ ] There are two missions, each easy and short (about 10 to 15 minutes).
+* [ ] Each mission has Goal, Preparation, Task, Observe, Reflect and Feedback.
+* [ ] The reviewer has **recomputed every calculation** and compared it with the Answer Key.
+* [ ] The missions are not games and do not depend on a story theme.
+
+### 22.4 Figures and Format
+
+* [ ] Every diagram is an image file stored in the chapter's `assets/` folder; **no Mermaid** or other diagram code is used.
+* [ ] Every image path is relative, every image file exists, and every figure has a caption and a source.
+* [ ] Figures are readable in light theme and have meaningful text for screen readers (alt text).
+* [ ] The chapter uses no GitHub-only features (for example collapsible sections), so it converts cleanly to PDF.
+* [ ] Tables are readable: short cells, no more than six columns where possible.
+
+### 22.5 References and Sources
+
+* [ ] The reference list is at the end of the chapter, numbered, with links (or DOI).
+* [ ] A person has **opened every link** and recorded the check in the Source Verification table of the Module Outline.
+* [ ] Statements about laws, standards or current facts match the cited source.
+* [ ] Chapters 4 to 6 are compared with the lecturer's slides, and any missing slide topic is listed.
+
+### 22.6 Test Bank Coverage
+
+Each chapter contains 3 True/False, 3 multiple-choice and 1 short-answer question in its Quick Check. Over eight chapters this gives 24, 24 and 8 questions. The Test Bank must contain at least 20 True/False, 20 multiple-choice and 6 open-ended questions, and each must trace back to a chapter.
+
+### 22.7 Honest Records
+
+* [ ] A review is marked Pass **only** after the reviewer has really read and checked the item.
+* [ ] "Pending Review" is used for anything not yet reviewed. No review result, date, name or screenshot is written in advance.
+* [ ] AI-use records contain only real uses, with light-theme screenshots where required.
+* [ ] Reference projects (Project Plan, section 7) are only those the team has actually opened.
 
 ---
 
