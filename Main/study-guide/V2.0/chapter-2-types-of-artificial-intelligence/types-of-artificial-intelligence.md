@@ -1,6 +1,5 @@
 # Types of Artificial Intelligence
 
-**Author:** Gandhi Bestin Dhammananda
 **Audience:** Learners with no technical background in AI  
 **Estimated time:** 2.5 to 3.5 hours (including missions)  
 **Format:** Read, pause at each "Pause and predict" box, complete the two missions, then check the answer key at the end of the chapter.
