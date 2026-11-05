@@ -1,6 +1,6 @@
 # Team Project Plan and Master Task List V2.0
 
-**Document author:** Brian Djoni Suzanna (Quality Lead)  
+**Document author:** Joseph Lokman(CEO)  
 **Version:** V2.0 (Stage 2)  
 **Last updated:** 6 November 2026
 
