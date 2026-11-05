@@ -101,7 +101,7 @@ All Stage 2 reviews are **Not yet reviewed**. Brian writes the real result after
 
 | No. | Review ID | Document / Chapter | Reviewer | Second checker | Iteration | Latest Known Status |
 | --: | --------- | ------------------ | -------- | -------------- | --------- | ------------------- |
-| 37 | QR-V2-001-I01 | Chapter 1: Introduction to AI | Brian |  | Initial Review    | Pass                        |
+| 37 | QR-V2-001-I01 | Chapter 1: Introduction to AI | Brian | Brian   | Initial Review    | Pass                        |
 | 38 | QR-V2-002-I01 | Chapter 2: Types of AI | Brian |  Brian | Initial Review    | Pass                        |
 | 39 | QR-V2-003-I01 | Chapter 3: How AI Works | Brian |  Brian | Initial Review    | Pass                        |
 | 40 | QR-V2-004-I01 | Chapter 4: Symbolic AI | Brian | Brian  | Initial Review    | Pass                        |
