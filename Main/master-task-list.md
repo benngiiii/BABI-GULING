@@ -55,21 +55,26 @@ One member prepares, one reviews and one compiles each deliverable.
 
 | Deliverable | Prepared by | Reviewed by | Compiled by |
 |-------------|-------------|-------------|-------------|
-| Project documents (README, outline, plan, this list) | Brian | Joseph | Jonathan |
+| README | Brian | Brian | Jonathan |
+| Master Task List | Joseph | Brian | Jonathan |
+| Module Outline | Jonathan | Brian | Jonathan |
+| Project Plan | Joseph | Brian | Jonathan |
+| Stage 1 Content | Brian | Brian | Jonathan |
+| Stage 2 Content | Brian | Brian | Jonathan |
 | Chapter 1: Introduction to AI | Jonathan | Brian | Jonathan |
 | Chapter 2: Types of AI | Gandhi | Brian | Jonathan |
 | Chapter 3: How AI Works | Benedict | Brian | Jonathan |
 | Chapter 4: Symbolic AI | Gandhi | Brian | Jonathan |
 | Chapter 5: Connectionist AI and Big Data | Jonathan | Brian | Jonathan |
 | Chapter 6: Behaviorist AI | Joseph | Brian | Jonathan |
-| Chapter 7: Applications of AI | Brian | Joseph and Brian | Jonathan |
+| Chapter 7: Applications of AI | Brian | Brian | Jonathan |
 | Chapter 8: AI Ethics, Risks and Limitations | Joseph | Brian | Jonathan |
 | Study Guide + Test Bank | Benedict (with chapter authors) | Brian | Jonathan |
 | PPT Slides | Benedict | Brian | Jonathan |
 | Video Tutorials | Gandhi | Brian | Jonathan |
 | Live teaching | Gandhi (with the whole team) | Brian | Not applicable |
 | Repository structure, branches, Issues | Joseph | Brian | Jonathan |
-| Project log and meeting summaries | Joseph | Jonathan | Joseph |
+| Project log and meeting summaries | Jonathan | Joseph | Joseph |
 | Personal learning and work logs | Each member | Joseph | Jonathan |
 | Project and personal AI-use records | Joseph (project); each member (own) | Brian | Jonathan |
 | Stage submission folder | Jonathan | Brian | Jonathan |
@@ -128,14 +133,14 @@ Stage 1 was submitted and scored 100/100. The Stage 1 files are kept unchanged i
 
 | ID | Task | Owner | Reviewer | Deadline | Status | Evidence |
 |----|------|-------|----------|----------|:------:|----------|
-| S2-01 | Develop Chapter 1 (V2.0) | Jonathan | Brian | 4 Nov | 📝 | `chapter-1-…/` |
-| S2-02 | Develop Chapter 2 (V2.0) | Gandhi | Brian | 4 Nov | 📝 | `chapter-2-…/` |
-| S2-03 | Develop Chapter 3 (V2.0) | Benedict | Brian | 4 Nov | 📝 | `chapter-3-…/` |
+| S2-01 | Develop Chapter 1 (V2.0) | Jonathan | Brian | 4 Nov | 📝 | `chapter-1-introduction-to-artificial-intelligence/` |
+| S2-02 | Develop Chapter 2 (V2.0) | Gandhi | Brian | 4 Nov | 📝 | `chapter-2-types-of-artificial-intelligence/` |
+| S2-03 | Develop Chapter 3 (V2.0) | Benedict | Brian | 4 Nov | 📝 | `chapter-3-how-artificial-intelligence-works/` |
 | S2-04 | Write new Chapter 4: Symbolic AI | Gandhi | Brian | 4 Nov | 📝 | `chapter-4-symbolic-ai/` |
-| S2-05 | Write new Chapter 5: Connectionist AI and Big Data | Jonathan | Brian | 4 Nov | 📝 | `chapter-5-…/` |
+| S2-05 | Write new Chapter 5: Connectionist AI and Big Data | Jonathan | Brian | 4 Nov | 📝 | `chapter-5-connectionist-ai-and-big-data/` |
 | S2-06 | Write new Chapter 6: Behaviorist AI | Joseph | Brian | 4 Nov | 📝 | `chapter-6-behaviorist-ai/` |
-| S2-07 | Develop Chapter 7: Applications of AI (was Ch. 4) | Brian | Joseph | 4 Nov | 📝 | `chapter-7-…/` |
-| S2-08 | Develop Chapter 8: AI Ethics, Risks and Limitations (was Ch. 5) | Joseph | Brian | 4 Nov | 📝 | `chapter-8-…/` |
+| S2-07 | Develop Chapter 7: Applications of AI (was Ch. 4) | Brian | Joseph | 4 Nov | 📝 | `chapter-7-applications-of-ai/` |
+| S2-08 | Develop Chapter 8: AI Ethics, Risks and Limitations (was Ch. 5) | Joseph | Brian | 4 Nov | 📝 | `chapter-8-ai-ethics-and-limitations/` |
 | S2-09 | Author check of own chapter: read once, recompute every mission and answer key, open every reference link | Each author | Peer | 5 Nov | ⬜ | Author check note |
 | S2-10 | Compare Chapters 4 to 6 with the lecturer's slides and list missing slide topics | Gandhi, Jonathan, Joseph | Brian | 5 Nov | ⬜ | Comparison note |
 
@@ -143,12 +148,12 @@ Stage 1 was submitted and scored 100/100. The Stage 1 files are kept unchanged i
 
 | ID | Task | Owner | Reviewer | Deadline | Status | Evidence |
 |----|------|-------|----------|----------|:------:|----------|
-| S2-11 | README V2.0 | Brian | Joseph | 4 Nov | 📝 | `README.md` |
-| S2-12 | Module Outline V2.0 | Brian | Joseph | 4 Nov | 📝 | `module-outline.md` |
-| S2-13 | Project Plan V2.0 | Brian | Joseph | 4 Nov | 📝 | `project-plan.md` |
-| S2-14 | Master Task List V2.0 (this file) | Brian | Joseph | 4 Nov | 📝 | `master-task-list.md` |
-| S2-15 | Quality Standards V2.0 | Brian | Joseph | 4 Nov | 📝 | `quality-standards-V2.0.md` |
-| S2-16 | Stage 2 Content file (all eight chapters in one file) | Jonathan | Brian | 5 Nov | 📝 | `stage2_Content.md` |
+| S2-11 | README V2.0 | Brian | Brian | 4 Nov | 📝 | `README.md` |
+| S2-12 | Module Outline V2.0 | Jonathan | Brian | 4 Nov | 📝 | `module-outline.md` |
+| S2-13 | Project Plan V2.0 | Joseph | Brian | 4 Nov | 📝 | `project-plan.md` |
+| S2-14 | Master Task List V2.0 (this file) | Joseph | Brian | 4 Nov | 📝 | `master-task-list.md` |
+| S2-15 | Quality Standards V2.0 | Brian | Brian | 4 Nov | 📝 | `quality-standards-V2.0.md` |
+| S2-16 | Stage 2 Content file (all eight chapters in one file) | Brian | Brian | 5 Nov | 📝 | `stage2_Content.md` |
 
 #### C. Learning Resources
 
@@ -165,7 +170,7 @@ Stage 1 was submitted and scored 100/100. The Stage 1 files are kept unchanged i
 
 | ID | Task | Owner | Reviewer | Deadline | Status | Evidence |
 |----|------|-------|----------|----------|:------:|----------|
-| S2-23 | Quality review of all eight chapters against Quality Standards V2.0 | Brian | Joseph (for Ch. 7) | 6 Nov | ⬜ | `detailed review V2.0/` |
+| S2-23 | Quality review of all eight chapters against Quality Standards V2.0 | Brian | Brian | 6 Nov | ⬜ | `detailed review V2.0/` |
 | S2-24 | Quality review of project documents | Joseph | Brian | 6 Nov | ⬜ | `detailed review V2.0/` |
 | S2-25 | Apply corrections to the Markdown first, then to all affected resources | Each owner | Brian | 6 Nov | ⬜ | Revision notes |
 | S2-26 | Recheck corrected items and update the Review Register | Brian | Joseph | 6 Nov | ⬜ | `review-register.md` |
