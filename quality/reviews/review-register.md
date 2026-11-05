@@ -105,10 +105,10 @@ All Stage 2 reviews are **Not yet reviewed**. Brian writes the real result after
 | 38 | QR-V2-002-I01 | Chapter 2: Types of AI | Brian |  Brian | Initial Review    | Pass                        |
 | 39 | QR-V2-003-I01 | Chapter 3: How AI Works | Brian |  Brian | Initial Review    | Pass                        |
 | 40 | QR-V2-004-I01 | Chapter 4: Symbolic AI | Brian | Brian  | Initial Review    | Pass                        |
-| 41 | QR-V2-005-I01 | Chapter 5: Connectionist AI and Big Data | Brian | | Initial Review    | Pass                        |
-| 42 | QR-V2-006-I01 | Chapter 6: Behaviorist AI | Brian | | Initial Review    | Pass                        |
+| 41 | QR-V2-005-I01 | Chapter 5: Connectionist AI and Big Data | Brian |  Brian | Initial Review    | Pass                        |
+| 42 | QR-V2-006-I01 | Chapter 6: Behaviorist AI | Brian | Brian  | Initial Review    | Pass                        |
 | 43 | QR-V2-007-I01 | Chapter 7: Applications of AI | Joseph | Brian| Initial Review    | Pass                        |
-| 44 | QR-V2-008-I01 | Chapter 8: AI Ethics, Risks and Limitations | Brian | | Initial Review    | Pass                        |
+| 44 | QR-V2-008-I01 | Chapter 8: AI Ethics, Risks and Limitations | Brian |  Brian | Initial Review    | Pass                        |
 | 45 | QR-V2-009-I01 | README V2.0 | Joseph | Brian  | Initial Review    | Pass                        |
 | 46 | QR-V2-010-I01 | Module Outline V2.0 | Joseph |  Brian | Initial Review    | Pass                        |
 | 47 | QR-V2-011-I01 | Project Plan V2.0 | Joseph |  Brian | Initial Review    | Pass                        |
