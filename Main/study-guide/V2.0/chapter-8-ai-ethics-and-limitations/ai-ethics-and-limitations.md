@@ -1,453 +1,476 @@
-# AI Ethics and Limitations
+# AI Ethics, Risks and Limitations
 
-**Audience:** Learners with no technical background in AI
-**Estimated time:** 3 to 4 hours (including activities)
-**Format:** Read, work through the examples, complete the activities, then check the answer keys.
+**Audience:** Learners with no technical background in AI  
+**Estimated time:** 3 to 4 hours (including missions)  
+**Format:** Read, pause at each "Pause and predict" box, complete the two missions, then check the answer key at the end of the chapter.
 
 ---
 
 ## Table of Contents
 
-1. [Learning Outcomes](#learning-outcomes)
-2. [Module Map](#module-map)
-3. [Prerequisites and Framing](#prerequisites-and-framing)
-4. [Topic 1: Bias (fully developed)](#topic-1-bias)
-5. [Topic 2: Privacy](#topic-2-privacy)
-6. [Topic 3: Hallucinations](#topic-3-hallucinations)
-7. [Topic 4: Responsible AI](#topic-4-responsible-ai)
-8. [Topic 5: Discussion Scenario](#topic-5-discussion-scenario-bias-or-hallucination)
-9. [Glossary](#glossary)
-10. [References](#references)
+- [Learning Outcomes](#learning-outcomes)
+- [Where This Chapter Fits](#where-this-chapter-fits)
+- [8.1 The Big Picture](#81-the-big-picture)
+- [8.2 Bias and Fairness](#82-bias-and-fairness)
+- [8.3 Privacy and Data Protection](#83-privacy-and-data-protection)
+- [8.4 Transparency, Explainability and Accountability](#84-transparency-explainability-and-accountability)
+- [8.5 Reliability: Hallucination and Other Limits](#85-reliability-hallucination-and-other-limits)
+- [8.6 Safety and Misuse](#86-safety-and-misuse)
+- [8.7 Rules and Frameworks](#87-rules-and-frameworks)
+- [8.8 Using AI Responsibly in Your Studies](#88-using-ai-responsibly-in-your-studies)
+- [8.9 Mission 1: Audit a Hiring Tool](#89-mission-1-audit-a-hiring-tool)
+- [8.10 Mission 2: Verify the Claims](#810-mission-2-verify-the-claims)
+- [8.11 Common Misconceptions](#811-common-misconceptions)
+- [8.12 Quick Check](#812-quick-check)
+- [8.13 Summary, Connections and References](#813-summary-connections-and-references)
+- [Answer Key](#answer-key)
+- [Glossary](#glossary)
+- [References](#references)
 
 ---
 
 ## Learning Outcomes
 
-By the end of this module, learners will be able to:
+After this chapter, you should be able to:
 
-- **Explain** what bias, privacy risk, and hallucination mean in an AI context.
-- **Identify** where in an AI system's life cycle bias can enter.
-- **Calculate** a simple fairness check (selection rate and the four-fifths rule) and interpret the result.
-- **Verify** an AI-generated claim using a short checking routine.
-- **Apply** responsible AI principles to a realistic scenario and justify a decision.
+1. Explain where bias can enter an AI system and give an example.
+2. Calculate a selection rate and an impact ratio and apply the four-fifths rule of thumb.
+3. Explain basic privacy ideas: personal data, consent and data minimisation.
+4. Explain why transparency, explainability and accountability matter.
+5. Explain hallucination and use a four-step method to check AI claims.
+6. Describe the EU AI Act risk levels and the four functions of the NIST AI Risk Management Framework.
+7. Describe responsible and honest use of AI in your own studies.
 
-## Module Map
+## Where This Chapter Fits
 
-| Topic | What is included |
-|---|---|
-| 1. Bias | Explanations, terms, diagram, worked example with code, activity, answer key |
-| 2. Privacy | Explanation, table, short activity with answer |
-| 3. Hallucinations | Explanation, verification routine, short activity with answer |
-| 4. Responsible AI | Principles table, checklist |
-| 5. Discussion scenario | Real case, guided questions, teacher notes |
+**Builds on Chapters 1 to 7.** Chapter 3 introduced data quality and hallucination. Chapter 5 mentioned bias and black boxes. Chapter 6 showed reward hacking. Chapter 7 showed applications and human in the loop. This chapter brings these risks together and shows how people manage them.
+
+**Closing chapter.** It ends the module by asking: *now that we can build AI, how should we use it?*
 
 ---
 
-## Prerequisites and Framing
+## 8.1 The Big Picture
 
-This module is one branch of the wider **AI Overview** course. It assumes learners have already met the basic vocabulary from the earlier chapters, so those definitions are not repeated here:
+### Start with a question
 
-- artificial intelligence, machine learning, model, and training data (see the *What is AI?* and *How machines learn* chapters)
+A calculator that makes a mistake affects one answer. An AI tool that makes a mistake may repeat it for millions of people, quickly, and without anyone noticing. Which one needs more care?
 
-Terms that are **specific to ethics and limitations** (for example *proxy variable*, *impact ratio*, *hallucination*) are defined where they first appear and collected in the [Glossary](#glossary).
+### In plain words
 
-> **Core idea of this module:** AI systems do not have opinions or intentions. They reflect the data, goals, and choices of the people who build and use them. Ethics is about those choices.
+**AI ethics is the study of how to build and use AI so that it is fair, safe, respectful of people's rights, and accountable.** It matters because AI works at large scale, learns from imperfect human data, and often affects important decisions such as jobs, loans, health and safety.
+
+### Five themes of this chapter
+
+| Theme | Plain question |
+|-------|----------------|
+| **Fairness** | Does it treat groups of people justly? |
+| **Privacy** | Does it protect personal information? |
+| **Transparency and accountability** | Can we understand it, and who is responsible? |
+| **Reliability** | Is it correct, and does it admit when it is unsure? |
+| **Safety and misuse** | Can it cause harm or be used to harm? |
 
 ---
 
-## Topic 1: Bias
+## 8.2 Bias and Fairness
 
-### 1.1 What is bias?
+### Start with a question
 
-In everyday language, *bias* means unfair preference. In AI, **bias** means that a system produces results that are **systematically** less accurate or less favourable for some people or groups than for others.
+A company trains a tool on ten years of past hiring decisions to pick the best applicants. If past hiring favoured one group, what will the tool learn?
 
-Two words in that definition matter:
+### In plain words
 
-- **Systematically:** the unfairness follows a pattern. It is not random bad luck.
-- **Groups:** bias is usually discovered by comparing results across groups (for example by gender, age, skin tone, language, or region).
+**Bias in AI means a system gives results that are systematically less favourable to some people or groups for reasons that are not fair.** Usually the computer is not "prejudiced". It copies patterns in the data and in the goals given by people.
 
-Bias is not always intentional. Most harmful AI bias happens even when the builders had good intentions.
+### Where bias comes in
 
-### 1.2 Where does bias come from?
+![Five steps: real world, data collection, labels, model design, deployment, each with a short note on how bias can enter](assets/fig-8-1-bias-sources.png)
+*Figure 8.1: Where bias can enter an AI system. Source: created by our team.*
 
-Bias can enter at several stages of an AI system's life cycle:
+| Step | How bias can enter | Example |
+|------|--------------------|---------|
+| Real world | History contains unfairness | Past hiring favoured one group |
+| Data collection | Some groups are missing or under-represented | Few face photos of dark-skinned women |
+| Labels | Human judgments carry bias | Past "good employee" ratings were biased |
+| Model design | The goal or measure is a poor proxy | "Time at job" used as a stand-in for performance |
+| Deployment | The tool is used on people unlike the training group; feedback loops grow the problem | A tool trained in one country used in another |
 
-![Flowchart of the AI life cycle (collect data, label data, train model, test model, deploy and use) showing where each type of bias can enter](assets/bias-occurence-diagram.png)
-
-*Figure 1. Where bias can enter an AI system's life cycle.*
-
-If the image does not display in your viewer, use this table instead (it contains the same information):
-
-| Stage | Type of bias | Plain-language meaning | Example |
-|---|---|---|---|
-| Collect data | **Historical bias** | The world was unfair, so the data is too | Past hiring records favour one gender |
-| Collect data | **Sampling bias** | Some groups are barely in the data | A face dataset with mostly light-skinned faces |
-| Label data | **Labelling bias** | Human labellers add their own assumptions | Labelling certain dialects as "rude" |
-| Train model | **Proxy variable** | A harmless-looking input correlates with a protected trait | Postcode standing in for ethnicity |
-| Test model | **Measurement bias** | Success is only checked on a convenient group | Testing accuracy overall, not per group |
-| Use model | **Feedback loop** | Biased outputs create new biased data | Police sent to a "high-crime" area record more crime there |
-
-**Terms defined:**
-
-- **Protected characteristic:** a trait that laws or ethics say should not be used to treat people unfairly, such as race, sex, religion, age, or disability.
-- **Proxy variable:** an input that is not itself a protected characteristic but is strongly linked to one.
-- **Feedback loop:** when a system's outputs influence the data it later learns from, which can amplify an original error.
-
-### 1.3 Real-world evidence
+### Real cases
 
 | Case | What happened | Lesson |
-|---|---|---|
-| **Gender Shades (2018)** | Researchers tested commercial facial-analysis systems and found much higher error rates for darker-skinned women than for lighter-skinned men (Buolamwini & Gebru, 2018). | Overall accuracy can hide large gaps between groups. |
-| **Healthcare risk algorithm (2019)** | An algorithm used to decide who gets extra care used past healthcare *spending* as a stand-in for health *need*. Because less money had been spent on Black patients with the same level of illness, it under-estimated their needs (Obermeyer et al., 2019). | A proxy variable (cost) quietly encoded unequal access to care. |
-| **Recruiting tool (reported 2018)** | Reuters reported that Amazon abandoned an experimental hiring tool that learned to downgrade résumés associated with women, because it was trained on past, male-dominated hiring (Dastin, 2018). | Historical bias in training data is reproduced by the model. |
+|------|---------------|--------|
+| **Face analysis** | A study of commercial systems found much higher error rates for darker-skinned women (up to about 35%) than for lighter-skinned men (under 1%) (Buolamwini & Gebru, 2018) | Test results must be reported per group |
+| **Hiring tool** | A company reportedly dropped an experimental recruiting tool that favoured male applicants because it learned from past, mostly male, hires (Dastin, 2018) | Past data can carry past unfairness |
+| **Risk scores in courts** | A news investigation reported that a criminal-risk score made different kinds of errors for Black and white defendants (Angwin et al., 2016). Researchers showed that several fairness goals cannot all be met at once when groups differ in base rates (Kleinberg et al., 2017) | "Fair" has more than one meaning; people must choose and explain |
 
-### 1.4 Worked example: checking a hiring tool for unequal outcomes
+### Measuring: selection rate and the four-fifths rule
 
-**Scenario.** A company uses an AI tool to shortlist job applicants. You are asked to check whether it treats two groups, Group A and Group B, fairly. (The numbers below are invented for teaching.)
+![Bar chart: Group A 60% approved, Group B 30% approved, a dashed line at 48%, which is 80% of the highest rate](assets/fig-8-4-selection-rate-audit.png)
+*Figure 8.2: A simple bias audit. Source: created by our team.*
 
-| | Applicants | Shortlisted by the tool |
-|---|---|---|
-| Group A | 100 | 60 |
-| Group B | 100 | 30 |
+| Term | Meaning | Value in Figure 8.2 |
+|------|---------|---------------------|
+| **Selection rate** | Share of a group that was approved | A: 30 of 50 = 60%; B: 12 of 40 = 30% |
+| **Impact ratio** | Lowest selection rate divided by highest | 30% / 60% = 0.50 |
+| **Four-fifths rule** | A rule of thumb used in US employment practice: a ratio below 0.80 is a warning sign that needs investigation (U.S. EEOC, 1978) | 0.50 is below 0.80, so investigate |
 
-We will use a common screening measure called the **four-fifths rule**.
+**Important:** the rule is a *screening* signal, not proof of fairness or of unfairness. A ratio above 0.80 does not prove the tool is fair, and one below 0.80 is a reason to look deeper at data, labels and features.
 
-**Terms defined:**
+### Reducing bias
 
-- **Selection rate:** the share of a group that receives the favourable outcome. Formula: `shortlisted ÷ applicants`.
-- **Four-fifths (80%) rule:** a rule of thumb from US employment guidance. If one group's selection rate is **less than 80% (4/5)** of the highest group's rate, this is treated as a warning sign of possible adverse impact (US EEOC et al., 1978, 29 CFR §1607.4(D)). It is a **screening indicator, not proof** of discrimination.
+| Action | Example |
+|--------|---------|
+| Check representation in the data | Are all groups present in realistic numbers? |
+| Test performance **per group** | Report errors for each group, not just the average |
+| Remove or check **proxies** | A postcode can stand in for ethnicity or income |
+| Document the model | Publish what it is for and where it fails (Mitchell et al., 2019) |
+| Keep humans in the loop | Allow review and appeal (Chapter 7) |
 
-**Step 1: Calculate each group's selection rate.**
-
-- Group A: 60 ÷ 100 = **0.60** (60%)
-- Group B: 30 ÷ 100 = **0.30** (30%)
-
-**Step 2: Identify the highest rate.** Group A, at 0.60.
-
-**Step 3: Divide each other group's rate by the highest rate.** This is the **impact ratio**.
-
-- Group B: 0.30 ÷ 0.60 = **0.50**
-
-**Step 4: Compare to the threshold of 0.80.**
-
-- 0.50 is less than 0.80, so the tool **fails** the screening check. Group B is shortlisted at half the rate of Group A.
-
-**Step 5: Decide what to do next.** The result is a warning, not a verdict. A sensible next step is to investigate: Which inputs does the model use? Are any of them proxies? Was it trained on biased historical hiring decisions? Do qualified applicants in Group B get rejected more often?
-
-You can reproduce the calculation with this short Python script:
-
-```python
-# Fairness check: selection rates and the four-fifths rule
-groups = {
-    "Group A": {"applicants": 100, "shortlisted": 60},
-    "Group B": {"applicants": 100, "shortlisted": 30},
-}
-
-# Step 1: selection rate for each group
-rates = {name: g["shortlisted"] / g["applicants"] for name, g in groups.items()}
-
-# Step 2: highest rate
-highest = max(rates.values())
-
-# Steps 3 and 4: impact ratio and comparison with 0.8
-for name, rate in rates.items():
-    ratio = rate / highest
-    status = "PASS" if ratio >= 0.8 else "FLAG for review"
-    print(f"{name}: selection rate = {rate:.2f}, impact ratio = {ratio:.2f} -> {status}")
-```
-
-**Expected output:**
-
-```text
-Group A: selection rate = 0.60, impact ratio = 1.00 -> PASS
-Group B: selection rate = 0.30, impact ratio = 0.50 -> FLAG for review
-```
-
-> **Limitation of this check.** The four-fifths rule only compares outcome rates. It does not tell you *why* the gap exists, and a tool can pass this check while still making more *mistakes* for one group. There are several competing definitions of fairness, and they cannot all be satisfied at once (Chouldechova, 2017). Real audits use several measures plus human judgment.
-
-### 1.5 Learner activity
-
-**Part A: Calculation (10 minutes).** A different company's tool produces these results:
-
-| | Applicants | Shortlisted |
-|---|---|---|
-| Group C | 50 | 20 |
-| Group D | 80 | 36 |
-
-1. Calculate the selection rate for each group.
-2. Calculate the impact ratio.
-3. Does the tool pass the four-fifths rule? Explain in one sentence.
-
-**Part B: Spot the proxy (10 minutes).** A bank builds a loan-approval model. It is **not** given any information about race or gender, but it **is** given the applicant's postcode, first language, and job title.
-
-1. Which input might act as a proxy variable? Why?
-2. Name one way the team could check whether the proxy is causing unfair results.
-
-**Part C: Reflection (5 minutes).** In 3 to 4 sentences, explain why "we removed the sensitive column from the data" does not guarantee a fair model.
-
-### 1.6 Answer key and expected outcomes
-
-**Part A**
-
-1. Group C: 20 ÷ 50 = **0.40**. Group D: 36 ÷ 80 = **0.45**.
-2. Highest rate is Group D (0.45). Impact ratio for Group C = 0.40 ÷ 0.45 ≈ **0.89**.
-3. 0.89 is above 0.80, so the tool **passes** this screening check; the gap is small enough that this rule does not flag it. (A good answer also notes that passing does not prove the tool is fair, as it ignores error rates and the reasons for the gap.)
-
-**Part B**
-
-1. **Postcode** is the strongest candidate, because neighbourhoods are often strongly linked to ethnicity and income due to historical patterns (a proxy). First language can also act as a proxy for national origin. Job title may be a weaker proxy for gender in some fields. *Accept any well-reasoned answer.*
-2. Acceptable checks: compare approval rates and error rates across groups (using group information held *only for auditing*); remove or test the model without the suspected proxy and see whether outcomes change; review whether the input is truly relevant to repayment ability.
-
-**Part C** *(Model answer)*: Other inputs can still carry the same information (proxy variables), and the historical data may already reflect unfair past decisions. Removing the column also makes it impossible to measure whether groups are treated differently, so unfairness can become harder to detect, not easier.
-
-**Teacher check:** Learners demonstrate understanding if they (a) compute rates correctly, (b) interpret the ratio relative to 0.8, and (c) recognise that fairness requires investigating causes, not only removing columns.
-
-### 1.7 Ways to reduce bias (overview)
-
-| Approach | What it means | Example |
-|---|---|---|
-| Better data | Collect more representative data | Add faces with a wider range of skin tones |
-| Per-group testing | Report accuracy for each group, not just overall | Publish results by gender and skin tone |
-| Documentation | Describe a model's intended use and limits | **Model cards** (Mitchell et al., 2019); **datasheets for datasets** (Gebru et al., 2021) |
-| Human oversight | A person can review and override decisions | Manager reviews all automated rejections |
-| Ongoing monitoring | Re-check after launch | Re-run the fairness check every quarter |
+> **Pause and predict.** A company removes the column "gender" from its data. Is the tool now guaranteed to be gender-neutral?
+>
+> **Check:** No. Other columns, such as "attended a women's college" or "hobby", may still reveal gender. Such columns are called *proxies*. Removing one column does not remove the pattern.
 
 ---
 
-## Topic 2: Privacy
+## 8.3 Privacy and Data Protection
 
-### 2.1 What is privacy in AI?
+### Start with a question
 
-**Privacy** is a person's ability to control information about themselves. **Personal data** (also called **personally identifiable information, PII**) is any information that can identify a person, directly (name, ID number, face) or indirectly (a combination of age, postcode, and job).
+Your phone knows where you go, what you search and who you talk to. Who else should be allowed to know?
 
-AI raises privacy concerns because it:
+### In plain words
 
-1. **Is trained on large amounts of data**, which may include personal information collected without clear consent.
-2. **Can memorise** parts of its training data. Researchers have shown that large language models can sometimes be prompted to reproduce text from their training sets, including personal details (Carlini et al., 2021).
-3. **Can infer sensitive facts** (such as health conditions) from innocent-looking data.
-4. **Receives user input.** Anything typed into an AI tool may be stored or used according to that service's policy.
+**Personal data is any information that can identify a person, alone or when combined with other data.** Examples: name, face photo, voice, location, health record.
 
-### 2.2 Risks and protections
+### Key ideas
 
-| Risk | Plain-language description | Protection |
-|---|---|---|
-| Data collection without consent | Data gathered for one purpose is reused for another | Collect only what is needed (**data minimisation**); get clear consent |
-| Memorisation / leakage | The model repeats private training text | Remove personal data before training; test for leakage |
-| Re-identification | "Anonymous" data is matched with other data to find the person | Aggregate or add noise (**differential privacy**) |
-| Oversharing by users | A user pastes confidential text into a chatbot | Read the tool's data policy; never paste secrets or personal data |
+| Idea | In plain words | Example |
+|------|----------------|---------|
+| **Consent** | People agree knowingly before their data is used | A clear opt-in, not a hidden box |
+| **Purpose limitation** | Use data only for the reason it was collected | Health data collected for care is not used for advertising |
+| **Data minimisation** | Collect only what is needed | A flashlight app does not need your contacts |
+| **Security** | Protect data from leaks | Encryption, access control |
+| **Rights** | People can see, correct or delete their data | The right to ask a company to delete your data |
 
-**Terms defined:**
+Many places have laws on these ideas. Examples: the European Union's General Data Protection Regulation (GDPR) (European Union, 2016), Indonesia's Personal Data Protection Law (Law No. 27 of 2022) and China's Personal Information Protection Law (2021). Rules differ, so always check the law that applies to you.
 
-- **Data minimisation:** collecting and keeping only the data that is necessary for a stated purpose.
-- **Anonymisation:** removing identifying details. It is hard to do perfectly, which is why re-identification is a risk.
-- **Differential privacy:** a technique that adds carefully measured random noise so that results reveal patterns about a group without revealing facts about any one individual.
+### Why AI makes privacy harder
 
-**Legal context:** Laws such as the EU's General Data Protection Regulation (GDPR) give people rights over their personal data, including rights of access and erasure, and require a lawful basis for processing (European Union, 2016).
+- Models are trained on very large data sets that may include personal information.
+- Data that looks anonymous can sometimes be matched with other data to identify people again.
+- A model may reveal parts of its training data when questioned in clever ways.
 
-### 2.3 Learner activity
-
-You work for a clinic. A colleague wants to paste a patient's full name, date of birth, and symptoms into a public AI chatbot to "help draft a letter faster."
-
-1. Identify two privacy risks.
-2. Suggest a safer way to get help with the letter.
-
-**Answer key.**
-1. Possible risks: the data may be stored or used for training under the provider's terms; it may be exposed to people without authorisation; it may breach the clinic's policies or health-privacy law; the patient did not consent to this use.
-2. Safer options: remove all identifying details and use placeholders such as "[Patient]"; use an approved tool covered by the clinic's data agreement; or write the sensitive parts manually.
+**Practical rule for students:** do not paste personal, confidential or exam material into public AI tools.
 
 ---
 
-## Topic 3: Hallucinations
+## 8.4 Transparency, Explainability and Accountability
 
-### 3.1 What is a hallucination?
+### Start with a question
 
-In AI, a **hallucination** is an output that is **fluent and confident but false, made up, or unsupported** by the source it should rely on (Ji et al., 2023).
+A bank refuses your loan and says "the computer decided". Is that acceptable?
 
-**Why does it happen?** A **large language model (LLM)** is trained to predict which words are likely to come next. It is optimised to produce **plausible** text, not to check **truth**. When it lacks information, it may still generate something that *sounds* right.
+### In plain words
 
-**Terms defined:**
+| Term | Meaning | Why it matters |
+|------|---------|----------------|
+| **Transparency** | Being open that AI is used, and how | People can object or ask questions |
+| **Explainability** | Being able to say *why* the system gave a result | Errors and bias can be found and fixed |
+| **Accountability** | A named person or organisation is responsible | Someone can answer for harm and correct it |
 
-- **Large language model (LLM):** an AI model trained on very large amounts of text that generates text by predicting likely next words.
-- **Grounding:** connecting a model's answer to trusted sources, for example by letting it retrieve documents and cite them.
-- **Fabricated citation:** a reference that looks real (author, title, journal) but does not exist.
-
-### 3.2 Common types
-
-| Type | Example |
-|---|---|
-| Made-up facts | Stating a wrong date or statistic with confidence |
-| Fabricated sources | Inventing a court case, paper, or URL |
-| Wrong reasoning | A maths or logic answer that looks neat but is incorrect |
-| Unfaithful summary | A summary that adds details not in the original document |
-
-### 3.3 Worked example: verifying an AI-generated claim
-
-**Scenario.** You ask an AI assistant for a source on a claim, and it replies:
-
-> "According to Henderson & Zhou (2019), published in the *Journal of Applied Cognitive Ethics*, 87% of students prefer AI tutors."
-
-**Step 1: Flag it.** It contains specific details (names, year, journal, percentage). Specific does not mean true.
-
-**Step 2: Search the exact title and authors** in a scholarly database or a search engine.
-
-**Step 3: Check the journal exists** and whether that article, volume, and page are listed.
-
-**Step 4: Check the claim inside the source** (if found). Does the paper actually report 87%?
-
-**Step 5: Decide and record.**
-
-- *Not found anywhere* → treat as **likely fabricated**; do not cite or use it.
-- *Found but says something different* → use what the real source says.
-- *Found and matches* → cite the **original source**, not the AI.
-
-**Rule of thumb:** *Trust, but verify; the more important the decision, the more you verify.*
-
-### 3.4 Reducing the risk
-
-- Ask the AI to **cite sources, then check them yourself.**
-- Ask for **uncertainty**: "If you are unsure, say so."
-- Provide the source text and ask the AI to answer **only from that text.**
-- Cross-check with a second, independent source.
-- Keep a **human in the loop** for high-stakes uses (legal, medical, financial).
-
-### 3.5 Learner activity
-
-An AI summary of a news article says: "The mayor announced a 20% tax cut." You have the original article, and it never mentions a tax cut.
-
-1. What type of hallucination is this?
-2. List two steps you would take before sharing the summary.
-
-**Answer key.**
-1. An **unfaithful summary** (an unsupported added detail).
-2. Re-read the original article and compare; re-run the summary with the instruction "only use facts stated in the article"; check another news source; do not share until verified.
+Rule-based systems (Chapter 4) are easy to explain because you can read the rules. Neural networks (Chapter 5) are harder, because the knowledge is in millions of weights. Researchers study *explainable AI* methods, but explanations of complex models are often partial. For important decisions, many rules require human review and a way to appeal.
 
 ---
 
-## Topic 4: Responsible AI
+## 8.5 Reliability: Hallucination and Other Limits
 
-### 4.1 What is responsible AI?
+### Start with a question
 
-**Responsible AI** means designing, building, and using AI in ways that are safe, fair, transparent, and accountable, and that respect human rights. It turns the concerns in Topics 1 to 3 into practical commitments.
+You ask a chatbot for sources about a topic. It gives three neat references with authors, titles and years. Later you cannot find them anywhere. What happened?
 
-Many organisations have published similar principles. The OECD AI Principles (2019) and the NIST AI Risk Management Framework (2023) are widely referenced starting points.
+### In plain words
 
-### 4.2 Core principles
+**Hallucination is when an AI produces text that sounds right but is false or invented.** As Chapter 3 explained, a language model predicts likely next words; it does not check facts. Fluent language is not proof of truth (Ji et al., 2023).
 
-| Principle | Meaning | Question to ask |
-|---|---|---|
-| **Fairness** | Treat people and groups equitably | Have we tested results across groups? |
-| **Transparency** | Be open about when and how AI is used | Do users know AI is involved? |
-| **Explainability** | Be able to give understandable reasons for outputs | Can we explain why this decision was made? |
-| **Privacy and security** | Protect data and systems | Do we collect only what we need? |
-| **Accountability** | A person or organisation is answerable for outcomes | Who is responsible if it goes wrong? |
-| **Reliability and safety** | The system works as intended, including in unusual cases | What happens when it fails? |
-| **Human oversight** | People can review, challenge, and override | Can a human step in? |
+### Other limits to remember
 
-**Term defined:**
+| Limit | Plain meaning |
+|-------|---------------|
+| **Brittleness** | Small, odd changes in the input can cause large errors (for example, stickers that confuse a road-sign reader). |
+| **Distribution shift** | The tool fails when the real world differs from the training data. |
+| **Outdated knowledge** | A model knows only what was in its training data unless it is connected to current sources. |
+| **No real understanding** | Systems find patterns; whether this is "understanding" is debated. |
+| **Overconfidence** | The tone of an answer may sound certain even when the answer is wrong. |
 
-- **Accountability:** the idea that humans and organisations, not "the algorithm," are responsible for outcomes.
+### A method for checking an AI answer
 
-### 4.3 A simple pre-use checklist
+![Four steps: pick out each factual claim, look up the exact name or number, open the real source, and decide whether the source says the same thing; if no, do not use the claim; if yes, cite the real source](assets/fig-8-3-verify-claims.png)
+*Figure 8.3: Checking an AI answer before you trust it. Source: created by our team.*
 
-```text
-Before using AI for a task, ask:
-[ ] What is the purpose, and is AI appropriate for it?
-[ ] What could go wrong, and who could be harmed?
-[ ] Is any personal or confidential data involved?
-[ ] Have outputs been checked for accuracy and bias?
-[ ] Is a human reviewing high-stakes outputs?
-[ ] Is it clear to others that AI was used?
-[ ] Who is accountable, and how can someone appeal a decision?
-```
-
-### 4.4 Regulation snapshot
-
-Governments are introducing rules. For example, the EU AI Act (Regulation (EU) 2024/1689) takes a **risk-based approach**: it bans a small set of practices, sets stricter requirements for **high-risk** uses (its list includes some uses in employment, such as recruitment, and in access to essential services, such as assessing creditworthiness), and sets lighter requirements for lower-risk uses (European Union, 2024). The full text is available from the [official EUR-Lex page](https://eur-lex.europa.eu/eli/reg/2024/1689/oj). Learners should check the rules that apply in their own country and sector, as these are changing.
+| Step | What to do |
+|:----:|------------|
+| 1 | Pick out each factual claim (a name, number, date, quote or source). |
+| 2 | Look up the exact name, title or number in a trusted place. |
+| 3 | Open the real source and read the relevant part. |
+| 4 | Compare. If the source does not say the same, do not use the claim. If it does, cite the **real** source, not the chatbot. |
 
 ---
 
-## Topic 5: Discussion Scenario (Bias or Hallucination)
+## 8.6 Safety and Misuse
 
-### 5.1 Case: Fabricated court cases (hallucination)
+| Risk | Example | What helps |
+|------|---------|------------|
+| **Misinformation and deepfakes** | Fake images, voices or videos that look real | Check the source; look for labels and provenance information |
+| **Cyber misuse** | AI used to write convincing scam messages | Awareness, filters, secure habits |
+| **Reward hacking** | An agent finds a loophole in its goal (Chapter 6) | Careful goals, testing, oversight |
+| **Over-reliance** | Staff stop thinking because the tool is "usually right" (Chapter 7) | Training, spot checks, clear responsibility |
+| **Environmental cost** | Training and running large models uses energy (Strubell et al., 2019) | Efficient methods; use the right size of model |
+| **Job change** | Some tasks are automated, others created | Reskilling and policy |
 
-In 2023, in the US case *Mata v. Avianca, Inc.*, lawyers submitted a legal brief that cited several court decisions. The decisions had been produced by an AI chatbot and **did not exist**. The court later sanctioned the lawyers and their firm, noting that they continued to stand by the citations after questions were raised (*Mata v. Avianca, Inc.*, 2023).
+---
 
-### 5.2 Guided discussion questions
+## 8.7 Rules and Frameworks
 
-1. **Identify:** Which type of hallucination is this (see Section 3.2)?
-2. **Process:** At what step could the error have been caught? Use the verification steps in Section 3.3.
-3. **Responsibility:** Who was accountable, the AI, the tool's maker, or the lawyers? Why?
-4. **Principles:** Which responsible AI principles (Section 4.2) were not followed?
-5. **Prevention:** Write three rules a law firm should adopt for AI use.
-6. **Compare:** How is this different from a *bias* problem? Could a tool be free of hallucination and still biased? Give an example.
+### The EU AI Act: four risk levels
 
-### 5.3 Alternative scenario: a biased résumé screener (bias)
+The European Union adopted the AI Act in 2024. Its main idea: **the higher the risk to people, the stricter the rules** (European Union, 2024).
 
-A company's screener rejects many applicants who have career gaps. Data shows women, who more often take caregiving breaks, are rejected at a much higher rate. Discuss: Is "career gap" a proxy? Is it job-relevant? Who should decide, and how should the company monitor outcomes?
+![A pyramid with four levels: unacceptable risk is banned (for example government social scoring), high risk has strict requirements (for example hiring, credit scoring, medical devices), limited risk has transparency duties (for example chatbots must say they are AI), minimal risk has no new duties (for example spam filters, video-game AI)](assets/fig-8-2-eu-ai-act-risk-levels.png)
+*Figure 8.4: The four risk levels of the EU AI Act (simplified). Source: created by our team.*
 
-### 5.4 Teacher notes and expected discussion points
+| Level | Meaning | Examples |
+|-------|---------|----------|
+| Unacceptable | Banned | Social scoring of people |
+| High | Allowed with strict duties (risk management, data quality, human oversight, documentation) | Hiring, credit scoring, medical devices |
+| Limited | Must be transparent | A chatbot must tell users it is an AI |
+| Minimal | No new duties | Spam filters, video-game AI |
 
-- **Q1:** Fabricated sources (invented court cases).
-- **Q2:** Step 2 or 3 of the verification routine: looking up the case in an official legal database would have shown the cases did not exist.
-- **Q3:** Accountability rests with the **professionals who signed and submitted** the brief. Tool makers may share responsibility for communicating limits, but users cannot hand off professional duties to a tool.
-- **Q4:** Accountability, human oversight, reliability, transparency.
-- **Q5:** Acceptable rules include: all citations independently verified; AI use disclosed internally; no confidential client data in public tools; a named reviewer signs off.
-- **Q6:** Hallucination is about **truth**; bias is about **fair treatment across groups**. A system can give accurate answers yet systematically serve one group worse.
-- **Section 5.3:** Strong answers recognise that the gap may be a proxy for sex, question its relevance to the job, and propose outcome monitoring by group plus human review.
+The Act is phased in over several years. This summary is simplified; read the official text for details.
+
+### The NIST AI Risk Management Framework
+
+The US National Institute of Standards and Technology published a voluntary framework with four functions (NIST, 2023):
+
+| Function | Plain meaning |
+|----------|---------------|
+| **Govern** | Set policies, roles and a culture of responsibility |
+| **Map** | Understand the context, purpose and who could be harmed |
+| **Measure** | Test and track risks, including bias and reliability |
+| **Manage** | Act on the risks: fix, limit or stop |
+
+### Other guidance
+
+UNESCO's *Recommendation on the Ethics of Artificial Intelligence* (2021) lists shared values such as human rights, fairness, transparency and human oversight, which many countries have endorsed.
+
+---
+
+## 8.8 Using AI Responsibly in Your Studies
+
+| Good practice | Why |
+|---------------|-----|
+| **Follow your course rules** on AI use | Rules differ between courses. |
+| **Disclose** how you used AI (tool, purpose, what you changed) | Honesty and transparency. |
+| **Verify** every fact and reference | AI can hallucinate. |
+| **Do not paste** private or exam material | Privacy and integrity. |
+| **Keep your own thinking** | You are graded on what *you* understand. |
+| **Keep a real log** | Only record what really happened. |
+
+This is why our team keeps an **AI-use log**: an honest record of what AI was used for and how its output was checked.
+
+---
+
+## 8.9 Mission 1: Audit a Hiring Tool
+
+> **Goal:** calculate selection rates and an impact ratio and think about what comes next.  
+> **Preparation:** Section 8.2. Calculator, 10 to 15 minutes.  
+> **Task:** an AI tool screens job applicants. Results: **Group A**: 50 applicants, 30 approved. **Group B**: 40 applicants, 12 approved.
+
+**Part A.** Fill in the table.
+
+| Group | Applicants | Approved | Selection rate |
+|:-----:|:----------:|:--------:|:--------------:|
+| A | 50 | 30 | ____ |
+| B | 40 | 12 | ____ |
+
+**Part B.** Impact ratio = lowest rate / highest rate = ____ . Is it below 0.80? ____
+
+**Part C. Investigate.** List three places you would look to find the cause (use Figure 8.1).
+
+**Part D. After a fix.** The company retrains the tool. Now Group B has 20 approved out of 40 (Group A unchanged). Calculate the new rate and impact ratio. ____ Does it pass the four-fifths rule? ____ Does that prove the tool is fair? Why or why not?
+
+> **Observe:** which number alerted you first, the two rates or the ratio?  
+> **Reflect:** who should decide whether the tool can be used: the engineers, the hiring managers, or both? Why?  
+> **Feedback:** compare with the Answer Key (Mission 1).
+
+---
+
+## 8.10 Mission 2: Verify the Claims
+
+> **Goal:** practise the four-step method on an AI-style answer.  
+> **Preparation:** Sections 8.5 and 8.7, and Chapter 3. 10 to 15 minutes.  
+> **Task:** below is an invented AI answer to the question "Tell me about AI risks." Check each numbered claim. (The reference in claim 2 is **invented for this exercise**.)
+
+> 1. "The EU AI Act bans certain AI practices, such as social scoring."
+> 2. "As shown in Whitfield and Armand (2019), 'The Quantum Fairness Index', published in the *Journal of Applied Cognitive Ethics*, every AI system is fair when its accuracy is above 90%."
+> 3. "ChatGPT-style chatbots learn from each user's conversation in real time and permanently update themselves."
+> 4. "A spam filter with 95% accuracy is always a good filter."
+
+**Part A.** For each claim, write the check you would do (step 2 and 3 of the method), and your verdict: *Supported*, *Not supported*, or *Misleading*.
+
+| Claim | How I would check it | Verdict |
+|:-----:|----------------------|:-------:|
+| 1 | ____ | ____ |
+| 2 | ____ | ____ |
+| 3 | ____ | ____ |
+| 4 | ____ | ____ |
+
+**Part B. Reflect.** Claim 2 sounds scientific. Which three details make it look real, and what is the one test that matters?
+
+**Part C. Log it.** Write one honest sentence you could put in an AI-use log about how you checked this answer.
+
+> **Observe:** which claim needed knowledge from an earlier chapter to check?  
+> **Reflect:** why is a confident tone not evidence?  
+> **Feedback:** compare with the Answer Key (Mission 2).
+
+---
+
+## 8.11 Common Misconceptions
+
+| Misconception | Correction |
+|---------------|------------|
+| "A computer decision is neutral." | It reflects its data, labels and goals, which come from people. |
+| "Removing the sensitive column removes bias." | Proxies can reveal the same information. |
+| "If the average accuracy is high, it is fair." | A good average can hide poor results for a small group. |
+| "A confident answer is a true answer." | Language models can state false things fluently. |
+| "Anonymous data can never identify anyone." | It can sometimes be re-identified by combining datasets. |
+| "Ethics slows down innovation, so it is optional." | Failures in fairness, privacy and safety cause harm and loss of trust, and some are regulated by law. |
+
+---
+
+## 8.12 Quick Check
+
+**Q1 (True/False).** Bias can enter an AI system at several steps, not only in the code.
+
+**Q2 (True/False).** An impact ratio above 0.80 proves that a tool is fair.
+
+**Q3 (True/False).** In the EU AI Act, a chatbot is "unacceptable risk" and banned.
+
+**Q4 (Multiple choice, one answer).** Which action best matches *data minimisation*?
+A. Keep all data forever. B. Collect only the data needed for the purpose. C. Sell data. D. Delete the model.
+
+**Q5 (Multiple choice, one answer).** Group A: 40 of 50 approved. Group B: 18 of 30 approved. What is the impact ratio?
+A. 0.50. B. 0.60. C. 0.75. D. 0.80.
+
+**Q6 (Multiple choice, one answer).** Which NIST function is about testing and tracking risks?
+A. Govern. B. Map. C. Measure. D. Manage.
+
+**Q7 (Short answer, 3 to 4 sentences).** Explain why an AI answer with real-looking references still needs to be checked.
+
+---
+
+## 8.13 Summary, Connections and References
+
+### Key takeaways
+
+- Bias can enter at every step: the real world, data, labels, design and deployment.
+- Compare selection rates between groups; the four-fifths rule is a warning signal, not proof.
+- Respect privacy: consent, purpose limitation, data minimisation, security and people's rights.
+- Transparency, explainability and accountability make AI trustworthy and correctable.
+- Language models can hallucinate; verify claims against real sources.
+- The EU AI Act sorts systems by risk; the NIST framework has four functions: Govern, Map, Measure, Manage.
+- Use AI honestly in your studies: follow rules, disclose, verify, protect privacy, keep your own thinking.
+
+### Connections to other chapters
+
+| Direction | Chapter | Link |
+|-----------|---------|------|
+| Builds on | Chapter 3 | Data quality, hallucination, metrics |
+| Builds on | Chapter 4 | Rule-based systems are explainable |
+| Builds on | Chapter 5 | Black-box networks, bias in Big Data, privacy |
+| Builds on | Chapter 6 | Reward hacking |
+| Builds on | Chapter 7 | Human in the loop, five questions |
+| Leads to | Whole module | A responsible way to use everything learned |
+
+### How this chapter will be reused
+
+| Resource | Planned use |
+|----------|-------------|
+| **Study Guide** | Sections 8.1 to 8.8 are the reading text; Missions 1 and 2 are practice. |
+| **Test Bank** | Impact-ratio calculations, claim-checking scenarios and the EU risk levels become exam items. |
+| **PPT Slides** | The bias-sources flow, the four-fifths audit, the verification steps and the EU pyramid become slides. |
+| **Video Tutorial** | A video that walks through a bias audit and the four-step claim check. |
+
+---
+
+## Answer Key
+
+**Mission 1: Audit a Hiring Tool**
+
+Part A: Group A: 30 / 50 = **60%**. Group B: 12 / 40 = **30%**.
+Part B: 30% / 60% = **0.50**, which is **below 0.80**, so the tool needs investigation.
+Part C (any three of): the **training data** (are there enough Group B examples?), the **labels** (were past decisions biased?), the **features** (are there proxies for group membership?), the **goal or measure** (what does "good applicant" mean?), the **deployment** (is Group B different from the training population?).
+Part D: new rate for B = 20 / 40 = **50%**. Impact ratio = 50% / 60% = **0.833**, which is above 0.80, so it **passes** the rule of thumb. It does **not** prove fairness: the rule is only a screening signal; the tool may still make different *kinds* of mistakes for each group, errors may be hidden within subgroups, and other fairness measures could still fail.
+*Observe/Reflect:* both groups should take part, because engineers know how the tool works, while managers and affected people know what a fair outcome means in context. Accountability should be assigned to a named role.
+
+**Mission 2: Verify the Claims**
+
+Part A:
+
+| Claim | How I would check it | Verdict |
+|:-----:|----------------------|:-------:|
+| 1 | Open the official EU AI Act text or the European Commission's summary and look for the list of prohibited practices | **Supported** |
+| 2 | Search the journal and the authors; look in a library database or Google Scholar for the exact title; the article cannot be found, and the claim contradicts Section 8.2 (accuracy alone does not show fairness) | **Not supported** (invented source; also a misleading statement) |
+| 3 | Check Chapter 3, Section 3.6: deployed models are normally fixed during a chat and not retrained by it; confirm with the provider's documentation | **Not supported** |
+| 4 | Check Chapter 3, Section 3.8: a filter can have high accuracy but poor recall when spam is rare | **Misleading** |
+
+Part B: three details that make it look real: the authors' names, the year, the journal-like title and the fancy name of the index. The test that matters: **can you find the real source and does it say that?** Not finding it means do not use it.
+Part C (example): "I asked an AI tool for a list of AI risks, checked each claim against the EU AI Act summary and our course chapters, found one invented reference and one false statement, and removed both."
+
+**Quick Check**
+
+1. **True.**
+2. **False.** It is only a warning signal; a ratio above 0.80 does not prove fairness.
+3. **False.** Chatbots are "limited risk" (transparency duties); they are not banned.
+4. **B.**
+5. **C.** Rates: A = 40/50 = 80%, B = 18/30 = 60%; 60/80 = 0.75.
+6. **C.**
+7. *Key points:* language models predict likely text, not verified facts; references can be invented; a reference only has value if the real source exists and says the same thing; always verify names, numbers and sources.
 
 ---
 
 ## Glossary
 
-| Term | Definition |
-|---|---|
-| **Accountability** | Humans and organisations are responsible for AI outcomes. |
-| **Anonymisation** | Removing identifying details from data. |
-| **Bias (AI)** | Systematically less accurate or less favourable results for some groups. |
-| **Data minimisation** | Collecting only the data needed for a purpose. |
-| **Differential privacy** | Adding measured noise so group patterns are visible but individuals are not. |
-| **Feedback loop** | Outputs that influence future data, possibly amplifying errors. |
-| **Four-fifths rule** | Screening indicator: a group's selection rate below 80% of the highest group's rate is a warning sign, not proof of discrimination. |
-| **Grounding** | Tying AI answers to trusted, citable sources. |
-| **Hallucination** | A confident but false or unsupported AI output. |
-| **Impact ratio** | A group's selection rate divided by the highest group's selection rate. |
-| **Large language model (LLM)** | A model that generates text by predicting likely next words. |
-| **Personal data / PII** | Information that can identify a person. |
-| **Protected characteristic** | A trait (e.g. race, sex, age) that should not be a basis for unfair treatment. |
-| **Proxy variable** | An input that stands in for a protected characteristic. |
-| **Responsible AI** | Building and using AI safely, fairly, transparently, and accountably. |
-| **Selection rate** | The share of a group receiving the favourable outcome. |
+| Term | Meaning |
+|------|---------|
+| Accountability | A named person or organisation is responsible for the system and its effects. |
+| Bias (in AI) | Systematically less favourable results for some groups for unfair reasons. |
+| Consent | A person's informed agreement to the use of their data. |
+| Data minimisation | Collecting only the data needed. |
+| Distribution shift | A change between training data and real-world data. |
+| Explainability | Being able to say why a system gave a result. |
+| Four-fifths rule | A rule of thumb: an impact ratio below 0.80 signals a need to investigate. |
+| Hallucination | Fluent but false or invented output from a language model. |
+| Impact ratio | Lowest group selection rate divided by the highest. |
+| Personal data | Information that can identify a person. |
+| Proxy | A feature that indirectly reveals a protected characteristic. |
+| Selection rate | The share of a group that receives a positive decision. |
+| Transparency | Openness that AI is used and how. |
 
 ---
 
 ## References
 
-Buolamwini, J. and Gebru, T. (2018) 'Gender Shades: Intersectional accuracy disparities in commercial gender classification', *Proceedings of Machine Learning Research*, 81, pp. 77-91. Conference on Fairness, Accountability and Transparency. https://proceedings.mlr.press/v81/buolamwini18a.html
+1. Buolamwini, J., & Gebru, T. (2018). Gender Shades: Intersectional accuracy disparities in commercial gender classification. *Proceedings of Machine Learning Research, 81*, 77-91. https://proceedings.mlr.press/v81/buolamwini18a.html
+2. Dastin, J. (2018, October 10). Amazon scraps secret AI recruiting tool that showed bias against women. *Reuters*. https://www.reuters.com/article/world/insight-amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK0AG/
+3. Angwin, J., Larson, J., Mattu, S., & Kirchner, L. (2016). Machine bias. *ProPublica*. https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
+4. Kleinberg, J., Mullainathan, S., & Raghavan, M. (2017). Inherent trade-offs in the fair determination of risk scores. *ITCS 2017*. https://arxiv.org/abs/1609.05807
+5. Mitchell, M., et al. (2019). Model cards for model reporting. *FAT\* '19*, 220-229. https://doi.org/10.1145/3287560.3287596
+6. Ji, Z., et al. (2023). Survey of hallucination in natural language generation. *ACM Computing Surveys, 55*(12), 1-38. https://doi.org/10.1145/3571730
+7. Strubell, E., Ganesh, A., & McCallum, A. (2019). Energy and policy considerations for deep learning in NLP. *ACL 2019*. https://arxiv.org/abs/1906.02243
+8. U.S. Equal Employment Opportunity Commission et al. (1978). *Uniform Guidelines on Employee Selection Procedures*, 29 C.F.R. Part 1607. https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XIV/part-1607
+9. European Union. (2016). *General Data Protection Regulation* (Regulation (EU) 2016/679). https://eur-lex.europa.eu/eli/reg/2016/679/oj
+10. European Union. (2024). *Artificial Intelligence Act* (Regulation (EU) 2024/1689). https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+11. National Institute of Standards and Technology. (2023). *Artificial Intelligence Risk Management Framework (AI RMF 1.0)*. https://doi.org/10.6028/NIST.AI.100-1
+12. UNESCO. (2021). *Recommendation on the Ethics of Artificial Intelligence*. https://www.unesco.org/en/artificial-intelligence/recommendation-ethics
+13. Russell, S., & Norvig, P. (2021). *Artificial Intelligence: A Modern Approach* (4th ed.). Pearson. https://aima.cs.berkeley.edu/
 
-Carlini, N. et al. (2021) 'Extracting training data from large language models', *30th USENIX Security Symposium*. https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting
-
-Chouldechova, A. (2017) 'Fair prediction with disparate impact: A study of bias in recidivism prediction instruments', *Big Data*, 5(2), pp. 153-163. https://doi.org/10.1089/big.2016.0047
-
-Dastin, J. (2018) 'Amazon scraps secret AI recruiting tool that showed bias against women', *Reuters*, 10 October. Republished at: https://www.euronews.com/2018/10/10/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women
-
-European Union (2016) *Regulation (EU) 2016/679 (General Data Protection Regulation)*. https://eur-lex.europa.eu/eli/reg/2016/679/oj
-
-European Union (2024) *Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)*. https://eur-lex.europa.eu/eli/reg/2024/1689/oj
-
-Gebru, T. et al. (2021) 'Datasheets for datasets', *Communications of the ACM*, 64(12), pp. 86-92. https://doi.org/10.1145/3458723
-
-Ji, Z. et al. (2023) 'Survey of hallucination in natural language generation', *ACM Computing Surveys*, 55(12), Article 248. https://doi.org/10.1145/3571730
-
-*Mata v. Avianca, Inc.* (2023) No. 22-cv-1461 (PKC) (S.D.N.Y.), opinion and order on sanctions, 22 June 2023, 678 F. Supp. 3d 443. Court filings: https://storage.courtlistener.com/recap/gov.uscourts.nysd.575368/
-
-Mitchell, M. et al. (2019) 'Model cards for model reporting', *Proceedings of the Conference on Fairness, Accountability, and Transparency*, pp. 220-229. https://doi.org/10.1145/3287560.3287596
-
-National Institute of Standards and Technology (NIST) (2023) *Artificial Intelligence Risk Management Framework (AI RMF 1.0)*. NIST AI 100-1. https://doi.org/10.6028/NIST.AI.100-1
-
-Obermeyer, Z. et al. (2019) 'Dissecting racial bias in an algorithm used to manage the health of populations', *Science*, 366(6464), pp. 447-453. https://doi.org/10.1126/science.aax2342
-
-OECD (2019) *Recommendation of the Council on Artificial Intelligence*. OECD/LEGAL/0449. https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449
-
-US Equal Employment Opportunity Commission et al. (1978) *Uniform Guidelines on Employee Selection Procedures*, 29 CFR Part 1607 (the four-fifths rule is at §1607.4(D)). https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XIV/part-1607
-
-> **Note on examples:** The hiring-tool numbers in Sections 1.4 and 1.5 and the "Henderson & Zhou" citation in Section 3.3 are **invented for teaching purposes**. All other cases are real and cited above. Please check each link and bibliographic detail against the original source before formal use.
+> Figures 8.1 to 8.4 were created for Stage 2 by our team. The EU AI Act summary is simplified. The article in Mission 2, claim 2 is invented for practice and does not exist.
