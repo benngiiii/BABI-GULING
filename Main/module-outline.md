@@ -1,6 +1,6 @@
 # Module Outline and Development Status
 
-**Document author:** Brian Djoni Suzanna (Quality Lead)  
+**Document author:** Jonathan Sugianto (CIO)  
 **Version:** V2.0 (Stage 2)  
 **Last updated:** 6 November 2026
 
