@@ -277,4 +277,4 @@ This project teaches AI Overview to complete beginners. One shared Markdown cont
 | Date | Version | Change | Related review | Result |
 |------|---------|--------|----------------|--------|
 | Stage 1 | v1.0 to v1.2 | Stage 1 list and ownership | QR-006-I01, QR-006-I02 | Stage 1 complete |
-| 2026-11-06 | V2.0 | Rebuilt for eight chapters; tasks for Stages 1 to 3; logs, evidence and reference-project tasks added; shorter, more readable tables; Mermaid workflow replaced by image | Pending (Joseph) | Pending Review |
+| 2026-11-06 | V2.0 | Rebuilt for eight chapters; tasks for Stages 1 to 3; logs, evidence and reference-project tasks added; shorter, more readable tables; Mermaid workflow replaced by image | Pending | Pending Review |
