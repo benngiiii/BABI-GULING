@@ -1,6 +1,6 @@
 # BABI GULING — AI OVERVIEW
 
-**Document author:** Brian Djoni Suzanna (Quality Lead)  
+**Document author:** Benedict Subhata
 **Revised by:** Benedict Subhata, after Quality Review QR-V2-009-I01  
 **Version:** V2.0, Revision 2 (Stage 2)  
 **Last updated:** 6 November 2026
@@ -79,12 +79,15 @@ These outcomes are identical in the [Module Outline](module-outline.md) and the 
 | Eight V2.0 chapters | ✅ All reviewed and approved (64/64 each) | `quality/reviews/detailed review V2.0/QR-V2-001-I01.md` to `QR-V2-008-I01.md` |
 | Module Outline | ✅ Approved (64/64) | `QR-V2-010-I01.md` |
 | Master Task List | ✅ Approved (64/64) | `QR-V2-012-I01.md` |
-| README and Project Plan | ✅ Revised after review; recheck requested | `QR-V2-009-I01.md`, `QR-V2-011-I01.md` |
-| Study Guide and Test Bank | ✅ Prepared | Stage 2 package |
+| README and Project Plan | 🔄 Revised following quality reviews; recheck pending | `QR-V2-009-I01.md`, `QR-V2-011-I01.md` |
+| Study Guide and Test Bank | ✅ Completed | Stage 2 package |
 | Quiz game | ✅ Published (Version 1.2) | <https://babigulingcsai.netlify.app> |
-| PPT Slides | ✅ Prepared | Stage 2 package |
-| Video Tutorials | To be confirmed by Gandhi | MP4 files and Video Guide |
-| Logs and previous-year project review | ✅ Prepared | `logs/`; Project Plan, section 2.4 |
+| PPT Slides | ✅ Completed | Stage 2 package |
+| Video Tutorials | ⏳ Pending | MP4 files and Video Guide |
+| Project Log and Meeting Summaries | ✅ Completed | `logs/` |
+| Personal Learning and Work Logs | ✅ Completed | Each member's log |
+| Previous-year project review | ✅ Completed | Project Plan, section 2.4 |
+| Peer Review | ⏳ Pending | Peer review records and evidence |
 
 The numbers above agree with the [Master Task List](master-task-list.md) and the [Project Plan](project-plan.md).
 
@@ -129,14 +132,14 @@ Task assignments, deadlines and status are tracked in the [Master Task List](mas
 
 | Group | Deliverable | Where to find it | Status |
 | :---: | ----------- | ---------------- | :----: |
-| A | Markdown Content V2.0 ZIP (snapshot, readable PDF, submission report) | Stage 2 package; source in `Main/` | ✅ Prepared |
-| B | Study Guide and Test Bank, plus the quiz game | Stage 2 package; <https://babigulingcsai.netlify.app> | ✅ Prepared |
-| C | PPT Slides | Stage 2 package | ✅ Prepared |
-| D | Video Tutorials and Video Guide | Stage 2 package | To be confirmed |
-| E | Project Log and Meeting Summaries | `logs/` | ✅ Prepared |
-| F | Personal Learning and Work Logs | Each member's log | ✅ Prepared |
+| A | Markdown Content V2.0 ZIP (snapshot, readable PDF, submission report) | Stage 2 package; source in `Main/` | ✅ Completed |
+| B | Study Guide and Test Bank, plus the quiz game | Stage 2 package; <https://babigulingcsai.netlify.app> | ✅ Completed |
+| C | PPT Slides | Stage 2 package | ✅ Completed |
+| D | Video Tutorials and Video Guide | Stage 2 package | ⏳ Pending |
+| E | Project Log and Meeting Summaries | `logs/` | ✅ Completed |
+| F | Personal Learning and Work Logs | Each member's log | ✅ Completed |
 
-Items marked "To be confirmed" or "To be completed" are not presented as finished.
+Items marked "Pending" or "To be completed" are not presented as finished.
 
 ### Repository documents
 
@@ -233,7 +236,7 @@ The production sequence is: **Markdown content → Study Guide and Test Bank (wi
 | Stage | Deadline | Status |
 | ----- | -------- | ------ |
 | Stage 1 | 24 Oct 2026 | ✅ Completed (100/100) |
-| Stage 2 | 7 Nov 2026, 23:59 Beijing time | ✅ Resources prepared; final checks and logs in progress (see Section 2, Current Progress) |
+| Stage 2 | 7 Nov 2026, 23:59 Beijing time | 🔄 All deliverables completed except Video Tutorials and Peer Review; final checks remain pending |
 | Stage 3 | 28 Nov 2026 | Planned in detail: live mini lecture, feedback, fixes, final review, submission |
 
 The full schedule, with tasks, owners, reviewers, milestones and evidence, is in the [Project Plan](project-plan.md), section 10, and the [Master Task List](master-task-list.md).
