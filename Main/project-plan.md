@@ -5,7 +5,7 @@
 **Document author:** Joseph Lokman (CEO)  
 **Revised by:** Joseph Lokman and Benedict Subhata, after Quality Review QR-V2-011-I01  
 **Version:** V2.0, Revision 2  
-**Last updated:** 6 November 2026  
+**Last updated:** 7 November 2026  
 **Document status:** Revised after review; submitted for recheck
 
 | Item | Detail |
@@ -113,9 +113,9 @@ The lecturer requires a review of **at least three previous-year projects**, one
 
 | # | Project (name and link) | Topic area | What the team learned | What changed in our content | Reviewer | Status |
 | :-: | ----------------------- | ---------- | --------------------- | --------------------------- | -------- | ------ |
-| 1 | To be completed | Symbolic AI | To be completed | To be completed | Gandhi | **To be completed by 7 Nov** |
-| 2 | To be completed | Connectionist AI and Big Data | To be completed | To be completed | Jonathan | **To be completed by 7 Nov** |
-| 3 | To be completed | Behaviorist AI | To be completed | To be completed | Joseph | **To be completed by 7 Nov** |
+| 1 | BABI GULING – AI Overview (Chapter 4) — https://github.com/benngiiii/BABI-GULING/tree/AI-Overview/Main/study-guide/V2.0/chapter-4-symbolic-ai | Symbolic AI | Learned how Symbolic AI represents knowledge and solves problems through logic, rules, expert systems, search algorithms, and game-playing strategies. Also identified the differences between propositional and predicate logic. | Aligned Chapter 4 with the lecturer's topics. Confirmed that predicate logic and its quantifiers were introduced at a beginner level. Identified NLP in Symbolic AI as a missing topic that may require additional coverage. | Gandhi | Completed |
+| 2 | BABI GULING – AI Overview (Chapter 5) — https://github.com/benngiiii/BABI-GULING/tree/AI-Overview/Main/study-guide/V2.0/chapter-5-connectionist-ai-and-big-data | Connectionist AI and Big Data | Learned how neural networks and deep learning work, including CNNs, RNNs, and Transformers. Also learned how Big Data is collected, stored, processed, analyzed, and visualized, including its five Vs and processing pipeline. | Aligned Chapters 3 and 5 with the lecturer's topics. Ensured coverage of neural network architectures, deep learning, Big Data technologies, data analysis, and visualization. Connected the topics with real-world applications and ethical considerations. | Jonathan | Completed |
+| 3 | BABI GULING – AI Overview (Chapter 6) — https://github.com/benngiiii/BABI-GULING/tree/AI-Overview/Main/study-guide/V2.0/chapter-6-behaviorist-ai | Behaviorist AI | Learned how Behaviorist AI uses interaction with an environment, rewards, and penalties to guide decision-making. Explored reinforcement learning, Markov Decision Processes, Q-learning, Deep RL, and applications in robotics and games. | Organized the content around reinforcement learning fundamentals, algorithms, and practical applications. Connected Behaviorist AI with its challenges, limitations, and ethical considerations in other chapters. | Joseph | Completed |
 
 Evidence required: the project link, one screenshot (light theme) of the reviewed page, and two or three written findings per project. Entries are recorded in the Stage 2 activity record.
 
@@ -405,7 +405,7 @@ Package name: `BABI-GULING_Stage2_Markdown_V2.zip`.
 | 5 | Quiz game published and its link added to the guide and documents | Benedict | ✅ |
 | 6 | Class PPT prepared | Benedict, Joseph | ✅ |
 | 7 | Readable PDF and submission report prepared | Benedict | ✅ |
-| 8 | Previous-year project review filled in (Section 2.4) | Gandhi, Jonathan, Joseph | To be completed |
+| 8 | Previous-year project review filled in (Section 2.4) | Gandhi, Jonathan, Joseph | ✅ |
 | 9 | Video files and Video Guide confirmed | Gandhi | To be completed |
 | 10 | Project log, meeting summaries and personal logs completed with real entries | Joseph; each member | To be completed |
 | 11 | Final extraction test in a new folder | Jonathan, Brian | To be completed |
@@ -431,7 +431,7 @@ Package name: `BABI-GULING_Stage2_Markdown_V2.zip`.
 | Chapter 3 | Benedict | Brian | Jonathan |
 | Chapters 6 and 8 | Joseph | Brian | Jonathan |
 | Chapter 7 | Brian | Joseph | Jonathan |
-| README | Brian (revised by Benedict) | Brian | Jonathan |
+| README | Benedict | Brian | Jonathan |
 | Project Plan, Master Task List | Joseph | Brian | Jonathan |
 | Module Outline | Jonathan | Brian | Jonathan |
 | Study Guide, Test Bank, quiz game, PPT | Benedict (PPT with Joseph) | Brian | Jonathan |
