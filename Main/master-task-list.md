@@ -161,12 +161,12 @@ Stage 1 was submitted and scored 100/100. The Stage 1 files are kept unchanged i
 |----|------|-------|----------|----------|:------:|----------|
 | S2-17 | Study Guide + Test Bank, version for V2.0 | Benedict (with authors) | Brian | 7 Nov | ✅ | `BABI-GULING_Stage2_StudyGuide_V1.pptx` and `.pdf`; `BABI-GULING_Stage2_TestBank_V1.docx` and `.pdf` |
 | S2-18 | PPT Slides covering Chapters 1 to 8 | Benedict, Joseph | Brian | 7 Nov | ✅ | `BABI-GULING_Stage2_PPT_V1.pptx` and `.pdf` |
-| S2-19 | Video Tutorials (script, narration, editing) and Video Guide | Gandhi | Brian | 7 Nov | 🔄 | MP4 files and guide (owner confirms) |
-| S2-20 | Trial the test-bank questions with someone outside the team | Joseph | Brian | 7 Nov | 🔄 | Trial notes |
+| S2-19 | Video Tutorials (script, narration, editing) and Video Guide | Gandhi | Brian | 14 Nov* | 🔄 | MP4 files and guide; planned for 14 November 2026 |
+| S2-20 | Trial the test-bank questions with someone outside the team | Joseph | Brian | 7 Nov | 🔄 | Awaiting an actual external learner trial and feedback |
 | S2-21 | Prepare live teaching; hold at least two rehearsals with feedback | Gandhi (with team) | Brian | Before the live class | 🔄 | Rehearsal notes; mini lecture plan in Project Plan, section 7.5 |
-| S2-22 | Review previous-year projects (at least three: symbolic, connectionist, behaviorist) and fill the table in Project Plan, section 2.4 | Gandhi, Jonathan, Joseph | Brian | 7 Nov | 🔄 | Project Plan section 2.4 |
+| S2-22 | Review previous-year projects (at least three: symbolic, connectionist, behaviorist) and fill the table in Project Plan, section 2.4 | Gandhi, Jonathan, Joseph | Brian | 7 Nov | 🔄 | Awaiting actual project links, findings and evidence in Project Plan section 2.4 |
 | S2-37 | Quiz game "Escape the Spit" published; link added to the README and Project Plan | Benedict | Brian | 6 Nov | ✅ | <https://babigulingcsai.netlify.app> |
-| S2-38 | Compare quiz-game questions with Test Bank V1.0 and fix any difference | Benedict | Brian | 7 Nov | 🔄 | Comparison note |
+| S2-38 | Compare quiz-game questions with Test Bank V1.0 and fix any difference | Benedict | Brian | 7 Nov | 🔄 | Awaiting actual question-by-question comparison note |
 
 #### D. Quality and Review
 
@@ -289,3 +289,4 @@ Each outcome is covered by at least one reviewed chapter (see the Module Outline
 | Stage 1 | v1.0 to v1.2 | Stage 1 list and ownership | QR-006-I01, QR-006-I02 | Stage 1 complete |
 | 2026-11-06 | V2.0 | Rebuilt for eight chapters; tasks for Stages 1 to 3; logs, evidence and reference-project tasks added; shorter, more readable tables; Mermaid workflow replaced by image | Pending | Pending Review |
 | 2026-11-06 | V2.0, Revision 2 | Statuses updated with real evidence; quiz game and quiz-consistency tasks added; Stage 3 expanded to 18 tasks with start dates; learning outcomes aligned with the Project Plan; no ❓ left | QR-V2-011-I01 (Project Plan) | Pending recheck |
+\n\n*Note: The 14 November video date is a team-planned date. Confirm with the lecturer whether this revised date is accepted; the original Stage 2 deadline was 7 November.\n
