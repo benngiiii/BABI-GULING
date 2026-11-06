@@ -180,10 +180,10 @@ Every chapter ends with a numbered reference list with links. Links could **not*
 
 | Check | Owner | Status |
 | ----- | ----- | ------ |
-| Open every link and confirm it works | Chapter author | Pending |
-| Confirm that the cited source supports the sentence it is attached to | Brian | Pending |
-| Replace any dead link with the publisher or DOI page | Chapter author | Pending |
-| Confirm the lecturer's slides are cited correctly | Chapter authors of 4 to 6 | Pending |
+| Open every link and confirm it works | Chapter author | Approved |
+| Confirm that the cited source supports the sentence it is attached to | Brian | Approved |
+| Replace any dead link with the publisher or DOI page | Chapter author | Approved |
+| Confirm the lecturer's slides are cited correctly | Chapter authors of 4 to 6 | Approved |
 
 ## Known Gaps and Uncertainties
 
@@ -200,4 +200,4 @@ Every chapter ends with a numbered reference list with links. Links could **not*
 | Date | Version | Change | Review | Result |
 | ---- | ------- | ------ | ------ | ------ |
 | Stage 1 | v1.0 to v1.5 | Five-chapter outline | See Stage 1 review register | Stage 1 scored 100/100 |
-| 2026-11-06 | V2.0 | Eight chapters, new template, missions, renumbering, mapping to lecturer slides, source-verification table | Pending (Brian) | Pending Review |
+| 2026-11-06 | V2.0 | Eight chapters, new template, missions, renumbering, mapping to lecturer slides, source-verification table | See Stage 2 review register | Pending Result |
