@@ -83,7 +83,7 @@ These outcomes are identical in the [Module Outline](module-outline.md) and the 
 | Study Guide and Test Bank | ✅ Completed | Stage 2 package |
 | Quiz game | ✅ Published (Version 1.2) | <https://babigulingcsai.netlify.app> |
 | PPT Slides | ✅ Completed | Stage 2 package |
-| Video Tutorials | ⏳ Pending | MP4 files and Video Guide are maintained as a separate submission deliverable |
+| Video Tutorials | 🔄 In Progress | Planned for 14 November 2026; confirm that the revised date is accepted. MP4 files and Video Guide are maintained as a separate submission deliverable |
 | Project Log and Meeting Summaries | ✅ Completed | `logs/` |
 | Personal Learning and Work Logs | ✅ Completed | Each member's log |
 | Previous-year project review | ⏳ Needs evidence update | Project Plan, section 2.4 |
@@ -257,4 +257,4 @@ The full schedule, with tasks, owners, reviewers, milestones and evidence, is in
 | See the plan and schedule | [project-plan.md](project-plan.md) |
 | See who does what | [master-task-list.md](master-task-list.md) |
 | Check quality evidence | `quality/reviews/` |
-| Check AI use | `logs/` |
+| Check AI use | `logs/` |\n| **External Learner Feedback — Glen** | Feedback on the published Escape the Spit quiz game; not a Test Bank trial. | [External Learner Feedback — Glen.md](../logs/External%20Learner%20Feedback%20%E2%80%94%20Glen.md) |
