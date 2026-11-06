@@ -1,4 +1,4 @@
-# Module Outline and Development Status
+# Module Outline and Development Status.
 
 **Document author:** Jonathan Sugianto (CIO)  
 **Version:** V2.0 (Stage 2)  
