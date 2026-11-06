@@ -198,11 +198,11 @@ Each member must be able to point to commits and pull requests for their own cha
 
 | Date | Step | Owner | Output |
 | ---- | ---- | ----- | ------ |
-| 25 Oct to 31 Oct | Study lecturer slides for Chapters 4 to 6; outline new chapters | Gandhi, Jonathan, Joseph | Outlines |
-| 1 Nov to 3 Nov | Write full V2.0 drafts | Chapter authors | Eight chapter drafts |
-| 3 Nov to 4 Nov | Self-check, peer check, link check | Authors and peers | Check notes |
-| 4 Nov (internal deadline) | Drafts ready for review | Authors | Drafts in repository |
-| 4 Nov to 6 Nov | Quality review and corrections | Brian; authors | Review reports; corrected chapters |
+| 4 nov | Study lecturer slides for Chapters 4 to 6; outline new chapters | Gandhi, Jonathan, Joseph | Outlines |
+| 5 Nov to 6 Nov | Write full V2.0 drafts | Chapter authors | Eight chapter drafts |
+| 5 Nov to 6 Nov | Self-check, peer check, link check | Authors and peers | Check notes |
+| 5 Nov to 6 Nov (internal deadline) | Drafts ready for review | Authors | Drafts in repository |
+| 5 Nov to 6 Nov | Quality review and corrections | Brian; authors | Review reports; corrected chapters |
 | 6 Nov | Run the Final Submission Audit; build Stage 2 Content and PDF | Jonathan, Benedict, Brian | Audit; PDF |
 | 7 Nov (deadline) | Compile and submit | Jonathan | Stage 2 submission |
 
