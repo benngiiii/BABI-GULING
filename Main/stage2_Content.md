@@ -3008,7 +3008,7 @@ In one day you may unlock your phone with your face, get a route from a map app,
 
 ### Which approach powers which application?
 
-![A table of eight applications with filled dots for the main method and open circles for methods also used, across symbolic, connectionist and behaviorist columns](study-guide/V2.0/chapter-7-applications-of-ai/assets/fig-7-1-application-method-matrix.png)
+![A table of eight applications with filled dots for the main method and open circles for methods also used, across symbolic, connectionist and behaviorist columns](study-guide/V2.0/chapter-7-applications-of-aI/assets/fig-7-1-application-method-matrix.png)
 *Figure 7.1: Which approach powers which application (illustrative). Source: created by our team.*
 
 How to read Figure 7.1: a **filled dot** means the main method. An **open circle** means it is also used. Notice how many rows have more than one dot: **real systems mix methods.** For example, a self-driving car uses neural networks to see, rules to follow traffic laws, and learning from experience to improve its driving.
@@ -3076,7 +3076,7 @@ A self-driving car must see, decide and act in a fraction of a second, in rain, 
 
 The standard SAE J3016 describes six levels (SAE International, 2021).
 
-![Six boxes labelled Level 0 to Level 5; levels 0 to 2 are blue (the human is driving), levels 3 to 5 are green (the system drives when its feature is active)](study-guide/V2.0/chapter-7-applications-of-ai/assets/fig-7-2-driving-levels.png)
+![Six boxes labelled Level 0 to Level 5; levels 0 to 2 are blue (the human is driving), levels 3 to 5 are green (the system drives when its feature is active)](study-guide/V2.0/chapter-7-applications-of-aI/assets/fig-7-2-driving-levels.png)
 *Figure 7.2: Levels of driving automation. Source: created by our team.*
 
 | Level | Name | Who is responsible? | Example |
@@ -3127,7 +3127,7 @@ When an AI tool is right 95% of the time, who is responsible for the other 5%? I
 
 **"Human in the loop" means a person reviews or approves important AI outputs before they take effect.** The AI supports; the person decides and is accountable.
 
-![A flow: patient scan is uploaded, AI gives a risk score, the score is compared with a threshold, a doctor reviews flagged cases, and the doctor makes the decision; a random sample of unflagged scans is also checked](study-guide/V2.0/chapter-7-applications-of-ai/assets/fig-7-3-human-in-the-loop.png)
+![A flow: patient scan is uploaded, AI gives a risk score, the score is compared with a threshold, a doctor reviews flagged cases, and the doctor makes the decision; a random sample of unflagged scans is also checked](study-guide/V2.0/chapter-7-applications-of-aI/assets/fig-7-3-human-in-the-loop.png)
 *Figure 7.3: Human in the loop in a screening tool. Source: created by our team.*
 
 | Design choice | Why it matters |
