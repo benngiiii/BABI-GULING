@@ -111,8 +111,8 @@ All Stage 2 reviews are **Not yet reviewed**. Brian writes the real result after
 | 44 | QR-V2-008-I01 | Chapter 8: AI Ethics, Risks and Limitations | Brian |  Brian | Initial Review    | Pass                        |
 | 45 | QR-V2-009-I01 | README V2.0 | Joseph | Brian  | Initial Review    | Pass                        |
 | 46 | QR-V2-010-I01 | Module Outline V2.0 | Joseph |  Brian | Initial Review    | Pass                        |
-| 47 | QR-V2-011-I01 | Project Plan V2.0 | Joseph |  Brian | Initial Review    | Pass                        |
-| 48 | QR-V2-012-I01 | Master Task List V2.0 | Joseph | Brian | Initial Review    | Pass                        |
+| 47 | QR-V2-011-I01 | Project Plan V2.0 | Brian |  Brian | Initial Review    | Pass                        |
+| 48 | QR-V2-012-I01 | Master Task List V2.0 | Brian | Brian | Initial Review    | Pass                        |
 | 49 | QR-V2-013-I01 | Stage 2 Content file | Brian |  Brian | Initial Review    | Pass                        |
 
 Detailed reports go in `quality/reviews/detailed review V2.0/`, one file per Review ID (use the template `QR-TEMPLATE.md`).
