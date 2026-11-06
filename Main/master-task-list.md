@@ -165,7 +165,7 @@ Stage 1 was submitted and scored 100/100. The Stage 1 files are kept unchanged i
 | S2-20 | Trial the test-bank questions with someone outside the team | Joseph | Brian | 7 Nov | 🔄 | Trial notes |
 | S2-21 | Prepare live teaching; hold at least two rehearsals with feedback | Gandhi (with team) | Brian | Before the live class | 🔄 | Rehearsal notes; mini lecture plan in Project Plan, section 7.5 |
 | S2-22 | Review previous-year projects (at least three: symbolic, connectionist, behaviorist) and fill the table in Project Plan, section 2.4 | Gandhi, Jonathan, Joseph | Brian | 7 Nov | 🔄 | Project Plan section 2.4 |
-| S2-37 | Quiz game "Escape the Spit" published; link added to the README, Project Plan and Study Guide | Benedict | Brian | 6 Nov | ✅ | <https://babigulingcsai.netlify.app> |
+| S2-37 | Quiz game "Escape the Spit" published; link added to the README and Project Plan | Benedict | Brian | 6 Nov | ✅ | <https://babigulingcsai.netlify.app> |
 | S2-38 | Compare quiz-game questions with Test Bank V1.0 and fix any difference | Benedict | Brian | 7 Nov | 🔄 | Comparison note |
 
 #### D. Quality and Review
