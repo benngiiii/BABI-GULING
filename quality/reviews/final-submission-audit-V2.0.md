@@ -35,7 +35,7 @@
 | R02 | Folder structure | Main repository folders match the README | PASS | Repository structure checked. |
 | R03 | README V2.0 | Lists eight chapters, team information, documents and working links | PASS | README and internal links checked. |
 | R04 | Module Outline V2.0 | Eight chapters and correct completion statuses | PASS | Module Outline checked against the current chapter files. |
-| R05 | Project Plan V2.0 | Schedule, risks, resources and reference-project review | PASS | Project Plan checked and updated for Stage 2. |
+| R05 | Project Plan V2.0 | Schedule, risks, resources and reference-project review | NEEDS ACTION | Sections 2.1–2.3 are documented; §2.4 still awaits three actual previous-year project reviews. |
 | R06 | Master Task List V2.0 | Stage 1–3 tasks and current statuses | PASS | Task list checked against completed team tasks. |
 | R07 | Cross-document consistency | Chapter names, authors, numbers and dates agree | PASS | Main project documents compared. |
 | R08 | Old V2.0 folders removed | Outdated chapter folders removed or renamed | PASS | Final V2.0 folder structure checked. |
@@ -60,7 +60,7 @@
 | L09 | Stage 2 Content | All eight chapters included in the correct order; images display | PASS | Combined Stage 2 content checked. |
 | L10 | No Mermaid | No Mermaid or unsupported diagram code | PASS | Chapter and document files checked. |
 | L11 | Lecturer's slides | Chapters 4–6 compared with lecturer's slides | PASS | Topic coverage and alignment checked. |
-| L12 | Reference projects | At least three previous-year projects reviewed and recorded | PASS | Reference-project review completed and recorded in Project Plan §2.4. |
+| L12 | Reference projects | At least three previous-year projects reviewed and recorded | PENDING | Project Plan §2.4 does not yet contain actual project names, links, findings and evidence. |
 | L13 | No placeholders | No unfinished placeholders or blank answers in submitted content | PASS | Submitted content checked. |
 
 ---
@@ -70,11 +70,13 @@
 | ID | Item | Requirement | Status | Evidence / Notes |
 | -- | ---- | ----------- | :----: | ---------------- |
 | P01 | Study Guide | Matches V2.0 chapters and includes all eight chapters | PASS | Study Guide checked against the Markdown source. |
-| P02 | Test Bank | At least 20 True/False, 20 multiple-choice and 6 open-ended questions; answers checked | PASS | Test Bank contains 24 True/False, 24 multiple-choice and 8 open-ended questions. |
+| P02 | Test Bank | At least 20 True/False, 20 multiple-choice and 6 open-ended questions; answers checked | PASS | Content count is recorded as 24 True/False, 24 multiple-choice and 8 open-ended questions. External learner trial is tracked separately under S2-20 and remains pending. |
 | P03 | PPT Slides | Covers Chapters 1–8, matches Markdown and is readable | PASS | Slides checked against the learning content. |
-| P04 | Video Tutorials | Matches Markdown examples; audio and subtitles checked | PASS | Video tutorials checked. |
+| P04 | Video Tutorials | Matches Markdown examples; audio and subtitles checked | IN PROGRESS | Planned for 14 November 2026; MP4 files and Video Guide are not yet recorded as completed. Confirm that the revised date is accepted. |
 | P05 | Readable PDF | Pages, tables and images display correctly | PASS | PDF layout and readability checked. |
 | P06 | Live teaching and rehearsals | At least two rehearsals recorded with feedback | N/A | Stage 3 activity; not a Stage 2 submission requirement. |
+| P07 | External Test Bank Trial (S2-20) | An external learner attempts questions and provides feedback | PENDING | No actual Test Bank trial result is recorded yet. Glen's confirmed feedback concerns the quiz game only. |
+| P08 | Quiz Game/Test Bank Comparison (S2-38) | Game questions and answers compared with Test Bank V1.0 | PENDING | Game publication is complete (S2-37); question-by-question comparison remains outstanding. |
 
 ---
 
@@ -84,7 +86,7 @@
 | -- | ---- | ----------- | :----: | ---------------- |
 | Q01 | Review reports | Review reports available for the required chapters and project documents | PASS | Stage 2 review reports checked. |
 | Q02 | Review Register | Every report is listed with its corresponding result | PASS | Review Register updated and checked. |
-| Q03 | Independence | Chapter 7 and project documents have independent review | PASS | Chapter 7 independent review assigned to Joseph Lokman. |
+| Q03 | Independence | Chapter 7 and project documents have independent review | PASS | Chapter 7 independent review is recorded in QR-V2-007-I02 with Joseph Lokman as the non-author reviewer. |
 | Q04 | Corrections | Review findings corrected and rechecked | PASS | Required corrections checked against revised files. |
 | Q05 | Source verification | Reference links opened and Module Outline checked | PASS | Source references and Module Outline checked. |
 
@@ -115,25 +117,28 @@
 
 ## 8. Audit Summary
 
-The Stage 2 deliverables have been completed and checked by the team before the submission deadline. The eight learning chapters, learning resources, quality review records, project documentation, logs, AI-use records and submission package have been reviewed.
+The repository contains the eight Stage 2 learning chapters and supporting project documentation. PPT2024 alignment is recorded as completed in Project Plan §2.2. The quiz game Escape the Spit is published, and the independent Chapter 7 review is recorded in QR-V2-007-I02.
 
-The required Stage 2 corrections have been incorporated into the updated documents. The independent Chapter 7 review and the combined Stage 2 content review are included in the quality review records.
-
-Stage 3 activities, including live teaching and rehearsals, are excluded from the Stage 2 final submission decision because they belong to the next project stage.
+The following items remain open and must not be represented as completed:
+- Previous-year project review (S2-22): three actual projects, links, findings and evidence are still required.
+- Video Tutorials and Video Guide (S2-19): in progress, planned for 14 November 2026; confirm the revised date with the lecturer/team.
+- External Test Bank Trial (S2-20): an actual external learner attempt and feedback are still required.
+- Quiz Game/Test Bank comparison (S2-38): question-by-question comparison is still required.
+- Final submission confirmation (K04): update only after submission is actually completed.
 
 | Area | Current status |
 |---|---|
-| Repository and project documents | PASS |
-| Eight learning chapters | PASS |
-| Learning resources | PASS |
-| Quality review documentation | PASS |
-| Independent Chapter 7 review | PASS |
-| Project and Personal Logs | PASS |
-| AI-use records and evidence | PASS |
-| Submission package and extraction test | PASS |
-| Stage 3 live teaching and rehearsals | N/A — Stage 3 |
+| PPT2024 course alignment | PASS |
+| Repository structure and eight chapters | PASS, subject to the individual checks above |
+| Previous-year project review | PENDING |
+| Test Bank content preparation | PASS; external learner trial PENDING |
+| Quiz game publication | PASS |
+| Quiz Game/Test Bank comparison | PENDING |
+| Chapter 7 independent review | PASS |
+| Video Tutorials and Video Guide | IN PROGRESS |
 | Final submission confirmation | PENDING |
+| Stage 3 live teaching and rehearsals | N/A — Stage 3 |
 
-**Final decision:** ☒ Ready for submission   ☐ Not ready for submission
+**Final decision:** ☐ Ready for submission   ☒ Not yet ready — open requirements listed above
 
-**Final approval:** Pending confirmation that the final package has been submitted before the deadline.
+**Final approval:** Pending completion or lecturer-approved rescheduling of outstanding requirements and confirmation of final submission.
