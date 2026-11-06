@@ -1,34 +1,28 @@
-## External Learner Feedback — Test Bank and Quiz Game
+# External Learner Feedback — Glen
 
-### Test Information
+## Feedback Information
 
 | Item | Details |
 |---|---|
-| Activity | External Learner Feedback |
-| Tester | Glen |
+| Project | BABI GULING — AI Overview |
+| External learner | Glen |
 | Affiliation | Outside the BABI GULING team |
-| Quiz Game | Escape the Spit |
-| Game Version | 1.2 |
-| Feedback Coordinator | BABI GULING Team |
-| Date | To be confirmed |
+| Resource reviewed | Escape the Spit quiz game |
+| Game URL | https://babigulingcsai.netlify.app |
+| Feedback type | Informal external learner feedback |
+| Feedback date | To be confirmed |
 
-### Feedback Summary
+## Feedback Summary
 
-Glen, an external learner outside the BABI GULING team, provided feedback after trying the team's quiz game.
+Glen, who is outside the BABI GULING team, reviewed the Escape the Spit quiz game and gave positive feedback, saying that the game was good.
 
-The feedback was positive. Glen considered the game enjoyable and gave a positive impression of its overall learning experience.
+## Scope and Limitation
 
-### Feedback Record
+This record documents feedback about the quiz game only. It does not document a Test Bank V1.0 trial, an attempt at Test Bank questions, or verification of the Test Bank answer key.
 
-| Area | Feedback |
-|---|---|
-| Game experience | Positive |
-| Overall impression | The game was good and enjoyable. |
-| Learning experience | Positive general impression. |
-| Suggested improvements | No specific suggestions have been confirmed. |
+A separate Test Bank trial must be recorded only if an external learner actually attempts the questions and provides feedback.
 
-### Follow-up
+## Evidence
 
-The team will use this feedback as an external perspective when evaluating the quiz game's learning experience.
-
-**Note:** This record documents feedback about the quiz game. A separate Test Bank question trial and question-answer verification should only be marked completed if Glen actually attempted those questions.
+- Published game: https://babigulingcsai.netlify.app
+- Original feedback: to be retained by the team if available.
