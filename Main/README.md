@@ -153,6 +153,7 @@ Items marked "Pending" or "To be completed" are not presented as finished.
 | **Study Guide V2.0 (Markdown)** | The eight chapter files with figures.                                                    | [study-guide/V2.0/](study-guide/V2.0/)                                                |
 | **Stage 1 AI Use Log**      | AI use during Stage 1.                                                                       | [stage1-ai-use-log.md](../logs/stage1-ai-use-log.md)                                  |
 | **Stage 2 Activity and AI-Use Records** | Activities and AI use during Stage 2.                                            | [Stage 2 activity and AI-use records.md](../logs/Stage%202%20activity%20and%20AI-use%20records.md) |
+| **Stage 2 Peer Test Records** | Peer tests of the Study Guide and Test Bank during Stage 2.                                    | [Stage 2 peer test records.md](../logs/Stage%202%20peer%20test%20records.md) |
 | **Quality Review Register** | Tracks review reports, issues and progress.                                                  | [review-register.md](../quality/reviews/review-register.md)                           |
 | **Quality Standards V2.0**  | Criteria used to review the Stage 2 materials.                                               | [quality-standards-V2.0.md](../quality/reviews/quality-standards-V2.0.md)             |
 | **Final Submission Audit V2.0** | Final checks before the Stage 2 submission.                                              | [final-submission-audit-V2.0.md](../quality/reviews/final-submission-audit-V2.0.md)  |
@@ -190,6 +191,7 @@ BABI-GULING/
 ├── logs/
 │   ├── stage1-ai-use-log.md
 │   ├── Stage 2 activity and AI-use records.md
+│   ├── Stage 2 peer test records.md
 │   └── assets/                           (log screenshots)
 │
 └── quality/
