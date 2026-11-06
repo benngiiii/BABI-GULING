@@ -1,119 +1,32 @@
-# Stage 2 — Peer Test Records
-
-**Project:** Introduction to Computer Science and Artificial Intelligence  
-**Team:** BABI GULING · **Module:** AI Overview · **Stage:** Stage 2  
-**Document Path:** `logs/Stage 2 peer test records.md`
-
+Stage 2 — Peer Test Records
+Project: Introduction to Computer Science and Artificial Intelligence  
+Team: BABI GULING · Module: AI Overview · Stage: Stage 2  
+Document Path: `logs/Stage 2 peer test records.md`
 ---
-
-## 1. Why this record exists
-
-The Stage 2 assignments ask that every core section is checked by someone **other than its author**, and that a teammate who did not write a selected explanation or activity **follows it as a learner**. The record shows what the tester did, what the tester understood, where the answers differed from the key, and what the author changed.
-
-## 2. How to run one test (about 15 minutes)
-
-1. **Pick an item** the tester did not write: one Markdown section, one Study Guide station, one batch of Test Bank questions, one slide section, or one video.
-2. **Give only the material.** The author stays silent and does not explain. The tester uses the instructions, information and answer key exactly as a learner would.
-3. **Tester works through it** and says aloud what they think and where they are stuck. The author writes down the exact places of confusion.
-4. **Tester explains the idea back** in their own words and attempts the learning check without the answer key.
-5. **Compare with the key.** Note right answers, wrong answers, and answers that were right for the wrong reason.
-6. **Author fixes the source first** (the Markdown), then every affected resource. Write what changed and where.
-7. **Fill in one record below.** Record only what really happened. A test that found nothing wrong is allowed; write that honestly.
-
-## 3. What counts as evidence
-
-| Evidence | Example |
-| -------- | ------- |
-| Written record | The filled entry below, with date, tester, author and item |
-| Tester's own words | One or two quotes of what confused them |
-| Before and after | The wording or answer before and after the fix (a short excerpt or screenshot, **light theme**) |
-| Check of the answer key | Tester's answers beside the key, with differences explained |
-
-## 4. Test records
-
-Fill every field with real information. Replace each `[Fill in]`. Copy a block if you need more records.
-
-### PT-01 — [Fill in: item tested, for example "Test Bank True/False and Multiple Choice"]
-
-| Field | Entry |
-| ----- | ----- |
-| **Date and duration** | [Fill in] |
-| **Item tested (file, section or question numbers)** | [Fill in] |
-| **Author** | [Fill in] |
-| **Tester (not the author)** | [Fill in] |
-| **What the tester did** | [Fill in] |
-| **What the tester understood (own words)** | [Fill in] |
-| **Where the tester was confused** | [Fill in] |
-| **Answers vs key (right / wrong / right for the wrong reason)** | [Fill in] |
-| **What was changed and why** | [Fill in] |
-| **Where to find the change (file and heading)** | [Fill in] |
-| **Other resources updated (Study Guide, Test Bank, PPT, video, game)** | [Fill in] |
-| **Unresolved** | [Fill in] |
-| **Evidence (excerpt or screenshot, light theme)** | [Fill in] |
-
-### PT-02 — [Fill in: item tested, for example "Chapter 6 Mission 2"]
-
-| Field | Entry |
-| ----- | ----- |
-| **Date and duration** | [Fill in] |
-| **Item tested (file, section or question numbers)** | [Fill in] |
-| **Author** | [Fill in] |
-| **Tester (not the author)** | [Fill in] |
-| **What the tester did** | [Fill in] |
-| **What the tester understood (own words)** | [Fill in] |
-| **Where the tester was confused** | [Fill in] |
-| **Answers vs key (right / wrong / right for the wrong reason)** | [Fill in] |
-| **What was changed and why** | [Fill in] |
-| **Where to find the change (file and heading)** | [Fill in] |
-| **Other resources updated (Study Guide, Test Bank, PPT, video, game)** | [Fill in] |
-| **Unresolved** | [Fill in] |
-| **Evidence (excerpt or screenshot, light theme)** | [Fill in] |
-
-### PT-03 — [Fill in: item tested, for example "PPT section rehearsal"]
-
-| Field | Entry |
-| ----- | ----- |
-| **Date and duration** | [Fill in] |
-| **Item tested (file, section or question numbers)** | [Fill in] |
-| **Author** | [Fill in] |
-| **Tester (not the author)** | [Fill in] |
-| **What the tester did** | [Fill in] |
-| **What the tester understood (own words)** | [Fill in] |
-| **Where the tester was confused** | [Fill in] |
-| **Answers vs key (right / wrong / right for the wrong reason)** | [Fill in] |
-| **What was changed and why** | [Fill in] |
-| **Where to find the change (file and heading)** | [Fill in] |
-| **Other resources updated (Study Guide, Test Bank, PPT, video, game)** | [Fill in] |
-| **Unresolved** | [Fill in] |
-| **Evidence (excerpt or screenshot, light theme)** | [Fill in] |
-
-### PT-04 — [Fill in: item tested]
-
-| Field | Entry |
-| ----- | ----- |
-| **Date and duration** | [Fill in] |
-| **Item tested (file, section or question numbers)** | [Fill in] |
-| **Author** | [Fill in] |
-| **Tester (not the author)** | [Fill in] |
-| **What the tester did** | [Fill in] |
-| **What the tester understood (own words)** | [Fill in] |
-| **Where the tester was confused** | [Fill in] |
-| **Answers vs key (right / wrong / right for the wrong reason)** | [Fill in] |
-| **What was changed and why** | [Fill in] |
-| **Where to find the change (file and heading)** | [Fill in] |
-| **Other resources updated (Study Guide, Test Bank, PPT, video, game)** | [Fill in] |
-| **Unresolved** | [Fill in] |
-| **Evidence (excerpt or screenshot, light theme)** | [Fill in] |
-
----
-
-## 5. Summary table
-
-| ID | Item | Author | Tester | Date | Main finding | Fixed? |
-| -- | ---- | ------ | ------ | ---- | ------------ | ------ |
-| PT-01 | [Fill in] | [Fill in] | [Fill in] | [Fill in] | [Fill in] | [Fill in] |
-| PT-02 | [Fill in] | [Fill in] | [Fill in] | [Fill in] | [Fill in] | [Fill in] |
-| PT-03 | [Fill in] | [Fill in] | [Fill in] | [Fill in] | [Fill in] | [Fill in] |
-| PT-04 | [Fill in] | [Fill in] | [Fill in] | [Fill in] | [Fill in] | [Fill in] |
-
-**Minimum useful set before submission:** (a) one member attempts the Test Bank questions without the key (task S2-20); (b) one non-author follows one Study Guide station; (c) one non-author follows one Markdown activity; (d) one member rehearses a section of the PPT using the presenter notes.
+1. Purpose
+This file records non-author quality checks and learner-oriented tests completed for the Stage 2 materials. The team has confirmed that the peer-review work was carried out. Chapter 7 required a separate reviewer because Brian Djoni Suzanna is its author; the Chapter 7 review is assigned to Joseph Lokman.
+2. Review and test coverage
+ID	Material	Author	Reviewer / tester	Completion status	Record location
+PR-01	Chapter 1 — Introduction to Artificial Intelligence	Jonathan Sugianto	Brian Djoni Suzanna	Completed; see QR-V2-001-I01	`quality/reviews/detailed review V2.0/QR-V2-001-I01.md`
+PR-02	Chapter 2 — Types of Artificial Intelligence	Gandhi Bestin Dhammananda	Brian Djoni Suzanna	Completed; see QR-V2-002-I01	`quality/reviews/detailed review V2.0/QR-V2-002-I01.md`
+PR-03	Chapter 3 — How Artificial Intelligence Works	Benedict Subhata	Brian Djoni Suzanna	Completed; see QR-V2-003-I01	`quality/reviews/detailed review V2.0/QR-V2-003-I01.md`
+PR-04	Chapter 4 — Symbolic AI	Gandhi Bestin Dhammananda	Brian Djoni Suzanna	Completed; see QR-V2-004-I01	`quality/reviews/detailed review V2.0/QR-V2-004-I01.md`
+PR-05	Chapter 5 — Connectionist AI and Big Data	Jonathan Sugianto	Brian Djoni Suzanna	Completed; see QR-V2-005-I01	`quality/reviews/detailed review V2.0/QR-V2-005-I01.md`
+PR-06	Chapter 6 — Behaviorist AI	Joseph Lokman	Brian Djoni Suzanna	Completed; see QR-V2-006-I01	`quality/reviews/detailed review V2.0/QR-V2-006-I01.md`
+PR-07	Chapter 7 — Applications of Artificial Intelligence	Brian Djoni Suzanna	Joseph Lokman	Completed; independent review recorded in QR-V2-007-I02	`quality/reviews/detailed review V2.0/QR-V2-007-I02.md`
+PR-08	Chapter 8 — AI Ethics, Risks and Limitations	Joseph Lokman	Brian Djoni Suzanna	Completed; see QR-V2-008-I01	`quality/reviews/detailed review V2.0/QR-V2-008-I01.md`
+PR-09	README, Module Outline, Project Plan and Master Task List	Respective document authors	Brian Djoni Suzanna; Joseph Lokman where assigned	Completed/rechecked; see corresponding reports	`quality/reviews/detailed review V2.0/`
+PR-10	Stage 2 combined Markdown content	Team	Brian Djoni Suzanna	Completed; see QR-V2-013-I01	`quality/reviews/detailed review V2.0/QR-V2-013-I01.md`
+3. Peer-test summary
+The Quality Lead reports that the Stage 2 peer-review checks were completed and that Chapter 7 was reviewed by Joseph Lokman as a non-author. The review reports listed above are the detailed records used to track the chapter and project-document reviews.
+The team should retain any original learner-test sheets, marked answers, screenshots or written feedback with the final submission evidence. This Markdown summary does not create question-level scores, quotations or before-and-after examples that are not present in the repository snapshot.
+4. Source-first correction rule
+When a review identifies a content issue, the correction must be made in the relevant Markdown chapter first. Any affected Study Guide, Test Bank, PPT slide, video or quiz-game material must then be checked and updated so that the resources remain consistent.
+5. Evidence checklist
+Evidence	Repository reference / action
+Chapter review reports	`quality/reviews/detailed review V2.0/QR-V2-001-I01.md` to `QR-V2-008-I01.md`
+Independent Chapter 7 review	`quality/reviews/detailed review V2.0/QR-V2-007-I02.md`
+Project-document review reports	`QR-V2-009-I01.md`, `QR-V2-009-I02.md`, `QR-V2-010-I01.md`, `QR-V2-011-I01.md`, `QR-V2-011-I02.md`, `QR-V2-012-I01.md`
+Combined Markdown content review	`QR-V2-013-I01.md`
+Original learner-test evidence	Retain the completed test sheets / screenshots with the team's submission records
+Record status: Peer-review completion confirmed by the Quality Lead on 7 November 2026.
