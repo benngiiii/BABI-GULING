@@ -128,9 +128,9 @@ BABI-GULING/
 │   ├── module-outline.md
 │   ├── stage1_Content.md
 │   ├── stage2_Content.md
-│   ├── assets/                       (project diagrams)
+│   ├── assets/                       
 │   └── study-guide/
-│       ├── v1.0/                     (Stage 1, unchanged)
+│       ├── v1.0/                     
 │       └── V2.0/
 │           ├── chapter-1-introduction-to-artificial-Intelligence/
 │           ├── chapter-2-types-of-artificial-intelligence/
