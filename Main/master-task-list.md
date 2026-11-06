@@ -159,12 +159,12 @@ Stage 1 was submitted and scored 100/100. The Stage 1 files are kept unchanged i
 
 | ID | Task | Owner | Reviewer | Deadline | Status | Evidence |
 |----|------|-------|----------|----------|:------:|----------|
-| S2-17 | Study Guide + Test Bank, version for V2.0 | Benedict (with authors) | Brian | 8 Nov | ❓ | Confirm with owner |
-| S2-18 | PPT Slides covering Chapters 1 to 8 | Benedict | Brian | 8 Nov | ❓ | Confirm with owner |
-| S2-19 | Video Tutorials (script, narration, editing) | Gandhi | Brian | 8 Nov | ❓ | Confirm with owner |
-| S2-20 | Trial the test-bank questions with someone outside the team | Joseph | Brian | 8 Nov | ❓ | Trial notes |
+| S2-17 | Study Guide + Test Bank, version for V2.0 | Benedict (with authors) | Brian | 7 Nov | ❓ | Confirm with owner |
+| S2-18 | PPT Slides covering Chapters 1 to 8 | Benedict | Brian | 7 Nov | ❓ | Confirm with owner |
+| S2-19 | Video Tutorials (script, narration, editing) | Gandhi | Brian | 7 Nov | ❓ | Confirm with owner |
+| S2-20 | Trial the test-bank questions with someone outside the team | Joseph | Brian | 7 Nov | ❓ | Trial notes |
 | S2-21 | Prepare live teaching; hold at least two rehearsals with feedback | Gandhi (with team) | Brian | Before the live class | ❓ | Rehearsal notes |
-| S2-22 | Review previous-year projects (at least three: symbolic, connectionist, behaviorist) and fill the table in the Project Plan, section 7 | Gandhi, Jonathan, Joseph | Brian | 9 Nov | ⬜ | Project Plan section 7 |
+| S2-22 | Review previous-year projects (at least three: symbolic, connectionist, behaviorist) and fill the table in the Project Plan, section 7 | Gandhi, Jonathan, Joseph | Brian | 7 Nov | ⬜ | Project Plan section 7 |
 
 #### D. Quality and Review
 
@@ -180,20 +180,20 @@ Stage 1 was submitted and scored 100/100. The Stage 1 files are kept unchanged i
 
 | ID | Task | Owner | Reviewer | Deadline | Status | Evidence |
 |----|------|-------|----------|----------|:------:|----------|
-| S2-28 | Project log and meeting summaries for Stage 2 (date, attendees, decisions, actions) | Joseph | Jonathan | 8 Nov | ❓ | `logs/` |
-| S2-29 | Personal learning and work log of each member for Stage 2 | Each member | Joseph | 8 Nov | ❓ | Personal logs |
-| S2-30 | Stage 2 AI-use records: project record and each member's own record, with light-theme screenshots | Joseph; each member | Brian | 8 Nov | ❓ | `logs/Stage 2 activity and AI-use records.md` |
-| S2-31 | Repository evidence: branches, commits, pull requests, Issues | Joseph | Jonathan | 8 Nov | ❓ | GitHub |
+| S2-28 | Project log and meeting summaries for Stage 2 (date, attendees, decisions, actions) | Joseph | Jonathan | 7 Nov | ❓ | `logs/` |
+| S2-29 | Personal learning and work log of each member for Stage 2 | Each member | Joseph | 7 Nov | ❓ | Personal logs |
+| S2-30 | Stage 2 AI-use records: project record and each member's own record, with light-theme screenshots | Joseph; each member | Brian | 7 Nov | ❓ | `logs/Stage 2 activity and AI-use records.md` |
+| S2-31 | Repository evidence: branches, commits, pull requests, Issues | Joseph | Jonathan | 7 Nov | ❓ | GitHub |
 
 #### F. Compile and Submit
 
 | ID | Task | Owner | Reviewer | Deadline | Status | Evidence |
 |----|------|-------|----------|----------|:------:|----------|
-| S2-32 | Build the readable PDF from the Markdown; check pages, images and tables | Benedict | Brian | 8 Nov | ⬜ | Stage 2 PDF |
-| S2-33 | Final Submission Audit V2.0 | Brian | Joseph | 8 Nov | ⬜ | `final-submission-audit-V2.0.md` |
-| S2-34 | Compile the Stage 2 folder with only corrected versions | Jonathan | Brian | 8 Nov | ⬜ | Stage 2 folder |
-| S2-35 | Package the required ZIP; extract it in a new folder and check files, links, images | Jonathan; Brian | Joseph | 8 Nov | ⬜ | Extraction record |
-| S2-36 | Submit Stage 2 | Jonathan | Joseph | 8 Nov | ⬜ | Submission |
+| S2-32 | Build the readable PDF from the Markdown; check pages, images and tables | Benedict | Brian | 7 Nov | ⬜ | Stage 2 PDF |
+| S2-33 | Final Submission Audit V2.0 | Brian | Joseph | 7 Nov | ⬜ | `final-submission-audit-V2.0.md` |
+| S2-34 | Compile the Stage 2 folder with only corrected versions | Jonathan | Brian | 7 Nov | ⬜ | Stage 2 folder |
+| S2-35 | Package the required ZIP; extract it in a new folder and check files, links, images | Jonathan; Brian | Joseph | 7 Nov | ⬜ | Extraction record |
+| S2-36 | Submit Stage 2 | Jonathan | Joseph | 7 Nov | ⬜ | Submission |
 
 ### 6.3 Stage 3 Tasks (due 28 Nov 2026; internal deadline 24 Nov)
 
