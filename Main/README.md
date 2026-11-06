@@ -1,4 +1,4 @@
-# BABI GULING — AI OVERVIEW
+# BABI GULING — AI OVERVIEW.
 
 **Document author:** Brian Djoni Suzanna (Quality Lead)  
 **Version:** V2.0 (Stage 2)  
