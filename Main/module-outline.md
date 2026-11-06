@@ -2,7 +2,7 @@
 
 **Document author:** Jonathan Sugianto (CIO)  
 **Version:** V2.0 (Stage 2)  
-**Last updated:** 6 November 2026
+**Last updated:** 7 November 2026
 
 ## Module Learning Outcomes
 
