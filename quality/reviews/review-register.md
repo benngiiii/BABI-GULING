@@ -97,24 +97,31 @@ The register is an index of review records, not a replacement for the detailed r
 
 ## 3. Stage 2 (V2.0) Review Register
 
-Stage 2 reviews are listed below with their latest recorded result. Brian writes the real result after each review. Allowed results: Pass, Minor Revisions Recommended, Changes Required.
+Stage 2 reviews are listed below with the latest recorded result. Detailed reports are stored in `quality/reviews/detailed review V2.0/`.
 
 | No. | Review ID | Document / Chapter | Reviewer | Second checker | Iteration | Latest Known Status |
 | --: | --------- | ------------------ | -------- | -------------- | --------- | ------------------- |
-| 37 | QR-V2-001-I01 | Chapter 1: Introduction to AI | Brian | Brian   | Initial Review    | Pass                        |
-| 38 | QR-V2-002-I01 | Chapter 2: Types of AI | Brian |  Brian | Initial Review    | Pass                        |
-| 39 | QR-V2-003-I01 | Chapter 3: How AI Works | Brian |  Brian | Initial Review    | Pass                        |
-| 40 | QR-V2-004-I01 | Chapter 4: Symbolic AI | Brian | Brian  | Initial Review    | Pass                        |
-| 41 | QR-V2-005-I01 | Chapter 5: Connectionist AI and Big Data | Brian |  Brian | Initial Review    | Pass                        |
-| 42 | QR-V2-006-I01 | Chapter 6: Behaviorist AI | Brian | Brian  | Initial Review    | Pass                        |
-| 43 | QR-V2-007-I01 | Chapter 7: Applications of AI | Joseph | Brian| Initial Review    | Pass                        |
-| 44 | QR-V2-008-I01 | Chapter 8: AI Ethics, Risks and Limitations | Brian |  Brian | Initial Review    | Pass                        |
-| 45 | QR-V2-009-I01 | README V2.0 | Joseph | Brian  | Initial Review    | Need Revision                       |
-| 46 | QR-V2-010-I01 | Module Outline V2.0 | Joseph |  Brian | Initial Review    | Pass                        |
-| 47 | QR-V2-011-I01 | Project Plan V2.0 | Brian |  Brian | Initial Review    | Need Revision                        |
-| 48 | QR-V2-012-I01 | Master Task List V2.0 | Brian | Brian | Initial Review    | Pass                        |
-| 49 | QR-V2-013-I01 | Stage 2 Content file | Brian |  Brian | Initial Review    | Pass                        |
-| 50 | QR-V2-009-I02 | README V2.0 | Joseph | Brian  | Revision Recheck    | Pass                       |
-| 51 | QR-V2-011-I02 | Project Plan V2.0 | Brian |  Brian | Revision Recheck    | Pass                      |
+| 37 | QR-V2-001-I01 | Chapter 1: Introduction to AI | Brian Djoni Suzanna | — | Initial Review | PASS |
+| 38 | QR-V2-002-I01 | Chapter 2: Types of AI | Brian Djoni Suzanna | — | Initial Review | PASS |
+| 39 | QR-V2-003-I01 | Chapter 3: How AI Works | Brian Djoni Suzanna | — | Initial Review | PASS |
+| 40 | QR-V2-004-I01 | Chapter 4: Symbolic AI | Brian Djoni Suzanna | — | Initial Review | PASS |
+| 41 | QR-V2-005-I01 | Chapter 5: Connectionist AI and Big Data | Brian Djoni Suzanna | — | Initial Review | PASS |
+| 42 | QR-V2-006-I01 | Chapter 6: Behaviorist AI | Brian Djoni Suzanna | — | Initial Review | PASS |
+| 43 | QR-V2-007-I01 | Chapter 7: Applications of AI | Brian Djoni Suzanna (author) | — | Initial Review | Superseded — see I02 |
+| 44 | QR-V2-008-I01 | Chapter 8: AI Ethics, Risks and Limitations | Brian Djoni Suzanna | — | Initial Review | PASS |
+| 45 | QR-V2-009-I01 | README V2.0 | Joseph Lokman | Brian Djoni Suzanna | Initial Review | Revision Required |
+| 46 | QR-V2-010-I01 | Module Outline V2.0 | Brian Djoni Suzanna | — | Initial Review | PASS |
+| 47 | QR-V2-011-I01 | Project Plan V2.0 | Brian Djoni Suzanna | — | Initial Review | Revision Required |
+| 48 | QR-V2-012-I01 | Master Task List V2.0 | Brian Djoni Suzanna | — | Initial Review | PASS |
+| 49 | QR-V2-013-I01 | Stage 2 Content file | Brian Djoni Suzanna | — | Initial Review | PASS |
+| 50 | QR-V2-009-I02 | README V2.0 | Joseph Lokman | Brian Djoni Suzanna | Revision Recheck | PASS |
+| 51 | QR-V2-011-I02 | Project Plan V2.0 | Brian Djoni Suzanna | — | Revision Recheck | PASS (team-confirmed) |
+| 52 | QR-V2-007-I02 | Chapter 7: Applications of AI | Joseph Lokman | Brian Djoni Suzanna | Independent Review | PASS |
 
-Detailed reports go in `quality/reviews/detailed review V2.0/`, one file per Review ID (use the template `QR-TEMPLATE.md`).
+## 4. Review File Locations
+
+Stage 2 detailed reports are stored in `quality/reviews/detailed review V2.0/`. Each Review ID in the Stage 2 table has a corresponding report file.
+
+## 5. Register Maintenance
+
+The register is an index of review records, not a replacement for detailed reports. A report marked as superseded remains in the repository as review history. The latest iteration is the authoritative status for the document.
