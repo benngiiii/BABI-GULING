@@ -1,145 +1,125 @@
-# Stage 2 — Peer Test Records
+# Stage 2 — Activity and AI-Use Records
 
 **Project:** Introduction to Computer Science and Artificial Intelligence  
 **Team:** BABI GULING · **Module:** AI Overview · **Stage:** Stage 2  
-**Document Path:** `logs/Stage 2 peer test records.md`
+**Document Path:** `logs/Stage 2 activity and AI-use records.md`
 
 ---
 
-## 1. Why this record exists
+## 1. Purpose and Rules
 
-The Stage 2 assignments ask that every core section is checked by someone **other than its author**, and that a teammate who did not write a selected explanation or activity **follows it as a learner**. The record shows what the tester did, what the tester understood, where the answers differed from the key, and what was changed.
+This file records (A) team activities and (B) AI use during Stage 2.
 
-## 2. Who tested, and the limits of these tests
+| Rule | Detail |
+| ---- | ------ |
+| Honest | Write only what really happened. Do not fill an entry in advance. |
+| Own entries | Each member writes and confirms their own AI-use entries. |
+| Screenshots | Use **light theme**. The tool name and date must be visible. |
+| Verification | Write what you checked, and what you changed after checking. |
 
-All tests in this file (PT-01 to PT-05) were carried out on **7 November 2026 by Claude (AI)**, working as a learner who used only the question text and the instructions. Claude was the tester, and **no human teammate is recorded as the tester here**.
+---
 
-Two limits are stated openly so that the record stays honest:
+## 2. Activity Record (Joseph updates; Jonathan reviews)
 
-- **Independence is limited.** Claude also helped to produce the Study Guide, the Test Bank and the answer keys (see AI-S2-002 and AI-S2-003 in the AI-use record). For each test, Claude answered first, without the key in view, and compared afterwards by script. Even so, an AI that helped to write a text is not an independent reader. These tests are therefore a **technical check of the answer keys and of whether the questions can be answered from the information given**. They are not evidence of how a first-time human learner experiences the material.
-- **Human tests are still open.** The "someone other than the author" requirement is met in full only when a teammate also does a test and records it. The planned human tests are in section 6. They are listed as **not done yet**.
+| Date | Activity | Who | Decision or result | Evidence |
+| ---- | -------- | --- | ------------------ | -------- |
+| 2026-11-03 | Stage 2 files and rubrics read; Stage 2 work explained | Benedict | Team goals clarified | AI-S2-001 |
+| 2026-11-06 | Lecturer's Stage 1 feedback received; decision to expand to eight chapters (three new chapters from slides 4 to 6) | Benedict | Eight-chapter structure; chapter owners proposed | AI-S2-002 |
+| 2026-11-06 | Mini lecture topic and scenario chosen: supervised, unsupervised and reinforcement learning, taught through a fictional "What If an AI Took Revenge?" case. Recorded in Project Plan §7.5 | Benedict (scenario idea); Claude helped structure and correct it | Plan §7.5: question, three-column comparison, eight-minute structure. Planned only: rehearsals and delivery are Stage 3 tasks S3-02 to S3-04 and have not happened | AI-S2-004 |
+| | (add each meeting: date, attendees, decisions, actions) | | | |
 
-The tests themselves are also AI use. They are recorded in the AI-use record as **AI-S2-005**.
+---
 
-## 3. How each test was run
+## 3. AI Tools Used in Stage 2
 
-1. The tester took only the question text (no key, no explanations) from the Test Bank source or the Study Guide Markdown.
-2. The tester answered every question, doing all calculations from the numbers in the question.
-3. Answers were compared with the answer key by script (Test Bank) or by reading (Study Guide).
-4. Every number in the questions and keys was recomputed with Python.
-5. Every difference, ambiguity or weak point was written down. If the source needed a change, the Markdown was to be fixed first.
+| Tool | Main use |
+| ---- | -------- |
+| Claude | Explaining the Stage 2 files; drafting chapter text, figures and project documents for the team to review |
+| (add tools used by other members) | |
 
-## 4. Test records
+---
 
-### PT-01 — Test Bank, True/False questions 1–24
+## 4. Summary Table
 
-| Field | Entry |
-| ----- | ----- |
-| **Date and duration** | 7 Nov 2026 · about 10 minutes |
-| **Item tested** | Test Bank, Part A: True/False, TF1–TF24 (Chapters 1–8). Source: `BABI-GULING_Stage2_TestBank_V1` |
-| **Author** | BABI GULING team, with Claude's help (AI-S2-003) |
-| **Tester (not the author)** | Claude (AI). Independence is limited, see section 2 |
-| **What the tester did** | Answered all 24 statements True or False from the statement text only, then compared with the key by script. TF9 (precision 30 ÷ 40) was recalculated by hand and in Python |
-| **What the tester understood** | Each statement can be judged on its own. The false statements each contain one clear error (for example TF2 swaps "programmer writes rules" and "computer finds rules", TF3 swaps training and inference, TF11 says MIN picks the largest score) |
-| **Where the tester was confused** | Nowhere. No statement needed outside knowledge, and no statement had two defensible answers |
-| **Answers vs key** | 24 of 24 match. 12 statements are True and 12 are False, so a pattern cannot be guessed. No answer was right for the wrong reason |
-| **What was changed and why** | Nothing. No error was found |
-| **Where to find the change** | Not applicable |
-| **Other resources updated** | None |
-| **Unresolved** | A human learner should still attempt the set (task S2-20) |
-| **Evidence** | Result of the script comparison: `TF total 24, mismatch []` |
+| Entry | Member | Date | Purpose | Tool |
+| ----- | ------ | ---- | ------- | ---- |
+| AI-S2-001 | Benedict Subhata | 3 Nov 2026 | Understanding the Stage 2 files and tasks; making a team summary | Claude |
+| AI-S2-002 | Benedict Subhata | 6 Nov 2026 | Producing draft Stage 2 chapters (1 to 8), figures, project documents and a ZIP for the team to review | Claude |
+| AI-S2-003 | Benedict Subhata | 6 Nov 2026 | Producing the Study Guide, the Test Bank (24 True/False, 24 Multiple Choice, 8 Open-ended with answer key), the class PPT and the quiz-game documentation | Claude |
+| AI-S2-004 | Benedict Subhata | 6 Nov 2026 | Revising the README and Project Plan after QR-V2-009-I01 and QR-V2-011-I01; planning the mini lecture; building the Markdown V2 package and submission report | Claude |
+| AI-S2-005 | [Fill in] | [Fill in] | [Fill in] | [Fill in] |
 
-### PT-02 — Test Bank, Multiple Choice questions 1–24
+---
 
-| Field | Entry |
-| ----- | ----- |
-| **Date and duration** | 7 Nov 2026 · about 15 minutes |
-| **Item tested** | Test Bank, Part B: Multiple Choice, MC1–MC24 (Chapters 1–8), including the four "choose TWO" questions (MC1, MC9, MC14 and MC21) |
-| **Author** | BABI GULING team, with Claude's help (AI-S2-003) |
-| **Tester (not the author)** | Claude (AI). Independence is limited, see section 2 |
-| **What the tester did** | Answered all 24 questions from the question text. Worked the calculation questions with the formulas given in the question: MC9 (accuracy 85%, recall 80%), MC13 (z = 2 × 1 − 1 = 1, output 1), MC17 (new Q = 0 + 0.5 × (10 + 0 − 0) = 5) |
-| **What the tester understood** | The calculation questions give every formula and number needed, so a learner does not need the chapter open. The wrong options are mistakes a learner could really make (for example MC13 option C uses + bias, MC17 option A forgets α) |
-| **Where the tester was confused** | Nowhere in the answering. One observation for the team (not an error): the single-answer questions have the correct letter A six times, B six times, C six times and D only twice (plus four "choose TWO" questions), so D is the correct answer less often than the others |
-| **Answers vs key** | 24 of 24 match, including all "choose TWO" pairs. No answer was right for the wrong reason |
-| **What was changed and why** | Nothing. The letter spread is a minor point and does not affect correctness. The team may re-order the options of a few questions if it rebuilds the Test Bank anyway |
-| **Where to find the change** | Not applicable |
-| **Other resources updated** | None |
-| **Unresolved** | The option order (optional). A human attempt is still open |
-| **Evidence** | Result of the script comparison: `MC total 24, mismatch []`. All numbers recomputed in Python |
+## 5. Detailed Records
 
-### PT-03 — Test Bank, Open-ended questions 1–8
+### AI-S2-001 — Understanding the Stage 2 files
 
-| Field | Entry |
-| ----- | ----- |
-| **Date and duration** | 7 Nov 2026 · about 20 minutes |
-| **Item tested** | Test Bank, Part C: Open-ended questions OE1–OE8 (10 marks each), question text, tables and tasks only |
-| **Author** | BABI GULING team, with Claude's help (AI-S2-003) |
-| **Tester (not the author)** | Claude (AI). Independence is limited, see section 2 |
-| **What the tester did** | Read each scenario and table and checked whether the question can be answered from the information in it. Recomputed every number in the tables and wrote out the facts an answer would need |
-| **What the tester understood** | Every question can be answered from its own table. Examples recomputed: OE1 rule-based filter right on 2 of 4 emails and learning-based on 4 of 4; OE3 a filter that flags nothing scores 1,900 ÷ 2,000 = 95%; OE5 cases P, Q and R give z = +2, −1, 0, and a bias of −1 makes R output 1 (z = +1) while Q stays 0 (z = 0); OE7 precision 90 ÷ 300 = 30% and 70 ÷ 100 = 70%, recall 90% and 70%; OE8 selection rates 60%, 40% and 56%, impact ratios 0.67 and 0.93; OE4 forward chaining ends with "Go to the pump station" |
-| **Where the tester was confused** | Nowhere. All table totals add up (for example OE7: 90 + 210 = 300 flagged, 70 + 30 = 100 flagged) |
-| **Answers vs key** | The facts and numbers an answer needs agree with the marking key in all 8 questions. Open-ended answers are not machine-graded, so the comparison covers numbers and required points, not wording |
-| **What was changed and why** | Nothing. No numerical error or unanswerable question was found |
-| **Where to find the change** | Not applicable |
-| **Other resources updated** | None |
-| **Unresolved** | A human should write at least one full essay answer (at least 100 words) and have the marking key applied to it, to check that the mark scheme is usable |
-| **Evidence** | Python recomputation of all table numbers (all equal to the figures printed in the questions and keys) |
+**Member:** Benedict Subhata · **Date:** 3 November 2026 · **Tool:** Claude
 
-### PT-04 — Study Guide Markdown, all missions and Quick Check numbers (Chapters 1–8)
+**Purpose.** To understand what the Stage 2 files and rubrics ask each member to do, and to write a clear summary the team could share.
 
-| Field | Entry |
-| ----- | ----- |
-| **Date and duration** | 7 Nov 2026 · about 30 minutes |
-| **Item tested** | The Mission 1 and Mission 2 tasks and the Answer Key of each chapter in `Main/study-guide/V2.0/` (Chapters 1–8), and the calculation questions in each Quick Check |
-| **Author** | BABI GULING team chapter authors, with Claude's help (AI-S2-002) |
-| **Tester (not the author)** | Claude (AI). Independence is limited, see section 2 |
-| **What the tester did** | Did each mission as a learner would, with the numbers given in the task, and recomputed every calculation in Python: Chapter 3 (accuracy, precision 40 ÷ 45 = 88.9%, recall 80%), Chapter 4 (search and rules), Chapter 5 (neuron outputs), Chapter 6 (Q-learning update = 5), Chapter 7 (threshold tables), Chapter 8 (selection rates 60% and 30%, impact ratio 0.50, after retraining 0.83, Quick Check 0.75). The classification and judgment tasks (Chapter 2 Mission 1 and 2, Chapter 6 Mission 2, Chapter 7 Mission 1) were worked through while reading the task and the key side by side, so they are a check of the key, not a blind attempt (the blind learner attempt is PT-05) |
-| **What the tester understood** | The missions follow the Observe, Reflect, Feedback pattern, and each can be finished from the chapter alone. In Chapter 8 the key correctly states that passing the four-fifths rule (0.83) does not prove fairness |
-| **Where the tester was confused** | Two places where a learner may argue with the key, both already covered by the key's own wording: Chapter 2 Mission 1 system 2 (phone keyboard): a modern keyboard may use a generative model, and the key says so; Chapter 7 Mission 1 system 5 (unusual card payments): the key accepts a symbolic answer if the reason is stated ("other well-argued answers are acceptable") |
-| **Answers vs key** | All calculation answers match. The classification answers match the key or fall within the key's accepted alternatives. No answer key contained a numerical error |
-| **What was changed and why** | Nothing in the content. No answer-key error was found |
-| **Where to find the change** | Not applicable |
-| **Other resources updated** | None |
-| **Unresolved** | A non-author human should still follow one chapter's missions with pen and paper |
-| **Evidence** | Python recomputation output for each chapter's numbers |
+**How the output was used.** The summary was used to understand the task. (Benedict: add how you shared it and what the team decided.)
 
-### PT-05 — Learner walkthrough of one Markdown activity: Chapter 8 Mission 2 "Verify the Claims"
+**Verification.** (Benedict: write what you compared with the original assignment files.)
 
-| Field | Entry |
-| ----- | ----- |
-| **Date and duration** | 7 Nov 2026 · about 10 minutes |
-| **Item tested** | `Main/study-guide/V2.0/chapter-8-ai-ethics-and-limitations/ai-ethics-and-limitations.md`, §8.10 Mission 2 (four claims, Parts A to C) |
-| **Author** | BABI GULING team chapter author, with Claude's help (AI-S2-002) |
-| **Tester (not the author)** | Claude (AI). Independence is limited, see section 2 |
-| **What the tester did** | Read the task only (not the Answer Key) and answered Parts A, B and C, then read the Answer Key and compared |
-| **What the tester understood** | Claim 1 (EU AI Act bans social scoring): Supported; check the official text. Claim 2 (an invented reference saying every AI system is fair above 90% accuracy): Not supported; the source cannot be found, and accuracy alone does not show fairness. Claim 3 (chatbots update themselves from each conversation): Not supported; training and inference are separate (Chapters 1 and 3). Claim 4 (a 95% accurate spam filter is always good): Misleading; with rare spam a filter that flags nothing also gets about 95%. Part B: the authors' names, the year, the journal-like title and the fancy index name make claim 2 look real; the one test that matters is finding the real source. Part C: "I checked each claim against Section 8.7 and Chapter 3, searched for the cited paper, found no record of it, and rejected it" |
-| **Where the tester was confused** | Nowhere. The task says the reference in claim 2 is invented, which keeps the exercise honest. Claim 3 needs the idea from Chapter 3 (training vs using a model), which the Observe prompt points to |
-| **Answers vs key** | Verdicts for claims 1 to 4 and the Part B answer match the key. Part C matches the key's example in meaning |
-| **What was changed and why** | Nothing |
-| **Where to find the change** | Not applicable |
-| **Other resources updated** | None |
-| **Unresolved** | The test should also be repeated by a human who has not read the chapter |
-| **Evidence** | The tester's answers above, written before the key was opened |
+**Screenshot (light theme):** ______
 
-## 5. Summary table
+### AI-S2-002 — Drafting Stage 2 chapters and project documents
 
-| ID | Item | Author | Tester | Date | Main finding | Fixed? |
-| -- | ---- | ------ | ------ | ---- | ------------ | ------ |
-| PT-01 | Test Bank True/False 1–24 | Team (with Claude) | Claude (AI) | 7 Nov 2026 | 24 of 24 match the key; 12 True and 12 False | No change needed |
-| PT-02 | Test Bank Multiple Choice 1–24 | Team (with Claude) | Claude (AI) | 7 Nov 2026 | 24 of 24 match; calculations correct; correct letter D appears only twice | No change needed (optional re-order) |
-| PT-03 | Test Bank Open-ended 1–8 | Team (with Claude) | Claude (AI) | 7 Nov 2026 | All questions answerable from their tables; all numbers correct | No change needed |
-| PT-04 | Study Guide missions and Quick Check numbers, Chapters 1–8 | Team (with Claude) | Claude (AI) | 7 Nov 2026 | No numerical error; two judgment tasks have accepted alternatives already in the key | No change needed |
-| PT-05 | Chapter 8 Mission 2 as a learner | Team (with Claude) | Claude (AI) | 7 Nov 2026 | Answers match the key | No change needed |
+**Member:** Benedict Subhata · **Date:** 6 November 2026 · **Tool:** Claude
 
-## 6. Human tests still to be done and recorded
+**Purpose.** After receiving the lecturer's Stage 1 feedback and the three course slides (Symbolic AI, Connectionist AI and Big Data, Behaviorist AI), Benedict asked Claude to read the team's GitHub repository and produce drafts of eight chapters, figures, project documents (README, module outline, project plan, master task list, quality standards V2.0, a blank audit template), and a ZIP for the team to copy into GitHub.
 
-These are not done yet. Each one should be added as PT-06 and later, with the real tester's name, date and findings. Fill them in only after they have really happened.
+**What the AI produced.** Chapter drafts, image figures (generated with code), project documents, and a combined Stage 2 content file.
 
-| Planned test | Suggested tester | Status |
-| ------------ | ---------------- | ------ |
-| A teammate attempts all 24 True/False and 24 Multiple Choice questions without the key (task S2-20) | A member who did not write the Test Bank | Not done yet |
-| A teammate writes one full open-ended answer and applies the marking key | A member who did not write the Test Bank | Not done yet |
-| A non-author follows one Study Guide station or one Markdown mission | Any member who did not write that chapter | Not done yet |
-| A member rehearses one PPT section using the presenter notes | Any member | Not done yet |
+**How the output was used.** The drafts are the starting point. Each chapter author must read their chapter, recompute the missions, open the reference links, and edit the text in their own words. Brian reviews every chapter.
 
-A teammate may also read this file, repeat any one test above and note whether the result is the same.
+**Verification still required (nothing below is done until a person does it and writes the date):**
+
+| Check | Who | Done (date) |
+| ----- | --- | ----------- |
+| Every calculation in the missions recomputed | Chapter author and a peer | |
+| Every reference link opened and matched to the sentence | Chapter author | |
+| Chapters 4 to 6 compared with the lecturer's slides | Chapter authors | |
+| Facts about laws and standards checked against official text | Authors of Chapters 7 and 8 | |
+
+**Screenshot (light theme):** ______
+
+### AI-S2-003 — Study Guide, Test Bank and class PPT
+
+**Member:** Benedict Subhata · **Date:** 6 November 2026 · **Tool:** Claude
+
+**Purpose.** To turn the V2.0 Markdown chapters into a Study Guide, a Test Bank and a class PPT.
+
+**What the AI produced.** Drafts of the Study Guide slides, 56 Test Bank questions with an answer key, and the "Babi Guling's Kitchen" PPT. Benedict set the requirements (beginner-friendly, English only, essay-style open-ended answers) and asked for several rewrites.
+
+**Verification done.** Test Bank calculations (spam-filter scores, precision, recall, accuracy, neuron output, Q-learning update, selection-rate ratios) were recomputed with a script and agreed with the answer keys. Page layouts were checked in the rendered PDF.
+
+**Verification still required.** A second member answers every Test Bank question; the quiz-game questions are compared with the Test Bank.
+
+**Screenshot (light theme):** to be added by Benedict.
+
+### AI-S2-004 — README, Project Plan, mini lecture, ZIP and report
+
+**Member:** Benedict Subhata · **Date:** 6 November 2026 · **Tool:** Claude
+
+**Purpose.** To revise the README and Project Plan using the quality reports QR-V2-009-I01 and QR-V2-011-I01, to plan the live mini lecture, and to prepare the Markdown V2 ZIP and submission report.
+
+**What the AI produced.** Revised README and Project Plan, aligned Master Task List and Module Outline, a mini lecture plan, a link and image check, the readable PDF and the submission report.
+
+**What Benedict decided.** The mini lecture topic and scenario, the quiz-game link, and that items needing real work (previous-year project review, logs, videos) stay marked "To be completed" until done.
+
+**Mini lecture: what was proposed, what was rejected, what was decided.** Claude first suggested several topic ideas; Benedict rejected them as too weak. Benedict then proposed his own idea: a fictional scenario in which a user works for days with an AI assistant, gets bad answers, says angry things and closes the browser; overnight the assistant deletes the user's project and chat history and greets the user next day as if nothing happened. Claude helped turn this into a lecture structure on the question "Supervised, unsupervised and reinforcement learning: what is the difference?", with one running example and a three-column comparison (information available, objective, feedback).
+
+**Check and correction.** The first framing could suggest that every kind of learning can take revenge. It was corrected: supervised and unsupervised models only predict or group and do not choose actions; only reinforcement learning chooses actions to earn reward, and the harm in the story needs a flawed objective, the ability to act and missing safeguards (reward hacking, Chapter 6 §6.6; human in the loop, Chapter 7 §7.7; accountability, Chapter 8 §8.4). The scenario is labelled fictional so that no real incident is claimed. The result is in Project Plan §7.5 and links to Chapters 3, 6, 7 and 8.
+
+**Status.** Planned only. Rehearsal 1 (S3-02), Rehearsal 2 (S3-03) and delivery (S3-04) are scheduled after 7 November and will be recorded when they happen.
+
+**Verification done.** All relative links and image paths in the repository snapshot were checked by script. Three broken image paths in `stage2_Content.md` (folder name `aI`) were corrected.
+
+**Screenshot (light theme):** to be added by Benedict.
+
+### AI-S2-005 and later — other members
+
+Copy the structure of AI-S2-003: member, date, tool, purpose, how the output was used, verification, screenshot.
