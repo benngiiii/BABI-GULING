@@ -80,14 +80,17 @@ These outcomes are identical in the [Module Outline](module-outline.md) and the 
 | Module Outline | ✅ Approved (64/64) | `QR-V2-010-I01.md` |
 | Master Task List | ✅ Approved (64/64) | `QR-V2-012-I01.md` |
 | README and Project Plan | 🔄 Revised following quality reviews; recheck pending | `QR-V2-009-I01.md`, `QR-V2-011-I01.md` |
-| Study Guide and Test Bank | ✅ Completed | Stage 2 package |
+| Study Guide and Test Bank | ✅ Completed | Stage 2 package; content production is complete |
+| External Test Bank Trial | 🔄 In Progress | S2-20; awaiting actual external learner attempt and feedback |
 | Quiz game | ✅ Published (Version 1.2) | <https://babigulingcsai.netlify.app> |
 | PPT Slides | ✅ Completed | Stage 2 package |
 | Video Tutorials | 🔄 In Progress | Planned for 14 November 2026; confirm that the revised date is accepted. MP4 files and Video Guide are maintained as a separate submission deliverable |
 | Project Log and Meeting Summaries | ✅ Completed | `logs/` |
 | Personal Learning and Work Logs | ✅ Completed | Each member's log |
-| Previous-year project review | ⏳ Needs evidence update | Project Plan, section 2.4 |
+| Previous-year project review | ⏳ Needs evidence update | S2-22; Project Plan, section 2.4 |
 | Peer Review | ✅ Completed (team-confirmed) | `logs/Stage 2 peer test records.md` |
+| Quiz game and Test Bank comparison | 🔄 In Progress | S2-38; question-by-question comparison still needs to be recorded |
+| External game feedback | ✅ Received | Glen reviewed Escape the Spit; this is not a Test Bank trial |
 
 The numbers above agree with the [Master Task List](master-task-list.md) and the [Project Plan](project-plan.md).
 
