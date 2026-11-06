@@ -71,7 +71,7 @@ These outcomes are identical in the [Module Outline](module-outline.md) and the 
 | Output formats | GitHub Markdown | Markdown that also converts cleanly to PDF |
 | Stage 1 files | — | **Kept unchanged** in `Main/study-guide/v1.0/` |
 
-### Current Progress (6 November 2026)
+### Current Progress (7 November 2026)
 
 | Area | Status | Evidence |
 | ---- | ------ | -------- |
