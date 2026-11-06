@@ -117,10 +117,8 @@ The module was organized into three parts:
 
 ### 2.4 Previous-year projects
 
-The lecturer requires a review of **at least three previous-year projects**, one each for symbolic, connectionist and behaviorist AI. The review must be based on actual previous-year projects and documented with their names, links, findings and evidence.
+Before deciding the content structure, the team looked at previous-year slides from senior teams as a reference for scope and style. This was a reference check, not a separate report. Reviewer: Benedict Subhata. Date: [6 November].
 
-| # | Project (name and link) | Topic area | What the team learned | What changed in our content | Reviewer | Status |
-| :-: | 
 ---
 
 ## 3. The Eight Chapters
