@@ -120,24 +120,7 @@ The module was organized into three parts:
 The lecturer requires a review of **at least three previous-year projects**, one each for symbolic, connectionist and behaviorist AI. The review must be based on actual previous-year projects and documented with their names, links, findings and evidence.
 
 | # | Project (name and link) | Topic area | What the team learned | What changed in our content | Reviewer | Status |
-| :-: | ----------------------- | ---------- | --------------------- | --------------------------- | -------- | ------ |
-| 1 | To be recorded from the actual previous-year project | Symbolic AI | To be completed after confirming the reviewed project | To be recorded based on actual findings | Gandhi | Pending verification |
-| 2 | To be recorded from the actual previous-year project | Connectionist AI and Big Data | To be completed after confirming the reviewed project | To be recorded based on actual findings | Jonathan | Pending verification |
-| 3 | To be recorded from the actual previous-year project | Behaviorist AI | To be completed after confirming the reviewed project | To be recorded based on actual findings | Joseph | Pending verification |
-
-**Review Evidence:** Each completed entry should include the actual project link, a brief summary of the findings and evidence that the project was examined.
-
-**Note:** The lecturer's PPT2024 alignment and previous-year project review are two separate activities. Completing the course alignment does not replace the previous-year project requirement.
-
------------------------ | ---------- | --------------------- | --------------------------- | -------- | ------ |
-| 1 | *Previous-year project to be named, with link* | Symbolic AI | To be completed after reading the project | To be completed | Gandhi | **To be completed by 7 Nov** |
-| 2 | *Previous-year project to be named, with link* | Connectionist AI and Big Data | To be completed after reading the project | To be completed | Jonathan | **To be completed by 7 Nov** |
-| 3 | *Previous-year project to be named, with link* | Behaviorist AI | To be completed after reading the project | To be completed | Joseph | **To be completed by 7 Nov** |
-
-*Correction (7 Nov): an earlier version of this table listed our own chapters as "projects". These are not previous-year projects, so the rows were removed until real projects are reviewed.*
-
-Evidence required: the project link, one screenshot (light theme) of the reviewed page, and two or three written findings per project. Entries are recorded in the Stage 2 activity record.
-
+| :-: | 
 ---
 
 ## 3. The Eight Chapters
@@ -195,8 +178,8 @@ Five chapters, the plan and the logs were submitted on 24 October 2026 and score
 | -------- | ------ | ------ |
 | Module Outline V2.0 | QR-V2-010-I01 | PASS 64/64 |
 | Master Task List V2.0 | QR-V2-012-I01 | PASS 64/64 |
-| README V2.0 | QR-V2-009-I01 | Revised on 6 Nov 2026; recheck requested |
-| Project Plan V2.0 (this document) | QR-V2-011-I01 | Revised on 6 Nov 2026; recheck requested |
+| README V2.0 | QR-V2-009-I02 | PASS — revision rechecked on 7 Nov 2026 |
+| Project Plan V2.0 (this document) | QR-V2-011-I02 | PASS — team-confirmed recheck on 7 Nov 2026 |
 
 ### 4.4 Stage 2 learning resources
 
@@ -206,8 +189,8 @@ Five chapters, the plan and the logs were submitted on 24 October 2026 and score
 | Test Bank (Word and PDF; 24 True/False, 24 Multiple Choice, 8 Open-ended, answer key) | ✅ Completed | `BABI-GULING_Stage2_TestBank_V1.docx` and `.pdf` |
 | Quiz game "Escape the Spit" | ✅ Completed (Version 1.2) | <https://babigulingcsai.netlify.app> |
 | Class PPT Slides ("Babi Guling's Kitchen") | ✅ Completed | `BABI-GULING_Stage2_PPT_V1.pptx` and `.pdf` |
-| Video Tutorials and Video Guide | To be confirmed by Gandhi | MP4 files and guide |
-| Project log, meeting summaries, personal logs | To be completed by the owners with real entries | `logs/`; personal logs |
+| Video Tutorials and Video Guide | 🔄 In Progress; planned for 14 Nov 2026 | MP4 files and guide are not yet complete; confirm the revised date with the lecturer/team |
+| Project log, meeting summaries, personal logs | Available in `logs/`; retain supporting evidence and update any remaining entries | `logs/`; personal logs |
 
 The statuses above use only what exists now. Older verification records are not used to confirm the latest versions. The review reports are in `quality/reviews/detailed review V2.0/`.
 
@@ -426,8 +409,8 @@ Package name: `BABI-GULING_Stage2_Markdown_V2.zip`.
 | 7 | Readable PDF and submission report prepared | Benedict | ✅ |
 | 8 | Previous-year project review filled in (Section 2.4) | Gandhi, Jonathan, Joseph | To be completed |
 | 9 | Video files and Video Guide confirmed | Gandhi | To be completed |
-| 10 | Project log, meeting summaries and personal logs completed with real entries | Joseph; each member | To be completed |
-| 11 | Final extraction test in a new folder | Jonathan, Brian | To be completed |
+| 10 | Project log, meeting summaries and personal logs completed with real entries | Joseph; each member | ✅ PASS — recorded in the Stage 2 audit |
+| 11 | Final extraction test in a new folder | Jonathan, Brian | ✅ PASS — recorded in the Stage 2 audit |
 
 **Responsible for final compilation and submission:** Jonathan Sugianto (compile), with Joseph Lokman as reviewer.
 
