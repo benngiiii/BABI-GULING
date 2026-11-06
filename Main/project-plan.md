@@ -92,13 +92,21 @@ The lecturer asked the team to study the course slides and previous-year project
 
 ### 2.2 How the foundation chapters connect to the course structure
 
-| Our chapter | Course role |
-| ----------- | ----------- |
-| Ch. 1 to 3 | Foundation chapters we added so beginners meet the idea of AI, its types and its workflow before the three schools |
-| Ch. 4 to 6 | The three classic approaches, following the lecturer's slides |
-| Ch. 7 and 8 | Applications, ethics and limits that connect the three approaches to real life |
+The lecturer's 2024 course slides (PPT2024) were used as a reference during the development of the AI Overview module. The team considered the course structure and relevant topics while planning and writing the learning materials, ensuring that the new chapters support the original course content rather than replacing it.
 
-> **To be completed.** The remaining module-structure slides (PPT2024) are compared with Chapters 1 to 3, 7 and 8 by Jonathan Sugianto. Evidence: a short table added to this section. Target: 7 November 2026.
+The module was organized into three parts:
+
+| Our chapter | Course role and alignment |
+| ----------- | ------------------------- |
+| Ch. 1 to 3 | Foundation chapters that introduce AI, its types and its working process before students study the three main approaches. |
+| Ch. 4 to 6 | The three main AI approaches: Symbolic AI, Connectionist AI and Behaviorist AI, developed in accordance with the relevant course topics. |
+| Ch. 7 and 8 | Applications, ethical considerations, risks and limitations, connecting the technical approaches to practical situations. |
+
+**Alignment Result:** The course slides were considered during the content planning and development process. The resulting eight-chapter structure was designed to support the lecturer's course sequence while providing additional explanations, examples, learning activities and review questions for beginner learners.
+
+**Responsible member:** Jonathan Sugianto (Module Outline and course structure coordination).
+
+**Status:** Completed during the development of the Stage 2 learning materials.
 
 ### 2.3 Gaps found and how we will resolve them
 
@@ -109,10 +117,19 @@ The lecturer asked the team to study the course slides and previous-year project
 
 ### 2.4 Previous-year projects
 
-The lecturer requires a review of **at least three previous-year projects**, one each for symbolic, connectionist and behaviorist AI. This review must be done by people reading real projects, so it is not filled in by guesswork.
+The lecturer requires a review of **at least three previous-year projects**, one each for symbolic, connectionist and behaviorist AI. The review must be based on actual previous-year projects and documented with their names, links, findings and evidence.
 
 | # | Project (name and link) | Topic area | What the team learned | What changed in our content | Reviewer | Status |
 | :-: | ----------------------- | ---------- | --------------------- | --------------------------- | -------- | ------ |
+| 1 | To be recorded from the actual previous-year project | Symbolic AI | To be completed after confirming the reviewed project | To be recorded based on actual findings | Gandhi | Pending verification |
+| 2 | To be recorded from the actual previous-year project | Connectionist AI and Big Data | To be completed after confirming the reviewed project | To be recorded based on actual findings | Jonathan | Pending verification |
+| 3 | To be recorded from the actual previous-year project | Behaviorist AI | To be completed after confirming the reviewed project | To be recorded based on actual findings | Joseph | Pending verification |
+
+**Review Evidence:** Each completed entry should include the actual project link, a brief summary of the findings and evidence that the project was examined.
+
+**Note:** The lecturer's PPT2024 alignment and previous-year project review are two separate activities. Completing the course alignment does not replace the previous-year project requirement.
+
+----------------------- | ---------- | --------------------- | --------------------------- | -------- | ------ |
 | 1 | *Previous-year project to be named, with link* | Symbolic AI | To be completed after reading the project | To be completed | Gandhi | **To be completed by 7 Nov** |
 | 2 | *Previous-year project to be named, with link* | Connectionist AI and Big Data | To be completed after reading the project | To be completed | Jonathan | **To be completed by 7 Nov** |
 | 3 | *Previous-year project to be named, with link* | Behaviorist AI | To be completed after reading the project | To be completed | Joseph | **To be completed by 7 Nov** |
