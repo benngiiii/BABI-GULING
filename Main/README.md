@@ -3,7 +3,7 @@
 **Document author:** Benedict Subhata
 **Revised by:** Benedict Subhata, after Quality Review QR-V2-009-I01  
 **Version:** V2.0, Revision 2 (Stage 2)  
-**Last updated:** 6 November 2026
+**Last updated:** 7 November 2026
 
 > **🎮 Play the quiz game:** <https://babigulingcsai.netlify.app>  
 > *Escape the Spit* is a card-battle quiz through the AI Overview module. You are a pig chef climbing a Kitchen Tower and defeating question monsters with what you know about AI. It works in any browser and offline once loaded. It supports the Study Guide and Test Bank.
