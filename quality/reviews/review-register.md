@@ -97,7 +97,7 @@ The register is an index of review records, not a replacement for the detailed r
 
 ## 3. Stage 2 (V2.0) Review Register
 
-All Stage 2 reviews are **Not yet reviewed**. Brian writes the real result after each review. Allowed results: Pass, Minor Revisions Recommended, Changes Required.
+Stage 2 reviews are listed below with their latest recorded result. Brian writes the real result after each review. Allowed results: Pass, Minor Revisions Recommended, Changes Required.
 
 | No. | Review ID | Document / Chapter | Reviewer | Second checker | Iteration | Latest Known Status |
 | --: | --------- | ------------------ | -------- | -------------- | --------- | ------------------- |
@@ -114,7 +114,7 @@ All Stage 2 reviews are **Not yet reviewed**. Brian writes the real result after
 | 47 | QR-V2-011-I01 | Project Plan V2.0 | Brian |  Brian | Initial Review    | Need Revision                        |
 | 48 | QR-V2-012-I01 | Master Task List V2.0 | Brian | Brian | Initial Review    | Pass                        |
 | 49 | QR-V2-013-I01 | Stage 2 Content file | Brian |  Brian | Initial Review    | Pass                        |
-| 50 | QR-V2-009-I02 | README V2.0 | Joseph | Brian  | Initial Review    | Pass                       |
-| 51 | QR-V2-011-I02 | Project Plan V2.0 | Brian |  Brian | Initial Review    | Pass                      |
+| 50 | QR-V2-009-I02 | README V2.0 | Joseph | Brian  | Revision Recheck    | Pass                       |
+| 51 | QR-V2-011-I02 | Project Plan V2.0 | Brian |  Brian | Revision Recheck    | Pass                      |
 
 Detailed reports go in `quality/reviews/detailed review V2.0/`, one file per Review ID (use the template `QR-TEMPLATE.md`).
