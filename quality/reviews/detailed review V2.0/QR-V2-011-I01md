@@ -6,39 +6,41 @@
 - **Review ID:** QR-V2-011-I01
 - **Review Type:** Initial Document Quality Review
 - **Previous Review:** N/A
-- **Chapter Reviewed:** Initial Learning Resources Project Plan
+- **Chapter Reviewed:** Project Plan V2.0
 - **Content Author:** Joseph Lokman
 - **Reviewer:** Brian Djoni Suzanna
 - **Version Reviewed:** V2.0 (submitted document identifies its content status as Version 1.4)
 - **Module:** AI Overview
 - **Review Date:** 6 November 2026
-- **Branch Reviewed:** Main/project-plan.md
+- **Branch Reviewed:** AI-Overview
 - **File Reviewed:** Main/project-plan.md
-- **Overall Status:** APPROVED — PASS
+- **Overall Status:** NEEDS REVISION
 
 ---
 
 ## 1. Review Scope
 
-This review evaluates the Project Plan document for the BABI GULING — AI Overview project.
+This review evaluates the Project Plan V2.0 document for the BABI GULING — AI Overview project.
 
 The review focuses on:
 
 - Project purpose and intended learners.
-- Module learning outcomes and shared Markdown content.
-- Chapter descriptions and development status.
-- Stage 1 focus topic selection and documentation.
+- Module learning outcomes and curriculum alignment.
+- Updated eight-chapter structure.
+- Shared Markdown content and learning-resource development.
 - Study Guide and Test Bank planning.
 - PPT Slides and Video Tutorials planning.
 - Live Mini Lecture planning.
-- Integration between the three learning resources.
-- Stage 1 submission requirements and evidence.
-- Team responsibilities and task tracking.
+- Stage 2 deliverables and submission requirements.
+- Team responsibilities and task ownership.
 - Repository evidence and individual contributions.
 - AI-use documentation.
-- Project timeline, workflow and quality assurance.
-- Quality review response records.
-- Expected project outcomes.
+- Complete project timeline from Stage 1 to Stage 3.
+- Stage 3 activities, milestones and deliverables.
+- Quality assurance, risk management and review procedures.
+- Consistency with the latest Master Task List and project requirements.
+
+The review considers the development of the project beyond its original Stage 1 planning. The Project Plan must function as an up-to-date guide for the remaining project stages, not only as a record of previous activities.
 
 ---
 
@@ -46,169 +48,291 @@ The review focuses on:
 
 | No. | Quality Criteria | Score | Status |
 |---|---|---:|---|
-| 1 | Project Purpose and Scope | 4/4 | PASS |
+| 1 | Project Purpose and Scope | 3/4 | NEEDS REVISION |
 | 2 | Intended Learner Definition | 4/4 | PASS |
-| 3 | Module Learning Outcomes | 4/4 | PASS |
-| 4 | Shared Markdown Content Structure | 4/4 | PASS |
-| 5 | Chapter Content Descriptions | 4/4 | PASS |
-| 6 | Development Status Documentation | 4/4 | PASS |
-| 7 | Study Guide and Test Bank Planning | 4/4 | PASS |
-| 8 | PPT Slides Planning | 4/4 | PASS |
-| 9 | Video Tutorials Planning | 4/4 | PASS |
+| 3 | Module Learning Outcomes and Curriculum Alignment | 2/4 | NEEDS REVISION |
+| 4 | Shared Markdown Content Structure | 2/4 | NEEDS REVISION |
+| 5 | Chapter Content Descriptions and Consistency | 2/4 | NEEDS REVISION |
+| 6 | Development Status Documentation | 2/4 | NEEDS REVISION |
+| 7 | Study Guide and Test Bank Planning | 3/4 | NEEDS REVISION |
+| 8 | PPT Slides Planning | 3/4 | NEEDS REVISION |
+| 9 | Video Tutorials Planning | 3/4 | NEEDS REVISION |
 | 10 | Live Mini Lecture Planning | 4/4 | PASS |
-| 11 | Learning Resource Integration | 4/4 | PASS |
-| 12 | Submission Requirements and Evidence | 4/4 | PASS |
-| 13 | Team Responsibilities and Task Tracking | 4/4 | PASS |
-| 14 | Repository and AI-Use Documentation | 4/4 | PASS |
-| 15 | Timeline, Workflow and Quality Assurance | 4/4 | PASS |
-| 16 | Overall Document Organisation and Completeness | 4/4 | PASS |
-| | **Total Score** | **64/64** | **100%** |
+| 11 | Learning Resource Integration | 2/4 | NEEDS REVISION |
+| 12 | Stage 2 and Stage 3 Submission Requirements | 2/4 | NEEDS REVISION |
+| 13 | Team Responsibilities and Task Tracking | 3/4 | NEEDS REVISION |
+| 14 | Repository and AI-Use Documentation | 2/4 | NEEDS REVISION |
+| 15 | Timeline, Workflow and Quality Assurance | 2/4 | NEEDS REVISION |
+| 16 | Overall Document Organisation and Completeness | 2/4 | NEEDS REVISION |
+| | **Total Score** | **41/64** | **64.1%** |
 
-**Assessment Result:** All 16 quality criteria receive PASS.
+**Assessment Result:** The Project Plan contains useful planning information, particularly for the original Stage 1 activities. However, substantial updates are required to align it with the latest project structure, Stage 2 deliverables and detailed Stage 3 execution plan.
 
 ---
 
 ## 3. Review Findings and Suggested Improvements
 
-### QR-V2-011-I01 — Positive Review Findings
+### QR-V2-011-I01 — Findings Requiring Revision
 
-**Finding 1: Clear project purpose and learning direction**
+**Finding 1: Project Plan version information is inconsistent**
 
-Section 1 explains that the project aims to introduce Artificial Intelligence to first-year university students and beginners without a technical background.
+**Location:** Review Information and document version/revision history.
 
-The document also establishes the three main learning resources and the Live Mini Lecture as the project's intended outputs.
+The document is identified as Project Plan V2.0, while its submitted content still identifies its status as Version 1.4.
 
-**Finding 2: Detailed shared Markdown content**
+This creates uncertainty about whether the document has been fully updated for the current project stage.
 
-Section 2 provides chapter-by-chapter descriptions of the five original Stage 1 chapters. The descriptions explain the topics, learning activities and intended educational value of each chapter.
+**Required improvement:**
+- Update the document's version information consistently.
+- Make the document title, version status and revision history agree.
+- Clearly identify the latest revision date.
 
-The document also explains how shared Markdown content serves as the foundation for the other learning resources.
+**Finding 2: Learning outcomes need stronger curriculum alignment**
 
-**Finding 3: Clear chapter development records**
+**Location:** Section 2 — Learning Outcomes.
 
-Section 3 provides a development-status overview with verification dates and remaining-work information.
+The existing learning outcomes provide a general direction for the module. However, the updated curriculum requires the three classic approaches to AI to be clearly represented.
 
-The Chapter 3 numbering decision is also documented, including the correction record and confirmation that the table-of-contents links were checked.
+These approaches are:
 
-**Finding 4: Appropriate Stage 1 focus topic selection**
+- Symbolic AI.
+- Connectionist AI.
+- Behaviorist AI.
 
-The selection of Chapter 5 Topic 1: Bias is supported by a dedicated record.
+The Project Plan should also explain how the team's chapter structure addresses the relevant curriculum topics from PPT2024.
 
-The required-element table documents explanations, terminology, a worked example, a visual, a learner activity, an answer key and references.
+**Required improvement:**
+- Update the learning outcomes to explicitly include the three approaches.
+- Add a Course Alignment table mapping the relevant PPT2024 chapters to the team's chapters.
+- Explain how the required topics are covered in the learning materials.
 
-This makes the selection process understandable and traceable.
+**Finding 3: Previous-year project analysis is not sufficiently documented**
 
-**Finding 5: Comprehensive Study Guide and Test Bank planning**
+**Location:** Course Alignment / Project Development Planning.
 
-Section 4 explains how the chapters will be adapted into independent learning materials and assessment questions.
+The lecturer's feedback requires the team to study PPT2024 and at least three previous-year projects covering symbolic, connectionist and behaviorist AI.
 
-It includes different question types and emphasises understanding and application rather than memorisation alone.
+The Project Plan should document what the team learned from these examples and how those findings influenced the current module design.
 
-**Finding 6: Detailed PPT Slides planning**
+**Required improvement:**
+- Include a table for the three previous-year project categories.
+- Record the relevant project or example, what the team learned and what was changed in the current content.
+- Attach or reference actual evidence of the review.
+- If the review has not yet been completed or evidence is unavailable, clearly state "To be completed".
 
-Section 5 provides a chapter-based presentation plan.
+**Finding 4: Chapter descriptions require updating to match the latest structure**
 
-It identifies important concepts, comparisons, examples, diagrams and activities that can be adapted into slides while preserving the original Markdown content.
+**Location:** Section 2 — Shared Markdown Content / Chapter Descriptions.
 
-**Finding 7: Clear Video Tutorials planning**
+The original Project Plan documents the five-chapter structure from the earlier development stage.
 
-Section 6 provides a structured tutorial plan for each chapter.
+However, the current project has expanded to eight chapters.
 
-The plan explains how narration, diagrams, demonstrations and short activities can support learners' understanding.
+The Project Plan must therefore reflect the latest structure:
 
-**Finding 8: Meaningful Live Mini Lecture topic**
+1. Introduction to Artificial Intelligence.
+2. Types of Artificial Intelligence.
+3. How Artificial Intelligence Works.
+4. Symbolic AI: Intelligence from Rules and Logic.
+5. Connectionist AI and Big Data.
+6. Behaviorist AI: Learning by Acting and Getting Feedback.
+7. Applications of Artificial Intelligence.
+8. AI Ethics, Risks and Limitations.
 
-Section 7 selects the topic "How Can AI Learn to Recognize Spam Emails?"
+**Required improvement:**
+- Update the chapter descriptions from the original five-chapter structure to the current eight-chapter structure.
+- Include the current chapter authors.
+- Explain the learning progression between chapters.
+- Ensure the descriptions match the latest Module Outline and actual Markdown files.
 
-The topic connects familiar email experiences with machine learning, training data, inference and prediction errors.
+**Finding 5: Development status records need to reflect current project progress**
 
-The proposed lecture structure also includes audience participation.
+**Location:** Section 3 — Chapter Development Status.
 
-**Finding 9: Good integration between learning resources**
+The existing development-status records are useful for documenting earlier work. However, the Project Plan must distinguish between completed Stage 1 activities and the current Stage 2 development.
 
-Section 8 explains the different roles of the Study Guide and Test Bank, PPT Slides and Video Tutorials.
+**Required improvement:**
+- Update the status of all eight chapters.
+- Distinguish completed, in-progress and pending activities.
+- Reference the latest review records and supporting evidence.
+- Avoid presenting older verification records as confirmation of the latest versions.
 
-The document also describes how learners can use the resources together as part of a coherent learning experience.
+**Finding 6: Learning-resource planning needs to reflect the six Stage 2 deliverables**
 
-**Finding 10: Complete Stage 1 submission documentation**
+**Location:** Sections 4–8 — Learning Resources and Resource Integration.
 
-Section 9 includes the required submission package, checklist, package record and peer-review record.
+The Project Plan contains separate planning sections for the Study Guide, Test Bank, PPT Slides, Video Tutorials and Live Mini Lecture.
 
-The checklist provides a clear way to track the existence and verification of required submission materials.
+However, the current Stage 2 assignment defines six main deliverable groups:
 
-**Finding 11: Defined team responsibilities**
+A. Markdown Content V2.0 ZIP.
 
-Section 10 assigns responsibilities to all five team members.
+B. Study Guide and Test Bank.
 
-The role descriptions establish ownership for content development, visual design, quality review, video production and project coordination.
+C. PPT Slides.
 
-**Finding 12: Repository evidence and contribution tracking**
+D. Video Tutorials and Video Guide.
 
-Section 11 documents the types of repository evidence required and provides an individual contribution map.
+E. Project Log and Meeting Summaries.
 
-This helps connect project participation with actual files, sections and development activities.
+F. Personal Logs.
 
-**Finding 13: AI-use documentation**
+**Required improvement:**
+- Add a clear Stage 2 deliverables overview covering all six groups.
+- Specify the expected output and responsible person for each group.
+- Include the required file formats and submission packaging.
+- Explain how each deliverable is reviewed and verified.
+- Ensure that Project Logs, Meeting Summaries and Personal Logs are not overlooked.
 
-Section 12 explains how significant AI assistance should be recorded and verified.
+**Finding 7: Learning-resource integration needs a clearer production and review sequence**
 
-It also distinguishes shared project AI-use records from individual personal logs, supporting clearer documentation of AI-assisted work.
+**Location:** Section 8 — Learning Resource Integration.
 
-**Finding 14: Documented timeline and workflow**
+The existing document explains the relationship between the learning resources. However, the current production process requires a more explicit sequence.
 
-Section 13 presents the three project stages, internal deadlines and official deadlines.
+The current workflow should establish Markdown V2.0 as the source of truth, followed by the production of the Study Guide and Test Bank, PPT Slides and Video Tutorials.
 
-The workflow provides a logical sequence from research and drafting to review, resource production and final submission.
+Quality review and revision must also be included.
 
-**Finding 15: Quality assurance and risk management**
+**Required improvement:**
+- Explain the Markdown-to-learning-resource production sequence.
+- Identify which source document supports each output.
+- Include quality review before final compilation.
+- Explain how changes to the Markdown source are reflected in the other learning resources.
 
-Section 14 identifies potential project challenges and describes practical measures for maintaining accuracy, consistency, evidence and timely completion.
+**Finding 8: Stage 2 submission requirements need more detailed acceptance criteria**
 
-**Finding 16: Quality review response tracking**
+**Location:** Section 9 — Stage 2 Submission Requirements.
 
-Section 15 records the responses to QR-007-I01, QR-007-I02 and QR-007-I03.
+The original submission records provide a useful foundation, but the expanded Stage 2 assignment contains specific requirements for each deliverable.
 
-The response summary, feedback communication record and review history provide a traceable record of earlier quality-review activities.
+**Required improvement:**
+- Include the expected contents of each submission package.
+- Specify required formats, such as editable DOCX, PPTX and actual MP4 video files where applicable.
+- Include the required evidence and submission checklist.
+- Identify the person responsible for final compilation and submission.
+- Avoid treating a plan or script as equivalent to a completed video deliverable.
+
+**Finding 9: Stage 3 planning is not sufficiently detailed**
+
+**Location:** Section 13 — Timeline and Workflow.
+
+The Project Plan identifies the three project stages and includes the overall Stage 3 deadline of 28 November 2026.
+
+However, identifying a stage and its deadline does not provide enough information for the team to execute the work.
+
+The plan needs to explain what the team will actually do during Stage 3.
+
+**Required improvement:**
+
+Add a detailed Stage 3 schedule that includes:
+
+- Stage 3 objectives and expected outcomes.
+- Individual activities and atomic tasks.
+- Responsible owners and assigned reviewers.
+- Start dates and deadlines.
+- Milestones and internal checkpoints.
+- Testing and quality review dates.
+- Final deliverables and submission requirements.
+- Evidence required to confirm task completion.
+
+The schedule should also identify the critical path and potential risks that could affect the final submission.
+
+**Finding 10: Timeline and task ownership need stronger consistency**
+
+**Location:** Sections 10, 13 and the project schedule.
+
+The Project Plan contains team responsibilities and a timeline. However, the planning information must be consistent with the latest Master Task List.
+
+**Required improvement:**
+- Match task ownership with the latest team responsibilities.
+- Include owners, reviewers, deadlines and deliverables for major activities.
+- Ensure Stage 2 activities run through 7 November 2026.
+- Ensure Stage 3 planning covers activities through 28 November 2026.
+- Identify internal review and testing dates before official deadlines.
+
+**Finding 11: Quality assurance needs to cover all current deliverables**
+
+**Location:** Section 14 — Quality Assurance and Risk Management.
+
+The existing quality assurance section provides a useful foundation. However, quality control must extend beyond the original Markdown chapters.
+
+**Required improvement:**
+- Include review procedures for all six Stage 2 deliverable groups.
+- Define how revisions and rechecks are recorded.
+- Include consistency checks between Markdown, Study Guide, Test Bank, PPT and Video.
+- Include verification of references, figures, links, file formats and submission evidence.
+- Define how unresolved issues are tracked before final submission.
+
+**Finding 12: Repository and evidence documentation need updating**
+
+**Location:** Sections 11–12 — Repository Evidence and AI-Use Documentation.
+
+The existing sections describe repository evidence and AI-use documentation. However, the current project has expanded, and its evidence records must support the latest deliverables and review activities.
+
+**Required improvement:**
+- Update the evidence list to cover all current project outputs.
+- Include evidence links or clear file locations.
+- Connect quality review reports with the corresponding reviewed files.
+- Ensure AI-use records distinguish between AI assistance and each member's actual contribution.
+- Keep shared project records and personal learning logs clearly separated.
 
 ---
 
 ## 4. Recommended Revisions
 
-**No mandatory revisions required for this review decision.**
+The following revisions are required before the Project Plan can be approved:
 
-The Project Plan provides a detailed record of the project's original learning-resource development process, team responsibilities, submission preparation and quality assurance activities.
+| No. | Required Revision | Priority |
+|---|---|---|
+| 1 | Correct the document version information and revision history. | High |
+| 2 | Update learning outcomes and add Course Alignment with PPT2024. | High |
+| 3 | Document the three previous-year project reviews and their influence on the current content. | High |
+| 4 | Update the original five-chapter descriptions to the latest eight-chapter structure. | High |
+| 5 | Update chapter development status and supporting review evidence. | High |
+| 6 | Add a complete overview of all six Stage 2 deliverable groups. | High |
+| 7 | Clarify the Markdown-to-learning-resource production and review sequence. | High |
+| 8 | Add detailed acceptance criteria and submission requirements for Stage 2. | High |
+| 9 | Expand Stage 3 into a detailed activity schedule through 28 November 2026. | Critical |
+| 10 | Add owners, reviewers, deadlines, milestones and deliverables to the project schedule. | High |
+| 11 | Update quality assurance procedures to cover all current deliverables. | High |
+| 12 | Update repository evidence and AI-use documentation. | Medium |
+| 13 | Ensure consistency with the latest Master Task List and Module Outline. | High |
 
-Its planning sections establish a useful foundation for understanding the team's work and the development of the learning resources.
+The Project Plan should be updated while preserving useful information from its earlier versions, especially the original project purpose, learner definition, resource planning and documented Stage 1 history.
 
 ---
 
 ## 5. Positive Findings
 
-- Project purpose and intended learners are clearly identified.
-- Learning outcomes are connected to the chapter content.
-- The five original Markdown chapters are described in detail.
-- Chapter development status is supported by verification records.
-- The Stage 1 focus topic has a documented selection process.
-- The three learning resources have separate development plans.
-- The Live Mini Lecture has a clear topic and structure.
-- Learning-resource integration is explained.
-- Stage 1 submission requirements are documented.
-- Team responsibilities are assigned.
-- Repository evidence and individual contributions are addressed.
+Despite the required revisions, the Project Plan contains several useful elements:
+
+- The project purpose and intended learners are clearly explained.
+- The original learning-resource development process is documented.
+- The five original chapters have descriptions that preserve the project's Stage 1 development history.
+- The Stage 1 focus topic selection has a dedicated record.
+- The Study Guide and Test Bank have a documented planning foundation.
+- The PPT Slides and Video Tutorials have separate development plans.
+- The Live Mini Lecture topic is relevant to beginner-level AI learning.
+- Team responsibilities are identified.
+- Repository evidence and individual contributions are considered.
 - AI-use documentation is included.
-- Timeline and workflow are recorded.
-- Quality assurance measures and risks are documented.
-- Previous review feedback is tracked.
+- Previous quality-review responses are recorded.
+- The existing timeline and risk-management sections provide a foundation for further planning.
+
+These elements should be retained and improved rather than discarded.
 
 ---
 
 ## 6. Feedback Communication
 
-The review result is recorded as **APPROVED — PASS**.
+The review result is recorded as **NEEDS REVISION**.
 
-The Project Plan is accepted as a project-planning and development reference for BABI GULING — AI Overview.
+The Project Plan contains useful information about the project's original development and Stage 1 activities. However, it requires further development before it can function as a complete planning document for the current Stage 2 and upcoming Stage 3 activities.
 
-The team can use its documented responsibilities, learning-resource plans, workflow and quality assurance records to support continued project coordination.
+The most important concern is the lack of sufficiently detailed Stage 3 planning. The overall deadline is identified, but the team still needs a clear execution schedule showing activities, owners, reviewers, milestones, deliverables and evidence.
+
+The Content Author is requested to revise the Project Plan according to Section 4 and ensure that it matches the latest project requirements and supporting documents.
 
 ---
 
@@ -216,9 +340,11 @@ The team can use its documented responsibilities, learning-resource plans, workf
 
 | Review Stage | Review ID | Description | Result |
 |---|---|---|---|
-| Initial Review | QR-V2-011-I01 | Initial quality assessment of the Project Plan | APPROVED — PASS |
+| Initial Review | QR-V2-011-I01 | Initial quality assessment of Project Plan V2.0 | NEEDS REVISION |
 
-No mandatory revision or recheck is required under this review decision.
+**Recheck Status:** Pending revision.
+
+A follow-up review should be conducted after the revised Project Plan is submitted.
 
 ---
 
@@ -227,17 +353,21 @@ No mandatory revision or recheck is required under this review decision.
 | Item | Result |
 |---|---|
 | Total Criteria | 16 |
-| Criteria Passed | 16 |
-| Criteria Requiring Revision | 0 |
-| Total Score | 64/64 |
-| Percentage | 100% |
-| Final Decision | **APPROVED — PASS** |
+| Criteria Passed | 2 |
+| Criteria Requiring Revision | 14 |
+| Total Score | 41/64 |
+| Percentage | 64.1% |
+| Final Decision | **NEEDS REVISION** |
 
 **Final Statement:**
 
-The Project Plan is approved for the quality review. It provides a detailed overview of the project's educational objectives, shared Markdown content, learning-resource development, team responsibilities, submission preparation and quality assurance process.
+Project Plan V2.0 is not yet approved as the final planning reference for the BABI GULING — AI Overview project.
 
-Its documentation of earlier review responses and project evidence also supports continuity and traceability throughout the project.
+The document provides a useful foundation for understanding the original project objectives, learning resources, team responsibilities and Stage 1 development.
+
+However, it does not yet provide sufficient alignment with the latest eight-chapter structure, Course Alignment requirements, six Stage 2 deliverable groups and detailed Stage 3 execution planning.
+
+The Project Plan must be revised to provide a complete and consistent guide for the remaining project activities through the final submission deadline of 28 November 2026.
 
 ---
 
@@ -246,37 +376,38 @@ Its documentation of earlier review responses and project evidence also supports
 | Evidence No. | Reviewed Area | Evidence Description |
 |---|---|---|
 | E-01 | Project Overview | Project purpose, intended learners and learning-resource objectives |
-| E-02 | Learning Outcomes | Five module learning outcomes |
-| E-03 | Shared Markdown Content | Descriptions of Chapters 1–5 |
-| E-04 | Chapter 3 Numbering Decision | Numbering confirmation and table-of-contents link audit |
-| E-05 | Development Status | Chapter status overview and verification records |
-| E-06 | Stage 1 Focus Topic | Chapter 5 Topic 1: Bias selection record |
-| E-07 | Study Guide and Test Bank | Learning and assessment development plan |
-| E-08 | PPT Slides | Chapter-based presentation plan |
-| E-09 | Video Tutorials | Chapter-based tutorial plan |
-| E-10 | Live Mini Lecture | Spam-filter lecture topic and proposed structure |
-| E-11 | Resource Integration | Relationship between the three learning resources |
-| E-12 | Stage 1 Submission | Submission checklist and package record |
-| E-13 | Peer Review | Stage 1 topic peer-review record |
-| E-14 | Team Responsibilities | Team roles and Stage 1 task tracker |
-| E-15 | Repository Evidence | Evidence register and individual contribution map |
-| E-16 | AI-Use Documentation | Shared AI-use register and personal-log confirmation |
-| E-17 | Timeline and Workflow | Three-stage timeline and development workflow |
-| E-18 | Quality Assurance | Risk management and quality assurance measures |
-| E-19 | Review Response Summary | Responses to QR-007-I01, QR-007-I02 and QR-007-I03 |
-| E-20 | Revision History | Previous review outcomes and documented responses |
+| E-02 | Learning Outcomes | Existing module learning outcomes |
+| E-03 | Shared Markdown Content | Original five-chapter descriptions |
+| E-04 | Chapter Development | Existing development-status records and verification information |
+| E-05 | Stage 1 Focus Topic | Chapter 5 Topic 1: Bias selection record |
+| E-06 | Study Guide and Test Bank | Existing learning and assessment development plan |
+| E-07 | PPT Slides | Chapter-based presentation plan |
+| E-08 | Video Tutorials | Chapter-based tutorial plan |
+| E-09 | Live Mini Lecture | Spam-filter lecture topic and proposed structure |
+| E-10 | Resource Integration | Existing relationship between the learning resources |
+| E-11 | Submission Planning | Original Stage 1 submission checklist and package records |
+| E-12 | Team Responsibilities | Team roles and task ownership |
+| E-13 | Repository Evidence | Evidence register and individual contribution map |
+| E-14 | AI-Use Documentation | Shared AI-use register and personal-log confirmation |
+| E-15 | Timeline and Workflow | Existing three-stage timeline and development workflow |
+| E-16 | Quality Assurance | Existing risk management and quality assurance measures |
+| E-17 | Previous Review Records | Responses to QR-007-I01, QR-007-I02 and QR-007-I03 |
+| E-18 | Updated Project Requirements | Current eight-chapter structure and six Stage 2 deliverable groups |
+| E-19 | Stage 3 Planning Requirements | Required detailed schedule, owners, reviewers, milestones and final deliverables |
+
+**Evidence Note:** This assessment is based on the submitted Project Plan review information and the documented project requirements available for this review. Exact section-level compliance and current repository evidence should be confirmed against the latest Project Plan file during revision and recheck.
 
 ---
 
 ## 10. Additional Notes
 
-- The document provides a useful record of the original Stage 1 project-planning process.
-- The five-chapter descriptions and Stage 1 submission records preserve the project's earlier development history.
-- The planning sections explain how the original shared Markdown content was intended to support the Study Guide, Test Bank, PPT Slides and Video Tutorials.
-- The document includes records of earlier quality reviews and their responses.
-- The Project Plan can serve as a reference when tracking the team's project development and resource preparation.
+- The Project Plan should preserve the original Stage 1 development history while clearly distinguishing it from current Stage 2 and future Stage 3 activities.
+- Stage 3 should not be represented only by a deadline or a general task list. It must provide an actionable schedule for the entire team.
+- The Course Alignment section should connect the lecturer's curriculum, previous-year project analysis and the team's current chapter structure.
+- All project schedules and responsibilities should remain consistent with the latest Master Task List.
+- The revised Project Plan should become the main planning reference for the team's remaining activities through final submission.
 
 **Quality Lead:** Brian Djoni Suzanna  
 **Project:** BABI GULING — AI Overview  
 **Review ID:** QR-V2-011-I01  
-**Final Status:** APPROVED — PASS
+**Final Status:** NEEDS REVISION
