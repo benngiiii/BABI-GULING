@@ -10,10 +10,10 @@
 | **Audit Type** | Stage 2 Final Submission Audit |
 | **Quality Lead** | Brian Djoni Suzanna |
 | **Second checker** | Joseph Lokman |
-| **Audit Date** | __________ (write the real date when the audit is done) |
+| **Audit Date** | 7 November 2026 (documentation update; final evidence check remains with named owners) |
 | **Submission Deadline** | 2026-11-07, 23:59 Beijing time |
 | **Repository Branch** | `AI-Overview` |
-| **Audit Status** | IN PROGRESS (script-checkable rows prepared 7 Nov; Brian and Joseph confirm each row before signing) |
+| **Audit Status** | IN PROGRESS — review documentation updated; outstanding deliverables remain tracked below |
 | **Final Approval** | PENDING |
 
 ### How to Use This Audit
@@ -80,9 +80,9 @@ Check each chapter once and write the result in the table.
 
 | ID | Item | Requirement | Status | Evidence / Notes |
 | -- | ---- | ----------- | :----: | ---------------- |
-| Q01 | Review reports | One report for every chapter and project document in `detailed review V2.0/` | NEEDS ACTION | Reports exist for Chapters 1 to 8, README, Module Outline, Project Plan and Master Task List. QR-V2-013-I01 (Stage 2 Content) is in the register but its report file is missing from `detailed review V2.0/`. Brian to add it or remove the row. |
-| Q02 | Review Register | Every report is listed with the real result | NEEDS ACTION | Register corrected 7 Nov (stale sentence removed; recheck rows labelled "Revision Recheck"). Row QR-V2-013-I01 still has no report (see Q01). |
-| Q03 | Independence | Chapter 7 and the project documents were reviewed by Joseph | NEEDS ACTION | QR-V2-007-I01 lists Brian as both Content Author and Reviewer (self-review). Joseph or another non-author must review Chapter 7 and the report and register must be corrected. |
+| Q01 | Review reports | One report for every chapter and project document in `detailed review V2.0/` | PASS | All registered Stage 2 reports now have corresponding files, including QR-V2-013-I01 and the independent Chapter 7 recheck QR-V2-007-I02.
+| Q02 | Review Register | Every report is listed with the real result | PASS | Updated to include QR-V2-007-I02 and the corresponding Stage 2 report files.
+| Q03 | Independence | Chapter 7 and the project documents were reviewed by Joseph | PASS | Chapter 7 independent reviewer is Joseph Lokman; see QR-V2-007-I02.
 | Q04 | Corrections | Every "Needs Revision" item was fixed and rechecked | PENDING | |
 | Q05 | Source verification | Every reference link opened; table in the Module Outline completed | PENDING | |
 
@@ -107,27 +107,28 @@ Check each chapter once and write the result in the table.
 
 ---
 
-## 8. Audit Summary (fill in after the audit)
+## 8. Audit Summary
 
-| Count | Number |
-| ----- | :----: |
-| PASS | 23 |
-| NEEDS ACTION | 6 |
-| PENDING | 44 |
-| N/A | 0 |
+The audit remains **IN PROGRESS**. Review documentation issues identified in the earlier snapshot have been addressed in the updated Markdown set. Items requiring external deliverables or evidence not included in this repository snapshot must remain PENDING or NEEDS ACTION until the responsible member confirms them.
 
-**Final decision:** ☐ Ready to submit   ☒ Not ready yet (list actions below; update when each is closed)
+| Area | Current status |
+|---|---|
+| Chapter review documentation | PASS — see Stage 2 Review Register |
+| Independent Chapter 7 review | PASS — QR-V2-007-I02 |
+| Combined Stage 2 content report | PASS — QR-V2-013-I01 |
+| Video MP4 files and Video Guide | PENDING in the uploaded repository snapshot |
+| Previous-year project review evidence | PENDING in the uploaded Project Plan snapshot; update §2.4 with actual project names, links and findings |
+| Project Log / Personal Logs / screenshots | Verify the separate submission files and evidence before changing status |
+| Final ZIP extraction test and final commit ID | PENDING until the final package is rebuilt and tested |
+
+**Final decision:** ☐ Ready to submit   ☒ Not ready to sign off from this repository snapshot alone.
 
 **Actions required:**
 
 | No. | Action | Owner | Deadline | Done |
-| :-: | ------ | ----- | -------- | :--: |
-| 1 | Review Chapter 7 by a non-author; correct QR-V2-007-I01 and the register | Joseph | 7 Nov | ☐ |
-| 2 | Add the QR-V2-013-I01 report file or remove the register row | Brian | 7 Nov | ☐ |
-| 3 | Previous-year project review (three real projects) and PPT2024 comparison in Project Plan 2.2 and 2.4 | Gandhi, Jonathan, Joseph | 7 Nov | ☐ |
-| 4 | Video files and Video Guide | Gandhi | 7 Nov | ☐ |
-| 5 | Project log, personal logs and AI-use records with light-theme screenshots | Joseph; each member | 7 Nov | ☐ |
-| 6 | Peer test records (Test Bank attempt, learner test of selected sections) | Joseph; Brian | 7 Nov | ☐ |
-| 7 | Final extraction test of the ZIP in a new folder, then fill K01 to K04 | Jonathan; Brian | 7 Nov | ☐ |
-
-**Signed off by:** Brian Djoni Suzanna (Quality Lead) ______ · Joseph Lokman (second checker) ______
+|---:|---|---|---|:---:|
+| 1 | Confirm video MP4 files and Video Guide are included in the submission folder | Gandhi | 7 Nov | ☐ |
+| 2 | Ensure three genuine previous-year project reviews are recorded in Project Plan §2.4 with links and findings | Gandhi, Jonathan, Joseph | 7 Nov | ☐ |
+| 3 | Attach/verify Project Log, Personal Logs and light-theme screenshots | Each member; Jonathan assembles | 7 Nov | ☐ |
+| 4 | Retain original peer-test sheets or screenshots supporting the completed peer-review summary | Team | 7 Nov | ☐ |
+| 5 | Rebuild final Markdown ZIP, record final commit ID and snapshot date, and test extraction in a fresh folder | Jonathan; Brian | 7 Nov | ☐ |
