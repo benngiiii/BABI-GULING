@@ -138,7 +138,7 @@ Task assignments, deadlines and status are tracked in the [Master Task List](mas
 | A | Markdown Content V2.0 ZIP (snapshot, readable PDF, submission report) | Stage 2 package; source in `Main/` | ✅ Completed |
 | B | Study Guide and Test Bank, plus the quiz game | Stage 2 package; <https://babigulingcsai.netlify.app> | ✅ Completed |
 | C | PPT Slides | Stage 2 package | ✅ Completed |
-| D | Video Tutorials and Video Guide | Stage 2 package | ⏳ Pending |
+| D | Video Tutorials and Video Guide | Stage 2 package; planned for 14 November 2026 | 🔄 In Progress |
 | E | Project Log and Meeting Summaries | `logs/` | ✅ Completed |
 | F | Personal Learning and Work Logs | Each member's log | ✅ Completed |
 
@@ -156,7 +156,8 @@ Items marked "Pending" or "To be completed" are not presented as finished.
 | **Study Guide V2.0 (Markdown)** | The eight chapter files with figures.                                                    | [study-guide/V2.0/](study-guide/V2.0/)                                                |
 | **Stage 1 AI Use Log**      | AI use during Stage 1.                                                                       | [stage1-ai-use-log.md](../logs/stage1-ai-use-log.md)                                  |
 | **Stage 2 Activity and AI-Use Records** | Activities and AI use during Stage 2.                                            | [Stage 2 activity and AI-use records.md](../logs/Stage%202%20activity%20and%20AI-use%20records.md) |
-| **Stage 2 Peer Test Records** | Peer tests of the Study Guide and Test Bank during Stage 2.                                    | [Stage 2 peer test records.md](../logs/Stage%202%20peer%20test%20records.md) |
+| **Stage 2 Peer Test Records** | Peer-review coverage and learner-feedback records for Stage 2. | [Stage 2 peer test records.md](../logs/Stage%202%20peer%20test%20records.md) |
+| **External Learner Feedback — Glen** | Positive feedback on the published Escape the Spit quiz game; not a Test Bank trial. | [External Learner Feedback #U2014 Glen.md](../logs/External%20Learner%20Feedback%20%23U2014%20Glen.md) |
 | **Quality Review Register** | Tracks review reports, issues and progress.                                                  | [review-register.md](../quality/reviews/review-register.md)                           |
 | **Quality Standards V2.0**  | Criteria used to review the Stage 2 materials.                                               | [quality-standards-V2.0.md](../quality/reviews/quality-standards-V2.0.md)             |
 | **Final Submission Audit V2.0** | Final checks before the Stage 2 submission.                                              | [final-submission-audit-V2.0.md](../quality/reviews/final-submission-audit-V2.0.md)  |
@@ -195,7 +196,7 @@ BABI-GULING/
 │   ├── stage1-ai-use-log.md
 │   ├── Stage 2 activity and AI-use records.md
 │   ├── Stage 2 peer test records.md
-│   ├── Stage 2 peer test records.md
+│   ├── External Learner Feedback #U2014 Glen.md
 │   └── assets/                           (log screenshots)
 │
 └── quality/
@@ -242,7 +243,7 @@ The production sequence is: **Markdown content → Study Guide and Test Bank (wi
 | Stage | Deadline | Status |
 | ----- | -------- | ------ |
 | Stage 1 | 24 Oct 2026 | ✅ Completed (100/100) |
-| Stage 2 | 7 Nov 2026, 23:59 Beijing time | 🔄 Peer-review documentation completed; Video Tutorials and final package checks remain pending |
+| Stage 2 | 7 Nov 2026, 23:59 Beijing time | 🔄 Peer-review documentation completed; Video Tutorials remain in progress and final submission checks are pending |
 | Stage 3 | 28 Nov 2026 | Planned in detail: live mini lecture, feedback, fixes, final review, submission |
 
 The full schedule, with tasks, owners, reviewers, milestones and evidence, is in the [Project Plan](project-plan.md), section 10, and the [Master Task List](master-task-list.md).
@@ -260,4 +261,4 @@ The full schedule, with tasks, owners, reviewers, milestones and evidence, is in
 | See the plan and schedule | [project-plan.md](project-plan.md) |
 | See who does what | [master-task-list.md](master-task-list.md) |
 | Check quality evidence | `quality/reviews/` |
-| Check AI use | `logs/` |\n| **External Learner Feedback — Glen** | Feedback on the published Escape the Spit quiz game; not a Test Bank trial. | [External Learner Feedback — Glen.md](../logs/External%20Learner%20Feedback%20%E2%80%94%20Glen.md) |
+| Check AI use | `logs/` |
