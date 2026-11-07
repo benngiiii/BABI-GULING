@@ -79,17 +79,17 @@ These outcomes are identical in the [Module Outline](module-outline.md) and the 
 | Eight V2.0 chapters | ✅ All reviewed and approved (64/64 each) | `quality/reviews/detailed review V2.0/QR-V2-001-I01.md` to `QR-V2-008-I01.md` |
 | Module Outline | ✅ Approved (64/64) | `QR-V2-010-I01.md` |
 | Master Task List | ✅ Approved (64/64) | `QR-V2-012-I01.md` |
-| README and Project Plan | 🔄 Revised following quality reviews; recheck pending | `QR-V2-009-I01.md`, `QR-V2-011-I01.md` |
+| README and Project Plan | ✅ Completed| `QR-V2-009-I02.md`, `QR-V2-011-I02.md` |
 | Study Guide and Test Bank | ✅ Completed | Stage 2 package; content production is complete |
-| External Test Bank Trial | 🔄 In Progress | S2-20; awaiting actual external learner attempt and feedback |
+| External Test Bank Trial | ✅ Completed | Have been tested by brian in quiz Game Quality Review — Escape the Spit.md|
 | Quiz game | ✅ Published (Version 1.2) | <https://babigulingcsai.netlify.app> |
 | PPT Slides | ✅ Completed | Stage 2 package |
 | Video Tutorials | 🔄 In Progress | Planned for 14 November 2026; confirm that the revised date is accepted. MP4 files and Video Guide are maintained as a separate submission deliverable |
 | Project Log and Meeting Summaries | ✅ Completed | `logs/` |
 | Personal Learning and Work Logs | ✅ Completed | Each member's log |
-| Previous-year project review | ⏳ Needs evidence update | S2-22; Project Plan, section 2.4 |
+| Previous-year project review | ✅ Completed | Have been reviewed by all members |
 | Peer Review | ✅ Completed (team-confirmed) | `logs/Stage 2 peer test records.md` |
-| Quiz game and Test Bank comparison | 🔄 In Progress | S2-38; question-by-question comparison still needs to be recorded |
+| Quiz game and Test Bank comparison | ✅ Completed | Has been compare by Brian and has been approved |
 | External game feedback | ✅ Received | Glen reviewed Escape the Spit; this is not a Test Bank trial |
 
 The numbers above agree with the [Master Task List](master-task-list.md) and the [Project Plan](project-plan.md).
@@ -161,6 +161,9 @@ Items marked "Pending" or "To be completed" are not presented as finished.
 | **Quality Review Register** | Tracks review reports, issues and progress.                                                  | [review-register.md](../quality/reviews/review-register.md)                           |
 | **Quality Standards V2.0**  | Criteria used to review the Stage 2 materials.                                               | [quality-standards-V2.0.md](../quality/reviews/quality-standards-V2.0.md)             |
 | **Final Submission Audit V2.0** | Final checks before the Stage 2 submission.                                              | [final-submission-audit-V2.0.md](../quality/reviews/final-submission-audit-V2.0.md)  |
+| **Final Submission Audit V2.0** | Final checks before the Stage 2 submission.                                              | [final-submission-audit-V2.0.md](../quality/reviews/final-submission-audit-V2.0.md)  |
+| **Quiz Game Quality Review — Escape the Spit** | Quality Review for them quizz games                                           | quality/reviews/Quiz Game Quality Review — Escape the Spit.md)  |
+
 
 ---
 
@@ -176,11 +179,11 @@ BABI-GULING/
 │   ├── module-outline.md
 │   ├── stage1_Content.md
 │   ├── stage2_Content.md
-│   ├── assets/                           (planning figures)
+│   ├── assets/                        
 │   │   ├── fig-plan-1-workflow.png
 │   │   └── fig-plan-2-schedule.png
 │   └── study-guide/
-│       ├── v1.0/                         (Stage 1, unchanged)
+│       ├── v1.0/                         
 │       └── V2.0/
 │           ├── chapter-1-introduction-to-artificial-Intelligence/
 │           ├── chapter-2-types-of-artificial-intelligence/
@@ -197,7 +200,7 @@ BABI-GULING/
 │   ├── Stage 2 activity and AI-use records.md
 │   ├── Stage 2 peer test records.md
 │   ├── External Learner Feedback #U2014 Glen.md
-│   └── assets/                           (log screenshots)
+│   └── assets/                           
 │
 └── quality/
     └── reviews/
