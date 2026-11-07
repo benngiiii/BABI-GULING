@@ -35,7 +35,7 @@
 | R02 | Folder structure | Main repository folders match the README | PASS | Repository structure checked. |
 | R03 | README V2.0 | Lists eight chapters, team information, documents and working links | PASS | README and internal links checked. |
 | R04 | Module Outline V2.0 | Eight chapters and correct completion statuses | PASS | Module Outline checked against the current chapter files. |
-| R05 | Project Plan V2.0 | Schedule, risks, resources and reference-project review | NEEDS ACTION | Sections 2.1–2.3 are documented; §2.4 still awaits three actual previous-year project reviews. |
+| R05 | Project Plan V2.0 | Schedule, risks, resources and reference-project review | PASS | Project Plan Sections 2.1–2.4 reviewed and updated. Schedule, risks, resources and reference-project review documented. |
 | R06 | Master Task List V2.0 | Stage 1–3 tasks and current statuses | PASS | Task list checked against completed team tasks. |
 | R07 | Cross-document consistency | Chapter names, authors, numbers and dates agree | PASS | Main project documents compared. |
 | R08 | Old V2.0 folders removed | Outdated chapter folders removed or renamed | PASS | Final V2.0 folder structure checked. |
