@@ -4,7 +4,7 @@
 **Estimated time:** 3 hours (including missions)  
 **Format:** Read, pause at each "Pause and predict" box, complete the two missions, then check the answer key at the end of the chapter.
 
----a
+---
 
 ## Table of Contents
 
