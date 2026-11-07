@@ -78,6 +78,7 @@ One member prepares, one reviews and one compiles each deliverable.
 | Personal learning and work logs | Each member | Joseph | Jonathan |
 | Project and personal AI-use records | Joseph (project); each member (own) | Brian | Jonathan |
 | Stage submission folder | Jonathan | Brian | Jonathan |
+| Quiz Game Quality Review — Escape the Spit | Brian| Brian | Jonathan |
 
 ## 5. Status Labels
 
