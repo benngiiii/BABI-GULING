@@ -534,7 +534,7 @@ Part C: do not delete it automatically. If the value is real, removing it would 
 5. LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. *Nature, 521*, 436-444. https://doi.org/10.1038/nature14539
 6. Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). ImageNet classification with deep convolutional neural networks. *Advances in Neural Information Processing Systems, 25*. https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html
 7. Vaswani, A., et al. (2017). Attention is all you need. *Advances in Neural Information Processing Systems, 30*. https://arxiv.org/abs/1706.03762
-8. Laney, D. (2001). *3D data management: Controlling data volume, velocity and variety*. META Group research note (no stable public link; widely cited, search the title to verify).
+8. Laney, D. (2001). *3D data management: Controlling data volume, velocity and variety*. META Group research note 
 9. Dean, J., & Ghemawat, S. (2004). MapReduce: Simplified data processing on large clusters. *OSDI '04*; also *Communications of the ACM, 51*(1), 107-113 (2008). https://doi.org/10.1145/1327452.1327492
 10. Zaharia, M., et al. (2016). Apache Spark: A unified engine for big data processing. *Communications of the ACM, 59*(11), 56-65. https://doi.org/10.1145/2934664
 11. Strubell, E., Ganesh, A., & McCallum, A. (2019). Energy and policy considerations for deep learning in NLP. *ACL 2019*. https://arxiv.org/abs/1906.02243
