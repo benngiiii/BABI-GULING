@@ -1,8 +1,8 @@
-# Team Project Plan and Master Task List V2.0
+# Team Project Plan and Master Task List V3.0
 
-**Document author:** Joseph Lokman(CEO)  
-**Version:** V2.0 (Stage 2)  
-**Last updated:** 6 November 2026 (Revision 2, aligned with Project Plan V2.0 Revision 2)
+**Document author:** Jonathan Sugianto(CIO)  
+**Version:** V3.0 (Stage 3)  
+**Last updated:** 20 November 2026
 
 ## Table of Contents
 
@@ -98,7 +98,7 @@ One member prepares, one reviews and one compiles each deliverable.
 
 ### 6.1 Stage 1 Tasks (due 24 Oct 2026): Completed
 
-Stage 1 was submitted and scored 100/100. The Stage 1 files are kept unchanged in `study-guide/v1.0/` and `stage1_Content.md`.
+Stage 1 was submitted and scored 100/100. The Stage 1 files are kept unchanged in `archive/stage1-study-guide-v1.0/` and `archive/stage1_Content.md` (moved out of `Main/` in Stage 3).
 
 | ID | Task | Owner | Deadline | Status | Evidence |
 |----|------|-------|----------|:------:|----------|
@@ -154,7 +154,7 @@ Stage 1 was submitted and scored 100/100. The Stage 1 files are kept unchanged i
 | S2-13 | Project Plan V2.0 | Joseph | Brian | 5 Nov | ✅ | `project-plan.md` |
 | S2-14 | Master Task List V2.0 (this file) | Joseph | Brian | 5 Nov | ✅ | `master-task-list.md` |
 | S2-15 | Quality Standards V2.0 | Brian | Brian | 5 Nov | ✅ | `quality-standards-V2.0.md` |
-| S2-16 | Stage 2 Content file (all eight chapters in one file) | Brian | Brian | 5 Nov | ✅ | `stage2_Content.md` |
+| S2-16 | Stage 2 Content file (all eight chapters in one file) | Brian | Brian | 5 Nov | ✅ | `archive/stage2_Content-V2.0.md` (replaced by `Main/final_Content.md` in Stage 3) |
 
 #### C. Learning Resources
 
@@ -205,14 +205,14 @@ These tasks use the same IDs, owners and dates as [Project Plan](project-plan.md
 | ID | Task | Owner | Reviewer | Start | Deadline | Status |
 |----|------|-------|----------|-------|----------|:------:|
 | S3-01 | Read the Stage 3 brief; confirm the live-class date; update the Project Plan | Joseph | Jonathan | 8 Nov | 9 Nov |✅  |
-| S3-02 | Rehearsal 1 of the mini lecture; record feedback | Gandhi | Joseph | 8 Nov | 10 Nov | ⬜ |
-| S3-03 | Rehearsal 2 of the mini lecture; fix the slides | Gandhi, Benedict | Joseph | 10 Nov | 12 Nov | ⬜ |
-| S3-04 | Deliver the live mini lecture | Gandhi | Jonathan | Class date | Class date | ⬜ |
+| S3-02 | Rehearsal 1 of the mini lecture; record feedback | Gandhi | Joseph | 8 Nov | 10 Nov | ❓ |
+| S3-03 | Rehearsal 2 of the mini lecture; fix the slides | Gandhi, Benedict | Joseph | 10 Nov | 12 Nov | ❓ |
+| S3-04 | Deliver the live mini lecture | Gandhi | Jonathan | Class date | Class date | ✅ |
 | S3-05 | Collect class and lecturer feedback; write the prioritised fix list | Joseph | Jonathan | Class date | 3 days later | ⬜ |
 | S3-06 | Attend other teams' lectures; each member records one idea and one question | Each member | Joseph | Class date | 3 days later | ⬜ |
-| S3-07 | Fix the Markdown chapters first | Chapter authors | Brian | After S3-05 | 16 Nov | ⬜ |
+| S3-07 | Fix the Markdown chapters first (§1.5 label, §8.6 AI agents, module overview, resource links) | Chapter authors | Brian | After S3-05 | 22 Nov | 🔄 |
 | S3-08 | Learner test: a non-author follows one station and one mission; record changes | Joseph, Jonathan | Brian | 12 Nov | 18 Nov | ⬜ |
-| S3-09 | Update Study Guide, Test Bank and quiz game from the fixed Markdown | Benedict | Brian | 14 Nov | 20 Nov | ⬜ |
+| S3-09 | Update Study Guide, Test Bank and quiz game from the fixed Markdown | Benedict | Brian | 14 Nov | 24 Nov | 🔄 |
 | S3-10 | Update the class PPT from the fixed Markdown | Benedict, Joseph | Brian | 14 Nov | 20 Nov | ⬜ |
 | S3-11 | Finish and export the Video Tutorials and Video Guide | Gandhi | Brian | 8 Nov | 20 Nov | ⬜ |
 | S3-12 | Test every link, the game offline, and every file format | Jonathan | Brian | 18 Nov | 20 Nov | ⬜ |
@@ -222,8 +222,10 @@ These tasks use the same IDs, owners and dates as [Project Plan](project-plan.md
 | S3-16 | Final Submission Audit and Stage 3 report | Brian, Jonathan | Joseph | 24 Nov | 26 Nov | ⬜ |
 | S3-17 | Compile the final folder; build the ZIP; extract it in a new folder and test | Jonathan | Brian | 25 Nov | 26 Nov | ⬜ |
 | S3-18 | Submit Stage 3 | Jonathan | Joseph | 27 Nov | 28 Nov | ⬜ |
+| S3-19 | Respond to the Stage 3 peer reviews (AeroAI; FengweiFriedRice) and record each change in the improvement summaries | Brian, Joseph | Jonathan | 20 Nov | 24 Nov | 🔄 |
+| S3-20 | Reorganise the repository for the final version: `V3.0-final/`, `archive/`, `final_Content.md`, resource mapping, README V3.0 | Jonathan | Brian | 20 Nov | 24 Nov | 🔄 |
 
-Stage 3 has not started, so these tasks are correctly shown as Not Started.
+Statuses updated on 20 November 2026. Rows marked ❓ must be confirmed by the owner with evidence before the final audit.
 
 ### 6.4 Ongoing Tasks
 
@@ -261,7 +263,7 @@ This project teaches AI Overview to complete beginners. One shared Markdown cont
 - [x] Describe the AI workflow, compare supervised, unsupervised and reinforcement learning, and evaluate a model with simple measures.
 - [x] Explain symbolic, connectionist and behaviorist AI and give an example of each.
 - [x] Identify applications of AI and the human oversight they need.
-- [x] Recognise limitations and ethical concerns, including bias, privacy, transparency, hallucination and regulation.
+- [x] Recognise limitations and ethical concerns, including bias, privacy, transparency, hallucination, AI agents and regulation.
 
 Each outcome is covered by at least one reviewed chapter (see the Module Outline).
 
@@ -290,4 +292,6 @@ Each outcome is covered by at least one reviewed chapter (see the Module Outline
 | Stage 1 | v1.0 to v1.2 | Stage 1 list and ownership | QR-006-I01, QR-006-I02 | Stage 1 complete |
 | 2026-11-06 | V2.0 | Rebuilt for eight chapters; tasks for Stages 1 to 3; logs, evidence and reference-project tasks added; shorter, more readable tables; Mermaid workflow replaced by image | Pending | Pending Review |
 | 2026-11-06 | V2.0, Revision 2 | Statuses updated with real evidence; quiz game and quiz-consistency tasks added; Stage 3 expanded to 18 tasks with start dates; learning outcomes aligned with the Project Plan; no ❓ left | QR-V2-011-I01 (Project Plan) | Pending recheck |
-\n\n*Note: The 14 November video date is a team-planned date. Confirm with the lecturer whether this revised date is accepted; the original Stage 2 deadline was 7 November.\n
+| 2026-11-20 | V3.0 | Stage 3 statuses updated; S3-19 (peer-review response) and S3-20 (final repository structure) added; paths updated for `archive/` and `V3.0-final/` | — | Pending review |
+
+*Note: The 14 November video date is a team-planned date. Confirm with the lecturer whether this revised date is accepted; the original Stage 2 deadline was 7 November.\n
