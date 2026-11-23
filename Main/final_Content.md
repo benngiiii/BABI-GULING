@@ -1,6 +1,6 @@
 # AI Overview: Final Markdown Content (V3.0)
 
-**Team:** BABI GULING · **Module:** AI Overview · **Version:** V3.0 (Final, Stage 3) · **Date:** November 2026
+**Team:** BABI GULING · **Module:** AI Overview · **Version:** V3.0 (Final, Stage 3) · **Date:** 24 November 2026
 
 This file combines the module overview and the eight final chapters. It is generated from `Main/study-guide/V3.0-final/` by `tools/build_final_content.py`; edit the chapter files, not this file. Earlier versions are kept in `archive/`.
 
