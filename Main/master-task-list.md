@@ -1,6 +1,6 @@
 # Team Project Plan and Master Task List V3.0
 
-**Document author:** Jonathan Sugianto(CIO)  
+**Document author:** Jonathan Sugianto (CIO)  
 **Version:** V3.0 (Stage 3)  
 **Last updated:** 24 November 2026
 
@@ -295,4 +295,5 @@ Each outcome is covered by at least one reviewed chapter (see the Module Outline
 | 2026-11-20 | V3.0 | Stage 3 statuses updated; S3-19 (peer-review response) and S3-20 (final repository structure) added; paths updated for `archive/` and `V3.0-final/` | — | Pending review |
 
 *Note: The 14 November video date is a team-planned date. Confirm with the lecturer whether this revised date is accepted; the original Stage 2 deadline was 7 November.\n
+
 
