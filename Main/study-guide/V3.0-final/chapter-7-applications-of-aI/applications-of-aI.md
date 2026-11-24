@@ -1,6 +1,6 @@
 # Applications of Artificial Intelligence
 
-**Chapter 7 of 8** · **Version:** V3.0 (Final, Stage 3) · **aAuthor:** Brian Djoni Suzanna · **Reviewer:** Joseph Lokman  
+**Chapter 7 of 8** · **Version:** V3.0 (Final, Stage 3) · **Author:** Brian Djoni Suzanna · **Reviewer:** Joseph Lokman  
 **Audience:** Learners with no technical background in AI  
 **Estimated time:** 2 to 3 hours (including missions)  
 **Format:** Read, pause at each "Pause and predict" box, complete the two missions, then check the answer key at the end of the chapter.
