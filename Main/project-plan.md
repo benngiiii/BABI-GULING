@@ -147,7 +147,7 @@ The module follows a learning progression: **what AI is → what kinds exist →
 | 7 | 8 | Every application has risks that Chapter 8 studies |
 | 3 | 8 | Metrics and hallucination return as limits and checks |
 
-Chapter titles and authors match the files in `Main/study-guide/V2.0/` and the [Module Outline](module-outline.md). Stage 1 chapters (five chapters) are kept unchanged in `Main/study-guide/v1.0/`.
+Chapter titles and authors match the files in `Main/study-guide/V3.0-final/` (renamed from `V2.0/` in Stage 3) and the [Module Outline](module-outline.md). Stage 1 chapters (five chapters) are kept unchanged in `Main/study-guide/v1.0/`.
 
 ---
 
@@ -576,7 +576,7 @@ Every review is recorded in the [Review Register](../quality/reviews/review-regi
 | Output | Where | Linked review or file |
 | ------ | ----- | --------------------- |
 | Chapter commits, branches, pull requests | GitHub repository, branch `AI-Overview` | `quality/reviews/detailed review V2.0/` |
-| Chapter files | `Main/study-guide/V2.0/` | QR-V2-001-I01 to QR-V2-008-I01 |
+| Chapter files | `Main/study-guide/V3.0-final/` (was `V2.0/`) | QR-V2-001-I01 to QR-V2-008-I01 |
 | Project documents | `Main/` | QR-V2-009-I01 to QR-V2-012-I01 |
 | Activity and AI-use records | `logs/Stage 2 activity and AI-use records.md` | Section 5 of that file |
 | Study Guide, Test Bank, PPT, quiz game | Submission package; <https://babigulingcsai.netlify.app> | Stage 2 resource files |
