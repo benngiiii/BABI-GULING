@@ -4,7 +4,7 @@
 **Reviews received:** AeroAI (team of their choice) · FengweiFriedRice (team of their choice)  
 **Response prepared:** 20 November 2026 · **Owners:** Brian Djoni Suzanna (Quality Lead), Joseph Lokman (CEO)
 
-This file lists every finding from the two peer reviews, what we changed, where the change is, and how it was checked. Findings we did not adopt are explained. Status: **Done** = change made in the final files; **In progress** = change agreed, final file not yet exported.
+This file lists every finding from the two peer reviews, what we changed, where the change is, and how it was checked. Findings we did not adopt are explained. Status: **Done** = change made in the final files. Video rows updated on 27 November 2026 after the final videos were checked.
 
 ## 1. Scores received
 
@@ -20,7 +20,7 @@ This file lists every finding from the two peer reviews, what we changed, where 
 | # | Finding (source) | Our change and reason | Location | Check | Status |
 |:-:|------------------|-----------------------|----------|-------|:------:|
 | G1 | "TEAM:" notes and "to be checked by the team" left on pp. 20, 75, 101, 130, 158, 212 (Fengwei) | Each platform link tested; every internal note removed | Study Guide V2 pp. 21, 76, 102, 131, 159, 215 | Text search of V2 for "TEAM:" and "to be checked" returns nothing; each link opened again | Done |
-| G2 | Eight Video Stops describe "planned" videos; links missing; numbering wrong from Station 4 (Fengwei; AeroAI) | Video Stops rewritten for the six real videos, with start times; Stations 4–6 all point to Video 04 | Study Guide Video Stops; Markdown "Use this chapter with the other resources" in every chapter; `Main/resource-mapping.md` §2 | Times taken from the final MP4s and the peer reviews; Video Lead to confirm each time when watching the final files | Done (times to be confirmed by Video Lead) |
+| G2 | Eight Video Stops describe "planned" videos; links missing; numbering wrong from Station 4 (Fengwei; AeroAI) | Video Stops rewritten for the six real videos, with start times; Stations 4–6 all point to Video 04 | Study Guide Video Stops; Markdown "Use this chapter with the other resources" in every chapter; `Main/resource-mapping.md` §2 | Times taken from the final MP4s and the peer reviews; chapter markers in the final MP4s checked on 27 Nov (identical to these times) | Done |
 | G3 | Status pages pp. 235 and 241 claim "REVIEWED" and "DONE" while pages say otherwise (Fengwei) | Status pages rewritten to match the final state | Study Guide pp. 238 and 244 | Cross-checked with G1 and G2 | Done |
 | G4 | "Free prize at noon": guide calls +1 a weakness, video labels it spam (Fengwei) | One clear statement: the email **is spam**, the +1 prediction is correct, and the thin margin is the warning sign; Mission 2 answer now says the −1 result is wrong | Markdown §1.5 Step 5 and §1.7 Answer Key; Test Bank OE-01 key; slide 14 notes | Guide, Test Bank and Video 01 now give the same label | Done (Markdown, Study Guide p. 20 and Control Room p. 34, Test Bank, PPT slide 14 and notes) |
 | G5 | Supporting file labels a calculator "Narrow" with functionality "Yes"; contradicts guide p. 31 (Fengwei) | Calculator marked **Not AI**; functionality column uses the four real types | `BABIGULING_SupportedFiles_V2.pdf` | Compared with §1.1 and §2.3 | Done |
@@ -44,15 +44,15 @@ This file lists every finding from the two peer reviews, what we changed, where 
 |:-:|------------------|-----------------------|----------|-------|:------:|
 | P1 | Notes add up to 144 minutes; no split point or optional slides (Fengwei) | Two-lesson split after slide 28, or three lessons (1–28, 29–47, 48–68); optional slides 10, 22, 38, 42, 44, 46, 60, 63 marked in the notes | Notes of slides 2, 28, 29, 47 | TIME lines re-added: 147 min in total | Done |
 | P2 | Slide 61 lists guide, Test Bank and game but not the videos (Fengwei) | Fourth card for the videos; video number (and start time for Video 04) in the footer of each chapter's first slide | Slide 62; slides 7, 16, 20, 30, 37, 43, 49, 54 | — | Done |
-| P3 | Dense slides 27–28 and 54–56 need a back-of-room check (AeroAI) | Small labels enlarged (15–17 pt to 18–19 pt); classroom slideshow check still to be done by the team | Slides 27, 54, 55, 56 | Back-of-room check record | Done (labels); room check pending |
+| P3 | Dense slides 27–28 and 54–56 need a back-of-room check (AeroAI) | Small labels enlarged (15–17 pt to 18–19 pt); back-row slideshow check done by Jonathan Sugianto | Slides 27, 54, 55, 56 | Testing and Verification Report, Section C | Done |
 
 ### Video Tutorials
 
 | # | Finding (source) | Our change and reason | Location | Check | Status |
 |:-:|------------------|-----------------------|----------|-------|:------:|
-| V1 | No timestamp index; six videos vs eight stations (both reviews) | Video Guide with chapter timestamps; Resource Mapping §2 | Video Guide; `Main/resource-mapping.md` | Each time checked by watching | In progress |
-| V2 | Narration, pacing and audio not fully checked (AeroAI) | A non-creator watches every final video in full and records issues with timestamps | Video Guide verification section | Watch-through record | In progress |
-| V3 | Video 02 is 960×544, lower than the others (Fengwei) | Re-export at 1280×720 if the source project allows | Video 02 | File properties | In progress |
+| V1 | No timestamp index; six videos vs eight stations (both reviews) | Chapter markers built into every MP4; Video Guide with chapter timestamps; Resource Mapping §2 | `BABIGULING_Stage3_FinalVideoGuide.pdf` §2; `Main/resource-mapping.md` | Marker times read from the final files with ffprobe and matched to the guide | Done |
+| V2 | Narration, pacing and audio not fully checked (AeroAI) | A non-creator watched every final video in full: Joseph Lokman (V2.0, 21 Nov) and Brian Djoni Suzanna (re-animated V2.1, 27 Nov); all six levelled to about −16 LUFS | Video Guide §4; Testing and Verification Report §D and §G | Watch-through records | Done |
+| V3 | Video 02 is 960×544, lower than the others (Fengwei) | All six videos re-animated and exported at 1920×1080 on 25 Nov, so Video 02 now has the same sharpness as the others | All six final MP4s | ffprobe: 1920×1080 for every file | Done |
 | V4 | Three technical chapters share one 8-minute video (Fengwei) | **Not adopted for this version:** the eight-video maximum allows splitting, but re-recording three videos before 28 November would leave no time for checking. We give exact start times instead and list it as a limitation | README §8 | — | Not adopted (reason given) |
 
 ## 3. Change that came from the mini lecture
