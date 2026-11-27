@@ -14,13 +14,13 @@
 
 ## 1. Team
 
-| No. | Name | Chinese Name | GitHub Username | Student ID | Role |
-| :-: | ---- | ------------ | --------------- | :--------: | ---- |
-| 1 | Benedict Subhata | 王志伟 | [benngiiii](https://github.com/benngiiii) | 1820262181 | Visual Design Lead |
-| 2 | Brian Djoni Suzanna | 吴梓诚 | [brizz0-0](https://github.com/brizz0-0) | 1820262162 | Quality Lead |
-| 3 | Gandhi Bestin Dhammananda | 熊特友 | [bestinsiuuu77](https://github.com/bestinsiuuu77) | 1820262168 | Video Lead |
-| 4 | Jonathan Sugianto | 蔡德辉 | [JonathanSugianto](https://github.com/JonathanSugianto) | 1820262245 | CIO |
-| 5 | Joseph Lokman | 骆韦铨 | [JosephLokman](https://github.com/JosephLokman) | 1820262233 | CEO |
+| No. | Name | Chinese Name | GitHub Username | Role |
+| :-: | ---- | ------------ | --------------- | ---- |
+| 1 | Benedict Subhata | 王志伟 | [benngiiii](https://github.com/benngiiii) | Visual Design Lead |
+| 2 | Brian Djoni Suzanna | 吴梓诚 | [brizz0-0](https://github.com/brizz0-0) | Quality Lead |
+| 3 | Gandhi Bestin Dhammananda | 熊特友 | [bestinsiuuu77](https://github.com/bestinsiuuu77) | Video Lead |
+| 4 | Jonathan Sugianto | 蔡德辉 | [JonathanSugianto](https://github.com/JonathanSugianto) | CIO |
+| 5 | Joseph Lokman | 骆韦铨 | [JosephLokman](https://github.com/JosephLokman) | CEO |
 
 ## 2. Purpose, Learners and Goals
 
@@ -65,8 +65,9 @@ Each chapter follows the same routine: **Guess → Read → Try → Missions →
 | Study Guide ("Rebuild Bit") | Independent learning: explanations, activities, missions, answers | `BABI-GULING_Stage3_StudyGuide_V2.pdf` | Lexue submission and class sharing space |
 | Test Bank | 24 True/False, 24 Multiple Choice, 8 Open-ended, with answer key | `BABI-GULING_Stage3_TestBank_V2.docx` | Lexue submission and class sharing space |
 | PPT Slides ("Babi Guling's Kitchen") | Classroom teaching, with presenter notes | `BABIGULING_Stage3_FinalPPT.pptx` | Lexue submission and class sharing space |
-| Video Tutorials (6) | Worked examples and demonstrations | `BABIGULING_FinalVideo01` to `06` (MP4) + Video Guide | Lexue submission (too large for GitHub) |
+| Video Tutorials (6) | Worked examples and demonstrations, each with a pause-and-predict check | `BABIGULING_FinalVideo01_Introduction-to-AI.mp4` to `BABIGULING_FinalVideo06_AI-Ethics-and-Limitations.mp4` (1920×1080) + `BABIGULING_Stage3_FinalVideoGuide.pdf` | Lexue submission and class sharing space (not stored on GitHub) |
 | Quiz game *Escape the Spit* | Optional practice by playing | <https://babigulingcsai.netlify.app> | Netlify |
+| Final Project Showcase | A 3-minute tour of the whole learning system and where to start | `BABIGULING_FinalProjectShowcase.mp4` | Lexue submission and class sharing space |
 
 **Recommended route for one chapter:** slides for the overview → the chapter's plain-words explanations → the matching video → the two missions → that chapter's Test Bank questions.
 
@@ -117,7 +118,7 @@ Folder names keep their original capital letters (for example `chapter-7-applica
 | ------- | ----- | ---- | ----------- |
 | v1.0 | Stage 1 | 24 Oct 2026 | Five chapters (now in `archive/`) |
 | V2.0 | Stage 2 | 7 Nov 2026 | Eight chapters with missions, answer keys and glossaries |
-| **V3.0 (Final)** | **Stage 3** | **28 Nov 2026** | Module overview with prerequisites and minimum route; peer-review corrections (consistent spam-filter label, video mapping); §8.6 AI agents from the mini lecture; standard chapter metadata; resource mapping; final repository structure |
+| **V3.0 (Final)** | **Stage 3** | **28 Nov 2026** | Module overview with prerequisites and minimum route; peer-review corrections (consistent spam-filter label, video mapping); §8.6 AI agents from the mini lecture; standard chapter metadata; resource mapping; final repository structure. The six videos were re-animated on 25 Nov 2026 with the same team narration, captions and chapter times |
 
 The final submitted snapshot is identified in the Stage 3 submission report by its date and latest commit ID. Later changes to this repository do not change the submitted version.
 
@@ -128,7 +129,7 @@ The final submitted snapshot is identified in the Stage 3 submission report by i
 - **Two visual themes.** The Study Guide uses the "Rebuild Bit" metro theme and the slides and videos use "Babi Guling's Kitchen". A shared "BABI GULING · AI Overview" label links them, but the themes were not merged.
 - **Online activities depend on third-party websites.** Paper versions are provided for each.
 - **Learner testing was small.** Materials were tested by team members, classmates in peer review and one external learner (quiz game). We have no evidence of learning gains from a larger group.
-- **Videos are not stored on GitHub** because of their size; they are submitted on Lexue.
+- **Videos are not stored on GitHub** to keep the repository light (about 40–55 MB each). They are submitted on Lexue and shared in the class sharing space.
 
 ## 9. Project Records
 
