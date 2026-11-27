@@ -111,7 +111,7 @@ Abbreviations: **TF** = True/False, **MC** = Multiple Choice, **OE** = Open-ende
 
 ## 2. Video index
 
-Six videos, 1280 × 720, each with chapter markers, a "Pause the video" learning check and a "Practise next" end card. Chapters 4, 5 and 6 share Video 04.
+Six videos, 1920 × 1080 (final V2.1, re-animated on 25 November 2026 with the same narration and chapter times), each with chapter markers, a "Pause the video" learning check and a "Practise next" end card. Chapters 4, 5 and 6 share Video 04.
 
 | Video (file) | Length | Chapters | Key start times | Learning check |
 |--------------|:------:|:--------:|-----------------|----------------|
