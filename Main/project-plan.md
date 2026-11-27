@@ -16,7 +16,7 @@
 | Repository | `benngiiii/BABI-GULING`, branch `AI-Overview` |
 | Stages | Stage 1: 24 Oct 2026 (completed) · Stage 2: 7 Nov 2026, 23:59 Beijing time · Stage 3: 28 Nov 2026 |
 | Quiz game (supplementary) | <https://babigulingcsai.netlify.app> |
-| Related documents | [README](README.md) · [Master Task List](master-task-list.md) · [Module Outline](module-outline.md) |
+| Related documents | [README](../README.md) · [Master Task List](master-task-list.md) · [Module Outline](module-outline.md) |
 
 ## Table of Contents
 
