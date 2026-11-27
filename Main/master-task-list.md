@@ -2,7 +2,7 @@
 
 **Document author:** Jonathan Sugianto (CIO)  
 **Version:** V3.0 (Stage 3)  
-**Last updated:** 24 November 2026
+**Last updated:** 27 November 2026
 
 ## Table of Contents
 
@@ -21,13 +21,13 @@
 
 ## 1. Team Members
 
-| # | Name | Chinese Name | Student ID | Role |
-|:-:|------|--------------|:----------:|------|
-| 1 | Benedict Subhata | 王志伟 | 1820262181 | Visual Design Lead |
-| 2 | Brian Djoni Suzanna | 吴梓诚 | 1820262162 | Quality Lead |
-| 3 | Gandhi Bestin Dhammananda | 熊特友 | 1820262168 | Video Lead |
-| 4 | Jonathan Sugianto | 蔡德辉 | 1820262245 | CIO and Content Lead |
-| 5 | Joseph Lokman | 骆韦铨 | 1820262233 | CEO |
+| # | Name | Chinese Name | Role |
+|:-:|------|--------------|------|
+| 1 | Benedict Subhata | 王志伟 | Visual Design Lead |
+| 2 | Brian Djoni Suzanna | 吴梓诚 | Quality Lead |
+| 3 | Gandhi Bestin Dhammananda | 熊特友 | Video Lead |
+| 4 | Jonathan Sugianto | 蔡德辉 | CIO and Content Lead |
+| 5 | Joseph Lokman | 骆韦铨 | CEO |
 
 ## 2. Strengths
 
@@ -210,22 +210,24 @@ These tasks use the same IDs, owners and dates as [Project Plan](project-plan.md
 | S3-04 | Deliver the live mini lecture | Gandhi | Jonathan | Class date | Class date | ✅ |
 | S3-05 | Collect class and lecturer feedback; write the prioritised fix list | Joseph | Jonathan | Class date | 3 days later | ⬜ |
 | S3-06 | Attend other teams' lectures; each member records one idea and one question | Each member | Joseph | Class date | 3 days later | ⬜ |
-| S3-07 | Fix the Markdown chapters first (§1.5 label, §8.6 AI agents, module overview, resource links) | Chapter authors | Brian | After S3-05 | 22 Nov | 🔄 |
-| S3-08 | Learner test: a non-author follows one station and one mission; record changes | Joseph, Jonathan | Brian | 12 Nov | 18 Nov | ⬜ |
-| S3-09 | Update Study Guide, Test Bank and quiz game from the fixed Markdown | Benedict | Brian | 14 Nov | 24 Nov | 🔄 |
-| S3-10 | Update the class PPT from the fixed Markdown | Benedict, Joseph | Brian | 14 Nov | 20 Nov | ⬜ |
-| S3-11 | Finish and export the Video Tutorials and Video Guide | Gandhi | Brian | 8 Nov | 20 Nov | ⬜ |
-| S3-12 | Test every link, the game offline, and every file format | Jonathan | Brian | 18 Nov | 20 Nov | ⬜ |
-| S3-13 | Final quality review of every deliverable; record revisions and rechecks | Brian | Joseph | 20 Nov | 22 Nov | ⬜ |
-| S3-14 | Consistency check: Markdown, Study Guide, Test Bank, game, PPT, Video | Brian | Joseph | 22 Nov | 24 Nov | ⬜ |
-| S3-15 | Final project log, meeting summaries, personal logs and AI-use records with screenshots | Joseph; each member | Jonathan; Brian | 20 Nov | 24 Nov | ⬜ |
-| S3-16 | Final Submission Audit and Stage 3 report | Brian, Jonathan | Joseph | 24 Nov | 26 Nov | ⬜ |
-| S3-17 | Compile the final folder; build the ZIP; extract it in a new folder and test | Jonathan | Brian | 25 Nov | 26 Nov | ⬜ |
+| S3-07 | Fix the Markdown chapters first (§1.5 label, §8.6 AI agents, module overview, resource links) | Chapter authors | Brian | After S3-05 | 22 Nov | ✅ |
+| S3-08 | Learner test: a non-author follows one station and one mission; record changes | Joseph, Jonathan | Brian | 12 Nov | 18 Nov | ✅ |
+| S3-09 | Update Study Guide, Test Bank and quiz game from the fixed Markdown | Benedict | Brian | 14 Nov | 24 Nov | ✅ |
+| S3-10 | Update the class PPT from the fixed Markdown | Benedict, Joseph | Brian | 14 Nov | 20 Nov | ✅ |
+| S3-11 | Finish and export the Video Tutorials and Video Guide | Gandhi | Brian | 8 Nov | 20 Nov | ✅ |
+| S3-12 | Test every link, the game offline, and every file format | Jonathan | Brian | 18 Nov | 20 Nov | ❓ |
+| S3-13 | Final quality review of every deliverable; record revisions and rechecks | Brian | Joseph | 20 Nov | 22 Nov | ✅ |
+| S3-14 | Consistency check: Markdown, Study Guide, Test Bank, game, PPT, Video | Brian | Joseph | 22 Nov | 24 Nov | ❓ |
+| S3-15 | Final project log, meeting summaries, personal logs and AI-use records with screenshots | Joseph; each member | Jonathan; Brian | 20 Nov | 24 Nov | 🔄 |
+| S3-16 | Final Submission Audit and Stage 3 report | Brian, Jonathan | Joseph | 24 Nov | 26 Nov | 🔄 |
+| S3-17 | Compile the final folder; build the ZIP; extract it in a new folder and test | Jonathan | Brian | 25 Nov | 26 Nov | 🔄 |
 | S3-18 | Submit Stage 3 | Jonathan | Joseph | 27 Nov | 28 Nov | ⬜ |
-| S3-19 | Respond to the Stage 3 peer reviews (AeroAI; FengweiFriedRice) and record each change in the improvement summaries | Brian, Joseph | Jonathan | 20 Nov | 24 Nov | 🔄 |
-| S3-20 | Reorganise the repository for the final version: `V3.0-final/`, `archive/`, `final_Content.md`, resource mapping, README V3.0 | Jonathan | Brian | 20 Nov | 24 Nov | 🔄 |
+| S3-19 | Respond to the Stage 3 peer reviews (AeroAI; FengweiFriedRice) and record each change in the improvement summaries | Brian, Joseph | Jonathan | 20 Nov | 24 Nov | ✅ |
+| S3-20 | Reorganise the repository for the final version: `V3.0-final/`, `archive/`, `final_Content.md`, resource mapping, README V3.0 | Jonathan | Brian | 20 Nov | 24 Nov | ✅ |
+| S3-21 | Re-animate Videos 01–06 (same team narration, captions and chapter times); update the Video Guide; another member watches every final video in full | Gandhi | Any member who did not make the videos | 25 Nov | 28 Nov | 🔄 |
+| S3-22 | Prerecorded Final Project Showcase (under 4 minutes) with Start Here screen and QR codes; copy to USB drive; upload learner materials to the class sharing space | Gandhi | Whole team (rehearsal) | 24 Nov | 27 Nov | 🔄 |
 
-Statuses updated on 20 November 2026. Rows marked ❓ must be confirmed by the owner with evidence before the final audit.
+Statuses updated on 27 November 2026. Rows marked ❓ must be confirmed by the owner with evidence before the final audit.
 
 ### 6.4 Ongoing Tasks
 
@@ -293,7 +295,6 @@ Each outcome is covered by at least one reviewed chapter (see the Module Outline
 | 2026-11-06 | V2.0 | Rebuilt for eight chapters; tasks for Stages 1 to 3; logs, evidence and reference-project tasks added; shorter, more readable tables; Mermaid workflow replaced by image | Pending | Pending Review |
 | 2026-11-06 | V2.0, Revision 2 | Statuses updated with real evidence; quiz game and quiz-consistency tasks added; Stage 3 expanded to 18 tasks with start dates; learning outcomes aligned with the Project Plan; no ❓ left | QR-V2-011-I01 (Project Plan) | Pending recheck |
 | 2026-11-20 | V3.0 | Stage 3 statuses updated; S3-19 (peer-review response) and S3-20 (final repository structure) added; paths updated for `archive/` and `V3.0-final/` | — | Pending review |
+| 2026-11-27 | V3.0, Revision 1 | Stage 3 statuses updated from finished deliverables; S3-21 (re-animated videos) and S3-22 (Final Project Showcase) added; student IDs removed from this public file | — | Pending review |
 
 *Note: The 14 November video date is a team-planned date. Confirm with the lecturer whether this revised date is accepted; the original Stage 2 deadline was 7 November.\n
-
-
