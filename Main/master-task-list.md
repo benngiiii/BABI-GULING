@@ -297,4 +297,3 @@ Each outcome is covered by at least one reviewed chapter (see the Module Outline
 | 2026-11-20 | V3.0 | Stage 3 statuses updated; S3-19 (peer-review response) and S3-20 (final repository structure) added; paths updated for `archive/` and `V3.0-final/` | — | Pending review |
 | 2026-11-27 | V3.0, Revision 1 | Stage 3 statuses updated from finished deliverables; S3-21 (re-animated videos) and S3-22 (Final Project Showcase) added; student IDs removed from this public file | — | Pending review |
 
-*Note: The 14 November video date is a team-planned date. Confirm with the lecturer whether this revised date is accepted; the original Stage 2 deadline was 7 November.\n
