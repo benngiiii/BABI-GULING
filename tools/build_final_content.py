@@ -66,4 +66,4 @@ This file combines the module overview and the eight final chapters. It is gener
 
 """ + '\n'.join(toc) + '\n\n---\n'
 open(OUT, 'w', encoding='utf-8').write(header + '\n' + '\n\n---\n\n'.join(parts) + '\n')
-print('wrote', os.path.relpath(OUT, ROOT))
+print('wrote', os.path.relpath(OUT, ROOT)) 
