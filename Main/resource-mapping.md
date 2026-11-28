@@ -137,4 +137,4 @@ The complete chapter list and a teaching outline for every video are in `BABIGUL
 | Walk-or-not neuron: z = 2 → output 1 (walk); with today's deadline z = −1 → output 0 | §5.2 | Station 5 | MC-13 uses its own small case (z = 1) | Chapter 5 section | Video 04 (3:30–4:00) |
 | Corridor Q-learning: S3 = 5 after episode 1; S2 = 2.25 and S3 = 7.5 after episode 2 | §6.3 | Station 6 | MC-17 (first update = 5) | Chapter 6 section | Video 04 (6:00–6:36) |
 | Impact ratio below 0.80 is a **warning sign**, not proof | §8.2 | Station 8 | MC-22, OE-08 | Fairness-check slides | Video 06 |
-| A program that adds numbers is **not AI** | §1.1 Pause and predict | Station 1; Station 2 supporting file | — | — | — |
+| A program that adds numbers is **not AI** | §1.1 Pause and predict | Station 1; Station 2 supporting file | — | — | — |  
