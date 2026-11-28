@@ -141,4 +141,4 @@ The Test Bank has **56 questions**: 24 True/False, 24 Multiple Choice and 8 Open
 
 ---
 
-*Figure 0.1 is reused from Chapter 1. All other content in this overview was written by our team.*
+*Figure 0.1 is reused from Chapter 1. All other content in this overview was written by our team.* 
